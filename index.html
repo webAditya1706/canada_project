@@ -1,1 +1,377 @@
-hhdhdhh
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="./index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- top Heaer -->
+    <section>
+        <div class="container-fluid p-3">
+            <div class="row justify-content-between align-items-center gap-2"> <!-- Add g-3 for spacing -->
+                <!-- coumn 1 -->
+                <div class="col-auto">
+                    <div class="d-flex justify-content-between align-items-center gap-2">
+                        <img src="./assets/logo.png" alt="Logo" class="header_logo" />
+                        <div class="header_bg_text">
+                            <span>THE FUTURE OF BUYING ENERGY HERE!</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- coumn 2 -->
+                <div class="col-auto">
+                    <div class="d-flex align-items-center gap-4">
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <img src="./assets/home.png" alt="Home Icon" />
+                            <span class="menu_font_style">Home</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <img src="./assets/hammer.png" alt="Home Icon" />
+                            <span class="menu_font_style">Quotes</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <img src="./assets/file.png" alt="Home Icon" />
+                            <span class="menu_font_style">Auctions</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- coumn 3 -->
+                <div class="col-auto">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Old Legacy</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div>
+                        <img src="./assets/user.png" alt="User Icon" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- top Finish -->
+
+
+    <!-- middle header start -->
+
+    <section class="middle_header_sec">
+        <div class="container-fluid py-3">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <div class="d-flex align-items-center gap-1">
+                        <span class="mid_header_mian_title">Quot</span>
+                        <div class="red_bg_text">
+                            16
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox" checked>
+                                <span class="mid_header_slider round"></span>
+                            </label>
+                            <span class="middle_header_menu">My Quotes</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox">
+                                <span class="mid_header_slider round"></span>
+                            </label>
+                            <span class="middle_header_menu">My referred quotes</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox" checked>
+                                <span class="mid_header_slider round"></span>
+                            </label>
+                            <span class="middle_header_menu">My team’s quotes</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox" checked>
+                                <span class="mid_header_slider round"></span>
+                            </label>
+                            <span class="middle_header_menu">Renewals</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center gap-3">
+
+                            <input class=" form-control mid_header_search_field" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button class="btn mid_search_btn" type="submit">
+                                <img src="./assets/blue_search.png" /> <!-- Bootstrap icon for search -->
+                            </button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- middle header end -->
+
+
+    <!-- Start Quotes Table -->
+
+    <section class="">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center py-2">
+                <div class="col-auto">
+                    <span class="quotes_left_text">Your search results 15 out of 1441 quotes...</span>
+                </div>
+                <div class="col-auto">
+                    <span class="quotes_right_text">Total Quotes: 1441</span>
+                </div>
+            </div>
+            <table class="table table-bordered">
+                <thead class="thead_bg">
+                    <tr>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">ID</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">Legal Name
+                                    on Contract</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">Contact
+                                    Name</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">CMDTY</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">Valume</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">Start Date</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">RM</span>
+                            </div>
+                        </th>
+                        <th scope="col" class="text-center align-middle">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px;">
+                                <span class="th_title">Due Date</span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                    <tr scope="row" class="tbody_row">
+                        <td class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                            style="height: 55px;">
+                            <input type="checkbox" class="form-check-input" checked>
+                            <span>1</span>
+                        </td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                        <td class="text-center align-middle tb_text">1</td>
+                        <td class="text-center align-middle tb_text">John Doe</td>
+                        <td class="text-center align-middle tb_text">john@example.com</td>
+                        <td class="text-center align-middle tb_text">2023-10-09</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+
+
+    <!-- End Quotes Table -->
+
+
+    <!-- Start Pagination -->
+
+
+    <section class="mb-4">
+        <div class="container-fluid">
+            <hr style="height: 1px; color: #ddd;" class="mt-4 mb-2" />
+            <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="pagi_row">Rows per page</span>
+                        <div style="width: 50px">
+                            <select class="select_field" aria-label="Default select example">
+                                <option selected value="1">10</option>
+                                <option value="2">20</option>
+                                <option value="3">30</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex align-items-center gap-2">
+                        <div class="pagi_arrow">
+                            <img src="./assets/left-arrow.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <span class="unactive_no">1</span>
+                            <span class="page_of">of</span>
+                            <span class="active_no">2</span>
+                        </div>
+                        <div class="pagi_arrow">
+                            <img src="./assets/right-arrow.png" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End Pagination -->
+
+</body>
+
+</html>

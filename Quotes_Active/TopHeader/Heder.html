@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <style>
+
+        body {
+            position: relative; /* Set relative positioning for body */
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: fixed; /* Use fixed positioning to cover the whole viewport */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(19, 19, 19, 0.30); /* Semi-transparent background */
+            display: none; /* Initially hidden */
+            z-index: 1; /* Behind the drawer but above other content */
+        }
+
+        .drawer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #fff; /* Drawer background color */
+            width: 100%;
+            max-width: 200px;
+            height: 100%;
+            min-height: 100vh;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            pointer-events: none; /* Disable interaction when hidden */
+            opacity: 0;
+            transform: translateX(200px);
+            z-index: 2; /* Above the overlay */
+        }
+
+        .drawer.show {
+            opacity: 1;
+            transform: translateX(0);
+            pointer-events: auto; /* Enable interaction when shown */
+        }
+
+        .user_name {
+            color: #131313;
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .user_email {
+            color: #757575;
+            font-family: Poppins;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 13px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .user_image {
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+
+<body>        
+    <section>
+        <div class="container-fluid p-3">
+            <div class="row justify-content-between align-items-center gap-2">
+                <!-- Column 1 -->
+                <div class="col-auto">
+                    <div class="d-flex justify-content-between align-items-center gap-2">
+                        <img src="../../assets/logo.png" alt="Logo" class="header_logo" />
+                        <div class="header_bg_text">
+                            <span>THE FUTURE OF BUYING ENERGY HERE!</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 2 -->
+                <div class="col-auto d-none d-lg-block">
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="mid_header_switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Old Legacy</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu Icon -->
+                <div class="col-auto d-block d-lg-none">
+                    <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                </div>
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%;" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <div class="d-flex align-items-center gap-1 my-2">
+                            <label class="mid_header_switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Old Legacy</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 my-2">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 my-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const overlay = document.getElementById("overlay");
+        const drawer = document.getElementById("drawer");
+
+        // Function to toggle drawer visibility
+        function toggleDrawer() {
+            if (!drawer.classList.contains("show")) {
+                drawer.classList.add("show");
+                overlay.style.display = "block"; // Show overlay
+            } else {
+                drawer.classList.remove("show");
+                overlay.style.display = "none"; // Hide overlay
+            }
+        }
+
+        // Show drawer on icon click
+        document.getElementById("show_drawer").onclick = (event) => {
+            event.stopPropagation(); // Prevent event bubbling
+            toggleDrawer();
+        };
+
+        // Hide drawer on overlay click
+        overlay.onclick = () => {
+            drawer.classList.remove("show");
+            overlay.style.display = "none"; // Hide overlay
+        };
+
+        // Hide drawer when clicking outside
+        document.body.onclick = (event) => {
+            if (drawer.classList.contains("show") && !drawer.contains(event.target) && event.target.id !== "show_drawer") {
+                drawer.classList.remove("show");
+                overlay.style.display = "none"; // Hide overlay
+            }
+        };
+    </script>
+
+</body>
+
+</html>

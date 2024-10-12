@@ -1,0 +1,368 @@
+/* Top header css */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.header_logo {
+    width: 65px;
+    height: 28px;
+}
+
+.menu_font_style {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    /* 100% */
+}
+
+.header_bg_text {
+    background: linear-gradient(90deg, #014A68 0%, #0193CE 100%);
+    padding: 5px 10px;
+    color: #fff;
+}
+
+
+
+
+/* toggle css */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+/* middle header toggle css */
+
+
+
+
+.mid_header_switch {
+    position: relative;
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+}
+
+.mid_header_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.mid_header_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.mid_header_slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #606060;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.mid_header_slider {
+    background-color: #50de3a;
+}
+
+input:focus+.mid_header_slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.mid_header_slider:before {
+    -webkit-transform: translateX(8px);
+    -ms-transform: translateX(8px);
+    transform: translateX(8px);
+    background-color: #fff;
+}
+
+
+/* Rounded sliders */
+.mid_header_slider.round {
+    border-radius: 34px;
+}
+
+.mid_header_slider.round:before {
+    border-radius: 50%;
+}
+
+
+.middle_header_sec {
+    background: linear-gradient(90deg, #0193CE 0%, #014A68 100%);
+    padding: 5px 0px;
+    color: #fff;
+}
+
+.middle_header_menu {
+    color: #fff;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: capitalize;
+    /* 100% */
+}
+
+.mid_header_mian_title {
+    color: var(--Schemes-On-Primary, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 100% */
+}
+
+.red_bg_text {
+    background: red;
+    color: #fff;
+    padding: 0px 5px;
+    font-size: 12px;
+}
+
+.mid_header_search_field {
+    display: flex;
+    width: 87px;
+    height: 30px;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--Schemes-On-Primary, #FFF);
+}
+
+.mid_search_btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+
+
+
+
+/* Section Quotes Table Style */
+
+
+
+
+
+.thead_bg {
+    background-color: #F5F5F5;
+    height: 55px;
+}
+
+.tbody_row {
+    height: 55px;
+}
+
+.th_title {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    /* 138.462% */
+}
+
+.tb_text {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 123.077% */
+}
+
+.tb_Id {
+    color: #000;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    /* 100% */
+    text-decoration-line: underline;
+}
+
+.quotes_left_text {
+    color: #0193CE;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    /* 100% */
+}
+
+.quotes_right_text {
+    color: #606060;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    /* 100% */
+}
+
+
+
+/* pagination style */
+
+
+
+
+.select_field {
+    display: inline-flex;
+    height: 24px;
+    width: 50px;
+    padding: 0px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    background: "#fff";
+    color: var(--Grey, #757575);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    /* 125% */
+}
+
+.pagi_arrow {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    padding: 1px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 1px solid #DDD;
+}
+
+.active_no {
+    color: var(--Theme, #007CBA);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.unactive_no {
+    color: #131313;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    /* 116.667% */
+}
+
+.page_of {
+    color: var(--Grey, #757575);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.pagi_row {
+    color: var(--Grey, #757575);
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    /* 116.667% */
+}
