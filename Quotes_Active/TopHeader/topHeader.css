@@ -1,0 +1,110 @@
+/* Ensure no horizontal scrolling */
+body {
+    overflow-x: hidden;
+    /* Hide horizontal scroll */
+    margin: 0;
+    padding: 0;
+}
+
+.top_header_secction{
+    border-bottom: 1px solid #ddd;
+}
+
+.top_head_sec {
+    border-bottom: 1px solid #ddd;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Responsive layout for mobile */
+@media only screen and (max-width: 500px) {
+    .header_container {
+        flex-wrap: nowrap;
+        /* Prevent wrapping */
+    }
+
+    .header_bg_text {
+        flex-grow: 1;
+        /* Ensure the text takes up available space */
+        text-align: center;
+    }
+}
+
+/* Styling for the logo */
+.header_logo {
+    max-width: 50px;
+}
+
+/* Optional padding to fine-tune alignment */
+.header_bg_text {
+    padding: 0 10px;
+}
+
+/* Overlay Styling */
+#overlay {
+    position: fixed;
+    /* Fixed position to cover the viewport */
+    top: 0;
+    left: 0;
+    width: calc(100vw -200px);
+    height: 100vh;
+    background: rgba(19, 19, 19, 0.30);
+    /* Semi-transparent background */
+    display: none;
+    /* Initially hidden */
+    z-index: 98;
+    /* Ensure the overlay is behind the drawer */
+}
+
+/* Drawer Styling */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #fff;
+    /* Drawer background color */
+    width: 100vw;
+    max-width: 250px; /* Increased max-width for better space */
+    height: 100vh;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+    /* Disable interaction when hidden */
+    transform: translateX(100%);
+    /* Initially hide the drawer */
+    z-index: 99;
+    /* Ensure the drawer is above the overlay */
+}
+
+.drawer.show {
+    transform: translateX(0);
+    pointer-events: auto;
+    /* Enable interaction when shown */
+}
+
+/* User details styling */
+.user_name {
+    color: #131313;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user_email {
+    color: #757575;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.user_image {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}

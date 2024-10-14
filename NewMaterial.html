@@ -2,111 +2,98 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Material Design Input Field</title>
-    
-    <!-- Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
-    <!-- Material Design CSS -->
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    
-    <!-- Material Design JavaScript -->
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Material Design Input Field</title>
+
+  <!-- Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Material Design CSS -->
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+  <!-- Material Design JavaScript -->
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <style>
+    .menu_font_style {
+      color: #007CBA;
+      font-family: Poppins;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 13px;
+      /* 100% */
+      /* 100% */
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Material Design Outlined Text Field -->
-    <label class="mdc-text-field hiiii mdc-text-field--outlined">
-        <span class="mdc-notched-outline">
-            <span class="mdc-notched-outline__leading"></span>
-            <span class="mdc-notched-outline__notch">
-                <span class="mdc-floating-label" id="my-label-id">Your Name</span>
-            </span>
-            <span class="mdc-notched-outline__trailing"></span>
-        </span>
-        <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+  <div class="d-flex justify-content-center align-items-center gap-1">
+    <!-- <label class="mid_header_switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
     </label>
-
-    <!-- Material Design Switch -->
-    <button id="basic-switch" class="mdc-switch mdc-switch--unselected" type="button" role="switch" aria-checked="false">
+    <span class="menu_font_style">Switch to Old Legacy</span> -->
+    <button id="selected-switch" class="mdc-switch mdc-switch--selected" type="button"
+        role="switch" aria-checked="true">
         <div class="mdc-switch__track"></div>
         <div class="mdc-switch__handle-track">
-          <div class="mdc-switch__handle">
-            <div class="mdc-switch__shadow">
-              <div class="mdc-elevation-overlay"></div>
+            <div class="mdc-switch__handle">
+                <div class="mdc-switch__shadow">
+                    <div class="mdc-elevation-overlay"></div>
+                </div>
+                <div class="mdc-switch__ripple"></div>
+
             </div>
-            <div class="mdc-switch__ripple"></div>
-            <div class="mdc-switch__icons">
-              <svg class="mdc-switch__icon mdc-switch__icon--on" viewBox="0 0 24 24">
-                <path d="M19.69,5.23L8.96,15.96l-4.23-4.23L2.96,13.5l6,6L21.46,7L19.69,5.23z" />
-              </svg>
-              <svg class="mdc-switch__icon mdc-switch__icon--off" viewBox="0 0 24 24">
-                <path d="M20 13H4v-2h16v2z" />
-              </svg>
-            </div>
-          </div>
         </div>
     </button>
-    <label for="basic-switch">Off/On</label>
+    <label for="selected-switch_1" class="menu_font_style">Switch to Old Legacy</label>
+</div>
+<div class="d-flex justify-content-center align-items-center gap-1">                           
+    <button id="selected-switch" class="mdc-switch_1 mdc-switch--selected" type="button"
+        role="switch" aria-checked="true">
+        <div class="mdc-switch__track"></div>
+        <div class="mdc-switch__handle-track">
+            <div class="mdc-switch__handle">
+                <div class="mdc-switch__shadow">
+                    <div class="mdc-elevation-overlay"></div>
+                </div>
+                <div class="mdc-switch__ripple"></div>
 
-    <label class="mdc-text-field mdc-text-field--filled">
-  <span class="mdc-text-field__ripple"></span>
-  <span class="mdc-floating-label" id="my-label-id">Hint text</span>
-  <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id">
-  <span class="mdc-line-ripple"></span>
-</label>
-
-<button class="mdc-button foo-button">
-  <div class="mdc-button__ripple"></div>
-  <span class="mdc-button__label">Button</span>
-</button>
-
-    <h2 id="hhi2">2</h2>
-   
-    <!-- Initialize Material Design Components -->
-    <script>
-        // Initialize all Material Design components
-        mdc.autoInit();
-        const btn1 = mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
-        // Manually initialize the text field
-        const textField = new mdc.textField.MDCTextField(document.querySelector('.hiiii'));
-
-        // Initialize the switch component
-        const switchControl = new mdc.switchControl.MDCSwitch(document.querySelector('.mdc-switch'));
-        const textField2 = new MDCTextField(document.querySelector('.hiiii2'));
-        // Add event listener for switch
-        document.querySelector('.mdc-switch').addEventListener('click', function () {
-            switchControl.checked = !switchControl.checked;
-            switchControl.ripple.activate(); // Add ripple effect on switch click
-        });
-    </script>
-
-    <script type="text/babel">
-       const { useState } = React;
-       const { Autocomplete, TextField } = MaterialUI;
-       import {MDCTextField} from '@material/textfield';
-
-       function App() {
-          // Options for the autocomplete
-          
-
-          return (
-            <div style={{ padding: '50px' }}>
-              <h2>MUI Autocomplete Select Box</h2>
-              <MDCTextField />
             </div>
-          );
-        }
-
-        // Render the App component in the 'root' div
-        ReactDOM.render(<App />, document.getElementById('hhi2'));
-      </script>
+        </div>
+    </button>
+    <label for="selected-switch" class="menu_font_style">Switch to Partner View</label>
+</div>
 
 
-    </script>
+  <script>
+    // Initialize the switch component
+    const switchElement = document.querySelector('.mdc-switch');
+    const label = document.querySelector('#switch-label');
+    let isChecked = false;
+
+    switchElement.addEventListener('click', function () {
+      // Toggle checked state
+      isChecked = !isChecked;
+
+      // Update aria-checked attribute
+      switchElement.setAttribute('aria-checked', isChecked);
+
+      // Toggle the "mdc-switch--selected" class
+      if (isChecked) {
+        switchElement.classList.add('mdc-switch--selected');
+        label.textContent = 'On';
+      } else {
+        switchElement.classList.remove('mdc-switch--selected');
+        label.textContent = 'Off';
+      }
+    });
+  </script>
+
 
 </body>
 

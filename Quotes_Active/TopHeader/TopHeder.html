@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+    <!-- MUI Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<link rel="stylesheet" href="./topHeader.css">
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid p-3">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <span>THE FUTURE OF BUYING ENERGY HERE!</span>
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+
+                        <!-- Switch buttons -->
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <button id="selected-switch-1" class="mdc-switch mdc-switch--selected" type="button"
+                                role="switch" aria-checked="true">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__handle-track">
+                                    <div class="mdc-switch__handle">
+                                        <div class="mdc-switch__shadow">
+                                            <div class="mdc-elevation-overlay"></div>
+                                        </div>
+                                        <div class="mdc-switch__ripple"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <label for="selected-switch-1" class="menu_font_style">Switch to Old Legacy</label>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <button id="selected-switch-2" class="mdc-switch mdc-switch--selected" type="button"
+                                role="switch" aria-checked="true">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__handle-track">
+                                    <div class="mdc-switch__handle">
+                                        <div class="mdc-switch__shadow">
+                                            <div class="mdc-elevation-overlay"></div>
+                                        </div>
+                                        <div class="mdc-switch__ripple"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <label for="selected-switch-2" class="menu_font_style">Switch to Partner View</label>
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%;" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                         <!-- Switch buttons -->
+                         <div class="d-flex justify-content-start align-items-center gap-2 mb-3">
+                            <button id="selected-switch-1" class="mdc-switch mdc-switch--selected" type="button"
+                                role="switch" aria-checked="true">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__handle-track">
+                                    <div class="mdc-switch__handle">
+                                        <div class="mdc-switch__shadow">
+                                            <div class="mdc-elevation-overlay"></div>
+                                        </div>
+                                        <div class="mdc-switch__ripple"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <label for="selected-switch-1" class="menu_font_style">Switch to Old Legacy</label>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center gap-2 mb-3">
+                            <button id="selected-switch-2" class="mdc-switch mdc-switch--selected" type="button"
+                                role="switch" aria-checked="true">
+                                <div class="mdc-switch__track"></div>
+                                <div class="mdc-switch__handle-track">
+                                    <div class="mdc-switch__handle">
+                                        <div class="mdc-switch__shadow">
+                                            <div class="mdc-elevation-overlay"></div>
+                                        </div>
+                                        <div class="mdc-switch__ripple"></div>
+                                    </div>
+                                </div>
+                            </button>
+                            <label for="selected-switch-2" class="menu_font_style">Switch to Partner View</label>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const overlay = document.getElementById("overlay");
+        const drawer = document.getElementById("drawer");
+
+        // Function to toggle drawer visibility
+        function toggleDrawer() {
+            if (!drawer.classList.contains("show")) {
+                drawer.classList.add("show");
+                overlay.style.display = "block"; // Show overlay
+            } else {
+                drawer.classList.remove("show");
+                overlay.style.display = "none"; // Hide overlay
+            }
+        }
+
+        // Show drawer on icon click
+        document.getElementById("show_drawer").onclick = (event) => {
+            event.stopPropagation(); // Prevent event bubbling
+            toggleDrawer();
+        };
+
+        // Hide drawer on overlay click
+        overlay.onclick = () => {
+            drawer.classList.remove("show");
+            overlay.style.display = "none"; // Hide overlay
+        };
+
+        // Hide drawer when clicking outside
+        document.body.onclick = (event) => {
+            if (drawer.classList.contains("show") && !drawer.contains(event.target) && event.target.id !== "show_drawer") {
+                drawer.classList.remove("show");
+                overlay.style.display = "none"; // Hide overlay
+            }
+        };
+    </script>
+
+
+    <!-- MUI scripts -->
+    <script>
+        // Initialize the first switch component
+        const switchElement1 = document.querySelector('#selected-switch-1');
+        let isChecked1 = false;
+    
+        switchElement1.addEventListener('click', function () {
+          isChecked1 = !isChecked1;
+          switchElement1.setAttribute('aria-checked', isChecked1);
+          if (isChecked1) {
+            switchElement1.classList.add('mdc-switch--selected');
+          } else {
+            switchElement1.classList.remove('mdc-switch--selected');
+          }
+        });
+    
+        // Initialize the second switch component
+        const switchElement2 = document.querySelector('#selected-switch-2');
+        let isChecked2 = false;
+    
+        switchElement2.addEventListener('click', function () {
+          isChecked2 = !isChecked2;
+          switchElement2.setAttribute('aria-checked', isChecked2);
+          if (isChecked2) {
+            switchElement2.classList.add('mdc-switch--selected');
+          } else {
+            switchElement2.classList.remove('mdc-switch--selected');
+          }
+        });
+      </script>
+    
+
+
+</body>
+
+</html>
