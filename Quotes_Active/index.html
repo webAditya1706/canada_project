@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./TopHeader/topHeader.css">
     <link rel="stylesheet" href="./sideBar/sideBar.css">
     <link rel="stylesheet" href="./MiddleHeader/MiddleHeader.css">
+    <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
 
 
     <!-- font faimily -->
@@ -46,70 +47,6 @@
     }
 </style>
 
-
-
-
-
-
-
-
-<!-- mddle Header -->
-
-<style>
-    #main_sidebar {
-        overflow-y: auto;
-    }
-
-    #main_sidebar .accordion {
-        margin-left: 10px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #main_sidebar .accordion-item {
-        border: none;
-    }
-
-    #main_sidebar .accordion-button {
-        padding: 5px 0px;
-        background: #fff !important;
-        border: none;
-        box-shadow: none;
-        color: #757575;
-        /* Default color when collapsed */
-        background-color: transparent;
-        /* Optional */
-        font-family: Poppins;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        /* 142.857% */
-        letter-spacing: -0.28px;
-    }
-
-    /* Change color when accordion is open (expanded) */
-    #main_sidebar .accordion-button:not(.collapsed) {
-        color: #007CBA;
-        /* Color when open */
-    }
-
-    /* Change SVG color when accordion is open (expanded) */
-    #main_sidebar .accordion-button:not(.collapsed) svg path {
-        fill: #007CBA;
-        /* Color when open */
-    }
-
-    /* Default SVG icon color when collapsed */
-    #main_sidebar .accordion-button svg path {
-        fill: #757575;
-        /* Default to #757575 */
-    }
-
-    #main_sidebar .accordion-body {
-        padding: 0px;
-    }
-</style>
 
 
 <body>
@@ -243,10 +180,6 @@
             </div>
         </div>
     </section>
-
-
-
-
 
 
     <!-- Side bar -->
@@ -468,144 +401,354 @@
         </div>
     </div>
 
-
-
-    <div class="content-area">
-        <div class="container-fluid w-100 py-3">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="d-flex align-items-center gap-3">
-                        <span class="mid_header_mian_title">Quot</span>
-                        <!-- select box -->
-                        <div class="mid_header_select">
-                            <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
-                                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox"
-                                    aria-expanded="false" aria-labelledby="dropdown-label">
-                                    <span class="mdc-select__selected-text-container">
-                                        <span id="dropdown-label" class="mdc-select__selected-text">Select an
-                                            option</span>
-                                    </span>
-                                    <span class="mdc-select__dropdown-icon">
-                                        <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
-                                            <polygon class="mdc-select__dropdown-icon-inactive" stroke="none"
-                                                fill-rule="evenodd" points="7 10 12 15 17 10"></polygon>
-                                            <polygon class="mdc-select__dropdown-icon-active" stroke="none"
-                                                fill-rule="evenodd" points="7 15 12 10 17 15"></polygon>
-                                        </svg>
-                                    </span>
-                                    <span class="mdc-notched-outline">
-                                        <span class="mdc-notched-outline__leading"></span>
-                                        <span class="mdc-notched-outline__trailing"></span>
-                                    </span>
-                                </div>
-
-                                <!-- Dropdown options -->
-                                <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">
-                                    <ul class="mdc-deprecated-list">
-                                        <li class="mdc-deprecated-list-item" role="option" tabindex="0"
-                                            aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Active</span>
-                                        </li>
-                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Option 2</span>
-                                        </li>
-                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Option 3</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-12 col-12">
-                    <div
-                        class="d-flex py-2 py-lg-0 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-3">
-                        <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="mid_selected-switch-1" class="mdc-switch mdc-switch--selected" type="button"
-                                role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="mid_selected-switch-1" class="middle_header_menu">My Quotes</label>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="mid_selected-switch-2" class="mdc-switch mdc-switch--selected" type="button"
-                                role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="mid_selected-switch-2" class="middle_header_menu">My referred quotes</label>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="selected-switch-3" class="mdc-switch mdc-switch--selected" type="button"
-                                role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="selected-switch-3" class="middle_header_menu">My team’s quotes</label>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="selected-switch-4" class="mdc-switch mdc-switch--selected" type="button"
-                                role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="selected-switch-4" class="middle_header_menu">Renewals</label>
-                        </div>
-                        <div class="d-flex justify-content-between align-items-center gap-3 mid_head_3rd_col">
-                            <button class="mdc-button mdc-button--raised email_btn">
-                                <span class="mdc-button__label">Email Text</span>
-                            </button>
-                            <button class="mdc-button mdc-button--raised">
-                                <img src="./assets/white_search_Icon.png" alt="Search Icon" />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- Qoutes Table -->
+<section class="content-area">
+    <div class="container-fluid">
+      <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+      <div class="row d-flex justify-content-between align-items-center py-2">
+        <div class="col-auto">
+          <span class="quotes_left_text"
+            >Your search results 15 out of 1441 quotes...</span
+          >
         </div>
+        <div class="col-auto">
+          <span class="quotes_right_text">Total Quotes: 1441</span>
+        </div>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="thead_bg">
+            <tr>
+              <th></th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">ID</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Legal Name on Contract</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Contact Name</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">CMDTY</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Valume</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Start Date</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">RM</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Due Date</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Due Date</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Due Date</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+              <th scope="col" class="text-center align-middle">
+                <div
+                  class="d-flex justify-content-center align-items-center gap-2"
+                >
+                  <span class="th_title">Due Date</span>
+                  <img
+                    src="./assets/auto_filter.png"
+                    alt="filter icon"
+                    style="margin-right: 5px"
+                  />
+                </div>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            <tr scope="row" class="tbody_row">
+              <td
+                class="text-center align-middle tb_Id d-flex justify-content-center align-items-center gap-2"
+                style="height: 55px"
+              >
+                <input
+                  type="checkbox"
+                  class="form-check-input table_check table_check"
+                  checked
+                />
+              </td>
+
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+              <td class="text-center align-middle tb_text">1</td>
+              <td class="text-center align-middle tb_text">John Doe</td>
+              <td class="text-center align-middle tb_text">john@example.com</td>
+              <td class="text-center align-middle tb_text">2023-10-09</td>
+            </tr>
+            
+            
+          </tbody>
+        </table>
+      </div>
+      
     </div>
+  </section>
     <!-- Overlay -->
     <div class="overlay_mainsidebar">
     </div>
-
-
-
-
-
-
 
 
     <script src="./sideBar/SideBarScript.js"></script>

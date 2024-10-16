@@ -252,4 +252,9 @@
         #open_main_sidebar:hover + #main_sidebar {
             left: 0; /* Slide sidebar in on hover */
         }
+
+        .accordion-button::after {
+            background-size: 0.8rem;
+        }
+
     
