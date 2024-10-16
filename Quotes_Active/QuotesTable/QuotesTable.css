@@ -1,237 +1,420 @@
 /* Section Quotes Table Style */
+.quotes_table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
 .quotes_left_text {
-    color: #0193ce;
-    font-family: Poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 13px;
-    /* 100% */
-  }
-  
-  .quotes_right_text {
-    color: #606060;
-    font-family: Poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 13px;
-    /* 100% */
-  }
-  
-  /* table text */
-  
-  
-  th span {
-    color: #000;
-    font-family: Inter;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px; /* 138.462% */
-  }
-  
-  td span {
-    color: #393939;
-    font-family: Poppins;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px; /* 123.077% */
-  }
-  
-  
-  
-  /* table csss */
-  
-  
-  .thead_bg {
-    background-color: #f5f5f5;
-    height: 55px;
-  }
-  
-  .tbody_row {
-    height: 55px;
-  }
-  
-  .th_title {
-    color: #000;
-    font-family: Inter;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    /* 138.462% */
-  }
-  
-  .tb_text {
-    color: #000;
-    font-family: Inter;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    /* 123.077% */
-  }
-  
-  .tb_Id {
-    color: #000;
-    font-family: Inter;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 13px;
-    /* 100% */
-    text-decoration-line: underline;
-  }
-  
-  
-  /* th style */
-  th:first-child{
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    background-color: #f5f5f5;
-  }
-  
-  th:last-child {
-    position: sticky !important;
-    right: 0 !important;
-    z-index: 2;
-    background-color: #f5f5f5;
-  }
-  
-  
-  
-  /* td style */
-  td:first-child {
-    position: sticky;
-    left: 0;
-    z-index: 2;
-    background-color: inherit;
-  }
-  
-  
-  td:last-child {
-    position: sticky !important;
-    right: 0 !important;
-    z-index: 2;
-    background-color: inherit;
-  }
-  
-  
-  
-  /* handle last child border */
-  th:last-child::after,
-  td:last-child::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #f1f1f1;
-    position: absolute;
-    right: -1px;
-    top: 0;
-  }
-  
-  
-  
-  /* handle first child border */
-  th:first-child::after,
-  td:first-child::after {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #f1f1f1;
-    position: absolute;
-    left: -1px;
-    top: 0;
-  }
-  
-  
-  td.position-relative {
-    position: relative;
-  }
-  
-  .accordion-button::after {
-    background-size: 1rem;
-  }
-  
-  
-  
-  
-  .table_check {
-    width: 18px;
-    height: 18px;
-  }
-  
-  tbody tr:nth-child(odd) {
-    background-color: #f4fff3;
-  }
-  
-  /* Style for even rows */
-  tbody tr:nth-child(even) {
-    background-color: #fffcf4;
-  }
-  
-  th,
-  td {
-    min-width: 250px;
-  }
-  
-  th {
-    border-right: 1px dashed red;
-    border-left: 0px;
-  }
-  
-  thead tr th:first-child {
-    border-right: 0px;
-  }
-  
-  thead tr th:nth-last-child(2) {
-    border-right: 0px;
-  }
-  
-  th {
-    border-right: 1px dashed red;
-    border-left: 0px;
-  }
-  
-  td {
-    border-right: 1px dashed red;
-    border-left: 0;
-  }
-  
-  tbody tr td:nth-last-child(2) {
-    border-right: 0px;
-  }
-  
-  tbody tr {
-    border: 1px dashed red;
-  }
-  
-  tbody tr:last-child {
-    border-bottom: 1px solid red;
-  }
-  
-  th:first-child::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #f1f1f1;
-    border-right: 1px dashed red;
-    position: absolute;
-    right: 0px;
-    top: 0;
-  }
-  
-  th:last-child::before, td:last-child::before {
-    content: "";
-    width: 2px;
-    height: 100%;
-    background: #f1f1f1;
-    border-right: 1px dashed red;
-    position: absolute;
-    left: 0px;
-    top: 0;
-  }
+  color: #757575;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+}
+
+.quotes_right_text {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+}
+
+/* table text */
+
+
+.quotes_table th span {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 138.462% */
+}
+
+.quotes_table td span {
+  color: #393939;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 123.077% */
+}
+
+
+
+/* table csss */
+
+
+.quotes_table .thead_bg {
+  background-color: #f5f5f5;
+  height: 55px;
+}
+
+.quotes_table .tbody_row {
+  height: 55px;
+}
+
+.quotes_table .th_title {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  /* 138.462% */
+}
+
+.quotes_table .tb_text {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 123.077% */
+}
+
+.quotes_table .tb_Id {
+  color: #000;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 13px;
+  /* 100% */
+  text-decoration-line: underline;
+}
+
+
+/* th style */
+.quotes_table th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: #f5f5f5;
+}
+
+.quotes_table th:last-child {
+  position: sticky !important;
+  right: 0 !important;
+  z-index: 2;
+  background-color: #f5f5f5;
+}
+
+
+
+/* td style */
+.quotes_table td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background-color: inherit;
+}
+
+
+.quotes_table td:last-child {
+  position: sticky !important;
+  right: 0 !important;
+  z-index: 2;
+  background-color: inherit;
+}
+
+
+
+/* handle last child border */
+.quotes_table th:last-child::after,
+.quotes_table td:last-child::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+
+
+
+/* handle first child border */
+.quotes_table th:first-child::after,
+.quotes_table td:first-child::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+
+.quotes_table td.position-relative {
+  position: relative;
+}
+
+
+
+
+.quotes_table .table_check {
+  width: 18px;
+  height: 18px;
+}
+
+.quotes_table tbody tr:nth-child(odd) {
+  background-color: #f4fff3;
+}
+
+/* Style for even rows */
+.quotes_table tbody tr:nth-child(even) {
+  background-color: #fffcf4;
+}
+
+
+.quotes_table th {
+  border-right: 1px dashed #AFAFAF;
+  border-left: 0px;
+}
+
+.quotes_table thead tr th:first-child {
+  border-right: 0px;
+}
+
+.quotes_table thead tr th:nth-last-child(2) {
+  border-right: 0px;
+}
+
+.quotes_table th {
+  border-right: 1px dashed #AFAFAF;
+  border-left: 0px;
+}
+
+.quotes_table td {
+  border-right: 1px dashed #AFAFAF;
+  border-left: 0;
+}
+
+.quotes_table tbody tr td:nth-last-child(2) {
+  border-right: 0px;
+}
+
+.quotes_table tbody tr {
+  border: 1px dashed #AFAFAF;
+}
+
+.quotes_table tbody tr:last-child {
+  border-bottom: 1px solid #AFAFAF;
+}
+
+.quotes_table th:first-child::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  border-right: 1px dashed #AFAFAF;
+  position: absolute;
+  right: 1px;
+  top: 0;
+}
+
+.quotes_table th:last-child::before,
+td:last-child::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  border-right: 1px dashed #AFAFAF;
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+
+
+/* td width */
+
+/* Make first and last columns 70px */
+.quotes_table th:first-child,
+.quotes_table td:first-child {
+  width: 50px !important;
+  min-width: 50px !important;
+  /* Ensure this width is not overridden */
+}
+
+.quotes_table th:last-child,
+.quotes_table td:last-child {
+  width: 16px !important;
+  min-width: 16px !important;
+  /* Ensure this width is not overridden */
+}
+
+/* Ensure other columns have a min-width of 150px */
+.quotes_table th:not(:first-child):not(:last-child),
+.quotes_table td:not(:first-child):not(:last-child) {
+  min-width: 150px;
+}
+
+.quotes_table th,
+.quotes_table td {
+  padding: 0px 15px;
+}
+
+.quotes_table td:last-child{
+  padding: 0px;
+}
+
+.quotes_table td button {
+  border: none;
+  width: 100% !important;
+  /* padding: 3px; */
+  background-color: transparent;
+}
+
+/* hide scrollbar  */
+
+.quotes_table {
+  overflow-x: auto;
+  position: relative;
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+.quotes_table::-webkit-scrollbar {
+  display: none;
+  /* Hides scrollbar */
+}
+
+/* Hide scrollbar for Firefox */
+.quotes_table {
+  scrollbar-width: none;
+  /* Hides scrollbar */
+}
+
+/* Optional: Prevent the table from overflowing vertically, if necessary */
+.quotes_table {
+  overflow-y: hidden;
+}
+
+
+
+/* qoute pagination */
+
+.quotes_pagi .pagi_text {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  /* 116.667% */
+}
+
+.quotes_pagi select {
+  width: 60px;
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  /* 125% */
+}
+
+.quotes_pagi .form-select {
+  background-size: 15px 8px;
+}
+
+
+.quotes_pagi .page-link {
+  color: #757575;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+.quotes_pagi .pagi_active {
+  color: #007CBA;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 14px;
+}
+
+/* Qoute Modal CSS */
+
+.qoute_modal{
+  width: 312px;
+  height: 100vh;
+}
+.filter_body{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+}
+.input-group .form-control {
+  padding-left: 40px; /* Adds space to the left for the icon */
+}
+
+.input-group-text {
+  background: transparent;
+  border: none;
+  position: absolute;
+  left: 10px;
+  z-index: 10;
+  color: #888;
+}
+
+.form-control {
+  position: relative;
+}
+
+.qoute_search{
+  position: relative;
+}
+
+.qoute_search .bi-search{
+  position: absolute;
+  top: 6px;
+  left: 13px;
+  z-index: 1;
+}
+.qoute_filter_title{
+  color: #131313;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px; /* 100% */
+  letter-spacing: -0.28px;
+}
+
+.filter_title{
+  color: #131313;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 123.077% */
+}
+
+.filter_title_active{
+  color: #131313;
+font-family: Poppins;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 123.077% */
+}
+
+.qoute_search input{
+  padding: 5px 15px 5px 40px ;
+}
+
