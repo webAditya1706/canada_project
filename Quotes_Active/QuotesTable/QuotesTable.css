@@ -2,7 +2,16 @@
 .quotes_table {
   border-collapse: collapse;
   width: 100%;
+
 }
+
+.quotes_table {
+  table-layout: auto;
+  /* Allow table to resize based on content */
+  width: 100%;
+  /* Table takes full width */
+}
+
 
 .quotes_left_text {
   color: #757575;
@@ -46,7 +55,6 @@
   line-height: 16px;
   /* 123.077% */
 }
-
 
 
 /* table csss */
@@ -93,7 +101,9 @@
 }
 
 
-/* th style */
+/* position sticky style */
+
+
 .quotes_table th:first-child {
   position: sticky;
   left: 0;
@@ -109,8 +119,8 @@
 }
 
 
-
 /* td style */
+
 .quotes_table td:first-child {
   position: sticky;
   left: 0;
@@ -127,39 +137,26 @@
 }
 
 
-
-/* handle last child border */
-.quotes_table th:last-child::after,
-.quotes_table td:last-child::after {
-  content: "";
-  width: 2px;
-  height: 100%;
-  background: #f1f1f1;
-  position: absolute;
-  right: -1px;
-  top: 0;
+.quotes_table td:nth-child(2) {
+  position: sticky;
+  left: 50px;
+  /* Adjust based on the width of the first column */
+  z-index: 2;
+  background-color: inherit;
 }
 
-
-
-/* handle first child border */
-.quotes_table th:first-child::after,
-.quotes_table td:first-child::after {
-  content: "";
-  width: 2px;
-  height: 100%;
-  background: #f1f1f1;
-  position: absolute;
-  left: -1px;
-  top: 0;
+.quotes_table th:nth-child(2) {
+  position: sticky;
+  left: 50px;
+  /* Adjust based on the width of the first column */
+  z-index: 2;
+  background-color: #f1f1f1;
 }
 
 
 .quotes_table td.position-relative {
   position: relative;
 }
-
-
 
 
 .quotes_table .table_check {
@@ -175,6 +172,9 @@
 .quotes_table tbody tr:nth-child(even) {
   background-color: #fffcf4;
 }
+
+
+/* border style */
 
 
 .quotes_table th {
@@ -223,6 +223,9 @@
   top: 0;
 }
 
+
+/* after before style */
+
 .quotes_table th:last-child::before,
 td:last-child::before {
   content: "";
@@ -235,6 +238,55 @@ td:last-child::before {
   top: 0;
 }
 
+
+td:nth-child(2):before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  border-right: 1px dashed #AFAFAF;
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+
+th:nth-child(2):before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  border-right: 1px dashed #AFAFAF;
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+
+
+/* handle last child border */
+.quotes_table th:last-child::after,
+.quotes_table td:last-child::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  right: -1px;
+  top: 0;
+}
+
+
+
+/* handle first child border */
+.quotes_table th:first-child::after,
+.quotes_table td:first-child::after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
 
 /* td width */
 
@@ -257,16 +309,34 @@ td:last-child::before {
 .quotes_table th:not(:first-child):not(:last-child),
 .quotes_table td:not(:first-child):not(:last-child) {
   min-width: 150px;
+  max-width: 350px;
+}
+
+td span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .quotes_table th,
 .quotes_table td {
-  padding: 0px 15px;
+  padding: 0px 15px; /* Apply padding to all table headers and cells */
 }
 
-.quotes_table td:last-child{
-  padding: 0px;
+.quotes_table th:last-child,
+.quotes_table td:last-child {
+  padding: 0px; /* Remove the right padding for the last child */
+  margin: 0px;
 }
+
+.quotes_table td .btn-group button{
+  width: 100%;
+  height: 100%;
+}
+
 
 .quotes_table td button {
   border: none;
@@ -299,6 +369,88 @@ td:last-child::before {
   overflow-y: hidden;
 }
 
+
+
+
+
+
+/* drop down click on three dot */
+
+.quotes_table .dropdown-menu .table_drop_li_btn {
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+  padding: 0px 15px;
+}
+
+.table_drop_li_btn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #393939;
+  /* Default text color */
+  transition: background-color 0.3s, color 0.3s;
+  /* Smooth transition */
+}
+
+.table_drop_li_btn span {
+  color: #131313;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  /* 84.615% */
+}
+
+.table_drop_li_btn:hover {
+  background-color: #E2F5FF;
+  /* Background on hover */
+  color: #fff;
+  /* Text color on hover */
+}
+
+.table_drop_li_btn:hover span {
+  color: #007CBA;
+  /* Text color for active item */
+
+}
+
+.table_drop_li_btn:hover svg {
+  fill: #007CBA;
+}
+
+.table_drop_li_btn svg {
+  margin-right: 8px;
+  /* Space between icon and text */
+}
+
+.active svg {
+  fill: #007CBA;
+}
+
+.active span {
+  color: #007CBA;
+  /* Text color for active item */
+}
+
+.active {
+  background-color: #E2F5FF;
+  /* Background for active item */
+  color: #007CBA;
+  /* Text color for active item */
+}
+
+td {
+  word-wrap: break-word;
+  /* Break long words */
+  white-space: normal;
+  /* Allow wrapping */
+}
+
+
+
+/*  */
 
 
 /* qoute pagination */
@@ -338,6 +490,13 @@ td:last-child::before {
   line-height: 14px;
 }
 
+.quotes_pagi .arrow_div {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+
 .quotes_pagi .pagi_active {
   color: #007CBA;
   font-family: Poppins;
@@ -346,75 +505,3 @@ td:last-child::before {
   font-weight: 600;
   line-height: 14px;
 }
-
-/* Qoute Modal CSS */
-
-.qoute_modal{
-  width: 312px;
-  height: 100vh;
-}
-.filter_body{
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 5px;
-}
-.input-group .form-control {
-  padding-left: 40px; /* Adds space to the left for the icon */
-}
-
-.input-group-text {
-  background: transparent;
-  border: none;
-  position: absolute;
-  left: 10px;
-  z-index: 10;
-  color: #888;
-}
-
-.form-control {
-  position: relative;
-}
-
-.qoute_search{
-  position: relative;
-}
-
-.qoute_search .bi-search{
-  position: absolute;
-  top: 6px;
-  left: 13px;
-  z-index: 1;
-}
-.qoute_filter_title{
-  color: #131313;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 14px; /* 100% */
-  letter-spacing: -0.28px;
-}
-
-.filter_title{
-  color: #131313;
-font-family: Poppins;
-font-size: 13px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 123.077% */
-}
-
-.filter_title_active{
-  color: #131313;
-font-family: Poppins;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 123.077% */
-}
-
-.qoute_search input{
-  padding: 5px 15px 5px 40px ;
-}
-

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./MiddleHeader.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
@@ -33,7 +33,7 @@
         }
 
         .mid_head_3rd_col .email_btn {
-            color:  #FFF;
+            color: #FFF;
             text-align: center;
             font-family: Poppins;
             font-size: 14px;
@@ -47,7 +47,7 @@
 </head>
 
 <body>
-    <section class="py-2">
+    <section class="">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
                 <div class="col-12 col-md-12 col-lg-3">
@@ -56,14 +56,18 @@
                         <!-- select box -->
                         <div class="mid_header_select">
                             <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
-                                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="dropdown-label">
+                                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox"
+                                    aria-expanded="false" aria-labelledby="dropdown-label">
                                     <span class="mdc-select__selected-text-container">
-                                        <span id="dropdown-label" class="mdc-select__selected-text">Select an option</span>
+                                        <span id="dropdown-label" class="mdc-select__selected-text">Select an
+                                            option</span>
                                     </span>
                                     <span class="mdc-select__dropdown-icon">
                                         <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
-                                            <polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd" points="7 10 12 15 17 10"></polygon>
-                                            <polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd" points="7 15 12 10 17 15"></polygon>
+                                            <polygon class="mdc-select__dropdown-icon-inactive" stroke="none"
+                                                fill-rule="evenodd" points="7 10 12 15 17 10"></polygon>
+                                            <polygon class="mdc-select__dropdown-icon-active" stroke="none"
+                                                fill-rule="evenodd" points="7 15 12 10 17 15"></polygon>
                                         </svg>
                                     </span>
                                     <span class="mdc-notched-outline">
@@ -71,11 +75,12 @@
                                         <span class="mdc-notched-outline__trailing"></span>
                                     </span>
                                 </div>
-    
+
                                 <!-- Dropdown options -->
                                 <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">
                                     <ul class="mdc-deprecated-list">
-                                        <li class="mdc-deprecated-list-item" role="option" tabindex="0" aria-selected="false">
+                                        <li class="mdc-deprecated-list-item" role="option" tabindex="0"
+                                            aria-selected="false">
                                             <span class="mdc-deprecated-list-item__ripple"></span>
                                             <span class="mdc-deprecated-list-item__text">Active</span>
                                         </li>
@@ -94,82 +99,128 @@
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-12 col-12">
-                    <div class="d-flex py-3 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-3">
+                    <div
+                        class="d-flex py-3 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-3">
                         <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="mid_selected-switch-1" class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="mid_selected-switch-1" class="middle_header_menu">My Quotes</label>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    Quotes</label>
+                            </div>
+
                         </div>
                         <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="mid_selected-switch-2" class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="mid_selected-switch-2" class="middle_header_menu">My referred quotes</label>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    referred quotes</label>
+                            </div>
+
                         </div>
                         <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="selected-switch-3" class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="selected-switch-3" class="middle_header_menu">My team’s quotes</label>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    team's quotes</label>
+                            </div>
+
                         </div>
                         <div class="d-flex justify-content-center align-items-center gap-1">
-                            <button id="selected-switch-4" class="mdc-switch mdc-switch--selected" type="button" role="switch" aria-checked="true">
-                                <div class="mdc-switch__track"></div>
-                                <div class="mdc-switch__handle-track">
-                                    <div class="mdc-switch__handle">
-                                        <div class="mdc-switch__shadow">
-                                            <div class="mdc-elevation-overlay"></div>
-                                        </div>
-                                        <div class="mdc-switch__ripple"></div>
-                                    </div>
-                                </div>
-                            </button>
-                            <label for="selected-switch-4" class="middle_header_menu">Renewals</label>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label middle_header_menu"
+                                    for="flexSwitchCheckDefault">Renewals</label>
+                            </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center gap-3 mid_head_3rd_col">
-                            <button class="mdc-button mdc-button--raised email_btn">
+                            <button type="button" class="btn theme_bg_color">
                                 <span class="mdc-button__label">Email Text</span>
                             </button>
-                            <button class="mdc-button mdc-button--raised">
-                                <img src="../../assets/white_search_Icon.png" alt="Search Icon" />
+                            <button type="button" class="btn theme_bg_color" data-bs-toggle="offcanvas"
+                                data-bs-target="#quote_drawer" aria-controls="quote_drawer">
+
+                                <img src="../assets/white_search_Icon.png" alt="Search Icon" />
                             </button>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Search click Model open -->
+
+        <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer"
+            aria-labelledby="quoteDrawerLabel">
+            <!-- <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="quoteDrawerLabel">Drawer Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div> -->
+            <div class="offcanvas-body">
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
+                    <div class="qoute_search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search...">
+                    </div>
+                </div>
+                <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+                <div class="filter_body mt-3">
+                    <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled"
+                            checked>
+                        <label class="form-check-label filter_title_active" for="flexRadioDisabled">
+                            All Filters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled">
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Customer / Legal Name on Contract
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled">
+                        <label class="form-check-label filter_title" for="flexRadioDisabled">
+                            Account Number
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled">
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Contact Name
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled">
+                        <label class="form-check-label filter_title" for="flexRadioDisabled">
+                            Commodity
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled">
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Quote ID
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    
 
 
 
 
-   <script src="./MidHeaderScript.js"></script>
+<script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./MidHeaderScript.js"></script>
 </body>
 
 </html>

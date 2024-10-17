@@ -133,7 +133,7 @@
             margin-right: 10px;
         }
 
-        .show_side_bar .menu_parent {
+         .menu_parent {
             display: flex;
             flex-direction: column;
             padding: 10px;
@@ -253,8 +253,9 @@
             left: 0; /* Slide sidebar in on hover */
         }
 
-        .accordion-button::after {
-            background-size: 0.8rem;
+        #main_sidebar .accordion-button::after {
+            background-size: 8px 22px;
+
         }
 
     

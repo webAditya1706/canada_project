@@ -5,7 +5,9 @@
     font-family: 'Inter', sans-serif;
 
 }
-
+.theme_bg_color{
+    background-color: #007CBA;
+}
 .header_logo {
     width: 65px;
     height: 28px;
