@@ -5,22 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css-files/mainCssfile.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-
 
   <!-- MUI Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-  <link rel="stylesheet" href="./TopHeader/topHeader.css">
+<!-- external css files -->
+  <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
   <link rel="stylesheet" href="./sideBar/sideBar.css">
-  <link rel="stylesheet" href="./assets/css-files/MiddleHeader.css">
+  <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
   <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
-<link rel="stylesheet" href="./assets/css-files/btn-css.css">
+  <link rel="stylesheet" href="../assets/css-files/btn-css.css">
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
   <!-- font faimily -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -38,9 +38,9 @@
         <div class="col-12 col-lg-6">
           <div class="header_container">
             <div class="d-flex gap-2">
-              <img src="./assets/logo.png" alt="Logo" class="header_logo" />
+              <img src="../assets/logo.png" alt="Logo" class="header_logo" />
               <div class="header_bg_text">
-                <img src="./assets/banner_img.png" alt="" class="header_banner">
+                <img src="../assets/banner_img.png" alt="" class="header_banner">
                 <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
               </div>
             </div>
@@ -79,7 +79,7 @@
                             <span class="menu_font_style">Switch to Partner View</span>
                         </div> -->
             <div class="d-flex align-items-center gap-1">
-              <img src="./assets/user.png" class="user_image" alt="User Icon" />
+              <img src="../assets/user.png" class="user_image" alt="User Icon" />
               <div>
                 <p class="user_name">Welcome, Alon</p>
                 <p class="user_email">alon@demomail.com</p>
@@ -91,7 +91,7 @@
         <!-- Drawer Menu -->
         <div class="drawer" id="drawer" style="z-index: 999;">
           <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-            <img src="./assets/logo.png" alt="Logo" class="header_logo mt-2" />
+            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
             <hr style="height: 1px; width: 100%;" />
           </div>
 
@@ -112,7 +112,7 @@
 
             <div class="d-flex align-items-center gap-1 mb-2">
               <div class="d-flex align-items-center gap-1">
-                <img src="./assets/user.png" class="user_image" alt="User Icon" />
+                <img src="../assets/user.png" class="user_image" alt="User Icon" />
                 <div>
                   <p class="user_name">Welcome, Alon</p>
                   <p class="user_email">alon@demomail.com</p>
@@ -191,7 +191,7 @@
   <div id="main_sidebar">
     <div>
       <div class="d-flex justify-content-center">
-        <img src="./assets/logo.png" alt="Logo" class="header_logo mt-3" />
+        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
 
       </div>
       <hr style="height: 2px; background-color: #ddd; width: 100%;" />
@@ -357,6 +357,7 @@
           <div class="d-flex align-items-center gap-1">
             <span class="mid_header_mian_title">Quot</span>
             <!-- select box -->
+             
             <div class="mid_header_select">
               <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
                 <div class="mdc-select__anchor" role="button" aria-haspopup="listbox" aria-expanded="false"
@@ -440,7 +441,7 @@
             <div class="d-flex justify-content-between align-items-center gap-3 mid_head_3rd_col">
               <div class="them_btn_container">
                 <button class="theme_primary_btn">Email Text</button>
-            </div>
+              </div>
               <!-- <button type="button" class="btn  ">
                 <span class="mdc-button__label">Email Text</span>
               </button> -->
@@ -448,15 +449,15 @@
                 <span class="mdc-button__label">Email Text</span>
               </button> -->
               <div class="them_btn_container" type="button" data-bs-toggle="offcanvas" data-bs-target="#quote_drawer"
-              aria-controls="quote_drawer">
-              <button class="theme_primary_btn">
+                aria-controls="quote_drawer">
+                <button class="theme_primary_btn">
 
-                <img src="./assets/white_search_Icon.png" alt="Search Icon" class="mid_head_search" />
-              </button>
-            </div>
+                  <img src="../assets/white_search_Icon.png" alt="Search Icon" class="mid_head_search" />
+                </button>
+              </div>
               <!-- <button type="button" class="btn theme_bg_color" data-bs-toggle="offcanvas" data-bs-target="#quote_drawer"
                 aria-controls="quote_drawer">
-                <img src="./assets/white_search_Icon.png" alt="Search Icon" />
+                <img src="../assets/white_search_Icon.png" alt="Search Icon" />
               </button> -->
 
             </div>
@@ -546,73 +547,73 @@
               <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">ID</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_130 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Legal Name on Contract</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_110 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Contact Name</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title ">CMDTY</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Valume</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Start Date</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">RM</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">New Business</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Due Date</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2 td_w_50">
                   <span class="th_title">ST</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">Utility</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text">
                 <div class="d-flex justify-content-center align-items-center gap-2">
                   <span class="th_title">No. of Accts.</span>
-                  <img src="./assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
                 </div>
               </th>
               <th scope="col" class=" align-middle table_head_bg">
@@ -637,19 +638,39 @@
                 <div>C-002 34 xx</div>
                 <div class="sub_table_text mt-1">(Qut Nick Name)</div>
               </td>
-              <td class=" align-middle tb_text td_w_110"><div>Customer 2</div></td>
-              <td class=" align-middle tb_text td_w_100"><div>Electric</div></td>
-              <td class=" align-middle tb_text"><div>100,000
-                THERMS/CCF</div></td>
-              <td class=" align-middle tb_text"><div>09/2024</div></td>
+              <td class=" align-middle tb_text td_w_110">
+                <div>Customer 2</div>
+              </td>
+              <td class=" align-middle tb_text td_w_100">
+                <div>Electric</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div>100,000
+                  THERMS/CCF</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div>09/2024</div>
+              </td>
 
-              <td class=" align-middle tb_text"><div>Albertc Sasson</div></td>
-              <td class=" align-middle tb_text"><div>Yes</div></td>
-              <td class=" align-middle tb_text"><div>9/18/24</div></td>
+              <td class=" align-middle tb_text">
+                <div>Albertc Sasson</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div>Yes</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div>9/18/24</div>
+              </td>
 
-              <td class=" align-middle tb_text"><div>NY</div></td>
-              <td class=" align-middle tb_text"><div class="one_line_ellipsis">CONECTIV- CONECTIV</div></td>
-              <td class=" align-middle tb_text"><div>900</div></td>
+              <td class=" align-middle tb_text">
+                <div>NY</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div class="one_line_ellipsis">CONECTIV- CONECTIV</div>
+              </td>
+              <td class=" align-middle tb_text">
+                <div>900</div>
+              </td>
               <td class=" align-middle tb_text">
                 <div class="btn-group dropstart" type="button">
                   <button type="button" class="px-2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -720,7 +741,7 @@
               <td class=" align-middle tb_text td_w_110"><span>Customer 2</span></td>
               <td class=" align-middle tb_text td_w_100"><span>Electric</span></td>
               <td class=" align-middle tb_text"><span>100,000
-                THERMS/CCF</span></td>
+                  THERMS/CCF</span></td>
               <td class=" align-middle tb_text"><span>09/2024</span></td>
 
               <td class=" align-middle tb_text"><span>Albertc Sasson</span></td>
@@ -784,7 +805,7 @@
 
               </td>
             </tr>
-           
+
           </tbody>
         </table>
       </div>
@@ -805,7 +826,8 @@
         <div class="col-6">
           <div class="d-flex justify-content-end align-items-center gap-2">
             <div class="arrow_div">
-              <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                fill="none">
                 <path
                   d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
                   fill="#757575" />
@@ -837,7 +859,7 @@
   <script src="./sideBar/SideBarScript.js"></script>
   <script src="./MiddleHeader/MidHeaderScript.js"></script>
   <script src="./TopHeader/topheaderScript.js"></script>
-<script src="./assets/js-files/btn-ripple.js"></script>
+  <script src="../assets/js-files/btn-ripple.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
   <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
