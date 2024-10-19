@@ -36,15 +36,6 @@
 /* table text */
 
 
-.quotes_table th span {
-  color: #000;
-  font-family: Inter;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  /* 138.462% */
-}
 
 .quotes_table td span {
   color: #393939;
@@ -69,15 +60,6 @@
   height: 55px;
 }
 
-.quotes_table .th_title {
-  color: #000;
-  font-family: Inter;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  /* 138.462% */
-}
 
 .quotes_table .tb_text {
   color: #000;
@@ -162,15 +144,6 @@
 .quotes_table .table_check {
   width: 18px;
   height: 18px;
-}
-
-.quotes_table tbody tr:nth-child(odd) {
-  background-color: #f4fff3;
-}
-
-/* Style for even rows */
-.quotes_table tbody tr:nth-child(even) {
-  background-color: #fffcf4;
 }
 
 
@@ -291,12 +264,12 @@ th:nth-child(2):before {
 /* td width */
 
 /* Make first and last columns 70px */
-.quotes_table th:first-child,
+/* .quotes_table th:first-child,
 .quotes_table td:first-child {
   width: 50px !important;
   min-width: 50px !important;
   /* Ensure this width is not overridden */
-}
+} */
 
 .quotes_table th:last-child,
 .quotes_table td:last-child {
@@ -306,20 +279,13 @@ th:nth-child(2):before {
 }
 
 /* Ensure other columns have a min-width of 150px */
-.quotes_table th:not(:first-child):not(:last-child),
+/* .quotes_table th:not(:first-child):not(:last-child),
 .quotes_table td:not(:first-child):not(:last-child) {
   min-width: 150px;
   max-width: 350px;
-}
+} */
 
-td span {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
-}
 
 .quotes_table th,
 .quotes_table td {

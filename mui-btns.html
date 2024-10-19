@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material-UI Style Button</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <div class="them_btn_container">
+        <button class="theme_primary_btn">Primary Button</button>
+    </div>
+    <div class="them_btn_container">
+        <button class="theme_secondary_btn">Secondary Button</button>
+    </div>
+    <div class="them_btn_container">
+        <button class="theme_outline_btn">Outline Button</button>
+    </div>
+    <div class="them_btn_container">
+        <button class="theme_dark_btn">Dark Button</button>
+    </div>
+
+    <script>
+        function addRippleEffect(e) {
+            const ripple = document.createElement("span");
+            const button = e.currentTarget;
+            const rect = button.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+
+            ripple.style.width = ripple.style.height = `${size}px`;
+            ripple.style.left = `${x}px`;
+            ripple.style.top = `${y}px`;
+            ripple.classList.add("ripple");
+
+            button.appendChild(ripple);
+            ripple.addEventListener("animationend", () => {
+                ripple.remove();
+            });
+        }
+
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener("click", addRippleEffect);
+        });
+    </script>
+</body>
+
+</html>

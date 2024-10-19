@@ -1,12 +1,7 @@
 /* Ensure no horizontal scrolling */
-body {
-    overflow-x: hidden;
-    /* Hide horizontal scroll */
-    margin: 0;
-    padding: 0;
-}
 
-.top_header_secction{
+
+.top_header_secction {
     border-bottom: 1px solid #ddd;
 }
 
@@ -69,7 +64,8 @@ body {
     background: #fff;
     /* Drawer background color */
     width: 100vw;
-    max-width: 250px; /* Increased max-width for better space */
+    max-width: 250px;
+    /* Increased max-width for better space */
     height: 100vh;
     transition: transform 0.3s ease;
     pointer-events: none;
@@ -107,4 +103,19 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 30px;
+}
+
+.menu_font_style {
+    color: var(--primary_text_color);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    /* 100% */
+}
+
+.header_banner {
+    width: 234px;
+    height: 30px;
 }
