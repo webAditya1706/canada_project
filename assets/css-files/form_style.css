@@ -1,0 +1,45 @@
+
+.date_picker_icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    z-index: 2;
+  }
+  
+  .form_unit_text{
+    color: var(--Grey, #757575);
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13px;
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .form_upload_button{
+    position: absolute;
+    top: 15px;
+    right: 4px;
+    z-index: 2;
+  }
+
+  .customer_site_btn{
+    width: 210px;
+    position: absolute;
+    top: 10px;
+    right: -12px;
+    z-index: 2;
+  }
+
+  .text_area_custom_margin{
+    margin-top: -6px;
+  }
+
+  .search_002{
+    width: 15px;
+  }

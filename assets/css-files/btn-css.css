@@ -38,10 +38,10 @@
 /* Secondary Button */
 .theme_secondary_btn {
     position: relative;
-    padding: 12px 24px;
+    padding: 7px 15px;
     border: none;
     border-radius: 4px;
-    background-color: #03dac5;
+    background-color: var(--primary_bg_color);
     /* Secondary color */
     color: white;
     font-size: 16px;
@@ -63,15 +63,15 @@
 /* Outline Button */
 .theme_outline_btn {
     position: relative;
-    padding: 12px 24px;
-    border: 2px solid #6200ea;
+    padding: 7px 15px;
+    border: 1px solid var(--Theme);
     /* Outline color */
     border-radius: 4px;
-    background-color: transparent;
-    /* No background */
-    color: #6200ea;
+    background-color: var(--outline_bg);
+    font-family: Poppins;
+    color: var(--primary_bg_color);
     /* Primary color for text */
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
     overflow: hidden;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
@@ -91,7 +91,7 @@
 /* Dark Button */
 .theme_dark_btn {
     position: relative;
-    padding: 12px 24px;
+    padding: 7px 15px;
     border: none;
     border-radius: 4px;
     background-color: #333;
