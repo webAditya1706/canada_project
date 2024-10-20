@@ -9,6 +9,7 @@
   --table_evan_color: #b12525;
   --table_odd_color: #b12525;
   --outline_bg : #007cba21;
+  --incomplete-bar: #F00;
 }
 
 
@@ -169,6 +170,15 @@ td span {
   /* 123.077% */
 }
 
+.table_td_text_red{
+  color: var(--incomplete-bar) !important;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
 .sub_table_text {
   color: var(--Grey, var(--grey-600, #757575));
   font-family: Poppins;
@@ -280,7 +290,6 @@ td span {
 
 .form_text_field {
   height: 40px;
-  background-color: #F7F7F7;
   color: var(--Primary, #131313);
   font-family: Poppins;
   font-size: 13px;
@@ -288,6 +297,10 @@ td span {
   font-weight: 400;
   line-height: 13px;
   /* 100% */
+}
+/* read only field */
+.form-control:disabled, .form-control[readonly]{
+  background-color: #F7F7F7;
 }
 
 .form_text_area {
@@ -308,4 +321,42 @@ td span {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* otherstyle */
+.fixed_rate{
+  color: var(--Primary, #131313);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 111.111% */
+}
+
+.red_desh{
+  width: 10px;
+}
+
+.red_desh span{
+  color: var(--incomplete-bar, #F00);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 14px; /* 100% */
 }
