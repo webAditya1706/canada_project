@@ -66,6 +66,12 @@ body {
 
 
 /* table width and height */
+
+.td_w_40 {
+  min-width: 40px !important;
+  max-width: 50px !important;
+  /* 50 + 10 */
+}
 .td_w_50 {
   min-width: 50px !important;
   max-width: 60px !important;
@@ -84,6 +90,11 @@ body {
   /* 70 + 10 */
 }
 
+.td_w_80 {
+  min-width: 80px !important;
+  max-width: 85px !important;
+  /* 100 + 10 */
+}
 .td_w_100 {
   min-width: 100px !important;
   max-width: 110px !important;
