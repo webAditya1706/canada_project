@@ -14,7 +14,7 @@
 
 
 :root {
-  --primary_text_color: #131313;
+  --primary: #131313;
   --secondary_text_color: #e74c3c;
   --white_text_color: #fff;
   --gray_text_color: #757575;
@@ -338,6 +338,14 @@ td span {
 
 
 
+.h1_title{
+  color: var(--Primary, #131313);
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 100% */
+}
 
 
 

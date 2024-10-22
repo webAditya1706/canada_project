@@ -78,7 +78,7 @@
 }
 
 .theme_outline_btn:hover {
-    background-color: #6200ea;
+    background-color: var(--primary_bg_color);
     /* Fill color on hover */
     color: white;
     /* Text turns white on hover */

@@ -1,5 +1,5 @@
 .mid_header_select .mdc-select__dropdown-icon {
-    background: #6200ee;
+    background: var(--primary_bg_color);
     /* padding: 0px; */
     /* color: #fff; */
     border-radius: 5px;
