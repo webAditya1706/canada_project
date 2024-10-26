@@ -20,12 +20,6 @@
   z-index: 2;
 }
 
-.form_upload_button {
-  position: absolute;
-  top: 15px;
-  right: 4px;
-  z-index: 2;
-}
 
 .customer_site_btn {
   width: 210px;
@@ -72,4 +66,96 @@
   font-style: normal;
   font-weight: 500;
   line-height: 13px;
+}
+
+.modal_width_height{
+  width: 934px;
+  max-width: 90%;
+  min-height: 500px;
+}
+
+.modal_width_height .modal-content{
+  height: 500px;
+  overflow-x: auto;
+}
+.modal_width_height .modal-body {
+  max-height: 450px; /* Limit the modal body's height */
+  overflow-y: auto;  /* Enable scrolling */
+}
+
+/* Custom scrollbar styling */
+.modal_width_height .modal-body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007CBA); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
+}
+
+.modal-footer{
+  border-top: none;
+}
+
+
+
+.modal-body {
+  max-height: 70vh; /* Adjust based on your content and screen size */
+  overflow-y: auto;
+}
+
+.message_body{
+  padding: 10px 20px;
+}
+
+/* Fix the footer at the bottom */
+.modal-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 1000;
+  padding: 0px 15px; /* Add padding for a cleaner look */
+  /* box-shadow: 0 -2px -1px rgba(0, 0, 0, 0.1);*/
+}
+
+
+/* Button container for gap and styling */
+.modal_fix_footer {
+  padding: 10px;
+}
+
+.files__list{
+  width: 100%;
+  min-height: 40px;
+  background-color: var(--white_bg_color);
+}
+.upload_form_btn{
+  width: 100%;
+  background-color: var(--gray_bg_color);
+  border-radius: 2px;
+padding: 0px 10px;
+
+}
+
+.download_doc_pearent{
+  border-radius: 2px;
+border: 0.5px solid #AFAFAF;
+opacity: 0.9;
+background: #FFF;
+}
+.file_download_container{
+  border-radius: 2px;
+background: #F2FCFF;
+padding: 5px 10px;
+margin-bottom: 2px;
 }

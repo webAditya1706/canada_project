@@ -77,6 +77,8 @@
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
+
+
 .theme_outline_btn:hover {
     background-color: var(--primary_bg_color);
     /* Fill color on hover */
@@ -87,6 +89,23 @@
 .theme_outline_btn:active {
     transform: scale(0.95);
 }
+
+.theme_outline_btn2 {
+    position: relative;
+    padding: 7px 15px;
+    border: 1px solid var(--Theme);
+    /* Outline color */
+    border-radius: 4px;
+    background-color: var(--white_bg_color);
+    font-family: Poppins;
+    color: var(--primary_bg_color);
+    /* Primary color for text */
+    font-size: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
 
 /* Dark Button */
 .theme_dark_btn {

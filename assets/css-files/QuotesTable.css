@@ -508,3 +508,22 @@ td {
 .quotes_table .form_table td:nth-child(2){
   left:120px;
 }
+/* table scrollbar */
+.table_wrapper::-webkit-scrollbar {
+  width: 6px; /* Scrollbar width */
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.table_wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color, optional */
+}
+
+.table_wrapper::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007CBA); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.table_wrapper::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
+}

@@ -334,9 +334,14 @@ td span {
   line-height: 13px;
 }
 
-
-
-
+.fs_11_fw_400_c_1313{
+  color: var(--Primary, #131313);
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 11px; /* 100% */
+}
 
 .h1_title{
   color: var(--Primary, #131313);
@@ -378,4 +383,12 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 14px; /* 100% */
+}
+.fs_16_fw_600_c_F00{
+  color: var(--incomplete-bar, #F00);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 16px; /* 100% */
 }

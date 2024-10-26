@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <!--  add this for test -->
   <!-- MUI Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
@@ -470,8 +469,8 @@
                     <label for="exampleFormControlInput1" class="form-label form_label">Account (s)</label>
                     <label type="button" for="" class="active_text_title_13"> + Add</label>
                   </div>
-                  <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon" alt="date_picker_icon"
-                    style="cursor:pointer;">
+                  <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon" alt="search_icon"
+                    style="cursor:pointer;" data-bs-target="#accounts_view_modal" data-bs-toggle="modal">
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
                     placeholder="18,456" value="8,456" readonly>
                 </div>
@@ -503,20 +502,18 @@
               <!-- upload doc -->
 
               <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <div class="mb-3 position-relative">
-                  <div class="them_btn_container form_upload_button">
-                    <button type="button" id="upload_button_2" class="theme_primary_btn">Upload</button>
-                  </div>
-                  <input type="file" id="file_input_2" style="display: none;">
                   <div class="d-flex justify-content-start align-items-center gap-2">
                     <label for="upload_doc" class="form-label form_label">Documents</label>
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
                       <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
                     </svg>
                   </div>
-                  <input type="text" id="upload_doc" class="form-control form_text_field upload_field"
-                    placeholder="Select Month and Year">
-                </div>
+                  <div class="border rounded d-flex justify-content-end pe-2">
+                    <div class="them_btn_container">
+                      <button type="button" data-bs-target="#upload_download_modal"
+                      data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                    </div>
+                  </div>
               </div>
 
               <!-- text area 1 -->
@@ -550,11 +547,11 @@
           <div class="col-auto mt-2">
             <div class="d-flex justify-content-center align-items-center gap-2">
               <div class="them_btn_container">
-                <button class="theme_primary_btn">Generate LOA</button>
+                <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal" data-bs-toggle="modal">Generate LOA</button>
               </div>
               <span class="form_label">OR</span>
               <div class="them_btn_container">
-                <button class="theme_primary_btn">Generate LOE</button>
+                <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal" data-bs-toggle="modal">Generate LOE</button>
               </div>
             </div>
           </div>
@@ -572,65 +569,30 @@
         </div>
 
         <!-- margin row -->
-        <div class="row mb-5 mt-5">
+        <div class="row mb-3 mt-2">
           <div class="col-12 col-sm-6 col-md-4 col-lg-4">
             <div class="row align-items-center">
               <div class="red_desh btn" id="marginToggleBtn"><span>-</span></div>
               <div class="col-auto"><span for="" class="w-25 form_label">Margin</span></div>
-            </div>
-            <div class="margin_box mt-3" id="marginToggleText">
-              <span class="margin_price_text ">$ 0.252525</span>
-            </div>
+            </div>            
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-            <div class="text-center fixed_rate">Fixed Rate</div>
+          <div class="row align-items-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="margin_box mt-3" id="marginToggleText">
+                <span class="margin_price_text ">$ 0.252525</span>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+              <div class="text-center fixed_rate">Fixed Rate</div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-4"></div>
           </div>
         </div>
       </div>
     </section>
   </div>
 
-  <div class="content-area mt-5">
-    <section class="position-relative">
-      <footer>
-        <div class="container-fluid">
-          <div class="row flex-row">
-            <div class="col-12 col-md-4">
-              <div class="d-flex justify-content-start">
-                <div class="them_btn_container">
-                  <button class="theme_outline_btn">Back</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-8">
-              <div class="d-flex justify-content-end align-items-center gap-3">
-                <div class="them_btn_container">
-                  <button class="theme_primary_btn" data-bs-target="#custom__quote__modal" data-bs-toggle="modal">Custom
-                    Quote</button>
-                </div>
-
-                <div class="them_btn_container">
-                  <button class="theme_primary_btn" data-bs-target="#custom__print__modal"
-                    data-bs-toggle="modal">Print</button>
-                </div>
-                <div class="them_btn_container">
-                  <button class="theme_primary_btn" data-bs-target="#email__link__modal" data-bs-toggle="modal">Email
-                    Link</button>
-                </div>
-                <div class="them_btn_container">
-                  <button class="theme_primary_btn">Preview Link</button>
-                </div>
-                <div class="them_btn_container">
-                  <button class="theme_primary_btn">Create Proposal</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-    </section>
-  </div>
+ 
 
   <!-- supplier table -->
 
@@ -638,7 +600,7 @@
     <div class="container-fluid">
       <div class="table_wrapper">
         <div class="table-responsive quotes_table">
-          <table class="table table-bordered form_table">
+          <table class="table table-bordered form_table table_res_scrollbar">
             <thead class="thead_bg">
               <tr>
                 <th scope="col" class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
@@ -649,7 +611,7 @@
 
                 <th></th>
 
-                <th scope="col" class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
                   <div class="d-flex justify-content-center align-items-center gap-2">
                     <span class="th_title">Billing
                       Type</span>
@@ -1595,6 +1557,7 @@
           </table>
         </div>
       </div>
+
       <!-- pagination -->
       <div class="row quotes_pagi align-items-center mb-5">
         <div class="col-6">
@@ -1639,49 +1602,85 @@
 
 
 
+<!-- footer section -->
+  <div class="content-area mt-5">
+    <section class="position-relative">
+      <footer>
+        <div class="container-fluid">
+          <div class="row flex-row">
+            <div class="col-12 col-md-12 col-lg-2">
+              <div class="d-flex justify-content-start">
+                <div class="them_btn_container">
+                  <button class="theme_outline_btn">Back</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-10">
+              <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Custom
+                    Quote</button>
+                </div>
 
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Print</button>
+                </div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn" data-bs-target="#email__link__modal" data-bs-toggle="modal">Email
+                    Link</button>
+                </div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn" >Preview Link</button>
+                </div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Create Proposal</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
+    </section>
+  </div>
   <!-- open modals -->
 
   <!-- email Link modal -->
-  <div class="modal fade email__link__modal" id="email__link__modal" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+  <div class="modal fade " id="email__link__modal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal_width_height modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Email Quote</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <span class="quotes_left_text">Your search results 15 out of 1441 quotes...</span>
-          <div class="table-responsive quotes_table">
+          <span class="active_text_title_14">From: albert@enerworld.com</span>
+          <div class="table-responsive quotes_table mt-2">
             <table class="table table-bordered">
               <thead class="thead_bg">
                 <tr>
-                  <th class="td_w_50 td_h_55 table_head_bg"></th>
-                  <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                  <th class="td_w_40 table_head_bg"></th>
+                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
                     <div class="d-flex justify-content-center align-items-center gap-2">
-                      <span class="th_title">ID</span>
-                      <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                      <span class="th_title text-center">First Name *</span>
                     </div>
                   </th>
-                  <th scope="col" class=" align-middle text-center td_w_120 table_head_bg table_th_text">
+                  <th scope="col" class=" align-middle td_w_100 text-center td_w_120 table_head_bg table_th_text">
                     <div class="d-flex justify-content-center align-items-center gap-2">
-                      <span class="th_title td_w_80">Legal Name on Contract</span>
-                      <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
-                    </div>
-                  </th>
-                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                      <span class="th_title td_w_50">Contact Name</span>
-                      <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                      <span class="th_title td_w_100 text-center">Last Name *</span>
                     </div>
                   </th>
                   <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
                     <div class="d-flex justify-content-center align-items-center gap-2">
-                      <span class="th_title ">CMDTY</span>
-                      <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                      <span class="th_title td_w_100 text-center">Email Address *</span>
                     </div>
                   </th>
+                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title text-center">Role</span>
+                    </div>
+                  </th>
+                  <th class="td_w_50"></th>
               </thead>
               <tbody>
                 <tr scope="row" class="tbody_row">
@@ -1689,7 +1688,7 @@
                   <td class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
                     <input type="checkbox" class="form-check-input table_check table_check" checked />
                   </td>
-    
+
                   <td class=" align-middle table_td_text text text-decoration-underline">
                     <div class="text-center">1725</div>
                   </td>
@@ -1704,60 +1703,429 @@
                     <div>Electric</div>
                   </td>
                   <td class=" align-middle text-center table_td_text">
-                    <div>100,000
-                      THERMS/CCF</div>
+                    <div>
+                      <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                    </div>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
+          <div class="d-flex align-items-center gap-2 mx-2">
+            <div><span class="para_text_14">Subject</span></div>
+            <div class="w-100 border rounded py-2 px-3 form_label ">Rate Results For C-002-34 xx</div>
+          </div>
+          <div class="border rounded mt-2 message_body">
+            <div class="para_text_2">Dear Customer2,
+              <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of October 2024
+              <br /> "Link"
+              <br /><br /> If you have any questions, please contact me.
+            </div>
+          </div>
+          <div>
+
+          </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second
-            modal</button>
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2">Close</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Add</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Email Qoute</button>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- custom__quote__modal -->
-  <div class="modal fade" id="custom__quote__modal" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+  <!--click on Custom Quote Accounts View Modal -->  
+  <div class="modal fade" id="accounts_view_modal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal_width_height modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+          <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Accounts View</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Hide this modal and show the first with the button below.
+          <div class="table-responsive quotes_table mt-2">
+            <table class="table table-bordered">
+              <thead class="thead_bg">
+                <tr>
+                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title text-center">Account Number</span>
+                    </div>
+                  </th>
+                  <th scope="col" class=" align-middle td_w_100 text-center td_w_120 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title td_w_100 text-center">Service Address</span>
+                    </div>
+                  </th>
+                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title td_w_100 text-center">Annual Volume</span>
+                    </div>
+                  </th>
+                  <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title text-center">Start Date</span>
+                    </div>
+                  </th>
+              </thead>
+              <tbody>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <td class=" align-middle table_td_text text text-decoration-underline">
+                    <div class="text-center">123456789012345</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>199 Jericho Tripke, Floral Park, New York, 11001</div>
+                    <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                  </td>
+                  <td class=" align-middle text-center text-center table_td_text td_w_110">
+                    <div>5,555 Kwh</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text td_w_100">
+                    <div>-</div>
+                  </td>
+                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
-            first</button>
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2">Close</button>
+            </div>            
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- print modal -->
-  <div class="modal fade" id="custom__print__modal" aria-hidden="true" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
+  <!-- click on print Upload/Download Document modal -->
+  <div class="modal fade" id="upload_download_modal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal_width_height modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+          <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Upload/Download Document</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          Hide this modal and show the first with the button below.
+         <div class="row gy-3">
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">Bills</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              <div class="m-2">your files</div>
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+            </div>
+
+          </div>
+          <!-- LOA -->
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">LOA</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              
+            </div>
+
+          </div>
+<!-- LOE -->
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">LOE</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              <div class="m-2">your files</div>              
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+            </div>
+
+          </div>
+          <!-- Utility Provided Historical Usage -->
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">Utility Provided Historical Usage</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              
+            </div>
+
+          </div>
+          <!-- Misc. -->
+          <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">Misc</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              <div class="m-2">your files</div>              
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+            </div>
+
+          </div>
+           <!-- Supplier Provided Historical Data -->
+           <div class="col-12 col-sm-6">
+            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+              <div class="table_th_text">Supplier Provided Historical Data</div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Upload</button>
+            </div>
+            </div>
+            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+              <div class="m-2">your files</div>
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+              <div class="d-flex justify-content-between align-items-center file_download_container">
+                <span class="active_text_title_13">XYZDocs.pdf</span>
+                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
         </div>
         <div class="modal-footer">
-          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
-            first</button>
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>            
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+
+  <!--click on Preview Linkbtn  Generate LOA modal -->
+  <div class="modal fade" id="generate_LOA_modal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOA</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Open</button>
+              </div>
+          </div>
+          <div class="them_btn_container">
+            <button class="theme_primary_btn">Download</button>
+            </div>
+        </div>
+        <div class="them_btn_container">
+          <button class="theme_primary_btn">Email Invite</button>
+          </div>
+      </div>
+        <div class="modal-footer">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+            </div>            
+          </div>
+        </div>
+    </div>
+  </div>
+
+<!--click on create proposal modal open generate_LOE_modal -->
+<div class="modal fade" id="generate_LOE_modal" aria-hidden="true" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOE</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+          <div class="them_btn_container">
+            <button class="theme_primary_btn">Open</button>
+        </div><div class="them_btn_container">
+          <button class="theme_primary_btn">Download</button>
+      </div>
+      <div class="them_btn_container">
+        <button class="theme_primary_btn">Email Invite</button>
+    </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+          <div class="them_btn_container">
+            <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
+          </div>            
+        </div>
+      </div>
+  </div>
+  </div>
+</div>
 
 
   <!-- external js file -->
