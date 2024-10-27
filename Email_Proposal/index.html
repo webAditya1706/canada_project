@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- MUI Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css">
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
+    <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css">
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
+    <link rel="stylesheet" href="../assets/css-files/form_style.css">
+    <link rel="stylesheet" href="../assets/css-files/footer_style.css">
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css">
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--  -->
+</head>
+
+<body class="footer_wraper">
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner">
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bread crumb -->
+    <section class="">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center py-3">
+                <div class="col-6">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="main_title_15">Quote ID: 21711</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="main_title_15">Create Proposal</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="active_text_title_14">Email Proposal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- supplier table -->
+
+    <section class="">
+        <div class="container-fluid">
+            <div class="border rounded px-3 py-3">
+                <div>
+                    <span class="active_text_title_14">From: albert@enerworld.com</span>
+                    <div class="table-responsive quotes_table with_bg_table mt-2">
+                        <table class="table table-bordered">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th class="td_w_40 table_head_bg"></th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title text-center">First Name *</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 text-center td_w_120 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_100 text-center">Last Name *</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_100 text-center">Email Address *</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title text-center">Role</span>
+                                        </div>
+                                    </th>
+                                    <th class="td_w_50"></th>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+                                    <!-- style="height: 55px" -->
+                                    <td
+                                        class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
+                                        <input type="checkbox" class="form-check-input table_check table_check"
+                                            checked />
+                                    </td>
+
+                                    <td class=" align-middle table_td_text text text-decoration-underline">
+                                        <div class="text-center">1725</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>C-002 34 xx</div>
+                                        <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                                    </td>
+                                    <td class=" align-middle text-center text-center table_td_text td_w_110">
+                                        <div>Customer 2</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text td_w_100">
+                                        <div>Electric</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>
+                                            <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mx-2">
+                        <div><span class="para_text_14">Subject</span></div>
+                        <div class="w-100 border rounded mt-1 mb-2 py-2 px-3 form_label ">Rate Results For C-002-34 xx</div>
+                    </div>
+                    <div class="border rounded mt-2 message_body">
+                        <div class="para_text_2">Dear Customer2,
+                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
+                            October 2024
+                            <br /> "Link"
+                            <br /><br /> If you have any questions, please contact me.
+                        </div>
+                        <div class="para_text_2">Dear Customer2,
+                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
+                            October 2024
+                            <br /> "Link"
+                            <br /><br /> If you have any questions, please contact me.
+                        </div>
+                        <div class="para_text_2">Dear Customer2,
+                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
+                            October 2024
+                            <br /> "Link"
+                            <br /><br /> If you have any questions, please contact me.
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <div class=" mt-5">
+        <section class="position-relative white_bg_footer">
+            <footer>
+                <div class="container-fluid">
+                    <div class="row flex-row">
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                                <div class="them_btn_container">
+                                    <button class="theme_outline_btn2">Close</button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Add</button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                                        data-bs-toggle="modal">Email Proposal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <!-- open modals -->
+
+    <!-- click on print Upload/Download Document modal -->
+    <div class="modal fade" id="upload_download_modal" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal_width_height modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Upload/Download Document</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row gy-3">
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">Bills</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                                <div class="m-2">your files</div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- LOA -->
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">LOA</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+
+                            </div>
+
+                        </div>
+                        <!-- LOE -->
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">LOE</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                                <div class="m-2">your files</div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Utility Provided Historical Usage -->
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">Utility Provided Historical Usage</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+
+                            </div>
+
+                        </div>
+                        <!-- Misc. -->
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">Misc</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                                <div class="m-2">your files</div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Supplier Provided Historical Data -->
+                        <div class="col-12 col-sm-6">
+                            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                                <div class="table_th_text">Supplier Provided Historical Data</div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                                <div class="m-2">your files</div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center file_download_container">
+                                    <span class="active_text_title_13">XYZDocs.pdf</span>
+                                    <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--click on Preview Linkbtn  Generate LOA modal -->
+    <div class="modal fade" id="generate_LOA_modal" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOA</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Open</button>
+                        </div>
+                    </div>
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn">Download</button>
+                    </div>
+                </div>
+                <div class="them_btn_container">
+                    <button class="theme_primary_btn">Email Invite</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- external js file -->
+    <script src="../assets/js-files/btn-ripple.js"></script>
+
+    </script>
+
+</body>
+
+</html>

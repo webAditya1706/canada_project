@@ -2,7 +2,7 @@
   width: 24px;
   height: 24px;
   position: absolute;
-  bottom: 8px;
+  bottom: 5px;
   right: 5px;
   z-index: 2;
 }
@@ -74,6 +74,11 @@
   min-height: 500px;
 }
 
+.custom__quote__modal_width{
+  width: 634px;
+  max-width: 90%;
+}
+
 .modal_width_height .modal-content{
   height: 500px;
   overflow-x: auto;
@@ -102,6 +107,29 @@
   background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
 }
 
+
+/*  */
+
+.message_body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.message_body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.message_body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007CBA); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.message_body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
+}
+
+
+
 .modal-footer{
   border-top: none;
 }
@@ -111,10 +139,32 @@
 .modal-body {
   max-height: 70vh; /* Adjust based on your content and screen size */
   overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007CBA); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
 }
 
 .message_body{
   padding: 10px 20px;
+  max-height: 280px;
+  overflow-y: auto;
 }
 
 /* Fix the footer at the bottom */

@@ -141,15 +141,14 @@
 }
 
 
-.quotes_table .table_check {
-  width: 18px;
-  height: 18px;
+.table_check {
+  width: 20px !important;
+  height: 18px !important;
 }
 
 
 /* border style */
-
-
+/* quotes_table tabel */
 .quotes_table th {
   border-right: 1px dashed #AFAFAF;
   border-left: 0px;

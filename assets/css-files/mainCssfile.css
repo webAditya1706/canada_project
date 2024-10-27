@@ -124,6 +124,11 @@ body {
   max-width: 160px !important;
   /* 150 + 10 */
 }
+.td_w_180 {
+  min-width: 180px !important;
+  max-width: 250px !important;
+  /* 150 + 10 */
+}
 
 
 .td_h_45 {
@@ -158,6 +163,11 @@ td span {
 .quotes_table tbody tr:nth-child(even) {
   background-color: #fffcf4;
 }
+
+.with_bg_table tbody tr {
+  background-color: #FFF !important;
+}
+
 
 /* table text style */
 .table_th_text {
@@ -300,7 +310,6 @@ td span {
 }
 
 .form_text_field {
-  height: 40px;
   color: var(--Primary, #131313);
   font-family: Poppins;
   font-size: 13px;
@@ -353,10 +362,26 @@ line-height: 20px; /* 100% */
 }
 
 
+/* Modal style */
+.modal_close_btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
+.modal_close_btn img {
+  width: 20px;
+  height: 20px;
+}
 
-
-
+.custom_input{
+  border-radius: 2px;
+  border: 1px solid #AFAFAF;
+  background: #FFF;
+  width: 125px;
+padding: 5px;
+}
 
 
 
@@ -384,6 +409,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 14px; /* 100% */
 }
+
 .fs_16_fw_600_c_F00{
   color: var(--incomplete-bar, #F00);
 font-family: Poppins;

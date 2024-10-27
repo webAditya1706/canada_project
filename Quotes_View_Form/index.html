@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="../assets/css-files/form_style.css">
   <link rel="stylesheet" href="../assets/css-files/footer_style.css">
   <link rel="stylesheet" href="../assets/css-files/QuotesTable.css">
+  <link rel="stylesheet" href="../assets/css-files/normal-border-tabel.css">
 
 
   <!-- font faimily -->
@@ -502,18 +503,18 @@
               <!-- upload doc -->
 
               <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                  <div class="d-flex justify-content-start align-items-center gap-2">
-                    <label for="upload_doc" class="form-label form_label">Documents</label>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
-                      <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
-                    </svg>
+                <div class="d-flex justify-content-start align-items-center gap-2">
+                  <label for="upload_doc" class="form-label form_label">Documents</label>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+                    <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
+                  </svg>
+                </div>
+                <div class="border rounded d-flex justify-content-end pe-2">
+                  <div class="them_btn_container">
+                    <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
+                      class="theme_primary_btn">Upload</button>
                   </div>
-                  <div class="border rounded d-flex justify-content-end pe-2">
-                    <div class="them_btn_container">
-                      <button type="button" data-bs-target="#upload_download_modal"
-                      data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
-                    </div>
-                  </div>
+                </div>
               </div>
 
               <!-- text area 1 -->
@@ -547,11 +548,13 @@
           <div class="col-auto mt-2">
             <div class="d-flex justify-content-center align-items-center gap-2">
               <div class="them_btn_container">
-                <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal" data-bs-toggle="modal">Generate LOA</button>
+                <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal" data-bs-toggle="modal">Generate
+                  LOA</button>
               </div>
               <span class="form_label">OR</span>
               <div class="them_btn_container">
-                <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal" data-bs-toggle="modal">Generate LOE</button>
+                <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal" data-bs-toggle="modal">Generate
+                  LOE</button>
               </div>
             </div>
           </div>
@@ -574,7 +577,7 @@
             <div class="row align-items-center">
               <div class="red_desh btn" id="marginToggleBtn"><span>-</span></div>
               <div class="col-auto"><span for="" class="w-25 form_label">Margin</span></div>
-            </div>            
+            </div>
           </div>
           <div class="row align-items-center">
             <div class="col-12 col-sm-6 col-md-4 col-lg-4">
@@ -591,9 +594,7 @@
       </div>
     </section>
   </div>
-
- 
-
+  
   <!-- supplier table -->
 
   <section class="content-area">
@@ -1602,7 +1603,7 @@
 
 
 
-<!-- footer section -->
+  <!-- footer section -->
   <div class="content-area mt-5">
     <section class="position-relative">
       <footer>
@@ -1618,8 +1619,7 @@
             <div class="col-12 col-md-12 col-lg-10">
               <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
                 <div class="them_btn_container">
-                  <button class="theme_primary_btn">Custom
-                    Quote</button>
+                  <button class="theme_primary_btn" data-bs-target="#custom__quote__modal" data-bs-toggle="modal">Custom Quote</button>
                 </div>
 
                 <div class="them_btn_container">
@@ -1630,10 +1630,10 @@
                     Link</button>
                 </div>
                 <div class="them_btn_container">
-                  <button class="theme_primary_btn" >Preview Link</button>
+                  <button class="theme_primary_btn">Preview Link</button>
                 </div>
                 <div class="them_btn_container">
-                  <button class="theme_primary_btn">Create Proposal</button>
+                  <button class="theme_primary_btn" onclick="createProposal()">Create Proposal</button>
                 </div>
               </div>
             </div>
@@ -1645,13 +1645,163 @@
   </div>
   <!-- open modals -->
 
+
+  <!--Custom Quote  -->
+  <div class="modal fade" id="custom__quote__modal" aria-hidden="true" tabindex="-1" >
+    <div class="modal-dialog custom__quote__modal_width modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Custom Quote</h1>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
+        </div>
+        <div class="modal-body">
+          <span class="active_text_title_14">From: albert@enerworld.com</span>
+          <div class="table-responsive border__table mt-2">
+            <table class="table table-bordered">
+              <thead class="thead_bg">
+                <tr>
+                  <th class="td_w_150 align-middle table_head_bg text-center table_th_text">Supplier</th>
+                  <th scope="col" class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title text-center">Fixed Matrix Available</span>
+                    </div>
+                  </th>
+                  <th scope="col" class=" align-middle text-center td_w_150 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="th_title text-center">Fixed Price Energy Only Matrix Available</span>
+                    </div>
+                  </th>
+              </thead>
+              <tbody class="">
+                <tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr>
+                <tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr><tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr><tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr><tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr><tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr><tr scope="row" class="tbody_row">
+                  <!-- style="height: 55px" -->
+                  <td class=" align-middle d-flex justify-content-center align-items-center gap-2">
+                    <input type="checkbox" class="form-check-input table_check " style="width: 20px; height: 18px;" checked /> 
+                    <div>Ambit Energy</div>
+                  </td>
+
+                  
+                  <td class=" align-middle text-center text-center table_td_text">
+                    <div>No</div>
+                  </td>
+                  <td class=" align-middle text-center table_td_text">
+                    <div>Yes</div>
+                  </td>                  
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Send Request</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- email Link modal -->
   <div class="modal fade " id="email__link__modal" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal_width_height modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Email Quote</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
         </div>
         <div class="modal-body">
           <span class="active_text_title_14">From: albert@enerworld.com</span>
@@ -1745,13 +1895,15 @@
     </div>
   </div>
 
-  <!--click on Custom Quote Accounts View Modal -->  
+  <!--click on Custom Quote Accounts View Modal -->
   <div class="modal fade" id="accounts_view_modal" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal_width_height modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Accounts View</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
         </div>
         <div class="modal-body">
           <div class="table-responsive quotes_table mt-2">
@@ -1794,7 +1946,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1810,7 +1962,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1826,7 +1978,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1842,7 +1994,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1858,7 +2010,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1874,7 +2026,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1890,7 +2042,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1906,7 +2058,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
                 <tr scope="row" class="tbody_row">
                   <td class=" align-middle table_td_text text text-decoration-underline">
@@ -1922,7 +2074,7 @@
                   <td class=" align-middle text-center table_td_text td_w_100">
                     <div>-</div>
                   </td>
-                  
+
                 </tr>
               </tbody>
             </table>
@@ -1932,7 +2084,7 @@
           <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
             <div class="them_btn_container">
               <button class="theme_outline_btn2">Close</button>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -1945,118 +2097,120 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Upload/Download Document</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
         </div>
         <div class="modal-body">
-         <div class="row gy-3">
-          <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">Bills</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
-            </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              <div class="m-2">your files</div>
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+          <div class="row gy-3">
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">Bills</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
               </div>
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                <div class="m-2">your files</div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
               </div>
-            </div>
 
-          </div>
-          <!-- LOA -->
-          <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">LOA</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
             </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              
-            </div>
-
-          </div>
-<!-- LOE -->
-          <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">LOE</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
-            </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              <div class="m-2">your files</div>              
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+            <!-- LOA -->
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">LOA</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
               </div>
-            </div>
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
 
-          </div>
-          <!-- Utility Provided Historical Usage -->
-          <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">Utility Provided Historical Usage</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
-            </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              
-            </div>
-
-          </div>
-          <!-- Misc. -->
-          <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">Misc</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
-            </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              <div class="m-2">your files</div>              
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
               </div>
-            </div>
 
-          </div>
-           <!-- Supplier Provided Historical Data -->
-           <div class="col-12 col-sm-6">
-            <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
-              <div class="table_th_text">Supplier Provided Historical Data</div>
-              <div class="them_btn_container">
-                <button class="theme_primary_btn">Upload</button>
             </div>
-            </div>
-            <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
-              <div class="m-2">your files</div>
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+            <!-- LOE -->
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">LOE</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
               </div>
-              <div class="d-flex justify-content-between align-items-center file_download_container">
-                <span class="active_text_title_13">XYZDocs.pdf</span>
-                <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                <div class="m-2">your files</div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
               </div>
-            </div>
 
+            </div>
+            <!-- Utility Provided Historical Usage -->
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">Utility Provided Historical Usage</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
+              </div>
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+
+              </div>
+
+            </div>
+            <!-- Misc. -->
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">Misc</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
+              </div>
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                <div class="m-2">your files</div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
+              </div>
+
+            </div>
+            <!-- Supplier Provided Historical Data -->
+            <div class="col-12 col-sm-6">
+              <div class="d-flex flex-wrapu upload_form_btn justify-content-between align-items-center ">
+                <div class="table_th_text">Supplier Provided Historical Data</div>
+                <div class="them_btn_container">
+                  <button class="theme_primary_btn">Upload</button>
+                </div>
+              </div>
+              <div class="border rounded download_doc_pearent files__list fs_11_fw_400_c_1313">
+                <div class="m-2">your files</div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
+                <div class="d-flex justify-content-between align-items-center file_download_container">
+                  <span class="active_text_title_13">XYZDocs.pdf</span>
+                  <img src="../assets/images/red_cancel.png" style="width: 20px;" alt="">
+                </div>
+              </div>
+
+            </div>
           </div>
-        </div>
         </div>
         <div class="modal-footer">
           <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
             <div class="them_btn_container">
               <button class="theme_outline_btn2" data-bs-dismiss="modal" aria-label="Close">Close</button>
-            </div>            
+            </div>
           </div>
         </div>
       </div>
@@ -2070,62 +2224,71 @@
       <div class="modal-content">
         <div class="modal-header">
           <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOA</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
         </div>
         <div class="modal-body">
           <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
             <div class="them_btn_container">
               <button class="theme_primary_btn">Open</button>
-              </div>
-          </div>
-          <div class="them_btn_container">
-            <button class="theme_primary_btn">Download</button>
             </div>
-        </div>
-        <div class="them_btn_container">
-          <button class="theme_primary_btn">Email Invite</button>
+
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Download</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Email Invite</button>
+            </div>
           </div>
-      </div>
+        </div>
         <div class="modal-footer">
           <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
             <div class="them_btn_container">
-              <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
-            </div>            
+              <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close">Close</button>
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 
-<!--click on create proposal modal open generate_LOE_modal -->
-<div class="modal fade" id="generate_LOE_modal" aria-hidden="true" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOE</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+  <!--click on create proposal modal open generate_LOE_modal -->
+  <div class="modal fade" id="generate_LOE_modal" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Generate LOE</h1>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Open</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Download</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Email Invite</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close">Close</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
-          <div class="them_btn_container">
-            <button class="theme_primary_btn">Open</button>
-        </div><div class="them_btn_container">
-          <button class="theme_primary_btn">Download</button>
-      </div>
-      <div class="them_btn_container">
-        <button class="theme_primary_btn">Email Invite</button>
     </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
-          <div class="them_btn_container">
-            <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal" aria-label="Close">Close</button>
-          </div>            
-        </div>
-      </div>
   </div>
-  </div>
-</div>
 
 
   <!-- external js file -->
@@ -2140,23 +2303,10 @@
     src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
   <script>
+    function createProposal() {
+      window.open("../Create_Proposal/index.html", "_blank", "width=800,height=600");
 
-    // upload doc
-    $(document).ready(function () {
-      // Trigger file input when the upload button is clicked
-      $('#upload_button_2').click(function () {
-        $('#file_input_2').click();  // Simulate the click of the hidden file input
-      });
-
-      // Display the file name in the text input when a file is selected
-      $('#file_input_2').change(function () {
-        var fileName = $(this).val().split('\\').pop();  // Extract file name
-        $('#upload_doc').val(fileName);  // Set the file name in the text input
-      });
-    });
-
-
-
+    }
 
     // date 1
     $(document).ready(function () {

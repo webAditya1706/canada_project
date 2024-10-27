@@ -150,6 +150,9 @@
 /* border style */
 
 
+
+
+/* quotes_table border */
 .quotes_table th {
   border-right: 1px dashed #AFAFAF;
   border-left: 0px;
@@ -526,4 +529,12 @@ td {
 
 .table_wrapper::-webkit-scrollbar-thumb:hover {
   background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
+}
+
+.table_check_parent{
+  background-color: var(--light_gray_bg_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px ;
 }
