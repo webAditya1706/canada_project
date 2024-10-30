@@ -63,7 +63,9 @@ body::-webkit-scrollbar {
   margin-left: auto;
 }
 
-
+.custom_height{
+  height: 60px;
+}
 
 
 /* Table responsive css */
