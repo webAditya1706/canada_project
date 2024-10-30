@@ -40,6 +40,10 @@ body {
   margin: 0;
   padding: 0;
 }
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px; /* For horizontal scrollbars */
+}
 
 
 #open_main_sidebar {

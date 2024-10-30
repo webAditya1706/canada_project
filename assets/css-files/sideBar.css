@@ -88,20 +88,10 @@
         }
 
         .sidebar_container {
-            display: flex;
-            width: 40px;
-            height: auto;
             min-height: 100vh;
             padding: 0px 10px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 28px;
-            flex-shrink: 0;
-            overflow-y: auto;
             border-right: 1px solid #ddd;
-            background-color: #fff;
             overflow-x: hidden;
-            overflow-y: auto;
         }
 
         .hide_side_bar {
