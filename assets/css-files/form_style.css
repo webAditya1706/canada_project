@@ -71,8 +71,8 @@
 .modal_width_height{
   width: 934px !important;
   max-width: 90% !important;
-  min-height: 500px !important;    
-  overflow-x: auto;
+  /* min-height: 500px !important;     */
+  /* overflow-x: auto; */
 }
 .modal_center_align{
   display: flex !important;
