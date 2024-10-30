@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- MUI Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css">
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
+    <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css">
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
+    <link rel="stylesheet" href="../assets/css-files/form_style.css">
+    <link rel="stylesheet" href="../assets/css-files/footer_style.css">
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css">
+    <link rel="stylesheet" href="../assets/css-files/normal-border-tabel.css">
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!--  -->
+</head>
+
+<body class="footer_wraper">
+    <!-- topheader -->
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner">
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+
+                        <!-- Switch buttons -->
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                                <span class="menu_font_style">Switch to Partner View</span>
+                            </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999;">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%;" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+        <hr style="height: 2px; background-color: #ddd; width: 100%;" class="mt-5" />
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M9.33333 9.33327H2V3.99998C2 3.46956 2.21071 2.96085 2.58579 2.58578C2.96086 2.21071 3.46957 2 4 2H9.33333V9.33327ZM3.33333 7.99995H8V3.33332H4C3.82319 3.33332 3.65362 3.40356 3.52859 3.52858C3.40357 3.65361 3.33333 3.82317 3.33333 3.99998V7.99995Z"
+                    fill="#757575" />
+                <path
+                    d="M18 9.33327H10.6667V2H16C16.5304 2 17.0392 2.21071 17.4142 2.58578C17.7893 2.96085 18 3.46956 18 3.99998V9.33327ZM12 7.99995H16.6667V3.99998C16.6667 3.82317 16.5964 3.65361 16.4714 3.52858C16.3464 3.40356 16.1768 3.33332 16 3.33332H12V7.99995Z"
+                    fill="#757575" />
+                <path
+                    d="M9.33333 17.9998H4C3.46957 17.9998 2.96086 17.7891 2.58579 17.414C2.21071 17.0389 2 16.5302 2 15.9998V10.6665H9.33333V17.9998ZM3.33333 11.9998V15.9998C3.33333 16.1766 3.40357 16.3462 3.52859 16.4712C3.65362 16.5962 3.82319 16.6665 4 16.6665H8V11.9998H3.33333Z"
+                    fill="#757575" />
+                <path
+                    d="M16 17.9998H10.6666V10.6665H18V15.9998C18 16.5302 17.7892 17.0389 17.4142 17.414C17.0391 17.7891 16.5304 17.9998 16 17.9998ZM12 16.6665H16C16.1768 16.6665 16.3463 16.5962 16.4714 16.4712C16.5964 16.3462 16.6666 16.1766 16.6666 15.9998V11.9998H12V16.6665Z"
+                    fill="#757575" />
+            </svg>
+        </div>
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="#007CBA">
+                <path
+                    d="M5.33333 14.9998H12V13.3332H5.33333V14.9998ZM5.33333 11.6665H12V9.99984H5.33333V11.6665ZM3.66667 18.3332C3.20833 18.3332 2.81597 18.17 2.48958 17.8436C2.16319 17.5172 2 17.1248 2 16.6665V3.33317C2 2.87484 2.16319 2.48248 2.48958 2.15609C2.81597 1.8297 3.20833 1.6665 3.66667 1.6665H10.3333L15.3333 6.6665V16.6665C15.3333 17.1248 15.1701 17.5172 14.8437 17.8436C14.5174 18.17 14.125 18.3332 13.6667 18.3332H3.66667ZM9.5 7.49984V3.33317H3.66667V16.6665H13.6667V7.49984H9.5Z"
+                    fill="#007CBA" />
+            </svg>
+        </div>
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M2 18.67V16.9153H12V18.67H2ZM6.70833 14.4148L2 9.45763L3.75 7.57129L8.5 12.5284L6.70833 14.4148ZM12 8.84347L7.29167 3.84247L9.08333 2L13.7917 6.95713L12 8.84347ZM15.8333 17.7926L4.95833 6.34297L6.125 5.11466L17 16.5643L15.8333 17.7926Z"
+                    fill="#757575" />
+            </svg>
+        </div>
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M4.5 18.3332C3.80556 18.3332 3.21528 18.0901 2.72917 17.604C2.24306 17.1179 2 16.5276 2 15.8332V13.3332H4.5V1.6665H17V15.8332C17 16.5276 16.7569 17.1179 16.2708 17.604C15.7847 18.0901 15.1944 18.3332 14.5 18.3332H4.5ZM14.5 16.6665C14.7361 16.6665 14.934 16.5866 15.0938 16.4269C15.2535 16.2672 15.3333 16.0693 15.3333 15.8332V3.33317H6.16667V13.3332H13.6667V15.8332C13.6667 16.0693 13.7465 16.2672 13.9062 16.4269C14.066 16.5866 14.2639 16.6665 14.5 16.6665ZM7 7.49984V5.83317H14.5V7.49984H7ZM7 9.99984V8.33317H14.5V9.99984H7ZM4.5 16.6665H12V14.9998H3.66667V15.8332C3.66667 16.0693 3.74653 16.2672 3.90625 16.4269C4.06597 16.5866 4.26389 16.6665 4.5 16.6665ZM4.5 16.6665H3.66667H12H4.5Z"
+                    fill="#757575" />
+            </svg>
+        </div>
+        <hr style="height: 2px; background-color: #ddd; width: 100%;" />
+
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M10.165 10.165C9.04231 10.165 8.08122 9.76526 7.28173 8.96577C6.48224 8.16628 6.0825 7.20519 6.0825 6.0825C6.0825 4.95981 6.48224 3.99872 7.28173 3.19923C8.08122 2.39974 9.04231 2 10.165 2C11.2877 2 12.2488 2.39974 13.0483 3.19923C13.8478 3.99872 14.2475 4.95981 14.2475 6.0825C14.2475 7.20519 13.8478 8.16628 13.0483 8.96577C12.2488 9.76526 11.2877 10.165 10.165 10.165ZM2 18.33V15.4722C2 14.8939 2.14884 14.3623 2.44652 13.8775C2.74421 13.3927 3.1397 13.0227 3.633 12.7676C4.68765 12.2403 5.7593 11.8448 6.84797 11.5811C7.93664 11.3175 9.04231 11.1856 10.165 11.1856C11.2877 11.1856 12.3934 11.3175 13.482 11.5811C14.5707 11.8448 15.6424 12.2403 16.697 12.7676C17.1903 13.0227 17.5858 13.3927 17.8835 13.8775C18.1812 14.3623 18.33 14.8939 18.33 15.4722V18.33H2ZM4.04125 16.2887H16.2887V15.4722C16.2887 15.2851 16.242 15.115 16.1484 14.9619C16.0549 14.8088 15.9315 14.6898 15.7784 14.6047C14.8599 14.1454 13.9328 13.801 12.9972 13.5713C12.0617 13.3417 11.1176 13.2269 10.165 13.2269C9.21242 13.2269 8.26834 13.3417 7.33277 13.5713C6.39719 13.801 5.47012 14.1454 4.55156 14.6047C4.39847 14.6898 4.27514 14.8088 4.18159 14.9619C4.08803 15.115 4.04125 15.2851 4.04125 15.4722V16.2887ZM10.165 8.12375C10.7263 8.12375 11.2069 7.92388 11.6066 7.52413C12.0064 7.12439 12.2063 6.64384 12.2063 6.0825C12.2063 5.52116 12.0064 5.04061 11.6066 4.64087C11.2069 4.24112 10.7263 4.04125 10.165 4.04125C9.60366 4.04125 9.12311 4.24112 8.72337 4.64087C8.32362 5.04061 8.12375 5.52116 8.12375 6.0825C8.12375 6.64384 8.32362 7.12439 8.72337 7.52413C9.12311 7.92388 9.60366 8.12375 10.165 8.12375Z"
+                    fill="#757575" />
+            </svg>
+        </div>
+        <div class="side_bar_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path
+                    d="M3.66667 17.5C3.20833 17.5 2.81597 17.3368 2.48958 17.0104C2.16319 16.684 2 16.2917 2 15.8333V4.16667C2 3.70833 2.16319 3.31597 2.48958 2.98958C2.81597 2.66319 3.20833 2.5 3.66667 2.5H9.5V4.16667H3.66667V15.8333H9.5V17.5H3.66667ZM12.8333 14.1667L11.6875 12.9583L13.8125 10.8333H7V9.16667H13.8125L11.6875 7.04167L12.8333 5.83333L17 10L12.8333 14.1667Z"
+                    fill="#757575" />
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
+        <div>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+
+            </div>
+            <hr style="height: 2px; background-color: #ddd; width: 100%;" />
+            <div class="menu_container">
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <path
+                                d="M9.33333 9.33327H2V3.99998C2 3.46956 2.21071 2.96085 2.58579 2.58578C2.96086 2.21071 3.46957 2 4 2H9.33333V9.33327ZM3.33333 7.99995H8V3.33332H4C3.82319 3.33332 3.65362 3.40356 3.52859 3.52858C3.40357 3.65361 3.33333 3.82317 3.33333 3.99998V7.99995Z" />
+                            <path
+                                d="M18.0001 9.33327H10.6667V2H16.0001C16.5305 2 17.0392 2.21071 17.4143 2.58578C17.7894 2.96085 18.0001 3.46956 18.0001 3.99998V9.33327ZM12.0001 7.99995H16.6667V3.99998C16.6667 3.82317 16.5965 3.65361 16.4715 3.52858C16.3465 3.40356 16.1769 3.33332 16.0001 3.33332H12.0001V7.99995Z" />
+                            <path
+                                d="M9.33333 17.9998H4C3.46957 17.9998 2.96086 17.7891 2.58579 17.414C2.21071 17.0389 2 16.5302 2 15.9998V10.6665H9.33333V17.9998ZM3.33333 11.9998V15.9998C3.33333 16.1766 3.40357 16.3462 3.52859 16.4712C3.65362 16.5962 3.82319 16.6665 4 16.6665H8V11.9998H3.33333Z" />
+                            <path
+                                d="M16.0001 17.9998H10.6667V10.6665H18.0001V15.9998C18.0001 16.5302 17.7894 17.0389 17.4143 17.414C17.0392 17.7891 16.5305 17.9998 16.0001 17.9998ZM12.0001 16.6665H16.0001C16.1769 16.6665 16.3465 16.5962 16.4715 16.4712C16.5965 16.3462 16.6667 16.1766 16.6667 15.9998V11.9998H12.0001V16.6665Z" />
+                        </svg>
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+
+
+                <div class="accordion gap-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M5.33333 14.9998H12V13.3332H5.33333V14.9998ZM5.33333 11.6665H12V9.99984H5.33333V11.6665ZM3.66667 18.3332C3.20833 18.3332 2.81597 18.17 2.48958 17.8436C2.16319 17.5172 2 17.1248 2 16.6665V3.33317C2 2.87484 2.16319 2.48248 2.48958 2.15609C2.81597 1.8297 3.20833 1.6665 3.66667 1.6665H10.3333L15.3333 6.6665V16.6665C15.3333 17.1248 15.1701 17.5172 14.8437 17.8436C14.5174 18.17 14.125 18.3332 13.6667 18.3332H3.66667ZM9.5 7.49984V3.33317H3.66667V16.6665H13.6667V7.49984H9.5Z" />
+                                    </svg>
+                                    <span class="">Quotes</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 18.67V16.9153H12V18.67H2ZM6.70833 14.4148L2 9.45763L3.75 7.57129L8.5 12.5284L6.70833 14.4148ZM12 8.84347L7.29167 3.84247L9.08333 2L13.7917 6.95713L12 8.84347ZM15.8333 17.7926L4.95833 6.34297L6.125 5.11466L17 16.5643L15.8333 17.7926Z" />
+                                    </svg>
+                                    <span class="">Auctions</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M4.5 18.3332C3.80556 18.3332 3.21528 18.0901 2.72917 17.604C2.24306 17.1179 2 16.5276 2 15.8332V13.3332H4.5V1.6665H17V15.8332C17 16.5276 16.7569 17.1179 16.2708 17.604C15.7847 18.0901 15.1944 18.3332 14.5 18.3332H4.5ZM14.5 16.6665C14.7361 16.6665 14.934 16.5866 15.0938 16.4269C15.2535 16.2672 15.3333 16.0693 15.3333 15.8332V3.33317H6.16667V13.3332H13.6667V15.8332C13.6667 16.0693 13.7465 16.2672 13.9062 16.4269C14.066 16.5866 14.2639 16.6665 14.5 16.6665ZM7 7.49984V5.83317H14.5V7.49984H7ZM7 9.99984V8.33317H14.5V9.99984H7ZM4.5 16.6665H12V14.9998H3.66667V15.8332C3.66667 16.0693 3.74653 16.2672 3.90625 16.4269C4.06597 16.5866 4.26389 16.6665 4.5 16.6665ZM4.5 16.6665H3.66667H12H4.5Z"
+                                            fill="#757575" />
+                                    </svg>
+                                    <span class="">Contracts/CRM</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr style="height: 2px; background-color: #ddd; width: 100%;" />
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M10.165 10.165C9.04231 10.165 8.08122 9.76526 7.28173 8.96577C6.48224 8.16628 6.0825 7.20519 6.0825 6.0825C6.0825 4.95981 6.48224 3.99872 7.28173 3.19923C8.08122 2.39974 9.04231 2 10.165 2C11.2877 2 12.2488 2.39974 13.0483 3.19923C13.8478 3.99872 14.2475 4.95981 14.2475 6.0825C14.2475 7.20519 13.8478 8.16628 13.0483 8.96577C12.2488 9.76526 11.2877 10.165 10.165 10.165ZM2 18.33V15.4722C2 14.8939 2.14884 14.3623 2.44652 13.8775C2.74421 13.3927 3.1397 13.0227 3.633 12.7676C4.68765 12.2403 5.7593 11.8448 6.84797 11.5811C7.93664 11.3175 9.04231 11.1856 10.165 11.1856C11.2877 11.1856 12.3934 11.3175 13.482 11.5811C14.5707 11.8448 15.6424 12.2403 16.697 12.7676C17.1903 13.0227 17.5858 13.3927 17.8835 13.8775C18.1812 14.3623 18.33 14.8939 18.33 15.4722V18.33H2ZM4.04125 16.2887H16.2887V15.4722C16.2887 15.2851 16.242 15.115 16.1484 14.9619C16.0549 14.8088 15.9315 14.6898 15.7784 14.6047C14.8599 14.1454 13.9328 13.801 12.9972 13.5713C12.0617 13.3417 11.1176 13.2269 10.165 13.2269C9.21242 13.2269 8.26834 13.3417 7.33277 13.5713C6.39719 13.801 5.47012 14.1454 4.55156 14.6047C4.39847 14.6898 4.27514 14.8088 4.18159 14.9619C4.08803 15.115 4.04125 15.2851 4.04125 15.4722V16.2887ZM10.165 8.12375C10.7263 8.12375 11.2069 7.92388 11.6066 7.52413C12.0064 7.12439 12.2063 6.64384 12.2063 6.0825C12.2063 5.52116 12.0064 5.04061 11.6066 4.64087C11.2069 4.24112 10.7263 4.04125 10.165 4.04125C9.60366 4.04125 9.12311 4.24112 8.72337 4.64087C8.32362 5.04061 8.12375 5.52116 8.12375 6.0825C8.12375 6.64384 8.32362 7.12439 8.72337 7.52413C9.12311 7.92388 9.60366 8.12375 10.165 8.12375Z"
+                            fill="#757575" />
+                    </svg>
+                    <span class="menu_title">Home</span>
+                </div>
+
+            </div>
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path
+                            d="M3.66667 17.5C3.20833 17.5 2.81597 17.3368 2.48958 17.0104C2.16319 16.684 2 16.2917 2 15.8333V4.16667C2 3.70833 2.16319 3.31597 2.48958 2.98958C2.81597 2.66319 3.20833 2.5 3.66667 2.5H9.5V4.16667H3.66667V15.8333H9.5V17.5H3.66667ZM12.8333 14.1667L11.6875 12.9583L13.8125 10.8333H7V9.16667H13.8125L11.6875 7.04167L12.8333 5.83333L17 10L12.8333 14.1667Z"
+                            fill="#757575" />
+                    </svg>
+                    <span class="menu_title">Home</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- middlesidebar -->
+    <section class="content-area">
+        <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-12 col-md-12 col-lg-3 py-2">
+                    <div class="d-flex align-items-center gap-1">
+                        <span class="mid_header_mian_title">Quot</span>
+                        <!-- select box -->
+
+                        <div class="mid_header_select">
+                            <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
+                                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox"
+                                    aria-expanded="false" aria-labelledby="dropdown-label">
+                                    <span class="mdc-select__selected-text-container">
+                                        <span id="dropdown-label" class="mdc-select__selected-text">Select an
+                                            option</span>
+                                    </span>
+                                    <span class="mdc-select__dropdown-icon">
+                                        <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
+                                            <polygon class="mdc-select__dropdown-icon-inactive" stroke="none"
+                                                fill-rule="evenodd" points="7 10 12 15 17 10"></polygon>
+                                            <polygon class="mdc-select__dropdown-icon-active" stroke="none"
+                                                fill-rule="evenodd" points="7 15 12 10 17 15"></polygon>
+                                        </svg>
+                                    </span>
+                                    <span class="mdc-notched-outline">
+                                        <span class="mdc-notched-outline__leading"></span>
+                                        <span class="mdc-notched-outline__trailing"></span>
+                                    </span>
+                                </div>
+
+                                <!-- Dropdown options -->
+                                <div class="mdc-select__menu mdc-menu mdc-menu-surface" role="listbox">
+                                    <ul class="mdc-deprecated-list">
+                                        <li class="mdc-deprecated-list-item" role="option" tabindex="0"
+                                            aria-selected="false">
+                                            <span class="mdc-deprecated-list-item__ripple"></span>
+                                            <span class="mdc-deprecated-list-item__text">Active</span>
+                                        </li>
+                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
+                                            <span class="mdc-deprecated-list-item__ripple"></span>
+                                            <span class="mdc-deprecated-list-item__text">Option 2</span>
+                                        </li>
+                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
+                                            <span class="mdc-deprecated-list-item__ripple"></span>
+                                            <span class="mdc-deprecated-list-item__text">Option 3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-12">
+                    <div
+                        class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    Quotes</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" checked />
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    referred quotes</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label middle_header_menu" for="flexSwitchCheckDefault">My
+                                    team's quotes</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center gap-1">
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" checked />
+                                <label class="form-check-label middle_header_menu"
+                                    for="flexSwitchCheckDefault">Renewals</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center gap-3 mid_head_3rd_col">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn">Email Text</button>
+                            </div>
+                            <!-- <button type="button" class="btn  ">
+                  <span class="mdc-button__label">Email Text</span>
+                </button> -->
+                            <!-- <button type="button" class="btn theme_bg_color">
+                  <span class="mdc-button__label">Email Text</span>
+                </button> -->
+                            <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#quote_drawer" aria-controls="quote_drawer">
+                                <button class="theme_primary_btn">
+                                    <img src="../assets/white_search_Icon.png" alt="Search Icon"
+                                        class="mid_head_search" />
+                                </button>
+                            </div>
+                            <!-- <button type="button" class="btn theme_bg_color" data-bs-toggle="offcanvas" data-bs-target="#quote_drawer"
+                  aria-controls="quote_drawer">
+                  <img src="../assets/white_search_Icon.png" alt="Search Icon" />
+                </button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search click Model open -->
+
+        <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer"
+            aria-labelledby="quoteDrawerLabel">
+            <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="quoteDrawerLabel">Drawer Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div> -->
+            <div class="offcanvas-body">
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
+                    <div class="qoute_search">
+                        <i class="bi bi-search"></i>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Search..." />
+                    </div>
+                </div>
+                <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+                <div class="filter_body mt-3">
+                    <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled"
+                            checked />
+                        <label class="form-check-label filter_title_active" for="flexRadioDisabled">
+                            All Filters
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled" />
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Customer / Legal Name on Contract
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
+                        <label class="form-check-label filter_title" for="flexRadioDisabled">
+                            Account Number
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled" />
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Contact Name
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" />
+                        <label class="form-check-label filter_title" for="flexRadioDisabled">
+                            Commodity
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDisabled"
+                            id="flexRadioCheckedDisabled" />
+                        <label class="form-check-label filter_title" for="flexRadioCheckedDisabled">
+                            Quote ID
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- table -->
+    <section class="content-area">
+        <div class="container-fluid">
+            <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+            <div class="row d-flex justify-content-between align-items-center py-2">
+                <div class="col-auto">
+                    <span class="quotes_left_text">Your search results 15 out of 1441 quotes...</span>
+                </div>
+                <div class="col-auto">
+                    <span class="quotes_right_text">Total Quotes: 1441</span>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead class="thead_bg">
+                        <tr>
+                            <th class="td_w_50 td_h_55 table_head_bg"></th>
+                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">ID</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle text-center td_w_120 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title td_w_80">Legal Name on Contract</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title td_w_50">Contact Name</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">CMDTY</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">Valume</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">Start Date</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">RM</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">New Business</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_70 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">Due Date</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2 td_w_50">
+                                    <span class="th_title">ST</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title">Utility</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+
+                            <th scope="col" class="align-middle td_w_70 table_head_bg table_th_text">
+                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                    <span class="th_title td_w_40">No. of Accts.</span>
+                                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                                </div>
+                            </th>
+                            <!-- <th scope="col" class=" align-middle td_w_70 table_head_bg table_th_text">
+                  <div class="d-flex justify-content-center align-items-center gap-2">
+                    <span class="th_title">No. of Accts.</span>
+                    <img src="../assets/auto_filter.png" alt="filter icon" style="margin-right: 5px" />
+                  </div>
+                </th> -->
+                            <th scope="col" class="align-middle table_head_bg">
+                                <div class="d-flex justify-content-center align-items-center gap-2"></div>
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="">
+                        <tr>
+                           <td colspan="14" class=" loader_td">
+                            <div class="no_record_found_parent">
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="51" height="64" viewBox="0 0 51 64"
+                                        fill="none">
+                                        <path opacity="0.12"
+                                            d="M22.9876 63.9999C35.5716 63.9999 45.7729 62.7449 45.7729 61.1967C45.7729 59.6486 35.5716 58.3936 22.9876 58.3936C10.4037 58.3936 0.202393 59.6486 0.202393 61.1967C0.202393 62.7449 10.4037 63.9999 22.9876 63.9999Z"
+                                            fill="#A6A5A5" />
+                                        <g opacity="0.6">
+                                            <path opacity="0.23"
+                                                d="M49.0076 1.88963L48.9783 1.85449H46.2763H10.3436L10.4314 1.94897H10.077C7.83023 1.94897 6.00907 3.77025 6.00907 6.01701V47.1424H2.59851L2.56932 47.1775C0.892256 49.1901 0.892256 52.1134 2.56932 54.126L2.59851 54.1611C2.59851 54.1611 3.89352 54.1611 6.00907 54.1611H41.2332H41.2845C43.7304 54.1611 45.7132 52.1783 45.7132 49.7324V8.96756C45.7132 8.96756 45.7126 8.93388 45.7122 8.87308H48.9783L49.0076 8.83794C50.6847 6.82538 50.6847 3.90207 49.0076 1.88963Z"
+                                                fill="black" />
+                                            <path
+                                                d="M9.07886 7.86685H47.7136L47.7429 7.83171C49.4199 5.81916 49.4199 2.89584 47.7429 0.883286L47.7136 0.848145H45.0115H9.07886L9.26988 1.05376C11.0626 2.98303 10.993 5.98903 9.1129 7.83329L9.07886 7.86685Z"
+                                                fill="#757575" />
+                                            <path
+                                                d="M40.0197 53.1547H4.74438V5.0107C4.74438 2.76395 6.56566 0.942666 8.81229 0.942666H43.3231C43.3231 0.942666 46.9047 0.729993 46.8324 0.942666C44.3196 0.991791 44.4484 7.96125 44.4484 7.96125V48.726C44.4484 51.1718 42.4656 53.1547 40.0197 53.1547Z"
+                                                fill="url(#paint0_linear_1007_5761)" />
+                                            <path
+                                                d="M39.9678 53.1549C38.3944 53.1549 1.33313 53.1549 1.33313 53.1549L1.30382 53.1198C-0.373247 51.1072 -0.373247 48.1839 1.30382 46.1714L1.33313 46.1362H39.9678L39.7768 46.3418C37.9841 48.2712 37.6796 51.5627 39.9678 53.1549Z"
+                                                fill="#757575" />
+                                            <path d="M37.3273 8.72803H13.3262V10.7478H37.3273V8.72803Z" fill="white" />
+                                            <path d="M40.6672 43.0474H29.936V43.7054H40.6672V43.0474Z" fill="white" />
+                                            <path d="M40.6678 14.542H9.98694V15.3624H40.6678V14.542Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 18.5703H9.98694V19.3907H40.6678V18.5703Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 22.5977H9.98694V23.4181H40.6678V22.5977Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 26.625H9.98694V27.4454H40.6678V26.625Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 30.6533H9.98694V31.4737H40.6678V30.6533Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 38.7085H9.98694V39.5289H40.6678V38.7085Z" fill="#E6E6E6" />
+                                            <path d="M40.6678 34.6807H9.98694V35.5011H40.6678V34.6807Z" fill="#E6E6E6" />
+                                            <path d="M16.7139 8.72803H13.3268V10.7478H16.7139V8.72803Z" fill="#131313" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_1007_5761" x1="25.789" y1="0.848145"
+                                                x2="25.789" y2="53.1547" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#D0D0D0" stop-opacity="0.9" />
+                                                <stop offset="1" stop-color="#4A4A4A" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="fs_16_fw_600_c_F00">
+                                    No Record Found
+                                </div>
+                            </div>
+                           </td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </div>
+
+            <!-- pagination -->
+            <div class="row quotes_pagi align-items-center mb-5">
+                <div class="col-6">
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="pagi_text">Rows per page</span>
+                        <select class="form-select form-select-sm" aria-label="Small select example">
+                            <option value="1">10</option>
+                            <option value="2">20</option>
+                            <option value="3">30</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex justify-content-end align-items-center gap-2">
+                        <div class="arrow_div">
+                            <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                viewBox="0 0 14 14" fill="none">
+                                <path
+                                    d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                    fill="#757575" />
+                            </svg>
+                        </div>
+                        <div><span class="pagi_text">1</span></div>
+                        <div><span class="pagi_text">of</span></div>
+                        <div><span class="pagi_active">2</span></div>
+                        <div class="arrow_div">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
+                                <path
+                                    d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                    fill="#007CBA" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="overlay_mainsidebar">
+    </div>
+
+    <!-- external js file -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="../assets/js-files/btn-ripple.js"></script>
+
+    <!-- bootstrap js file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        function createProposal() {
+            window.open("../Create_Proposal/index.html", "_blank", "width=800,height=600");
+
+        }
+
+        // date 1
+        $(document).ready(function () {
+            // Initialize datepicker
+            $('#datepicker_input').datepicker({
+                format: "MM yyyy",      // Display format (e.g., October 2024)
+                startView: "months",    // Show only months and years
+                minViewMode: "months",  // Prevent selecting individual days
+                autoclose: true         // Automatically close after selection
+            });
+
+            // Open datepicker when the image is clicked
+            $('#date_icon').click(function () {
+                $('#datepicker_input').focus();  // Trigger focus on the input to open the datepicker
+            });
+
+
+            // date 2
+
+            $('#datepicker_input_2').datepicker({
+                format: "MM yyyy",      // Display format (e.g., October 2024)
+                startView: "months",    // Show only months and years
+                minViewMode: "months",  // Prevent selecting individual days
+                autoclose: true         // Automatically close after selection
+            });
+
+            // Open datepicker when the image is clicked
+            $('#date_icon_2').click(function () {
+                $('#datepicker_input_2').focus();  // Trigger focus on the input to open the datepicker
+            });
+
+        });
+
+
+        // 
+        $(document).ready(function () {
+            $('#marginToggleBtn').on('click', function () {
+                // Toggle button text between "-" and "+"
+                let currentBtnText = $(this).text();
+                $(this).text(currentBtnText === '-' ? '+' : '-');
+
+                // Toggle visibility of the text
+                if (currentBtnText === '-') {
+                    $('#marginToggleText').hide(); // Hide "Hi" when button shows "-"
+                } else {
+                    $('#marginToggleText').show(); // Show "Hi" when button shows "+"
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -69,20 +69,21 @@
 }
 
 .modal_width_height{
-  width: 934px;
-  max-width: 90%;
-  min-height: 500px;
+  width: 934px !important;
+  max-width: 90% !important;
+  min-height: 500px !important;    
+  overflow-x: auto;
 }
-
+.modal_center_align{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
 .custom__quote__modal_width{
   width: 634px;
   max-width: 90%;
 }
 
-.modal_width_height .modal-content{
-  height: 500px;
-  overflow-x: auto;
-}
 .modal_width_height .modal-body {
   max-height: 450px; /* Limit the modal body's height */
   overflow-y: auto;  /* Enable scrolling */
@@ -208,4 +209,16 @@ background: #FFF;
 background: #F2FCFF;
 padding: 5px 10px;
 margin-bottom: 2px;
+}
+
+.w_16_h_16{
+  width: 16px;
+  height: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pdf_proposal_input{
+  width: 125px;
+  height: 30px;
 }

@@ -95,6 +95,14 @@ body {
   max-width: 85px !important;
   /* 100 + 10 */
 }
+
+
+.td_w_90 {
+  min-width: 90px !important;
+  max-width: 95px !important;
+  /* 100 + 10 */
+}
+
 .td_w_100 {
   min-width: 100px !important;
   max-width: 110px !important;
@@ -316,6 +324,7 @@ td span {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
+  background-color: #fff;
   /* 100% */
 }
 /* read only field */
@@ -382,9 +391,6 @@ line-height: 20px; /* 100% */
   width: 125px;
 padding: 5px;
 }
-
-
-
 
 
 /* otherstyle */

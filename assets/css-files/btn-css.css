@@ -64,7 +64,7 @@
 .theme_outline_btn {
     position: relative;
     padding: 7px 15px;
-    border: 1px solid var(--Theme);
+    border: 1.5px solid var(--Theme);
     /* Outline color */
     border-radius: 4px;
     background-color: var(--outline_bg);
@@ -93,7 +93,7 @@
 .theme_outline_btn2 {
     position: relative;
     padding: 7px 15px;
-    border: 1px solid var(--Theme);
+    border: 1.5px solid var(--Theme);
     /* Outline color */
     border-radius: 4px;
     background-color: var(--white_bg_color);

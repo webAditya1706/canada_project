@@ -89,7 +89,7 @@
                     <div class="table-responsive quotes_table with_bg_table">
                         <table class="table table-bordered form_table table_res_scrollbar">
                             <thead class="thead_bg">
-                                <div class="table_check_parent" scope="col">
+                                <div class="table_check_parent w-100" scope="col">
                                     <div class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
                                         <div class="d-flex justify-content-center align-items-center gap-2">
                                             <input type="checkbox" class="form-check-input table_check table_check"
@@ -184,11 +184,14 @@
                                         </div>
                                     </th>
                                     <th scope="col"
-                                        class=" align-middle td_w_150 table_head_bg table_th_text table_th_text ps-3">
-                                        <div class="d-flex flex-column justify-content-center gap-2">
-                                            <span class="th_title">Notes
-                                            </span>
-                                            <span class="sub_table_text">(Viewable to customer)</span>
+                                        class=" align-middle td_w_150 table_head_bg table_th_text table_th_text px-3">
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center     gap-2">
+                                            <div class="td_w_90">
+                                                <div class="th_title">Notes
+                                                </div>
+                                                <div class="sub_table_text">(Viewable to customer)</div>
+                                            </div>
                                         </div>
                                     </th>
                                 </tr>
@@ -497,9 +500,9 @@
     </section>
 
     <!-- footer section -->
-    <div class=" mt-5">
+    <div class=" my-3">
         <section class="position-relative white_bg_footer">
-            <footer>
+            <div>
                 <div class="container-fluid">
                     <div class="row flex-row">
                         <div class="col-12">
@@ -522,7 +525,7 @@
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
         </section>
     </div>
     <!-- open modals -->
@@ -537,53 +540,44 @@
                         <img src="../assets/images/red_cancel.png" alt="red_cancel">
                     </button>
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-6 sub_title_13">
+                <div class="modal-body d-flex flex-column mt-2 gap-3">
+                    <div class="row align-items-center">
+                        <div class="col-6 form_text_field">
                             Include Saving Analysis
                         </div>
-                        <div class="col-6 sub_title_13">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="col-6 form_text_field">
+                            <div class="form-check d-flex align-items-center m-0">
+                                <input class="form-check-input w_16_h_16" type="checkbox" value=""
+                                    id="flexCheckDefault">
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6 sub_title_13">
-                            Include Saving Analysis
+                    <div class="row align-items-center">
+                        <div class="col-6 form_text_field">
+                            Curent Rate
                         </div>
-                        <div class="col-6 sub_title_13">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="col-6 form_text_field">
+                            <div class="d-flex align-items-center m-0">
+                                <input type="text" class="form-control pdf_proposal_input" id="exampleFormControlInput1" value="$ 0.0" placeholder="name@example.com">
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6 sub_title_13">
-                            Include Saving Analysis
+                    <div class="row align-items-center">
+                        <div class="col-6 form_text_field">
+                            Include Branding Logo
                         </div>
-                        <div class="col-6 sub_title_13">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <div class="col-6 form_text_field">
+                            <div class="form-check d-flex align-items-center m-0">
+                                <input class="form-check-input w_16_h_16" type="checkbox" value=""
+                                    id="flexCheckDefault">
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 sub_title_13">
-                            Include Saving Analysis
-                        </div>
-                        <div class="col-6 sub_title_13">
-                            <div class="custom_input form_text_field">
-                                $ 0.0
-                            </div>
-                        </div>
-                    </div>
-
-
+                    </div> 
+                                       
                 </div>
 
-                <div class="modal-footer">
-                    <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+                <div class="modal-footer mt-5">
+                    <div class="d-flex flex-wrap w-100 gap-4 justify-content-center align-items-center">
                         <div class="them_btn_container">
                             <button class="theme_outline_btn2" data-bs-dismiss="modal" aria-label="Close">Close</button>
                         </div>
@@ -591,7 +585,7 @@
                             <button class="theme_primary_btn">Print</button>
                         </div>
                         <div class="them_btn_container">
-                            <button class="theme_primary_btn">Print</button>
+                            <button class="theme_primary_btn">Email</button>
                         </div>
                     </div>
                 </div>

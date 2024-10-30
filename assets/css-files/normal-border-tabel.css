@@ -5,11 +5,11 @@
 
   
   .border__table thead tr th:last-child {
-    border-right: 1px solid #AFAFAF;
+    border-right: 1px solid #dedede;
   }
 
   .border__table thead tr th:first-child {
-    border-left: 1px solid #AFAFAF;
+    border-left: 1px solid #dedede;
   }
 
   .border__table tbody tr td {
@@ -18,11 +18,11 @@
   }
   
   .border__table tbody tr td:first-child {
-    border-left: 1px solid #AFAFAF;
+    border-left: 1px solid #dedede;
   }
   
   .border__table tbody tr td:last-child {
-    border-right: 1px solid #AFAFAF;
+    border-right: 1px solid #dedede;
   }
 
   
