@@ -79,6 +79,7 @@
   justify-content: center !important;
   align-items: center !important;
 }
+
 .custom__quote__modal_width{
   width: 634px;
   max-width: 90%;
@@ -107,7 +108,6 @@
 .modal_width_height .modal-body::-webkit-scrollbar-thumb:hover {
   background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
 }
-
 
 /*  */
 
@@ -222,3 +222,9 @@ margin-bottom: 2px;
   width: 125px;
   height: 30px;
 }
+
+.form_star_color{
+  color: var(--secondary_bg_color);
+}
+
+

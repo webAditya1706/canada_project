@@ -284,7 +284,8 @@ th:nth-child(2):before {
 
 .quotes_table th,
 .quotes_table td {
-  padding: 0px 15px; /* Apply padding to all table headers and cells */
+  height: auto;
+  padding: 0px 5px; /* Apply padding to all table headers and cells */
 }
 
 .quotes_table th:last-child,
@@ -475,7 +476,8 @@ td {
 .quotes_pagi .arrow_div {
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 0px 5px;
+  padding: 2px 3px;
+  display: flex;
 }
 
 

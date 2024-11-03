@@ -72,6 +72,10 @@ body::-webkit-scrollbar {
 
 
 /* table width and height */
+td:first-child {
+  height: 100%;
+  display: table-cell;
+}
 
 .td_w_40 {
   min-width: 40px !important;
@@ -177,6 +181,39 @@ td span {
 .quotes_table tbody tr:nth-child(even) {
   background-color: #fffcf4;
 }
+
+
+.no_td_bg tbody tr:nth-child(odd) {
+  background-color: #fff !important;
+}
+
+.no_td_bg tbody tr:nth-child(even) {
+  background-color: #fff !important;
+}
+
+.td_massage{
+  max-height: 50px;
+  overflow-y: auto;
+  margin: 5px 0px;
+}
+.td_massage::-webkit-scrollbar {
+  width: 3px;
+  flex-shrink: 0;
+}
+
+.td_massage::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.td_massage::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007CBA); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.td_massage::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007CBA), 10%); /* Darker color on hover */
+}
+
 
 .with_bg_table tbody tr {
   background-color: #FFF !important;
@@ -310,8 +347,40 @@ td span {
 
 
 
-
 /* form Style */
+
+.input_border_none{
+border: none;
+}
+
+.custom_select{
+  /* padding: 10px 0px; */
+  background-position: right .0rem center !important;
+}
+
+
+.custom_select {
+  padding: 0; /* Remove extra padding */
+  background-color: transparent;
+  border: none;
+  text-align: center; /* Center text */
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  color: #393939;
+  background-size: 20px 8px;
+  /* Remove any appearance settings */
+}
+
+
+.custom_select:hover, .form-select:focus {
+  outline: none;
+  box-shadow: none;
+}
+.custom_select:focus {
+  outline: none;
+  box-shadow: none; /* Removes the default Bootstrap box-shadow */
+}
+
 
 .form_label {
   color: var(--Primary, #131313);
@@ -330,6 +399,16 @@ td span {
   font-style: normal;
   font-weight: 400;
   line-height: 13px;
+  background-color: #fff;
+  /* 100% */
+}
+
+.select_value_text{
+  color: var(--Primary, #131313);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
   background-color: #fff;
   /* 100% */
 }
@@ -397,6 +476,47 @@ line-height: 20px; /* 100% */
   width: 125px;
 padding: 5px;
 }
+
+
+/* select form background */
+/* Style for the select element */
+.select_bg {
+  background-color: transparent; /* Default transparent background */
+}
+
+.select_bg option:hover,
+.select_bg option:focus {
+  background-color: beige; /* Beige background on hover and focus */
+}
+
+/* Style for options inside the select */
+.select_bg option {
+  background-color: #fff; /* Beige background for options */
+  color: #000; /* Text color for options */
+}
+
+/* chip style */
+
+.chip-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.chip {
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #E7E7E7;
+  text-align: center;
+  margin-top: -10px; /* Adjust this to control the overlap */
+  z-index: 1;
+}
+
+.chip:first-child {
+  margin-top: 0; /* No overlap for the first chip */
+}
+
 
 
 /* otherstyle */

@@ -2,8 +2,7 @@ footer {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: calc(100% - 40px);
-  position: fixed;
+  position: sticky;
   bottom: 0;
   right: 0;
   background-color: #f2fcff;
@@ -18,5 +17,4 @@ footer {
   background-color: #fff;
 }
 .footer_wraper {
-  margin-bottom: 90px;
 }
