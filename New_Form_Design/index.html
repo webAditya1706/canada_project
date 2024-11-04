@@ -36,9 +36,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!--  -->
+
+    
 </head>
 
 <body class="footer_wraper">
+
+     <!-- Bootstrap Modal for Loader -->
+     <div class="modal fade" id="loaderModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center ">
+                <!-- <h5 class="modal-title">Loading...</h5> -->
+                <div class="modal-body ">
+                <div class="loader_container">
+                    <dotlottie-player 
+                    src="https://lottie.host/d1bd737a-0b20-4f30-8cbe-4d29a8a05609/9DkqxMyqqP.json" 
+                    background="transparent" 
+                    speed="1" 
+                    style="width: 100%; height: 70px;" 
+                    loop 
+                    autoplay>
+                </dotlottie-player>
+                <div class="fs_15_fw_600_c_1313">Please wait while we process your information request</div>
+            
+                </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- TOp header -->
     <section class="top_header_secction">
         <div class="container-fluid p-2">
@@ -1981,7 +2007,17 @@
     <!-- bootstrap js file -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
+    <script>
+        window.onload = function() {
+            var loaderModal = new bootstrap.Modal(document.getElementById('loaderModal'), {});
+            loaderModal.show();
+            setTimeout(() => {
+                loaderModal.hide();
+            }, 3000);
+        };
+    </script>
 </body>
 
 </html>
