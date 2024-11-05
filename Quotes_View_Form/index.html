@@ -21,7 +21,6 @@
   <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
   <link rel="stylesheet" href="../assets/css-files/sideBar.css">
   <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
-  <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
   <link rel="stylesheet" href="../assets/css-files/btn-css.css">
   <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
   <link rel="stylesheet" href="../assets/css-files/form_style.css">
@@ -599,7 +598,7 @@
   <section class="content-area">
     <div class="container-fluid">
       <div class="table_wrapper">
-        <div class="table-responsive quotes_table">
+        <div class="quotes_table">
           <table class="table table-bordered form_table table_res_scrollbar m-0">
             <thead class="thead_bg">
               <tr>
@@ -609,7 +608,7 @@
                   </div>
                 </th>
 
-                <th></th>
+                <th class="td_w_50"></th>
 
                 <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
                   <div class="d-flex justify-content-center align-items-center gap-2">
@@ -1805,8 +1804,8 @@
           </div>
           <div class="modal-body">
             <span class="active_text_title_14">From: albert@enerworld.com</span>
-            <div class="table-responsive quotes_table mt-2">
-              <table class="table table-bordered">
+            <div class="quotes_table table_wrapper mt-2">
+              <table class="table table-bordered m-0">
                 <thead class="thead_bg">
                   <tr>
                     <th class="td_w_40 table_head_bg"></th>
@@ -1835,7 +1834,7 @@
                 <tbody>
                   <tr scope="row" class="tbody_row">
                     <!-- style="height: 55px" -->
-                    <td class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
+                    <td class=" align-middle  tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
                       <input type="checkbox" class="form-check-input table_check table_check" checked />
                     </td>
   
@@ -1862,11 +1861,11 @@
               </table>
             </div>
   
-            <div class="d-flex align-items-center gap-2 mx-2">
+            <div class="d-flex align-items-center gap-2 my-3 mx-2">
               <div><span class="para_text_14">Subject</span></div>
               <div class="w-100 border rounded py-2 px-3 form_label ">Rate Results For C-002-34 xx</div>
             </div>
-            <div class="border rounded mt-2 message_body">
+            <div class="border rounded message_body">
               <div class="para_text_2">Dear Customer2,
                 <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of October 2024
                 <br /> "Link"
@@ -1874,7 +1873,7 @@
               </div>
             </div>            
             <div class="d-flex justify-content-between align-items-center mt-2">
-                <a href=""><div class="btn click_modal_btn active_text_title_14 text-decoration-underline">Click Here</div></a>
+                <div class="btn click_modal_btn active_text_title_14 text-decoration-underline">Click Here</div>
                 <div class="header_bg_text">
                   <img src="../assets/banner_img.png" alt="" class="header_banner">
                 </div>
@@ -1909,7 +1908,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="table-responsive quotes_table mt-2">
+          <div class="table_wrapper quotes_table mt-2">
             <table class="table table-bordered">
               <thead class="thead_bg">
                 <tr>

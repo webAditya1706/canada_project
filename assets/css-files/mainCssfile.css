@@ -155,6 +155,8 @@ td:first-child {
 
 .td_h_55 {
   height: 55px !important;
+  min-height: 55px !important;
+  max-height: auto  !important;
 }
 
 .td_h_60 {
