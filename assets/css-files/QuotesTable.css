@@ -238,18 +238,8 @@ td:last-child::before {
   top: 0;
 }
 
-td:nth-child(2):before {
-  content: "";
-  width: 2px;
-  height: 100%;
-  background: #f1f1f1;
-  border-right: 1px dashed #afafaf;
-  position: absolute;
-  right: -1px;
-  top: 0;
-}
-
-th:nth-child(2):before {
+.quotes_table:not(.second_td_sticky_none) td:nth-child(2):before,
+.quotes_table:not(.second_td_sticky_none) th:nth-child(2):before {
   content: "";
   width: 2px;
   height: 100%;
