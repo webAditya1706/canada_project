@@ -96,6 +96,7 @@
   left: 0;
   z-index: 2;
   background-color: #f5f5f5;
+  border-left: 1px solid #ddd;
 }
 
 .quotes_table th:last-child {
@@ -109,10 +110,11 @@
 
 .quotes_table td:first-child {
   position: sticky;
-  left: 1px;
+  left: 0px;
   z-index: 2;
   background-color: inherit;
-  border-right: px;
+  border-right: 0px;
+  border-left: 1px solid #ddd;
 }
 
 .quotes_table td:last-child {
@@ -189,6 +191,10 @@
 
 .quotes_table tbody tr:last-child {
   border-bottom: 1px solid #ddd;
+}
+
+.quotes_table td:last-child,.quotes_table th:last-child{
+  border-right: 1px solid #ddd;
 }
 
 .quotes_table th:first-child::before {
@@ -515,6 +521,19 @@ td {
 }
 
 .border__table thead tr th:first-child {
+  border-left: 1px solid #dedede !important;
+}
+
+
+.border__table thead tr th:first-child::after {
+  content: " ";
+  width: 2px;
+  height: 100%;
+  background: #f1f1f1;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  background-color: #dedede;
   border-left: 1px solid #dedede;
 }
 
