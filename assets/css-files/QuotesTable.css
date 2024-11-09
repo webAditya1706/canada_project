@@ -297,7 +297,7 @@ td:last-child::before {
 .quotes_table th,
 .quotes_table td {
   height: auto;
-  padding: 0px 5px; /* Apply padding to all table headers and cells */
+  padding: 10px; /* Apply padding to all table headers and cells */
 }
 
 .quotes_table th:last-child,
@@ -346,6 +346,22 @@ td:last-child::before {
   cursor: pointer;
   padding: 0px 15px;
 }
+
+.red_green_border table tr:nth-child(odd) td:first-child::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #FF0000; /* Red color */
+}
+
+
+.red_green_border table tr:nth-child(even) td:first-child::after {
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #77D400;
+}
+
 
 .table_drop_li_btn {
   display: flex;
@@ -622,4 +638,31 @@ td {
     rgba(220, 220, 220, 0.5) 0%,
     rgba(167, 167, 167, 0.5) 100%
   );
+}
+
+.table.border-gray {
+  border-color: #F5F5F5;
+}
+.table.border-gray td, 
+.table.border-gray th {
+  border-color: #F5F5F5;
+}
+
+
+.first_last_td__radious tbody tr:first-child td{
+  background-color: #e74d3c38;
+}
+
+.first_last_td__radious tbody tr:first-child td:first-child{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.first_last_td__radious tbody tr:first-child td:last-child{
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.table .table-bordered td,.table .table-bordered th{
+  padding: 10px;
 }

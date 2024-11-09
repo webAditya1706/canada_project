@@ -23,8 +23,13 @@
   --form_text_dark_color: #131313;
   --Theme: #007cba;
   --Grey: #757575;
+  --Footer_bg: #F2FCFF;
+  --Orange_Bg: #FFF5F5;
 }
 
+.footer_bg{
+  background-color: var(--Footer_bg);
+}
 /* font size */
 
 :root {
@@ -141,6 +146,13 @@ td:first-child {
 }
 .td_w_180 {
   min-width: 180px !important;
+  max-width: 250px !important;
+  /* 150 + 10 */
+}
+
+
+.td_w_250 {
+  min-width: 250px !important;
   max-width: 250px !important;
   /* 150 + 10 */
 }
@@ -561,4 +573,37 @@ td span {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Style */
+
+footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  background-color: #f2fcff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 999;
+  min-height: 74px;
+}
+
+.white_bg_footer footer {
+  background-color: #fff;
 }
