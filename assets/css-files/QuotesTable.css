@@ -210,7 +210,7 @@
 
 .quotes_table th:first-child::after,
 .quotes_table td:first-child::after {
-  /* content: ""; */
+  content: "";
   width: 2px;
   height: 100%;
   background: #f1f1f1;
@@ -271,7 +271,7 @@ td:last-child::before {
 /* handle first child border */
 .quotes_table th:first-child::after,
 .quotes_table td:first-child::after {
-  /* content: ""; */
+  content: "";
   width: 2px;
   height: 100%;
   background: #f1f1f1;
