@@ -23,17 +23,58 @@
   --form_text_dark_color: #131313;
   --Theme: #007cba;
   --Grey: #757575;
-  --Footer_bg: #F2FCFF;
-  --Orange_Bg: #FFF5F5;
+  --Footer_bg: #f2fcff;
+  --Orange_Bg: #fff5f5;
+  --HR_BG: #d6d6d6;
 }
 
-.footer_bg{
-  background-color: var(--Footer_bg);
+html,
+body {
+  height: 100%; /* Ensures the body takes up the full height */
+}
+.content {
+  flex: 1 0 auto; /* Makes the main content expand */
+}
+.footer {
+  flex-shrink: 0; /* Ensures the footer doesn't shrink */
+}
+
+.footer_bg {
+  background-color: var(--HR_BG);
 }
 /* font size */
 
 :root {
   --Label-Large-Size: 14px;
+}
+
+.primary_bg_color{
+  background-color: var(--Theme) !important;
+}
+
+.primary_bg_color_icon{
+  fill: var(--Theme) !important;
+}
+
+.primary_bg_color_text{
+  color: var(--Theme);
+}
+
+.show_gray_hr_line {
+  height: 2px !important;
+  background-color: var(--HR_BG);
+  margin: 0px;
+  border: 0px;
+  border-color: var(--HR_BG);
+}
+
+.show_white_hr_line {
+  height: 2px !important;
+  background-color: var(--white_bg_color);
+  margin: 0px;
+  border: 0px;
+  border-color: var(--HR_BG);
+  z-index: 2;
 }
 
 a {
@@ -58,7 +99,8 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 59px;
   left: 0;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--Theme);
   /* Light gray background */
   overflow-y: auto;
 }
@@ -150,7 +192,6 @@ td:first-child {
   /* 150 + 10 */
 }
 
-
 .td_w_250 {
   min-width: 250px !important;
   max-width: 250px !important;
@@ -173,6 +214,12 @@ td:first-child {
 
 .td_h_60 {
   height: 60px !important;
+}
+
+.td_h_80 {
+  height: 80px;
+  min-height: 80px !important;
+  max-height: 100px;
 }
 
 /* table bg style */
@@ -439,7 +486,7 @@ td span {
 }
 
 .fs_11_fw_400_c_1313 {
-  color: var(--Primary, #131313);
+  color: var(--Primary, #131313) !important;
   font-family: Poppins;
   font-size: 11px;
   font-style: normal;
@@ -575,18 +622,6 @@ td span {
   align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Style */
 
 footer {
@@ -604,6 +639,6 @@ footer {
   min-height: 74px;
 }
 
-.white_bg_footer footer {
+.white_bg_footer {
   background-color: #fff;
 }

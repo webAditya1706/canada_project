@@ -1,0 +1,37 @@
+.sfe_energy_img {
+  width: 100px;
+}
+
+.diect__energy_img {
+  width: 130px;
+}
+
+.bg_green_D1E {
+  background-color: #d1ecd5 !important;
+}
+.theme_accordian {
+  outline: none;
+}
+
+.theme_accordian .accordion-button:not(.collapsed) {
+  background-color: #c1eaff !important;
+  color: #000;
+}
+
+.theme_accordian .accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none;
+}
+
+.theme_accordian .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23131313'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.theme_accordian .accordion-button{
+    padding: 10px 12px;
+    align-items: center;
+}
+
+.bg__accordian_body{
+    background-color: #c1eaff !important;
+}

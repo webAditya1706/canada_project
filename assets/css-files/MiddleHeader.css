@@ -232,11 +232,16 @@ input:checked+.mid_header_slider:before {
   } */
 
 .theme_bg_color {
-    background-color: #6200ee;
-    color: #fff;
+    background-color: #07d0d542 !important;
+    color: #fff !important;
 }
 
 .theme_bg_color:hover {
+    color: #fff;
+}
+
+.real_theme_bg{
+    background-color: var(--primary_bg_color);
     color: #fff;
 }
 
@@ -288,7 +293,7 @@ input:checked+.mid_header_slider:before {
 }
 
 .qoute_filter_title {
-    color: #131313;
+    color: #FFF;
     font-family: Poppins;
     font-size: 14px;
     font-style: normal;
@@ -299,7 +304,7 @@ input:checked+.mid_header_slider:before {
 }
 
 .filter_title {
-    color: #131313;
+    color: #FFF;
     font-family: Poppins;
     font-size: 13px;
     font-style: normal;
@@ -309,7 +314,7 @@ input:checked+.mid_header_slider:before {
 }
 
 .filter_title_active {
-    color: #131313;
+    color: #FFF;
     font-family: Poppins;
     font-size: 13px;
     font-style: normal;

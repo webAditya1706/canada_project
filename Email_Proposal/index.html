@@ -128,19 +128,19 @@
                                             checked />
                                     </td>
 
-                                    <td class=" align-middle table_td_text text-center">
-                                        <div class="w-100 border rounded p-2">
-                                            Customer
+                                    <td class=" align-middle text-center td_w_100 ">
+                                        <div>
+                                            <input type="text" value="Customer" class="form-control text-center table_td_text">
                                         </div>
                                     </td>
-                                    <td class=" align-middle text-center table_td_text">
-                                        <div class="w-100 border rounded p-2">
-                                            _
+                                    <td class=" align-middle text-center table_td_text td_w_100">
+                                        <div>
+                                            <input type="text" value="_" class="form-control text-center table_td_text">
                                         </div>
                                     </td>
-                                    <td class=" align-middle text-center text-center table_td_text td_w_110">
-                                        <div class="w-100 border rounded p-2">
-                                            hello.test@gmail.com
+                                    <td class=" align-middle text-center text-center table_td_text td_w_150">
+                                        <div>
+                                            <input type="text" value="hello.test@gmail.com" class="form-control text-center table_td_text">
                                         </div>
                                     </td>
                                     <td class=" align-middle text-center table_td_text td_w_100">
@@ -156,30 +156,17 @@
                         </table>
                     </div>
 
-                    <div class="d-flex align-items-center gap-2 mx-2">
+                    <div class="d-flex align-items-center gap-2 mx-2 mb-3">
                         <div><span class="para_text_14">Subject</span></div>
-                        <div class="w-100 border rounded mt-1 mb-2 py-2 px-3 form_label ">Rate Results For C-002-34 xx
+
+                        <div class="w-100">
+                            <input type="text" class="form-control form_label" id="text_area" placeholder=""
+                                value="Rate Results For C-002-34 xx">
                         </div>
                     </div>
-                    <div class="border rounded mt-2 message_body">
-                        <div class="para_text_2">Dear Customer2,
-                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
-                            October 2024
-                            <br /> "Link"
-                            <br /><br /> If you have any questions, please contact me.
-                        </div>
-                        <div class="para_text_2">Dear Customer2,
-                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
-                            October 2024
-                            <br /> "Link"
-                            <br /><br /> If you have any questions, please contact me.
-                        </div>
-                        <div class="para_text_2">Dear Customer2,
-                            <br /><br /> Please "Link" to view the Electric pricing for C-002 34 xx with a start date of
-                            October 2024
-                            <br /> "Link"
-                            <br /><br /> If you have any questions, please contact me.
-                        </div>
+                    <div>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"
+                            placeholder="Type here"></textarea>
                     </div>
                     <div class="d-flex my-3 justify-content-end ">
                         <img src="../assets/banner_img.png" alt="" class="header_banner">
@@ -330,30 +317,26 @@
 
 
     <!-- footer section -->
-    <div class=" mt-2">
-        <section class="position-relative white_bg_footer">
-            <footer>
-                <div class="container-fluid">
-                    <div class="row flex-row">
-                        <div class="col-12">
-                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
-                                <div class="them_btn_container">
-                                    <button class="theme_outline_btn2">Close</button>
-                                </div>
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn">Add</button>
-                                </div>
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn" data-bs-target="#email__link__modal"
-                                        data-bs-toggle="modal">Email Proposal</button>
-                                </div>
-                            </div>
+    <footer class=" mt-4">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2">Close</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Add</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                                data-bs-toggle="modal">Email Proposal</button>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </section>
-    </div>
+            </div>
+        </div>
+    </footer>
     <!-- open modals -->
 
     <!-- click on print Upload/Download Document modal -->
@@ -515,7 +498,6 @@
     </div>
 
     <!-- external js file -->
-    <script src="../assets/js-files/btn-ripple.js"></script>
 
     </script>
 

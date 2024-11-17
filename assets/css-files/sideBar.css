@@ -131,12 +131,12 @@ aside {
 
 .show_side_bar .menu_parent:hover .menu_title,
 .show_side_bar .menu_parent:hover .menu_title_active {
-  color: #007cba !important;
+  color: #FFF !important;
   /* Ensures title color changes to red */
 }
 
 .show_side_bar .menu_title {
-  color: #757575;
+  color: #FFF;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -205,7 +205,8 @@ aside {
   height: 100vh;
   top: 0;
   left: -250px;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--Theme);
   transition: left 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -222,7 +223,7 @@ aside {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 10;
 }
 
 #open_main_sidebar:hover + #main_sidebar {

@@ -32,6 +32,7 @@
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -347,8 +348,6 @@
     <!-- custom height -->
     <div class="custom_height"></div>
 
-
-
     <!-- bread crumb -->
     <section class="content-area mt-1">
         <div class="container-fluid">
@@ -362,14 +361,14 @@
         </div>
     </section>
     <!-- hr  -->
-    <section class="content-area">
-        <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+    <section class="content-area">  
+        <hr class="show_gray_hr_line" />
     </section>
 
     <!--  -->
     <section class="content-area">
         <div class="container-fluid">
-            <div class="border rounded mt-3 py-3 px-3">
+            <div class="border rounded border-danger mt-3 py-3 px-3">
                 <!-- row 1 -->
                 <div class="row">
                     <!-- Supplier Company -->
@@ -722,144 +721,165 @@
 
                 <!-- row 4 -->
                 <!-- <div class="row"> -->
-                    <div class="row mt-4">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement
-                                    in Place with<span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement
+                                in Place with<span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement
-                                    in Place with <span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement
+                                in Place with <span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Agreement in
-                                    Place with <span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Agreement in
+                                Place with <span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Agreement in
-                                    Place with <span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Agreement in
+                                Place with <span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Agreement in
-                                    Place with <span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Agreement in
+                                Place with <span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Agreement in
-                                    Place with <span class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Agreement in
+                                Place with <span class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3 position-relative">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Id</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric">
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3 position-relative">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Id</label>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="Albert Sasson" value="Electric">
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3 position-relative">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Broker
-                                    Id</label>
-                                <div class="col-auto">
-                                    <img src="https://d2q79iu7y748jz.cloudfront.net/s/_logo/ad6b511451369f4223a35f81ef075db3"
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3 position-relative">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker
+                                Id</label>
+                            <div class="col-auto">
+                                <img src="https://d2q79iu7y748jz.cloudfront.net/s/_logo/ad6b511451369f4223a35f81ef075db3"
                                     class="manag__img" alt="">
-                                </div>
                             </div>
                         </div>
-                        <!--  -->
+                    </div>
+                    <!--  -->
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label class="form-label form_label" for="flexSwitchCheckDefault">Request Historical
+                            Data</label>
+                        <div class="form-check form-switch flex-column">
+
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+
+                        </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <label class="form-label form_label" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                            <div class="form-check form-switch flex-column">
-
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-
-                            </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 row align-items-center">
+                        <div class="active_text_title_14 text-decoration-underline">Utilities Selected
                         </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3 row align-items-center">
-                            <div class="active_text_title_14 text-decoration-underline">Utilities Selected
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <label class="form-label form_label" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                            <div class="form-check form-switch flex-column">
-
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">User Id<span
-                                        class="text-danger">*</span></label>
-                                <select class="form-select select_value_text" aria-label="Default select example">
-                                    <option class="form_text_field" selected>Select</option>
-                                    <option class="form_text_field">Yes</option>
-                                    <option class="form_text_field" value="1">No</option>
-                                </select>
-                            </div>
-                        </div>
-
                     </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <label class="form-label form_label" for="flexSwitchCheckDefault">Send Pricing Request
+                            Automatically</label>
+                        <div class="form-check form-switch flex-column">
+
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">User Id<span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select select_value_text" aria-label="Default select example">
+                                <option class="form_text_field" selected>Select</option>
+                                <option class="form_text_field">Yes</option>
+                                <option class="form_text_field" value="1">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
                 <!-- </div> -->
             </div>
     </section>
-    <!-- footer section -->
 
+
+    <!-- footer section -->
+    <footer class="content-area mt-4">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2">Close</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Add</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                                data-bs-toggle="modal">Email Proposal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>

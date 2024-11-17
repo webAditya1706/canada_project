@@ -359,7 +359,8 @@
 
     <!-- hr  -->
     <section class="content-area">
-        <hr style="height: 2px; background-color: #ddd; margin: 0px" />
+        <hr class="mx-2 show_gray_hr_line" />
+
     </section>
 
     <!-- Auctions Closed Body -->
@@ -438,7 +439,7 @@
 
                 <!-- time div -->
                 <div class="time__div">
-                    <span>07/18/2024 12:05:00 AM</span>
+                    <span class="">07/18/2024 12:05:00 AM</span>
                 </div>
 
                 <!-- Table -->
@@ -460,31 +461,69 @@
                             </thead>
                             <tbody>
                                 <!-- Row for Lowest Bid with custom styling -->
-                                <tr class="lowest-bid">
-                                    <td><span class="text-danger">Lowest Bid</span></td>
-                                    <td>
-                                        <img src="sfe_logo.png" alt="SFE Energy" class="supplier-logo">
+                                <tr class="lowest-bid td_h_80">
+                                    <td class="align-middle text-center">
+                                        <div>
+                                            <span class="text-danger ">Lowest Bid</span>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313">
+                                        <div class="col-auto">
+                                            <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
+                                        </div>
                                         <div>$ 0.00071</div>
                                     </td>
-                                    <td>
-                                        <img src="sfe_logo.png" alt="SFE Energy" class="supplier-logo">
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313">
+                                        <div class="col-auto">
+                                            <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
+                                        </div>
                                         <div>$ 0.00071</div>
                                     </td>
-                                    <td>
-                                        <img src="sfe_logo.png" alt="SFE Energy" class="supplier-logo">
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313">
+                                        <div class="col-auto">
+                                            <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
+                                        </div>
                                         <div>$ 0.00071</div>
                                     </td>
                                 </tr>
 
                                 <!-- Other rows -->
                                 <tr>
-                                    <td><img src="direct_energy_logo.png" alt="Direct Energy" class="supplier-logo">
+                                    <td class="align-middle text-center table_th_text"><img
+                                            src="../assets/images/diect__energy.png" alt="Direct Energy"
+                                            class="diect__energy_img">
                                     </td>
-                                    <td></td>
-                                    <td>$ 0.00299<br><button class="btn btn-warning btn-sm">Generate Contract</button>
+                                    <td class="align-middle text-center"></td>
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313">$ 0.00299<br>
+                                        <button class="btn btn-warning btn-sm text-white mt-1">
+                                            Generate <br /> Contract
+                                        </button>
                                     </td>
                                     <td></td>
                                 </tr>
+                                <tr>
+                                    <td class="align-middle text-center table_th_text"><img
+                                            src="../assets/images/diect__energy.png" alt="Direct Energy"
+                                            class="diect__energy_img">
+                                    </td>
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313 bg_green_D1E">
+                                        $ 0.00299<br>
+                                        <button class="btn btn-warning btn-sm text-white mt-1">
+                                            Generate <br /> Contract
+                                        </button>
+                                    </td>
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313 bg_green_D1E">$ 0.00299<br>
+                                        <button class="btn btn-warning btn-sm text-white mt-1">
+                                            Generate <br /> Contract
+                                        </button>
+                                    </td>
+                                    <td class="align-middle text-center fs_11_fw_400_c_1313 bg_green_D1E">
+                                        $ 0.00299<br>
+                                        <button class="btn btn-warning btn-sm text-white mt-1">
+                                            Generate <br /> Contract
+                                        </button>
+                                    </td>
+                                </tr>   
                             </tbody>
                         </table>
                     </div>
@@ -498,24 +537,19 @@
     </section>
 
     <!-- footer section -->
-    <div class="content-area mt-3 footer_bg p-3">
-        <section class="position-relative">
-            <footer>
-                <div class="container-fluid">
-                    <div class="row flex-row">
-                        <div class="col-12 col-md-12">
-                            <div class="d-flex justify-content-center">
-                                <div class="them_btn_container">
-                                    <button class="theme_outline_btn">Back</button>
-                                </div>
-                            </div>
+    <footer class="content-area mt-4">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12 col-md-12">
+                    <div class="d-flex justify-content-center">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn">Back</button>
                         </div>
                     </div>
                 </div>
-            </footer>
-
-        </section>
-    </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
@@ -524,7 +558,6 @@
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="../assets/js-files/btn-ripple.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
