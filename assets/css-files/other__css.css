@@ -98,3 +98,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 .cancel_icon{
   width: 16px;
 }
+
+.arrow__size::after{
+  background-size: 1rem !important;
+}

@@ -36,17 +36,6 @@
 }
 
 
-html,
-body {
-  height: 100%; /* Ensures the body takes up the full height */
-}
-.content {
-  flex: 1 0 auto; /* Makes the main content expand */
-}
-.footer {
-  flex-shrink: 0; /* Ensures the footer doesn't shrink */
-}
-
 .footer_bg {
   background-color: var(--HR_BG);
 }
@@ -94,6 +83,7 @@ body {
   /* Hide horizontal scroll */
   margin: 0;
   padding: 0;
+  min-height: 100vh
 }
 body::-webkit-scrollbar {
   width: 0px;
@@ -116,10 +106,12 @@ body::-webkit-scrollbar {
 .content-area {
   width: calc(100% - 40px);
   margin-left: auto;
+  flex: 1;
 }
 
+
 .custom_height {
-  height: 60px;
+  height: 5px;
 }
 
 /* Table responsive css */
@@ -431,16 +423,6 @@ td span {
   /* Remove any appearance settings */
 }
 
-.custom_select:hover,
-.form-select:focus {
-  outline: none;
-  box-shadow: none;
-}
-.custom_select:focus {
-  outline: none;
-  box-shadow: none; /* Removes the default Bootstrap box-shadow */
-}
-
 .form_label {
   color: var(--Primary, #131313);
   font-family: Poppins;
@@ -648,7 +630,7 @@ text-decoration-skip-ink: none;
 /* Footer Style */
 
 footer {
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
   display: flex;
   position: sticky;
@@ -659,9 +641,51 @@ footer {
   text-align: center;
   padding: 10px 0;
   z-index: 999;
-  min-height: 74px;
+  min-height: 74px; */
 }
 
 .white_bg_footer {
   background-color: #fff;
+}
+
+
+/* Sticky footer styling */
+
+
+.footer-area {
+  width: calc(100% - 40px);
+  margin-left: auto;
+  flex: 1 !important;
+}
+/* Ensure body and html fill the viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Flex container for the entire page */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+
+/* Footer stays at the bottom */
+footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: sticky; /* Make it part of the flow */
+  bottom: 0;
+  right: 0;
+  background-color: #f2fcff;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  z-index: 9;
+  min-height: 75px;
+  width: 100%;
 }
