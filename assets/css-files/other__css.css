@@ -27,11 +27,74 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23131313'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-.theme_accordian .accordion-button{
-    padding: 10px 12px;
-    align-items: center;
+.theme_accordian .accordion-button {
+  padding: 10px 12px;
+  align-items: center;
 }
 
-.bg__accordian_body{
-    background-color: #c1eaff !important;
+.bg__accordian_body {
+  background-color: #c1eaff !important;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* bg__accordian_body scroll bar */
+
+.bg__accordian_body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.bg__accordian_body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.bg__accordian_body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.bg__accordian_body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
+}
+
+/* text area scrollbar */
+
+.bg__accordian_body {
+  background-color: #c1eaff !important;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* bg__accordian_body scroll bar */
+
+textarea::-webkit-scrollbar {
+  width: 4px;
+  flex-shrink: 0;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+textarea::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
+}
+
+.black_tic__check .form-check-input {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.169);
+}
+
+.black_tic__check .form-check-input:checked {
+  background: #fff;
+}
+
+.cancel_icon{
+  width: 16px;
 }

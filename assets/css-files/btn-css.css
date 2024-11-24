@@ -35,6 +35,34 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* White Button */
+.White_bg_theme_text {
+    position: relative;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    color: var(--Theme);
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: Poppins;
+    font-size: var(--Label-Large-Size, 14px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Label-Large-Line-Height, 20px);
+    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+}
+
+.White_bg_theme_text:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 /* Secondary Button */
 .theme_secondary_btn {
     position: relative;
@@ -132,7 +160,7 @@
 }
 
 /* Ripple effect styles */
-.ripple {
+.white_ripple {
     position: absolute;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.6);
@@ -140,6 +168,14 @@
     animation: ripple-animation 0.6s linear;
 }
 
+.theme_ripple{
+    position: absolute;
+    border-radius: 50%;
+    background: #007cba96;
+    transform: scale(0);
+    animation: ripple-animation 0.6s linear; 
+}
+    
 @keyframes ripple-animation {
     to {
         transform: scale(4);

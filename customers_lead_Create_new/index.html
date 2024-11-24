@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- top header -->
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <!-- Switch buttons -->
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+        <hr class="mt-5 show_white_hr_line" />
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+        </div>
+        <hr class="show_white_hr_line mt-2" />
+
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+        </div>
+    </div>
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
+        <div>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+            </div>
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_container position-static">
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="accordion gap-2" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M5.33333 14.9998H12V13.3332H5.33333V14.9998ZM5.33333 11.6665H12V9.99984H5.33333V11.6665ZM3.66667 18.3332C3.20833 18.3332 2.81597 18.17 2.48958 17.8436C2.16319 17.5172 2 17.1248 2 16.6665V3.33317C2 2.87484 2.16319 2.48248 2.48958 2.15609C2.81597 1.8297 3.20833 1.6665 3.66667 1.6665H10.3333L15.3333 6.6665V16.6665C15.3333 17.1248 15.1701 17.5172 14.8437 17.8436C14.5174 18.17 14.125 18.3332 13.6667 18.3332H3.66667ZM9.5 7.49984V3.33317H3.66667V16.6665H13.6667V7.49984H9.5Z" />
+                                    </svg>
+                                    <span class="">Quotes</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                        <path
+                                            d="M2 18.67V16.9153H12V18.67H2ZM6.70833 14.4148L2 9.45763L3.75 7.57129L8.5 12.5284L6.70833 14.4148ZM12 8.84347L7.29167 3.84247L9.08333 2L13.7917 6.95713L12 8.84347ZM15.8333 17.7926L4.95833 6.34297L6.125 5.11466L17 16.5643L15.8333 17.7926Z" />
+                                    </svg>
+                                    <span class="">Auctions</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M4.5 18.3332C3.80556 18.3332 3.21528 18.0901 2.72917 17.604C2.24306 17.1179 2 16.5276 2 15.8332V13.3332H4.5V1.6665H17V15.8332C17 16.5276 16.7569 17.1179 16.2708 17.604C15.7847 18.0901 15.1944 18.3332 14.5 18.3332H4.5ZM14.5 16.6665C14.7361 16.6665 14.934 16.5866 15.0938 16.4269C15.2535 16.2672 15.3333 16.0693 15.3333 15.8332V3.33317H6.16667V13.3332H13.6667V15.8332C13.6667 16.0693 13.7465 16.2672 13.9062 16.4269C14.066 16.5866 14.2639 16.6665 14.5 16.6665ZM7 7.49984V5.83317H14.5V7.49984H7ZM7 9.99984V8.33317H14.5V9.99984H7ZM4.5 16.6665H12V14.9998H3.66667V15.8332C3.66667 16.0693 3.74653 16.2672 3.90625 16.4269C4.06597 16.5866 4.26389 16.6665 4.5 16.6665ZM4.5 16.6665H3.66667H12H4.5Z"
+                                            fill="#757575" />
+                                    </svg>
+                                    <span class="">Contracts/CRM</span>
+                                </div>
+                            </div>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="sub_menu_parent">
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Create New</span>
+                                    </div>
+                                    <div class="sub_menus_items">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Active - 715</span>
+                                    </div>
+                                    <div class="sub_menus_items py-0">
+                                        <span class="half_moon"></span>
+                                        <span class="sub_menu">Requests - 13</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="btn-group position-static dropend w-100">
+                <button type="button" class="btn" data-bs-toggle="dropdown">
+                    <div class="row flex-row justify-content-between">
+                        <div class="col-auto p-0">
+                            <div class="d-flex align-items-center gap-2">
+                                <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                <span class="menu_title">Qoutes</span>
+                            </div>
+                        </div>
+                        <div class="col-auto m-0 p-0">
+                            <i class="bi bi-chevron-right text-white"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Create New</span>
+                    </li>
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Active - 715</span>
+                    </li>
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Requests - 13</span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="btn-group position-static dropend w-100">
+                <button type="button" class="btn" data-bs-toggle="dropdown">
+                    <div class="row flex-row justify-content-between">
+                        <div class="col-auto p-0">
+                            <div class="d-flex align-items-center gap-2">
+                                <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                <span class="menu_title">Auctions</span>
+                            </div>
+                        </div>
+                        <div class="col-auto m-0 p-0">
+                            <i class="bi bi-chevron-right text-white"></i>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Create New</span>
+                    </li>
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Active - 715</span>
+                    </li>
+                    <li class="sub_menus_items">
+                        <span class="half_moon"></span>
+                        <span class="sub_menu">Requests - 13</span>
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                    <span class="menu_title">Home</span>
+                </div>
+            </div>
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                    <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                    <span class="menu_title">Logout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- custom height -->
+    <div class="custom_height"></div>
+
+    <!-- bread crumb -->
+    <section class="content-area">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-between align-items-center py-2 gap-2">
+                <div class="col-12 col-md-6">
+                    <div class="d-flex flex-wrap align-items-center gap-2">
+                        <div class="main_title_15">Contracts/CRM</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="main_title_15">Customer/Leads</div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <div class="active_text_title_14">Create New</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label menu_font_style"
+                                for="flexSwitchCheckDefault">In-Progress</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" checked>
+                            <label class="form-check-label menu_font_style"
+                                for="flexSwitchCheckDefault">Complete</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOrm deign -->
+    <section class="content-area">
+        <div class="container-fluid">
+            <div class="border rounded px-3">
+                <form action="">
+                    <!-- <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+                <div class="sub_title_13">C -002 34 xx</div>
+                <img src="../assets/icons/black_form_search_icon.png" class="search_002" alt="date_picker_icon">
+              </div> -->
+                    <div class="row d-flex">
+                        <!-- Category -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Category</label>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Albert Sasson" value="Load" readonly>
+                            </div>
+                        </div>
+
+                        <!-- Assigned To -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Assigned To</label>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Electric" value="Albert Sasson" readonly>
+                            </div>
+                        </div>
+
+                        <!-- Cusomer/Lead Name* -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Cusomer/Lead Name
+                                    <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+
+                        <!-- Address * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Address <span
+                                        class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+
+                        <!-- City * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">City <span
+                                        class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+
+                        <!-- Postal/Zip Code * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Postal/Zip Code
+                                    <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+
+                        <!-- Main Contact Name * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Name
+                                    <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+
+                        <!-- Main Contact Primary Phone Number * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Primary
+                                    Phone Number <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="+1" value="">
+                            </div>
+                        </div>
+
+                        <!-- Main Contact Secondary Phone Number * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                    Secondary Phone Number <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="+1" value="">
+                            </div>
+                        </div>
+
+                        <!-- Main Contact Email Address * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Email
+                                    Address <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="email@gmail.com" value="">
+                            </div>
+                        </div>
+
+
+                        <!-- Main Contact Title * -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Title
+                                    <span class="text-danger">*</span></label>
+
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="email@gmail.com" value="">
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="active_text_title_14">Secondary Contact</span>
+                        </div>
+                        <!-- Start month -->
+                        <div class="mt-3"></div>
+
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3 position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Start
+                                        Month</label>
+                                    <img id="" src="../assets/icons/date_picker_icon.png" class="date_picker_icon m-0"
+                                        alt="date_picker_icon" style="cursor:pointer;">
+                                </div>
+                                <input type="text" class="form-control form_text_field"
+                                    placeholder="Select Month and Year" value="March 2024" readonly>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                  <div class="m-0 position-relative">                  
+                    <img id="date_icon" src="../assets/icons/date_picker_icon.png" class="date_picker_icon m-0"
+                    alt="date_picker_icon" style="cursor:pointer;">
+                    <label for="datepicker" class="form-label form_label">Start Month</label>
+                    <input type="text" id="datepicker_input" class="form-control form_text_field"
+                      placeholder="Select Month and Year">
+                  </div>
+                </div> -->
+
+                        <!-- Annual volume -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3 position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Annual
+                                        volume</label>
+                                    <span class="form_unit_text">kwh</span>
+
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Select Month and Year" value="8,456" readonly>
+                            </div>
+                        </div>
+
+                        <!-- account field -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3 position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Account
+                                        (s)</label>
+                                    <label type="button" for="" class="active_text_title_13"> + Add</label>
+                                </div>
+                                <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon"
+                                    alt="search_icon" style="cursor:pointer;" data-bs-target="#accounts_view_modal"
+                                    data-bs-toggle="modal">
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="18,456" value="8,456" readonly>
+                            </div>
+                        </div>
+
+                        <!-- Due date -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="mb-3 position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Quote Due
+                                        Date</label>
+                                </div>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;">
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="18,456" value="8,456" readonly>
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                  <div class="mb-3 position-relative">
+                    <img id="date_icon_2" src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                      alt="date_picker_icon" style="cursor:pointer;">
+                    <label for="datepicker_2" class="form-label form_label">Quote Due Date</label>
+                    <input type="text" id="datepicker_input_2" class="form-control form_text_field"
+                      placeholder="Select Month and Year" value="Select Month and Year" readonly>
+                  </div>
+                </div> -->
+
+                        <!-- upload doc -->
+
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                <label for="upload_doc" class="form-label form_label">Documents</label>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                                    fill="none">
+                                    <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
+                                </svg>
+                            </div>
+                            <div class="border rounded d-flex justify-content-end pe-2">
+                                <div class="them_btn_container">
+                                    <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
+                                        class="theme_primary_btn">Upload</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- text area 1 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label form_label">Notes <span
+                                        class="para_text_14">(Viewable to
+                                        partner)</span></label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="0.0"></textarea>
+                            </div>
+
+                        </div>
+
+                        <!-- text area 2 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin ">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label form_label">RFP
+                                    Requirement</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Zeus Recs included"></textarea>
+                            </div>
+                        </div>
+                        <!-- finish all colomn -->
+
+                    </div>
+                    <!-- finish row -->
+                </form>
+            </div>
+
+            <!-- buttons row -->
+            <div class="row justify-content-center align-items-center position-relative">
+                <div class="col-auto mt-2">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal"
+                                data-bs-toggle="modal">Generate
+                                LOA</button>
+                        </div>
+                        <span class="form_label">OR</span>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal"
+                                data-bs-toggle="modal">Generate
+                                LOE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="customer_site_btn">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+                            <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
+                        </svg>
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn">Customer/Site Info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- margin row -->
+            <div class="row mb-3 mt-2">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="row align-items-center">
+                        <div class="red_desh btn" id="marginToggleBtn"><span>-</span></div>
+                        <div class="col-auto"><span for="" class="w-25 form_label">Margin</span></div>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="margin_box mt-3" id="marginToggleText">
+                            <span class="margin_price_text ">$ 0.252525</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                        <div class="text-center fixed_rate">Fixed Rate</div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+    <footer class="content-area">
+        <div class="container-fluid">
+            <div class="row flex-row justify-content-between">
+                <div class="col-auto d-flex gap-3 align-items-center">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn">Back</button>
+                    </div>
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" data-bs-target="#follow__up__modal"
+                        data-bs-toggle="modal">Queue a Follow-up</button>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="d-flex justify-content-end">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+     <!-- follow__up__modal modal -->
+  <div class="modal fade" id="follow__up__modal" aria-hidden="true" tabindex="-1">
+
+    <div class="modal-dialog  modal-dialog-centered d-flex justify-content-center align-items-center">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class=" h1_title fs-5" id="exampleModalToggleLabel">Queue a Follow-up</h1>
+          <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+            <img src="../assets/images/red_cancel.png" alt="red_cancel">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="mb-2">
+              <label for="exampleFormControlInput1" class="form-label form_label">Type</label>
+              <input type="text" class="form-control form_text_field" id="exampleFormControlInput1" placeholder="Type"
+                value="Sell" readonly>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-2">
+              <label for="exampleFormControlTextarea1" class="form-label form_label">Description <span
+                  class="text-danger">*</span></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="0.0"></textarea>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="mb-2">
+              <label for="exampleFormControlInput1" class="form-label form_label">Responsible <span
+                  class="text-danger">*</span></label>
+              <input type="text" class="form-control form_text_field" id="exampleFormControlInput1" placeholder="Type"
+                value="Sell" readonly>
+            </div>
+          </div>
+          <!-- Queuerow -->
+          <div class="  col-12">
+            <div class="mb-1">
+              <label for="exampleFormControlInput1" class="form-label form_label">Queue <span
+                  class="text-danger">*</span></label>
+              <div class="row flex-wrap">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                    placeholder="Type here" value="">
+                  <span></span>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                  </select>
+                  <span class="fs_11_fw_400_c_7575">Time</span>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                  <select class="form-select form-select-sm" aria-label="Small select example">
+                    <option value="1">AM</option>
+                    <option value="3">PM</option>
+                  </select>
+                  <span class="fs_11_fw_400_c_7575">EST</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2">Close</button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

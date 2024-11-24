@@ -1,3 +1,7 @@
+
+<!-- form style -->
+
+
 .date_picker_icon {
   width: 24px;
   height: 24px;
@@ -251,6 +255,9 @@
   border-radius: 30px;
   color: #007cba;
   background-color: #f3f5ff;
+  line-height: 16px;
+  font-size: 16px;
+  gap: 2px;
 }
 .tag-close {
   margin-left: 0.5rem;
@@ -299,3 +306,64 @@
   width: 200px;
   height: 30px;
 }
+
+    /* Style the select container */
+    .custom-select-container {
+      width: 200px;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style the select */
+    .custom-select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      display: block;
+      width: 100%;
+      padding: 8px 38px 8px 12px;      
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: none;
+      cursor: pointer;
+    }
+
+    /* Arrow styling */
+    /* .custom-select-container::after {
+      content: "⯆"; 
+      font-size: 14px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      background-color: var(--primary_bg_color);
+      border-radius: 4px;
+      padding: 2px 6px;
+    } */
+
+    .custom-select-container::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      background-color: #007cba !important; /* Arrow background color */
+      border-radius: 4px;
+      padding: 10px;
+      background-image: url('../icons/caret-down-fill.svg');
+      background-repeat: no-repeat;
+      background-size: 12px;
+      background-position: center;
+    }
+    
+
+
+    /* Hover and Focus styles */
+    .custom-select:hover, .custom-select:focus {
+      border-color: var(--primary_bg_color);
+      outline: none;
+    }

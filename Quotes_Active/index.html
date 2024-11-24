@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
   <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+  <link rel="stylesheet" href="../assets/css-files/form_style.css" />
 
 
   <!-- font faimily -->
@@ -400,46 +401,14 @@
             <span class="mid_header_mian_title">Quot</span>
             <!-- select box -->
 
-            <div class="mid_header_select">
-              <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
-                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox" aria-expanded="false"
-                  aria-labelledby="dropdown-label">
-                  <span class="mdc-select__selected-text-container">
-                    <span id="dropdown-label" class="mdc-select__selected-text">Select an option</span>
-                  </span>
-                  <span class="mdc-select__dropdown-icon">
-                    <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
-                      <polygon class="mdc-select__dropdown-icon-inactive" stroke="none" fill-rule="evenodd"
-                        points="7 10 12 15 17 10"></polygon>
-                      <polygon class="mdc-select__dropdown-icon-active" stroke="none" fill-rule="evenodd"
-                        points="7 15 12 10 17 15"></polygon>
-                    </svg>
-                  </span>
-                  <span class="mdc-notched-outline">
-                    <span class="mdc-notched-outline__leading"></span>
-                    <span class="mdc-notched-outline__trailing"></span>
-                  </span>
-                </div>
-
-                <!-- Dropdown options -->
-                <div class="mdc-select__menu mdc-menu mdc-menu-surface w-100" role="listbox">
-                  <ul class="mdc-deprecated-list">
-                    <li class="mdc-deprecated-list-item" role="option" tabindex="0" aria-selected="false">
-                      <span class="mdc-deprecated-list-item__ripple"></span>
-                      <span class="mdc-deprecated-list-item__text">Active</span>
-                    </li>
-                    <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                      <span class="mdc-deprecated-list-item__ripple"></span>
-                      <span class="mdc-deprecated-list-item__text">Option 2</span>
-                    </li>
-                    <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                      <span class="mdc-deprecated-list-item__ripple"></span>
-                      <span class="mdc-deprecated-list-item__text">Option 3</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            
+<div class="custom-select-container">
+  <select class="custom-select text_h3">
+    <option>Active</option>
+    <option>Option 2</option>
+    <option>Option 3</option>
+  </select>
+</div>
           </div>
         </div>
         <div class="col-lg-9 col-md-12 col-12">
@@ -476,7 +445,7 @@
 
             <div class="d-flex justify-content-between align-items-center gap-3 mid_head_3rd_col">
               <div class="them_btn_container">
-                <button class="theme_primary_btn">Email Text</button>
+                <button class="theme_primary_btn btn_ripple_white">Email Text</button>
               </div>
               <!-- <button type="button" class="btn  ">
                 <span class="mdc-button__label">Email Text</span>
@@ -486,7 +455,7 @@
               </button> -->
               <div class="them_btn_container" type="button" data-bs-toggle="offcanvas" data-bs-target="#quote_drawer"
                 aria-controls="quote_drawer">
-                <button class="theme_primary_btn">
+                <button class="theme_primary_btn btn_ripple_white">
                   <img src="../assets/white_search_Icon.png" alt="Search Icon" class="mid_head_search" />
                 </button>
               </div>
@@ -521,47 +490,54 @@
           <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
 
 
-          <div class="form-check">
+          <div class="form-check black_tic__check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               All Filters
             </label>
           </div>
 
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <div class="form-check black_tic__check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" style="fill: #000">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               Customer / Legal Name on Contract
             </label>
           </div>
 
-          <div class="form-check">
+          <div class="form-check black_tic__check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               Account Number
             </label>
           </div>
 
-          <div class="form-check">
+          <div class="form-check black_tic__check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               Contact Name
             </label>
           </div>
 
-          <div class="form-check">
+          <div class="form-check black_tic__check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               Commodity
             </label>
           </div>
 
-          <div class="form-check">
+          <div class="form-check black_tic__check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label filter_title" for="flexCheckDefault">
               Quote ID
             </label>
           </div>
+
+          
+<div class="d-flex justify-content-center align-items-center mt-3">
+  <div class="them_btn_container">
+    <button class="White_bg_theme_text btn_theme_ripple">Search</button>
+  </div>
+</div>
 
         </div>
       </div>
@@ -911,6 +887,59 @@
     </div>
   </section>
 
+    <!-- footer section -->
+    <footer class="content-area">
+      <div class="container-fluid">
+          <div class="row flex-row">
+              <div class="col-12 col-md-12 col-lg-2">
+                  <div class="d-flex justify-content-start">
+                      <div class="them_btn_container">
+                          <button class="theme_outline_btn">Back</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-10">
+                  <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                              data-bs-toggle="modal">Add Supplier</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                              data-bs-toggle="modal">Request Qoute</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                              data-bs-toggle="modal">Refresh</button>
+                      </div>
+
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn">Preview Link</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                              data-bs-toggle="modal">Email
+                              Link</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn">Print</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn" onclick="createProposal()">Create
+                              Proposal</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn">Save & Update</button>
+                      </div>
+                      <div class="them_btn_container">
+                          <button class="theme_primary_btn">Save & Email</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+
   <!-- Overlay -->
   <div class="overlay_mainsidebar"></div>
 
@@ -950,9 +979,8 @@
   <script src="../assets/js-files/SideBarScript.js"></script>
   <script src="../assets/js-files/MidHeaderScript.js"></script>
   <script src="../assets/js-files/topheaderScript.js"></script>
-  <!-- <script src="../assets/js-files/btn-ripple.js"></script> -->
+  <script src="../assets/js-files/btn-ripple.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
   <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

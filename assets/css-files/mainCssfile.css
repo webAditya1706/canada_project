@@ -28,6 +28,14 @@
   --HR_BG: #d6d6d6;
 }
 
+:root .black_tic__check .form-check-input:checked[type=checkbox] {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/33/33281.png);
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 html,
 body {
   height: 100%; /* Ensures the body takes up the full height */
@@ -274,6 +282,10 @@ td span {
   background-color: #fff !important;
 }
 
+.text_theme_color{
+  color: var(--Theme);
+}
+
 /* table text style */
 .table_th_text {
   color: var(--dark_text_color);
@@ -510,6 +522,17 @@ td span {
   font-style: normal;
   font-weight: 600;
   line-height: 20px; /* 100% */
+}
+
+.text_h3{
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 14px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 
 /* Modal style */
