@@ -5,35 +5,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sticky Footer</title>
   <style>
-    /* Ensure the body and HTML take the full height */
-   
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #f4f4f4;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      flex: 1; /* Fills the remaining space */
+      padding: 1rem;
+      background-color: #eaeaea;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      bottom: 0;
+    }
   </style>
 </head>
 <body>
-  <!-- Main content -->
-  <div class="content-area">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <p>This is the main content area. Add your content here.</p>
-        </div>
+  <div class="wrapper">
+    <header>
+      <h1>Sticky Footer Example</h1>
+    </header>
+    <main>
+      <p>Your content goes here.</p>
+      <div>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
+        <h1>hiiiiiiiiiii</h1>
       </div>
-    </div>
+    </main>
+    <footer>
+      <p>Footer content here.</p>
+    </footer>
   </div>
-
-  <!-- Footer Section -->
-  <footer>
-    <div class="container-fluid">
-      <div class="row flex-row">
-        <div class="col-12 col-md-12 col-lg-2">
-          <div class="d-flex justify-content-start">
-            <div class="them_btn_container">
-              <button class="theme_outline_btn">Back</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>

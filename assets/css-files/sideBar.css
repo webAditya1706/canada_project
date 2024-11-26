@@ -226,6 +226,20 @@ aside {
   z-index: 10;
 }
 
+
+#open_main_sidebar {
+  width: 40px;
+  height: 100vh;
+  /* Full viewport height */
+  position: fixed;
+  top: 59px;
+  left: 0;
+  /* background-color: #fff; */
+  background-color: var(--Theme);
+  /* Light gray background */
+  overflow-y: auto;
+}
+
 #open_main_sidebar:hover + #main_sidebar {
   left: 0; /* Slide sidebar in on hover */
 }
@@ -233,3 +247,6 @@ aside {
 #main_sidebar .accordion-button::after {
   background-size: 8px 22px;
 }
+
+
+/* new css */

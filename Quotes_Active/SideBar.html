@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css">
+    <link rel="stylesheet" href="../assets/css-files/">
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar" style="background-color: blue;">
+        <hr class="mt-5 show_white_hr_line" />
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+        </div>
+        <hr class="show_white_hr_line mt-2" />
+
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+        </div>
+    </div>
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar" style="background-color: blue;">
+        <div>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+            </div>
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_container position-static">
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-2">
+                <div class="btn-group position-static dropend w-100">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                    <span class="menu_title">Qoutes</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="sub_menus_items">
+                            <span class="half_moon"></span>
+                            <span class="sub_menu">Create New</span>
+                        </li>
+                        <li class="sub_menus_items">
+                            <span class="half_moon"></span>
+                            <span class="sub_menu">Active - 715</span>
+                        </li>
+                        <li class="sub_menus_items">
+                            <span class="half_moon"></span>
+                            <span class="sub_menu">Requests - 13</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mx-2">
+                <div class="btn-group position-static dropend w-100">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                    <span class="menu_title">Auctions</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item" href="#">
+                            <span class="sub_menu">Create New</span>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <span class="sub_menu">Active - 715</span>
+                        </li>
+                        <li class="dropdown-item" href="#">
+                            <span class="sub_menu">Requests - 13</span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown link
+                </a>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                    <span class="menu_title">Home</span>
+                </div>
+            </div>
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                    <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                    <span class="menu_title">Logout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay_mainsidebar"></div>
+
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>

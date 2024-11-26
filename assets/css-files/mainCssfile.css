@@ -655,7 +655,6 @@ footer {
 .footer-area {
   width: calc(100% - 40px);
   margin-left: auto;
-  flex: 1 !important;
 }
 /* Ensure body and html fill the viewport */
 html, body {
@@ -663,6 +662,12 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Flex container for the entire page */
