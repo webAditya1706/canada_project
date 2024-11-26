@@ -187,14 +187,22 @@ aside {
 }
 
 .show_side_bar .sub_menu {
-  margin-left: 10px;
   color: #757575;
   font-family: Inter;
-  font-size: 12px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.24px;
+  padding: 7px 10px;
+}
+
+.show_side_bar .sub_menu:hover{
+  background-color: var(--primary_bg_color);
+}
+
+.show_side_bar .sub_menu:hover span{
+ color: #FFF; 
 }
 
 /* its help full to open and close drawer */
@@ -250,3 +258,19 @@ aside {
 
 
 /* new css */
+.dropdown-menu.show:after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+  position: absolute;
+  top: 11px;
+  left: -5px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+  border-color: transparent !important;
+}

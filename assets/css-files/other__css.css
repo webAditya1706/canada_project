@@ -6,9 +6,6 @@
   width: 130px;
 }
 
-.bg_green_D1E {
-  background-color: #d1ecd5 !important;
-}
 .theme_accordian {
   outline: none;
 }
@@ -102,3 +99,20 @@ textarea::-webkit-scrollbar-thumb:hover {
 .arrow__size::after{
   background-size: 1rem !important;
 }
+
+/* tooltip */
+.tooltip-inner {
+  background-color: var(--Theme); /* Background color of tooltip */
+  color: white;            /* Text color */
+  font-size: 14px;         /* Adjust font size */
+  padding: 8px 12px;       /* Add padding */
+  border-radius: 8px;      /* Round corners */
+}
+.tooltip-arrow::before {
+  border-top-color: #ff6f61; /* Arrow color matching tooltip background */
+}
+/* Optional: Adjust tooltip positioning */
+.bs-tooltip-top .tooltip-arrow::before {
+  margin-top: -5px;
+}
+

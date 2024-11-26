@@ -136,250 +136,137 @@
     <!-- Side bar -->
     <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
         <hr class="mt-5 show_white_hr_line" />
-
+  
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+          <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
         </div>
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
-
+          <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+  
         </div>
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
-
+          <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+  
         </div>
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
-
+          <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+  
         </div>
         <hr class="show_white_hr_line mt-2" />
-
-
+  
+  
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
-
+          <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+  
         </div>
         <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
-
+          <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+  
         </div>
-    </div>
-
-    <!-- drawer Sidebar -->
-    <div id="main_sidebar">
+      </div>
+  
+      <!-- drawer Sidebar -->
+      <div id="main_sidebar">
         <div>
-            <div class="d-flex justify-content-center">
-                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+          <div class="d-flex justify-content-center">
+            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+          </div>
+          <hr style="height: 2px; background-color: #ddd; width: 100%" />
+          <div class="menu_container position-static">
+            <div class="menu_parent">
+              <div class="d-flex align-items-center gap-2">
+                <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+  
+                <span class="menu_title">Home</span>
+              </div>
             </div>
-            <hr style="height: 2px; background-color: #ddd; width: 100%" />
-            <div class="menu_container position-static">
-                <div class="menu_parent">
+          </div>
+  
+          <div class="mx-2">
+            <div class="btn-group position-static dropend w-100">
+              <div type="button" class="btn" data-bs-toggle="dropdown">
+                <div class="row flex-row justify-content-between">
+                  <div class="col-auto p-0">
                     <div class="d-flex align-items-center gap-2">
-                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
-                        <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
-
-                        <span class="menu_title">Home</span>
+                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                      <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                      <span class="menu_title">Qoutes</span>
                     </div>
+                  </div>
+                  <div class="col-auto m-0 p-0">
+                    <i class="bi bi-chevron-right text-white"></i>
+                  </div>
                 </div>
-
-
-
-
-
-
-
-
-                <div class="accordion gap-2" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                        <path
-                                            d="M5.33333 14.9998H12V13.3332H5.33333V14.9998ZM5.33333 11.6665H12V9.99984H5.33333V11.6665ZM3.66667 18.3332C3.20833 18.3332 2.81597 18.17 2.48958 17.8436C2.16319 17.5172 2 17.1248 2 16.6665V3.33317C2 2.87484 2.16319 2.48248 2.48958 2.15609C2.81597 1.8297 3.20833 1.6665 3.66667 1.6665H10.3333L15.3333 6.6665V16.6665C15.3333 17.1248 15.1701 17.5172 14.8437 17.8436C14.5174 18.17 14.125 18.3332 13.6667 18.3332H3.66667ZM9.5 7.49984V3.33317H3.66667V16.6665H13.6667V7.49984H9.5Z" />
-                                    </svg>
-                                    <span class="">Quotes</span>
-                                </div>
-                            </div>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="sub_menu_parent">
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Create New</span>
-                                    </div>
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Active - 715</span>
-                                    </div>
-                                    <div class="sub_menus_items py-0">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Requests - 13</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                        <path
-                                            d="M2 18.67V16.9153H12V18.67H2ZM6.70833 14.4148L2 9.45763L3.75 7.57129L8.5 12.5284L6.70833 14.4148ZM12 8.84347L7.29167 3.84247L9.08333 2L13.7917 6.95713L12 8.84347ZM15.8333 17.7926L4.95833 6.34297L6.125 5.11466L17 16.5643L15.8333 17.7926Z" />
-                                    </svg>
-                                    <span class="">Auctions</span>
-                                </div>
-                            </div>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="sub_menu_parent">
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Create New</span>
-                                    </div>
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Active - 715</span>
-                                    </div>
-                                    <div class="sub_menus_items py-0">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Requests - 13</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <div class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <div class="d-flex align-items-center gap-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                        fill="none">
-                                        <path
-                                            d="M4.5 18.3332C3.80556 18.3332 3.21528 18.0901 2.72917 17.604C2.24306 17.1179 2 16.5276 2 15.8332V13.3332H4.5V1.6665H17V15.8332C17 16.5276 16.7569 17.1179 16.2708 17.604C15.7847 18.0901 15.1944 18.3332 14.5 18.3332H4.5ZM14.5 16.6665C14.7361 16.6665 14.934 16.5866 15.0938 16.4269C15.2535 16.2672 15.3333 16.0693 15.3333 15.8332V3.33317H6.16667V13.3332H13.6667V15.8332C13.6667 16.0693 13.7465 16.2672 13.9062 16.4269C14.066 16.5866 14.2639 16.6665 14.5 16.6665ZM7 7.49984V5.83317H14.5V7.49984H7ZM7 9.99984V8.33317H14.5V9.99984H7ZM4.5 16.6665H12V14.9998H3.66667V15.8332C3.66667 16.0693 3.74653 16.2672 3.90625 16.4269C4.06597 16.5866 4.26389 16.6665 4.5 16.6665ZM4.5 16.6665H3.66667H12H4.5Z"
-                                            fill="#757575" />
-                                    </svg>
-                                    <span class="">Contracts/CRM</span>
-                                </div>
-                            </div>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <div class="sub_menu_parent">
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Create New</span>
-                                    </div>
-                                    <div class="sub_menus_items">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Active - 715</span>
-                                    </div>
-                                    <div class="sub_menus_items py-0">
-                                        <span class="half_moon"></span>
-                                        <span class="sub_menu">Requests - 13</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="btn-group position-static dropend w-100">
-                <button type="button" class="btn" data-bs-toggle="dropdown">
-                    <div class="row flex-row justify-content-between">
-                        <div class="col-auto p-0">
-                            <div class="d-flex align-items-center gap-2">
-                                <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
-                                <span class="menu_title">Qoutes</span>
-                            </div>
-                        </div>
-                        <div class="col-auto m-0 p-0">
-                            <i class="bi bi-chevron-right text-white"></i>
-                        </div>
-                    </div>
-                </button>
-                <ul class="dropdown-menu">
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Create New</span>
-                    </li>
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Active - 715</span>
-                    </li>
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Requests - 13</span>
-                    </li>
-
+              </div>
+              <div class="dropdown-menu ms-3 p-0">
+                <ul class="m-0 p-1">
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Create New</span>
+                  </li>
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Active - 715</span>
+                  </li>
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Requests - 13</span>
+                  </li>
                 </ul>
+              </div>
             </div>
-
+          </div>
+  
+          <div class="mx-2">
             <div class="btn-group position-static dropend w-100">
-                <button type="button" class="btn" data-bs-toggle="dropdown">
-                    <div class="row flex-row justify-content-between">
-                        <div class="col-auto p-0">
-                            <div class="d-flex align-items-center gap-2">
-                                <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
-                                <span class="menu_title">Auctions</span>
-                            </div>
-                        </div>
-                        <div class="col-auto m-0 p-0">
-                            <i class="bi bi-chevron-right text-white"></i>
-                        </div>
+              <div type="button" class="btn" data-bs-toggle="dropdown">
+                <div class="row flex-row justify-content-between">
+                  <div class="col-auto p-0">
+                    <div class="d-flex align-items-center gap-2">
+                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                      <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                      <span class="menu_title">Auctions</span>
                     </div>
-                </button>
-                <ul class="dropdown-menu">
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Create New</span>
-                    </li>
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Active - 715</span>
-                    </li>
-                    <li class="sub_menus_items">
-                        <span class="half_moon"></span>
-                        <span class="sub_menu">Requests - 13</span>
-                    </li>
-
+                  </div>
+                  <div class="col-auto m-0 p-0">
+                    <i class="bi bi-chevron-right text-white"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="dropdown-menu ms-3 p-0">
+                <ul class="m-0 p-1">
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Create New</span>
+                  </li>
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Active - 715</span>
+                  </li>
+                  <li class="dropdown-item sub_menu" href="#">
+                    <span class="">Requests - 13</span>
+                  </li>
                 </ul>
+              </div>
             </div>
-
-
-            <hr style="height: 2px; background-color: #ddd; width: 100%" />
-            <div class="menu_parent">
-                <div class="d-flex align-items-center gap-2">
-                    <img src="../assets/icons/Nav Icons/My profile.png" alt="">
-                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
-
-                    <span class="menu_title">Home</span>
-                </div>
+          </div>
+  
+          <hr style="height: 2px; background-color: #ddd; width: 100%" />
+          <div class="menu_parent">
+            <div class="d-flex align-items-center gap-2">
+              <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+              <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+  
+              <span class="menu_title">Home</span>
             </div>
-            <div class="menu_parent">
-                <div class="d-flex align-items-center gap-2">
-                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
-                    <img src="../assets/icons/Nav Icons/Logout.png" alt="">
-
-                    <span class="menu_title">Logout</span>
-                </div>
+          </div>
+          <div class="menu_parent">
+            <div class="d-flex align-items-center gap-2">
+              <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+              <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+  
+              <span class="menu_title">Logout</span>
             </div>
+          </div>
         </div>
-    </div>
-
+      </div>
+  
     <!-- custom height -->
     <div class="custom_height"></div>
 

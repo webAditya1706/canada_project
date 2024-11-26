@@ -649,20 +649,6 @@ td {
 }
 
 
-.first_last_td__radious tbody tr:first-child td{
-  background-color: #e74d3c38;
-}
-
-.first_last_td__radious tbody tr:first-child td:first-child{
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
-}
-
-.first_last_td__radious tbody tr:first-child td:last-child{
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
 .table .table-bordered td,.table .table-bordered th{
   padding: 10px;
 }
