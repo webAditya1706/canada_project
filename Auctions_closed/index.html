@@ -31,89 +31,55 @@
 </head>
 
 <body>
-
-    <!-- top header -->
-    <section class="top_header_secction">
-        <div class="container-fluid p-2">
-            <div class="row justify-content-between align-items-center">
-                <!-- Column 1 -->
-                <div class="col-12 col-lg-6">
-                    <div class="header_container">
-                        <div class="d-flex gap-2">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                            <div class="header_bg_text">
-                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+    <div class="page-wrapper">
+        <!-- top header -->
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
                             </div>
                         </div>
-                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
-                        </div>
                     </div>
-                </div>
 
-                <!-- Column 2 -->
-                <div class="col-12 col-lg-6 d-none d-lg-block">
-                    <div class="d-flex justify-content-end align-items-center gap-3">
-                        <!-- Switch buttons -->
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                        </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Partner
-                                View</label>
-                        </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
 
-                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                             <span class="menu_font_style">Switch to Partner View</span>
                         </div> -->
-                        <div class="d-flex align-items-center gap-1">
-                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                            <div>
-                                <p class="user_name">Welcome, Alon</p>
-                                <p class="user_email">alon@demomail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Drawer Menu -->
-                <div class="drawer" id="drawer" style="z-index: 999">
-                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                        <hr style="height: 1px; width: 100%" />
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start">
-                        <!-- Switch buttons -->
-                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                        </div>
-
-                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Partner
-                                View</label>
-                        </div>
-
-                        <div class="d-flex align-items-center gap-1 mb-2">
                             <div class="d-flex align-items-center gap-1">
                                 <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                 <div>
@@ -123,395 +89,413 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Overlay -->
-                <div class="overlay_menu" id="overlay"></div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Side bar -->
-    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-        <hr class="mt-5 show_white_hr_line" />
-  
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
-  
-        </div>
-        <hr class="show_white_hr_line mt-2" />
-  
-  
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
-  
-        </div>
-      </div>
-  
-      <!-- drawer Sidebar -->
-      <div id="main_sidebar">
-        <div>
-          <div class="d-flex justify-content-center">
-            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
-          </div>
-          <hr style="height: 2px; background-color: #ddd; width: 100%" />
-          <div class="menu_container position-static">
-            <div class="menu_parent">
-              <div class="d-flex align-items-center gap-2">
-                <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
-                <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
-  
-                <span class="menu_title">Home</span>
-              </div>
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
+                </div>
             </div>
-          </div>
-  
-          <div class="mx-2">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
+        </section>
+
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
                     <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
-                      <span class="menu_title">Qoutes</span>
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
                     </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
                 </div>
-              </div>
-              <div class="dropdown-menu ms-3 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="mx-2">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
+                <div class="menu_parent">
                     <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
-                      <span class="menu_title">Auctions</span>
-                    </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="dropdown-menu ms-3 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <hr style="height: 2px; background-color: #ddd; width: 100%" />
-          <div class="menu_parent">
-            <div class="d-flex align-items-center gap-2">
-              <img src="../assets/icons/Nav Icons/My profile.png" alt="">
-              <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
-  
-              <span class="menu_title">Home</span>
-            </div>
-          </div>
-          <div class="menu_parent">
-            <div class="d-flex align-items-center gap-2">
-              <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
-              <img src="../assets/icons/Nav Icons/Logout.png" alt="">
-  
-              <span class="menu_title">Logout</span>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    <!-- custom height -->
-    <div class="custom_height"></div>
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
 
-    <!-- bread crumb -->
-    <section class="content-area mt-1">
-        <div class="container-fluid">
-            <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
-                <div class="col-12 col-md-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="main_title_15">Auctions #76</div>
+                        <span class="menu_title">Logout</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- hr  -->
-    <section class="content-area">
-        <div class="ontainer-fluid">
-            <hr class="show_gray_hr_line" />
-        </div>
-    </section>
+        <!-- custom height -->
+        <div class="custom_height"></div>
 
-    <!-- Auctions Closed Body -->
-    <section class="content-area">
-        <div class="container-fluid">
-            <div class="border rounded mt-4 py-3 px-3">
-                <form action="" class="border rounded py-3 px-3">
-                    <div class="col-auto d-flex justify-content-start align-items-center mb-2 gap-2">
-                        <div class="sub_title_13">Test 1234</div>
-                        <img src="../assets/icons/black_form_search_icon.png" class="search_002" alt="date_picker_icon">
+        <!-- bread crumb -->
+        <section class="content-area mt-1">
+            <div class="container-fluid">
+                <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="main_title_15">Auctions #76</div>
+                        </div>
                     </div>
-                    <div class="row d-flex">
-                        <!-- Commodity -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Commodity</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Products -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3 position-relative">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Products</label>
-                                <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon"
-                                    alt="search_icon" style="cursor:pointer;" data-bs-target="#accounts_view_modal"
-                                    data-bs-toggle="modal">
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Fixed" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Utility -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Utility</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Start Month -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Start Month</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="February, 2021" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Annual Usage -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Annual Usage</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Number of Accounts -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="position-relative">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Number of
-                                    Accounts</label>
-                                <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon"
-                                    alt="search_icon" style="cursor:pointer;" data-bs-target="#accounts_view_modal"
-                                    data-bs-toggle="modal">
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="1" value="8,456" readonly>
-                            </div>
-                        </div>
-                        <!-- row end -->
-                    </div>
-                </form>
-
-                <!-- time div -->
-                <div class="time__div">
-                    <span class="">07/18/2024 12:05:00 AM</span>
                 </div>
+            </div>
+        </section>
 
-                <!-- Table -->
-                <div class="border rounded py-3 px-3 fixed_rate">
-                    <div class="text-center mb-3">Fixed Rate</div>
+        <!-- hr  -->
+        <section class="content-area">
+            <div class="ontainer-fluid">
+                <hr class="show_gray_hr_line" />
+            </div>
+        </section>
 
-                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-                        rel="stylesheet">
+        <!-- Auctions Closed Body -->
+        <section class="content-area">
+            <div class="container-fluid">
+                <div class="border rounded mt-4 py-3 px-3">
+                    <form action="" class="border rounded py-3 px-3">
+                        <div class="col-auto d-flex justify-content-start align-items-center mb-2 gap-2">
+                            <div class="sub_title_13">Test 1234</div>
+                            <img src="../assets/icons/black_form_search_icon.png" class="search_002"
+                                alt="date_picker_icon">
+                        </div>
+                        <div class="row d-flex">
+                            <!-- Commodity -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1"
+                                        class="form-label form_label">Commodity</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="Electric"
+                                        readonly>
+                                </div>
+                            </div>
 
-                    <div class="container table-responsive mt-4 border__table">
-                        <table class="table table-bordered align-middle">
-                            <thead class="thead_bg">
-                                <tr>
-                                    <th class="th_title table_head_bg text-center td_h_55 align-middle">Supplier</th>
-                                    <th class="th_title table_head_bg text-center td_h_55 align-middle">12 Months</th>
-                                    <th class="th_title table_head_bg text-center td_h_55 align-middle">24 Months</th>
-                                    <th class="th_title table_head_bg text-center td_h_55 align-middle">36 Months</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Row for Lowest Bid with custom styling -->
-                                <!-- <tr>
-                                    <td colspan="4" class="py-1 px-4">
-                                        <div
-                                            class="row border rounded border-danger justify-content-between align-items-center">
-                                            <div class="col-3">
-                                                <div class="text-center">
-                                                    <span class="text-danger ">Lowest Bid</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="d-flex justify-content-center">
-                                                    <img src="../assets/images/sfe-energy.png" class="sfe_energy_img"
-                                                        alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="d-flex justify-content-center">
-                                                    <img src="../assets/images/sfe-energy.png" class="sfe_energy_img"
-                                                        alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-3">
-                                                <div class="d-flex justify-content-center">
-                                                    <img src="../assets/images/sfe-energy.png" class="sfe_energy_img"
-                                                        alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr> -->
+                            <!-- Products -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3 position-relative">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Products</label>
+                                    <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon"
+                                        alt="search_icon" style="cursor:pointer;" data-bs-target="#accounts_view_modal"
+                                        data-bs-toggle="modal">
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="Fixed"
+                                        readonly>
+                                </div>
+                            </div>
 
-                                <tr class="td_h_80">
-                                    <td class="align-middle text-center">
-                                        <div class="">
-                                            <span class="text-danger ">Lowest Bid</span>
-                                        </div>
-                                    </td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="col-auto">
+                            <!-- Utility -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Utility</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="Electric"
+                                        readonly>
+                                </div>
+                            </div>
+
+                            <!-- Start Month -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Start
+                                        Month</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="February, 2021"
+                                        readonly>
+                                </div>
+                            </div>
+
+                            <!-- Annual Usage -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Annual
+                                        Usage</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="Electric"
+                                        readonly>
+                                </div>
+                            </div>
+
+                            <!-- Number of Accounts -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="position-relative">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Number of
+                                        Accounts</label>
+                                    <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon"
+                                        alt="search_icon" style="cursor:pointer;" data-bs-target="#accounts_view_modal"
+                                        data-bs-toggle="modal">
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="1" value="8,456" readonly>
+                                </div>
+                            </div>
+                            <!-- row end -->
+                        </div>
+                    </form>
+
+                    <!-- time div -->
+                    <div class="time__div">
+                        <span class="">07/18/2024 12:05:00 AM</span>
+                    </div>
+
+                    <!-- Table -->
+                    <div class="border rounded py-3 px-3 fixed_rate">
+                        <div class="text-center mb-3">Fixed Rate</div>
+
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                            rel="stylesheet">
+
+                        <div class="table_wrapper quotes_table">
+                            <table class="table table-bordered">
+                                <thead class="thead_bg">
+                                    <tr>
+                                        <th class="align-middle table_head_bg table_th_text td_h_55 text-center">
+                                            Supplier</th>
+                                        <th class="align-middle table_head_bg table_th_text td_h_55 text-center">12
+                                            Months</th>
+                                        <th class="align-middle table_head_bg table_th_text td_h_55 text-center">24
+                                            Months</th>
+                                        <th class="align-middle table_head_bg table_th_text td_h_55 text-center">36
+                                            Months</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr scope="row" class="td_h_80 tbody_row">
+                                        <td class="align-middle text-center">
+                                            <div class="">
+                                                <span class="text-danger ">Lowest Bid</span>
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="col-auto">
+                                                <img src="../assets/images/sfe-energy.png" class="sfe_energy_img"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">$ 0.00071</div>
+                                        </td>
+
+                                        <td class="align-middle text-center table_td_text">
                                             <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
-                                        </div>
-                                        <div class="mt-2">$ 0.00071</div>
-                                    </td>
-                                    <td class="align-middle text-center table_td_text ">
-                                        <div class="col-auto">
-                                            <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
-                                        </div>
-                                        <div class="mt-2">$ 0.00071</div>
-                                    </td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="col-auto">
-                                            <img src="../assets/images/sfe-energy.png" class="sfe_energy_img" alt="">
-                                        </div>
-                                        <div class="mt-2">$ 0.00071</div>
-                                    </td>
-                                </tr>
+                                            <div class="mt-2">$ 0.00071</div>
+                                        </td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="col-auto">
+                                                <img src="../assets/images/sfe-energy.png" class="sfe_energy_img"
+                                                    alt="">
+                                            </div>
+                                            <div class="mt-2">$ 0.00071</div>
+                                        </td>
+                                    </tr>
 
-                                <!-- Other rows -->
-                                <tr>
-                                    <td class="align-middle text-center table_th_text"><img
-                                            src="../assets/images/diect__energy.png" alt="Direct Energy"
-                                            class="diect__energy_img">
-                                    </td>
-                                    <td class="align-middle text-center"></td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="mb-1">$ 0.00299</div>
-                                        <button class="btn btn-warning btn-sm text-white mt-1">
-                                            Generate <br /> Contract
-                                        </button>
-                                    </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td class="align-middle text-center table_th_text"><img
-                                            src="../assets/images/diect__energy.png" alt="Direct Energy"
-                                            class="diect__energy_img">
-                                    </td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="mb-1">$ 0.00299</div>
-                                        <button class="btn btn-warning btn-sm text-white mt-1">
-                                            Generate <br /> Contract
-                                        </button>
-                                    </td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="mb-1">$ 0.00299</div>
-                                        <button class="btn btn-warning btn-sm text-white mt-1">
-                                            Generate <br /> Contract
-                                        </button>
-                                    </td>
-                                    <td class="align-middle text-center table_td_text">
-                                        <div class="mb-1">$ 0.00299</div>
+                                    <!-- Other rows -->
+                                    <tr>
+                                        <td class="align-middle text-center table_th_text"><img
+                                                src="../assets/images/diect__energy.png" alt="Direct Energy"
+                                                class="diect__energy_img">
+                                        </td>
+                                        <td class="align-middle text-center"></td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="mb-1">$ 0.00299</div>
+                                            <span class="btn btn-warning btn-sm text-white mt-1 td_w_150">
+                                                Generate <br /> Contract
+                                            </span>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle text-center table_th_text"><img
+                                                src="../assets/images/diect__energy.png" alt="Direct Energy"
+                                                class="diect__energy_img">
+                                        </td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="mb-1">$ 0.00299</div>
+                                            <span class="btn btn-warning btn-sm text-white mt-1 td_w_150">
+                                                Generate <br /> Contract
+                                            </span>
+                                        </td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="mb-1">$ 0.00299</div>
+                                            <span class="btn btn-warning btn-sm text-white mt-1 td_w_150">
+                                                Generate <br /> Contract
+                                            </span>
+                                        </td>
+                                        <td class="align-middle text-center table_td_text">
+                                            <div class="mb-1">$ 0.00299</div>
+                                            <span class="btn btn-warning btn-sm text-white mt-1 td_w_150">
+                                                Generate <br /> Contract
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                        <button class="btn btn-warning btn-sm text-white mt-1">
-                                            Generate <br /> Contract
-                                        </button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+
                     </div>
 
-
+                    <!-- border div end -->
                 </div>
-
-                <!-- border div end -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- footer section -->
-    <footer class="content-area mt-4">
-        <div class="container-fluid">
-            <div class="row flex-row">
-                <div class="col-12 col-md-12">
-                    <div class="d-flex justify-content-center">
-                        <div class="them_btn_container">
-                            <button class="theme_outline_btn">Back</button>
+        <!-- footer section -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12">
+                        <div class="d-flex justify-content-end">
+                            <div class="them_btn_container">
+                                <button class="theme_outline_btn">Back</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- Overlay -->
-    <div class="overlay_mainsidebar"></div>
-
+        <!-- Overlay -->
+        <div class="overlay_mainsidebar"></div>
+    </div>
     <!-- external script files -->
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>

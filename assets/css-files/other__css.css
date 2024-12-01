@@ -15,6 +15,12 @@
   color: #000;
 }
 
+
+.theme_accordian .accordion-button.collapsed {
+  background-color: #c1eaff !important;
+  color: #000;
+}
+
 .theme_accordian .accordion-button:focus {
   border-color: transparent !important;
   box-shadow: none;
@@ -114,5 +120,14 @@ textarea::-webkit-scrollbar-thumb:hover {
 /* Optional: Adjust tooltip positioning */
 .bs-tooltip-top .tooltip-arrow::before {
   margin-top: -5px;
+}
+
+.tooltip-arrow {
+  display: none !important;
+}
+
+.before_content_one::before{
+content: none !important;
+border-right: none;
 }
 

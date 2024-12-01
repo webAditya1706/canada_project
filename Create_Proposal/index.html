@@ -19,8 +19,6 @@
 
     <!-- external css files -->
     <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
-    <link rel="stylesheet" href="../assets/css-files/sideBar.css">
-    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
     <link rel="stylesheet" href="./QuotesTable/QuotesTable.css">
     <link rel="stylesheet" href="../assets/css-files/btn-css.css">
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
@@ -36,420 +34,446 @@
 </head>
 
 <body class="">
-    <section class="top_header_secction">
-        <div class="container-fluid p-2">
-            <div class="row justify-content-between align-items-center">
-                <!-- Column 1 -->
-                <div class="col-12 col-lg-6">
-                    <div class="header_container">
-                        <div class="d-flex gap-2">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                            <div class="header_bg_text">
-                                <img src="../assets/banner_img.png" alt="" class="header_banner">
-                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+    <div class="page-wrapper">
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner">
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
                             </div>
                         </div>
-                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="custom_height"></div>
+
+        <!-- bread crumb -->
+        <section class="">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between align-items-center py-3">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="main_title_15">Quote ID: 21711</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="active_text_title_14">Create Proposal</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <div class="custom_height"></div>
+        </section>
 
-    <!-- bread crumb -->
-    <section class="">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-between align-items-center py-3">
-                <div class="col-6">
-                    <div class="d-flex align-items-center gap-3">
-                        <div class="main_title_15">Quote ID: 21711</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="active_text_title_14">Create Proposal</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
+        <!-- supplier table -->
 
-    <!-- supplier table -->
+        <section class="mt-3">
+            <div class="container-fluid">
+                <div class="border rounded p-3">
+                    <div class="form_label">Proposal configurator for C-002 34 xx</div>
+                    <div class="fixed_rate text-center mt-3 mb-4">Fixed Rate</div>
 
-    <section class="mt-3">
-        <div class="container-fluid">
-            <div class="border rounded p-3">
-                <div class="form_label">Proposal configurator for C-002 34 xx</div>
-                <div class="fixed_rate text-center mt-3 mb-4">Fixed Rate</div>
-
-                <div class="table_check_parent w-100" scope="col">
-                    <div class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <input type="checkbox" class="form-check-input table_check table_check" checked />
-                        </div>
-                    </div>
-                    <div class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <input type="checkbox" class="form-check-input table_check table_check" checked />
-                        </div>
-                    </div>
-                    <div class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <input type="checkbox" class="form-check-input table_check table_check" checked />
-                        </div>
-                    </div>
-                    <div class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                        <div class="d-flex justify-content-center align-items-center gap-2">
-                            <input type="checkbox" class="form-check-input table_check table_check" checked />
-                        </div>
-                    </div>
-                </div>
-                <div class="quotes_table table_wrapper with_bg_table second_td_sticky_none">
-                    <table class="table table-bordered m-0 form_table">
-                        <thead class="thead_bg">
-                            <tr>
-                                <th scope="col"
-                                    class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">Supplier</span>
-                                    </div>
-                                </th>
-
-                                <th scope="col"
-                                    class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">Billing
-                                            Type</span>
-                                    </div>
-                                </th>
-                                <th scope="col" class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">Request
-                                            Date</span>
-                                    </div>
-                                </th>
-                                <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">Expire
-                                            After</span>
-                                    </div>
-                                </th>
-                                <th scope="col"
-                                    class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">12 Months</span>
-                                    </div>
-                                </th>
-                                <th scope="col"
-                                    class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">18 Months</span>
-                                    </div>
-                                </th>
-
-                                <th scope="col"
-                                    class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">24 Months</span>
-                                    </div>
-                                </th>
-                                <th scope="col"
-                                    class=" align-middle td_w_120 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">36 Months</span>
-                                    </div>
-                                </th>
-                                <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">GRT
-                                            Incl.</span>
-                                    </div>
-                                </th>
-                                <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <span class="th_title">GRT
-                                            Rate</span>
-                                    </div>
-                                </th>
-                                <th scope="col"
-                                    class=" align-middle td_w_150 table_head_bg table_th_text table_th_text px-3">
-                                    <div class="d-flex flex-column justify-content-center align-items-center     gap-2">
-                                        <div class="td_w_90">
-                                            <div class="th_title">Notes
+                    <div class="quotes_table table_wrapper with_bg_table second_td_sticky_none th_check_row">
+                        <table class="table table-bordered m-0 form_table">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th class=""></th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0">
+                                        <div class=" align-middle table_head_bg table_th_text table_th_text">
+                                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check table_check"
+                                                    checked />
                                             </div>
-                                            <div class="sub_table_text">(Viewable to customer)</div>
                                         </div>
-                                    </div>
-                                </th>
-                            </tr>
-                        </thead>
+                                    </th>
+                                    <th class="border-0">
+                                        <div class=" align-middle table_head_bg table_th_text table_th_text">
+                                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check table_check"
+                                                    checked />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="border-0">
+                                        <div class=" align-middle table_head_bg table_th_text table_th_text">
+                                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check table_check"
+                                                    checked />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="border-0">
+                                        <div class=" align-middle table_head_bg table_th_text table_th_text">
+                                            <div class="d-flex justify-content-center align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check table_check"
+                                                    checked />
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                    <th class="border-0"></th>
+                                </tr>
+                                <tr>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Supplier</span>
+                                        </div>
+                                    </th>
 
-                        <tbody>
-                            <tr scope="row" class="tbody_row ">
-                                <!-- style="height: 55px" -->
-                                <td class="td_w_130 align-middle text-center table_td_text text">
-                                    <div>
-                                        <img src="../assets/images/image 5.png" alt="image 5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8559)">
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Billing
+                                                Type</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Request
+                                                Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Expire
+                                                After</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">12 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">18 Months</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">24 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_120 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">36 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">GRT
+                                                Incl.</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">GRT
+                                                Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_150 table_head_bg table_th_text table_th_text px-3">
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center     gap-2">
+                                            <div class="td_w_90">
+                                                <div class="th_title">Notes
+                                                </div>
+                                                <div class="sub_table_text">(Viewable to customer)</div>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr scope="row" class="tbody_row ">
+                                    <!-- style="height: 55px" -->
+                                    <td class="td_w_130 align-middle text-center table_td_text text">
+                                        <div>
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path
+                                                        d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
+                                                        fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        Dual
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text td_w_110">
+                                        <div>9/27/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text_red td_w_100">
+                                        <div>7/18/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="w-100 border rounded p-2">
+                                            _
+                                        </div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="table_green_gb_td mt-1">
+                                            0.128656
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                            <span class="table_td_text_red">Expert</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8581)">
+                                                    <path
+                                                        d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
+                                                        fill="#77D400" />
+                                                    <path
+                                                        d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
+                                                        fill="#77D400" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8581">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Albertc Sasson</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Yes</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>9/18/24</div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>NY</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text ps-3">
+                                        <div class="one_line_ellipsis">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
                                                 <path
-                                                    d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
-                                                    fill="#007CBA" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8559">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
+                                                    d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
+                                                    fill="#131313" />
+                                            </svg>
+                                        </div>
+                                    </td>
 
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    Dual
-                                </td>
-                                <td class=" align-middle text-center table_td_text td_w_110">
-                                    <div>9/27/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text_red td_w_100">
-                                    <div>7/18/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="w-100 border rounded p-2">
-                                        _
-                                    </div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="table_green_gb_td mt-1">
-                                        0.128656
-                                    </div>
-                                    <div class="d-flex align-items-center gap-2 mt-1 mb-1">
-                                        <span class="table_td_text_red">Expert</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8581)">
+                                </tr>
+                                <tr scope="row" class="tbody_row">
+
+                                    <td class=" align-middle text-center table_td_text text">
+                                        <div>
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path
+                                                        d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
+                                                        fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        Dual
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text td_w_110">
+                                        <div>9/27/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text_red td_w_100">
+                                        <div>7/18/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="w-100 border rounded p-2">
+                                            _
+                                        </div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="table_green_gb_td mt-1">
+                                            0.128656
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                            <span class="table_td_text_red">Expert</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8581)">
+                                                    <path
+                                                        d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
+                                                        fill="#77D400" />
+                                                    <path
+                                                        d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
+                                                        fill="#77D400" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8581">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Albertc Sasson</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Yes</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>9/18/24</div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>NY</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text ps-3">
+                                        <div class="one_line_ellipsis">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
                                                 <path
-                                                    d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
-                                                    fill="#77D400" />
+                                                    d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
+                                                    fill="#131313" />
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr scope="row" class="tbody_row">
+
+                                    <td class=" align-middle text-center table_td_text text">
+                                        <div>
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path
+                                                        d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
+                                                        fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        Dual
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text td_w_110">
+                                        <div>9/27/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text_red td_w_100">
+                                        <div>7/18/24</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="w-100 border rounded p-2">
+                                            _
+                                        </div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div class="table_green_gb_td mt-1">
+                                            0.128656
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                            <span class="table_td_text_red">Expert</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8581)">
+                                                    <path
+                                                        d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
+                                                        fill="#77D400" />
+                                                    <path
+                                                        d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
+                                                        fill="#77D400" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8581">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Albertc Sasson</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>Yes</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>9/18/24</div>
+                                    </td>
+
+                                    <td class=" align-middle text-center table_td_text">
+                                        <div>NY</div>
+                                    </td>
+                                    <td class=" align-middle text-center table_td_text ps-3">
+                                        <div class="one_line_ellipsis">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
                                                 <path
-                                                    d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
-                                                    fill="#77D400" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8581">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </td>
+                                                    d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
+                                                    fill="#131313" />
+                                            </svg>
+                                        </div>
+                                    </td>
 
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Albertc Sasson</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Yes</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>9/18/24</div>
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>NY</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text ps-3">
-                                    <div class="one_line_ellipsis">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <path
-                                                d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
-                                                fill="#131313" />
-                                        </svg>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr scope="row" class="tbody_row">
-
-                                <td class=" align-middle text-center table_td_text text">
-                                    <div>
-                                        <img src="../assets/images/image 5.png" alt="image 5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8559)">
-                                                <path
-                                                    d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
-                                                    fill="#007CBA" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8559">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    Dual
-                                </td>
-                                <td class=" align-middle text-center table_td_text td_w_110">
-                                    <div>9/27/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text_red td_w_100">
-                                    <div>7/18/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="w-100 border rounded p-2">
-                                        _
-                                    </div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="table_green_gb_td mt-1">
-                                        0.128656
-                                    </div>
-                                    <div class="d-flex align-items-center gap-2 mt-1 mb-1">
-                                        <span class="table_td_text_red">Expert</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8581)">
-                                                <path
-                                                    d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
-                                                    fill="#77D400" />
-                                                <path
-                                                    d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
-                                                    fill="#77D400" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8581">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Albertc Sasson</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Yes</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>9/18/24</div>
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>NY</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text ps-3">
-                                    <div class="one_line_ellipsis">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <path
-                                                d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
-                                                fill="#131313" />
-                                        </svg>
-                                    </div>
-                                </td>
-
-                            </tr>
-                            <tr scope="row" class="tbody_row">
-
-                                <td class=" align-middle text-center table_td_text text">
-                                    <div>
-                                        <img src="../assets/images/image 5.png" alt="image 5">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8559)">
-                                                <path
-                                                    d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
-                                                    fill="#007CBA" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8559">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    Dual
-                                </td>
-                                <td class=" align-middle text-center table_td_text td_w_110">
-                                    <div>9/27/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text_red td_w_100">
-                                    <div>7/18/24</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="w-100 border rounded p-2">
-                                        _
-                                    </div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div class="table_green_gb_td mt-1">
-                                        0.128656
-                                    </div>
-                                    <div class="d-flex align-items-center gap-2 mt-1 mb-1">
-                                        <span class="table_td_text_red">Expert</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_1057_8581)">
-                                                <path
-                                                    d="M1.80068 6.23238C2.2231 3.36179 4.89261 1.37715 7.7632 1.79957C8.74259 1.94368 9.66133 2.36158 10.4136 3.00512L9.73639 3.6823C9.50942 3.90933 9.50948 4.27739 9.73653 4.50436C9.8455 4.6133 9.99329 4.67452 10.1474 4.67455H12.8131C13.1342 4.67455 13.3944 4.41431 13.3944 4.09328V1.4275C13.3943 1.10647 13.134 0.846285 12.813 0.846339C12.6589 0.846366 12.5111 0.907592 12.4022 1.01653L11.6465 1.77219C8.76474 -0.796585 4.34624 -0.542909 1.77747 2.3388C0.867426 3.35969 0.27686 4.62512 0.0789334 5.97835C0.000896208 6.4581 0.326533 6.91027 0.806255 6.98831C0.849469 6.99534 0.89312 6.99913 0.936907 6.99967C1.37581 6.99493 1.74423 6.66766 1.80068 6.23238Z"
-                                                    fill="#77D400" />
-                                                <path
-                                                    d="M13.0639 6.99951C12.625 7.00425 12.2566 7.33152 12.2001 7.76681C11.7777 10.6374 9.1082 12.622 6.23761 12.1996C5.25822 12.0555 4.33948 11.6376 3.58723 10.9941L4.26441 10.3169C4.49139 10.0899 4.49133 9.72182 4.26428 9.49485C4.15531 9.38591 4.00752 9.32469 3.85344 9.32466H1.18772C0.866688 9.32466 0.606445 9.5849 0.606445 9.90594V12.5717C0.606527 12.8927 0.866824 13.1529 1.18786 13.1529C1.34194 13.1528 1.48973 13.0916 1.5987 12.9827L2.35435 12.227C5.23538 14.7961 9.65356 14.5432 12.2226 11.6621C13.1332 10.641 13.724 9.37515 13.9219 8.02143C14.0002 7.54174 13.6749 7.08935 13.1952 7.01098C13.1518 7.00387 13.1079 7.00003 13.0639 6.99951Z"
-                                                    fill="#77D400" />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1057_8581">
-                                                    <rect width="14" height="14" fill="white" />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </div>
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Albertc Sasson</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>Yes</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>9/18/24</div>
-                                </td>
-
-                                <td class=" align-middle text-center table_td_text">
-                                    <div>NY</div>
-                                </td>
-                                <td class=" align-middle text-center table_td_text ps-3">
-                                    <div class="one_line_ellipsis">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 14 14" fill="none">
-                                            <path
-                                                d="M6.99967 9.3335C7.72884 9.3335 8.34863 9.07829 8.85905 8.56787C9.36947 8.05745 9.62467 7.43766 9.62467 6.7085C9.62467 5.97933 9.36947 5.35954 8.85905 4.84912C8.34863 4.3387 7.72884 4.0835 6.99967 4.0835C6.27051 4.0835 5.65072 4.3387 5.1403 4.84912C4.62988 5.35954 4.37467 5.97933 4.37467 6.7085C4.37467 7.43766 4.62988 8.05745 5.1403 8.56787C5.65072 9.07829 6.27051 9.3335 6.99967 9.3335ZM6.99967 8.2835C6.56217 8.2835 6.1903 8.13037 5.88405 7.82412C5.5778 7.51787 5.42467 7.146 5.42467 6.7085C5.42467 6.271 5.5778 5.89912 5.88405 5.59287C6.1903 5.28662 6.56217 5.1335 6.99967 5.1335C7.43717 5.1335 7.80905 5.28662 8.1153 5.59287C8.42155 5.89912 8.57467 6.271 8.57467 6.7085C8.57467 7.146 8.42155 7.51787 8.1153 7.82412C7.80905 8.13037 7.43717 8.2835 6.99967 8.2835ZM6.99967 11.0835C5.58023 11.0835 4.28717 10.6873 3.12051 9.89495C1.95384 9.10259 1.10801 8.04044 0.583008 6.7085C1.10801 5.37655 1.95384 4.3144 3.12051 3.52204C4.28717 2.72968 5.58023 2.3335 6.99967 2.3335C8.41912 2.3335 9.71217 2.72968 10.8788 3.52204C12.0455 4.3144 12.8913 5.37655 13.4163 6.7085C12.8913 8.04044 12.0455 9.10259 10.8788 9.89495C9.71217 10.6873 8.41912 11.0835 6.99967 11.0835ZM6.99967 9.91683C8.09829 9.91683 9.10697 9.62759 10.0257 9.04912C10.9445 8.47065 11.6469 7.69044 12.133 6.7085C11.6469 5.72655 10.9445 4.94634 10.0257 4.36787C9.10697 3.7894 8.09829 3.50016 6.99967 3.50016C5.90106 3.50016 4.89238 3.7894 3.97363 4.36787C3.05488 4.94634 2.35245 5.72655 1.86634 6.7085C2.35245 7.69044 3.05488 8.47065 3.97363 9.04912C4.89238 9.62759 5.90106 9.91683 6.99967 9.91683Z"
-                                                fill="#131313" />
-                                        </svg>
-                                    </div>
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- pagination -->
-                <!-- <div class="row quotes_pagi align-items-center mb-5">
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- pagination -->
+                    <!-- <div class="row quotes_pagi align-items-center mb-5">
                 <div class="col-6">
                     <div class="d-flex align-items-center gap-2">
                         <span class="pagi_text">Rows per page</span>
@@ -484,38 +508,36 @@
                     </div>
                 </div>
             </div> -->
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- footer section -->
-    <div class=" my-3">
-        <section class="position-relative white_bg_footer">
-            <div>
-                <div class="container-fluid">
-                    <div class="row flex-row">
-                        <div class="col-12">
-                            <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
-                                <div class="them_btn_container">
-                                    <button class="theme_outline_btn2">Back</button>
-                                </div>
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn">Email</button>
-                                </div>
+        <!-- footer section -->
+        <footer class="white_bg_footer">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12">
+                        <div class="d-flex flex-wrap justify-content-center align-items-center gap-4">
+                            <div class="them_btn_container">
+                                <button class="theme_outline_btn2">Back</button>
+                            </div>
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn">Email</button>
+                            </div>
 
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn">Excel</button>
-                                </div>
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn" data-bs-target="#pdf_proposal_modal"
-                                        data-bs-toggle="modal">PDF Proposal</button>
-                                </div>
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn">Excel</button>
+                            </div>
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-target="#pdf_proposal_modal"
+                                    data-bs-toggle="modal">PDF Proposal</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
+
     </div>
     <!-- open modals -->
 

@@ -137,7 +137,7 @@
   left: 50px;
   /* Adjust based on the width of the first column */
   z-index: 2;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
 }
 .second_td_sticky_none th:nth-child(2) {
   position: static !important;
@@ -208,6 +208,10 @@
   top: 0;
 }
 
+.th_check_row tr:first-child th:first-child::before{
+  content: none !important;
+}
+
 .quotes_table th:first-child::after,
 .quotes_table td:first-child::after {
   content: "";
@@ -244,6 +248,11 @@ td:last-child::before {
   top: 0;
 }
 
+
+.th_check_row th:last-child::before{
+  content: none;
+}
+
 .quotes_table:not(.second_td_sticky_none) td:nth-child(2):before,
 .quotes_table:not(.second_td_sticky_none) th:nth-child(2):before {
   content: "";
@@ -260,9 +269,10 @@ td:last-child::before {
 .quotes_table th:last-child::after,
 .quotes_table td:last-child::after {
   /* content: ""; */
-  width: 2px;
+  width: 1px;
   height: 100%;
   background: #f1f1f1;
+  /* background-color: red; */
   position: absolute;
   right: -1px;
   top: 0;
@@ -336,6 +346,10 @@ td:last-child::before {
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 123.077% */
+}
+
+.table_green_gb_td:focus{
+  background: #d1ecd5;
 }
 
 /* drop down click on three dot */
@@ -651,4 +665,8 @@ td {
 
 .table .table-bordered td,.table .table-bordered th{
   padding: 10px;
+}
+
+.table>:not(caption)>*>*{
+  background-color: transparent !important;
 }

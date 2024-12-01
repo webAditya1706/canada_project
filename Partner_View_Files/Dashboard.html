@@ -2,214 +2,429 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
 
-        .sidebar {
-            background: #e6f5ff;
-            padding: 20px;
-            height: 100vh;
-        }
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-        .circle-chart {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
-        .circle-chart h6 {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/graph_dashboard.css" />
 
-        .chart-container {
-            background: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
 
-        .chart-container h6 {
-            font-size: 16px;
-            margin-bottom: 10px;
-        }
-    </style>
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar with Circle Charts -->
-            <div class="col-md-3 sidebar">
-                <div class="circle-chart">
-                    <h6>Total 757</h6>
-                    <canvas id="circleChart1"></canvas>
-                </div>
-                <div class="circle-chart">
-                    <h6>Auctions</h6>
-                    <canvas id="circleChart2"></canvas>
-                </div>
-                <div class="circle-chart">
-                    <h6>Contracts</h6>
-                    <canvas id="circleChart3"></canvas>
+    <div class="wrapper">
+        <!-- top header -->
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">Pricing View</label>
+                            </div>
+
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                          <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                          <span class="menu_font_style">Switch to Partner View</span>
+                      </div> -->
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
                 </div>
             </div>
+        </section>
 
-            <!-- Stacked Bar Charts -->
-            <div class="col-md-9">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Month (2024)</h6>
-                            <canvas id="stackedChart1"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Supplier</h6>
-                            <canvas id="stackedChart2"></canvas>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Market</h6>
-                            <canvas id="stackedChart3"></canvas>
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Relationship Manager</h6>
-                            <canvas id="stackedChart4"></canvas>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Marketer</h6>
-                            <canvas id="stackedChart5"></canvas>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="chart-container">
-                            <h6>By Customer</h6>
-                            <canvas id="stackedChart6"></canvas>
-                        </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                        <span class="menu_title">Logout</span>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- custom height -->
+        <div class="custom_height"></div>
+
+
+
+        <!-- bread crumb -->
+        <section class="content-area_2 mt-1">
+            <div class="container-fluid">
+                <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="main_title_15">Auctions #76</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="show_gray_hr_line" />
+        </section>
+
+        <section class="content-area_2 mt-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <div class="graph_card">
+                            <div class="h1_title text-center">Quotes</div>
+                            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+
+                            <div class="card_container">
+                                <div class="col-6">
+                                    <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div class="graph_detail_parent">
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_4FA0D7"></div>
+                                                <span class="graph_label">Active</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_102C3A"></div>
+                                                <span class="graph_label">Quick
+                                                    Quotes</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_AACEEE"></div>
+                                                <span class="graph_label">Request</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- graph second -->
+                    <div class="col-6 col-md-4">
+                        <div class="graph_card">
+                            <div class="h1_title text-center">Auctions</div>
+                            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+
+                            <div class="card_container">
+                                <div class="col-6">
+                                    <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div class="graph_detail_parent">
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_4FA0D7"></div>
+                                                <span class="graph_label">Scheduled</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">0</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_102C3A"></div>
+                                                <span class="graph_label">Live</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">0</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_AACEEE"></div>
+                                                <span class="graph_label">Closed</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- graph Third -->
+                    <div class="col-6 col-md-4">
+                        <div class="graph_card">
+                            <div class="h1_title text-center">Auctions</div>
+                            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+
+                            <div class="card_container">
+                                <div class="col-6">
+                                    <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div class="graph_detail_parent">
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_4FA0D7"></div>
+                                                <span class="graph_label">Scheduled</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">0</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_102C3A"></div>
+                                                <span class="graph_label">Live</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">0</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_AACEEE"></div>
+                                                <span class="graph_label">Closed</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class=" col-8 d-flex align-items-center gap-2">
+                                                <div class="rectangle_bg_76AE17"></div>
+                                                <span class="graph_label">Closed</span>
+                                            </div>
+                                            <div class="col-4 active_text_title_13">629</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
 
-    <!-- Chart.js Script -->
-    <script>
-        // Data for Circle Charts
-        function createPieChart(ctx, labels, data, colors) {
-            new Chart(ctx, {
-                type: 'doughnut',
-                data: {
-                    labels: labels,
-                    datasets: [{
-                        data: data,
-                        backgroundColor: colors,
-                        borderWidth: 0 // Remove any border between the segments
-                    }]
-                },
-                options: {
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'bottom',
-                        },
-                    },
-                    cutout: '70%', // Adjust to make the inner circle smaller or larger
-                    layout: {
-                        padding: 0 // Removes default padding
-                    }
-                }
-            });
-        }
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-        createPieChart(document.getElementById('circleChart1'), ['Quotes Request', 'Open', 'Completed', 'Archived'], [15, 540, 346, 72], ['#AACEEE', '#102C3A', '#4FA0D7', '#76AE17']);
-        createPieChart(document.getElementById('circleChart2'), ['Scheduled', 'Live', 'Closed'], [0, 0, 0], ['#17a2b8', '#28a745', '#dc3545']);
-        createPieChart(document.getElementById('circleChart3'), ['Active'], [1186], ['#007bff']);
-
-        // Data for Stacked Bar Charts
-        function createStackedBarChart(ctx, labels, datasets) {
-            new Chart(ctx, {
-                type: 'bar',
-                data: {
-                    labels: labels,
-                    datasets: datasets
-                },
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                        }
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                        },
-                        y: {
-                            stacked: true,
-                            ticks: {
-                                callback: function (value) {
-                                    // Format tick values as 0, 1k, 2k, ..., 10k
-                                    return value >= 1000 ? (value / 1000) + 'k' : value;
-                                }
-                            }
-
-                        }
-                    }
-                }
-            });
-        }
-
-        const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        const stackedData = [
-            {
-                label: 'Quotes Request',
-                data: [15, 20, 15, 10, 25, 20, 15, 10, 15, 20, 25, 30],
-                backgroundColor: '#007bff',
-            },
-            {
-                label: 'Completed',
-                data: [10, 15, 20, 25, 30, 35, 40, 20, 15, 10, 5, 0],
-                backgroundColor: '#28a745',
-            },
-            {
-                label: 'Archived',
-                data: [5, 10, 15, 20, 25, 30, 35, 40, 30, 20, 15, 10],
-                backgroundColor: '#ffc107',
-            },
-        ];
-
-        createStackedBarChart(document.getElementById('stackedChart1'), labels, stackedData);
-        createStackedBarChart(document.getElementById('stackedChart2'), labels, stackedData);
-        createStackedBarChart(document.getElementById('stackedChart3'), labels, stackedData);
-        createStackedBarChart(document.getElementById('stackedChart4'), labels, stackedData);
-        createStackedBarChart(document.getElementById('stackedChart5'), labels, stackedData);
-        createStackedBarChart(document.getElementById('stackedChart6'), labels, stackedData);
-    </script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

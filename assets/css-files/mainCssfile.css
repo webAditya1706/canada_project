@@ -109,6 +109,12 @@ body::-webkit-scrollbar {
   flex: 1;
 }
 
+.content-area_2 {
+  width: calc(100% - 40px);
+  margin-left: auto;
+  /* flex: 1; */
+}
+
 
 .custom_height {
   height: 5px;
@@ -238,6 +244,7 @@ td span {
 .quotes_table tbody tr:nth-child(even) {
   background-color: #fffcf4;
 }
+
 
 .no_td_bg tbody tr:nth-child(odd) {
   background-color: #fff !important;
@@ -680,17 +687,10 @@ html, body {
 
 /* Footer stays at the bottom */
 footer {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  position: sticky; /* Make it part of the flow */
+  position: sticky; 
   bottom: 0;
   right: 0;
   background-color: #f2fcff;
-  color: white;
-  text-align: center;
   padding: 20px 0;
   z-index: 9;
-  min-height: 75px;
-  width: 100%;
 }

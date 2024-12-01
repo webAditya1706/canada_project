@@ -33,89 +33,55 @@
 </head>
 
 <body>
-
-    <!-- top header -->
-    <section class="top_header_secction">
-        <div class="container-fluid p-2">
-            <div class="row justify-content-between align-items-center">
-                <!-- Column 1 -->
-                <div class="col-12 col-lg-6">
-                    <div class="header_container">
-                        <div class="d-flex gap-2">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                            <div class="header_bg_text">
-                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+    <div class="page-wrapper">
+        <!-- top header -->
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
                             </div>
                         </div>
-                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
-                        </div>
                     </div>
-                </div>
 
-                <!-- Column 2 -->
-                <div class="col-12 col-lg-6 d-none d-lg-block">
-                    <div class="d-flex justify-content-end align-items-center gap-3">
-                        <!-- Switch buttons -->
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                        </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Partner
-                                View</label>
-                        </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
 
-                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
                             <label class="switch">
                                 <input type="checkbox">
                                 <span class="slider round"></span>
                             </label>
                             <span class="menu_font_style">Switch to Partner View</span>
                         </div> -->
-                        <div class="d-flex align-items-center gap-1">
-                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                            <div>
-                                <p class="user_name">Welcome, Alon</p>
-                                <p class="user_email">alon@demomail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Drawer Menu -->
-                <div class="drawer" id="drawer" style="z-index: 999">
-                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                        <hr style="height: 1px; width: 100%" />
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start">
-                        <!-- Switch buttons -->
-                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                                Legacy</label>
-                        </div>
-
-                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Partner
-                                View</label>
-                        </div>
-
-                        <div class="d-flex align-items-center gap-1 mb-2">
                             <div class="d-flex align-items-center gap-1">
                                 <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                 <div>
@@ -125,429 +91,480 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
                 </div>
-                <!-- Overlay -->
-                <div class="overlay_menu" id="overlay"></div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
-    <!-- Side bar -->
-    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-        <hr class="mt-5 show_white_hr_line" />
-  
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
-  
-        </div>
-        <hr class="show_white_hr_line mt-2" />
-  
-  
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
-  
-        </div>
-        <div class="side_bar_menu">
-          <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
-  
-        </div>
-      </div>
-  
-      <!-- drawer Sidebar -->
-      <div id="main_sidebar">
-        <div>
-          <div class="d-flex justify-content-center">
-            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
-          </div>
-          <hr style="height: 2px; background-color: #ddd; width: 100%" />
-          <div class="menu_container position-static">
-            <div class="menu_parent">
-              <div class="d-flex align-items-center gap-2">
-                <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
-                <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
-  
-                <span class="menu_title">Home</span>
-              </div>
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
             </div>
-          </div>
-  
-          <div class="mx-2">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
                     <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
-                      <span class="menu_title">Qoutes</span>
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
                     </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
                 </div>
-              </div>
-              <div class="dropdown-menu ms-3 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="mx-2">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
+                <div class="menu_parent">
                     <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
-                      <span class="menu_title">Auctions</span>
-                    </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="dropdown-menu ms-3 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <hr style="height: 2px; background-color: #ddd; width: 100%" />
-          <div class="menu_parent">
-            <div class="d-flex align-items-center gap-2">
-              <img src="../assets/icons/Nav Icons/My profile.png" alt="">
-              <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
-  
-              <span class="menu_title">Home</span>
-            </div>
-          </div>
-          <div class="menu_parent">
-            <div class="d-flex align-items-center gap-2">
-              <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
-              <img src="../assets/icons/Nav Icons/Logout.png" alt="">
-  
-              <span class="menu_title">Logout</span>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-    <!-- custom height -->
-    <div class="custom_height"></div>
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
 
-    <!-- bread crumb -->
-    <section class="content-area">
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-between align-items-center py-2 gap-2">
-                <div class="col-12 col-md-6 mb-2">
-                    <div class="d-flex flex-wrap align-items-center gap-2">
-                        <div class="main_title_15">Contracts/CRM</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="main_title_15">Customer/Leads</div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                        <div class="active_text_title_14">Create New</div>
+                        <span class="menu_title">Logout</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- custom height -->
+        <div class="custom_height"></div>
+
+        <!-- bread crumb -->
+        <section class="content-area">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between align-items-center py-2 gap-2">
+                    <div class="col-12 col-md-6 mb-2">
+                        <div class="d-flex flex-wrap align-items-center gap-2">
+                            <div class="main_title_15">Contracts/CRM</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="main_title_15">Customer/Leads</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="active_text_title_14">Create New</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- FOrm deign -->
-    <section class="content-area">
-        <div class="container-fluid">
-            <div class="border rounded px-3">
-                <form action="">
-                    <!-- <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+        <!-- FOrm deign -->
+        <section class="content-area">
+            <div class="container-fluid">
+                <div class="border rounded px-3">
+                    <form action="">
+                        <!-- <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
                 <div class="sub_title_13">C -002 34 xx</div>
                 <img src="../assets/icons/black_form_search_icon.png" class="search_002" alt="date_picker_icon">
               </div> -->
-                    <div class="row d-flex">
-                        <!-- Category -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Category</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Load" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Assigned To -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Assigned To</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Electric" value="Albert Sasson" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Cusomer/Lead Name* -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Cusomer/Lead Name
-                                    <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Type here" value="">
-                            </div>
-                        </div>
-
-                        <!-- Address * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Address <span
-                                        class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Type here" value="">
-                            </div>
-                        </div>
-
-                        <!-- City * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">City <span
-                                        class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Type here" value="">
-                            </div>
-                        </div>
-
-                        <!-- Postal/Zip Code * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Postal/Zip Code
-                                    <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Type here" value="">
-                            </div>
-                        </div>
-
-                        <!-- Main Contact Name * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Name
-                                    <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Type here" value="">
-                            </div>
-                        </div>
-
-                        <!-- Main Contact Primary Phone Number * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Primary
-                                    Phone Number <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="+1" value="">
-                            </div>
-                        </div>
-
-                        <!-- Main Contact Secondary Phone Number * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
-                                    Secondary Phone Number <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="+1" value="">
-                            </div>
-                        </div>
-
-                        <!-- Main Contact Email Address * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Email
-                                    Address <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="email@gmail.com" value="">
-                            </div>
-                        </div>
-
-
-                        <!-- Main Contact Title * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact Title
-                                    <span class="text-danger">*</span></label>
-
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="email@gmail.com" value="">
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <span class=" btn active_text_title_14" onclick="toggleDiv()">Secondary Contact</span>
-                        </div>
-
-                        <div id="toggleDiv">
-                            <div class="row">
-
-                                <!-- Secondary Contact Name* -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Secondary
-                                            Contact Name</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Type here" value="">
-                                    </div>
+                        <div class="row d-flex">
+                            <!-- Category -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Category</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Albert Sasson" value="Load" readonly>
                                 </div>
+                            </div>
 
-                                <!-- Secondary Contact Primary Phone Number * -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Secondary
-                                            Contact Primary Phone Number</label>
-
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="+1" value="">
-                                    </div>
+                            <!-- Assigned To -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Assigned
+                                        To</label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Electric" value="Albert Sasson"
+                                        readonly>
                                 </div>
+                            </div>
 
-                                <!-- Secondary Contact Secondary Phone Number * -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Secondary
-                                            Contact Secondary Phone Number</label>
-
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="+1" value="">
-                                    </div>
+                            <!-- Cusomer/Lead Name* -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Cusomer/Lead
+                                        Name
+                                        <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Type here" value="">
                                 </div>
+                            </div>
 
+                            <!-- Address * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Address <span
+                                            class="text-danger">*</span></label>
 
-                                <!-- Secondary Contact Email Address ** -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Secondary
-                                            Contact Email Address <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="email.com" value="">
-                                    </div>
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Type here" value="">
                                 </div>
+                            </div>
 
-                                <!-- Secondary Contact Title* -->
-                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                    <div class="mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Secondary
-                                            Contact Title <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="email.com" value="">
-                                    </div>
+                            <!-- City * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">City <span
+                                            class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Type here" value="">
                                 </div>
+                            </div>
 
-                                <!-- upload doc -->
+                            <!-- Postal/Zip Code * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Postal/Zip Code
+                                        <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Type here" value="">
+                                </div>
+                            </div>
+
+                            <!-- Main Contact Name * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                        Name
+                                        <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="Type here" value="">
+                                </div>
+                            </div>
+
+                            <!-- Main Contact Primary Phone Number * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                        Primary
+                                        Phone Number <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="+1" value="">
+                                </div>
+                            </div>
+
+                            <!-- Main Contact Secondary Phone Number * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                        Secondary Phone Number <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="+1" value="">
+                                </div>
+                            </div>
+
+                            <!-- Main Contact Email Address * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                        Email
+                                        Address <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="email@gmail.com" value="">
+                                </div>
+                            </div>
+
+
+                            <!-- Main Contact Title * -->
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label form_label">Main Contact
+                                        Title
+                                        <span class="text-danger">*</span></label>
+
+                                    <input type="text" class="form-control form_text_field"
+                                        id="exampleFormControlInput1" placeholder="email@gmail.com" value="">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <span class=" btn active_text_title_14" onclick="toggleDiv()">Secondary Contact</span>
+                            </div>
+
+                            <div id="toggleDiv">
                                 <div class="row">
+
+                                    <!-- Secondary Contact Name* -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                        <div class="d-flex justify-content-start align-items-center gap-2">
-                                            <label for="upload_doc" class="form-label form_label">Documents</label>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
-                                                viewBox="0 0 12 10" fill="none">
-                                                <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
-                                                    fill="#77D400" />
-                                            </svg>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Secondary
+                                                Contact Name</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Type here" value="">
                                         </div>
-                                        <div class="border rounded d-flex justify-content-end pe-2">
-                                            <div class="them_btn_container">
-                                                <button type="button" data-bs-target="#upload_download_modal"
-                                                    data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                                    </div>
+
+                                    <!-- Secondary Contact Primary Phone Number * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Secondary
+                                                Contact Primary Phone Number</label>
+
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="+1" value="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Secondary Contact Secondary Phone Number * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Secondary
+                                                Contact Secondary Phone Number</label>
+
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="+1" value="">
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Secondary Contact Email Address ** -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Secondary
+                                                Contact Email Address <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="email.com" value="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Secondary Contact Title* -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Secondary
+                                                Contact Title <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="email.com" value="">
+                                        </div>
+                                    </div>
+
+                                    <!-- upload doc -->
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <label for="upload_doc" class="form-label form_label">Documents</label>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                                                    viewBox="0 0 12 10" fill="none">
+                                                    <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
+                                                        fill="#77D400" />
+                                                </svg>
+                                            </div>
+                                            <div class="border rounded d-flex justify-content-end pe-2">
+                                                <div class="them_btn_container">
+                                                    <button type="button" data-bs-target="#upload_download_modal"
+                                                        data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <!-- text area 1 -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 text_area_custom_margin">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlTextarea1" class="form-label form_label">Notes
-                                                <span class="para_text_14">(Viewable to
-                                                    partner)</span></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                                placeholder="0.0"></textarea>
+                                        <!-- text area 1 -->
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 text_area_custom_margin">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1"
+                                                    class="form-label form_label">Notes
+                                                    <span class="para_text_14">(Viewable to
+                                                        partner)</span></label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                    placeholder="0.0"></textarea>
+                                            </div>
+
                                         </div>
-
                                     </div>
+                                    <!-- finish all colomn -->
                                 </div>
-                                <!-- finish all colomn -->
+                            </div>
+                        </div>
+                        <!-- finish row -->
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- footer section -->
+        <footer class="footer-area mt-5">
+            <div class="container-fluid">
+                <div class="row flex-row justify-content-between">
+                    <div class="col-auto d-flex gap-3 align-items-center">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn">Back</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#follow__up__modal"
+                                data-bs-toggle="modal">Queue a Follow-up</button>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex justify-content-end">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn">Save</button>
                             </div>
                         </div>
                     </div>
-                    <!-- finish row -->
-                </form>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- footer section -->
-    <footer class="content-area">
-        <div class="container-fluid">
-            <div class="row flex-row justify-content-between">
-                <div class="col-auto d-flex gap-3 align-items-center">
-                    <div class="them_btn_container">
-                        <button class="theme_outline_btn">Back</button>
-                    </div>
-                    <div class="them_btn_container">
-                        <button class="theme_primary_btn" data-bs-target="#follow__up__modal"
-                            data-bs-toggle="modal">Queue a Follow-up</button>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="d-flex justify-content-end">
-                        <div class="them_btn_container">
-                            <button class="theme_primary_btn">Save</button>
-                        </div>
-                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
