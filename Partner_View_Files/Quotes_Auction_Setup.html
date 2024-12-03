@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dashboard</title>
+  <title>Quotes Auction Setup</title>
 
   <!-- MUI Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -30,87 +30,53 @@
 </head>
 
 <body>
-<div class="wrapper">
-   <!-- top header -->
-   <section class="top_header_secction">
-    <div class="container-fluid p-2">
-      <div class="row justify-content-between align-items-center">
-        <!-- Column 1 -->
-        <div class="col-12 col-lg-6">
-          <div class="header_container">
-            <div class="d-flex gap-2">
-              <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-              <div class="header_bg_text">
-                <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+  <div class="wrapper">
+    <!-- top header -->
+    <section class="top_header_secction">
+      <div class="container-fluid p-2">
+        <div class="row justify-content-between align-items-center">
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-6">
+            <div class="header_container">
+              <div class="d-flex gap-2">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                <div class="header_bg_text">
+                  <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                  <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                </div>
+              </div>
+              <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
               </div>
             </div>
-            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-              <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
-            </div>
           </div>
-        </div>
 
-        <!-- Column 2 -->
-        <div class="col-12 col-lg-6 d-none d-lg-block">
-          <div class="d-flex justify-content-end align-items-center gap-3">
-            <!-- Switch buttons -->
+          <!-- Column 2 -->
+          <div class="col-12 col-lg-6 d-none d-lg-block">
+            <div class="d-flex justify-content-end align-items-center gap-3">
+              <!-- Switch buttons -->
 
-            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-              <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                id="flexSwitchCheckDefault" />
-              <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                Legacy</label>
-            </div>
+              <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                  Legacy</label>
+              </div>
 
-            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-              <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                id="flexSwitchCheckDefault" />
-              <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Partner
-                View</label>
-            </div>
+              <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Partner
+                  View</label>
+              </div>
 
-            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+              <!-- <div class="d-flex justify-content-center align-items-center gap-1">
                           <label class="switch">
                               <input type="checkbox">
                               <span class="slider round"></span>
                           </label>
                           <span class="menu_font_style">Switch to Partner View</span>
                       </div> -->
-            <div class="d-flex align-items-center gap-1">
-              <img src="../assets/user.png" class="user_image" alt="User Icon" />
-              <div>
-                <p class="user_name">Welcome, Alon</p>
-                <p class="user_email">alon@demomail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Drawer Menu -->
-        <div class="drawer" id="drawer" style="z-index: 999">
-          <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-            <hr style="height: 1px; width: 100%" />
-          </div>
-
-          <div class="d-flex flex-column justify-content-start">
-            <!-- Switch buttons -->
-            <div class="form-check form-switch d-flex align-items-center gap-2">
-              <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                id="flexSwitchCheckDefault" />
-              <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
-                Legacy</label>
-            </div>
-
-            <div class="form-check form-switch d-flex align-items-center gap-2">
-              <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                id="flexSwitchCheckDefault" />
-              <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Partner
-                View</label>
-            </div>
-
-            <div class="d-flex align-items-center gap-1 mb-2">
               <div class="d-flex align-items-center gap-1">
                 <img src="../assets/user.png" class="user_image" alt="User Icon" />
                 <div>
@@ -120,172 +86,902 @@
               </div>
             </div>
           </div>
+
+          <!-- Drawer Menu -->
+          <div class="drawer" id="drawer" style="z-index: 999">
+            <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+              <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+              <hr style="height: 1px; width: 100%" />
+            </div>
+
+            <div class="d-flex flex-column justify-content-start">
+              <!-- Switch buttons -->
+              <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                  Legacy</label>
+              </div>
+
+              <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Partner
+                  View</label>
+              </div>
+
+              <div class="d-flex align-items-center gap-1 mb-2">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                  <div>
+                    <p class="user_name">Welcome, Alon</p>
+                    <p class="user_email">alon@demomail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Overlay -->
+          <div class="overlay_menu" id="overlay"></div>
         </div>
-        <!-- Overlay -->
-        <div class="overlay_menu" id="overlay"></div>
+      </div>
+    </section>
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+      <hr class="mt-5 show_white_hr_line" />
+
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+      </div>
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+      </div>
+      <hr class="show_white_hr_line mt-2" />
+
+
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
       </div>
     </div>
-  </section>
 
-  <!-- Side bar -->
-  <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-    <hr class="mt-5 show_white_hr_line" />
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
+      <div>
+        <div class="d-flex justify-content-center">
+          <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+        </div>
+        <hr style="height: 2px; background-color: #ddd; width: 100%" />
+        <div class="menu_container position-static">
+          <div class="menu_parent">
+            <div class="d-flex align-items-center gap-2">
+              <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+              <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
 
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
-    </div>
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+              <span class="menu_title">Home</span>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+        <div class="mx-2">
+          <div class="btn-group position-static dropend w-100">
+            <div type="button" class="btn" data-bs-toggle="dropdown">
+              <div class="row flex-row justify-content-between">
+                <div class="col-auto p-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                    <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                    <span class="menu_title">Qoutes</span>
+                  </div>
+                </div>
+                <div class="col-auto m-0 p-0">
+                  <i class="bi bi-chevron-right text-white"></i>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-menu ms-3 p-0">
+              <ul class="m-0 p-1">
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Create New</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Active - 715</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Requests - 13</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+        <div class="mx-2">
+          <div class="btn-group position-static dropend w-100">
+            <div type="button" class="btn" data-bs-toggle="dropdown">
+              <div class="row flex-row justify-content-between">
+                <div class="col-auto p-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                    <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                    <span class="menu_title">Auctions</span>
+                  </div>
+                </div>
+                <div class="col-auto m-0 p-0">
+                  <i class="bi bi-chevron-right text-white"></i>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-menu ms-3 p-0">
+              <ul class="m-0 p-1">
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Create New</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Active - 715</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Requests - 13</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-    </div>
-    <hr class="show_white_hr_line mt-2" />
-
-
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
-
-    </div>
-    <div class="side_bar_menu">
-      <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
-
-    </div>
-  </div>
-
-  <!-- drawer Sidebar -->
-  <div id="main_sidebar">
-    <div>
-      <div class="d-flex justify-content-center">
-        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
-      </div>
-      <hr style="height: 2px; background-color: #ddd; width: 100%" />
-      <div class="menu_container position-static">
+        <hr style="height: 2px; background-color: #ddd; width: 100%" />
         <div class="menu_parent">
           <div class="d-flex align-items-center gap-2">
-            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
-            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+            <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+            <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
 
             <span class="menu_title">Home</span>
           </div>
         </div>
-      </div>
+        <div class="menu_parent">
+          <div class="d-flex align-items-center gap-2">
+            <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+            <img src="../assets/icons/Nav Icons/Logout.png" alt="">
 
-      <div class="mx-2">
-        <div class="btn-group position-static dropend w-100">
-          <div type="button" class="btn" data-bs-toggle="dropdown">
-            <div class="row flex-row justify-content-between">
-              <div class="col-auto p-0">
-                <div class="d-flex align-items-center gap-2">
-                  <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                  <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
-                  <span class="menu_title">Qoutes</span>
-                </div>
-              </div>
-              <div class="col-auto m-0 p-0">
-                <i class="bi bi-chevron-right text-white"></i>
-              </div>
-            </div>
+            <span class="menu_title">Logout</span>
           </div>
-          <div class="dropdown-menu ms-3 p-0">
-            <ul class="m-0 p-1">
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Create New</span>
-              </li>
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Active - 715</span>
-              </li>
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Requests - 13</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="mx-2">
-        <div class="btn-group position-static dropend w-100">
-          <div type="button" class="btn" data-bs-toggle="dropdown">
-            <div class="row flex-row justify-content-between">
-              <div class="col-auto p-0">
-                <div class="d-flex align-items-center gap-2">
-                  <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                  <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
-                  <span class="menu_title">Auctions</span>
-                </div>
-              </div>
-              <div class="col-auto m-0 p-0">
-                <i class="bi bi-chevron-right text-white"></i>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown-menu ms-3 p-0">
-            <ul class="m-0 p-1">
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Create New</span>
-              </li>
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Active - 715</span>
-              </li>
-              <li class="dropdown-item sub_menu" href="#">
-                <span class="">Requests - 13</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <hr style="height: 2px; background-color: #ddd; width: 100%" />
-      <div class="menu_parent">
-        <div class="d-flex align-items-center gap-2">
-          <img src="../assets/icons/Nav Icons/My profile.png" alt="">
-          <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
-
-          <span class="menu_title">Home</span>
-        </div>
-      </div>
-      <div class="menu_parent">
-        <div class="d-flex align-items-center gap-2">
-          <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
-          <img src="../assets/icons/Nav Icons/Logout.png" alt="">
-
-          <span class="menu_title">Logout</span>
         </div>
       </div>
     </div>
+
+
+    <!-- custom height -->
+    <div class="custom_height"></div>
+
+
+    <div class="content-area">
+      <!-- bread crumb -->
+      <section class="">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between align-items-center py-2">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="main_title_15">Queue</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="main_title_15">Auction Request</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="active_text_title_14">Auction Setup</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center justify-content-end gap-3">
+                <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                  <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                    id="flexSwitchCheckDefault">
+                  <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">In-Progress</label>
+                </div>
+
+                <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                  <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                    id="flexSwitchCheckDefault" checked>
+                  <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Complete</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="show_gray_hr_line" />
+        </div>
+      </section>
+
+
+      <!-- Form section -->
+      <section class="my-2">
+        <div class="container-fluid">
+          <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+            <div class="sub_title_13">Quote Information (Quote ID: 51739)</div>
+            <img src="../assets/icons/black_form_search_icon.png" class="search_002" alt="date_picker_icon">
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="border rounded px-3 py-2 h-100">
+                <form action="">
+                  <!-- <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+                                <div class="sub_title_13">C -002 34 xx</div>
+                                <img src="../assets/icons/black_form_search_icon.png" class="search_002"
+                                    alt="date_picker_icon">
+                            </div> -->
+                  <div class="row d-flex">
+                    <!-- Relationship Manager -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6   ">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Commodity</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Albert Sasson" value="Electric" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Commodity -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">
+                          Type</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Electric" value="Commercial" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Product Type
+                          1</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Commercial" value="Commercial" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Product Type
+                          2</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Commercial" value="Commercial" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">State</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="State" value="Electric" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Utility</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Utility" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Zone</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="South" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Rate Class</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Rate Class" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Load Factor</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Load Factor" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Annual Volume</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="27566 KWH" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Show only single
+                          utility</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Show only single utility" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Demand (KW)</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Show only single utility" value="0" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Estimated Next Meter Read
+                          Date</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Start Month</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="" value="October,2024" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Term -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6   ">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Term</label>
+                        <div class="d-flex align-items-center gap-3">
+                          <div>
+                            <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              12
+                            </label>
+                          </div>
+                          <div>
+                            <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              24
+                            </label>
+                          </div>
+                          <div>
+                            <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                              36
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- upload doc -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="d-flex justify-content-start align-items-center gap-2">
+                        <label for="upload_doc" class="form-label form_label">Documents</label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
+                          <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
+                        </svg>
+                      </div>
+                      <div class="border rounded d-flex justify-content-end pe-2">
+                        <div class="them_btn_container">
+                          <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
+                            class="theme_primary_btn">Upload</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- finish row -->
+                </form>
+              </div>
+            </div>
+            <!-- column 1 finish -->
+
+            <div class="col-12 col-md-6">
+              <div class="border rounded px-3 py-2 h-100">
+                <form action="">
+                  <!-- <div class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+                                <div class="sub_title_13">C -002 34 xx</div>
+                                <img src="../assets/icons/black_form_search_icon.png" class="search_002"
+                                    alt="date_picker_icon">
+                            </div> -->
+                  <div class="row d-flex">
+                    <!-- Due date -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2">
+                      <div class="mb-3 position-relative">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Quote Due Date</label>
+                        </div>
+                        <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon" alt="date_picker_icon"
+                          style="cursor:pointer;">
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Oct 28, 2024" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2">
+                      <div class="mb-3 position-relative">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Account Name</label>
+                          <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10"
+                              fill="none">
+                              <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400" />
+                            </svg>
+                            <label type="button" for="" class="active_text_title_13">Additional Info</label>
+                          </div>
+                        </div>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Loren Troise RR" value="" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Customer Manager -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6   ">
+                      <div class="mb-3 position-relative">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Contact name</label>
+
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="ABC Test xxy" value="Electric" readonly>
+                      </div>
+                    </div>
+
+                    <!-- Commodity -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Contact phone</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="516-320-4200" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Current supplier</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Expiring Rate</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="$ 0.0" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Old Commision Rate</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="$ 0.0" value="" readonly>
+                      </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Relationship Manager</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="Albert Sasson" value="" readonly>
+                      </div>
+                    </div>
+
+                    <!-- account field -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2">
+                      <div class="mb-3 position-relative">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <label for="exampleFormControlInput1" class="form-label form_label">No. of Account(s)</label>
+                        </div>
+                        <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon" alt="search_icon"
+                          style="cursor:pointer;" data-bs-target="#accounts_view_modal" data-bs-toggle="modal">
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="1" value="" readonly>
+                      </div>
+                    </div>
+
+                    <!-- New business -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">New
+                          business</label>
+                        <select class="form-select select_value_text" aria-label="Default select example">
+                          <option class="form_text_field" selected>Yes</option>
+                          <option class="form_text_field" value="1">No</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <!-- Marketer Margin -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Expiring Contract
+                          Term</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                          placeholder="0.0" value="">
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- finish row -->
+                </form>
+              </div>
+            </div>
+            <!-- column 2 -->
+          </div>
+        </div>
+      </section>
+      <!-- Auction Configuration -->
+      <section class="mt-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="border rounded p-3">
+                <div class="row">
+                  <div><span class="sub_title_13">Auction Configuration</span></div>
+                  <div class="col-12 col-md-3">
+                    <div class="mt-2"><span class="form_text_field">Product Type</span></div>
+                    <div class="d-flex align-items-center gap-3 mt-2">
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Fixed
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Fixed Price Energy Only
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <!-- Marketer Margin -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Expiring Contract
+                            Term</label>
+                          <input type="text" class="form-control form_text_field w-100" id="exampleFormControlInput1"
+                            placeholder="" value="$ 0.06">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-3 mt-2">
+                    <div><span class="sub_title_13">Billing Type</span></div>
+                    <div class="d-flex align-items-center gap-3 mt-2">
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Single
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Doul
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Any
+                        </label>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <!-- Marketer Margin -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Marketer Margin</label>
+                          <input type="text" class="form-control form_text_field w-100" id="exampleFormControlInput1"
+                            placeholder="0.0" value="0.0%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-3 mt-2">
+                    <div><span class="sub_title_13">Include GRT in Rate Y/N</span></div>
+                    <div class="d-flex align-items-center gap-3 mt-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label table_th_text" for="flexRadioDefault1">
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                          checked>
+                        <label class="form-check-label table_th_text" for="flexRadioDefault2">
+                          No
+                        </label>
+                      </div>
+
+                    </div>
+                    <div class="mt-2">
+                      <!-- Marketer Margin -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Marketer Margin</label>
+                          <input type="text" class="form-control form_text_field w-100" id="exampleFormControlInput1"
+                            placeholder="0.0" value="0.0%">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-3 mt-2">
+                    <div><span class="sub_title_13">Include GRT in Rate Y/N</span></div>
+                    <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="4"></textarea>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Auction Information -->
+      <section class="mt-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="border rounded p-3">
+                <div class="row">
+                  <div><span class="sub_title_13">Auction Information</span></div>
+                  <div class="col-12 col-md-9">
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Quote Due Date</label>
+                    </div>
+                    <div class="d-flex flex-wrap gap-3">
+                      <!-- New business -->
+                      <div class="col-4">
+                        <div class=" position-relative">
+                          <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                            alt="date_picker_icon" style="cursor:pointer;">
+                          <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            placeholder="Oct 28, 2024" value="" readonly>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="">
+                          <select class="form-select select_value_text" aria-label="Default select example">
+                            <option class="form_text_field" selected>0</option>
+                            <option class="form_text_field" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="">
+                          <select class="form-select select_value_text" aria-label="Default select example">
+                            <option class="form_text_field" selected>00</option>
+                            <option class="form_text_field" value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="">
+                          <select class="form-select select_value_text" aria-label="Default select example">
+                            <option class="form_text_field" selected>AM</option>
+                            <option class="form_text_field" value="1">PM</option>
+                          </select>
+                          <span class="fs_11_fw_400_c_7575">EST</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-3 mt-2">
+                    <div class="">
+                      <!-- Marketer Margin -->
+                      <div class="col-12">
+                        <div class="mb-3">
+                          <label for="exampleFormControlInput1" class="form-label form_label">Auction Time <span
+                              class="text-danger">*</span></label>
+                          <input type="text" class="form-control form_text_field w-100" id="exampleFormControlInput1"
+                            placeholder="" value="5" readonly>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="border rounded p-3">
+                <div class="sub_title_13 mt-1"><span>Auction Suppliers</span></div>
+                <div class="fixed_rate text-center mt-2">Invited Suppliers</div>
+                <div class="quotes_table table_wrapper with_bg_table mt-2">
+                  <table class="table table-bordered">
+                    <thead class="thead_bg">
+                      <tr>
+                        <th class="td_w_20 table_head_bg"></th>
+                        <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title text-center">Supplier Company</span>
+                          </div>
+                        </th>
+                        <th scope="col" class=" align-middle td_w_100 text-center td_w_120 table_head_bg table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title td_w_100 text-center">Manual Bid</span>
+                          </div>
+                        </th>
+                        <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title td_w_100 text-center">Auto Bid</span>
+                          </div>
+                        </th>
+
+                    </thead>
+                    <tbody>
+                      <tr scope="row" class="tbody_row">
+                        <!-- style="height: 55px" -->
+                        <td class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
+                          <input type="checkbox" class="form-check-input table_check table_check" checked />
+                        </td>
+
+                        <td class=" align-middle text-center td_w_100 ">
+                          <span class="table_td_text">Agera Energy</span>
+                        </td>
+                        <td class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
+                          <input type="checkbox" class="form-check-input table_check table_check" checked />
+                        </td>
+                        <td class="align-middle">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <input type="checkbox" class="form-check-input table_check table_check" checked />
+
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="fixed_rate text-center mt-2">Invited Suppliers</div>
+
+                <div class="quotes_table table_wrapper with_bg_table mt-2">
+                  <table class="table table-bordered">
+                    <thead class="thead_bg">
+                      <tr>
+                        <th class="td_w_20 table_head_bg"></th>
+                        <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title text-center">First Name</span>
+                          </div>
+                        </th>
+                        <th scope="col" class=" align-middle td_w_100 text-center td_w_120 table_head_bg table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title td_w_100 text-center">Last Name</span>
+                          </div>
+                        </th>
+                        <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                          <div class="d-flex justify-content-center align-items-center gap-2">
+                            <span class="th_title td_w_100 text-center">Email Address</span>
+                          </div>
+                        </th>
+
+                    </thead>
+                    <tbody>
+                      <tr scope="row" class="tbody_row">
+                        <!-- style="height: 55px" -->
+                        <td class=" align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
+                          <input type="checkbox" class="form-check-input table_check table_check" checked />
+                        </td>
+
+                        <td class=" align-middle text-center td_w_100 ">
+                          <span class="table_td_text">Albert</span>
+                        </td>
+                        <td class=" align-middle text-center table_td_text td_w_100">
+                          <span class="table_td_text">Sasson</span>
+
+                        </td>
+                        <td class=" align-middle text-center text-center table_td_text td_w_150">
+                          <span class="table_td_text">Sasson@gmail.com</span>
+
+                        </td>
+
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- footer section -->
+    <footer class="footer-area">
+      <div class="container-fluid">
+        <div class="row flex-row">
+          <div class="col-12 col-md-12 col-lg-2">
+            <div class="d-flex justify-content-start">
+              <div class="them_btn_container">
+                <button class="theme_outline_btn">Back</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-10">
+            <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal" data-bs-toggle="modal">Add
+                  Supplier</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal" data-bs-toggle="modal">Request
+                  Qoute</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                  data-bs-toggle="modal">Refresh</button>
+              </div>
+
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Preview Link</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" data-bs-target="#email__link__modal" data-bs-toggle="modal">Email
+                  Link</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Print</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" onclick="createProposal()">Create
+                  Proposal</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Save & Update</button>
+              </div>
+              <div class="them_btn_container">
+                <button class="theme_primary_btn">Save & Email</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
-
-  <!-- custom height -->
-  <div class="custom_height"></div>
-
-
-
-  <!-- bread crumb -->
-  <section class="content-area_2 mt-1">
-    <div class="container-fluid">
-      <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
-        <div class="col-12 col-md-6">
-          <div class="d-flex align-items-center gap-3">
-            <div class="main_title_15">Auctions #76</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- hr  -->
-  <section class="content-area_2">
-    <hr class="show_gray_hr_line" />
-  </section>
-
-
-</div>
   <!-- Overlay -->
   <div class="overlay_mainsidebar"></div>
 

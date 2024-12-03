@@ -1,0 +1,155 @@
+
+/* Login Card */
+
+/* Main Container */
+.login-container {
+    background: url("../images/Assets_Images/Login.jpg") no-repeat center center
+      fixed;
+    background-size: cover;
+    filter: blur(5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Login Card */
+  .login-card {
+    background: rgba(0, 0, 0, 0.2);
+    /* background: rgb(7 141 225 / 11%); */
+    border: 0.2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 680px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .field_container{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .login-card h2 {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center;
+  }
+  
+  .login-card h3 {
+    font-family: Poppins;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-align: center;
+  }
+  
+  .login-card p {
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    color: #fff;
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #007bff;
+    box-shadow: none;
+    color: #fff;
+  }
+  
+  .btn-login {
+    background-color: #007bff;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s;
+    display: block;
+    margin: 0px auto;
+  }
+  
+  .btn-login:hover {
+    background-color: #0056b3;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: 10px;
+  }
+  
+  .forgot-password a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-card input {
+    /* background: rgba(0, 0, 0, 0.7); */
+    background: rgba(0, 0, 0, 0.2);
+    /* Black background with 20% opacity */
+    border: 0.2px solid rgba(255, 255, 255, 0.2);
+    /* White stroke with 0.2px width */
+    backdrop-filter: blur(10px);
+    /* Background blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    color: #fff;
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  padding: 10px;
+    /* White text */
+  }
+  
+  .login-card input:focus {
+    /* background: rgba(0, 0, 0, 0.7); */
+    background: rgba(0, 0, 0, 0.2);
+    /* Black background with 20% opacity */
+    border: 0.2px solid rgba(255, 255, 255, 0.2);
+    /* White stroke with 0.2px width */
+    backdrop-filter: blur(10px);
+    /* Background blur effect */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    color: #fff;
+    /* White text */
+  }
+  
+  .login-card input[type="text"]::placeholder,
+  .login-card input[type="password"]::placeholder {
+    color: rgba(231, 231, 231, 0.7);
+    /* Light gray color with some transparency */
+    opacity: 1;
+    /* Ensures the color is applied (as some browsers may reduce opacity) */
+  }
+  
