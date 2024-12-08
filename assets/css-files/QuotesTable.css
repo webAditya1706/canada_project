@@ -95,7 +95,7 @@
   position: sticky;
   left: 0;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 !important;
   border-left: 1px solid #ddd;
 }
 
@@ -103,7 +103,7 @@
   position: sticky !important;
   right: 0 !important;
   z-index: 2;
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 !important;
 }
 
 /* td style */
@@ -112,7 +112,7 @@
   position: sticky;
   left: 0px;
   z-index: 2;
-  background-color: inherit;
+  background-color: inherit !important;
   border-right: 0px;
   border-left: 1px solid #ddd;
 }
@@ -121,7 +121,7 @@
   position: sticky !important;
   right: 0 !important;
   z-index: 2;
-  background-color: inherit;
+  background-color: inherit !important;
 }
 
 .quotes_table td:nth-child(2) {

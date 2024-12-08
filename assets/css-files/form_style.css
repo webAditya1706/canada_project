@@ -305,7 +305,7 @@
 
 /* Style the select container */
 .custom-select-container {
-  width: 200px;
+  min-width: 200px;
   position: relative;
   display: inline-block;
 }

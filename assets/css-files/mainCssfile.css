@@ -28,13 +28,12 @@
   --HR_BG: #d6d6d6;
 }
 
-:root .black_tic__check .form-check-input:checked[type=checkbox] {
+:root .black_tic__check .form-check-input:checked[type="checkbox"] {
   background-image: url(https://cdn-icons-png.flaticon.com/512/33/33281.png);
   background-size: 9px;
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 .footer_bg {
   background-color: var(--HR_BG);
@@ -45,15 +44,15 @@
   --Label-Large-Size: 14px;
 }
 
-.primary_bg_color{
+.primary_bg_color {
   background-color: var(--Theme) !important;
 }
 
-.primary_bg_color_icon{
+.primary_bg_color_icon {
   fill: var(--Theme) !important;
 }
 
-.primary_bg_color_text{
+.primary_bg_color_text {
   color: var(--Theme);
 }
 
@@ -83,7 +82,7 @@ body {
   /* Hide horizontal scroll */
   margin: 0;
   padding: 0;
-  min-height: 100vh
+  min-height: 100vh;
 }
 body::-webkit-scrollbar {
   width: 0px;
@@ -114,7 +113,6 @@ body::-webkit-scrollbar {
   margin-left: auto;
   /* flex: 1; */
 }
-
 
 .custom_height {
   height: 5px;
@@ -251,7 +249,6 @@ td span {
   background-color: #fffcf4;
 }
 
-
 .no_td_bg tbody tr:nth-child(odd) {
   background-color: #fff !important;
 }
@@ -287,7 +284,7 @@ td span {
   background-color: #fff !important;
 }
 
-.text_theme_color{
+.text_theme_color {
   color: var(--Theme);
 }
 
@@ -371,6 +368,19 @@ td span {
   font-style: normal;
   font-weight: 600;
   line-height: 15px;
+  /* 100% */
+}
+
+.fs_12_fw_600_c_1313 {
+  color: var(--Primary, #131313);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
   /* 100% */
 }
 
@@ -501,6 +511,15 @@ input::placeholder {
   line-height: 11px; /* 100% */
 }
 
+.fs_10_fw_400_c_1313 {
+  color: var(--Primary, #131313) !important;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px; /* 100% */
+}
+
 .fs_11_fw_400_c_7575 {
   font-family: Poppins;
   font-size: 11px;
@@ -519,15 +538,14 @@ input::placeholder {
   line-height: 20px; /* 100% */
 }
 
-.text_h3{
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-line-height: 14px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
+.text_h3 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 /* Modal style */
@@ -661,16 +679,15 @@ footer {
   background-color: #fff;
 }
 
-
 /* Sticky footer styling */
-
 
 .footer-area {
   width: calc(100% - 40px);
   margin-left: auto;
 }
 /* Ensure body and html fill the viewport */
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -690,13 +707,27 @@ html, body {
   min-height: 100vh; /* Full viewport height */
 }
 
-
 /* Footer stays at the bottom */
 footer {
-  position: sticky; 
+  position: sticky;
   bottom: 0;
   right: 0;
   background-color: #f2fcff;
   padding: 20px 0;
   z-index: 9;
+}
+
+.w_15_h_15 {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.w_20_h_20 {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.w_30_h_30 {
+  width: 30px !important;
+  height: 30px !important;
 }

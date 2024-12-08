@@ -130,4 +130,9 @@ textarea::-webkit-scrollbar-thumb:hover {
 content: none !important;
 border-right: none;
 }
+/* 2 december */
 
+.img-thumbnail{
+  border: none;
+  padding: 0px;
+}

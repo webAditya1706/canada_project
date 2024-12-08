@@ -24,8 +24,13 @@
   width: 190px;
 }
 
+.graph_circle_160px {
+  width: 160px;
+}
+
 .rectangle_bg_4FA0D7 {
   width: 25px;
+  min-width: 25px;
   height: 25px;
   gap: 0px;
   border-radius: 5px;
@@ -35,6 +40,7 @@
 
 .rectangle_bg_102C3A {
   width: 25px;
+  min-width: 25px;
   height: 25px;
   gap: 0px;
   border-radius: 5px;
@@ -44,6 +50,7 @@
 
 .rectangle_bg_AACEEE {
   width: 25px;
+  min-width: 25px;
   height: 25px;
   gap: 0px;
   border-radius: 5px;
@@ -53,6 +60,7 @@
 
 .rectangle_bg_76AE17 {
   width: 25px;
+  min-width: 25px;
   height: 25px;
   gap: 0px;
   border-radius: 5px;
@@ -70,4 +78,68 @@
   text-decoration-style: solid;
   text-underline-position: from-font;
   text-decoration-skip-ink: auto;
+}
+
+.modal-body {
+  overflow: visible !important;
+}
+
+.graph_color_chip_102C3A {
+  width: 30px;
+  height: 10px;
+  top: 146px;
+  left: 240px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background: #102C3A;
+
+}
+
+.graph_color_chip_76AE17 {
+  width: 30px;
+  height: 10px;
+  top: 146px;
+  left: 240px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background: #76AE17;
+
+}
+
+.graph_color_chip_4FA0D7 {
+  width: 30px;
+  height: 10px;
+  top: 146px;
+  left: 240px;
+  gap: 0px;
+  border-radius: 20px;
+  opacity: 0px;
+  background: #4FA0D7;
+
+}
+
+/* sgraph slider */
+.slick-prev,
+.slick-next {
+  z-index: 1000 !important;
+  width: 40px !important;
+  height: 40px !important;
+  background-color: red;
+}
+
+.slick-prev {
+  left: -100px !important;
+  /* Adjust left arrow position */
+}
+
+.slick-next {
+  right: -100px !important;
+  /* Adjust right arrow position */
+}
+
+.slick-slide img {
+  display: block !important;
+  margin: auto !important;
 }
