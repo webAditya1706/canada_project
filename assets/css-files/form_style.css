@@ -85,7 +85,7 @@
 
 .modal_width_height .modal-body {
   max-height: 450px; /* Limit the modal body's height */
-  overflow-y: auto; /* Enable scrolling */
+  overflow-y: auto !important; /* Enable scrolling */
 }
 
 /* Custom scrollbar styling */
@@ -323,6 +323,12 @@
   border-radius: 4px;
   box-shadow: none;
   cursor: pointer;
+  max-width: 400px;
+}
+
+.custom-select option{
+  width: 100%;
+  max-width: 400px;
 }
 
 /* Arrow styling */
@@ -339,6 +345,21 @@
       border-radius: 4px;
       padding: 2px 6px;
     } */
+.Follow_Ups.custom-select-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  background-color: #FFF !important; /* Arrow background color */
+  border-radius: 4px;
+  padding: 10px;
+  background-image: url("../icons/Sorting_down.png");
+  background-repeat: no-repeat;
+  background-size: 12px;
+  background-position: center;
+}
 
 .custom-select-container::after {
   content: "";
@@ -376,4 +397,39 @@ input::placeholder{
 .filter_radio:checked{
 background-color: #fff;
 border-color: #fff;
+}
+
+/* 6dec style */
+.right_gray_border{
+border-right: 1px solid #E7E7E7;
+}
+
+.email_border_cross_icon{
+  border: 1px solid var(--Theme);
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: #F3F5FF;
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 10px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: var(--Theme);
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  background-image: none;
+}
+
+.form_validation_msg {
+  font-family: Poppins;
+font-size: 10px;
+font-weight: 400;
+line-height: 10px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #FF0000 !important;
 }

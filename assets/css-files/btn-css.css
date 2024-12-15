@@ -8,7 +8,7 @@
 /* Primary Button */
 .theme_primary_btn {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 4px;
     background-color: var(--primary_bg_color);
@@ -40,7 +40,7 @@
 /* White Button */
 .White_bg_theme_text {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 4px;
     background-color: #fff;
@@ -66,7 +66,7 @@
 /* Secondary Button */
 .theme_secondary_btn {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 4px;
     background-color: var(--primary_bg_color);
@@ -91,7 +91,7 @@
 /* Outline Button */
 .theme_outline_btn {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: 1.5px solid var(--Theme);
     /* Outline color */
     border-radius: 4px;
@@ -120,7 +120,7 @@
 
 .theme_outline_btn2 {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: 1.5px solid var(--Theme);
     /* Outline color */
     border-radius: 4px;
@@ -138,7 +138,7 @@
 /* Dark Button */
 .theme_dark_btn {
     position: relative;
-    padding: 7px 15px;
+    padding: 5px 15px;
     border: none;
     border-radius: 4px;
     background-color: #333;

@@ -258,7 +258,7 @@ aside {
 
 
 /* new css */
-.dropdown-menu.show:after{
+#main_sidebar .dropdown-menu.show:after{
   content: "";
   width: 10px;
   height: 10px;

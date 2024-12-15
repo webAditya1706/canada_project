@@ -13,13 +13,14 @@
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
         rel="stylesheet" />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
 
     <!-- external css files -->
     <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
     <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
     <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
     <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
-    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
     <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
     <link rel="stylesheet" href="../assets/css-files/form_style.css" />
@@ -275,7 +276,7 @@
             </div>
         </div>
 
-        <!-- bread crumb -->
+        <!-- main contaen -->
         <div class="content-area">
             <!-- breadcrumb -->
             <section class="">
@@ -286,8 +287,6 @@
                                 <span class="mid_header_mian_title">Quot</span>
                                 <!-- select box -->
 
-
-
                             </div>
                         </div>
                         <div class="col-lg-10 col-md-12 col-12">
@@ -297,7 +296,7 @@
                                     class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
                                     <span class="form_label">Commodity</span>
                                     <div class="custom-select-container align-items-center gap-1">
-                                        <select class="custom-select text_h3">
+                                        <select class="custom-select form-select text_h3">
                                             <option>Both</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
@@ -308,7 +307,7 @@
                                     class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
                                     <span class="form_label">Year</span>
                                     <div class="custom-select-container align-items-center gap-1">
-                                        <select class="custom-select text_h3">
+                                        <select class="custom-select form-select text_h3">
                                             <option>2024</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
@@ -319,7 +318,7 @@
                                     class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
                                     <span class="form_label">Revenue By</span>
                                     <div class="custom-select-container align-items-center gap-1">
-                                        <select class="custom-select text_h3">
+                                        <select class="custom-select form-select text_h3">
                                             <option>Both</option>
                                             <option>Option 2</option>
                                             <option>Option 3</option>
@@ -423,6 +422,7 @@
                     </div>
                 </div>
             </section>
+
             <!-- graph -->
             <section class="mt-4">
                 <div class="container-fluid">
@@ -432,7 +432,14 @@
                                 <div class="graph_card d-flex flex-column">
                                     <!-- Quotes graph -->
                                     <div class="position-relative">
-                                        <div class="fs_15_fw_600_c_1313 text-center">Quotes</div>
+                                        <div class="fs_15_fw_600_c_1313 text-center">
+                                            <span>Quotes</span>
+                                            <div class="pluse_icon_position" data-bs-toggle="modal"
+                                                data-bs-target="#tab_table">
+                                                <img src="../assets/appbar createnew.png" alt="" style="width: 20px;">
+                                            </div>
+                                        </div>
+
                                         <hr style="height: 2px; background-color: #ddd; width: 100%" />
 
                                         <div class="card_container">
@@ -575,31 +582,7 @@
                                             <div class="col-6 fs_12_fw_600_c_1313 text-start">By Months (2024)</div>
                                             <div class="col-6">
                                                 <div class="d-flex justify-content-end">
-                                                    <img src="../assets/icons/cancel.png" alt="Cancel Icon"
-                                                    class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
-                                                    data-bs-target="#sliderModal">
-                                                    <img src="../assets/icons/Excel.png" alt="Excel Icon"
-                                                        class="w_15_h_15">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <hr style="height: 2px; background-color: #ddd; width: 100%" />
-
-                                        <div>
-                                            <img src="../assets/images/Dashboard/Month_graph.jpg" alt="" class="w-100">
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-12 col-lg-6 col-xxl-4 mb-4">
-                                    <div class="graph_card">
-                                        <div class="row align-items-center">
-                                            <div class="col-6 fs_12_fw_600_c_1313 text-start">By Months (2024)</div>
-                                            <div class="col-6">
-                                                <div class="d-flex justify-content-end">
-                                                    <img src="../assets/icons/cancel.png" alt="Cancel Icon"
+                                                    <img src="../assets/blue_search.png" alt="Cancel Icon"
                                                         class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
                                                         data-bs-target="#sliderModal">
                                                     <img src="../assets/icons/Excel.png" alt="Excel Icon"
@@ -623,9 +606,9 @@
                                             <div class="col-6 fs_12_fw_600_c_1313 text-start">By Months (2024)</div>
                                             <div class="col-6">
                                                 <div class="d-flex justify-content-end">
-                                                    <img src="../assets/icons/cancel.png" alt="Cancel Icon"
-                                                    class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
-                                                    data-bs-target="#sliderModal">
+                                                    <img src="../assets/blue_search.png" alt="Cancel Icon"
+                                                        class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
+                                                        data-bs-target="#sliderModal">
                                                     <img src="../assets/icons/Excel.png" alt="Excel Icon"
                                                         class="w_15_h_15">
                                                 </div>
@@ -647,7 +630,31 @@
                                             <div class="col-6 fs_12_fw_600_c_1313 text-start">By Months (2024)</div>
                                             <div class="col-6">
                                                 <div class="d-flex justify-content-end">
-                                                    <img src="../assets/icons/cancel.png" alt="Cancel Icon"
+                                                    <img src="../assets/blue_search.png" alt="Cancel Icon"
+                                                        class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
+                                                        data-bs-target="#sliderModal">
+                                                    <img src="../assets/icons/Excel.png" alt="Excel Icon"
+                                                        class="w_15_h_15">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr style="height: 2px; background-color: #ddd; width: 100%" />
+
+                                        <div>
+                                            <img src="../assets/images/Dashboard/Month_graph.jpg" alt="" class="w-100">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-12 col-lg-6 col-xxl-4 mb-4">
+                                    <div class="graph_card">
+                                        <div class="row align-items-center">
+                                            <div class="col-6 fs_12_fw_600_c_1313 text-start">By Months (2024)</div>
+                                            <div class="col-6">
+                                                <div class="d-flex justify-content-end">
+                                                    <img src="../assets/blue_search.png" alt="Cancel Icon"
                                                         class="me-2 w_15_h_15" class="btn" data-bs-toggle="modal"
                                                         data-bs-target="#sliderModal">
                                                     <img src="../assets/icons/Excel.png" alt="Excel Icon"
@@ -696,8 +703,6 @@
                                 View</label>
                         </div>
                         <img src="../assets/icons/Excel.png" alt="Excel Icon" class="w_30_h_30">
-                        <img src="../assets/icons/cancel.png" alt="Cancel Icon" class="me-2 w_20_h_20" class="btn"
-                            data-bs-dismiss="modal" aria-label="Close">
                     </div>
                 </div>
                 <div class="modal-body">
@@ -751,7 +756,7 @@
     <!-- Graph Tagle -->
 
     <div class="modal fade" id="graph_table" tabindex="-1" aria-labelledby="graph_table_label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="graph_table_label">Gas and Electric Usage Breakdown By Months (2024)
@@ -764,8 +769,6 @@
                                 View</label>
                         </div>
                         <img src="../assets/icons/Excel.png" alt="Excel Icon" class="w_30_h_30">
-                        <img src="../assets/icons/cancel.png" alt="Cancel Icon" class="me-2 w_20_h_20" class="btn"
-                            data-bs-dismiss="modal" aria-label="Close">
                     </div>
                 </div>
                 <div class="modal-body">
@@ -953,6 +956,253 @@
         </div>
     </div>
 
+    <!-- Tab table -->
+
+    <div class="modal fade" id="tab_table" tabindex="-1" aria-labelledby="tab_table_label" aria-hidden="true">
+        <div class="modal-dialog modal_width_height modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="graph_table_label">Gas and Electric Usage Breakdown By January Month
+                        (2024)
+                    </h5>
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Excel.png" alt="Excel Icon" class="w_30_h_30">
+                    </div>
+                </div>
+                <div class="modal-body mb-2">
+                    <ul class="nav nav-underline gap-3">
+                        <li class="nav-item">
+                            <span class="nav-link tab_nav_link active" aria-current="page" href="#tab1"
+                                data-bs-toggle="tab">Month</span>
+                        </li>
+                        <li class="nav-item">
+                            <span class="nav-link tab_nav_link" href="#tab2" data-bs-toggle="tab">Details</span>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content mt-3">
+                        <!-- tab 1 -->
+                        <div class="tab-pane fade show active" id="tab1">
+                            <div class="form_label mb-3">Total By January Month (2024)</div>
+                            <div class="table_wrapper quotes_table with_bg_table second_td_sticky_none">
+                                <table class="table table-bordered  m-0">
+                                    <thead class="thead_bg">
+                                        <tr>
+                                            <th class="td_w_150 td_h_55 align-middle table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Supplier</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class="align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <div>
+                                                        <span class="table_th_text">Electric Usage</span>
+                                                        <br />
+                                                        <span class="fs_11_fw_400_c_7575">(Therms/CCF)</span>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Electric No. of Accounts</span>
+                                                    <br />
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Electric Comm. Total</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Electric Avg Comm. Rate</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Gas Usage</span>
+                                                </div>
+                                                <span class="fs_11_fw_400_c_7575"> (KWH)</span>
+                                            </th>
+
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Gas No. of Accounts</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Gas Comm. Total</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Gas Avg Comm. Rate</span>
+
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Total Comm.</span>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr scope="row" class="tbody_row">
+                                            <!-- style="height: 55px" -->
+
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center one_line_ellipsis" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="Censtar Censtar Censtar">Censtar
+                                                    Censtar Censtar</div>
+                                            </td>
+
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">9,137</div>
+                                            </td>
+
+                                            <td class="align-middle text-center table_td_text">
+                                                <div class="text-center">$401</div>
+                                            </td>
+                                            <td class="align-middle text-center text-center table_td_text td_w_110">
+                                                <div>0.165%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text td_w_100">
+                                                <div>$32,413.75</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>20.24%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$32,413.75</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>14.65%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$0.04</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$0.04</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- tab 2 -->
+                        <div class="tab-pane fade" id="tab2">
+                            <div class="form_label mb-3">January</div>
+                            <div class="table_wrapper quotes_table with_bg_table second_td_sticky_none">
+                                <table class="table table-bordered  m-0">
+                                    <thead class="thead_bg">
+                                        <tr>
+                                            <th class="td_w_150 td_h_55 align-middle table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Account No.</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class="align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <div>
+                                                        <span class="table_th_text">Usage</span>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Contract ID</span>
+                                                    <br />
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Comm. ID</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Report Month</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Meter Read Begin</span>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Meter Read End</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Comm. Rate</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="table_th_text">Comm. <br />Dollars</span>
+
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr scope="row" class="tbody_row">
+                                            <!-- style="height: 55px" -->
+
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">3152191004</div>
+                                            </td>
+
+                                            <td class="align-middle text-center table_td_text">
+                                                <div class="text-center">$401</div>
+                                            </td>
+                                            <td class="align-middle text-center text-center table_td_text td_w_110">
+                                                <div>0.165%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text td_w_100">
+                                                <div>$32,413.75</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>20.24%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$32,413.75</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>14.65%</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$0.04</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>$0.04</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal body end -->
+                </div>
+
+                <!-- Modal content end -->
+
+            </div>
+        </div>
+    </div>
+    </div>
+
     <!-- End Modals -->
 
 
@@ -969,8 +1219,15 @@
     <script src="../assets/js-files/comman_js_file.js"></script>
 
     <script>
-
+        // Initialize tooltips
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
     </script>
+
 
 </body>
 

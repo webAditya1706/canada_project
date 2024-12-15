@@ -68,6 +68,15 @@
   background: #76ae17;
 }
 
+.pluse_icon_position {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  top: 0px;
+  right: 0px;
+  background-color: #fff;
+}
+
 .graph_label {
   font-family: Poppins;
   font-size: 13px;
@@ -92,8 +101,7 @@
   gap: 0px;
   border-radius: 20px;
   opacity: 0px;
-  background: #102C3A;
-
+  background: #102c3a;
 }
 
 .graph_color_chip_76AE17 {
@@ -104,8 +112,7 @@
   gap: 0px;
   border-radius: 20px;
   opacity: 0px;
-  background: #76AE17;
-
+  background: #76ae17;
 }
 
 .graph_color_chip_4FA0D7 {
@@ -116,8 +123,7 @@
   gap: 0px;
   border-radius: 20px;
   opacity: 0px;
-  background: #4FA0D7;
-
+  background: #4fa0d7;
 }
 
 /* sgraph slider */
@@ -142,4 +148,37 @@
 .slick-slide img {
   display: block !important;
   margin: auto !important;
+}
+
+/* 6 dec */
+
+.tab_nav_link {
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-weight: 600;
+  line-height: 14px !important;
+  color: #131313;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  transition: all s ease;
+}
+
+.tab_nav_link:hover {
+  font-weight: 600;
+  color: var(--Theme);
+  border-bottom: 3px solid var(--Theme);
+}
+
+.tab_nav_link.active{
+  font-weight: 600;
+  color: var(--Theme) !important;
+  border-bottom: 3px solid var(--Theme) !important;
+}
+.tab_nav_link.active{
+  background-color: #fff;
+}
+
+.tab-content .active{
+  background-color: #fff;
 }
