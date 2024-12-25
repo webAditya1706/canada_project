@@ -408,6 +408,9 @@ td:last-child::before {
   color: #007cba;
   /* Text color for active item */
 }
+.table_drop_li_btn.active svg {
+  fill: #007cba;
+}
 
 .table_drop_li_btn:hover svg {
   fill: #007cba;

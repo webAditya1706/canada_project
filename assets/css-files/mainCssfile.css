@@ -196,7 +196,7 @@ td:first-child {
   max-width: 160px !important;
   /* 150 + 10 */
 }
-.14px {
+.td_w_180 {
   min-width: 180px !important;
   max-width: 250px !important;
   /* 150 + 10 */
@@ -206,6 +206,10 @@ td:first-child {
   min-width: 250px !important;
   max-width: 300px !important;
   /* 150 + 10 */
+}
+.form_field_custom_width{
+  min-width: 100px;
+  max-width: 400px;
 }
 
 .td_w_350 {
@@ -383,6 +387,19 @@ color: var(--dark_text_color) !important;
 }
 
 .fs_12_fw_600_c_1313 {
+  color: var(--Primary, #131313);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  /* 100% */
+}
+
+.fs_12_fw_500_c_1313 {
   color: var(--Primary, #131313);
   font-family: Poppins;
   font-size: 12px;

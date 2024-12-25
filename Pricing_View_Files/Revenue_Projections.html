@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revenue Projections</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- top header -->
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                          <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                          <span class="menu_font_style">Switch to Partner View</span>
+                      </div> -->
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                        <span class="menu_title">Logout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- bread crumb -->
+        <div class="content-area">
+            <section class="">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-between align-items-center py-2">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="main_title_15">Reports</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                    fill="none">
+                                    <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="main_title_15">Revenue Projections</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center justify-content-end gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                        data-bs-toggle="modal"><img src="../assets/white_search_Icon.png"
+                                            alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="show_gray_hr_line" />
+                </div>
+            </section>
+            <!-- section 2 -->
+            <section class="">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-between py-2">
+                        <div class="col-12 col-md-11">
+                            <div class="d-flex flex-wrap gap-3">
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">Last Posted Report Month</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">By Marketer</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">By RM</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">By Customer</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">By Revenue</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-auto d-flex align-items-center gap-1">
+                                    <span class="form_label">By State</span>
+                                    <div class="custom-select-container_165">
+                                        <select class="custom-select form-select text_h3">
+                                            <option>Active</option>
+                                            <option>Option 2</option>
+                                            <option>Option 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-1">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                    data-bs-toggle="modal">Go</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container-fluid">
+                    <hr class="show_gray_hr_line" />
+                    <div class="row d-flex justify-content-between align-items-center py-2">
+                        <div class="col-auto">
+                            <span class="quotes_left_text">Your search results...</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="quotes_right_text">Total Quotes: 0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="table_wrapper quotes_table with_bg_table second_td_sticky_none">
+                                <table class="table table-bordered  m-0">
+                                    <thead class="thead_bg">
+                                        <tr>
+                                            <th class="td_w_150 td_h_55 align-middle table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="">Report Month</span>
+                                                    <img src="../assets/auto_filter.png" alt="">
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class="td_w_150 td_h_55 align-middle table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <div>
+                                                        <span class="">Electric Usage<span
+                                                                class="fs_11_fw_400_c_7575">(KWH)</span></span>
+                                                    </div>
+                                                    <img src="../assets/auto_filter.png" alt="">
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_150 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Electric Total</span>
+                                                    <img src="../assets/auto_filter.png" alt="">
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_150 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <div>
+                                                        <span class="th_title">Gas Usage<span
+                                                                class="fs_11_fw_400_c_7575">(KWH)</span></span>
+                                                    </div>
+                                                    <img src="../assets/auto_filter.png" alt="">
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_150 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Gas Total</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Total</span>
+                                                </div>
+                                            </th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr scope="row" class="tbody_row">
+                                            <td colspan="6">
+                                                <div class="border no_record_found_parent">
+                                                    <div>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="51" height="64" viewBox="0 0 51 64"
+                                                            fill="none">
+                                                            <path opacity="0.12"
+                                                                d="M22.9876 63.9999C35.5716 63.9999 45.7729 62.7449 45.7729 61.1967C45.7729 59.6486 35.5716 58.3936 22.9876 58.3936C10.4037 58.3936 0.202393 59.6486 0.202393 61.1967C0.202393 62.7449 10.4037 63.9999 22.9876 63.9999Z"
+                                                                fill="#A6A5A5" />
+                                                            <g opacity="0.6">
+                                                                <path opacity="0.23"
+                                                                    d="M49.0076 1.88963L48.9783 1.85449H46.2763H10.3436L10.4314 1.94897H10.077C7.83023 1.94897 6.00907 3.77025 6.00907 6.01701V47.1424H2.59851L2.56932 47.1775C0.892256 49.1901 0.892256 52.1134 2.56932 54.126L2.59851 54.1611C2.59851 54.1611 3.89352 54.1611 6.00907 54.1611H41.2332H41.2845C43.7304 54.1611 45.7132 52.1783 45.7132 49.7324V8.96756C45.7132 8.96756 45.7126 8.93388 45.7122 8.87308H48.9783L49.0076 8.83794C50.6847 6.82538 50.6847 3.90207 49.0076 1.88963Z"
+                                                                    fill="black" />
+                                                                <path
+                                                                    d="M9.07886 7.86685H47.7136L47.7429 7.83171C49.4199 5.81916 49.4199 2.89584 47.7429 0.883286L47.7136 0.848145H45.0115H9.07886L9.26988 1.05376C11.0626 2.98303 10.993 5.98903 9.1129 7.83329L9.07886 7.86685Z"
+                                                                    fill="#757575" />
+                                                                <path
+                                                                    d="M40.0197 53.1547H4.74438V5.0107C4.74438 2.76395 6.56566 0.942666 8.81229 0.942666H43.3231C43.3231 0.942666 46.9047 0.729993 46.8324 0.942666C44.3196 0.991791 44.4484 7.96125 44.4484 7.96125V48.726C44.4484 51.1718 42.4656 53.1547 40.0197 53.1547Z"
+                                                                    fill="url(#paint0_linear_1007_5761)" />
+                                                                <path
+                                                                    d="M39.9678 53.1549C38.3944 53.1549 1.33313 53.1549 1.33313 53.1549L1.30382 53.1198C-0.373247 51.1072 -0.373247 48.1839 1.30382 46.1714L1.33313 46.1362H39.9678L39.7768 46.3418C37.9841 48.2712 37.6796 51.5627 39.9678 53.1549Z"
+                                                                    fill="#757575" />
+                                                                <path d="M37.3273 8.72803H13.3262V10.7478H37.3273V8.72803Z" fill="white" />
+                                                                <path d="M40.6672 43.0474H29.936V43.7054H40.6672V43.0474Z" fill="white" />
+                                                                <path d="M40.6678 14.542H9.98694V15.3624H40.6678V14.542Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 18.5703H9.98694V19.3907H40.6678V18.5703Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 22.5977H9.98694V23.4181H40.6678V22.5977Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 26.625H9.98694V27.4454H40.6678V26.625Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 30.6533H9.98694V31.4737H40.6678V30.6533Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 38.7085H9.98694V39.5289H40.6678V38.7085Z" fill="#E6E6E6" />
+                                                                <path d="M40.6678 34.6807H9.98694V35.5011H40.6678V34.6807Z" fill="#E6E6E6" />
+                                                                <path d="M16.7139 8.72803H13.3268V10.7478H16.7139V8.72803Z" fill="#131313" />
+                                                            </g>
+                                                            <defs>
+                                                                <linearGradient id="paint0_linear_1007_5761" x1="25.789" y1="0.848145"
+                                                                    x2="25.789" y2="53.1547" gradientUnits="userSpaceOnUse">
+                                                                    <stop stop-color="#D0D0D0" stop-opacity="0.9" />
+                                                                    <stop offset="1" stop-color="#4A4A4A" />
+                                                                </linearGradient>
+                                                            </defs>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="fs_16_fw_600_c_F00">
+                                                        No Record Found
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- footer section -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12 col-lg-2">
+                        <div class="d-flex justify-content-start">
+                            <div class="them_btn_container">
+                                <button class="theme_outline_btn">Back</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-10">
+                        <div
+                            class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                    data-bs-toggle="modal">Print Commission Report to PDF</button>
+                            </div>
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                    data-bs-toggle="modal">Print Commission Report to Excel</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

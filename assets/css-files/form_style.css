@@ -310,6 +310,12 @@
   display: inline-block;
 }
 
+.custom-select-container_165 {
+  min-width: 165px !important;
+  position: relative;
+  display: inline-block;
+}
+
 /* Style the select */
 .custom-select {
   appearance: none;
@@ -326,7 +332,7 @@
   max-width: 400px;
 }
 
-.custom-select option{
+.custom-select option {
   width: 100%;
   max-width: 400px;
 }
@@ -352,7 +358,7 @@
   right: 5px;
   transform: translateY(-50%);
   pointer-events: none;
-  background-color: #FFF !important; /* Arrow background color */
+  background-color: #fff !important; /* Arrow background color */
   border-radius: 4px;
   padding: 10px;
   background-image: url("../icons/Sorting_down.png");
@@ -384,52 +390,65 @@
   outline: none;
 }
 
-input::placeholder{
+input::placeholder {
   color: #232222;
 }
-.form-check-input.filter_radio:checked[type=radio] {
+.form-check-input.filter_radio:checked[type="radio"] {
   background-image: url("../icons/Check.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.filter_radio:checked{
-background-color: #fff;
-border-color: #fff;
+.filter_radio:checked {
+  background-color: #fff;
+  border-color: #fff;
 }
 
 /* 6dec style */
-.right_gray_border{
-border-right: 1px solid #E7E7E7;
+.right_gray_border {
+  border-right: 1px solid #e7e7e7;
 }
 
-.email_border_cross_icon{
+.email_border_cross_icon {
   border: 1px solid var(--Theme);
   border-radius: 20px;
   padding: 5px 10px;
-  background-color: #F3F5FF;
+  background-color: #f3f5ff;
   font-family: Poppins;
-font-size: 10px;
-font-weight: 400;
-line-height: 10px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: var(--Theme);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--Theme);
 }
 
-.form-control.is-invalid, .was-validated .form-control:invalid{
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
   background-image: none;
+}
+
+.form-select.is-invalid:not([multiple]):not([size]),
+.form-select.is-invalid:not([multiple])[size="1"],
+.was-validated .form-select:invalid:not([multiple]):not([size]),
+.was-validated .form-select:invalid:not([multiple])[size="1"] {
+  padding-right: 4.125rem; /* Adjust padding for the dropdown indicator */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23dc3545' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 4l7 7 7-7'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center, right 2.5rem center;
+  background-size: 16px 12px, 1rem 1rem;
+  background-repeat: no-repeat;
+  border-color: #dc3545; /* Bootstrap's red color for invalid state */
 }
 
 .form_validation_msg {
   font-family: Poppins;
-font-size: 10px;
-font-weight: 400;
-line-height: 10px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #FF0000 !important;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ff0000 !important;
 }
