@@ -497,11 +497,10 @@
                                         <!-- first row -->
                                         <tr scope="row" class="tbody_row">
                                             <!-- style="height: 55px" -->
-
                                             <td class="align-middle text-center table_td_text">
-                                                <img src="../assets/left-arrow.png" alt=""
-                                                    style="width: 20px;cursor: pointer;" data-bs-toggle="collapse"
-                                                    data-bs-target="#row1-details">
+                                                <img src="../assets/icons/Rows_dropdown.png" alt="Rows_dropdown"
+                                                    data-bs-toggle="collapse" data-bs-target="#row1-details"
+                                                    class="toggle-icon">
                                             </td>
                                             <td class="align-middle text-center table_td_text">
                                                 <div>Zodiac Industries Inc.</div>
@@ -585,7 +584,7 @@
                                                 <div class="row p-2">
                                                     <div class="col-12 inner_table">
                                                         <div class="border border-rounded">
-                                                            <div class="table_wrapper quotes_table">
+                                                            <div class="quotes_table">
                                                                 <table class="table table-bordered m-0">
                                                                     <thead class="thead_bg">
                                                                         <tr>
@@ -881,11 +880,10 @@
                                         <!-- second row -->
                                         <tr scope="row" class="tbody_row">
                                             <!-- style="height: 55px" -->
-
                                             <td class="align-middle text-center table_td_text">
-                                                <img src="../assets/left-arrow.png" alt=""
-                                                    style="width: 20px;cursor: pointer;" data-bs-toggle="collapse"
-                                                    data-bs-target="#row2-details">
+                                                <img src="../assets/icons/Rows_dropdown.png" alt="Rows_dropdown"
+                                                    data-bs-toggle="collapse" data-bs-target="#row2-details"
+                                                    class="toggle-icon">
                                             </td>
                                             <td class="align-middle text-center table_td_text">
                                                 <div>Zodiac Industries Inc.</div>
@@ -969,7 +967,7 @@
                                                 <div class="row p-2">
                                                     <div class="col-12 inner_table">
                                                         <div class="border border-rounded">
-                                                            <div class="table_wrapper quotes_table">
+                                                            <div class="quotes_table">
                                                                 <table class="table table-bordered m-0">
                                                                     <thead class="thead_bg">
                                                                         <tr>
@@ -1808,13 +1806,23 @@
     <script src="../assets/js-files/comman_js_file.js"></script>
 
     <script>
-        // Initialize tooltips
         document.addEventListener('DOMContentLoaded', function () {
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
+            const collapsibleRows = document.querySelectorAll('.collapse'); // Select all collapsible rows
+
+            collapsibleRows.forEach(row => {
+                const toggleIcon = row.previousElementSibling.querySelector('[data-bs-target]'); // Find the toggle icon for the current row
+
+                row.addEventListener('show.bs.collapse', function () {
+                    toggleIcon.classList.add('rotate'); // Add rotation on expand
+                });
+
+                row.addEventListener('hide.bs.collapse', function () {
+                    toggleIcon.classList.remove('rotate'); // Remove rotation on collapse
+                });
+            });
         });
+
+
     </script>
 
 

@@ -404,6 +404,16 @@ td:last-child::before {
   /* Text color on hover */
 }
 
+.custom_icon{
+  color: black !important;
+  fill: #000 !important;
+}
+
+.table_drop_li_btn:hover .custom_icon{
+  color: #007cba !important;
+  fill: #007cba !important;
+}
+
 .table_drop_li_btn:hover span {
   color: #007cba;
   /* Text color for active item */
@@ -423,6 +433,17 @@ td:last-child::before {
 
 .active svg {
   fill: #007cba;
+}
+
+
+.table_drop_li_btn.active .custom_icon{
+  color: #007cba !important;
+  fill: #007cba !important;
+}
+
+.table_drop_li_btn.active span{
+  color: #007cba !important;
+  fill: #007cba !important;
 }
 
 .active span {
