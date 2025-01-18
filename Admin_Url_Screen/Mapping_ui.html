@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload Rack Rates</title>
+    <title>Mapping UI</title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
             <div class="container-fluid p-2">
                 <div class="row justify-content-between align-items-center">
                     <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-3">
                         <div class="header_container">
                             <div class="d-flex gap-2">
                                 <img src="../assets/logo.png" alt="Logo" class="header_logo" />
@@ -58,36 +58,11 @@
 
                     <!-- Column 2 -->
                     <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- Switch buttons -->
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
-                                    View</label>
-                            </div>
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                          </label>
-                          <span class="menu_font_style">Switch to Partner View</span>
-                      </div> -->
-                            <div class="d-flex align-items-center gap-1">
-                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                <div>
-                                    <p class="user_name">Welcome, Alon</p>
-                                    <p class="user_email">alon@demomail.com</p>
-                                </div>
+                        <div class="d-flex justify-content-end align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
                             </div>
                         </div>
                     </div>
@@ -268,18 +243,26 @@
             </div>
         </div>
 
-        <div class="content-area">
-            <!-- bread crumb -->
+        <div class="content-area mb-4">
             <section class="">
                 <div class="container-fluid">
+                    <!-- bread crumb -->
                     <div class="row py-3 d-flex justify-content-between align-items-center py-2">
-                        <div class="col-6">
+                        <div class="col-6 col-md-6">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Upload Rack Rates</div>
+                                <div class="main_title_15">Miscellaneous Setup</div>
+                                <div class="custom-select-container">
+                                    <select class="custom-select form-select text_h3">
+                                        <option>Mapping UI</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <hr class="show_gray_hr_line" />
+
                 </div>
             </section>
 
@@ -288,10 +271,10 @@
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-2">
                         <div class="col-auto">
-                            <span class="quotes_left_text">Your search results 15 out of 64 Users...</span>
+                            <span class="quotes_left_text">Your search results</span>
                         </div>
                         <div class="col-auto">
-                            <span class="quotes_right_text">Total Users: 64</span>
+                            <span class="quotes_right_text">Total Record(s) : 44</span>
                         </div>
                     </div>
                     <div class="row">
@@ -302,39 +285,18 @@
                                         <tr>
                                             <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Supplier Name</span>
+                                                    <span class="th_title">Supplier</span>
                                                 </div>
                                             </th>
 
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                            <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Matrix Name</span>
-
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Upload</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">File</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Upload Date</span>
+                                                    <span class="th_title"> Name of Matrix</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Good Untill Date</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Mapping File Name</span>
+                                                    <span class="th_title">Sheet</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle table_head_bg td_w_50">
@@ -349,59 +311,16 @@
                                             <!-- style="height: 55px" -->
 
                                             <td class="align-middle table_td_text text">
+                                                <div class="text-center">Agera Electric</div>
+                                            </td>
+
+                                            <td class="align-middle table_td_text text">
                                                 <div class="text-center">Agera Energy</div>
                                             </td>
 
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <div>
-                                                            <img src="../assets/icons/Edit.png" alt="" class="w_15">
-                                                            Agera Gas
-                                                        </div>
-                                                        <div>
-                                                            <img src="../assets/icons/Edit.png" alt="" class="w_15">
-                                                            <img src="../assets/icons/Form_delete.png" alt=""
-                                                                class="w_20">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">
-                                                    <span
-                                                        class="upload_rack_upload_btn active_text_title_13">Upload</span>
-                                                </div>
-                                            </td>
-
                                             <td class="align-middle text-center table_td_text">
-                                                <div
-                                                    class="text-center d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <img src="../assets/icons/Excel.png" alt="Excel.png"
-                                                            class="w_20">
-                                                        <span
-                                                            class="active_text_title_13 text-decoration-underline">Ageraa
-                                                            Gas.XLSM</span>
-                                                    </div>
-                                                    <div>
-                                                        <img src="../assets/icons/cancel.png" alt="cancel.png"
-                                                            class="w_20">
-                                                    </div>
-                                                </div>
+                                                <div class="text-center">Matrix</div>
                                             </td>
-                                            <td class="align-middle text-center table_td_text">
-                                                <div>09/17/2019</div>
-                                            </td>
-                                            <td class="align-middle text-center table_td_text">
-                                                <div class="fs_13_fw_400_c_FF0000">09/17/2019</div>
-                                            </td>
-                                            <td class="align-middle text-center table_td_text">
-                                                <div class="active_text_title_13 text-decoration-underline">Agera Gas
-                                                    Matrix</div>
-                                            </td>
-
                                             <!-- last td -->
                                             <td class="align-middle text-center table_td_text">
                                                 <div class="btn-group dropstart" type="button">
@@ -465,7 +384,6 @@
                                             </td>
                                         </tr>
 
-
                                     </tbody>
                                 </table>
                             </div>
@@ -511,48 +429,43 @@
                 </div>
             </section>
 
+
         </div>
-
-    </div>
-
-    <!-- footer section -->
-    <footer class="footer-area">
-        <div class="container-fluid">
-            <div class="row flex-row">
-                <div class="col-12 col-md-12">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="them_btn_container ">
-                            <button class="theme_outline_btn">Close</button>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-toggle="modal"
-                                    data-bs-target="#untilDatePickerModal">Matrix Files</button>
+        <!-- footer section -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="them_btn_container ">
+                                <button class="theme_outline_btn">Close</button>
                             </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">View Logs For All</button>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Save</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
 
     <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- bootstrap js file -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>

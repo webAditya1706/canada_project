@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View log details </title>
+    <title>Manage Users Edit </title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
             <div class="container-fluid p-2">
                 <div class="row justify-content-between align-items-center">
                     <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-3">
                         <div class="header_container">
                             <div class="d-flex gap-2">
                                 <img src="../assets/logo.png" alt="Logo" class="header_logo" />
@@ -268,176 +268,269 @@
             </div>
         </div>
 
-        <div class="content-area">
+        <div class="content-area mb-4">
             <!-- bread crumb -->
             <section class="">
                 <div class="container-fluid">
                     <div class="row py-3 d-flex justify-content-between align-items-center py-2">
                         <div class="col-6">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Upload Rack Rates</div>
+                                <div class="main_title_15">Manage Users</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
                                     fill="none">
                                     <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                                <div class="active_text_title_14">View Log Detail</div>
+                                <div class="active_text_title_14">Edit</div>
                             </div>
                         </div>
                     </div>
                     <hr class="show_gray_hr_line" />
 
-                    <div class="row gap-1">
-                        <!-- Supplier Company -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Supplier
-                                    Company</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Agera Electric" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Matrix Name -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Matrix Name</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Agera Gas" readonly>
-                            </div>
-                        </div>
-
-                        <!-- Mapping File Name -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Mapping File
-                                    Name</label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Agera Gas Matrix" readonly>
-                            </div>
-                        </div>
-                    </div>
-                    <hr class="show_gray_hr_line" />
-
-                </div>
-            </section>
-
-            <!-- white Table -->
-            <section class="">
-                <div class="container-fluid">
-                    <div class="row d-flex justify-content-between align-items-center py-2">
-                        <div class="col-auto">
-                            <!-- <span class="quotes_left_text">Your search results 15 out of 64 Users...</span> -->
-                        </div>
-                        <div class="col-auto">
-                            <span class="quotes_right_text">Total Users: 64</span>
-                        </div>
-                    </div>
                     <div class="row">
-                        <div class="col-12">
-                            <div class="table_wrapper quotes_table with_bg_table second_td_sticky_none">
-                                <table class="table table-bordered  m-0">
-                                    <thead class="thead_bg">
-                                        <tr>
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Subject</span>
+                        <div class="col-12 mt-3">
+                            <div class="border rounded px-3 py-2 h-100">
+
+                                <div class="row">
+                                    <!-- User ID -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <div class="row flex-row justify-content-between">
+                                                <div class="col-auto"> <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">User ID</label></div>
+                                                <div class="col-auto d-flex align-items-center gap-2">
+                                                    <!-- <div class="row"> -->
+                                                    <span for="exampleFormControlInput1"
+                                                        class="active_text_title_13">Send Password</span>
+                                                    <!-- </div> -->
                                                 </div>
-                                            </th>
+                                            </div>
+                                            <input type="tel" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="000 0000 000"
+                                                pattern="[0-9]{10}" required>
+                                        </div>
+                                    </div>
+                                    <!-- First Name * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">First
+                                                Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                                value="Agera Electric">
+                                        </div>
+                                    </div>
 
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Read Date</span>
+                                    <!-- Last Name * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Last
+                                                Name <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                                value="Agera Gas">
+                                        </div>
+                                    </div>
 
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Map Name</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">File Name</span>
-                                                </div>
-                                            </th>
+                                    <!-- Email * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Email
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                                value="hollybarnes@hotmail.com">
+                                        </div>
+                                    </div>
 
-                                        </tr>
-                                    </thead>
+                                    <!-- Retype Email * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Retype
+                                                Email
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                                value="hollybarnes@hotmail.com">
+                                        </div>
+                                    </div>
 
-                                    <tbody>
-                                        <tr scope="row" class="tbody_row">
-                                            <!-- style="height: 55px" -->
+                                    <!-- Designation/Title * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Designation/Title
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Albert Sasson" value="">
+                                        </div>
+                                    </div>
 
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">FW: ENGIE Daily Matrices :
-                                                    TX,IL,MA,RI,MD,ME,NY,OH,CT,NH,NJ,
-                                                    PA 02.02.2017 HIGHLY CONFIDENTIAL!</div>
-                                            </td>
+                                    <!-- Address  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Address
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="Western street">
+                                        </div>
+                                    </div>
 
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">
-                                                    02/03/2017
-                                                </div>
-                                            </td>
+                                    <!-- Address Line 2  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Address
+                                                Line 2
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="">
+                                        </div>
+                                    </div>
+                                    <!-- Country -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Country
+                                                <span class="text-danger">*</span></label>
+                                            <select class="form-select select_value_text"
+                                                aria-label="Default select example">
+                                                <option class="form_text_field" selected>Select</option>
+                                                <option class="form_text_field" value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- State * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">State<span
+                                                    class="text-danger">*</span></label>
+                                            <select class="form-select select_value_text"
+                                                aria-label="Default select example">
+                                                <option class="form_text_field" selected>Select</option>
+                                                <option class="form_text_field" value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">
+                                    <!-- City  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">City
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="">
+                                        </div>
+                                    </div>
 
-                                                </div>
-                                            </td>
-                                            <td class="align-middle text-center table_td_text">
-                                                <div class="active_text_title_13 text-decoration-underline">Agera Gas
-                                                    Matrix</div>
-                                            </td>
-                                        </tr>
+                                    <!-- Postal / Zip Code  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Postal /
+                                                Zip Code
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="">
+                                        </div>
+                                    </div>
 
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row quotes_pagi align-items-center mt-3 mb-4">
-                        <div class="col-6">
-                            <div class="d-flex align-items-center gap-2">
-                                <span class="pagi_text">Rows per page</span>
-                                <select class="form-select form-select-sm" aria-label="Small select example">
-                                    <option value="1">10</option>
-                                    <option value="2">20</option>
-                                    <option value="3">30</option>
-                                </select>
-                            </div>
-
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex justify-content-end align-items-center gap-2">
-                                <div class="arrow_div">
-                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                        viewBox="0 0 14 14" fill="none">
-                                        <path
-                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
-                                            fill="#757575" />
-                                    </svg>
+                                    <!-- Phone  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Phone</label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="+1  4646-444444">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div><span class="pagi_text">1</span></div>
-                                <div><span class="pagi_text">of</span></div>
-                                <div><span class="pagi_active">2</span></div>
-                                <div class="arrow_div">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                        fill="none">
-                                        <path
-                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
-                                            fill="#007CBA" />
-                                    </svg>
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="border rounded px-3 py-2 h-100 ">
+                                <span class="sub_title_13 mt-2">Users Rights</span>
+                                <div class="row">
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Upload rack rate</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Allow User to Edit/Delete Matrices,Uploaded
+                                                Documents & Mapping File Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Supplier Management</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Supplier Management</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Manage User</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Miscellaneous Setup</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Broker Management</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 mt-1">
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Reports</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
 
 
         </div>
@@ -451,7 +544,9 @@
                                 <button class="theme_outline_btn">Close</button>
                             </div>
                             <div class="d-flex align-items-center gap-3">
-
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Save</button>
+                                </div>
                             </div>
                         </div>
                     </div>

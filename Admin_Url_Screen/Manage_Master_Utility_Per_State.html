@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload Rack Rates</title>
+    <title>Manage Master Utility Per State</title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
             <div class="container-fluid p-2">
                 <div class="row justify-content-between align-items-center">
                     <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-3">
                         <div class="header_container">
                             <div class="d-flex gap-2">
                                 <img src="../assets/logo.png" alt="Logo" class="header_logo" />
@@ -58,36 +58,11 @@
 
                     <!-- Column 2 -->
                     <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- Switch buttons -->
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
-                                    View</label>
-                            </div>
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                          </label>
-                          <span class="menu_font_style">Switch to Partner View</span>
-                      </div> -->
-                            <div class="d-flex align-items-center gap-1">
-                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                <div>
-                                    <p class="user_name">Welcome, Alon</p>
-                                    <p class="user_email">alon@demomail.com</p>
-                                </div>
+                        <div class="d-flex justify-content-end align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
                             </div>
                         </div>
                     </div>
@@ -268,18 +243,33 @@
             </div>
         </div>
 
-        <div class="content-area">
-            <!-- bread crumb -->
+        <div class="content-area mb-4">
             <section class="">
                 <div class="container-fluid">
+                    <!-- bread crumb -->
                     <div class="row py-3 d-flex justify-content-between align-items-center py-2">
-                        <div class="col-6">
+                        <div class="col-6 col-md-6">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Upload Rack Rates</div>
+                                <div class="main_title_15">Miscellaneous Setup</div>
+                                <div class="custom-select-container">
+                                    <select class="custom-select form-select text_h3">
+                                        <option>Manage Master Utility</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <img src="../assets/appbar createnew.png" alt="" srcset="">
+                                <img src="../assets/icons/Topbar_search.png" alt="" srcset="">
+
                             </div>
                         </div>
                     </div>
                     <hr class="show_gray_hr_line" />
+
                 </div>
             </section>
 
@@ -288,10 +278,10 @@
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-2">
                         <div class="col-auto">
-                            <span class="quotes_left_text">Your search results 15 out of 64 Users...</span>
+                            <span class="quotes_left_text">Your search results</span>
                         </div>
                         <div class="col-auto">
-                            <span class="quotes_right_text">Total Users: 64</span>
+                            <span class="quotes_right_text">Total Utilities Per State: 188</span>
                         </div>
                     </div>
                     <div class="row">
@@ -302,39 +292,48 @@
                                         <tr>
                                             <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Supplier Name</span>
+                                                    <span class="th_title">State</span>
+                                                    <img src="../assets/icons/Sorting_up.png" alt="filter icon"
+                                                        style="margin-right: 5px" />
                                                 </div>
                                             </th>
 
                                             <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Matrix Name</span>
+                                                    <span class="th_title"> Utility</span>
+                                                    <img src="../assets/icons/Sorting.png" alt="filter icon"
+                                                        style="margin-right: 5px" />
 
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Upload</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">File</span>
+                                                    <span class="th_title">Electric</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Upload Date</span>
+                                                    <span class="th_title">Gas</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Good Untill Date</span>
+                                                    <span class="th_title">No. of Digits For Electric Accts</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="th_title">Mapping File Name</span>
+                                                    <span class="th_title">No. of Digits For Gas Accts</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Addi. field req. For Electric Accts</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Addi. field req. Accts</span>
                                                 </div>
                                             </th>
                                             <th scope="col" class="align-middle table_head_bg td_w_50">
@@ -349,59 +348,33 @@
                                             <!-- style="height: 55px" -->
 
                                             <td class="align-middle table_td_text text">
-                                                <div class="text-center">Agera Energy</div>
+                                                <div class="text-center">AK</div>
                                             </td>
 
                                             <td class="align-middle table_td_text text">
-                                                <div class="text-center">
-                                                    <div class="d-flex justify-content-between align-items-center">
-                                                        <div>
-                                                            <img src="../assets/icons/Edit.png" alt="" class="w_15">
-                                                            Agera Gas
-                                                        </div>
-                                                        <div>
-                                                            <img src="../assets/icons/Edit.png" alt="" class="w_15">
-                                                            <img src="../assets/icons/Form_delete.png" alt=""
-                                                                class="w_20">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-
-                                            <td class="align-middle table_td_text text">
-                                                <div class="text-center">
-                                                    <span
-                                                        class="upload_rack_upload_btn active_text_title_13">Upload</span>
-                                                </div>
+                                                <div class="text-center">Hydro One Networks Inc...</div>
                                             </td>
 
                                             <td class="align-middle text-center table_td_text">
-                                                <div
-                                                    class="text-center d-flex justify-content-between align-items-center">
-                                                    <div>
-                                                        <img src="../assets/icons/Excel.png" alt="Excel.png"
-                                                            class="w_20">
-                                                        <span
-                                                            class="active_text_title_13 text-decoration-underline">Ageraa
-                                                            Gas.XLSM</span>
-                                                    </div>
-                                                    <div>
-                                                        <img src="../assets/icons/cancel.png" alt="cancel.png"
-                                                            class="w_20">
-                                                    </div>
+                                                <div class="text-center">Yes</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div>No</div>
+                                            </td>
+                                            <td class="align-middle text-center table_td_text">
+                                                <div class="d-flex justify-content-center gap-1">
+                                                    0
                                                 </div>
                                             </td>
                                             <td class="align-middle text-center table_td_text">
-                                                <div>09/17/2019</div>
+                                                <div>5</div>
                                             </td>
                                             <td class="align-middle text-center table_td_text">
-                                                <div class="fs_13_fw_400_c_FF0000">09/17/2019</div>
+                                                <div>0</div>
                                             </td>
                                             <td class="align-middle text-center table_td_text">
-                                                <div class="active_text_title_13 text-decoration-underline">Agera Gas
-                                                    Matrix</div>
+                                                <div>NA</div>
                                             </td>
-
                                             <!-- last td -->
                                             <td class="align-middle text-center table_td_text">
                                                 <div class="btn-group dropstart" type="button">
@@ -425,46 +398,46 @@
                                                             <div class="table_drop_li_btn active">
                                                                 <a href="../Quotes_View_Form/index.html"
                                                                     onclick="openCustomWindow(event)">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11"
-                                                                        height="11" viewBox="0 0 11 11">
+                                                                    <svg width="11" height="11" viewBox="0 0 11 11"
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path
-                                                                            d="M5.50065 7.3335C6.07357 7.3335 6.56055 7.13298 6.96159 6.73193C7.36263 6.33089 7.56315 5.84391 7.56315 5.271C7.56315 4.69808 7.36263 4.2111 6.96159 3.81006C6.56055 3.40902 6.07357 3.2085 5.50065 3.2085C4.92773 3.2085 4.44075 3.40902 4.03971 3.81006C3.63867 4.2111 3.43815 4.69808 3.43815 5.271C3.43815 5.84391 3.63867 6.33089 4.03971 6.73193C4.44075 7.13298 4.92773 7.3335 5.50065 7.3335ZM5.50065 6.5085C5.1569 6.5085 4.86471 6.38818 4.62409 6.14756C4.38346 5.90693 4.26315 5.61475 4.26315 5.271C4.26315 4.92725 4.38346 4.63506 4.62409 4.39443C4.86471 4.15381 5.1569 4.0335 5.50065 4.0335C5.8444 4.0335 6.13659 4.15381 6.37721 4.39443C6.61784 4.63506 6.73815 4.92725 6.73815 5.271C6.73815 5.61475 6.61784 5.90693 6.37721 6.14756C6.13659 6.38818 5.8444 6.5085 5.50065 6.5085ZM5.50065 8.7085C4.38537 8.7085 3.3694 8.39721 2.45273 7.77464C1.53607 7.15207 0.871484 6.31752 0.458984 5.271C0.871484 4.22447 1.53607 3.38992 2.45273 2.76735C3.3694 2.14478 4.38537 1.8335 5.50065 1.8335C6.61593 1.8335 7.6319 2.14478 8.54857 2.76735C9.46523 3.38992 10.1298 4.22447 10.5423 5.271C10.1298 6.31752 9.46523 7.15207 8.54857 7.77464C7.6319 8.39721 6.61593 8.7085 5.50065 8.7085ZM5.50065 7.79183C6.36385 7.79183 7.15638 7.56457 7.87825 7.11006C8.60013 6.65554 9.15204 6.04252 9.53398 5.271C9.15204 4.49947 8.60013 3.88645 7.87825 3.43193C7.15638 2.97742 6.36385 2.75016 5.50065 2.75016C4.63746 2.75016 3.84492 2.97742 3.12305 3.43193C2.40117 3.88645 1.84926 4.49947 1.46732 5.271C1.84926 6.04252 2.40117 6.65554 3.12305 7.11006C3.84492 7.56457 4.63746 7.79183 5.50065 7.79183Z" />
+                                                                            d="M1.1 11C0.7975 11 0.538542 10.8924 0.323125 10.6773C0.107708 10.4621 0 10.2035 0 9.90137V2.21099C0 1.90886 0.107708 1.65023 0.323125 1.43508C0.538542 1.21993 0.7975 1.11236 1.1 1.11236H6.00875L4.90875 2.21099H1.1V9.90137H8.8V6.08365L9.9 4.98502V9.90137C9.9 10.2035 9.79229 10.4621 9.57687 10.6773C9.36146 10.8924 9.1025 11 8.8 11H1.1ZM3.3 7.70412V5.36954L8.34625 0.329588C8.45625 0.219725 8.58 0.137328 8.7175 0.082397C8.855 0.0274657 8.9925 0 9.13 0C9.27667 0 9.41646 0.0274657 9.54937 0.082397C9.68229 0.137328 9.80375 0.219725 9.91375 0.329588L10.6837 1.11236C10.7846 1.22222 10.8625 1.34353 10.9175 1.47628C10.9725 1.60903 11 1.74407 11 1.8814C11 2.01873 10.9748 2.15377 10.9244 2.28652C10.874 2.41927 10.7937 2.54057 10.6837 2.65044L5.6375 7.70412H3.3ZM4.4 6.60549H5.17L8.36 3.41948L7.975 3.03496L7.57625 2.65044L4.4 5.82272V6.60549Z"
+                                                                            fill="#131313" />
                                                                     </svg>
-                                                                    <span href="/">View</span>
+
+                                                                    <span href="/">Edit</span>
                                                                 </a>
                                                             </div>
                                                         </li>
                                                         <li class="table_drop_li_btn"
                                                             data-bs-target="#arcive_modal_open" data-bs-toggle="modal">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="11"
-                                                                height="11" viewBox="0 0 11 11">
+                                                            <svg width="11" height="11" viewBox="0 0 10 12" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
                                                                 <path
-                                                                    d="M1.83268 9.16683C1.5806 9.16683 1.3648 9.07707 1.18529 8.89756C1.00577 8.71804 0.916016 8.50225 0.916016 8.25016V2.75016C0.916016 2.49808 1.00577 2.28228 1.18529 2.10277C1.3648 1.92325 1.5806 1.8335 1.83268 1.8335H4.58268L5.49935 2.75016H9.16602C9.4181 2.75016 9.6339 2.83992 9.81341 3.01943C9.99293 3.19895 10.0827 3.41475 10.0827 3.66683H5.12122L4.20456 2.75016H1.83268V8.25016L2.93268 4.5835H10.7702L9.58997 8.5137C9.52886 8.71232 9.41619 8.87082 9.25195 8.98923C9.08772 9.10763 8.90629 9.16683 8.70768 9.16683H1.83268ZM2.79518 8.25016H8.70768L9.53268 5.50016H3.62018L2.79518 8.25016Z" />
+                                                                    d="M1.875 11.25C1.53125 11.25 1.23698 11.1276 0.992187 10.8828C0.747396 10.638 0.625 10.3438 0.625 10V1.875H0V0.625H3.125V0H6.875V0.625H10V1.875H9.375V10C9.375 10.3438 9.2526 10.638 9.00781 10.8828C8.76302 11.1276 8.46875 11.25 8.125 11.25H1.875ZM8.125 1.875H1.875V10H8.125V1.875ZM3.125 8.75H4.375V3.125H3.125V8.75ZM5.625 8.75H6.875V3.125H5.625V8.75Z"
+                                                                    fill="#131313" />
                                                             </svg>
 
-                                                            <span>Archive</span>
+                                                            <span>Delete</span>
                                                         </li>
                                                         <li class="table_drop_li_btn">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="11"
-                                                                height="11" viewBox="0 0 11 11">
-                                                                <g clip-path="url(#clip0_866_1800)">
-                                                                    <path
-                                                                        d="M5.04102 7.7915H5.95768V5.0415H5.04102V7.7915ZM5.49935 4.12484C5.62921 4.12484 5.73806 4.08091 5.82591 3.99307C5.91376 3.90522 5.95768 3.79637 5.95768 3.6665C5.95768 3.53664 5.91376 3.42779 5.82591 3.33994C5.73806 3.25209 5.62921 3.20817 5.49935 3.20817C5.36949 3.20817 5.26063 3.25209 5.17279 3.33994C5.08494 3.42779 5.04102 3.53664 5.04102 3.6665C5.04102 3.79637 5.08494 3.90522 5.17279 3.99307C5.26063 4.08091 5.36949 4.12484 5.49935 4.12484ZM5.49935 10.0832C4.86532 10.0832 4.26949 9.96286 3.71185 9.72223C3.15421 9.48161 2.66914 9.15505 2.25664 8.74255C1.84414 8.33005 1.51758 7.84498 1.27695 7.28734C1.03633 6.7297 0.916016 6.13386 0.916016 5.49984C0.916016 4.86581 1.03633 4.26998 1.27695 3.71234C1.51758 3.1547 1.84414 2.66963 2.25664 2.25713C2.66914 1.84463 3.15421 1.51807 3.71185 1.27744C4.26949 1.03682 4.86532 0.916504 5.49935 0.916504C6.13338 0.916504 6.72921 1.03682 7.28685 1.27744C7.84449 1.51807 8.32956 1.84463 8.74206 2.25713C9.15456 2.66963 9.48112 3.1547 9.72174 3.71234C9.96237 4.26998 10.0827 4.86581 10.0827 5.49984C10.0827 6.13386 9.96237 6.7297 9.72174 7.28734C9.48112 7.84498 9.15456 8.33005 8.74206 8.74255C8.32956 9.15505 7.84449 9.48161 7.28685 9.72223C6.72921 9.96286 6.13338 10.0832 5.49935 10.0832ZM5.49935 9.1665C6.52296 9.1665 7.38997 8.8113 8.10039 8.10088C8.81081 7.39046 9.16602 6.52345 9.16602 5.49984C9.16602 4.47623 8.81081 3.60921 8.10039 2.8988C7.38997 2.18838 6.52296 1.83317 5.49935 1.83317C4.47574 1.83317 3.60872 2.18838 2.89831 2.8988C2.18789 3.60921 1.83268 4.47623 1.83268 5.49984C1.83268 6.52345 2.18789 7.39046 2.89831 8.10088C3.60872 8.8113 4.47574 9.1665 5.49935 9.1665Z" />
-                                                                </g>
-                                                                <defs>
-                                                                    <clipPath id="clip0_866_1800">
-                                                                        <rect width="11" height="11" fill="white" />
-                                                                    </clipPath>
-                                                                </defs>
-                                                            </svg>
+                                                            <svg width="13" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.5 0C2.46721 0 0 2.46675 0 5.5C0 8.53325 2.46721 11 5.5 11C8.53279 11 11 8.53279 11 5.5C11 2.46721 8.53279 0 5.5 0ZM5.5 10.0833C2.97275 10.0833 0.916667 8.02725 0.916667 5.5C0.916667 2.97275 2.97275 0.916667 5.5 0.916667C8.02725 0.916667 10.0833 2.97275 10.0833 5.5C10.0833 8.02725 8.02725 10.0833 5.5 10.0833ZM4.13463 7.23571C4.15617 7.30079 4.19879 7.33333 4.26113 7.33333H7.33288C7.58633 7.33333 7.79121 7.53821 7.79121 7.79167C7.79121 8.04513 7.58633 8.25 7.33288 8.25H4.26113C3.80233 8.25 3.41137 7.96583 3.26471 7.52583C3.11529 7.07804 3.26058 6.60779 3.63504 6.32729L6.8145 3.93983C6.89058 3.88254 6.87958 3.80554 6.86538 3.76475C6.84383 3.69967 6.80121 3.66667 6.73888 3.66667H3.66667C3.41321 3.66667 3.20833 3.46179 3.20833 3.20833C3.20833 2.95488 3.41321 2.75 3.66667 2.75H6.73888C7.19721 2.75 7.58863 3.03417 7.73529 3.47463C7.88425 3.92196 7.73896 4.39221 7.36496 4.67271L4.1855 7.06017C4.10896 7.11746 4.12042 7.19446 4.13463 7.23571Z" fill="#131313"/>
+                                                                </svg>                                                                
+                                                            <span>Zone Info</span>
+                                                        </li>
+                                                        <li class="table_drop_li_btn">
+                                                            <svg width="13" height="13" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M5.5 0C2.46721 0 0 2.46721 0 5.5C0 8.53279 2.46721 11 5.5 11C8.53279 11 11 8.53279 11 5.5C11 2.46721 8.53279 0 5.5 0ZM5.5 10.0833C2.97275 10.0833 0.916667 8.02725 0.916667 5.5C0.916667 2.97275 2.97275 0.916667 5.5 0.916667C8.02725 0.916667 10.0833 2.97275 10.0833 5.5C10.0833 8.02725 8.02725 10.0833 5.5 10.0833ZM6.67929 5.81075C7.33288 5.53025 7.79167 4.88033 7.79167 4.125C7.79167 3.11392 6.96942 2.29167 5.95833 2.29167H4.58333C3.82525 2.29167 3.20833 2.90858 3.20833 3.66667V7.79167C3.20833 8.04513 3.41367 8.25 3.66667 8.25C3.91967 8.25 4.125 8.04513 4.125 7.79167V5.95833H5.69892L6.94054 8.02771C7.02671 8.17071 7.17842 8.25 7.33379 8.25C7.414 8.25 7.49558 8.22892 7.56937 8.18446C7.78662 8.05429 7.85675 7.77288 7.72658 7.55563L6.67929 5.81029V5.81075ZM4.125 3.66667C4.125 3.41367 4.33079 3.20833 4.58333 3.20833H5.95833C6.46388 3.20833 6.875 3.61946 6.875 4.125C6.875 4.63054 6.46525 5.04029 5.96063 5.04167H4.125V3.66667Z" fill="#131313"/>
+                                                                </svg>
+                                                                
 
-                                                            <span>Activity Log</span>
+                                                            <span>RateClass</span>
                                                         </li>
                                                     </ul>
                                                 </div>
                                             </td>
                                         </tr>
-
 
                                     </tbody>
                                 </table>
@@ -511,48 +484,43 @@
                 </div>
             </section>
 
+
         </div>
-
-    </div>
-
-    <!-- footer section -->
-    <footer class="footer-area">
-        <div class="container-fluid">
-            <div class="row flex-row">
-                <div class="col-12 col-md-12">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="them_btn_container ">
-                            <button class="theme_outline_btn">Close</button>
-                        </div>
-                        <div class="d-flex align-items-center gap-3">
-
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-toggle="modal"
-                                    data-bs-target="#untilDatePickerModal">Matrix Files</button>
+        <!-- footer section -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="them_btn_container ">
+                                <button class="theme_outline_btn">Close</button>
                             </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">View Logs For All</button>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Save</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+
+
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
 
     <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- bootstrap js file -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
