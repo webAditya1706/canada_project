@@ -156,3 +156,14 @@ textarea::-webkit-scrollbar-thumb:hover {
   opacity: 1; /* Fully visible when expanded */
 }
 
+/* 07 Jan */
+
+
+
+.upload_rack_upload_btn{
+  border: 1px solid var(--Theme);
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: var(--Theme) !important;
+}
+

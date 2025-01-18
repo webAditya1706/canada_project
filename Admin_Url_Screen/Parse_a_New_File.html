@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parse a New File</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- top header -->
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
+                                    View</label>
+                            </div>
+
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                          <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                          <span class="menu_font_style">Switch to Partner View</span>
+                      </div> -->
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                        <span class="menu_title">Logout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <!-- bread crumb -->
+            <section>
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-between align-items-center py-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="main_title_15">Miscellaneous Setup</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                    fill="none">
+                                    <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="active_text_title_14">Parse a New File</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="show_gray_hr_line" />
+                </div>
+            </section>
+
+
+            <!-- white Table -->
+            <section class="mt-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="border rounded px-3 pt-2">
+
+                                <form>
+                                    <div class="row">
+                                        <!-- Matrix Name  -->
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label form_label">Matrix Name <span
+                                                        class="text-danger">*</span> </label>
+                                                <input type="text" class="form-control form_text_field"
+                                                    id="exampleFormControlInput1" placeholder="" value="">
+                                            </div>
+                                        </div>
+
+                                         <!-- Supplier * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Supplier <span class="text-danger">*</span> </label>
+                                            <select class="form-select select_value_text"
+                                                aria-label="Default select example">
+                                                <option class="form_text_field" selected>Select</option>
+                                                <option class="form_text_field" value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                     <!-- Good Until Date * -->
+                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Good Until Date <span class="text-danger">*</span> </label>
+                                            <select class="form-select select_value_text"
+                                                aria-label="Default select example">
+                                                <option class="form_text_field" selected>Select</option>
+                                                <option class="form_text_field" value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                     <!-- upload doc -->
+                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="d-flex justify-content-start align-items-center gap-2">
+                                            <label for="upload_doc" class="form-label form_label">File <span class="text-danger">*</span></label>
+                                            
+                                        </div>
+                                        <div class="border rounded d-flex justify-content-end pe-2">
+                                            <div class="them_btn_container">
+                                                <button type="button" data-bs-target="#upload_download_modal"
+                                                    data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <!-- Sheet Name #  -->
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label form_label">Sheet Name # <span
+                                                        class="text-danger">*</span> </label>
+                                                <input type="text" class="form-control form_text_field mb-3 w-100"
+                                                    id="exampleFormControlInput1" placeholder="" value="">
+                                                <input type="text" class="form-control form_text_field"
+                                                    id="exampleFormControlInput1" placeholder="" value="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Row # -->
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlInput1" class="form-label form_label">Row
+                                                    #<span class="text-danger">*</span> </label>
+                                                <input type="text" class="form-control form_text_field mb-3"
+                                                    id="exampleFormControlInput1" placeholder="" value="">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <input type="text" class="form-control form_text_field w-100"
+                                                        id="exampleFormControlInput1" placeholder="" value="">
+                                                        <img src="../assets/icons/cancel.png" alt="" srcset="" class="w_12">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer-area">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12 col-md-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="them_btn_container ">
+                            <button class="theme_outline_btn">Back</button>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-toggle="modal"
+                                    data-bs-target="#untilDatePickerModal">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+
+    <!-- Modals  -->
+
+    <!-- Queue followUp Modal -->
+    <div class="modal fade" id="untilDatePickerModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Good Until Date</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row flex-wrap">
+                        <div class="col-6">
+                            <div class="mb-3 position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label form_label">
+                                    Good Until Date<span class="text-danger">*</span>
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer d-flex justify-content-center">
+                    <div class="them_btn_container ">
+                        <button class="theme_outline_btn">Back</button>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
+                            to
+                            first</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
