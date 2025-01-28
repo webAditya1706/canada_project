@@ -129,7 +129,7 @@
   left: 50px;
   /* Adjust based on the width of the first column */
   z-index: 2;
-  background-color: inherit;
+  background-color: inherit !important;
 }
 
 .quotes_table th:nth-child(2) {
@@ -204,7 +204,7 @@
   background: #f1f1f1;
   border-right: 1px dashed #afafaf;
   position: absolute;
-  right: 0px;
+  right: 1px;
   top: 0;
 }
 

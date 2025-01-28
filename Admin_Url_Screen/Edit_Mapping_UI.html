@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zone Info_Supplier Management</title>
+    <title>Edit Mapping UI</title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -23,11 +23,15 @@
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
     <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
     <link rel="stylesheet" href="../assets/css-files/form_style.css" />
-
-
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +41,7 @@
             <div class="container-fluid p-2">
                 <div class="row justify-content-between align-items-center">
                     <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-3">
                         <div class="header_container">
                             <div class="d-flex gap-2">
                                 <img src="../assets/logo.png" alt="Logo" class="header_logo" />
@@ -54,36 +58,11 @@
 
                     <!-- Column 2 -->
                     <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- Switch buttons -->
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
-                                    View</label>
-                            </div>
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                          </label>
-                          <span class="menu_font_style">Switch to Partner View</span>
-                      </div> -->
-                            <div class="d-flex align-items-center gap-1">
-                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                <div>
-                                    <p class="user_name">Welcome, Alon</p>
-                                    <p class="user_email">alon@demomail.com</p>
-                                </div>
+                        <div class="d-flex justify-content-end align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
                             </div>
                         </div>
                     </div>
@@ -264,12 +243,13 @@
             </div>
         </div>
 
-        <div class="content-area">
+        <div class="content-area mb-4">
+
             <!-- bread crumb -->
             <section class="">
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-3">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="main_title_15">Supplier Management</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
@@ -277,84 +257,137 @@
                                     <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
                                         stroke-linejoin="round" />
                                 </svg>
-                                <div class="active_text_title_14">Zone Info</div>
+                                <div class="active_text_title_14">Contracts</div>
                             </div>
                         </div>
+                        <div class="col-6 col-md-6">
+                            <div class="d-flex gap-2 justify-content-end align-items-center">
+                                <div class="custom-select-container">
+                                    <select class="custom-select form-select text_h3">
+                                        <option>Select</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
+                                </div>
+                                <img src="../assets/icons/Topbar_search.png" alt="" srcset="">
 
+                            </div>
+                        </div>
                     </div>
                     <hr class="show_gray_hr_line" />
                 </div>
             </section>
-            <!-- Form -->
-            <section class="">
-                <div class="container-fluid mt-3">
-                    <div class="row ">
+
+            <!-- form -->
+            <section class="mt-3">
+                <div class="container-fluid">
+
+                    <div class="row">
                         <div class="col-12">
-                            <div class="border rounded px-3 pt-2 pb-2">
-                                <div class="row ">
+                            <!-- State -->
+                            <div class="border rounded px-3 py-2 h-100">
+                                <div class="row">
+                                    <!-- Supplier -->
                                     <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-2">
+                                        <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Supplier Company</label>
+                                                Supplier</label>
                                             <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="1431 test company"
-                                                readonly>
+                                                id="exampleFormControlInput1" placeholder="" value="Agera Energy" readonly>
                                         </div>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Zone <span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select select_value_text w-100"
-                                            aria-label="Default select example">
-                                            <option class="form_text_field" value="Yes" selected>Select
-                                            </option>
-                                            <option class="form_text_field" value="No">No</option>
-                                        </select>
+                                    <!-- Name of Matrix -->
+                                    <div class="col-12 col-md-6 col-lg-3">
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">
+                                                Name of Matrix</label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="Agera Energy" readonly>
+                                        </div>
                                     </div>
 
+                                    <!-- Sheet -->
                                     <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-2">
+                                        <div class="mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Supplier Zone Code</label>
+                                                Sheet</label>
                                             <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="">
+                                                id="exampleFormControlInput1" placeholder="" value="Matrix" readonly>
                                         </div>
                                     </div>
 
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </section>
 
-            <!-- Table -->
-            <section class="mt-3">
+
+
+            <!-- white Table -->
+            <section class="">
                 <div class="container-fluid">
+                    <div class="row d-flex justify-content-between align-items-center py-2">
+                        <div class="col-auto">
+                            <span class="quotes_left_text">Your search results</span>
+                        </div>
+                        <div class="col-auto">
+                            <span class="quotes_right_text">Total Record(s) : 44</span>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-12">
                             <div class="table_wrapper quotes_table with_bg_table second_td_sticky_none">
                                 <table class="table table-bordered  m-0">
                                     <thead class="thead_bg">
                                         <tr>
-                                            <th class="td_w_180 td_h_55 align-middle table_head_bg table_th_text">
+                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <span class="">Original Zone</span>
-                                                </div>
-                                            </th>
-                                            <th scope="col"
-                                                class="align-middle td_w_180 table_head_bg table_th_text table_th_text">
-                                                <div class="d-flex justify-content-center align-items-center gap-2">
-                                                    <div>
-                                                        <span class="">Supplier Zone</span>
-                                                    </div>
+                                                    <span class="th_title">Primary Index</span>
                                                 </div>
                                             </th>
 
-                                            <th scope="col" class="align-middle table_head_bg td_w_20">
+                                            <th scope="col" class="align-middle td_w_120 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title"> Commodity</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_120 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">State</span>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Utility</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Rate Class</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_90 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Zone</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_120 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Annual Usage</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col" class="align-middle td_w_180 table_head_bg table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Load Factor Electric (Texas )</span>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col" class="align-middle table_head_bg td_w_50">
                                                 <div class="d-flex justify-content-center align-items-center gap-2">
                                                 </div>
                                             </th>
@@ -365,11 +398,32 @@
                                         <tr scope="row" class="tbody_row">
                                             <!-- style="height: 55px" -->
 
-                                            <td class="align-middle text-center table_td_text">
-                                                <div>888</div>
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">CT | Eversource (CL&P) | 30,27,115,116, Other/non-res | .Z.CONNECTICUT</div>
                                             </td>
+
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">Electric</div>
+                                            </td>
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">Connecticut</div>
+                                            </td>
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">CILCO - Ameren Cilco CIPS - Ameren CIPS</div>
+                                            </td>
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">27 - Small time of day<br/> 27 - Small time of day<br/>  30 - Small general <200 KWh<br/> 30 - Small general <200 KWh</div>
+                                            </td>
+                                            <td class="align-middle table_td_text text-center">
+                                                <div class="text-center">None</div>
+                                            </td>
+
+                                            <td class="align-middle table_td_text text">
+                                                <div class="text-center">1.0 - 1000000.0</div>
+                                            </td>
+
                                             <td class="align-middle text-center table_td_text">
-                                                <div>888</div>
+                                                <div class="text-center">-</div>
                                             </td>
                                             <!-- last td -->
                                             <td class="align-middle text-center table_td_text">
@@ -439,7 +493,45 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-4">
+
+                    <div class="row quotes_pagi align-items-center mt-3 mb-4">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <option value="1">10</option>
+                                    <option value="2">20</option>
+                                    <option value="3">30</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <div><span class="pagi_text">1</span></div>
+                                <div><span class="pagi_text">of</span></div>
+                                <div><span class="pagi_active">2</span></div>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="col-12">
                             <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
                         </div>
@@ -447,43 +539,30 @@
                 </div>
             </section>
 
+
         </div>
-        <!-- footer section -->
-        <footer class="footer-area">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-12 col-md-12 col-lg-2">
-                        <div class="d-flex justify-content-start">
-                            <div class="them_btn_container">
-                                <button class="theme_outline_btn">Back</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-10">
-                        <div
-                            class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
-
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Save</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
+        
     </div>
+
+
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
+
     <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
 </body>
 
 </html>

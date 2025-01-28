@@ -325,11 +325,14 @@
   width: 100%;
   padding: 8px 38px 8px 12px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #E7E7E7;
   border-radius: 4px;
   box-shadow: none;
   cursor: pointer;
   max-width: 400px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Poppins;
 }
 
 .custom-select option {
@@ -376,7 +379,7 @@
   pointer-events: none;
   background-color: #007cba !important; /* Arrow background color */
   border-radius: 4px;
-  padding: 10px;
+  padding: 13px;
   background-image: url("../icons/caret-down-fill.svg");
   background-repeat: no-repeat;
   background-size: 12px;

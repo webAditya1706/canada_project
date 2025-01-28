@@ -260,15 +260,7 @@ th:nth-child(2):before {
   top: 0;
 }
 
-/* td width */
 
-/* Make first and last columns 70px */
-/* .quotes_table th:first-child,
-.quotes_table td:first-child {
-  width: 50px !important;
-  min-width: 50px !important;
-  /* Ensure this width is not overridden */
-} */
 
 .quotes_table th:last-child,
 .quotes_table td:last-child {

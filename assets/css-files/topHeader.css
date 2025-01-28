@@ -112,7 +112,7 @@
 }
 
 .menu_font_style {
-    color: var(--primary_text_color);
+    color: var(--Theme) !important;
     font-family: Poppins;
     font-size: 13px;
     font-style: normal;
