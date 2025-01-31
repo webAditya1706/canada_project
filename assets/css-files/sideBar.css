@@ -136,8 +136,8 @@ aside {
   /* Ensures title color changes to red */
 }
 
-.show_side_bar .menu_title {
-  color: #FFF;
+ .menu_title {
+  color: #FFF !important;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
@@ -146,7 +146,7 @@ aside {
   letter-spacing: -0.28px;
 }
 
-.show_side_bar .menu_title_active {
+ .menu_title_active {
   color: #007cba;
   font-family: Poppins;
   font-size: 14px;
@@ -156,7 +156,7 @@ aside {
   letter-spacing: -0.28px;
 }
 
-.show_side_bar .sub_menu_parent {
+ .sub_menu_parent {
   display: flex;
   flex-direction: column;
   width: 100%;
