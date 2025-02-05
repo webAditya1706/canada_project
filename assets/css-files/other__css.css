@@ -87,6 +87,26 @@ textarea::-webkit-scrollbar-thumb {
 textarea::-webkit-scrollbar-thumb:hover {
   background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
 }
+/* All scroll bar */
+
+*::-webkit-scrollbar {
+  width: 4px;
+  flex-shrink: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
+}
+
 
 .black_tic__check .form-check-input {
   background-color: #fff;
@@ -167,3 +187,7 @@ textarea::-webkit-scrollbar-thumb:hover {
   color: var(--Theme) !important;
 }
 
+.uploaded_doc{
+  max-height: 150px;
+  overflow: auto;
+}
