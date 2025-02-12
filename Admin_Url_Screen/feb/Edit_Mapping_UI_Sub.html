@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Mapping UI Sub</title>
+
+  <!-- MUI Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <!-- external css files -->
+  <link rel="stylesheet" href="../../assets/css-files/topHeader.css  " />
+  <link rel="stylesheet" href="../../assets/css-files/sideBar.css" />
+  <link rel="stylesheet" href="../../assets/css-files/MiddleHeader.css" />
+  <link rel="stylesheet" href="../../assets/css-files/btn-css.css" />
+  <link rel="stylesheet" href="../../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../../assets/css-files/mainCssfile.css" />
+  <link rel="stylesheet" href="../../assets/css-files/QuotesTable.css" />
+  <link rel="stylesheet" href="../../assets/css-files/form_style.css" />
+  <link rel="stylesheet" href="../../assets/css-files/other__css.css" />
+
+
+  <!-- font faimily -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- top header -->
+    <section class="top_header_secction">
+      <div class="container-fluid p-2">
+        <div class="row justify-content-between align-items-center">
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-6">
+            <div class="header_container">
+              <div class="d-flex gap-2">
+                <img src="../../assets/logo.png" alt="Logo" class="header_logo" />
+                <div class="header_bg_text">
+                  <img src="../../assets/banner_img.png" alt="" class="header_banner" />
+                  <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                </div>
+              </div>
+              <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drawer Menu -->
+          <div class="drawer" id="drawer" style="z-index: 999">
+            <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+              <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+              <hr style="height: 1px; width: 100%" />
+            </div>
+
+            <div class="d-flex flex-column justify-content-start">
+              <!-- Switch buttons -->
+              <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                  Legacy</label>
+              </div>
+
+              <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                  id="flexSwitchCheckDefault" />
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Partner
+                  View</label>
+              </div>
+
+              <div class="d-flex align-items-center gap-1 mb-2">
+                <div class="d-flex align-items-center gap-1">
+                  <img src="../../assets/user.png" class="user_image" alt="User Icon" />
+                  <div>
+                    <p class="user_name">Welcome, Alon</p>
+                    <p class="user_email">alon@demomail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Overlay -->
+          <div class="overlay_menu" id="overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+      <hr class="mt-5 show_white_hr_line" />
+
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+      </div>
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+      </div>
+      <hr class="show_white_hr_line mt-2" />
+
+
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+      </div>
+      <div class="side_bar_menu">
+        <img src="../../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+      </div>
+    </div>
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
+      <div>
+        <div class="d-flex justify-content-center">
+          <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+        </div>
+        <hr style="height: 2px; background-color: #ddd; width: 100%" />
+        <div class="menu_container position-static">
+          <div class="menu_parent">
+            <div class="d-flex align-items-center gap-2">
+              <!-- <img src="../../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+              <img src="../../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+              <span class="menu_title">Home</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-2">
+          <div class="btn-group position-static dropend w-100">
+            <div type="button" class="btn" data-bs-toggle="dropdown">
+              <div class="row flex-row justify-content-between">
+                <div class="col-auto p-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                    <img src="../../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                    <span class="menu_title">Qoutes</span>
+                  </div>
+                </div>
+                <div class="col-auto m-0 p-0">
+                  <i class="bi bi-chevron-right text-white"></i>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-menu ms-3 p-0">
+              <ul class="m-0 p-1">
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Create New</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Active - 715</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Requests - 13</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-2">
+          <div class="btn-group position-static dropend w-100">
+            <div type="button" class="btn" data-bs-toggle="dropdown">
+              <div class="row flex-row justify-content-between">
+                <div class="col-auto p-0">
+                  <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                    <img src="../../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                    <span class="menu_title">Auctions</span>
+                  </div>
+                </div>
+                <div class="col-auto m-0 p-0">
+                  <i class="bi bi-chevron-right text-white"></i>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown-menu ms-3 p-0">
+              <ul class="m-0 p-1">
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Create New</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Active - 715</span>
+                </li>
+                <li class="dropdown-item sub_menu" href="#">
+                  <span class="">Requests - 13</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <hr style="height: 2px; background-color: #ddd; width: 100%" />
+        <div class="menu_parent">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../../assets/icons/Nav Icons/My profile.png" alt="">
+            <!-- <img src="../../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+            <span class="menu_title">Home</span>
+          </div>
+        </div>
+        <div class="menu_parent">
+          <div class="d-flex align-items-center gap-2">
+            <!-- <img src="../../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+            <img src="../../assets/icons/Nav Icons/Logout.png" alt="">
+
+            <span class="menu_title">Logout</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bread crumb -->
+    <div class="content-area">
+      <section class="">
+        <div class="container-fluid">
+          <div class="row d-flex justify-content-between align-items-center py-3">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-3">
+                <div class="main_title_15">Utility Specific</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="main_title_15">Mapping UI</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                  <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                <div class="active_text_title_14">Edit</div>
+              </div>
+            </div>
+          </div>
+          <hr class="show_gray_hr_line" />
+
+
+          <div class="row">
+            <div class="col-12 mt-3">
+              <div class="border rounded px-3 py-2 h-100">
+                <div class="row">
+                  <!-- Primary Index * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Primary Index<span
+                          class="text-danger">*</span></label>
+                      <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                        placeholder="Albert Sasson" value="CT | Eversource (CL&P) | 30,27,115,116" readonly>
+                    </div>
+                  </div>
+
+                  <!-- Commodity * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Commodity</label>
+                      <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                        placeholder="Albert Sasson" value="Electric" readonly>
+                    </div>
+                  </div>
+
+                  <!-- State * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">State<span
+                          class="text-danger">*</span></label>
+                      <select class="form-select select_value_text" aria-label="Default select example">
+                        <option class="form_text_field" selected>Connecticut</option>
+                        <option class="form_text_field" value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Utility -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Utility<span
+                          class="text-danger">*</span></label>
+                      <label for="exampleFormControlInput1"
+                        class="form-label active_text_title_13 text-decoration-underline">Select Utility</label>
+                    </div>
+                    <div class="tag-container mt-1">
+                      <div class="tag">
+                        magicteam@enerclix.com
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
+                      </div>
+                      <div class="tag">
+                        magicteam@enerclix.com <img src="../../assets/icons/cancel.png" class="cancel_icon"
+                          alt="cancel_icon">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Rate Class * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Rate Class<span
+                          class="text-danger">*</span></label>
+                      <label for="exampleFormControlInput1"
+                        class="form-label active_text_title_13 text-decoration-underline">Select Rate Class</label>
+                    </div>
+                    <div class="tag-container mt-1 uploaded_doc">
+                      <div class="tag">
+                        115
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        372 <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        magicteam@enerclix.com
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
+                      </div>
+
+                      <div class="tag">
+                        115
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        372 <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        magicteam@enerclix.com
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
+                      </div>
+
+                      <div class="tag">
+                        115
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        372 <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        magicteam@enerclix.com <img src="../../assets/icons/cancel.png" class="cancel_icon"
+                          alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        115
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        372 <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                      </div>
+                      <div class="tag">
+                        magicteam@enerclix.com <img src="../../assets/icons/cancel.png" class="cancel_icon"
+                          alt="cancel_icon">
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Zone -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Zone<span
+                          class="text-danger">*</span></label>
+                      <label for="exampleFormControlInput1"
+                        class="form-label active_text_title_13 text-decoration-underline">Select Zone</label>
+                    </div>
+                    <div class="tag-container mt-1">
+                      <div class="tag">
+                        None
+                        <img src="../../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Annual Usage * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Annual Usage<span
+                          class="text-danger">*</span></label>
+                      <select class="form-select select_value_text" aria-label="Default select example">
+                        <option class="form_text_field" selected>Between</option>
+                        <option class="form_text_field" value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Min * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-2 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Min</label>
+                      <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                        placeholder="Albert Sasson" value="1.0">
+                    </div>
+                  </div>
+
+                  <!-- Max * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-2 mt-2 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Max</label>
+                      <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                        placeholder="Albert Sasson" value="100000.0">
+                    </div>
+                  </div>
+
+                  <!-- Load Factor Electric (Texas) * -->
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="">
+                      <label for="exampleFormControlInput1" class="form-label form_label">Load Factor Electric
+                        (Texas)<span class="text-danger">*</span></label>
+                      <select class="form-select select_value_text" aria-label="Default select example">
+                        <option class="form_text_field" selected>Select</option>
+                        <option class="form_text_field" value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-4">
+            <div class="col-12">
+              <img src="../../assets/images/Powered by_Logo.png" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- footer section -->
+    <footer class="footer-area">
+      <div class="container-fluid">
+        <div class="row flex-row">
+          <div class="col-12 col-md-12 col-lg-2">
+            <div class="d-flex justify-content-start">
+              <div class="them_btn_container">
+                <button class="theme_outline_btn">Close</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-10">
+            <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+              <div class="them_btn_container">
+                <button class="theme_primary_btn" data-bs-target="#Utilty_popup" data-bs-toggle="modal">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <!-- Overlay -->
+  <div class="overlay_mainsidebar"></div>
+
+  <!-- Modals -->
+
+  <div class="modal fade" id="Utilty_popup" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+            Select Rate Class
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center gap-2">
+            <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+            <span class="fs_14_fw_400_c_131313">Select All</span>
+          </div>
+          <div class="mb-2 mt-2">
+            <span class="sub_title_13">Utility : CLP - Connecticut Light & Power</span>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">0</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">115</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">116</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">117</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">18 - Controlled Water Heating</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">27 - Small time of day</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">29</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">30 - Small general <200 KWh</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">37</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">35 - Intermediate general <200kWh </span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">39 - Intermediate time of day >200 kWh</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">41 - Large church and school</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">55</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">56</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">530</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 mb-2">
+              <div class="d-flex align-items-center gap-2">
+                <input type="checkbox" class="form-check-input table_check table_check w_18_h_18" checked />
+                <span class="fs_14_fw_400_c_131313">Residential</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <div class="d-flex flex-wrap w-100 gap-2 justify-content-center align-items-center">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                Close
+              </button>
+            </div>
+            <div class="them_btn_container">
+              <button class="theme_primary_btn">Save</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- external script files -->
+  <script src="../../assets/js-files/SideBarScript.js"></script>
+  <script src="../../assets/js-files/MidHeaderScript.js"></script>
+  <script src="../../assets/js-files/topheaderScript.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+  <script src="../../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
