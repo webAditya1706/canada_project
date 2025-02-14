@@ -729,9 +729,9 @@ input::placeholder {
 }
 
 .loader_container {
-  height: 200px;
+  height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
