@@ -206,7 +206,7 @@
 }
 
 .quotes_table tbody tr:last-child {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #afafaf;
 }
 
 .quotes_table td:last-child,
@@ -765,7 +765,7 @@ td {
   background: #afafaf;
   position: absolute;
   left: 0;
-  top: -2px;
+  top: -1px;
 }
 
 .quotes_table th div::before {
@@ -868,4 +868,8 @@ td:first-child {
   z-index: 1;
   right: 0px;
   top: 0;
+}
+
+thead tr{
+  border-style: none;
 }
