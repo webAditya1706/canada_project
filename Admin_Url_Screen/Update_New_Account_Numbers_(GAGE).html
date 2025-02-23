@@ -4,10 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Unique_design</title>
-<!-- Date picker -->
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
+    <title>Update New Account Numbers (GAGE)</title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -31,9 +28,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/boo
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-    <!-- add jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 </head>
 
 <body>
@@ -63,29 +57,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/boo
                         <div class="d-flex justify-content-end align-items-center gap-3">
                             <!-- Switch buttons -->
 
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Old
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Partner
-                                    View</label>
-                            </div>
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                          </label>
-                          <span class="menu_font_style">Switch to Partner View</span>
-                      </div> -->
                             <div class="d-flex align-items-center gap-1">
                                 <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                 <div>
@@ -279,182 +250,65 @@ href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/boo
                     <div class="row d-flex justify-content-between align-items-center py-2">
                         <div class="col-6">
                             <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Quote ID: 21711</div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                    fill="none">
-                                    <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <div class="active_text_title_14">Edit Form</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="d-flex align-items-center justify-content-end gap-3">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault">
-                                    <label class="form-check-label menu_font_style"
-                                        for="flexSwitchCheckDefault">In-Progress</label>
-                                </div>
+                                <div class="main_title_15">Miscellaneous Setup</div>
 
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" checked>
-                                    <label class="form-check-label menu_font_style"
-                                        for="flexSwitchCheckDefault">Complete</label>
+                                <div class="custom-select-container">
+                                    <select class="custom-select form-select text_h3">
+                                        <option>Active</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr class="show_gray_hr_line" />
-                    <div class="row">
-                        <!-- Main Contact for Pricing/contracts requests * -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 ">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
-                                    for Pricing/Contracts Requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Email here" value="">
-                            </div>
-                            <div class="tag-container">
-                                <div class="tag">
-                                    magicteam@enerclix.com
-                                    <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
 
-                                </div>
-                                <div class="tag">
-                                    magicteam@enerclix.com <img src="../assets/icons/cancel.png" class="cancel_icon"
-                                        alt="cancel_icon">
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Document -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                            <div class="d-flex justify-content-start align-items-center gap-2">
-                                <label for="upload_doc" class="form-label form_label">Document</label>
-                            </div>
-                            <div class="border rounded d-flex justify-content-end pe-2">
-                                <div class="them_btn_container">
-                                    <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
-                                        class="theme_primary_btn">Upload</button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-12">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="them_btn_container ">
-                                    <button class="theme_outline_btn">Back</button>
-                                </div>
-
-
-                                <div class="them_btn_container">
-                                    <button class="theme_outline_btn2 btn_theme_ripple">Search</button>
-                                </div>
-
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="them_btn_container">
-                                        <button class="theme_primary_btn">Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-sm-6 col-md-6 mt-2">
-                            <div class="position-relative">
-                                <label for="datePickerInput" class="mb-0 form-label form_label">
-                                    Start Date/Time 1
-                                </label>
-                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
-                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
-                                <input type="text" class="form-control form_text_field" id="datePickerInput"
-                                    placeholder="Date">
-                            </div>
-                        </div>
-
-                        <div class="col-6">
-                            <div class="position-relative">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <label for="exampleFormControlInput1"
-                                        class="form-label form_label">To</label>
-                                    <span class="form_unit_text">%</span>
-                                </div>
-                                <input type="text" class="form-control form_text_field"
-                                    id="exampleFormControlInput1" placeholder="" value="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row my-4">
+                    <div class="row mt-3">
                         <div class="col-12">
-                            <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+                            <div class="border rounded px-3 py-2 h-100">
+                                <div class="row flex-row align-items-end mb-2">
+                                    <!-- State * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Broker<span
+                                                    class="text-danger">*</span></label>
+                                            <div>
+                                                <select class="form-select select_value_text"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" selected>Select</option>
+                                                    <option class="form_text_field" value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="d-flex gap-3 mt-2">
+                                            <img src="../assets/icons/Upload.png" class="w_32_h_25" alt="">
+                                            <img src="../assets/icons/Download.png" class="w_32_h_25" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
             </section>
 
         </div>
-
-        <!-- footer section -->
-        <footer class="footer-area">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-12 col-md-12 col-lg-2">
-                        <div class="d-flex justify-content-start">
-                            <div class="them_btn_container">
-                                <button class="theme_outline_btn">Back</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-10">
-                        <div
-                            class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Add
-                                    Supplier</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Request
-                                    Qoute</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Refresh</button>
-                            </div>
-
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Preview Link</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#email__link__modal"
-                                    data-bs-toggle="modal">Email
-                                    Link</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Print</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" onclick="createProposal()">Create
-                                    Proposal</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Save & Update</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Save & Email</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+       <section style=" width: calc(100% - 40px); margin-left: auto;">
+        <div class="container-fluid" >
+            <div class="row">
+                    <img src="../assets/images/Powered by_Logo.png" alt="" srcset="" style="width: 145px; height: 35px;">
             </div>
-        </footer>
+        </div>
+       </section>
 
     </div>
     <!-- Overlay -->
@@ -464,12 +318,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/boo
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-
-    <!-- Date picker -->
-    <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>

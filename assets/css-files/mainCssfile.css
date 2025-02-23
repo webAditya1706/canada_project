@@ -814,6 +814,11 @@ footer {
   width: 20px !important;
 }
 
+.w_32_h_25 {
+  width: 32px !important;
+  height: 25px;
+}
+
 .w_15 {
   width: 15px !important;
 }
@@ -830,4 +835,8 @@ footer {
 
 .pe_33px{
   padding-right: 33px;
+}
+
+.mt-30{
+margin-top: 30px !important;
 }

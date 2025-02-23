@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Flatpickr Date Picker</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .custom-datepicker {
+            position: relative;
+            display: inline-block;
+        }
+
+        #dateInput {
+            width: 180px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            background: white;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /* Custom Flatpickr styles */
+        .flatpickr-calendar {
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Custom navigation buttons */
+        .flatpickr-prev-month,
+        .flatpickr-next-month {
+            font-size: 18px !important;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .flatpickr-prev-month svg,
+        .flatpickr-next-month svg {
+            display: none;
+            /* Hide default Flatpickr icons */
+        }
+
+        .flatpickr-prev-month::after {
+            content: "\f284";
+            /* Bootstrap 'chevron-left' icon */
+            font-family: "Bootstrap-icons";
+        }
+
+        .flatpickr-next-month::after {
+            content: "\f285";
+            /* Bootstrap 'chevron-right' icon */
+            font-family: "Bootstrap-icons";
+        }
+
+        /* Custom dropdown background */
+        .flatpickr-monthDropdown-months {
+            /* background-color: #007bff !important;
+            color: white !important; */
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* Selected month style */
+        .flatpickr-monthDropdown-months option:checked {
+            background-color: green !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="custom-datepicker">
+        <input type="text" id="dateInput" class="form-control" placeholder="Select Date" readonly>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const picker = flatpickr("#dateInput", {
+                dateFormat: "d-m-Y",  // Custom date format
+                defaultDate: new Date(),
+                allowInput: false,    // Prevent manual input
+                wrap: false,
+                showMonths: 1,
+                prevArrow: "",  // Remove default arrows (we use CSS instead)
+                nextArrow: "",
+                onOpen: function () {
+                    setTimeout(() => {
+                        let monthDropdown = document.querySelector(".flatpickr-monthDropdown-months");
+                        if (monthDropdown) {
+                            let options = monthDropdown.children;
+
+                            // Add hover effect using JavaScript
+                            for (let option of options) {
+                                option.addEventListener("mouseenter", function () {
+                                    option.style.backgroundColor = "green"; // Light orange on hover
+                                    option.style.color = "black";
+                                });
+
+                                option.addEventListener("mouseleave", function () {
+                                    option.style.backgroundColor = ""; // Reset to default
+                                    option.style.color = "";
+                                });
+                            }
+                        }
+                    }, 50);
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

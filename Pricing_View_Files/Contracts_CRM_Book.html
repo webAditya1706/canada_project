@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contracts CRM Book</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top header -->
+
+        <section class="top_header_secction">
+            <div class="container-fluid p-2">
+                <div class="row justify-content-between align-items-center">
+                    <!-- Column 1 -->
+                    <div class="col-12 col-lg-6">
+                        <div class="header_container">
+                            <div class="d-flex gap-2">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                <div class="header_bg_text">
+                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                </div>
+                            </div>
+                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2 -->
+                    <div class="col-12 col-lg-6 d-none d-lg-block">
+                        <div class="d-flex justify-content-end align-items-center gap-3">
+                            <!-- Switch buttons -->
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style"
+                                    for="flexSwitchCheckDefault">Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Partner
+                                    View</label>
+                            </div>
+
+                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                          <label class="switch">
+                              <input type="checkbox">
+                              <span class="slider round"></span>
+                          </label>
+                          <span class="menu_font_style">Switch to Partner View</span>
+                      </div> -->
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Drawer Menu -->
+                    <div class="drawer" id="drawer" style="z-index: 999">
+                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                            <hr style="height: 1px; width: 100%" />
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-start">
+                            <!-- Switch buttons -->
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Old
+                                    Legacy</label>
+                            </div>
+
+                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault" />
+                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                    Partner
+                                    View</label>
+                            </div>
+
+                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div class="d-flex align-items-center gap-1">
+                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                    <div>
+                                        <p class="user_name">Welcome, Alon</p>
+                                        <p class="user_email">alon@demomail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Overlay -->
+                    <div class="overlay_menu" id="overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Side bar -->
+        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+            <hr class="mt-5 show_white_hr_line" />
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+            </div>
+            <hr class="show_white_hr_line mt-2" />
+
+
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+            </div>
+            <div class="side_bar_menu">
+                <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+            </div>
+        </div>
+
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+            <div>
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                </div>
+                <hr style="height: 2px; background-color: #ddd; width: 100%" class="mt-30" />
+                <div class="menu_container position-static">
+                    <div class="menu_parent">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                            <span class="menu_title">Home</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                        <span class="menu_title">Qoutes</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mx-2">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                        <span class="menu_title">Auctions</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-3 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="height: 2px; background-color: #ddd; width: 100%" />
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                        <span class="menu_title">Logout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-area">
+
+            <!-- bread crumb -->
+            <section class="">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-between align-items-center py-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="main_title_15">Contracts/CRM</div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                    fill="none">
+                                    <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <div class="active_text_title_14">Book</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="show_gray_hr_line" />
+                </div>
+            </section>
+
+            <!-- Form section -->
+            <section class="my-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div><span class="sub_title_13">Contract Information</span></div>
+                        <form action="">
+
+                            <div class="row">
+                                <div class="col-12 col-md-6 mt-3">
+                                    <div class="border rounded pt-2 pb-3 px-3">
+                                        <div class="row">
+                                            <!-- Contract ID -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="contractId"
+                                                                class="form-label form_label">Contract
+                                                                ID</label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="contractId" value="27061" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Legal Name on Contract -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="legalName"
+                                                                class="form-label form_label">Legal Name on
+                                                                Contract <span class="text-danger">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="legalName" value="Lauren Troise RR" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Commodity -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="commodity"
+                                                                class="form-label form_label">Commodity <span
+                                                                    class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="commodity" value="Electric" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Supplier -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="supplier"
+                                                                class="form-label form_label">Supplier <span
+                                                                    class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <select class="form-control form_text_field" id="supplier">
+                                                        <option>Select</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Paying Entity -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="d-flex">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label m-0">Paying Entity
+                                                            <span class="text-danger">*</span>
+                                                        </label>
+                                                        <div class="text-end"> <span class="">+</span></div>
+
+                                                    </div>
+                                                    <select class="form-select select_value_text"
+                                                        aria-label="Default select example">
+                                                        <option class="form_text_field" selected>Select</option>
+                                                        <option class="form_text_field" value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Start Date -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="position-relative">
+                                                    <label for="datePickerInput" class="mb-0 form-label form_label">
+                                                        Start Date
+                                                    </label>
+                                                    <img src="../assets/icons/date_picker_icon.png"
+                                                        class="date_picker_icon" alt="date_picker_icon"
+                                                        style="cursor:pointer;" onclick="openDatePicker()">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="datePickerInput" placeholder="Date" value="October, 2024">
+                                                </div>
+                                            </div>
+
+                                            <!-- Term Length -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="termLength"
+                                                                class="form-label form_label">Term Length <span
+                                                                    class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="termLength" value="-" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contract Expires -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="contractExpires"
+                                                                class="form-label form_label">Contract
+                                                                Expires</label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="contractExpires" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Usage -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="usage"
+                                                                class="form-label form_label">Usage <span
+                                                                    class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field" id="usage"
+                                                        value="12,121 KWH" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Product Type -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label m-0">Product Type
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <select class="form-select select_value_text"
+                                                        aria-label="Default select example">
+                                                        <option class="form_text_field" selected>Select</option>
+                                                        <option class="form_text_field" value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <!-- Brokerage Commission -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="brokerageComm"
+                                                                class="form-label form_label">Brokerage Comm.
+                                                                <span class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="brokerageComm" value="$" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Brokerage Commission on Expired Floating -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="brokerageCommExpired"
+                                                                class="form-label form_label">Brokerage Comm. on
+                                                                Expired Floating <span
+                                                                    class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="brokerageCommExpired" value="$" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Contract Price -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="Contract Price"
+                                                                class="form-label form_label">Contract Price
+                                                                <span class="text-danger">*</span></label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field" id="renewed"
+                                                        value="$" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Renewed -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="renewed"
+                                                                class="form-label form_label">Renewed</label>
+                                                        </div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field" id="renewed"
+                                                        value="No" disabled>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 mt-3">
+                                    <div class="border rounded pt-2 pb-3 px-3">
+                                        <div class="row">
+
+                                            <!-- Contract Status -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="row flex-row justify-content-between">
+                                                        <div class="col-auto"> <label for="contractStatus"
+                                                                class="form-label form_label">Contract Status
+                                                                <span class="text-danger">*</span></label></div>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="contractStatus" value="Active" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Billing Type -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="contractStatus" class="form-label form_label">Billing Type
+                                                    <span class="text-danger">*</span></label>
+                                                <select class="form-select select_value_text w-100"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" value="Yes" selected>Yes
+                                                    </option>
+                                                    <option class="form_text_field" value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Contract will not Renew -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="m-0 p-0 text-start">
+                                                    <label class="form-label form_label">Contract will not
+                                                        Renew</label>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input mid_head_check form-control"
+                                                        type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                                                </div>
+                                            </div>
+
+                                            <!-- Marketer -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="">
+                                                    <div class="col-auto">
+                                                        <label for="marketer" class="form-label form_label">Marketer
+                                                            <span class="text-danger">*</span></label>
+                                                    </div>
+
+                                                    <select class="form-select select_value_text w-100"
+                                                        aria-label="Default select example">
+                                                        <option class="form_text_field" value="Albert Sasson" selected>
+                                                            Albert Sasson
+                                                        </option>
+                                                        <option class="form_text_field" value="No">No</option>
+                                                    </select>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- Marketer Commission Type -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="marketerCommType" class="form-label form_label">Marketer
+                                                    Comm. Type <span class="text-danger">*</span></label>
+
+                                                <select class="form-select select_value_text w-100"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" value="Percent" selected>
+                                                        Percent
+                                                    </option>
+                                                    <option class="form_text_field" value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Marketer Comm. -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="position-relative">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Marketer Comm.</label>
+                                                        <span class="form_unit_text">%</span>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder=""
+                                                        value="Albert Sasson" disabled>
+                                                </div>
+                                            </div>
+
+                                            <!-- Relationship Manager * -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="marketerCommType" class="form-label form_label">Relationship
+                                                    Manager<span class="text-danger">*</span></label>
+
+                                                <select class="form-select select_value_text w-100"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" value="Albert Sasson" selected>
+                                                        Albert Sasson
+                                                    </option>
+                                                    <option class="form_text_field" value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Relationship Manager Comm. Type * -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="marketerCommType" class="form-label form_label">Relationship
+                                                    Manager Comm.
+                                                    Type<span class="text-danger">*</span></label>
+
+                                                <select class="form-select select_value_text w-100"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" value="Percent" selected>
+                                                        Grass
+                                                    </option>
+                                                    <option class="form_text_field" value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Relationship Manager Comm. -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="position-relative">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Relationship Manager
+                                                            Comm. <img src="../assets/icons/Form_checkmark.png"
+                                                                style="width: 10px;" alt=""> <span
+                                                                class="active_text_title_13">On
+                                                                Expired</span></label>
+                                                        <span class="form_unit_text">%</span>
+                                                    </div>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder=""
+                                                        value="Albert Sasson" disabled>
+                                                </div>
+                                                <span class="active_text_title_13">Additional Payee</span>
+                                            </div>
+
+                                            <!-- Customer * -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="marketerCommType"
+                                                    class="form-label form_label">Customer<span
+                                                        class="text-danger">*</span></label>
+
+                                                <select class="form-select select_value_text w-100"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" value="Select" selected>
+                                                        Select
+                                                    </option>
+                                                    <option class="form_text_field" value="No">No</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- Submission Date -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="submissionDate" class="form-label form_label">Submission
+                                                    Date <span class="text-danger">*</span></label>
+                                                <input type="text" class="form-control form_text_field"
+                                                    id="businessType">
+                                                <div class="mt-2">
+                                                    <label for="businessType" class="form-label form_label">Business
+                                                        Type</label>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="businessType">
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Notes -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="notes" class="form-label form_label">Notes <span
+                                                        class="para_text_14">(Viewable
+                                                        To Partner)</span></label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
+                                                    placeholder="0.0">0.0</textarea>
+                                            </div>
+
+                                            <!-- Upload Bill -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <label for="upload_doc" class="form-label form_label">Upload
+                                                        Bill</label>
+                                                </div>
+                                                <div class="border rounded d-flex justify-content-end pe-2">
+                                                    <div class="them_btn_container">
+                                                        <button type="button" data-bs-target="#upload_download_modal"
+                                                            data-bs-toggle="modal"
+                                                            class="theme_primary_btn">Upload</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Upload Contract -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <div class="d-flex justify-content-start align-items-center gap-2">
+                                                    <label for="upload_doc" class="form-label form_label">Upload
+                                                        Contract</label>
+                                                </div>
+                                                <div class="border rounded d-flex justify-content-end pe-2">
+                                                    <div class="them_btn_container">
+                                                        <button type="button" data-bs-target="#upload_download_modal"
+                                                            data-bs-toggle="modal"
+                                                            class="theme_primary_btn">Upload</button>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="d-flex flex-wrap gap-2 mt-2">
+                                                    <div class="d-flex gap-1">
+                                                        <span class="active_text_title_13">document12345678.pdf</span>
+                                                        <img src="../assets/icons/cancel.png" class=""
+                                                            style="width: 15px; height: 15px;" alt="cancel_icon">
+                                                    </div>
+                                                    <div class="d-flex gap-1    ">
+                                                        <span class="active_text_title_13">doc.pdf</span>
+                                                        <img src="../assets/icons/cancel.png"
+                                                            style="width: 15px; height: 15px;" alt="cancel_icon">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row align-items-end">
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <span class="active_text_title_13">Contract Confirmation</span>
+                                            </div>
+                                            <!-- From Quote -->
+                                            <div class="col-12 col-sm-6 col-md-6 mt-2">
+                                                <label for="fromQuote" class="form-label form_label">From
+                                                    Quote</label>
+                                                <input type="text" class="form-control form_text_field" id="fromQuote"
+                                                    value="12345" disabled>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--Form finish row -->
+                        </form>
+                    </div>
+                    <!--finish row -->
+
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <div class="border rounded px-3 py-2 h-100">
+                                <div><span class="sub_title_13">Contract Information</span></div>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <span class="fs_13_fw_500_c_757575">No. of Accounts: 1</span>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                            data-bs-toggle="modal">Save</button>
+                                    </div>
+                                </div>
+                                <div class="table_wrapper quotes_table with_bg_table sec_td_180 mb-2">
+                                    <table class="table table-bordered  m-0">
+                                        <thead class="thead_bg">
+                                            <tr>
+                                                <th scope="col"
+                                                    class="align-middle td_w_180 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                        <span class="th_title">Account Number</span>
+                                                    </div>
+                                                </th>
+
+                                                <th scope="col"
+                                                    class="align-middle td_w_180 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                        <span class="th_title"> Account Usage</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col"
+                                                    class="align-middle td_w_180 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                        <span class="th_title">Utility</span>
+                                                    </div>
+                                                </th>
+
+                                                <th scope="col"
+                                                    class="align-middle td_w_180 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                        <span class="th_title">Service Address</span>
+                                                    </div>
+                                                </th>
+                                                <th scope="col"
+                                                    class="align-middle td_w_180 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                        <span class="th_title">Start Date</span>
+                                                    </div>
+                                                </th>
+
+                                                <th scope="col"
+                                                    class="align-middle td_w_50 table_head_bg table_th_text">
+                                                    <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr scope="row" class="tbody_row">
+                                                <!-- style="height: 55px" -->
+
+                                                <td class="align-middle table_td_text text">
+                                                    <div class="text-center">111111</div>
+                                                </td>
+
+                                                <td class="align-middle table_td_text text">
+                                                    <div class="text-center">27,596 KWH</div>
+                                                </td>
+                                                <td class="align-middle table_td_text text">
+                                                    <div class="text-center">CONECTIV-...</div>
+                                                </td>
+                                                <td class="align-middle table_td_text text">
+                                                    <div class="text-center">Aa, Floral Park, New York, 11001aa, Floral
+                                                        Park, New York, 11001</div>
+                                                </td>
+
+                                                <td class="align-middle text-center table_td_text">
+                                                    <div class="text-center active_text_title_13">10/01/2024</div>
+                                                </td>
+
+                                                <td class="align-middle text-center table_td_text">
+                                                    <div class="text-center">
+                                                        <img src="../assets/icons/Form_delete.png" alt=""
+                                                            class="w_20_h_20" srcset="">
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12">
+                        <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer section -->
+        <footer class="footer-area">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-6">
+                        <div class="d-flex justify-content-start">
+                            <div class="them_btn_container">
+                                <button class="theme_outline_btn">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                    data-bs-toggle="modal">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

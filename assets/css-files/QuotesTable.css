@@ -148,6 +148,10 @@
   background-color: #f5f5f5 !important;
 }
 
+.sec_td_180 th:nth-child(2), .sec_td_180 td:nth-child(2){
+  left: 180px;
+}
+
 .second_left_180 th:nth-child(2){
   left: 180px !important;
   border-right: 0px;

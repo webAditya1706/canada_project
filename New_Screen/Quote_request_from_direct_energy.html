@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quote request from direct energy </title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mb-4" style="flex: 1; width: 100%;">
+            <!-- bread crumb -->
+            <section class="">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="border rounded px-3 py-2 h-100">
+
+                                <!-- Form Start -->
+                                <div class="row">
+                                    <div class="col-12 mt-3">
+                                        <div class="border rounded px-3 py-2 h-100">
+                                            <div class="row">
+                                                <!-- Account Name -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="accountName"
+                                                                    class="form-label form_label">Account Name</label>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="accountName" value="Karishma" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Number of Accounts -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="numAccounts"
+                                                                    class="form-label form_label">Number of
+                                                                    Accounts</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="numAccounts" value="1" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Commodity -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="commodity"
+                                                                    class="form-label form_label">Commodity</label>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="commodity" value="Electric" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Utility -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="utility"
+                                                                    class="form-label form_label">Utility</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="utility" value="PSEG - Public Service Electric & Gas"
+                                                            disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Address -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="address"
+                                                                    class="form-label form_label">Address</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="address" value="1170 Ocean Pkwy" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Start Date -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="startDate"
+                                                                    class="form-label form_label">Start Date</label>
+                                                            </div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="startDate" value="12/01/2024" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- State -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="state"
+                                                                    class="form-label form_label">State</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="state" value="NY" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- City -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="city"
+                                                                    class="form-label form_label">City</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="city" value="Brooklyn" disabled>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Zip Code -->
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                                    <div class="">
+                                                        <div class="row flex-row justify-content-between">
+                                                            <div class="col-auto"> <label for="zipCode"
+                                                                    class="form-label form_label">Zip Code</label></div>
+                                                        </div>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="zipCode" value="11230" disabled>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Form End -->
+
+                                <!-- Fixed Rate Table -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-center my-4"><span class="fixed_rate">Fixed Rate in KWH</span>
+                                        </div>
+
+                                        <div class="table_wrapper quotes_table with_bg_table sec_td_180">
+                                            <table class="table table-bordered  m-0">
+                                                <thead class="thead_bg">
+                                                    <tr>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Billing Type</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title"> Request Date</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Good Until</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">12 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">24 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">36 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Incl.</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Rate</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr scope="row" class="tbody_row">
+                                                        <!-- style="height: 55px" -->
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">Single</div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">9/27/24</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="MM/DD/YYYY">
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start mt-1"><span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start mt-1"><span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text-center">
+                                                            <div class="">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start mt-1"><span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">
+                                                                <select class="form-select select_value_text"
+                                                                    aria-label="Default select example">
+                                                                    <option class="form_text_field" selected>Select
+                                                                    </option>
+                                                                    <option class="form_text_field" value="1">One
+                                                                    </option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle text-center table_td_text">
+                                                            <div class="text-center">-</div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Fixed Rate Table -->
+
+                                <!-- Swing Tolerance start -->
+                                <div class="row">
+                                    <div class="text-center my-4"><span class="fixed_rate">Swing Tolerance/ Sweet
+                                            Spot/ Comments</span></div>
+                                    <div class="col-12">
+
+                                        <div class="border rounded px-3 py-2 h-100">
+                                            <div class="row p-5">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Swing Tolerance End -->
+
+                                <!-- Fixed Price Table -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-center my-4"><span class="fixed_rate">Fixed Price PT Energy
+                                                Rate</span>
+                                        </div>
+
+                                        <div class="table_wrapper quotes_table with_bg_table sec_td_180">
+                                            <table class="table table-bordered  m-0">
+                                                <thead class="thead_bg">
+                                                    <tr>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Billing Type</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title"> Request Date</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Good Until</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">12 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">24 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">36 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Incl.</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Rate</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr scope="row" class="tbody_row">
+                                                        <!-- style="height: 55px" -->
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">CT | Eversource (CL&P) |
+                                                                30,27,115,116, Other/non-res | .Z.CONNECTICUT
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">Electric</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">Connecticut</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">CILCO - Ameren Cilco CIPS -
+                                                                Ameren CIPS</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">27 - Small time of
+                                                                day<br /> 27
+                                                                - Small time of day<br /> 30 - Small general
+                                                                <200 KWh<br /> 30 - Small general <200 KWh</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text text-center">
+                                                            <div class="text-center">None</div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text">
+                                                            <div class="text-center">1.0 - 1000000.0</div>
+                                                        </td>
+
+                                                        <td class="align-middle text-center table_td_text">
+                                                            <div class="text-center">-</div>
+                                                        </td>
+
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Fixed Price Table -->
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <!-- end Container -->
+            </section>
+        </div>
+
+        <!-- footer section -->
+        <footer class="">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="them_btn_container ">
+                                <button class="theme_outline_btn2">Dismiss</button>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Save</button>
+                                </div>
+
+                                <!-- <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#Rate_Refesh_Modal"
+                                        data-bs-toggle="modal">Rate Refresh Request </button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+    <!-- modals -->
+
+    <!-- Rate_Refesh_Modal -->
+    <div class="modal fade" id="Rate_Refesh_Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="mid_header_mian_title" id="exampleModalToggleLabel">Rate Refresh Request</h1>
+                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+                        <img src="../assets/images/red_cancel.png" alt="red_cancel">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div>
+                            <span class="fs_12_fw_600_c_1313">After you submit this request an email will be sent to the
+                                below address once the refreshed rates are available. Please confirm the name and email
+                                address below.</span>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="mb-3 position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label Due Date text-danger">
+                                    Due Date
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="legalName" class="form-label form_label">First
+                                            Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="legalName" placeholder=""
+                                    value="Albert" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="Last Name" class="form-label form_label">Last
+                                            Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="address" placeholder=""
+                                    value="Sasson" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="Email"
+                                            class="form-label form_label">Email</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="state" placeholder=""
+                                    value="albert@enerworld.com" disabled>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center align-items-center gap-3 w-100">
+
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2">Close</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#Rate_Refesh_Modal"
+                                data-bs-toggle="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

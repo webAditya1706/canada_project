@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FollowUp by ID </title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="mb-4" style="flex: 1; width: 100%;">
+            <!-- bread crumb -->
+            <section class="">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <div class="border rounded px-3 py-2 h-100">
+
+                                <div class="row">
+                                    <!-- Type -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <div class="row flex-row justify-content-between">
+                                                <div class="col-auto"> <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Type</label></div>
+
+                                            </div>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="000 0000 000" value="Self"
+                                                disabled>
+                                        </div>
+                                    </div>
+
+                                    <!-- Company Name * -->
+                                    <div class="col-12 col-sm-12 col-md-6 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Description
+                                                <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"
+                                                placeholder="0.0">ABC DEFG</textarea>
+                                        </div>
+                                    </div>
+
+                                    <!-- Responsible  * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="">
+                                            <label for="exampleFormControlInput1"
+                                                class="form-label form_label">Responsible
+                                                <span class="text-danger">*</span>
+                                            </label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder=""
+                                                value="Anthony Beck (Exclude CT)" disabled>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Queue For * -->
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="mb-3 position-relative">
+                                            <label for="datePickerInput" class="mb-0 form-label form_label">
+                                                Queue For<span class="text-danger">*</span>
+                                            </label>
+                                            <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                                alt="date_picker_icon" style="cursor:pointer;"
+                                                onclick="openDatePicker()">
+                                            <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                                placeholder="Date">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2">
+                                        <div class="d-flex gap-3">
+                                            <div class="col-6">
+                                                <div class="">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label m-0">Time
+                                                        <span class="text-danger">*</span>
+                                                    </label>
+                                                    <select class="form-select select_value_text"
+                                                        aria-label="Default select example">
+                                                        <option class="form_text_field" selected>Select</option>
+                                                        <option class="form_text_field" value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="exampleFormControlInput1"
+                                                    class="form-label form_label m-0">Est
+                                                    <span class="text-danger">*</span>
+                                                </label>
+                                                <select class="form-select select_value_text"
+                                                    aria-label="Default select example">
+                                                    <option class="form_text_field" selected>Select</option>
+                                                    <option class="form_text_field" value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- footer section -->
+        <footer class="">
+            <div class="container-fluid">
+                <div class="row flex-row">
+                    <div class="col-12 col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="them_btn_container ">
+                                <button class="theme_outline_btn2">Dismiss</button>
+                            </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Save</button>
+                                </div>
+
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#Site_Details_Modal"
+                                        data-bs-toggle="modal">Site Details </button>
+                                </div>
+
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#Rate_Refesh_Modal"
+                                        data-bs-toggle="modal">Rate Refresh Request </button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#Start_Date_Modal"
+                                        data-bs-toggle="modal">Start Date Preference Modal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+    <!-- modals -->
+
+    <!-- Site Details Modal -->
+    <div class="modal fade" id="Site_Details_Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="mid_header_mian_title" id="exampleModalToggleLabel">Site Details</h1>
+                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+                        <img src="../assets/images/red_cancel.png" alt="red_cancel">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Legal Name On Contract -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="legalName" class="form-label form_label">Legal
+                                            Name On Contract</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="legalName" placeholder=""
+                                    value="Karishma" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="address"
+                                            class="form-label form_label">Address</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="address" placeholder=""
+                                    value="1170 Ocean Pkwy" disabled>
+                            </div>
+                        </div>
+
+                        <!-- State -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="state"
+                                            class="form-label form_label">State</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="state" placeholder=""
+                                    value="NY" disabled>
+                            </div>
+                        </div>
+
+                        <!-- City -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="city" class="form-label form_label">City</label>
+                                    </div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="city" placeholder=""
+                                    value="Brooklyn" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Postal / Zip Code -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="zipCode" class="form-label form_label">Postal /
+                                            Zip Code</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="zipCode" placeholder=""
+                                    value="11230" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="phone"
+                                            class="form-label form_label">Phone</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="phone" placeholder=""
+                                    value="+1 - 516 - -320-4280" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="email"
+                                            class="form-label form_label">Email</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="email" placeholder=""
+                                    value="pricing@eliteenergygrp.com" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Contact Name -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="contactName"
+                                            class="form-label form_label">Contact Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="contactName" placeholder=""
+                                    value="Esther Sasson" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Relationship Manager -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Relationship Manager</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="Albert Sasson" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Current Supplier -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Current Supplier</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Contract Expiration date -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Contract Expiration date</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Current Billing Method -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Current Billing Method</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="Albert Sasson" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Expiring Rate -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Expiring Rate</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="0.00" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Expiring Contract Term -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-4 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="relationshipManager"
+                                            class="form-label form_label">Expiring Contract Term</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="relationshipManager"
+                                    placeholder="" value="" disabled>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center align-items-center gap-3 w-100">
+
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rate_Refesh_Modal -->
+    <div class="modal fade" id="Rate_Refesh_Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="mid_header_mian_title" id="exampleModalToggleLabel">Rate Refresh Request</h1>
+                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+                        <img src="../assets/images/red_cancel.png" alt="red_cancel">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div>
+                            <span class="fs_12_fw_600_c_1313">After you submit this request an email will be sent to the
+                                below address once the refreshed rates are available. Please confirm the name and email
+                                address below.</span>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="mb-3 position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label Due Date text-danger">
+                                    Due Date
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="legalName" class="form-label form_label">First
+                                            Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="legalName" placeholder=""
+                                    value="Albert" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="Last Name" class="form-label form_label">Last
+                                            Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="address" placeholder=""
+                                    value="Sasson" disabled>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="Email"
+                                            class="form-label form_label">Email</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="state" placeholder=""
+                                    value="albert@enerworld.com" disabled>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center align-items-center gap-3 w-100">
+
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2">Close</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#Rate_Refesh_Modal"
+                                data-bs-toggle="modal">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Date Preference -->
+    <div class="modal fade" id="Start_Date_Modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="mid_header_mian_title" id="exampleModalToggleLabel">Rate Refresh Request</h1>
+                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">
+                        <img src="../assets/images/red_cancel.png" alt="red_cancel">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Your Name -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="legalName" class="form-label form_label">Your
+                                            Name</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="legalName" placeholder=""
+                                    value="Albert">
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="">
+                                <div class="row flex-row justify-content-between">
+                                    <div class="col-auto"> <label for="Email"
+                                            class="form-label form_label">Email</label></div>
+                                </div>
+                                <input type="text" class="form-control form_text_field" id="state" placeholder=""
+                                    value="albert@enerworld.com">
+                            </div>
+                        </div>
+
+                        <!-- Product Type * -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Product Type</label>
+                            <div class="d-flex gap-2 flex-row flex-wrap">
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Fixed
+                                    </label>
+                                </div>
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Fixed Price Energy Only
+                                    </label>
+                                </div>
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Should GRT Taxes be Inclusive in Rate
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Type * -->
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Product Type</label>
+                            <div class="d-flex gap-2 flex-row">
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Single
+                                    </label>
+                                </div>
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Doul
+                                    </label>
+                                </div>
+
+                                <div class="form-check col-auto">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                        checked>
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        All
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- end row -->
+                    </div>
+<!-- Date/Time 1 -->
+                    <div class="row align-items-end">                        
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label form_label">
+                                    Start Date/Time 1
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label form_label m-0">Time
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">                                
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2 text-end">
+                            <label for="exampleFormControlInput1"
+                                class="form-label fs_11_fw_400_c_7575 m-0 ">Est</span>
+                            </label>
+                            <select class="form-select select_value_text"
+                                aria-label="Default select example">
+                                <option class="form_text_field" selected>Select</option>
+                                <option class="form_text_field" value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Date/Time 2 -->
+                    <div class="row align-items-end">                        
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label form_label">
+                                    Start Date/Time 1
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label form_label m-0">Time
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">                                
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2 text-end">
+                            <label for="exampleFormControlInput1"
+                                class="form-label fs_11_fw_400_c_7575 m-0 ">Est</span>
+                            </label>
+                            <select class="form-select select_value_text"
+                                aria-label="Default select example">
+                                <option class="form_text_field" selected>Select</option>
+                                <option class="form_text_field" value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <!-- Date/Time 3 -->
+                    <div class="row align-items-end">                        
+                        <div class="col-12 col-sm-6 col-md-6 mt-2">
+                            <div class="position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label form_label">
+                                    Start Date/Time 1
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">
+                                <label for="exampleFormControlInput1"
+                                    class="form-label form_label m-0">Time
+                                    <span class="text-danger">*</span>
+                                </label>
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2">
+                            <div class="">                                
+                                <select class="form-select select_value_text"
+                                    aria-label="Default select example">
+                                    <option class="form_text_field" selected>Select</option>
+                                    <option class="form_text_field" value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-4 col-sm-2 col-md-2 mt-2 text-end">
+                            <label for="exampleFormControlInput1"
+                                class="form-label fs_11_fw_400_c_7575 m-0 ">Est</span>
+                            </label>
+                            <select class="form-select select_value_text"
+                                aria-label="Default select example">
+                                <option class="form_text_field" selected>Select</option>
+                                <option class="form_text_field" value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="d-flex justify-content-center align-items-center gap-3 w-100">
+
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2" data-bs-target="#Start_Date_Modal"
+                            data-bs-toggle="modal">Close</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
