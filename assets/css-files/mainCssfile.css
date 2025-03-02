@@ -699,6 +699,7 @@ input::placeholder {
 
 .red_desh {
   width: 10px;
+  height: 10px;
 }
 
 .red_desh span {
@@ -825,6 +826,16 @@ footer {
 
 .w_12 {
   width: 12px !important;
+}
+
+.w_10_h_10 {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.w_15_h_15 {
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .w_30_h_30 {

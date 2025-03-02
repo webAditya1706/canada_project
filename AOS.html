@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .section:nth-child(odd) {
+            background: #f4f4f4;
+        }
+        .section:nth-child(even) {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <section class="section" data-aos="fade-up">
+        Welcome to My Website
+    </section>
+    <section class="section" data-aos="fade-left">
+        About Us Section
+    </section>
+    <section class="section" data-aos="fade-right">
+        Services We Offer
+    </section>
+    <section class="section" data-aos="fade-down">
+        Contact Us
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            easing: 'ease-in-out', // Smooth animation
+            once: true // Animation only once when scrolling down
+        });
+    </script>
+</body>
+</html>

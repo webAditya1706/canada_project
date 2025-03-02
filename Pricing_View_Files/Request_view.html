@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request view</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body class="wrapper">
+
+    <!-- top header -->
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <!-- Switch buttons -->
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
+                                View</label>
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Side bar -->
+    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
+        <hr class="mt-5 show_white_hr_line" />
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt="Dashboard_active">
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Auction_active.png" alt="Auction_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+
+        </div>
+        <hr class="show_white_hr_line mt-2" />
+
+
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+
+        </div>
+        <div class="side_bar_menu">
+            <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+
+        </div>
+    </div>
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
+        <div>
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+            </div>
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_container position-static">
+                <div class="menu_parent">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" alt="">
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-2">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" alt="Quotes">
+                                    <span class="menu_title">Qoutes</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu ms-3 p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-2">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Auction.png" alt="Quotes">
+                                    <span class="menu_title">Auctions</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu ms-3 p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="height: 2px; background-color: #ddd; width: 100%" />
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/icons/Nav Icons/My profile.png" alt="">
+                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+
+                    <span class="menu_title">Home</span>
+                </div>
+            </div>
+            <div class="menu_parent">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                    <img src="../assets/icons/Nav Icons/Logout.png" alt="">
+
+                    <span class="menu_title">Logout</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-area">
+        <!-- bread crumb -->
+        <section class="">
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-between align-items-center py-3">
+                    <div class="col-6">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="main_title_15">Quote</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="main_title_15">Request</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                fill="none">
+                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <div class="active_text_title_14">View</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- hr  -->
+
+        <section class="">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="show_gray_hr_line" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class=" mt-3">
+            <div class="container-fluid">
+                <!-- Form start -->
+                <div class="border rounded mt-2 py-3 px-3">
+                    <div class="mb-2">
+                        <span class="sub_title_13">Quote Request # 38</span>
+
+                    </div>
+                    <form class="needs-validation">
+                        <div class="row">
+                            <!-- Company Name -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="companyName" class="form-label">Company Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="companyName"
+                                        placeholder="Enter Company Name" value="Rob Test #2">
+                                </div>
+                            </div>
+
+                            <!-- First Name -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="firstName" class="form-label">First Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="firstName"
+                                        placeholder="Enter First Name" value="Rob Test #2">
+                                </div>
+                            </div>
+
+                            <!-- Last Name -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="lastName" class="form-label">Last Name <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name"
+                                        value="Rob Test #2">
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Email"
+                                        value="@email.com">
+                                </div>
+                            </div>
+
+                            <!-- Phone -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Phone <span
+                                            class="text-danger">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" placeholder="Enter Phone"
+                                        value="+1 718-6866-666">
+                                </div>
+                            </div>
+
+                            <!-- State -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="state" class="form-label">State <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="state">
+                                        <option selected>New York</option>
+                                        <option>California</option>
+                                        <option>Texas</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Rate Quote Requested for -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label class="form-label">Rate Quote Requested for <span
+                                            class="text-danger">*</span></label>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <!-- Switch buttons -->
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label fs_14_fw_400_c_131313"
+                                                for="exampleCheck1">Electric Quote</label>
+                                        </div>
+
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label fs_14_fw_400_c_131313"
+                                                for="exampleCheck1">Gas Quote</label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Existing Electric Supply -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="state" class="form-label">Do You Know When Your Existing Electric Supply
+                                        contract expires? <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="state">
+                                        <option selected>New York</option>
+                                        <option>California</option>
+                                        <option>Texas</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Expiration Date of Current Electric Contract -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label class="form-label">Expiration Date of Current Electric Contract <span
+                                            class="text-danger">*</span></label>
+                                    <div class="d-flex">
+                                        <select class="form-select me-2">
+                                            <option selected>November</option>
+                                            <option>December</option>
+                                            <option>January</option>
+                                        </select>
+                                        <select class="form-select">
+                                            <option selected>2024</option>
+                                            <option>2025</option>
+                                            <option>2026</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Upload Bills for Electric -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <label for="exampleFormControlInput1" class="form-label form_label">Documents<span
+                                        class="text-danger">*</span></label>
+                                <!--  justify-content-end  -->
+                                <div class="border rounded d-flex  justify-content-end px-1 w-100">
+                                    <div class="them_btn_container">
+                                        <button type="button" data-bs-target="#upload_download_modal"
+                                            data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Current Supplier -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="currentSupplier" class="form-label">Current Supplier</label>
+                                    <select class="form-select">
+                                        <option selected>Black Diamond</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Marketer -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="marketer" class="form-label">Marketer</label>
+                                    <input type="text" class="form-control" id="marketer" value="Albert Sasson"
+                                        disabled>
+                                </div>
+                            </div>
+
+                            <!-- Relationship Manager -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="relationshipManager" class="form-label">Relationship Manager</label>
+                                    <input type="text" class="form-control" id="relationshipManager"
+                                        value="Albert Sasson" disabled>
+                                </div>
+                            </div>
+
+                            <!-- Current Billing Method -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="billingMethod" class="form-label">Current Billing Method</label>
+                                    <select class="form-select" id="billingMethod">
+                                        <option selected>Single</option>
+                                        <option>Multiple</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Expiring Rate -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="relationshipManager" class="form-label">Expiring Rate</label>
+                                    <input type="text" class="form-control" id="relationshipManager"
+                                        value="Albert Sasson">
+                                </div>
+                            </div>
+
+                            <!-- Expiring Contract Term -->
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                <div class="mb-3">
+                                    <label for="relationshipManager" class="form-label">Expiring Contract Term</label>
+                                    <input type="text" class="form-control" id="relationshipManager"
+                                        value="Albert Sasson">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer-area mt-5">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12 col-md-2">
+                    <div class="d-flex justify-content-start">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn">Back</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10">
+                    <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#queueFollowUPModal">Save</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn">Convert to Electric Quote</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar"></div>
+
+    <!-- Modals -->
+    <!-- passwordKeyModal -->
+    <div class="modal fade" id="passwordKeyModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/images/Password saved.png" class="mt-4 td_w_150" style="" alt="key">
+                    <p class="main_title_15 mt-2">Password Has Been Sent Successfully</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Queue followUp Modal -->
+    <div class="modal fade" id="queueFollowUPModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Queue a Follow-up</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header theme_accordian">
+                                <button class="accordion-button arrow__size" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="row w-100 justify-content-between align-items-center">
+                                        <div class="col-auto ">
+                                            <i class="bi bi-exclamation-circle-fill primary_bg_color_text"></i>
+                                            <span class="table_th_text">Please Correct The Following
+                                                Errors:</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="text-danger">*</span>
+                                            <span class="fs_11_fw_400_c_1313">Required Field</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg__accordian_body px-0">
+                                    <ul class="fs_11_fw_400_c_1313">
+                                        <li class="mb-2">Please enter a valid name</li>
+                                        <li class="mb-2">Please retype your email</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-2 mt-2">
+                        <label for="exampleFormControlTextarea1" class="form-label form_label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-3">
+                            <label for="country" class="form-label form_label">Responsible<span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select is-invalid text-danger" id="country">
+                                <option class="text-danger" selected>Select</option>
+                                <option>USA</option>
+                                <option>Canada</option>
+                                <option>UK</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row flex-wrap">
+                        <div class="col-4">
+                            <div class="mb-3 position-relative">
+                                <label for="datePickerInput" class="mb-0 form-label form_label">
+                                    Queue For <span class="text-danger">*</span>
+                                </label>
+                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
+                                    alt="date_picker_icon" style="cursor:pointer;" onclick="openDatePicker()">
+                                <input type="text" class="form-control form_text_field" id="datePickerInput"
+                                    placeholder="Date">
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <span class="fs_11_fw_400_c_7575">Time</span>
+                            <select class="form-select form-select-sm" aria-label="Small select example">
+                                <option value="1">10</option>
+                                <option value="2">20</option>
+                                <option value="3">30</option>
+                            </select>
+                        </div>
+
+                        <div class="col-4">
+                            <span class="fs_11_fw_400_c_7575">EST</span>
+                            <select class="form-select form-select-sm" aria-label="Small select example">
+                                <option value="1">AM</option>
+                                <option value="3">PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="them_btn_container ">
+                        <button class="theme_outline_btn">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
+                            to
+                            first</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auction Setup Successfully -->
+    <div class="modal fade" id="refreshModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/images/Supplier Refresh.png" class="mt-4 td_w_150" style="" alt="key">
+                    <p class="main_title_15 mt-2">Password Has Been Sent Successfully</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Entered Refresh -->
+    <div class="modal fade" id="refreshModal_2">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/images/Acution setup.png" class="mt-4 td_w_150" style="" alt="key">
+                    <p class="main_title_15 mt-2">Password Has Been Sent Successfully</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
