@@ -339,14 +339,22 @@
   } */
 
 /* handle first child border */
-.quotes_table th:first-child::after,
-.quotes_table td:first-child::after {
+.quotes_table th:first-child::after{
   content: "";
   width: 1px;
   height: 100%;
   background: #afafaf;
   position: absolute;
   left: -1px;
+  top: 0;
+}
+.quotes_table td:first-child::after {
+  content: "";
+  width: 0.5px;
+  height: 100%;
+  background: #afafaf;
+  position: absolute;
+  left: 0px;
   top: 0;
 }
 
