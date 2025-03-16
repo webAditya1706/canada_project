@@ -345,7 +345,7 @@
   height: 100%;
   background: #afafaf;
   position: absolute;
-  left: -1px;
+  left: 0px;
   top: 0;
 }
 .quotes_table td:first-child::after {
