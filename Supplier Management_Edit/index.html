@@ -32,6 +32,7 @@
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
 
@@ -140,30 +141,30 @@
     <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
         <hr class="mt-5 show_white_hr_line" />
 
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_20" alt="Dashboard_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="Dashboard_active">
         </div>
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_20" alt="Contract_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
 
         </div>
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_20" alt="Auction_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Auction_active">
 
         </div>
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Contract_active.png" alt="Contract_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Contract_active">
 
         </div>
         <hr class="show_white_hr_line mt-2" />
 
 
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/My profile_active.png" alt="Contract_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
 
         </div>
-        <div class="side_bar_menu">
-            <img src="../assets/icons/Nav Icons/Logout_active.png" alt="Contract_active">
+        <div class="side_bar_menu mb-2">
+            <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
 
         </div>
     </div>
@@ -178,7 +179,7 @@
             <div class="menu_container position-static">
                 <div class="menu_parent mb-2">
                     <div class="d-flex align-items-center gap-2">
-                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_20" alt=""> -->
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
                         <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
 
                         <span class="menu_title">Home</span>
@@ -193,7 +194,7 @@
                             <div class="col-auto p-0">
                                 <div class="d-flex align-items-center gap-2">
                                     <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_20" alt="Quotes">
+                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
                                     <span class="menu_title">Qoutes</span>
                                 </div>
                             </div>
@@ -254,14 +255,14 @@
             <div class="menu_parent mb-2">
                 <div class="d-flex align-items-center gap-2">
                     <img src="../assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
-                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" alt=""> -->
+                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
 
                     <span class="menu_title">Home</span>
                 </div>
             </div>
             <div class="menu_parent mb-2">
                 <div class="d-flex align-items-center gap-2">
-                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" alt=""> -->
+                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
                     <img src="../assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
 
                     <span class="menu_title">Logout</span>
@@ -331,13 +332,42 @@
                         </div>
                     </div>
                     <!-- Broker Agreement in Place with Supplier -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement in
                                 Place with Supplier</label>
                             <select class="form-select select_value_text" aria-label="Default select example">
                                 <option class="form_text_field" selected>Yes</option>
                                 <option class="form_text_field" value="1">No</option>
+                            </select>
+                        </div>
+                    </div> -->
+
+
+                    <!-- Broker Agreement in Place with Supplier -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement in
+                                Place with Supplier</label>
+                            <select class="form-select js-example-basic-single mt-5"
+                                aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="AL">Alabama</option>
                             </select>
                         </div>
                     </div>
@@ -832,13 +862,21 @@
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <!-- external script files -->
     <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+       
+    </script>
+
 </body>
 
 </html>

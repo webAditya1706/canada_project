@@ -51,4 +51,16 @@ $("#sliderModal").on("shown.bs.modal", function () {
       });
     }
   });
+
+   // In your Javascript (external .js resource or <script> tag)
+   $(document).ready(function () {
+    $(".js-example-basic-single").select2();
+
+    // Add .form-control to search field when Select2 opens
+    $(".js-example-basic-single").on("select2:open", function () {
+        setTimeout(() => {
+            $(".select2-search__field").addClass("form-control mt-1");
+        }, 0); // Small delay ensures DOM updates before adding class
+    });
+});
   
