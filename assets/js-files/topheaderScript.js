@@ -32,32 +32,3 @@ document.body.onclick = (event) => {
     }
 };
 
-
-// MUI scripts
-// Initialize the first switch component
-const switchElement1 = document.querySelector('#selected-switch-1');
-let isChecked1 = false;
-
-switchElement1.addEventListener('click', function () {
-  isChecked1 = !isChecked1;
-  switchElement1.setAttribute('aria-checked', isChecked1);
-  if (isChecked1) {
-    switchElement1.classList.add('mdc-switch--selected');
-  } else {
-    switchElement1.classList.remove('mdc-switch--selected');
-  }
-});
-
-// Initialize the second switch component
-const switchElement2 = document.querySelector('#selected-switch-2');
-let isChecked2 = false;
-
-switchElement2.addEventListener('click', function () {
-  isChecked2 = !isChecked2;
-  switchElement2.setAttribute('aria-checked', isChecked2);
-  if (isChecked2) {
-    switchElement2.classList.add('mdc-switch--selected');
-  } else {
-    switchElement2.classList.remove('mdc-switch--selected');
-  }
-});

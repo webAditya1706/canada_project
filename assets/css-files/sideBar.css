@@ -137,13 +137,24 @@ aside {
 }
 
  .menu_title {
-  color: #FFF !important;
+  /* color: #FFF !important;
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.28px; */
+
+
+
+  color: #FFF !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 9999;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
 }
 
  .menu_title_active {
@@ -215,8 +226,8 @@ aside {
   height: 100vh;
   top: 0;
   left: -250px;
-  /* background-color: #fff; */
-  background-color: var(--Theme);
+  background-color: #1A5A7E;
+  /* background-color: var(--Theme); */
   transition: left 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -244,8 +255,8 @@ aside {
   position: fixed;
   top: 59px;
   left: 0;
-  /* background-color: #fff; */
-  background-color: var(--Theme);
+  background-color: #1A5A7E;
+  /* background-color: var(--Theme); */
   /* Light gray background */
   overflow-y: auto;
 }

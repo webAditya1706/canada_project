@@ -23,7 +23,7 @@
 .customer_site_btn {
   width: 210px;
   position: absolute;
-  top: 10px;
+  top: 0px;
   right: 0px;
   z-index: 0;
 }
@@ -455,3 +455,22 @@ input::placeholder {
   text-decoration-skip-ink: none;
   color: #ff0000 !important;
 }
+
+
+
+@media (max-width: 992px) { 
+  .customer_site_btn {
+    position: relative; /* or any other preferred mobile positioning */
+    
+  }
+}
+
+/* For screens larger than 992px (lg and above) */
+@media (min-width: 992px) { 
+  .customer_site_btn {
+    position: absolute; /* Change position for larger screens */
+    
+  }
+}
+
+
