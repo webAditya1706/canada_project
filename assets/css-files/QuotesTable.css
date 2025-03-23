@@ -108,7 +108,7 @@
 
 /* position sticky style */
 
-.quotes_table th {
+.quotes_table thead {
   position: sticky !important;
   top: 0;
   z-index: 3;
@@ -838,8 +838,8 @@ td {
   content: "";
   width: 100%;
   height: 2px;
-  /* background: #f1f1f1; */
-  /* background: #afafaf; */
+/*   background: #f1f1f1; */
+  /*   background: #afafaf; */
   position: absolute;
   border-top:1px solid #afafaf;
   left: 0;
