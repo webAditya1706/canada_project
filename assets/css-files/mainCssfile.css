@@ -69,7 +69,10 @@
   background-color: var(--white_bg_color);
   margin: 0px;
   border: 0px;
-  border-color: var(--HR_BG);
+  /* border-color: var(--HR_BG); */
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: var(--Stroke, #E7E7E7);
   z-index: 2;
 }
 
@@ -96,8 +99,8 @@ body::-webkit-scrollbar {
   position: fixed;
   top: 59px;
   left: 0;
-  background-color: #1a5a7e;
-  /* background-color: var(--Theme); */
+  /* background-color: #1a5a7e; */
+  background-color: var(--Theme);
   /* Light gray background */
   overflow-y: auto;
 }
@@ -768,7 +771,7 @@ footer {
 /* Sticky footer styling */
 
 .footer-area {
-  width: calc(100% - 40px);
+  width: calc(100% - 50px);
   margin-left: auto;
 }
 /* Ensure body and html fill the viewport */

@@ -10,8 +10,10 @@
     position: relative;
     padding: 5px 15px;
     border: none;
+    min-width: 100px;
     border-radius: 4px;
     background-color: var(--primary_bg_color);
+    border: 2.5px solid var(--primary_bg_color);
     color: white;
     cursor: pointer;
     overflow: hidden;
@@ -122,6 +124,7 @@
     position: relative;
     padding: 5px 15px;
     border: 1.5px solid var(--Theme);
+    min-width: 100px;
     /* Outline color */
     border-radius: 4px;
     background-color: var(--white_bg_color);

@@ -226,8 +226,8 @@ aside {
   height: 100vh;
   top: 0;
   left: -250px;
-  background-color: #1A5A7E;
-  /* background-color: var(--Theme); */
+  /* background-color: #1A5A7E; */
+  background-color: var(--Theme);
   transition: left 0.3s ease-in-out;
   z-index: 1000;
 }
