@@ -903,7 +903,7 @@ footer {
 }
 
 .select2-results__option--selected {
-  background: red !important;
+  background: var(--primary_bg_color) !important;
   color: #fff;
 }
 
@@ -915,7 +915,7 @@ footer {
   height: 50px;
   display: flex;
   align-items: center;
-}
+}p
 
 .select2-container--default
   .select2-selection--single

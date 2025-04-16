@@ -130,41 +130,18 @@ aside {
   /* Change SVG fill color on hover */
 }
 
-.show_side_bar .menu_parent:hover .menu_title,
-.show_side_bar .menu_parent:hover .menu_title_active {
-  color: #FFF !important;
-  /* Ensures title color changes to red */
-}
-
  .menu_title {
-  /* color: #FFF !important;
+  color: rgba(255, 255, 255, 0.80);
   font-family: Poppins;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -0.28px; */
-
-
-
-  color: #FFF !important;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  z-index: 9999;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.25px;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.28px;
 }
 
- .menu_title_active {
-  color: #007cba;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.28px;
+.active_menu .menu_title{
+  color: #fff;
 }
 
  .sub_menu_parent {
