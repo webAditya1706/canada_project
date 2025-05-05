@@ -995,6 +995,27 @@ thead tr{
   border-bottom: 1px solid #afafaf;
 }
 
+.left_130 td:nth-child(2),
+.left_130 th:nth-child(2) {
+  left: 130px;
+}
+
+.create_1 th:nth-child(2):before{
+  border-right: 0px !important;
+}
+.create_1 th {
+  border-bottom: 1px solid #afafaf !important;
+}
+
+.create_1 th:nth-child(1),
+.create_1 th:nth-child(2),
+.create_1 th:nth-child(11),
+.create_1 th:nth-child(12),
+.create_1 th:nth-child(13) {
+  border-bottom: none !important;
+}
+
+
 
 /* .custom__quote__modal_width .table-responsive{
   max-height: 250px;

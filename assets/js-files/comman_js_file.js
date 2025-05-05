@@ -56,11 +56,20 @@ $("#sliderModal").on("shown.bs.modal", function () {
    $(document).ready(function () {
     $(".js-example-basic-single").select2();
 
-    // Add .form-control to search field when Select2 opens
+    // On dropdown open
     $(".js-example-basic-single").on("select2:open", function () {
         setTimeout(() => {
             $(".select2-search__field").addClass("form-control mt-1");
-        }, 0); // Small delay ensures DOM updates before adding class
+
+            // Add highlight styling
+            $(".select2-selection").addClass("custom-focus");
+        }, 0);
+    });
+
+    // On dropdown close
+    $(".js-example-basic-single").on("select2:close", function () {
+        $(".select2-selection").removeClass("custom-focus");
     });
 });
+
   
