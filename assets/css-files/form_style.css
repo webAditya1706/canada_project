@@ -325,7 +325,7 @@
   width: 100%;
   padding: 8px 38px 8px 12px;
   background-color: #fff;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   border-radius: 4px;
   box-shadow: none;
   cursor: pointer;
@@ -456,21 +456,52 @@ input::placeholder {
   color: #ff0000 !important;
 }
 
+.document_list {
+  width: 100%;
+  background-color: #e9f8ff;
+  max-width: 500px;
+  padding: 5px 0; /* Top and bottom spacing inside scroll area */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  max-height: 60px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Ensures padding is counted in height */
+  scroll-padding: 5px 0; /* Extra hint for smooth scroll snapping */
+}
+
+.document_list_inner {
+  padding: 10px 0; /* Top and bottom spacing for scrollable content */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
-@media (max-width: 992px) { 
+.doc-label {
+  color: #007bba; /* Blue text */
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.check-icon {
+  color: green;
+  font-size: 7px;
+}
+
+@media (max-width: 992px) {
   .customer_site_btn {
     position: relative; /* or any other preferred mobile positioning */
-    
   }
 }
 
 /* For screens larger than 992px (lg and above) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
   .customer_site_btn {
     position: absolute; /* Change position for larger screens */
-    
   }
 }
-
-

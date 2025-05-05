@@ -28,12 +28,45 @@
   --HR_BG: #d6d6d6;
 }
 
+/* scrollbar for every scroller */
+
+/* Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px; /* Optional: horizontal scrollbar */
+  flex-shrink: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba);
+  border-radius: 30px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  /* Manual darkened color */
+  background: #005f94;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* "thin" = smaller scrollbar */
+  scrollbar-color: var(--Theme, #007cba) #f1f1f1;
+}
+
+
+
 :root .black_tic__check .form-check-input:checked[type="checkbox"] {
   background-image: url(https://cdn-icons-png.flaticon.com/512/33/33281.png);
   background-size: 9px;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
 
 .footer_bg {
   background-color: var(--HR_BG);
