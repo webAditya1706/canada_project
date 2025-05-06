@@ -187,7 +187,7 @@
   width: 100%;
   background-color: var(--gray_bg_color);
   border-radius: 2px;
-  padding: 0px 10px;
+  padding: 12px;
 }
 
 .download_doc_pearent {
@@ -239,6 +239,8 @@
   right: 0px;
   left: auto;
   transform: translate(0px) !important;
+  padding: 5px 0px !important;
+  border-color: #ddd !important;
 }
 
 .tag {

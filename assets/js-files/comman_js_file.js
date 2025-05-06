@@ -29,47 +29,45 @@ function openDatePicker() {
 // graph slider jquary code
 // Initialize Slick Slider when the modal opens
 $("#sliderModal").on("shown.bs.modal", function () {
-    if (!$(".slick-slider").hasClass("slick-initialized")) {
-      $(".slick-slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: $(window).width() > 768, // Show arrows only on larger screens
-        dots: $(window).width() <= 768,  // Show dots on mobile screens (<= 768px)
-      });
-    }
-  });
-  
-  // Reinitialize the Slick Slider on window resize
-  $(window).on("resize", function() {
-    if ($(".slick-slider").hasClass("slick-initialized")) {
-      $(".slick-slider").slick('unslick'); // Destroy the previous instance
-      $(".slick-slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: $(window).width() > 768, // Show arrows only on larger screens
-        dots: $(window).width() <= 768,  // Show dots on mobile screens (<= 768px)
-      });
-    }
-  });
-
-   // In your Javascript (external .js resource or <script> tag)
-   $(document).ready(function () {
-    $(".js-example-basic-single").select2();
-
-    // On dropdown open
-    $(".js-example-basic-single").on("select2:open", function () {
-        setTimeout(() => {
-            $(".select2-search__field").addClass("form-control mt-1");
-
-            // Add highlight styling
-            $(".select2-selection").addClass("custom-focus");
-        }, 0);
+  if (!$(".slick-slider").hasClass("slick-initialized")) {
+    $(".slick-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: $(window).width() > 768, // Show arrows only on larger screens
+      dots: $(window).width() <= 768, // Show dots on mobile screens (<= 768px)
     });
-
-    // On dropdown close
-    $(".js-example-basic-single").on("select2:close", function () {
-        $(".select2-selection").removeClass("custom-focus");
-    });
+  }
 });
 
-  
+// Reinitialize the Slick Slider on window resize
+$(window).on("resize", function () {
+  if ($(".slick-slider").hasClass("slick-initialized")) {
+    $(".slick-slider").slick("unslick"); // Destroy the previous instance
+    $(".slick-slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: $(window).width() > 768, // Show arrows only on larger screens
+      dots: $(window).width() <= 768, // Show dots on mobile screens (<= 768px)
+    });
+  }
+});
+
+// In your Javascript (external .js resource or <script> tag)
+$(document).ready(function () {
+  $(".js-example-basic-single").select2();
+
+  // On dropdown open
+  $(".js-example-basic-single").on("select2:open", function () {
+    setTimeout(() => {
+      $(".select2-search__field").addClass("form-control mt-1");
+
+      // Add highlight styling
+      $(".select2-selection").addClass("custom-focus");
+    }, 0);
+  });
+
+  // On dropdown close
+  $(".js-example-basic-single").on("select2:close", function () {
+    $(".select2-selection").removeClass("custom-focus");
+  });
+});

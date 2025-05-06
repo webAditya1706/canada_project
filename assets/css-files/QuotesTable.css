@@ -5,6 +5,30 @@
   background-color: unset; /* Keep sticky column white */
 }
 
+.table_td_text{
+  position: relative;
+}
+
+ .dropdown-menu.show::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 8px;
+  right: -7px;
+  transform: rotate(45deg);
+  z-index: -1;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+table, 
+table * {
+  border-color: #AFAFAF !important;
+}
+
+
 /* Maintain the alternating row colors */
 .quotes_table tbody tr:nth-child(odd) {
   background-color: #f4fff3;
@@ -523,7 +547,7 @@
 }
 
 .table_drop_li_btn svg {
-  margin-right: 8px;
+  margin-right: 6px;
   /* Space between icon and text */
 }
 
