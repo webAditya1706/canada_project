@@ -136,45 +136,54 @@
     </section>
 
     <!-- Side bar -->
-    <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-      <hr class="mt-5 mb-4 show_white_hr_line" />
+    <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
+      <div class="spacer_40"></div>
+      <hr class="show_white_hr_line" />
+      <div class="spacer_40"></div>
 
-      <div class="side_bar_menu pt-0 mb-2">
+      <div class="side_bar_menu pt-0">
         <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
+        <div class="spacer_30"></div>
       </div>
-      <div class="side_bar_menu mb-2">
+      <div class="side_bar_menu">
         <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
+        <div class="spacer_30"></div>
 
       </div>
-      <div class="side_bar_menu mb-2">
+      <div class="side_bar_menu">
         <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Auction_active">
-
+        <div class="spacer_30"></div>
       </div>
-      <div class="side_bar_menu mb-2">
+      <div class="side_bar_menu">
         <img src="../assets/icons/Nav Icons/Contract.png" class="w_24" alt="Contract_active">
-
+        <div class="spacer_30"></div>
       </div>
+
       <hr class="show_white_hr_line my-2" />
+      <div class="spacer_30"></div>
 
-
-      <div class="side_bar_menu mb-2">
+      <div class="side_bar_menu">
         <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="Contract_active">
-
+        <div class="spacer_30"></div>
       </div>
-      <div class="side_bar_menu mb-2">
+      <div class="side_bar_menu">
         <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
-
+        <div class="spacer_30"></div>
       </div>
     </div>
 
     <!-- drawer Sidebar -->
-    <div id="main_sidebar">
+    <div id="main_sidebar" style="margin-top: 10px;">
       <div>
         <div class="d-flex justify-content-center">
           <img src="../assets/logo.png" alt="Logo" class="header_logo" />
         </div>
-        <hr class="side_bar_hr my-5" />
-        <div class="menu_container position-static mb-2">
+
+        <div class="spacer_40"></div>
+        <hr class="side_bar_hr" />
+        <div class="spacer_30"></div>
+
+        <div class="menu_container position-static">
           <div class="menu_parent">
             <div class="d-flex align-items-center gap-2">
               <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
@@ -184,8 +193,9 @@
             </div>
           </div>
         </div>
+        <div class="spacer_18"></div>
 
-        <div class="mx-2 mb-2">
+        <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
             <div type="button" class="btn" data-bs-toggle="dropdown">
               <div class="row flex-row justify-content-between">
@@ -216,8 +226,9 @@
             </div>
           </div>
         </div>
+        <div class="spacer_18"></div>
 
-        <div class="mx-2 mb-2">
+        <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
             <div type="button" class="btn" data-bs-toggle="dropdown">
               <div class="row flex-row justify-content-between">
@@ -248,6 +259,7 @@
             </div>
           </div>
         </div>
+        <div class="spacer_18"></div>
 
         <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
@@ -280,9 +292,12 @@
             </div>
           </div>
         </div>
+        
+        <div class="spacer_30"></div>
+        <hr class="side_bar_hr" />
+        <div class="spacer_35"></div>
 
-        <hr class="side_bar_hr my-4" />
-        <div class="menu_parent mb-2">
+        <div class="menu_parent">
           <div class="d-flex align-items-center gap-2">
             <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
             <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
@@ -290,7 +305,9 @@
             <span class="menu_title">Profile</span>
           </div>
         </div>
-        <div class="menu_parent mb-3">
+        <div class="spacer_12"></div>
+
+        <div class="menu_parent">
           <div class="d-flex align-items-center gap-2">
             <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
             <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
@@ -361,22 +378,14 @@
                   <div class="them_btn_container">
                     <button class="theme_primary_btn btn_ripple_white">Email Text</button>
                   </div>
-                  <!-- <button type="button" class="btn  ">
-                <span class="mdc-button__label">Email Text</span>
-              </button> -->
-                  <!-- <button type="button" class="btn theme_bg_color">
-                <span class="mdc-button__label">Email Text</span>
-              </button> -->
-                  <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#quote_drawer" aria-controls="quote_drawer">
-                    <button class="theme_primary_btn btn_ripple_white">
-                      <img src="../assets/white_search_Icon.png" alt="Search Icon" class="mid_head_search" />
-                    </button>
-                  </div>
-                  <!-- <button type="button" class="btn theme_bg_color" data-bs-toggle="offcanvas" data-bs-target="#quote_drawer"
-                aria-controls="quote_drawer">
-                <img src="../assets/white_search_Icon.png" alt="Search Icon" />
-              </button> -->
+                  <!-- <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#quote_drawer" aria-controls="quote_drawer"> -->
+                    <!-- <button class="theme_primary_btn btn_ripple_white"> -->
+                      <!-- <img src="../assets/white_search_Icon.png" alt="Search Icon" data-bs-toggle="offcanvas" onclick="showFilter();" aria-controls="contracts_drawer" style="cursor: pointer;"> -->
+                      <img src="../assets/icons/Topbar_search_2.png" width="30px" type="button" data-bs-toggle="offcanvas"
+                      data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
+                    <!-- </button> -->
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
@@ -387,10 +396,6 @@
 
         <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer"
           aria-labelledby="quoteDrawerLabel">
-          <!-- <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="quoteDrawerLabel">Drawer Title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div> -->
           <div class="offcanvas-body real_theme_bg">
             <div class="mb-4">
               <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
@@ -720,7 +725,7 @@
                                 </clipPath>
                               </defs>
                             </svg>
-                            
+
 
                             <span>Activity Log</span>
                           </li>
@@ -819,7 +824,7 @@
                                 </clipPath>
                               </defs>
                             </svg>
-                            
+
 
                             <span>Activity Log</span>
                           </li>

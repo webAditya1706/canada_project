@@ -105,11 +105,12 @@ hr {
 }
 
 .show_gray_hr_line {
-  height: 2px !important;
-  background-color: var(--HR_BG);
+  height: 1px !important;
+  background-color: #E7E1E1;
   margin: 0px;
   border: 0px;
   border-color: var(--HR_BG);
+  border-radius: 5px;
 }
 
 .show_white_hr_line {
@@ -991,4 +992,36 @@ footer {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
+}
+
+.spacer_10{
+  height: 10px;
+}
+
+.spacer_12{
+  height: 12px;
+}
+
+.spacer_18{
+  height: 18px;
+}
+
+.spacer_20{
+  height: 20px;
+}
+
+.spacer_30{
+  height: 30px;
+}
+
+.spacer_35{
+  height: 35px;
+}
+
+.spacer_40{
+  height: 40px;
+}
+
+.spacer_60{
+  height: 60px;
 }
