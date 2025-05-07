@@ -225,6 +225,7 @@ table * {
 
 .quotes_table thead tr th:first-child {
   border-right: 0px;
+  border-left: 0px;
 }
 
 .quotes_table thead tr th:nth-last-child(2) {
