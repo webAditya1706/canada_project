@@ -139,7 +139,7 @@
     <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
       <div class="spacer_40"></div>
       <hr class="show_white_hr_line" />
-      <div class="spacer_40"></div>
+      <div class="spacer_30"></div>
 
       <div class="side_bar_menu pt-0">
         <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
@@ -159,7 +159,7 @@
         <div class="spacer_30"></div>
       </div>
 
-      <hr class="show_white_hr_line my-2" />
+      <hr class="show_white_hr_line" />
       <div class="spacer_30"></div>
 
       <div class="side_bar_menu">
@@ -181,7 +181,7 @@
 
         <div class="spacer_40"></div>
         <hr class="side_bar_hr" />
-        <div class="spacer_30"></div>
+        <div class="spacer_20"></div>
 
         <div class="menu_container position-static">
           <div class="menu_parent">
@@ -193,7 +193,7 @@
             </div>
           </div>
         </div>
-        <div class="spacer_18"></div>
+        <div class="spacer_15"></div>
 
         <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
@@ -226,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div class="spacer_18"></div>
+        <div class="spacer_15"></div>
 
         <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
@@ -259,7 +259,7 @@
             </div>
           </div>
         </div>
-        <div class="spacer_18"></div>
+        <div class="spacer_15"></div>
 
         <div class="mx-2">
           <div class="btn-group position-static dropend w-100">
@@ -292,10 +292,10 @@
             </div>
           </div>
         </div>
-        
-        <div class="spacer_30"></div>
+
+        <div class="spacer_24"></div>
         <hr class="side_bar_hr" />
-        <div class="spacer_35"></div>
+        <div class="spacer_20"></div>
 
         <div class="menu_parent">
           <div class="d-flex align-items-center gap-2">
@@ -343,6 +343,8 @@
             </div>
             <div class="col-lg-9 col-md-12 col-12">
               <div class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                <img src="/assets/icons/Activity_Log_1.png" type="button" alt="" srcset="" class="me-2 w_25"
+                  data-bs-target="#queueFollowUPModal" data-bs-toggle="modal">
                 <div class="d-flex justify-content-center align-items-center gap-1">
                   <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
                     <input class="form-check-input mid_head_check" type="checkbox" role="switch"
@@ -378,13 +380,17 @@
                   <div class="them_btn_container">
                     <button class="theme_primary_btn btn_ripple_white">Email Text</button>
                   </div>
+
+                  <div class="mid_head_search">
+                    <img src="../assets/icons/Topbar_search_2.png" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
+                  </div>
                   <!-- <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#quote_drawer" aria-controls="quote_drawer"> -->
-                    <!-- <button class="theme_primary_btn btn_ripple_white"> -->
-                      <!-- <img src="../assets/white_search_Icon.png" alt="Search Icon" data-bs-toggle="offcanvas" onclick="showFilter();" aria-controls="contracts_drawer" style="cursor: pointer;"> -->
-                      <img src="../assets/icons/Topbar_search_2.png" width="30px" type="button" data-bs-toggle="offcanvas"
-                      data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
-                    <!-- </button> -->
+                  <!-- <button class="theme_primary_btn btn_ripple_white"> -->
+                  <!-- <img src="../assets/white_search_Icon.png" alt="Search Icon" data-bs-toggle="offcanvas" onclick="showFilter();" aria-controls="contracts_drawer" style="cursor: pointer;"> -->
+                  
+                  <!-- </button> -->
                   <!-- </div> -->
                 </div>
               </div>
@@ -742,7 +748,7 @@
                     </td>
 
                     <td class="align-middle text-center table_td_text text text-decoration-underline">
-                      <span>21725</span>
+                      <div>21725</div>
                     </td>
                     <td class="align-middle text-center table_td_text">
                       <span>C-002 34 xx</span>
@@ -2065,6 +2071,111 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Queue followUp Modal -->
+  <div class="modal fade" id="queueFollowUPModal">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="h1_title" id="exampleModalToggleLabel">Status</span>
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+            <img src="../assets/icons/cancel.png" alt="">
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="quotes_table with_bg_table td__first_table mb-2">
+            <table class="table table-bordered  m-0">
+              <thead class="thead_bg">
+                <tr>
+                  <th scope="col" class="align-middle td_w_130 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="fs_13_fw_600_1313">Status</span>
+                    </div>
+                  </th>
+
+                  <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                    <div class="d-flex justify-content-center align-items-center gap-2">
+                      <span class="fs_13_fw_600_1313"> About</span>
+                    </div>
+                  </th>
+
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr scope="row" class="tbody_row border_3_green tab_bg_green">
+                  <!-- style="height: 55px" -->
+
+                  <td class="align-middle table_td_text">
+                    <div class="text-center fs_13_fw_500_c_green">Active</div>
+                  </td>
+
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                  </td>
+
+                </tr>
+
+                <tr scope="row" class="tbody_row border_3_gray tab_bg_gray">
+                  <!-- style="height: 55px" -->
+
+                  <td class="align-middle table_td_text">
+                    <div class="text-center fs_13_fw_500_c_gray">Future</div>
+                  </td>
+
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                  </td>
+
+                </tr>
+
+                <tr scope="row" class="tbody_row border_3_blue tab_bg_blue">
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_500_c_blue">Expired-Floating</div>
+                  </td>
+
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_400_c_131313 ">27,596 KWH</div>
+                  </td>
+
+                </tr>
+
+                <tr scope="row" class="tbody_row border_3_orange tab_bg_orange">
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_500_c_orange">Expired-Renewed</div>
+                  </td>
+
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                  </td>
+
+                </tr>
+
+                <tr scope="row" class="tbody_row border_3_red tab_bg_red">
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_500_c_red">Cancelled</div>
+                  </td>
+
+                  <td class="align-middle table_td_text text">
+                    <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <!-- <div class="modal-footer d-flex justify-content-center">
+          <div class="them_btn_container ">
+            <button class="theme_outline_btn">Back</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
   </div>
 
 

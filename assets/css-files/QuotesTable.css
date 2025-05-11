@@ -162,7 +162,7 @@ table * {
   position: sticky;
   left: 0px;
   z-index: 2;
-  background-color: inherit !important;
+  /* background-color: inherit !important; */
   border-right: 0px;
   /* border-left: 1px solid #ddd; */
 }
@@ -179,7 +179,7 @@ table * {
   left: 50px;
   /* Adjust based on the width of the first column */
   z-index: 2;
-  background-color: inherit !important;
+  /* background-color: inherit !important; */
 }
 
 .quotes_table th:nth-child(2) {
@@ -187,6 +187,10 @@ table * {
   left: 50px;
   z-index: 13;
   background-color: #f5f5f5 !important;
+}
+
+.quotes_table th:nth-child(2) {
+  border-right:0px !important;
 }
 
 .sec_td_180 th:nth-child(2), .sec_td_180 td:nth-child(2){
@@ -664,12 +668,13 @@ td {
 }
 
 .quotes_table .form_table th:nth-child(2) {
-  left: 131px;
+  left: 130px;
 }
 
 .quotes_table .form_table td:nth-child(2) {
-  left: 131px;
+  left: 130px;
 }
+
 /* table scrollbar */
 .table_wrapper::-webkit-scrollbar {
   width: 6px; /* Vertical scrollbar width */
@@ -906,8 +911,8 @@ td:last-child::after {
   content: "";
   width: 1px;
   height: 100%;
-  /* border-right: 1px solid #afafaf; */
-  background-color: #afafaf;
+  border-right: 1px solid #afafaf;
+  /* background-color: #afafaf; */
   position: absolute;
   right: 0px;
   top: 0;
@@ -1019,6 +1024,16 @@ thead tr{
   left: 130px;
 }
 
+.left_100 td:nth-child(2),
+.left_100 th:nth-child(2) {
+  left: 100px;
+}
+
+.left_180 td:nth-child(2),
+.left_180 th:nth-child(2) {
+  left: 180px;
+}
+
 .create_1 th:nth-child(2):before{
   border-right: 0px !important;
 }
@@ -1049,4 +1064,36 @@ thead tr{
   .quotes_table td:nth-child(2) {   
     background-color: unset !important;
 }
+}
+
+
+/* no_border_head */
+.quotes_table .no_border_head{
+  position: static !important;
+  border-bottom: 0px;
+
+}
+.no_border_head .create_1{
+  border-bottom-width: 0px !important;
+  position: relative;
+
+}
+
+.no_border_head .create_1 th{
+  position: relative;
+}
+
+.no_border_head .create_1 th::before{
+  border-width: 0px !important;
+
+}
+
+.create_1 th div::before{
+  border-bottom: 0px !important;
+  height: 0px;
+
+}
+
+table caption {
+  caption-side: top;
 }

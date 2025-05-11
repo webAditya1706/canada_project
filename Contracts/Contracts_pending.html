@@ -267,58 +267,22 @@
     <section class="content-area">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center">
-                <div class="col-12 col-md-12 col-lg-3 py-2">
-                    <div class="d-flex align-items-center gap-1">
+                <div class="col-12 col-md-12 col-lg-4 py-2">
+                    <div class="d-flex flex-wrap flex-row align-items-center gap-1">
                         <span class="mid_header_mian_title">Contracts/CRM</span>
                         <!-- select box -->
-
-                        <div class="mid_header_select">
-                            <div class="mdc-select mdc-select--outlined select_white mid_header" id="pagePerRecord">
-                                <div class="mdc-select__anchor" role="button" aria-haspopup="listbox"
-                                    aria-expanded="false" aria-labelledby="dropdown-label">
-                                    <span class="mdc-select__selected-text-container">
-                                        <span id="dropdown-label" class="mdc-select__selected-text">Select an
-                                            option</span>
-                                    </span>
-                                    <span class="mdc-select__dropdown-icon">
-                                        <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
-                                            <polygon class="mdc-select__dropdown-icon-inactive" stroke="none"
-                                                fill-rule="evenodd" points="7 10 12 15 17 10"></polygon>
-                                            <polygon class="mdc-select__dropdown-icon-active" stroke="none"
-                                                fill-rule="evenodd" points="7 15 12 10 17 15"></polygon>
-                                        </svg>
-                                    </span>
-                                    <span class="mdc-notched-outline">
-                                        <span class="mdc-notched-outline__leading"></span>
-                                        <span class="mdc-notched-outline__trailing"></span>
-                                    </span>
-                                </div>
-
-                                <!-- Dropdown options -->
-                                <div class="mdc-select__menu mdc-menu mdc-menu-surface w-100" role="listbox">
-                                    <ul class="mdc-deprecated-list">
-                                        <li class="mdc-deprecated-list-item" role="option" tabindex="0"
-                                            aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Pending</span>
-                                        </li>
-                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Option 2</span>
-                                        </li>
-                                        <li class="mdc-deprecated-list-item" role="option" aria-selected="false">
-                                            <span class="mdc-deprecated-list-item__ripple"></span>
-                                            <span class="mdc-deprecated-list-item__text">Option 3</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="custom-select-container">
+                            <select class="custom-select form-select text_h3">
+                                <option>Active</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-12 col-12">
+                <div class="col-lg-8 col-md-12 col-12">
                     <div
-                        class="d-flex py-2 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                        class="d-flex py-2 pe-3 flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
 
                         <div class="d-flex justify-content-center align-items-center gap-1">
                             <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
@@ -344,13 +308,17 @@
                                     Team's Contracts</label>
                             </div>
                         </div>
+                        <div class="mid_head_search ">
+                            <img src="../assets/icons/Topbar_search_2.png" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
+                        </div>
 
-                        <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
+                        <!-- <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#quote_drawer" aria-controls="quote_drawer">
                             <button class="theme_primary_btn">
                                 <img src="../assets/white_search_Icon.png" alt="Search Icon" class="mid_head_search" />
                             </button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -453,7 +421,7 @@
             </div>
             <!-- apply green_border in plase ofred_green_border ifyou want to get grren border-->
             <div class="table_wrapper quotes_table green_border">
-                <table class="table table-bordered m-0">
+                <table class="table table-bordered m-0 left_100">
                     <thead class="thead_bg">
                         <tr>
                             <th class="td_w_100 td_h_55 table_head_bg align-middle  table_th_text">
