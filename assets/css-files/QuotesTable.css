@@ -1,15 +1,14 @@
-.quotes_table td:nth-child(2) {
+/* .quotes_table td:nth-child(2) {
   position: sticky;
   left: 50px;
   z-index: 2;
-  /* background-color: unset; */
-}
+} */
 
-.table_td_text{
+.table_td_text {
   position: relative;
 }
 
- .dropdown-menu.show::after {
+.dropdown-menu.show::after {
   content: "";
   width: 15px;
   height: 15px;
@@ -23,11 +22,10 @@
   border-top: 1px solid #ddd;
 }
 
-table, 
+table,
 table * {
-  border-color: #AFAFAF !important;
+  border-color: #afafaf !important;
 }
-
 
 /* Maintain the alternating row colors */
 .quotes_table tbody tr:nth-child(odd) {
@@ -37,7 +35,6 @@ table * {
 .quotes_table tbody tr:nth-child(even) {
   background-color: #fffcf4;
 }
-
 
 /* Section Quotes Table Style */
 .quotes_table {
@@ -148,7 +145,7 @@ table * {
   border-left: 1px solid #ddd;
 }
 
-.quotes_table th:last-child {
+.quotes_table.last_column_sticky th:last-child {
   position: sticky !important;
   top: 0;
   right: 0 !important;
@@ -167,37 +164,47 @@ table * {
   /* border-left: 1px solid #ddd; */
 }
 
-.quotes_table td:last-child {
+.quotes_table.last_column_sticky td:last-child {
   position: sticky !important;
   right: 0 !important;
   z-index: 2;
   background-color: inherit !important;
 }
 
-.quotes_table td:nth-child(2) {
+/* .quotes_table td:nth-child(2) {
   position: sticky;
   left: 50px;
-  /* Adjust based on the width of the first column */
   z-index: 2;
   background-color:  inherit !important;
-}
+} */
 
-.quotes_table th:nth-child(2) {
+/* .quotes_table th:nth-child(2) {
   position: sticky !important;
   left: 50px;
   z-index: 13;
   background-color: #f5f5f5 !important;
+} */
+
+.quotes_table th {
+  border-right: 0px !important;
 }
 
-.quotes_table th:nth-child(2) {
-  border-right:0px !important;
+.quotes_table th:first-child::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: inherit;
+  border-right: 1px dashed #afafaf;
+  position: absolute;
+  right: 1px;
+  top: 0;
 }
 
-.sec_td_180 th:nth-child(2), .sec_td_180 td:nth-child(2){
+/* .sec_td_180 th:nth-child(2), .sec_td_180 td:nth-child(2){
   left: 180px;
-}
+} */
 
-.second_left_180 th:nth-child(2){
+/* .second_left_180 th:nth-child(2){
   left: 180px !important;
   border-right: 0px;
 }
@@ -210,7 +217,7 @@ table * {
 }
 .second_td_sticky_none td:nth-child(2) {
   position: static !important;
-}
+} */
 
 .quotes_table td.position-relative {
   position: relative;
@@ -240,12 +247,12 @@ table * {
   border-right: 1px dashed #afafaf;
   /* border-right: 1px dashed #7e7e7e; */
   border-left: 0px;
-  background-color: #f5f5f5 ;
+  background-color: #f5f5f5;
 }
 
 .quotes_table th:last-child {
-  border-right: 0px;
-  border-left: 0px;
+  /* border-right: 0px;
+  border-left: 0px; */
 }
 
 .quotes_table td {
@@ -263,20 +270,104 @@ table * {
 
 .quotes_table tbody tr {
   /* border: 1px dashed #AFAFAF; */
-  border-top: 1px dashed #AFAFAF;
-  border-bottom: 1px dashed #AFAFAF;
+  border-top: 1px dashed #afafaf;
+  border-bottom: 1px dashed #afafaf;
 }
+
+/* style here 12 May start */
 
 .quotes_table tbody tr:last-child {
   border-bottom: 1px solid #afafaf;
 }
 
-.quotes_table td:last-child,
+/* .quotes_table td:last-child,
 .quotes_table th:last-child {
-  /* border-right: 1px solid #ddd; */
+  border-right: 0px solid #ddd;
+} */
+
+.quotes_table th {
+  position: relative;
+}
+.quotes_table th::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed #afafaf;
+  position: absolute;
+  right: 0px;
+  top: 0;
 }
 
-.quotes_table th:first-child::before {
+.quotes_table td {
+  border-right: 0px !important;
+}
+.quotes_table td {
+  position: relative;
+}
+
+.quotes_table td::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed #afafaf;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.quotes_table td:last-child::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  border-right: 1px solid #afafaf;
+  /* background-color: #afafaf; */
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.quotes_table.last_column_sticky tr td:nth-last-child(2)::before,
+.quotes_table.last_column_sticky tr th:nth-last-child(2)::before {
+  content: none;
+}
+
+.quotes_table,
+.quotes_table * {
+  border: none !important;
+  border-collapse: collapse;
+}
+
+.quotes_table td .td_container::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #afafaf;
+  position: absolute;
+  bottom: 1px;
+  left: 0px;
+  right: 0px;
+}
+
+
+.quotes_table tr:last-child td .td_container::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #afafaf;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.quotes_table tbody td {
+  border-bottom: 0px !important;
+}
+
+
+/* style here 12 May end */
+
+/* .quotes_table th:first-child::before {
   content: "";
   width: 2px;
   height: 100%;
@@ -285,13 +376,9 @@ table * {
   position: absolute;
   right: 1px;
   top: 0;
-}
+} */
 
-td{
-  border-bottom: 0px !important;
-}
-
- /* td div::before {
+/* td div::before {
   content: "";
   width: 100%;
   height: 0.5px;
@@ -329,8 +416,8 @@ td{
 
 /* after before style */
 
-.quotes_table th:last-child::before,
-.quotes_table td:last-child::before {
+.quotes_table.last_column_sticky th:last-child::before,
+.quotes_table.last_column_sticky td:last-child::before {
   content: "";
   width: 2px;
   height: 100%;
@@ -347,53 +434,50 @@ td{
 .quotes_table:not(.second_td_sticky_none) td:nth-child(2) {
   border-right: 0px;
 }
-.quotes_table:not(.second_td_sticky_none) td:nth-child(2):before {
+
+/* .quotes_table:not(.second_td_sticky_none) td:nth-child(2):before {
   content: "";
   width: 2px;
   height: 100%;
-  /* background: #f1f1f1; */
   border-right: 1px dashed #afafaf;
   position: absolute;
   z-index: 0;
   right: -1px;
   top: 0;
-}
+} */
 
-.quotes_table:not(.second_td_sticky_none) th:nth-child(2):before {
+/* .quotes_table:not(.second_td_sticky_none) th:nth-child(2):before {
   content: "";
   width: 2px;
   height: 100%;
-  /* background: #f1f1f1; */
   border-right: 1px dashed #afafaf;
   position: absolute;
   z-index: 1;
   right: -1px;
   top: 0;
-}
+} */
 
-.td__first_table:not(.second_td_sticky_none) td:nth-child(2):before {
+/* .td__first_table:not(.second_td_sticky_none) td:nth-child(2):before {
   content: "";
   width: 2px;
   height: 100%;
-  /* background: #f1f1f1; */
   border-right: 0px dashed #afafaf;
   position: absolute;
   z-index: 0;
   right: -1px;
   top: 0;
-}
+} */
 
-.td__first_table:not(.second_td_sticky_none) th:nth-child(2):before {
+/* .td__first_table:not(.second_td_sticky_none) th:nth-child(2):before {
   content: "";
   width: 2px;
   height: 100%;
-  /* background: #f1f1f1; */
   border-right: 0px dashed #afafaf;
   position: absolute;
   z-index: 1;
   right: -1px;
   top: 0;
-}
+} */
 
 .td__first_table {
   width: 100%;
@@ -427,7 +511,7 @@ td{
   } */
 
 /* handle first child border */
-.quotes_table th:first-child::after{
+.quotes_table th:first-child::after {
   content: "";
   width: 1px;
   height: 100%;
@@ -891,10 +975,10 @@ td {
   content: "";
   width: 100%;
   height: 2px;
-/*   background: #f1f1f1; */
+  /*   background: #f1f1f1; */
   /*   background: #afafaf; */
   position: absolute;
-  border-top:1px solid #afafaf;
+  border-top: 1px solid #afafaf;
   left: 0;
   top: 0px;
 }
@@ -922,7 +1006,7 @@ td {
 }
 
  th:last-child::after,
-td:last-child::after {
+ td:last-child::after {
   content: "";
   width: 1px;
   height: 100%;
@@ -932,7 +1016,6 @@ td:last-child::after {
   right: 0px;
   top: 0;
 }
-
 
 /* .quotes_table tbody tr:last-child td::before {
   content: "";
@@ -976,7 +1059,7 @@ td:last-child::after {
   top: 0;
 }
 
-.loding_table th:last-child,
+th:last-child,
 td:last-child {
   border-right: 0px;
 }
@@ -1002,31 +1085,31 @@ td:first-child {
   top: 0;
 }
 
-thead tr{
+thead tr {
   border-style: none;
 }
 
-.green_color{
-  color: #377D22;
+.green_color {
+  color: #377d22;
 }
 
-.gray_color{
+.gray_color {
   color: #757575;
 }
 
-.blue_color{
-  color: #007CBA;
+.blue_color {
+  color: #007cba;
 }
 
-.orange_color{
-  color: #FFB800;
+.orange_color {
+  color: #ffb800;
 }
 
-.red_color{
-  color: #F00;
+.red_color {
+  color: #f00;
 }
 
-.full_colspan_sticky{
+.full_colspan_sticky {
   position: sticky;
   left: 0px;
   border-left: 1px solid #afafaf;
@@ -1049,7 +1132,7 @@ thead tr{
   left: 180px;
 }
 
-.create_1 th:nth-child(2):before{
+.create_1 th:nth-child(2):before {
   border-right: 0px !important;
 }
 .create_1 th {
@@ -1064,12 +1147,9 @@ thead tr{
   border-bottom: none !important;
 }
 
-
-
 /* .custom__quote__modal_width .table-responsive{
   max-height: 250px;
 } */
-
 
 @media (min-width: 1440px) {
   /* .quotes_table td:first-child {   
@@ -1081,34 +1161,39 @@ thead tr{
 } */
 }
 
-
 /* no_border_head */
-.quotes_table .no_border_head{
+.quotes_table .no_border_head {
   position: static !important;
   border-bottom: 0px;
-
 }
-.no_border_head .create_1{
+.no_border_head .create_1 {
   border-bottom-width: 0px !important;
   position: relative;
-
 }
 
-.no_border_head .create_1 th{
+.no_border_head .create_1 th {
   position: relative;
 }
 
-.no_border_head .create_1 th::before{
+.no_border_head .create_1 th::before {
   border-width: 0px !important;
-
 }
 
-.create_1 th div::before{
+.create_1 th div::before {
   border-bottom: 0px !important;
   height: 0px;
-
 }
 
 table caption {
   caption-side: top;
+}
+
+.quotes_table tbody tr:nth-last-child(2) td .dropdown-menu,
+.quotes_table tbody tr:nth-last-child(1) td .dropdown-menu {
+  transform: translate(0, -80px) !important;
+}
+
+.quotes_table tbody tr:nth-last-child(2) td .dropdown-menu.show::after,
+.quotes_table tbody tr:nth-last-child(1) td .dropdown-menu.show::after {
+  bottom: 10px;
 }
