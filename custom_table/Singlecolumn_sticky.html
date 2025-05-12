@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- MUI Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!-- external css files -->
+  <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+  <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+  <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+  <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+  <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+  <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+  <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+  <link rel="stylesheet" href="../assets/css-files/without_sticky_table.css" />
+  <link rel="stylesheet" href="../assets/css-files/main_table.css" />
+
+  <!-- Bootstrap icon -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+    rel="stylesheet" />
+
+  <!-- font faimily -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+       
+    .normaol_table_wrapper {
+        max-height: 90vh;
+        overflow: auto;
+        border: none;
+    }
+
+    .normaol_table_wrapper table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 1400px;
+
+        /* Single solid outer border */
+        border: 1px solid #000;
+    }
+
+    .normaol_table_wrapper th,
+    .normaol_table_wrapper td {
+        /* Dashed inner borders only */
+        border: 1px dashed #bbb;
+        padding: 8px 12px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .normaol_table_wrapper th {
+        background: #f4f4f4;
+        font-weight: bold;
+    }
+
+    .normaol_table_wrapper thead th {
+        background-color: #f4f4f4;
+        font-weight: 600;
+        border-bottom: 1px solid #000 !important;
+        /* Solid bottom border for header */
+    }
+
+    .bg__table tbody tr:nth-child(odd) {
+        background-color: #f4fff3;
+    }
+
+    .bg__table tbody tr:nth-child(even) {
+        background-color: #fffcf4;
+    }
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="normaol_table_wrapper">
+        <table class="bg__table">
+          <thead>
+            <tr>
+              <th style="width: 200px;">Supplier</th>
+              <th></th>
+              <th>Billing Type</th>
+              <th>Request Date</th>
+              <th>Expire After</th>
+              <th>12 Months</th>
+              <th>18 Months</th>
+              <th>24 Months</th>
+              <th>36 Months</th>
+              <th>GRT Incl.</th>
+              <th>GRT Rate</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="supplier-cell">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Engie_logo_2015.svg"
+                    class="supplier-img" alt="Engie">
+                  ENGIE
+                </div>
+              </td>
+              <td><input type="checkbox" checked></td>
+              <td>Dual</td>
+              <td>9/27/24</td>
+              <td class="expired">7/18/24</td>
+              <td><span class="value-box">—</span></td>
+              <td>
+                <div class="value-box">0.12848</div>
+                <div class="pill-red">Expired ⟳</div>
+              </td>
+              <td>
+                <div class="value-box">0.12848</div>
+                <div class="pill-red">Expired ⟳</div>
+              </td>
+              <td><span class="value-box">—</span></td>
+              <td class="dropdown-icon">Yes</td>
+              <td>—</td>
+              <td><span class="icon-eye">👁️</span></td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="supplier-cell">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adera_Energy_logo.png"
+                    class="supplier-img" alt="Adera">
+                  ADERA ENERGY
+                </div>
+              </td>
+              <td><input type="checkbox" checked></td>
+              <td>Single</td>
+              <td>9/27/24</td>
+              <td class="expired">7/18/24</td>
+              <td>
+                <div class="value-box">0.12306</div>
+                <div class="pill-red">Expired ⟳</div>
+              </td>
+              <td><span class="value-box">—</span></td>
+              <td>
+                <div class="value-box">0.12306</div>
+                <div class="pill-red">Expired ⟳</div>
+              </td>
+              <td>
+                <div class="value-box">0.13206</div>
+                <div class="pill-green">⟳</div>
+              </td>
+              <td class="dropdown-icon">Yes</td>
+              <td>—</td>
+              <td><span class="icon-eye">👁️</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

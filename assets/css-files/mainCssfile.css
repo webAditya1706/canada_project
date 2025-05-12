@@ -224,7 +224,9 @@ td:first-child {
 .td_w_110 {
   min-width: 110px !important;
   max-width: 120px !important;
-  /* 110 + 10 */
+  white-space: normal !important; /* allow wrapping */
+  word-break: break-word;         /* break long words */
+
 }
 
 .td_w_120 {
