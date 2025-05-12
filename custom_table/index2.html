@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Solid Border Table</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            padding: 20px;
+            margin: 0;
+            background: #fff;
+        }
+
+        .table-wrapper {
+            max-height: 90vh;
+            overflow: auto;
+            border: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            /* Single solid outer border */
+            border: 1px solid #AFAFAF;
+        }
+
+        th,
+        td {
+            /* Dashed inner borders only */
+            padding: 8px 12px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        
+        td {
+            border: 1px dashed #AFAFAF;
+            min-height: 70px;
+        }
+        /* th{
+            border-bottom: 0px;
+        } */
+/* 
+        thead {
+            position: sticky;
+            top: 0;
+            border-bottom: 0px;
+        }
+
+        thead th::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid #AFAFAF;
+        }
+
+        thead th::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid #AFAFAF;
+        } */
+
+        thead th {
+            background-color: #F7F7F7;
+            font-weight: 600;
+            /* border-bottom: 1px solid #AFAFAF !important; */
+            /* Solid bottom border for header */
+        }
+
+        .bg__table tbody tr:nth-child(odd) {
+            background-color: #f4fff3;
+        }
+
+        .bg__table tbody tr:nth-child(even) {
+            background-color: #fffcf4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="table-wrapper">
+        <table class="bg__table">
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Supplier</th>
+                    <th></th>
+                    <th>Billing Type</th>
+                    <th>Request Date</th>
+                    <th>Expire After</th>
+                    <th>12 Months</th>
+                    <th>18 Months</th>
+                    <th>24 Months</th>
+                    <th>36 Months</th>
+                    <th>GRT Incl.</th>
+                    <th>GRT Rate</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

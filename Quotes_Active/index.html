@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
   <link rel="stylesheet" href="../assets/css-files/other__css.css" />
   <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+  <link rel="stylesheet" href="../assets/css-files/without_sticky_table.css" />
 
   <!-- Bootstrap icon -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
@@ -383,13 +384,13 @@
 
                   <div class="mid_head_search">
                     <img src="../assets/icons/Topbar_search_2.png" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
+                      data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
                   </div>
                   <!-- <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#quote_drawer" aria-controls="quote_drawer"> -->
                   <!-- <button class="theme_primary_btn btn_ripple_white"> -->
                   <!-- <img src="../assets/white_search_Icon.png" alt="Search Icon" data-bs-toggle="offcanvas" onclick="showFilter();" aria-controls="contracts_drawer" style="cursor: pointer;"> -->
-                  
+
                   <!-- </button> -->
                   <!-- </div> -->
                 </div>
@@ -641,7 +642,9 @@
                   <tr scope="row" class="tbody_row">
                     <!-- style="height: 55px" -->
                     <td class="align-middle tb_Id d-flex justify-content-center align-items-center gap-2 td_h_55">
-                      <input type="checkbox" class="form-check-input table_check table_check" checked />
+                      <div>
+                        <input type="checkbox" class="form-check-input table_check table_check" checked />
+                      </div>
                     </td>
 
                     <td class="align-middle table_td_text text text-decoration-underline">
@@ -751,7 +754,10 @@
                       <div>21725</div>
                     </td>
                     <td class="align-middle text-center table_td_text">
-                      <span>C-002 34 xx</span>
+                      <div>
+                        <span>C-002 34 xx</span>
+
+                      </div>
                     </td>
                     <td class="align-middle text-center table_td_text td_w_110">
                       <span>Customer 2</span>
@@ -2074,18 +2080,24 @@
   </div>
 
   <!-- Queue followUp Modal -->
-  <div class="modal fade" id="queueFollowUPModal">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal fade status_modal" id="queueFollowUPModal">
+    <div class="modal-dialog modal-dialog-centered modal-md">
       <div class="modal-content">
         <div class="modal-header">
           <span class="h1_title" id="exampleModalToggleLabel">Status</span>
-          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
             <img src="../assets/icons/cancel.png" alt="">
           </button>
         </div>
+        <hr class="show_gray_hr_line mx-3" />
         <div class="modal-body">
-          <div class="quotes_table with_bg_table td__first_table mb-2">
-            <table class="table table-bordered  m-0">
+         
+          <div class="status_table_wrapper">
+            <table class="bg__table">
+
+              <div class="">
+
+              </div>
               <thead class="thead_bg">
                 <tr>
                   <th scope="col" class="align-middle td_w_130 table_head_bg table_th_text">
@@ -2102,10 +2114,9 @@
 
                 </tr>
               </thead>
-
+                
               <tbody>
                 <tr scope="row" class="tbody_row border_3_green tab_bg_green">
-                  <!-- style="height: 55px" -->
 
                   <td class="align-middle table_td_text">
                     <div class="text-center fs_13_fw_500_c_green">Active</div>
@@ -2118,7 +2129,6 @@
                 </tr>
 
                 <tr scope="row" class="tbody_row border_3_gray tab_bg_gray">
-                  <!-- style="height: 55px" -->
 
                   <td class="align-middle table_td_text">
                     <div class="text-center fs_13_fw_500_c_gray">Future</div>
@@ -2165,7 +2175,7 @@
 
               </tbody>
             </table>
-          </div>
+        </div>
 
         </div>
         <!-- <div class="modal-footer d-flex justify-content-center">

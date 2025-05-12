@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Month Picker with Flatpickr</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 80px;
+      background: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .datepicker-container {
+      text-align: center;
+    }
+
+    #dateInput {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      border-radius: 5px;
+    }
+
+    .custom-month-dropdown {
+      position: relative;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    .dropdown-toggle {
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      background: white;
+      cursor: pointer;
+      border-radius: 5px;
+      min-width: 200px;
+      text-align: left;
+    }
+
+    .month-options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 10;
+      background: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+      display: none;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .month-option {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .month-option:hover {
+      background-color: red;
+      color: white;
+    }
+
+    .month-option.selected {
+      background-color: #007CBA;
+      color: white;
+    }
+
+    /* Optional: Hide Flatpickr native month dropdown */
+    .flatpickr-monthDropdown-months {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+<div class="datepicker-container">
+  <input type="text" id="dateInput" placeholder="Select Date" readonly>
+
+  <div class="custom-month-dropdown">
+    <div class="dropdown-toggle" id="dropdownToggle">Select Month</div>
+    <div class="month-options" id="monthOptions">
+      <!-- Months will be inserted here -->
+    </div>
+  </div>
+</div>
+
+<!-- JS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+<script>
+  const months = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  const monthOptions = document.getElementById("monthOptions");
+  const dropdownToggle = document.getElementById("dropdownToggle");
+
+  let selectedMonthIndex = new Date().getMonth();
+
+  // Flatpickr setup
+  const picker = flatpickr("#dateInput", {
+    dateFormat: "d-m-Y",
+    defaultDate: new Date(),
+    monthSelectorType: "static", // Prevents native month dropdown
+    onReady: function (selectedDates, dateStr, instance) {
+      const monthDropdown = instance.calendarContainer.querySelector(".flatpickr-monthDropdown-months");
+      if (monthDropdown) monthDropdown.style.display = "none";
+      updateSelectedMonth();
+      dropdownToggle.textContent = months[selectedMonthIndex];
+    },
+    onChange: function (selectedDates) {
+      if (selectedDates.length > 0) {
+        selectedMonthIndex = selectedDates[0].getMonth();
+        updateSelectedMonth();
+        dropdownToggle.textContent = months[selectedMonthIndex];
+      }
+    }
+  });
+
+  // Build custom month dropdown
+  months.forEach((month, i) => {
+    const div = document.createElement("div");
+    div.classList.add("month-option");
+    if (i === selectedMonthIndex) div.classList.add("selected");
+    div.textContent = month;
+
+    div.addEventListener("click", () => {
+      selectedMonthIndex = i;
+      updateSelectedMonth();
+      dropdownToggle.textContent = month;
+      monthOptions.style.display = "none";
+
+      const currentDate = picker.selectedDates[0] || new Date();
+      const newDate = new Date(currentDate.getFullYear(), i, currentDate.getDate());
+      picker.setDate(newDate, true);
+    });
+
+    monthOptions.appendChild(div);
+  });
+
+  // Toggle dropdown
+  dropdownToggle.addEventListener("click", () => {
+    monthOptions.style.display = monthOptions.style.display === "block" ? "none" : "block";
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!e.target.closest(".custom-month-dropdown")) {
+      monthOptions.style.display = "none";
+    }
+  });
+
+  // Highlight selected month
+  function updateSelectedMonth() {
+    document.querySelectorAll(".month-option").forEach((opt, idx) => {
+      opt.classList.toggle("selected", idx === selectedMonthIndex);
+    });
+  }
+</script>
+
+</body>
+</html>

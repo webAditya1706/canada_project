@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Single Solid Border Table</title>
+    <style>
+       
+        .normaol_table_wrapper {
+            max-height: 90vh;
+            overflow: auto;
+            border: none;
+        }
+
+        .normaol_table_wrapper table {
+            border-collapse: collapse;
+            width: 100%;
+            min-width: 1400px;
+
+            /* Single solid outer border */
+            border: 1px solid #000;
+        }
+
+        .normaol_table_wrapper th,
+        .normaol_table_wrapper td {
+            /* Dashed inner borders only */
+            border: 1px dashed #bbb;
+            padding: 8px 12px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .normaol_table_wrapper th {
+            background: #f4f4f4;
+            font-weight: bold;
+        }
+
+        .normaol_table_wrapper thead th {
+            background-color: #f4f4f4;
+            font-weight: 600;
+            border-bottom: 1px solid #000 !important;
+            /* Solid bottom border for header */
+        }
+
+        .bg__table tbody tr:nth-child(odd) {
+            background-color: #f4fff3;
+        }
+
+        .bg__table tbody tr:nth-child(even) {
+            background-color: #fffcf4;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="normaol_table_wrapper">
+        <table class="bg__table">
+            <thead>
+                <tr>
+                    <th style="width: 200px;">Supplier</th>
+                    <th></th>
+                    <th>Billing Type</th>
+                    <th>Request Date</th>
+                    <th>Expire After</th>
+                    <th>12 Months</th>
+                    <th>18 Months</th>
+                    <th>24 Months</th>
+                    <th>36 Months</th>
+                    <th>GRT Incl.</th>
+                    <th>GRT Rate</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Engie_logo_2015.svg"
+                                class="supplier-img" alt="Engie">
+                            ENGIE
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Dual</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.12848</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="supplier-cell">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adera_Energy_logo.png"
+                                class="supplier-img" alt="Adera">
+                            ADERA ENERGY
+                        </div>
+                    </td>
+                    <td><input type="checkbox" checked></td>
+                    <td>Single</td>
+                    <td>9/27/24</td>
+                    <td class="expired">7/18/24</td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td><span class="value-box">—</span></td>
+                    <td>
+                        <div class="value-box">0.12306</div>
+                        <div class="pill-red">Expired ⟳</div>
+                    </td>
+                    <td>
+                        <div class="value-box">0.13206</div>
+                        <div class="pill-green">⟳</div>
+                    </td>
+                    <td class="dropdown-icon">Yes</td>
+                    <td>—</td>
+                    <td><span class="icon-eye">👁️</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -52,7 +52,7 @@
         .flatpickr-next-month {
             font-size: 18px !important;
             font-weight: bold;
-            color: #007bff;
+            color: #007CBA;
         }
 
         .flatpickr-prev-month svg,
@@ -83,8 +83,13 @@
 
         /* Selected month style */
         .flatpickr-monthDropdown-months option:checked {
-            background-color: green !important;
+            background-color: #007CBA !important;
             color: white !important;
+
+        }
+
+        option:hover {
+            background-color: red;
         }
     </style>
 </head>
@@ -117,21 +122,26 @@
                         if (monthDropdown) {
                             let options = monthDropdown.children;
 
-                            // Add hover effect using JavaScript
                             for (let option of options) {
+                                // Reset any previous inline styles
+                                option.style.backgroundColor = option.selected ? "#007CBA" : "";
+                                option.style.color = option.selected ? "white" : "";
+
+                                // Hover style
                                 option.addEventListener("mouseenter", function () {
-                                    option.style.backgroundColor = "green"; // Light orange on hover
-                                    option.style.color = "black";
+                                    option.style.backgroundColor = "#007CBA";
+                                    option.style.color = "white";
                                 });
 
                                 option.addEventListener("mouseleave", function () {
-                                    option.style.backgroundColor = ""; // Reset to default
-                                    option.style.color = "";
+                                    option.style.backgroundColor = option.selected ? "#007CBA" : "";
+                                    option.style.color = option.selected ? "white" : "";
                                 });
                             }
                         }
                     }, 50);
                 }
+
             });
         });
     </script>

@@ -634,53 +634,6 @@ input::placeholder {
   line-height: 20px; /* 100% */
 }
 
-.border_3_green.tab_bg_green {
-  background-color: #f4fff3 !important; 
-}
-
-.border_3_gray.tab_bg_gray {
-  background: #ececec !important;
-}
-
-.border_3_blue.tab_bg_blue {
-  background-color: #f3f5ff !important;
-}
-
-.border_3_orange.tab_bg_orange {
-  background-color: #fffcf4 !important;
-}
-
-.border_3_red.tab_bg_red {
-  background-color: #fff5f5 !important;
-}
-
-.border_3_green{
-  border-left-width: 3px !important;
-  border-color: #377D22 !important;
-}
-
-.border_3_gray{
-  border-left-width: 3px !important;
-  border-color: #757575 !important;
-}
-
-.border_3_gray{
-  border-left-width: 3px !important;
-  border-color: #757575 !important;
-}
-.border_3_blue{
-  border-left-width: 3px !important;
-  border-color: #007CBA !important;
-}
-.border_3_orange{
-  border-left-width: 3px !important;
-  border-color: #FFB800 !important;
-}
-.border_3_red{
-  border-left-width: 3px !important;
-  border-color: #F00 !important;
-}
-
 .fs_13_fw_600_1313 {
   font-family: Poppins;
   font-size: 13px !important;

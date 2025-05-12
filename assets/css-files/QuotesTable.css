@@ -2,7 +2,7 @@
   position: sticky;
   left: 50px;
   z-index: 2;
-  background-color: unset; /* Keep sticky column white */
+  /* background-color: unset; */
 }
 
 .table_td_text{
@@ -162,7 +162,7 @@ table * {
   position: sticky;
   left: 0px;
   z-index: 2;
-  /* background-color: inherit !important; */
+  background-color: inherit !important;
   border-right: 0px;
   /* border-left: 1px solid #ddd; */
 }
@@ -179,7 +179,7 @@ table * {
   left: 50px;
   /* Adjust based on the width of the first column */
   z-index: 2;
-  /* background-color: inherit !important; */
+  background-color:  inherit !important;
 }
 
 .quotes_table th:nth-child(2) {
@@ -286,6 +286,20 @@ table * {
   right: 1px;
   top: 0;
 }
+
+td{
+  border-bottom: 0px !important;
+}
+
+ /* td div::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  border-bottom: 1px solid #afafaf;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+} */
 
 .th_check_row tr:first-child th:first-child::before {
   content: none !important;
@@ -423,6 +437,7 @@ table * {
   left: 0px;
   top: 0;
 }
+
 .quotes_table td:first-child::after {
   content: "";
   width: 0.5px;
@@ -1057,13 +1072,13 @@ thead tr{
 
 
 @media (min-width: 1440px) {
-  .quotes_table td:first-child {   
+  /* .quotes_table td:first-child {   
     background-color: unset !important;
   }
 
   .quotes_table td:nth-child(2) {   
     background-color: unset !important;
-}
+} */
 }
 
 
