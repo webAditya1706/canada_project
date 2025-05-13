@@ -260,7 +260,7 @@ input:checked+.mid_header_slider:before {
     font-size: 13px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: normal;
     /* 123.077% */
 }
 
@@ -279,5 +279,5 @@ input:checked+.mid_header_slider:before {
 }
 
 .mid_head_search {
-    width: 20px;
+    /* width: 20px; */
 }

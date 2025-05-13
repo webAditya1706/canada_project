@@ -107,6 +107,11 @@ textarea::-webkit-scrollbar-thumb:hover {
   background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
 }
 
+.form-check.black_tic__check{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .black_tic__check .form-check-input {
   background-color: #fff;
