@@ -277,8 +277,10 @@ td:first-child {
 }
 
 .td_h_55 {
-  height: 65px !important;
-  min-height: 65px !important;
+  /* height: 65px !important;
+  min-height: 65px !important; */
+  height: 55px !important;
+  min-height: 55px !important;
   max-height: auto !important;
 }
 

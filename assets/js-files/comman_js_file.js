@@ -19,6 +19,15 @@ $(document).ready(function () {
   });
 });
 
+
+const changeUI = () => {
+    const elements = $(".vertical_ui"); // This is a jQuery object
+if(!elements)return;
+    // Use jQuery's .toggleClass() method
+    elements.toggleClass("w-100");
+};
+
+
 // Open the datepicker when clicking the icon
 function openDatePicker() {
   console.log("=======clicked");

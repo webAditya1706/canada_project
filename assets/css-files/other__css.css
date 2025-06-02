@@ -116,6 +116,7 @@ textarea::-webkit-scrollbar-thumb:hover {
 .black_tic__check .form-check-input {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.169);
+  margin: 0px;
 }
 
 .black_tic__check .form-check-input:checked {
