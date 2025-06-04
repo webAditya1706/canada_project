@@ -307,14 +307,6 @@ td span {
   background-color: var(--light_gray_bg_color) !important;
 }
 
-.quotes_table tbody tr:nth-child(odd) {
-  background-color: #f4fff3;
-}
-
-.quotes_table tbody tr:nth-child(even) {
-  background-color: #fffcf4;
-}
-
 .no_td_bg tbody tr:nth-child(odd) {
   background-color: #fff !important;
 }

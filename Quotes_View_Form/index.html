@@ -262,7 +262,7 @@
   <!-- bread crumb -->
   <section class="content-area">
     <div class="container-fluid">
-      <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+      <div class="row d-flex g-2 flex-column flex-md-row justify-content-between align-items-center py-2">
         <div class="col-12 col-md-6">
           <div class="d-flex align-items-center gap-3">
             <div class="main_title_15">Quote ID: 21711</div>
@@ -273,11 +273,19 @@
           </div>
         </div>
         <div class="col-12 col-md-6">
+          <div class="d-flex gap-3 justify-content-end align-items-center">
           <div class="d-flex align-items-center justify-content-end gap-3">
             <div class="them_btn_container">
               <button class="theme_outline_btn">Edit Quote</button>
             </div>
           </div>
+          <div class="d-flex align-items-center justify-content-end gap-3">
+            <div class="them_btn_container">
+              <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+            </div>
+          </div>
+          </div>
+          <!--  -->
         </div>
       </div>
     </div>
@@ -295,7 +303,7 @@
             </div>
             <div class="row d-flex">
               <!-- Relationship Manager -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label form_label">Relationship Manager</label>
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
@@ -304,7 +312,7 @@
               </div>
 
               <!-- Commodity -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label form_label">Commodity</label>
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
@@ -313,7 +321,7 @@
               </div>
 
               <!-- Property Type -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label form_label">Property Type</label>
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
@@ -322,7 +330,7 @@
               </div>
 
               <!-- Consolidated Edison -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlInput1" class="form-label form_label">Utility</label>
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
@@ -332,7 +340,7 @@
 
               <!-- Start month -->
 
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3 position-relative">
                   <div class="d-flex justify-content-between align-items-center">
                     <label for="exampleFormControlInput1" class="form-label form_label">Start Month</label>
@@ -344,7 +352,7 @@
                 </div>
               </div>
 
-              <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+              <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                 <div class="m-0 position-relative">                  
                   <img id="date_icon" src="../assets/icons/date_picker_icon.png" class="date_picker_icon m-0"
                   alt="date_picker_icon" style="cursor:pointer;">
@@ -355,7 +363,7 @@
               </div> -->
 
               <!-- Annual volume -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3 position-relative">
                   <div class="d-flex justify-content-between align-items-center">
                     <label for="exampleFormControlInput1" class="form-label form_label">Annual volume</label>
@@ -368,21 +376,23 @@
               </div>
 
               <!-- account field -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3 position-relative">
                   <div class="d-flex justify-content-between align-items-center">
                     <label for="exampleFormControlInput1" class="form-label form_label">Account (s)</label>
                     <label type="button" for="" class="active_text_title_13"> + Add</label>
                   </div>
-                  <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon" alt="search_icon"
-                    style="cursor:pointer;" data-bs-target="#accounts_view_modal" data-bs-toggle="modal">
+                  <button type="button" data-bs-toggle="modal" data-bs-target="#accounts_view_modal" style="background: none; border: none; padding: 0;">
+    <img src="../assets/icons/black_form_search_icon.png" class="date_picker_icon" alt="search_icon" style="cursor:pointer;">
+</button>
+
                   <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
                     placeholder="18,456" value="8,456" readonly>
                 </div>
               </div>
 
               <!-- Due date -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3 position-relative">
                   <div class="d-flex justify-content-between align-items-center">
                     <label for="exampleFormControlInput1" class="form-label form_label">Quote Due Date</label>
@@ -394,7 +404,7 @@
                 </div>
               </div>
 
-              <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                 <div class="mb-3 position-relative">
                   <img id="date_icon_2" src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
                     alt="date_picker_icon" style="cursor:pointer;">
@@ -406,7 +416,7 @@
 
               <!-- upload doc -->
 
-              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                 <div class="d-flex justify-content-start align-items-center gap-2">
                   <label for="upload_doc" class="form-label form_label">Documents</label>
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="10" viewBox="0 0 12 10" fill="none">
@@ -417,7 +427,7 @@
                   <div class="them_btn_container">
                     <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
                       class="theme_primary_btn">Upload</button>
-                  </div>  
+                  </div>
                 </div>
 
                 <div class="row gx-4 document_list mt-1 m-auto">
@@ -451,7 +461,7 @@
               </div>
 
               <!-- text area 1 -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label form_label">Notes <span
                       class="para_text_14">(Viewable to
@@ -462,7 +472,7 @@
               </div>
 
               <!-- text area 2 -->
-              <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin ">
+              <div class="col-12 col-sm-6 col-md-6 col-lg-4 text_area_custom_margin vertical_ui">
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label form_label">RFP Requirement</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"
@@ -531,9 +541,9 @@
   <!-- supplier table -->
   <section class="content-area">
     <div class="container-fluid">
-      <div class="table_wrapper">
-        <div class="quotes_table">
-          <table class="table table-bordered form_table table_res_scrollbar m-0">
+      <!-- <div class="table_wrapper"> -->
+        <div class="table_wrapper quotes_table last_column_sticky">
+          <table class="table table-bordered m-0">
             <thead class="thead_bg">
               <tr>
                 <th scope="col" class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
@@ -1041,7 +1051,7 @@
             </tbody>
           </table>
         </div>
-      </div>
+      <!-- </div> -->
 
       <!-- pagination -->
       <div class="row quotes_pagi align-items-center mt-3">

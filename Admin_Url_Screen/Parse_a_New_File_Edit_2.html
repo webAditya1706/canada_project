@@ -167,7 +167,8 @@
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
@@ -261,6 +262,11 @@
                             </div>
                         </div>
 
+                        <div class="col-6 d-flex align-items-center justify-content-end gap-3">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                            </div>
+                        </div>
                     </div>
                     <hr class="show_gray_hr_line" />
                 </div>
@@ -275,7 +281,7 @@
                             <div class="border rounded px-3 py-2 mb-3 h-100">
                                 <div class="row">
                                     <!-- Matrix Name -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="matrixName" class="form-label form_label">Matrix Name<span
                                                 class="text-danger">*</span></label>
                                         <input type="text" class="form-control form_text_field" id="matrixName"
@@ -283,28 +289,28 @@
                                     </div>
 
                                     <!-- Supplier -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="supplier" class="form-label form_label">Supplier</label>
                                         <input type="text" class="form-control form_text_field" id="supplier"
                                             value="Agera Electric" readonly>
                                     </div>
 
                                     <!-- Good Until Date -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="goodUntilDate" class="form-label form_label">Good Until Date</label>
                                         <input type="text" class="form-control form_text_field" id="goodUntilDate"
                                             value="Upload date plus Plus: 7" readonly>
                                     </div>
 
                                     <!-- Sheet #1 To Parse -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="sheetNumber" class="form-label form_label">Sheet #1 To Parse</label>
                                         <input type="text" class="form-control form_text_field" id="sheetNumber"
                                             value="Matrix" readonly>
                                     </div>
 
                                     <!-- Heading For Daily Matrix Price -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="matrixPriceHeading" class="form-label form_label">Heading For Daily
                                             Matrix Price Available At Row #1</label>
                                         <input type="text" class="form-control form_text_field" id="matrixPriceHeading"
@@ -312,14 +318,14 @@
                                     </div>
 
                                     <!-- File -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="file" class="form-label form_label">File</label>
                                         <input type="text" class="form-control form_text_field" id="file"
                                             value="Agera Electric" readonly>
                                     </div>
 
                                     <!-- Commodity -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="commodity" class="form-label form_label">Commodity</label>
                                         <input type="text" class="form-control form_text_field" id="commodity"
                                             value="Electric" readonly>
@@ -339,7 +345,7 @@
                             <div class="border rounded px-3 py-2 h-100">
                                 <div class="row">
                                     <!-- Start Date -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="startDate" class="form-label form_label">Start Date <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="startDate">
@@ -357,7 +363,7 @@
 
                                 <!-- Service Type 1-->
                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="product" class="form-label form_label">Service Type <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="product">
@@ -366,14 +372,14 @@
                                     </div>
 
                                     <!-- Fixed -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixed" class="form-label form_label">Electric</label>
                                         <input type="text" class="form-control form_text_field" id="fixed"
                                             placeholder="Electric">
                                     </div>
 
                                     <!-- Gas -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixed" class="form-label form_label">Gas</label>
                                         <input type="text" class="form-control form_text_field" id="fixed"
                                             placeholder="Gas">
@@ -382,7 +388,7 @@
 
                                 <!-- Service Type 2-->
                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="product" class="form-label form_label">Service Type <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="product">
@@ -391,14 +397,14 @@
                                     </div>
 
                                     <!-- Fixed -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixed" class="form-label form_label">Electric</label>
                                         <input type="text" class="form-control form_text_field" id="fixed"
                                             placeholder="Electric">
                                     </div>
 
                                     <!-- Gas -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixed" class="form-label form_label">Gas</label>
                                         <input type="text" class="form-control form_text_field" id="fixed"
                                             placeholder="Gas">
@@ -412,7 +418,7 @@
                                 <!-- Standard 1 row -->
                                 <div class="row align-items-end">
                                     <!-- Start Date -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="standard" class="form-label form_label">Start Date <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="standard">
@@ -421,7 +427,7 @@
                                     </div>
 
                                     <!-- LDC -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind50" class="form-label form_label">LDC <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind50">
@@ -430,7 +436,7 @@
                                     </div>
 
                                     <!-- Price Level -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind100" class="form-label form_label">Price Level <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind100">

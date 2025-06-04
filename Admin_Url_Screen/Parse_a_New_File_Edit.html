@@ -167,7 +167,8 @@
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
@@ -249,7 +250,7 @@
             <section class="">
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-3">
-                        <div class="col-6">
+                        <div class="col-12 col-md-6">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="main_title_15">Miscellaneous Setup</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
@@ -261,6 +262,11 @@
                             </div>
                         </div>
 
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-end gap-3">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                            </div>
+                        </div>
                     </div>
                     <hr class="show_gray_hr_line" />
                 </div>
@@ -275,7 +281,7 @@
                             <div class="border rounded px-3 py-2 mb-3 h-100">
                                 <div class="row">
                                     <!-- Matrix Name -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3  vertical_ui">
                                         <label for="matrixName" class="form-label form_label">Matrix Name<span
                                                 class="text-danger">*</span></label>
                                         <input type="text" class="form-control form_text_field" id="matrixName"
@@ -283,28 +289,28 @@
                                     </div>
 
                                     <!-- Supplier -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="supplier" class="form-label form_label">Supplier</label>
                                         <input type="text" class="form-control form_text_field" id="supplier"
                                             value="Agera Electric" readonly>
                                     </div>
 
                                     <!-- Good Until Date -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="goodUntilDate" class="form-label form_label">Good Until Date</label>
                                         <input type="text" class="form-control form_text_field" id="goodUntilDate"
                                             value="Upload date plus Plus: 7" readonly>
                                     </div>
 
                                     <!-- Sheet #1 To Parse -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="sheetNumber" class="form-label form_label">Sheet #1 To Parse</label>
                                         <input type="text" class="form-control form_text_field" id="sheetNumber"
                                             value="Matrix" readonly>
                                     </div>
 
                                     <!-- Heading For Daily Matrix Price -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="matrixPriceHeading" class="form-label form_label">Heading For Daily
                                             Matrix Price Available At Row #1</label>
                                         <input type="text" class="form-control form_text_field" id="matrixPriceHeading"
@@ -312,14 +318,14 @@
                                     </div>
 
                                     <!-- File -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="file" class="form-label form_label">File</label>
                                         <input type="text" class="form-control form_text_field" id="file"
                                             value="Agera Electric" readonly>
                                     </div>
 
                                     <!-- Commodity -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="commodity" class="form-label form_label">Commodity</label>
                                         <input type="text" class="form-control form_text_field" id="commodity"
                                             value="Electric" readonly>
@@ -339,7 +345,7 @@
                             <div class="border rounded px-3 py-2 h-100">
                                 <div class="row">
                                     <!-- Start Date -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="startDate" class="form-label form_label">Start Date <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="startDate">
@@ -351,7 +357,7 @@
                                     </div>
 
                                     <!-- Term -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="term" class="form-label form_label">Term <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="term">
@@ -360,7 +366,7 @@
                                     </div>
 
                                     <!-- State -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="state" class="form-label form_label">State <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="state">
@@ -369,7 +375,7 @@
                                     </div>
 
                                     <!-- LDC -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="ldc" class="form-label form_label">LDC <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="ldc">
@@ -378,7 +384,7 @@
                                     </div>
 
                                     <!-- Zone -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="zone" class="form-label form_label">Zone <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="zone">
@@ -394,7 +400,7 @@
                                 <!-- Product -->
                                 <div class="row">
                                     <div>
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                             <label for="product" class="form-label form_label">Product <span
                                                     class="text-danger">*</span></label>
                                             <select class="form-select select_value_text" id="product">
@@ -404,46 +410,46 @@
                                     </div>
 
                                     <!-- Fixed -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixed" class="form-label form_label">Fixed</label>
                                         <input type="text" class="form-control form_text_field" id="fixed" value="FFR">
                                     </div>
 
                                     <!-- LMP Adder -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="lmpAdder" class="form-label form_label">LMP Adder</label>
                                         <input type="text" class="form-control form_text_field" id="lmpAdder">
                                     </div>
 
                                     <!-- Fixed Price Energy Only -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixedPrice" class="form-label form_label">Fixed Price Energy
                                             Only</label>
                                         <input type="text" class="form-control form_text_field" id="fixedPrice">
                                     </div>
 
                                     <!-- Variable -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="variable" class="form-label form_label">Variable</label>
                                         <input type="text" class="form-control form_text_field" id="variable"
                                             value="Flex">
                                     </div>
 
                                     <!-- NYMEX -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="nymex" class="form-label form_label">NYMEX</label>
                                         <input type="text" class="form-control form_text_field" id="nymex">
                                     </div>
 
                                     <!-- Fixed Price With PT Congest -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="fixedPT" class="form-label form_label">Fixed Price With PT
                                             Congest</label>
                                         <input type="text" class="form-control form_text_field" id="fixedPT">
                                     </div>
 
                                     <!-- Block & Index -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="blockIndex" class="form-label form_label">Block & Index</label>
                                         <input type="text" class="form-control form_text_field" id="blockIndex">
                                     </div>
@@ -454,7 +460,7 @@
                                 <!-- Standard 1 row -->
                                 <div class="row align-items-end">
                                     <!-- Standard -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="standard" class="form-label form_label">Standard <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="standard">
@@ -463,14 +469,14 @@
                                     </div>
 
                                     <!-- 50% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <select class="form-select select_value_text" id="wind50">
                                             <option selected>Dual</option>
                                         </select>
                                     </div>
 
                                     <!-- 50% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind50" class="form-label form_label">50% Wind <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind50">
@@ -479,7 +485,7 @@
                                     </div>
 
                                     <!-- 100% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind100" class="form-label form_label">100% Wind <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind100">
@@ -515,7 +521,7 @@
                                 <!-- Standard 2 row -->
                                 <div class="row align-items-end">
                                     <!-- Standard -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="standard" class="form-label form_label">Standard <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="standard">
@@ -524,14 +530,14 @@
                                     </div>
 
                                     <!-- 50% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <select class="form-select select_value_text" id="wind50">
                                             <option selected>Dual</option>
                                         </select>
                                     </div>
 
                                     <!-- 50% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind50" class="form-label form_label">50% Wind <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind50">
@@ -540,7 +546,7 @@
                                     </div>
 
                                     <!-- 100% Wind -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="wind100" class="form-label form_label">100% Wind <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind100">
@@ -575,7 +581,7 @@
 
                                 <!-- row -->
                                 <div class="row">
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                         <label for="standard" class="form-label form_label">Load Profile <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="standard">
@@ -583,7 +589,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                         <label for="standard" class="form-label form_label">Load Profile <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="standard">

@@ -1,3 +1,10 @@
+.form-select,
+.form-control{
+  height: 40px;
+}
+textarea.form-control{
+  height: auto;
+}
 .date_picker_icon {
   width: 24px;
   height: 24px;
@@ -461,7 +468,7 @@ input::placeholder {
 .document_list {
   width: 100%;
   background-color: #e9f8ff;
-  max-width: 500px;
+  /* max-width: 500px; */
   padding: 5px 0; /* Top and bottom spacing inside scroll area */
   display: flex;
   justify-content: space-between;

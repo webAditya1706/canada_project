@@ -188,7 +188,8 @@
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
@@ -282,6 +283,13 @@
                                 <div class="active_text_title_14">Edit</div>
                             </div>
                         </div>
+
+                        <div class="col-6 d-flex align-items-center justify-content-end gap-3">
+                            <div class="them_btn_container">
+                                <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -296,7 +304,7 @@
                                     <!-- first form row -->
                                     <div class="row">
                                         <!-- Supplier Company -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Supplier Company</label>
@@ -307,7 +315,7 @@
                                         </div>
 
                                         <!-- State -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">
                                                     Address<span class="text-danger">*</span></label>
@@ -318,7 +326,7 @@
                                         </div>
 
                                         <!-- Utility -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Address Line 2 <span
@@ -329,7 +337,7 @@
                                         </div>
 
                                         <!-- Electric -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Phone <span
@@ -340,7 +348,7 @@
                                         </div>
 
                                         <!-- NJ Sales Tax Rate -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="position-relative">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <label for="exampleFormControlInput1"
@@ -353,7 +361,7 @@
                                         </div>
 
                                         <!-- upload doc -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                             <div class="d-flex justify-content-start align-items-center gap-2">
                                                 <label for="upload_doc" class="form-label form_label">Upload Supplier
                                                     Logo</label>
@@ -369,7 +377,7 @@
                                         </div>
 
                                         <!-- Supplier Bio  -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Supplier Bio <span
@@ -591,6 +599,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const changeUI = () => {
+            const element = document.querySelector(".vertical_ui"); // Gets the first element with this class
+
+            if (element) { // Check if an element was found
+                if (element.classList.contains("w-100")) {
+                    element.classList.remove("w-100");
+                } else {
+                    element.classList.add("w-100");
+                }
+            }
+        };
+    </script>
 </body>
 
 </html>

@@ -4,9 +4,25 @@
   z-index: 2;
 } */
 
+
 .table_td_text {
   position: relative;
 }
+
+
+.quotes_table.bg__table tbody tr:nth-child(odd) {
+  background-color: #f4fff3;
+}
+
+.quotes_table.bg__table tbody tr:nth-child(even) {
+  background-color: #fffcf4;
+}
+
+
+.quotes_table tbody tr {
+  background-color: #fff;
+}
+
 
 .dropdown-menu.show::after {
   content: "";
@@ -27,14 +43,6 @@ table * {
   border-color: #afafaf !important;
 }
 
-/* Maintain the alternating row colors */
-.quotes_table tbody tr:nth-child(odd) {
-  background-color: #f4fff3;
-}
-
-.quotes_table tbody tr:nth-child(even) {
-  background-color: #fffcf4;
-}
 
 /* Section Quotes Table Style */
 .quotes_table {
@@ -720,6 +728,7 @@ td {
 
 .quotes_pagi select {
   width: 60px;
+  height: 25px;
   color: #757575;
   font-family: Poppins;
   font-size: 12px;

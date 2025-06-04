@@ -188,7 +188,8 @@
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
@@ -271,7 +272,7 @@
             <section class="">
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-2">
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="main_title_15">Supplier Management</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
@@ -283,7 +284,7 @@
 
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-md-6">
                             <div class="d-flex align-items-center justify-content-end gap-3">
                                 <div
                                     class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
@@ -299,6 +300,11 @@
                                         id="flexSwitchCheckDefault" checked>
                                     <label class="form-check-label menu_font_style"
                                         for="flexSwitchCheckDefault">Complete</label>
+                                </div>
+                                <div class="d-flex align-items-center justify-content-end gap-3">
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +323,7 @@
                                     <!-- first form row -->
                                     <div class="row">
                                         <!-- Supplier Company -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Supplier Company</label>
@@ -328,7 +334,7 @@
                                         </div>
 
                                         <!-- State -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">
                                                     State <span class="text-danger">*</span></label>
@@ -342,7 +348,7 @@
                                         </div>
 
                                         <!-- Utility -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Utility <span
@@ -357,7 +363,7 @@
                                         </div>
 
                                         <!-- Electric -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1"
                                                     class="form-label form_label">Electric <span
@@ -372,7 +378,7 @@
                                         </div>
 
                                         <!-- Gas -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui">
                                             <div class="mb-3">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">Gas
                                                     <span class="text-danger">*</span></label>
@@ -392,7 +398,7 @@
 
                                     <div class="row">
                                         <div class="col-12 mb-4"><span class="sub_title_13">Default Values</span></div>
-                                        <div class="col-12 col-md-6">
+                                        <div class="col-12 col-md-6 vertical_ui">
                                             <div class="row">
                                                 <div class="col-12 mb-2"><span class="active_text_title_14">Matrix
                                                         Electric</span></div>
@@ -458,7 +464,7 @@
 
                                         </div>
 
-                                        <div class="col-12 col-md-6">
+                                        <div class="col-12 col-md-6 vertical_ui">
                                             <div class="row">
                                                 <div class="col-12 mb-2"><span class="active_text_title_14">Matrix
                                                         Electric</span></div>
@@ -526,7 +532,7 @@
                                     </div>
                                     <!-- third row -->
                                     <div class="row">
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <div class="position-relative">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <label for="exampleFormControlInput1"
@@ -540,7 +546,7 @@
                                         </div>
 
                                         <!-- Matrix include GRT for single bill -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui  mb-3">
                                             <div class="">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">
                                                     Matrix include GRT for single bill <span
@@ -555,7 +561,7 @@
                                         </div>
 
                                         <!-- Matrix include GRT for Dual bill -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <div class="">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">
                                                     Matrix include GRT for Dual bill <span
@@ -570,7 +576,7 @@
                                         </div>
 
                                         <!-- Matrix Include SUT -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <div class="">
                                                 <label for="exampleFormControlInput1" class="form-label form_label">
                                                     Matrix Include SUT <span class="text-danger">*</span></label>
@@ -584,7 +590,7 @@
                                         </div>
 
                                         <!-- Minimum Load Factor for matrix deals -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <div class="position-relative">
                                                 <div class="d-flex justify-content-between align-items-center">
                                                     <label for="exampleFormControlInput1"
@@ -604,7 +610,7 @@
                                     <div class="row">
                                         <div class="col-12 sub_title_13 mb-4">Load Factor Tier Set Up</div>
                                         <!--  -->
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 vertical_ui">
                                             <div class="col-12 active_text_title_14">Load Factor tier 1</div>
                                             <div class="row mt-3 mb-3">
                                                 <div class="col-6">
@@ -632,7 +638,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 vertical_ui">
                                             <div class="col-12 active_text_title_14">Load Factor tier 2</div>
                                             <div class="row mt-3 mb-3">
                                                 <div class="col-6">
@@ -660,7 +666,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 vertical_ui">
                                             <div class="col-12 active_text_title_14">Load Factor tier 3</div>
                                             <div class="row mt-3 mb-3">
                                                 <div class="col-6">
@@ -688,7 +694,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 vertical_ui">
                                             <div class="col-12 active_text_title_14">Load Factor tier 4</div>
                                             <div class="row mt-3 mb-3">
                                                 <div class="col-6">
@@ -716,7 +722,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                                        <div class="col-12 col-md-6 col-lg-4 col-xl-3 vertical_ui">
                                             <div class="col-12 active_text_title_14">Load Factor tier 5</div>
                                             <div class="row mt-3 mb-3">
                                                 <div class="col-6">
@@ -749,7 +755,7 @@
                                     <!-- Sixth form row -->
                                     <div class="row mt-4">
 
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">Electric
                                                 price Format</label>
                                             <select class="form-select select_value_text w-100"
@@ -760,7 +766,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">Gas
                                                 price Format</label>
                                             <select class="form-select select_value_text w-100"
@@ -771,7 +777,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">Gas Unit
                                                 of measure</label>
                                             <select class="form-select select_value_text w-100"
@@ -782,7 +788,7 @@
                                             </select>
                                         </div>
 
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  vertical_ui mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">Supplier
                                                 Utility code</label>
                                             <select class="form-select select_value_text w-100"

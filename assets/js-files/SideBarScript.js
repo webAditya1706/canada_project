@@ -20,3 +20,18 @@ document.addEventListener('click', function (event) {
         overlay1.style.display = 'none';
     }
 });
+
+
+
+// vertically UI
+const changeUI = () => {
+    const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
+if(!elements) return;
+    elements.forEach(element => {
+        if (element.classList.contains("w-100")) {
+            element.classList.remove("w-100");
+        } else {
+            element.classList.add("w-100");
+        }
+    });
+};
