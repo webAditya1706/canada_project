@@ -271,8 +271,8 @@
             <!-- bread crumb -->
             <section class="">
                 <div class="container-fluid">
-                    <div class="row d-flex justify-content-between align-items-center py-2">
-                        <div class="col-6">
+                    <div class="row d-flex justify-content-between align-items-center my-2">
+                        <div class="col-md-6">
                             <div class="d-flex align-items-center gap-3">
                                 <div class="main_title_15">Supplier Management</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
@@ -284,8 +284,8 @@
                             </div>
                         </div>
 
-                        <div class="col-6 d-flex align-items-center justify-content-end gap-3">
-                            <div class="them_btn_container">
+                        <div class="col-md-6 d-flex align-items-center justify-content-end gap-3 d-none d-sm-block ">
+                            <div class="them_btn_container d-flex justify-content-end">
                                 <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
                             </div>
                         </div>
@@ -304,87 +304,74 @@
                                     <!-- first form row -->
                                     <div class="row">
                                         <!-- Supplier Company -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Supplier Company</label>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="Agera Energy"
-                                                    value="1431 test company">
-                                            </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Supplier
+                                                Company</label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Agera Energy"
+                                                value="1431 test company">
                                         </div>
 
                                         <!-- State -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1" class="form-label form_label">
-                                                    Address<span class="text-danger">*</span></label>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="Alabama"
-                                                    value="Western street">
-                                            </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">
+                                                Address<span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Alabama"
+                                                value="Western street">
                                         </div>
 
                                         <!-- Utility -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Address Line 2 <span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="" value="">
-                                            </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Address
+                                                Line 2 <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="" value="">
                                         </div>
 
                                         <!-- Electric -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Phone <span
-                                                        class="text-danger">*</span></label>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="Yes" value="4646-444444">
-                                            </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Phone
+                                                <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control form_text_field"
+                                                id="exampleFormControlInput1" placeholder="Yes" value="4646-444444">
                                         </div>
 
                                         <!-- NJ Sales Tax Rate -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="position-relative">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                    <label for="exampleFormControlInput1"
-                                                        class="form-label form_label">NJ Sales Tax Rate</label>
-                                                    <span class="form_unit_text">%</span>
-                                                </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3  mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">NJ
+                                                Sales Tax Rate</label>
+                                            <div class="w-100 verti_div position-relative">
+                                                <span class="form_unit_text">%</span>
                                                 <input type="text" class="form-control form_text_field"
                                                     id="exampleFormControlInput1" placeholder="" value="1.0">
                                             </div>
                                         </div>
 
                                         <!-- upload doc -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
-                                            <div class="d-flex justify-content-start align-items-center gap-2">
-                                                <label for="upload_doc" class="form-label form_label">Upload Supplier
-                                                    Logo</label>
-                                            </div>
-                                            <div class="border rounded d-flex justify-content-end pe-2">
-                                                <div class="them_btn_container">
-                                                    <button type="button" data-bs-target="#upload_download_modal"
-                                                        data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 mb-3 vertical_ui">
+                                            <label for="upload_doc" class="form-label form_label">Upload Supplier
+                                                Logo</label>
+                                            <div class="w-100 verti_div">
+                                                <div class="border rounded d-flex justify-content-end pe-2">
+                                                    <div class="them_btn_container">
+                                                        <button type="button" data-bs-target="#upload_download_modal"
+                                                            data-bs-toggle="modal"
+                                                            class="theme_primary_btn">Upload</button>
+                                                    </div>
                                                 </div>
+                                                <span class="fs_9_fw_400_c_757575">Minimum Logo dimensions : 130 pix X
+                                                    26
+                                                    pix</span>
                                             </div>
-                                            <span class="fs_9_fw_400_c_757575">Minimum Logo dimensions : 130 pix X 26
-                                                pix</span>
                                         </div>
 
                                         <!-- Supplier Bio  -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 vertical_ui">
-                                            <div class="mb-3">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Supplier Bio <span
-                                                        class="text-danger">*</span></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                                    placeholder="0.0">ABC DEFG</textarea>
-                                            </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                            <label for="exampleFormControlInput1" class="form-label form_label">Supplier
+                                                Bio <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                                placeholder="0.0">ABC DEFG</textarea>
                                         </div>
 
                                     </div>
@@ -396,7 +383,7 @@
                                         <div class="col-12">
                                             <!-- Row 1 -->
                                             <div class="row">
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Allow to Generate Contract for
                                                         Matrix <span class="text-danger">*</span></label>
@@ -408,7 +395,7 @@
                                                     </select>
                                                 </div>
                                                 <!-- Allow to Generate Contract for Custom -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Allow to Generate Contract for
                                                         Custom<span class="text-danger">*</span></label>
@@ -420,7 +407,7 @@
                                                     </select>
                                                 </div>
 
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Gross up commission for SUT<span
                                                             class="text-danger">*</span></label>
@@ -432,7 +419,7 @@
                                                     </select>
                                                 </div>
 
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Gross up commission for GRT <span
                                                             class="text-danger">*</span></label>
@@ -444,7 +431,7 @@
                                                     </select>
                                                 </div>
 
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Gross up commission for POR <span
                                                             class="text-danger">*</span></label>
@@ -467,7 +454,7 @@
                                         <div class="col-12">
                                             <!-- Row 1 -->
                                             <div class="row">
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">Start Date Format <span
                                                             class="text-danger">*</span></label>
@@ -479,7 +466,7 @@
                                                     </select>
                                                 </div>
                                                 <!-- End Date Format -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3">
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label form_label">End Date Format</label>
                                                     <select class="form-select select_value_text w-100"
@@ -491,60 +478,50 @@
                                                 </div>
 
                                                 <!-- Addittional Account sheet After -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Addittional Account sheet
-                                                            After</label>
-                                                        <input type="text" class="form-control form_text_field"
-                                                            id="exampleFormControlInput1" placeholder="" value="1">
-                                                    </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Addittional Account sheet
+                                                        After</label>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder="" value="1">
                                                 </div>
 
                                                 <!-- Addittional Account sheet After  -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Addittional Account sheet
-                                                            After <span class="text-danger">*</span></label>
-                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                            rows="3" placeholder="0.0">ABC DEFG</textarea>
-                                                    </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Addittional Account sheet
+                                                        After <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                        rows="3" placeholder="0.0">ABC DEFG</textarea>
                                                 </div>
 
                                                 <!-- Supplier code for Single billing -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Supplier code for Single
-                                                            billing</label>
-                                                        <input type="text" class="form-control form_text_field"
-                                                            id="exampleFormControlInput1" placeholder=""
-                                                            value="Single billing">
-                                                    </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Supplier code for Single
+                                                        billing</label>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder=""
+                                                        value="Single billing">
                                                 </div>
 
                                                 <!-- Supplier code for Dual billing -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Supplier code for Dual
-                                                            billing</label>
-                                                        <input type="text" class="form-control form_text_field"
-                                                            id="exampleFormControlInput1" placeholder=""
-                                                            value="Dual billing">
-                                                    </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Supplier code for Dual
+                                                        billing</label>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder=""
+                                                        value="Dual billing">
                                                 </div>
 
                                                 <!-- Maximum Digits After the Decimal -->
-                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                                                    <div class="mb-3">
-                                                        <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Maximum Digits After the
-                                                            Decimal</label>
-                                                        <input type="text" class="form-control form_text_field"
-                                                            id="exampleFormControlInput1" placeholder="" value="">
-                                                    </div>
+                                                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-3   vertical_ui">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Maximum Digits After the
+                                                        Decimal</label>
+                                                    <input type="text" class="form-control form_text_field"
+                                                        id="exampleFormControlInput1" placeholder="" value="">
                                                 </div>
 
                                             </div>
@@ -600,19 +577,6 @@
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        const changeUI = () => {
-            const element = document.querySelector(".vertical_ui"); // Gets the first element with this class
-
-            if (element) { // Check if an element was found
-                if (element.classList.contains("w-100")) {
-                    element.classList.remove("w-100");
-                } else {
-                    element.classList.add("w-100");
-                }
-            }
-        };
-    </script>
 </body>
 
 </html>

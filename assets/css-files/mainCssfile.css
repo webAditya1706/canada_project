@@ -64,6 +64,50 @@
   background-position: center;
 }
 
+/* verticall UI design start */
+/* Vertical UI design start */
+.vertical_ui_design {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Only direct child labels */
+.vertical_ui_design > label {
+  width: 20%;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Only direct child inputs */
+.vertical_ui_design > input {
+  width: 25%;
+}
+
+
+.vertical_ui_design > .vertical_label{
+  width: 20% !important;
+}
+
+
+.vertical_ui_design > .verti_row{
+  width: 22% !important;
+}
+
+.vertical_ui_design > .verti_div{
+  width: 25% !important;
+}
+.vertical_ui_design > textarea{
+  width: 25% !important;
+}
+.vertical_ui_design > select{
+  width: 25% !important;
+}
+
+/* verticall UI design End */
+
 .footer_bg {
   background-color: var(--HR_BG);
 }
@@ -225,8 +269,7 @@ td:first-child {
   min-width: 110px !important;
   max-width: 120px !important;
   white-space: normal !important; /* allow wrapping */
-  word-break: break-word;         /* break long words */
-
+  word-break: break-word; /* break long words */
 }
 
 .td_w_120 {
@@ -967,7 +1010,7 @@ footer {
   height: 30px !important;
 }
 
-.mid_head_search img{
+.mid_head_search img {
   width: 34px;
 }
 

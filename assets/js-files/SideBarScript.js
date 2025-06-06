@@ -28,10 +28,10 @@ const changeUI = () => {
     const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
 if(!elements) return;
     elements.forEach(element => {
-        if (element.classList.contains("w-100")) {
-            element.classList.remove("w-100");
+        if (element.classList.contains("vertical_ui_design")) {
+            element.classList.remove("vertical_ui_design");
         } else {
-            element.classList.add("w-100");
+            element.classList.add("vertical_ui_design");
         }
     });
 };
