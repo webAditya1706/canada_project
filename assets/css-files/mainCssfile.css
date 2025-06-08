@@ -84,6 +84,7 @@
 /* Only direct child inputs */
 .vertical_ui_design > input {
   width: 25%;
+  min-width: 250px;
 }
 
 
@@ -98,12 +99,17 @@
 
 .vertical_ui_design > .verti_div{
   width: 25% !important;
+  min-width: 250px;
 }
 .vertical_ui_design > textarea{
   width: 25% !important;
+  min-width: 250px;
+
 }
 .vertical_ui_design > select{
   width: 25% !important;
+  min-width: 250px;
+
 }
 
 /* verticall UI design End */
