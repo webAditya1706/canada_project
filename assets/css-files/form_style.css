@@ -1,8 +1,8 @@
 .form-select,
-.form-control{
+.form-control {
   height: 40px;
 }
-textarea.form-control{
+textarea.form-control {
   height: auto;
 }
 .date_picker_icon {
@@ -294,7 +294,7 @@ textarea.form-control{
   font-size: 26px;
   position: absolute;
   line-height: 0px;
-  bottom: 4px;
+  top: 6px;
   right: 5px;
   z-index: 2;
 }
@@ -490,7 +490,6 @@ input::placeholder {
   align-items: center;
 }
 
-
 .doc-label {
   color: #007bba; /* Blue text */
   font-weight: 500;
@@ -514,3 +513,111 @@ input::placeholder {
     position: absolute; /* Change position for larger screens */
   }
 }
+
+/* vertical Ui start */
+
+/* Base: XXL (≥1400px) */
+.vertical_ui_design {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.vertical_ui_design > label,
+.vertical_ui_design > .vertical_label,
+.vertical_ui_design > .verti_row {
+  width: 20%;
+}
+
+.vertical_ui_design > input,
+.vertical_ui_design > textarea,
+.vertical_ui_design > select,
+.vertical_ui_design > .verti_div {
+  width: 25%;
+}
+
+/* XL (<1400px) */
+@media (max-width: 1399.98px) {
+  .vertical_ui_design > label,
+  .vertical_ui_design > .vertical_label,
+  .vertical_ui_design > .verti_row {
+    width: 25%;
+  }
+
+  .vertical_ui_design > input,
+  .vertical_ui_design > textarea,
+  .vertical_ui_design > select,
+  .vertical_ui_design > .verti_div {
+    width: 35%;
+  }
+}
+
+/* LG (<1200px) */
+@media (max-width: 1199.98px) {
+  .vertical_ui_design > label,
+  .vertical_ui_design > .vertical_label,
+  .vertical_ui_design > .verti_row {
+    width: 30%;
+  }
+
+  .vertical_ui_design > input,
+  .vertical_ui_design > textarea,
+  .vertical_ui_design > select,
+  .vertical_ui_design > .verti_div {
+    width: 45%;
+  }
+}
+
+/* MD (<992px) */
+@media (max-width: 991.98px) {
+  .vertical_ui_design > label,
+  .vertical_ui_design > .vertical_label,
+  .vertical_ui_design > .verti_row {
+    width: 35%;
+  }
+
+  .vertical_ui_design > input,
+  .vertical_ui_design > textarea,
+  .vertical_ui_design > select,
+  .vertical_ui_design > .verti_div {
+    width: 50%;
+  }
+}
+
+/* SM (<768px) */
+@media (max-width: 767.98px) {
+  .vertical_ui_design > .verti_row,
+  .vertical_ui_design > label,
+  .vertical_ui_design > .vertical_label {
+    width: 45%;
+  }
+
+  .vertical_ui_design > input,
+  .vertical_ui_design > textarea,
+  .vertical_ui_design > select,
+  .vertical_ui_design > .verti_div {
+    width: 55%;
+  }
+}
+
+/* XS (Mobile: <576px) — Disable layout styling */
+@media (max-width: 575.98px) {
+  .vertical_ui_design {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+  }
+
+  .vertical_ui_design > label,
+  .vertical_ui_design > .vertical_label,
+  .vertical_ui_design > input,
+  .vertical_ui_design > textarea,
+  .vertical_ui_design > select,
+  .vertical_ui_design > .verti_row,
+  .vertical_ui_design > .verti_div {
+    width: 100% !important;
+  }
+}
+
+/*  */

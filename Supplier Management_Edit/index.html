@@ -278,7 +278,7 @@
     <!-- bread crumb -->
     <section class="content-area mt-1">
         <div class="container-fluid">
-            <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+            <div class="row gy-2 d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
                 <div class="col-12 col-md-6">
                     <div class="d-flex align-items-center gap-3">
                         <div class="main_title_15">Supplier Management</div>
@@ -287,6 +287,11 @@
                                 stroke-linejoin="round" />
                         </svg>
                         <div class="active_text_title_14">View Quote</div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center justify-content-end gap-3">
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
                     </div>
                 </div>
             </div>
@@ -307,30 +312,24 @@
                 <!-- row 1 -->
                 <div class="row">
                     <!-- Supplier Company -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label form_label">Supplier Company</label>
-                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                placeholder="Albert Sasson" value="Electric" readonly>
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 vertical_ui">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Supplier Company</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            placeholder="Albert Sasson" value="Electric" readonly>
                     </div>
 
                     <!-- Address -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label form_label">Address</label>
-                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                placeholder="Albert Sasson" value="Electric">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3  mb-3 vertical_ui">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Address</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            placeholder="Albert Sasson" value="Electric">
                     </div>
 
                     <!-- Phone -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
-                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                placeholder="Albert Sasson" value="Electric">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 vertical_ui">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            placeholder="Albert Sasson" value="Electric">
                     </div>
                     <!-- Broker Agreement in Place with Supplier -->
                     <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -346,31 +345,29 @@
 
 
                     <!-- Broker Agreement in Place with Supplier -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement in
-                                Place with Supplier</label>
-                            <select class="form-select js-example-basic-single mt-5"
-                                aria-label="Default select example">
-                                <option selected>Open this select menu Open this select menu Open this select menu Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                                <option value="AL">Alabama</option>
-                            </select>
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 vertical_ui">
+                        <label for="exampleFormControlInput1" class="form-label form_label">Broker Agreement in
+                            Place with Supplier</label>
+                        <select class="form-select js-example-basic-single mt-5" aria-label="Default select example">
+                            <option selected>Open this select menu Open this select menu Open this select menu Open this
+                                select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL">Alabama</option>
+                        </select>
                     </div>
                     <!-- Row 1 end -->
                 </div>
@@ -380,125 +377,116 @@
                 <div class="row">
                     <div class="col-12 col-md-4 border_right">
                         <!-- Supplier Company -->
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
-                                    Pricing/contracts requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric">
-                            </div>
+                        <div class="col-12  mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
+                                Pricing/contracts requests <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="Albert Sasson" value="Electric">
                         </div>
 
                         <!-- Main Contact for Pricing/contracts requests * -->
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
-                                    for Pricing/Contracts Requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Email here" value="">
-                            </div>
-                            <div class="tag-container">
-                                <div class="tag">
-                                    magicteam@enerclix.com
-                                    <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                        <div class="col-12 mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
+                                for Pricing/Contracts Requests <span class="text-danger">*</span></label>
+                            <div>
+                                <input type="text" class="form-control form_text_field mb-3"
+                                    id="exampleFormControlInput1" placeholder="Email here" value="">
+                                <div class="tag-container">
+                                    <div class="tag">
+                                        magicteam@enerclix.com
+                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
 
-                                </div>
-                                <div class="tag">
-                                    magicteam@enerclix.com <img src="../assets/icons/cancel.png" class="cancel_icon"
-                                        alt="cancel_icon">
+                                    </div>
+                                    <div class="tag">
+                                        magicteam@enerclix.com <img src="../assets/icons/cancel.png" class="cancel_icon"
+                                            alt="cancel_icon">
 
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
-                                <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            </div>
+                        <div class="col-12  mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
+                            <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
-                    <div class="col-12 col-md-4 border_right">
+                    <div class="col-12 col-md-4  border_right">
                         <!-- Supplier Company -->
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
-                                    Pricing/contracts requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric">
-                            </div>
+                        <div class="col-12  mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
+                                Pricing/contracts requests <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="Albert Sasson" value="Electric">
                         </div>
 
                         <!-- Main Contact for Pricing/contracts requests * -->
-                        <div class="col-12">
-                            <div class="mb-3 position-relative">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
-                                    for Pricing/Contracts Requests <span class="text-danger">*</span></label>
-                                <i class="bi bi-check check__icon"></i>
-                                <input type="text" class="form-control form_text_field pe-5"
-                                    id="exampleFormControlInput1" placeholder="Email here" value="">
-                            </div>
-                            <div class="tag-container">
-                                <div class="tag">
-                                    magicteam@enerclix.com
-                                    <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                        <div class="col-12  mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
+                                for Pricing/Contracts Requests <span class="text-danger">*</span></label>
 
-                                </div>
-                                <div class="tag">
-                                    magicteam@enerclix.com
-                                    <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                            <div class="position-relative">
+                                <i class="bi bi-check check__icon"></i>
+                                <input type="text" class="form-control form_text_field mb-3"
+                                    id="exampleFormControlInput1" placeholder="Email here" value="">
+
+                                <div class="tag-container">
+                                    <div class="tag">
+                                        magicteam@enerclix.com
+                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
+                                    </div>
+                                    <div class="tag">
+                                        magicteam@enerclix.com
+                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
-                                <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            </div>
+                        <div class="col-12 mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
+                            <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <!-- Supplier Company -->
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
-                                    Pricing/contracts requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="Albert Sasson" value="Electric" readonly>
-                            </div>
+                        <div class="col-12 mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Main Contact for
+                                Pricing/contracts requests <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="Albert Sasson" value="Electric" readonly>
                         </div>
 
                         <!-- Main Contact for Pricing/contracts requests * -->
-                        <div class="col-12">
-                            <div class="mb-3">
+                        <div class="col-12 mb-3 vertical_ui">
                                 <label for="exampleFormControlInput1" class="form-label form_label">Main Email Address
                                     for Pricing/Contracts Requests <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            <div>
+                                <input type="text" class="form-control form_text_field mb-3" id="exampleFormControlInput1"
                                     placeholder="Email here" value="" readonly>
-                            </div>
-                            <div class="tag-container">
-                                <div class="tag">
-                                    magicteam@enerclix.com
-                                    <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                                <div class="tag-container">
+                                    <div class="tag">
+                                        magicteam@enerclix.com
+                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
 
+                                    </div>
+                                    <div class="tag">
+                                        magicteam@enerclix.com <img src="../assets/icons/cancel.png" class="cancel_icon"
+                                            alt="cancel_icon">
+                                    </div>
                                 </div>
-                                <div class="tag">
-                                    magicteam@enerclix.com <img src="../assets/icons/cancel.png" class="cancel_icon"
-                                        alt="cancel_icon">
-                                </div>
+
                             </div>
                         </div>
 
-                        <div class="col-12">
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
-                                <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
-                                    placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-                            </div>
+                        <div class="col-12 mb-3 vertical_ui">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Phone</label>
+                            <input type="tel" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </div>
                     </div>
                     <!-- Row 2 end -->
