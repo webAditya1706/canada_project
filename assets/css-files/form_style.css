@@ -9,7 +9,7 @@ textarea.form-control {
   width: 24px;
   height: 24px;
   position: absolute;
-  bottom: 5px;
+  bottom: 7px;
   right: 5px;
   z-index: 2;
 }
@@ -522,6 +522,19 @@ input::placeholder {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.vertical_ui_design label {
+  margin-bottom: 0px;
+}
+
+.vertical_ui_design .span_text{
+  margin-bottom: 0px;
+}
+
+.vertical_ui_design .field_50 input,
+.vertical_ui_design .field_50 select{
+  width: 49% !important;
 }
 
 .vertical_ui_design > label,
