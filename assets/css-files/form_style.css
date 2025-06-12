@@ -501,6 +501,90 @@ input::placeholder {
   font-size: 7px;
 }
 
+
+/* Select Dropdown */
+.select2-selection.custom-focus {
+  border-color: #86b7fe !important;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25) !important;
+}
+
+.select2-search--dropdown {
+  display: none;
+}
+
+.select2-container--open .select2-dropdown {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15) !important; /* Only bottom shadow */
+  border: 1px solid #404040 !important;
+}
+
+.select2-results {
+  display: block;
+}
+
+.select2-search__field {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 1px solid #ced4da !important;
+  border-radius: 0.25rem !important;
+}
+
+.select2-container .select2-selection--single {
+  height: auto !important;
+}
+
+.select2-container--default .select2-results > .select2-results__options {
+  max-height: 180px !important;
+  overflow-y: auto;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding: 5px 10px !important;
+}
+
+.select2-results__option--selected {
+  background: var(--primary_bg_color) !important;
+  color: #fff;
+}
+
+.select2-container {
+  /* width: 100% !important; */
+}
+
+.select2-container--default .select2-selection--single {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 50px;
+}
+
+.select2-search__field {
+  /* display: none; */
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 100% !important;
+}
+
+.select2-selection__rendered {
+  color: var(--Primary, #131313);
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* select 2 end */
+
+
 @media (max-width: 992px) {
   .customer_site_btn {
     position: relative; /* or any other preferred mobile positioning */
@@ -533,7 +617,8 @@ input::placeholder {
 }
 
 .vertical_ui_design .field_50 input,
-.vertical_ui_design .field_50 select{
+.vertical_ui_design .field_50 select,
+.vertical_ui_design .field_50 .select2-container{
   width: 49% !important;
 }
 
@@ -546,6 +631,7 @@ input::placeholder {
 .vertical_ui_design > input,
 .vertical_ui_design > textarea,
 .vertical_ui_design > select,
+.vertical_ui_design > .select2-container,
 .vertical_ui_design > .verti_div {
   width: 25%;
 }
@@ -561,6 +647,7 @@ input::placeholder {
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
+  .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
     width: 35%;
   }
@@ -577,6 +664,7 @@ input::placeholder {
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
+  .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
     width: 45%;
   }
@@ -593,6 +681,7 @@ input::placeholder {
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
+  .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
     width: 50%;
   }
@@ -609,6 +698,7 @@ input::placeholder {
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
+  .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
     width: 55%;
   }
@@ -627,6 +717,7 @@ input::placeholder {
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
+  .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_row,
   .vertical_ui_design > .verti_div {
     width: 100% !important;

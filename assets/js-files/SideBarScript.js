@@ -29,7 +29,7 @@ document.addEventListener("click", function (event) {
 // vertically UI
 const changeUI = () => {
   const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
-  const width100 = [...document.getElementsByClassName("width-100")]; // Convert to an array
+  const width100 = [...document.getElementsByClassName("verti_width_100_row")]; // Convert to an array
 
   if (width100) {
     width100.forEach((element) => {
