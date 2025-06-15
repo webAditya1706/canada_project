@@ -189,7 +189,8 @@
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
@@ -272,7 +273,7 @@
                 <div class="container-fluid">
                     <div class="row d-flex justify-content-between align-items-center py-3">
                         <div class="col-6">
-                            <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex align-items-center gap-2">
                                 <div class="main_title_15">Supplier Management</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
                                     fill="none">
@@ -280,6 +281,13 @@
                                         stroke-linejoin="round" />
                                 </svg>
                                 <div class="active_text_title_14">Contracts</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center justify-content-end gap-3">
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,252 +304,199 @@
                             <div class="border rounded px-3 py-2 h-100">
                                 <div class="row">
                                     <!-- Contract -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Contact<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="Contract#">
-                                        </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label for="contract" class="form-label form_label">Contract<span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field" id="contract"
+                                            placeholder="" value="Contract#">
                                     </div>
 
                                     <!-- Active -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Active<span class="text-danger">*</span></label>
-                                            <div class="form-check form-switch d-flex align-items-center gap-2">
-                                                <input class="form-check-input mid_head_check" type="checkbox"
-                                                    role="switch" id="flexSwitchCheckDefault" />
-                                                <!-- <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                                Old
-                                                Legacy</label> -->
-                                            </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label for="active" class="form-label form_label">Active<span
+                                                class="text-danger">*</span></label>
+                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="active" />
                                         </div>
                                     </div>
 
-                                    <!-- Commadaty -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Commodaty<span class="text-danger">*</span></label>
-
-                                            <div class="d-flex flex-row gap-3 ">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18"
-                                                        checked />
-                                                    <span class="fs_14_fw_400_c_131313">Electric</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18" />
-                                                    <span class="fs_14_fw_400_c_131313">Gas</span>
-                                                </div>
+                                    <!-- Commodaty -->
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label for="commodity" class="form-label form_label">Commodity<span
+                                                class="text-danger">*</span></label>
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18"
+                                                    checked />
+                                                <span class="fs_14_fw_400_c_131313">Electric</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18" />
+                                                <span class="fs_14_fw_400_c_131313">Gas</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- State -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="row justify-content-between">
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1" class="form-label form_label">
-                                                    State<span class="text-danger">*</span></label>
-                                                <div
-                                                    class="email_border_cross_icon d-flex align-items-center justify-content-between">
-                                                    <span class="">Kentucky</span>
-                                                    <img src="../assets/images/red_cancel.png" alt="" class="w_20">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label active_text_title_13 text-decoration-underline">
-                                                    Select States</label>
-
-
-                                            </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <div class=" verti_row d-flex justify-content-between align-items-center">
+                                            <label class="form-label form_label">State<span
+                                                    class="text-danger">*</span></label>
+                                            <label
+                                                class="form-label active_text_title_13 text-decoration-underline hori_e_label">Select
+                                                States</label>
                                         </div>
+                                        <div class="email_border_cross_icon">
+                                            <span class="">Kentucky</span>
+                                            <img src="../assets/images/red_cancel.png" alt="" class="w_20">
+                                        </div>
+
+                                        <label
+                                            class="form-label active_text_title_13 text-decoration-underline verti_e_label">Select
+                                            States</label>
                                     </div>
 
                                     <!-- Utility -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="row justify-content-between">
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1" class="form-label form_label">
-                                                    Utility<span class="text-danger">*</span></label>
-                                                <div
-                                                    class="email_border_cross_icon d-flex align-items-center justify-content-between">
-                                                    <span class="one_line_ellipsis" data-bs-toggle="tooltip"
-                                                        data-bs-placement="top" title="COH - Columbia Gas of OH">COH -
-                                                        Columbia Gas of OH</span>
-                                                    <img src="../assets/images/red_cancel.png" alt="" class="w_20">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label active_text_title_13 text-decoration-underline">
-                                                    Select Utility</label>
-
-
-                                            </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <div class=" verti_row d-flex justify-content-between align-items-center">
+                                            <label class="form-label form_label">Utility<span
+                                                    class="text-danger">*</span></label>
+                                            <label
+                                                class="form-label active_text_title_13 text-decoration-underline hori_e_label">Select
+                                                Utility</label>
                                         </div>
+                                        <div class="email_border_cross_icon">
+                                            <span class="one_line_ellipsis" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" title="COH - Columbia Gas of OH">COH - Columbia
+                                                Gas of OH</span>
+                                            <img src="../assets/images/red_cancel.png" alt="" class="w_20">
+                                        </div>
+                                        <label
+                                            class="form-label active_text_title_13 text-decoration-underline verti_e_label">Select
+                                            Utility</label>
                                     </div>
+
                                     <!-- Rate Class -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="row justify-content-between">
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1" class="form-label form_label">
-                                                    Rate Class<span class="text-danger">*</span></label>
-
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label active_text_title_13 text-decoration-underline">
-                                                    Select Rate Class</label>
-
-
-                                            </div>
+                                    <div
+                                        class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <div class="w-100 d-flex justify-content-between hori_e_label align-items-center">
+                                            <label class="form-label form_label ">Rate Class<span
+                                                    class="text-danger">*</span></label>
+                                            <label
+                                                class="form-label active_text_title_13 text-decoration-underline">Select
+                                                Rate Class</label>
+                                        </div>
+                                        <div class="verti_e_label vertical_ui">
+                                            <label class="form-label form_label ">Rate Class<span
+                                                    class="text-danger">*</span></label>
+                                            <label
+                                                class="form-label active_text_title_13 text-decoration-underline">Select
+                                                Rate Class</label>
                                         </div>
                                     </div>
 
                                     <!-- Type -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Type<span class="text-danger">*</span></label>
-
-                                            <div class="d-flex flex-row gap-3 ">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18"
-                                                        checked />
-                                                    <span class="fs_14_fw_400_c_131313">Commercial</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18" />
-                                                    <span class="fs_14_fw_400_c_131313">Residential</span>
-                                                </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label class="form-label form_label">Type<span
+                                                class="text-danger">*</span></label>
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18"
+                                                    checked />
+                                                <span class="fs_14_fw_400_c_131313">Commercial</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18" />
+                                                <span class="fs_14_fw_400_c_131313">Residential</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Product Type -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="row justify-content-between">
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1" class="form-label form_label">
-                                                    Product Type<span class="text-danger">*</span></label>
-                                                <div
-                                                    class="email_border_cross_icon d-flex align-items-center justify-content-between">
-                                                    <span class="">Fixed</span>
-                                                    <img src="../assets/images/red_cancel.png" alt="" class="w_20">
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label active_text_title_13 text-decoration-underline">
-                                                    Select Product Type</label>
-
-                                            </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label class="form-label form_label">Product Type<span
+                                                class="text-danger">*</span></label>
+                                        <div
+                                            class="email_border_cross_icon d-flex align-items-center justify-content-between mb-2">
+                                            <span class="">Fixed</span>
+                                            <img src="../assets/images/red_cancel.png" alt="" class="w_20">
                                         </div>
+                                        <label class="form-label active_text_title_13 text-decoration-underline">Select
+                                            Product Type</label>
                                     </div>
 
                                     <!-- Pricing Method -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Pricing Method<span class="text-danger">*</span></label>
-
-                                            <div class="d-flex flex-row gap-3 ">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18"
-                                                        checked />
-                                                    <span class="fs_14_fw_400_c_131313">Matrix</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18" />
-                                                    <span class="fs_14_fw_400_c_131313">Custom</span>
-                                                </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label class="form-label form_label">Pricing Method<span
+                                                class="text-danger">*</span></label>
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18"
+                                                    checked />
+                                                <span class="fs_14_fw_400_c_131313">Matrix</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18" />
+                                                <span class="fs_14_fw_400_c_131313">Custom</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Billing Option -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Billing Option<span class="text-danger">*</span></label>
-
-                                            <div class="d-flex flex-row gap-3 ">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18"
-                                                        checked />
-                                                    <span class="fs_14_fw_400_c_131313">Sngle</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18" />
-                                                    <span class="fs_14_fw_400_c_131313">Dual</span>
-                                                </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label class="form-label form_label">Billing Option<span
+                                                class="text-danger">*</span></label>
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18"
+                                                    checked />
+                                                <span class="fs_14_fw_400_c_131313">Single</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18" />
+                                                <span class="fs_14_fw_400_c_131313">Dual</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Therm Range -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Therm Range<span class="text-danger">*</span></label>
-
-                                            <div class="d-flex flex-row gap-3 ">
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <input type="checkbox"
-                                                        class="form-check-input table_check table_check w_18_h_18"
-                                                        checked />
-                                                    <span class="fs_14_fw_400_c_131313">All</span>
-                                                </div>
-
-                                                <div class="d-flex align-items-center gap-2">
-                                                    <span
-                                                        class="active_text_title_13 text-decoration-underline">Specify</span>
-                                                </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label class="form-label form_label">Therm Range<span
+                                                class="text-danger">*</span></label>
+                                        <div class="d-flex flex-row gap-3">
+                                            <div class="d-flex align-items-center gap-2">
+                                                <input type="checkbox" class="form-check-input table_check w_18_h_18"
+                                                    checked />
+                                                <span class="fs_14_fw_400_c_131313">All</span>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-2">
+                                                <span
+                                                    class="active_text_title_13 text-decoration-underline">Specify</span>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- Contract Good Up to -->
-                                    <div class="col-12 col-md-6 col-lg-3">
-                                        <div class="mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">
-                                                Contract Good Up to<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="0" value="">
-                                        </div>
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label for="contractGoodUpTo" class="form-label form_label">Contract Good Up
+                                            to<span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field" id="contractGoodUpTo"
+                                            placeholder="0" value="">
                                     </div>
 
                                     <!-- Document -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                                        <div class="d-flex justify-content-start align-items-center gap-2">
-                                            <label for="upload_doc" class="form-label form_label">Document</label>
-                                        </div>
-                                        <div class="border rounded d-flex justify-content-end pe-2">
+                                    <div class="col-12 col-md-6 col-lg-3 vertical_ui mb-3">
+                                        <label for="upload_doc" class="form-label form_label">Document</label>
+                                        <div class="border verti_div rounded d-flex justify-content-end pe-2">
                                             <div class="them_btn_container">
                                                 <button type="button" data-bs-target="#upload_download_modal"
                                                     data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
+
                             </div>
                         </div>
                     </div>

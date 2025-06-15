@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
-    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <!-- <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" /> -->
     <link rel="stylesheet" href="../assets/css-files/form_style.css" />
-    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <!-- <link rel="stylesheet" href="../assets/css-files/other__css.css" /> -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
     <!-- font faimily -->
@@ -300,158 +300,132 @@
                                 <div class="row">
                                     <!-- User ID -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <div class="row flex-row justify-content-between">
-                                                <div class="col-auto"> <label for="exampleFormControlInput1"
-                                                        class="form-label form_label">User ID</label></div>
-                                                <div class="col-auto d-flex align-items-center gap-2">
-                                                    <!-- <div class="row"> -->
-                                                    <span for="exampleFormControlInput1"
-                                                        class="active_text_title_13">Send Password</span>
-                                                    <!-- </div> -->
-                                                </div>
-                                            </div>
-                                            <input type="tel" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="000 0000 000"
-                                                pattern="[0-9]{10}" required>
+                                        <div class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                            <div> <label for="exampleFormControlInput1"
+                                                    class="form-label form_label">User ID</label></div>
+
+                                            <span for="exampleFormControlInput1"
+                                                class="active_text_title_13 hori_e_label">Send
+                                                Password</span>
+
                                         </div>
+                                        <input type="tel" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="000 0000 000" pattern="[0-9]{10}"
+                                            required>
+                                        <span for="exampleFormControlInput1"
+                                            class="active_text_title_13 verti_e_label">Send
+                                            Password</span>
                                     </div>
                                     <!-- First Name * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">First
-                                                Name <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                value="Agera Electric">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">First
+                                            Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                            value="Agera Electric">
                                     </div>
 
                                     <!-- Last Name * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Last
-                                                Name <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                value="Agera Gas">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Last
+                                            Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="Albert Sasson" value="Agera Gas">
                                     </div>
 
                                     <!-- Email * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Email
-                                                <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                value="hollybarnes@hotmail.com">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Email
+                                            <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                            value="hollybarnes@hotmail.com">
                                     </div>
 
                                     <!-- Retype Email * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Retype
-                                                Email
-                                                <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                value="hollybarnes@hotmail.com">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Retype
+                                            Email
+                                            <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                            value="hollybarnes@hotmail.com">
                                     </div>
 
                                     <!-- Designation/Title * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label form_label">Designation/Title
-                                            </label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson" value="">
-                                        </div>
+                                        <label for="exampleFormControlInput1"
+                                            class="form-label form_label">Designation/Title
+                                        </label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="Albert Sasson" value="">
                                     </div>
 
                                     <!-- Address  * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Address
-                                                <span class="text-danger">*</span>
-                                            </label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="Western street">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Address
+                                            <span class="text-danger">*</span>
+                                        </label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="" value="Western street">
                                     </div>
 
                                     <!-- Address Line 2  * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Address
-                                                Line 2
-                                            </label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Address
+                                            Line 2
+                                        </label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="" value="">
                                     </div>
                                     <!-- Country -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Country
-                                                <span class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text"
-                                                aria-label="Default select example">
-                                                <option class="form_text_field" selected>Select</option>
-                                                <option class="form_text_field" value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Country
+                                            <span class="text-danger">*</span></label>
+                                        <select class="form-select select_value_text"
+                                            aria-label="Default select example">
+                                            <option class="form_text_field" selected>Select</option>
+                                            <option class="form_text_field" value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
                                     <!-- State * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label form_label">State<span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text"
-                                                aria-label="Default select example">
-                                                <option class="form_text_field" selected>Select</option>
-                                                <option class="form_text_field" value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">State<span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select select_value_text"
+                                            aria-label="Default select example">
+                                            <option class="form_text_field" selected>Select</option>
+                                            <option class="form_text_field" value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
 
                                     <!-- City  * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">City
-                                            </label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">City
+                                        </label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="" value="">
                                     </div>
 
                                     <!-- Postal / Zip Code  * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Postal /
-                                                Zip Code
-                                            </label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="">
-                                        </div>
+                                        <label for="exampleFormControlInput1" class="form-label form_label">Postal /
+                                            Zip Code
+                                        </label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="" value="">
                                     </div>
 
                                     <!-- Phone  * -->
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label form_label">Phone</label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="" value="+1  4646-444444">
-                                        </div>
+                                        <label for="exampleFormControlInput1"
+                                            class="form-label form_label">Phone</label>
+                                        <input type="text" class="form-control form_text_field"
+                                            id="exampleFormControlInput1" placeholder="" value="+1  4646-444444">
                                     </div>
                                 </div>
                             </div>
@@ -461,77 +435,85 @@
                             <div class="border rounded px-3 py-2 h-100 ">
                                 <span class="sub_title_13 mt-2">Users Rights</span>
                                 <div class="row">
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Upload rack rate -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="uploadRackRate">Upload rack
+                                            rate</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Upload rack rate</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Allow User to Edit/Delete Matrices,Uploaded
-                                                Documents & Mapping File Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Supplier Management</label>
+                                                id="uploadRackRate">
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Allow User to Edit/Delete Matrices, Uploaded Documents & Mapping File Name -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="editDeleteMatrices">Allow User to
+                                            Edit/Delete Matrices, Uploaded Documents & Mapping File Name</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Supplier Management</label>
+                                                id="editDeleteMatrices">
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Supplier Management -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="supplierManagement1">Supplier
+                                            Management</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Manage User</label>
+                                                id="supplierManagement1">
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Supplier Management Duplicate -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="supplierManagement2">Supplier
+                                            Management</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Miscellaneous Setup</label>
+                                                id="supplierManagement2">
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Manage User -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="manageUser">Manage User</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Broker Management</label>
+                                                id="manageUser">
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <!-- Miscellaneous Setup -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="miscellaneousSetup">Miscellaneous
+                                            Setup</label>
+                                        <div class="form-check form-switch flex-column verti_div">
                                             <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                            <label class="form-check-label menu_font_style"
-                                                for="flexSwitchCheckDefault">Reports</label>
+                                                id="miscellaneousSetup">
+                                        </div>
+                                    </div>
+
+                                    <!-- Broker Management -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="brokerManagement">Broker
+                                            Management</label>
+                                        <div class="form-check form-switch flex-column verti_div">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="brokerManagement">
+                                        </div>
+                                    </div>
+
+                                    <!-- Reports -->
+                                    <div class="col-sm-6 vertical_ui mt-2">
+                                        <label class="form-label form_label" for="reports">Reports</label>
+                                        <div class="form-check form-switch flex-column verti_div">
+                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                                id="reports">
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

@@ -436,7 +436,7 @@
                                     </div>
 
                                     <!-- Price Level -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
+                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 ">
                                         <label for="wind100" class="form-label form_label">Price Level <span
                                                 class="text-danger">*</span></label>
                                         <select class="form-select select_value_text" id="wind100">
@@ -451,424 +451,520 @@
 
                                 <!-- Standard 2 row -->
                                 <div class="row mb-2">
-                                    <!-- 6mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">6Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+
+                                    <!-- 6Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod6Mth" class="form-label form_label">
+                                            6Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod6Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric6Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide1000Electric6Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric6Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide1000Electric6Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas6Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas6Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 12mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">12Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 12Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod12Mth" class="form-label form_label">
+                                            12Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod12Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric12Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric12Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric12Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric12Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas12Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas12Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 18mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">18Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 18Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod18Mth" class="form-label form_label">
+                                            18Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod18Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric18Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric18Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric18Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric18Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas18Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas18Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 24mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">24Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 24Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod24Mth" class="form-label form_label">
+                                            24Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod24Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric24Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric24Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric24Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric24Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas24Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas24Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 36mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">36Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 36Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod36Mth" class="form-label form_label">
+                                            36Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod36Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric36Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric36Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric36Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric36Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas36Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas36Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 48mth -->
-                                    <div class="col-12 col-md-6 mb-3">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">48Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 48Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod48Mth" class="form-label form_label">
+                                            48Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod48Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric48Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric48Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric48Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric48Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas48Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas48Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- 60mth -->
-                                    <div class="col-12 col-md-6 mb-2">
-                                        <div class="col-12 col-sm-6 mb-2">
-                                            <label for="standard" class="form-label form_label">60Mth <span
-                                                    class="text-danger">*</span></label>
-                                            <select class="form-select select_value_text" id="standard">
+                                    <!-- 60Mth -->
+                                    <div class="col-12 col-md-6 vertical_ui mb-3">
+                                        <label for="rateMethod60Mth" class="form-label form_label">
+                                            60Mth <span class="text-danger">*</span>
+                                        </label>
+                                        <div class="verti_div">
+                                            <select class="form-select select_value_text" id="rateMethod60Mth">
                                                 <option selected>Rate By Billing Method</option>
+                                                <!-- add more <option> as needed -->
                                             </select>
-                                        </div>
-                                        <div class="d-flex flex-wrap gap-2">
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 1000 for electric</span>
-                                            </div>
-
-                                            <div class="d-flex align-items-center gap-2 col-auto">
-                                                <input type="checkbox"
-                                                    class="form-check-input table_check table_check w_18_h_18"
-                                                    checked />
-                                                <span class="fs_14_fw_400_c_131313">Divide by 10 for gas</span>
+                                            <div class="d-flex flex-wrap gap-2 mt-1">
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric60Mth_1" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric60Mth_1">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide1000Electric60Mth_2" checked />
+                                                    <label class="fs_14_fw_400_c_131313"
+                                                        for="divide1000Electric60Mth_2">
+                                                        Divide by 1000 for electric
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2 col-auto">
+                                                    <input type="checkbox"
+                                                        class="form-check-input table_check w_18_h_18"
+                                                        id="divide10Gas60Mth" checked />
+                                                    <label class="fs_14_fw_400_c_131313" for="divide10Gas60Mth">
+                                                        Divide by 10 for gas
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="px-3 my-2">
+                                    <div class="px-3 my-2 w-100">
                                         <hr class="show_gray_hr_line" />
                                     </div>
+
                                 </div>
+
 
                                 <div class="row">
                                     <!-- User ID -->
                                     <div>
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2">
-                                            <div class="">
-                                                <div class="row flex-row justify-content-between">
-                                                    <div class="col-auto"> <label for="exampleFormControlInput1"
-                                                            class="form-label form_label">Price Level <span
-                                                                class="text-danger">*</span></label></div>
-                                                    <div class="col-auto d-flex align-items-center gap-2">
-                                                        <!-- <div class="row"> -->
-                                                        <span for="exampleFormControlInput1"
-                                                            class="active_text_title_13 text-decoration-underline">Add</span>
-                                                        <!-- </div> -->
-                                                    </div>
+                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
+                                            <div
+                                                class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                                <div>
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label form_label">Price Level <span
+                                                            class="text-danger">*</span></label>
                                                 </div>
-                                                <select class="form-select select_value_text" id="standard">
-                                                    <option selected>Annual Usage</option>
-                                                    <option selected>Annual Usage</option>
-                                                </select>
+                                                <span for="exampleFormControlInput1"
+                                                    class="active_text_title_13 text-decoration-underline hori_e_label">Add</span>
+
                                             </div>
+                                            <select class="form-select select_value_text" id="standard">
+                                                <option selected>Annual Usage</option>
+                                                <option selected>Annual Usage</option>
+                                            </select>
+                                            <span for="exampleFormControlInput1"
+                                                class="active_text_title_13 text-decoration-underline verti_e_label">Add</span>
+
                                         </div>
                                     </div>
-                                    <div class="row mt-2">
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Volume</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="0-150k">
-                                            </div>
-                                        </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Volume</span>
 
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Min</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
                                         </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Max</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <img src="../assets/icons/Field Delete.png" alt="">
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="matrixName" value="" placeholder="0-150k">
                                         </div>
                                     </div>
 
-                                    <div class="row mt-2">
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Volume</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="0-150k">
-                                            </div>
-                                        </div>
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Min</span>
 
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Min</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
                                         </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Max</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <img src="../assets/icons/Field Delete.png" alt="">
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="matrixName" value="" placeholder="1.0">
                                         </div>
                                     </div>
 
-                                    <div class="row mt-2">
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Volume</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="0-150k">
-                                            </div>
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Max</span>
+                                        </div>
+                                        <div class="verti_div d-flex flex-row align-items-center gap-2">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="matrixName" value="" placeholder="1.0">
+                                            <img src="../assets/icons/Field Delete.png" class="hori_e_label w_10_h_10"
+                                                alt="">
                                         </div>
 
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Min</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Max</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <img src="../assets/icons/Field Delete.png" alt="">
-                                        </div>
-                                    </div>
-
-                                    <div class="row mt-2">
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Volume</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="0-150k">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Min</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <div class="d-flex align-items-center gap-1">
-                                                <span class="flex-shrink-0">Annual Max</span>
-                                                <input type="text" class="form-control form_text_field flex-grow-1"
-                                                    id="matrixName" value="" placeholder="1.0">
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12 col-md-6 col-lg-3 mb-2">
-                                            <img src="../assets/icons/Field Delete.png" alt="">
-                                        </div>
+                                        <img src="../assets/icons/Field Delete.png" class="verti_e_label w_10_h_10" alt="">
                                     </div>
 
                                 </div>
+                                <h2>first</h2>
+                                <div class="row">
+                                    <!-- First block: Annual Volume -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Volume</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualVolume1" value="" placeholder="0-150k">
+                                        </div>
+                                    </div>
+
+                                    <!-- Second block: Annual Min -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Min</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMin1" value="" placeholder="1.0">
+                                        </div>
+                                    </div>
+
+                                    <!-- Third block: Annual Max with delete icon -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Max</span>
+                                        </div>
+                                        <div class="verti_div d-flex flex-row align-items-center gap-2">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMax1" value="" placeholder="1.0">
+                                            <img src="../assets/icons/Field Delete.png" class="hori_e_label w_10_h_10"
+                                                alt="Delete">
+                                        </div>
+                                        <img src="../assets/icons/Field Delete.png" class="w_10_h_10 verti_e_label"
+                                            alt="Delete">
+
+                                    </div>
+                                </div>
+
+                                <!-- Repeat for additional rows: -->
+                                <div class="row">
+                                    <!-- Annual Volume -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Volume</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualVolume2" value="" placeholder="0-150k">
+                                        </div>
+                                    </div>
+
+                                    <!-- Annual Min -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Min</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMin2" value="" placeholder="1.0">
+                                        </div>
+                                    </div>
+
+                                    <!-- Annual Max -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Max</span>
+                                        </div>
+                                        <div class="verti_div d-flex flex-row align-items-center gap-2">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMax2" value="" placeholder="1.0">
+                                            <img src="../assets/icons/Field Delete.png" class="hori_e_label w_10_h_10"
+                                                alt="Delete">
+                                        </div>
+                                        <img src="../assets/icons/Field Delete.png" class="w_10_h_10 verti_e_label"
+                                            alt="Delete">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- Annual Volume -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Volume</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualVolume3" value="" placeholder="0-150k">
+                                        </div>
+                                    </div>
+
+                                    <!-- Annual Min -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Min</span>
+                                        </div>
+                                        <div class="verti_div">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMin3" value="" placeholder="1.0">
+                                        </div>
+                                    </div>
+
+                                    <!-- Annual Max -->
+                                    <div class="col-12 col-md-6 col-lg-3 mb-3 vertical_ui">
+                                        <div class="verti_row">
+                                            <span class="flex-shrink-0">Annual Max</span>
+                                        </div>
+                                        <div class="verti_div d-flex flex-row align-items-center gap-2">
+                                            <input type="text" class="form-control form_text_field flex-grow-1"
+                                                id="annualMax3" value="" placeholder="1.0">
+                                            <img src="../assets/icons/Field Delete.png" class="hori_e_label w_10_h_10"
+                                                alt="Delete">
+                                        </div>
+                                         <img src="../assets/icons/Field Delete.png" class="w_10_h_10 verti_e_label"
+                                            alt="Delete">
+                                    </div>
+                                </div>
 
                             </div>
+
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="container-fluid">
-                <div class="row my-4">
-                    <div class="col-12">
-                        <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+        </div>
+        </section>
+        <div class="container-fluid">
+            <div class="row my-4">
+                <div class="col-12">
+                    <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer-area">
+        <div class="container-fluid">
+            <div class="row flex-row">
+                <div class="col-12 col-md-12 col-lg-2">
+                    <div class="d-flex justify-content-start">
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-10">
+                    <div class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                data-bs-toggle="modal">Submit</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- footer section -->
-        <footer class="footer-area">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-12 col-md-12 col-lg-2">
-                        <div class="d-flex justify-content-start">
-                            <div class="them_btn_container">
-                                <button class="theme_outline_btn">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-10">
-                        <div
-                            class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    </footer>
 
     </div>
     <!-- Overlay -->

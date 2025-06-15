@@ -435,6 +435,10 @@ input::placeholder {
 }
 
 .email_border_cross_icon {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
   border: 1px solid var(--Theme);
   border-radius: 20px;
   padding: 5px 10px;
@@ -635,7 +639,7 @@ input::placeholder {
 }
 
 .vertical_ui_design .hori_e_label {
-  display: none;
+  display: none !important;
 }
 
 .verti_e_label {
@@ -685,7 +689,7 @@ input::placeholder {
 @media (max-width: 1399.98px) {
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label,
-  .vertical_ui_design > .verti_row {
+  .vertical_ui_design .verti_row {
     width: 25%;
   }
 
@@ -702,7 +706,7 @@ input::placeholder {
 @media (max-width: 1199.98px) {
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label,
-  .vertical_ui_design > .verti_row {
+  .vertical_ui_design .verti_row {
     width: 30%;
   }
 
@@ -710,7 +714,7 @@ input::placeholder {
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
-  .vertical_ui_design > .verti_div {
+  .vertical_ui_design .verti_div {
     width: 400px !important;
   }
 }
@@ -719,7 +723,7 @@ input::placeholder {
 @media (max-width: 991.98px) {
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label,
-  .vertical_ui_design > .verti_row {
+  .vertical_ui_design .verti_row {
     width: 31%;
   }
 
@@ -727,14 +731,14 @@ input::placeholder {
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
-  .vertical_ui_design > .verti_div {
+  .vertical_ui_design .verti_div {
     width: 330px !important;
   }
 }
 
 /* SM (<768px) */
 @media (max-width: 767.98px) {
-  .vertical_ui_design > .verti_row,
+  .vertical_ui_design .verti_row,
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label {
     width: 30%;
@@ -746,7 +750,7 @@ input::placeholder {
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
   .vertical_ui_design > .select2.select2-container,
-  .vertical_ui_design > .verti_div {
+  .vertical_ui_design .verti_div {
     width: 265px !important;
   }
 }
@@ -772,8 +776,8 @@ input::placeholder {
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
-  .vertical_ui_design > .verti_row,
-  .vertical_ui_design > .verti_div {
+  .vertical_ui_design .verti_row,
+  .vertical_ui_design .verti_div {
     width: 100% !important;
   }
 
@@ -797,7 +801,7 @@ input::placeholder {
   }
 
   .vertical_ui_design .hori_e_label {
-    display: block ;
+    display: block !important;
   }
 }
 

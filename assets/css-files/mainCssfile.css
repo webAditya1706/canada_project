@@ -522,8 +522,8 @@ td span {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 14px;
-  word-break: break-all;
+  line-height: 18px;
+  word-break: break-word;
   /* 100% */
 }
 
@@ -916,6 +916,11 @@ footer {
 
 .w_14{
   width: 14px;
+}
+
+.w_11_h_11 {
+  width: 11px !important;
+  height: 11px !important;
 }
 
 .w_15_h_15 {
