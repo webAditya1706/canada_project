@@ -232,12 +232,16 @@ table * {
 }
 
 .quotes_table .table_check {
-  width: 16px;
-  height: 16.128px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
   border-radius: 2px;
-  border: 1px solid var(--Primary, #131313);
+  border: 1px solid var(--Primary, #131313) !important;
   /* background: var(--white, #FFF); */
+}
+
+.quotes_table .table_check:checked {
+  border-color: #0d6efd !important;
 }
 
 /* border style */

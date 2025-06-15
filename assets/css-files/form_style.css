@@ -1,6 +1,8 @@
 .form-select,
 .form-control {
   height: 40px;
+  border-radius: 5px;
+  border: 1px solid var(--Stroke, #e7e7e7);
 }
 textarea.form-control {
   height: auto;
@@ -9,7 +11,7 @@ textarea.form-control {
   width: 24px;
   height: 24px;
   position: absolute;
-  bottom: 7px;
+  bottom: 9px;
   right: 5px;
   z-index: 2;
 }
@@ -299,9 +301,19 @@ textarea.form-control {
   z-index: 2;
 }
 
+.check__icon2 {
+  color: var(--Theme);
+  font-size: 26px;
+  position: absolute;
+  line-height: 0px;
+  top: 14px;
+  right: 10px;
+  z-index: 2;
+}
+
 .input_sufix {
   position: absolute;
-  bottom: 8px;
+  bottom: 11px;
   font-size: 12px;
   left: 5px;
   z-index: 1;
@@ -501,6 +513,10 @@ input::placeholder {
   font-size: 7px;
 }
 
+.broker_commission {
+  display: flex;
+  gap: 20px;
+}
 
 /* Select Dropdown */
 .select2-selection.custom-focus {
@@ -549,7 +565,7 @@ input::placeholder {
 }
 
 .select2-container {
-  /* width: 100% !important; */
+  width: 100% !important;
 }
 
 .select2-container--default .select2-selection--single {
@@ -558,7 +574,7 @@ input::placeholder {
   align-items: center;
 }
 
-  .select2-container--default
+.select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
   height: 50px;
@@ -584,7 +600,6 @@ input::placeholder {
 
 /* select 2 end */
 
-
 @media (max-width: 992px) {
   .customer_site_btn {
     position: relative; /* or any other preferred mobile positioning */
@@ -601,6 +616,36 @@ input::placeholder {
 /* vertical Ui start */
 
 /* Base: XXL (≥1400px) */
+
+.vertical_ui .table_check {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid var(--Primary, #131313);
+  /* background: var(--white, #FFF); */
+}
+
+.vertical_ui .table_check:checked {
+  border-color: #0d6efd;
+}
+
+.hori_e_label {
+  display: block;
+}
+
+.vertical_ui_design .hori_e_label {
+  display: none;
+}
+
+.verti_e_label {
+  display: none;
+}
+
+.vertical_ui_design .verti_e_label {
+  display: block;
+}
+
 .vertical_ui_design {
   width: 100%;
   display: flex;
@@ -612,19 +657,19 @@ input::placeholder {
   margin-bottom: 0px;
 }
 
-.vertical_ui_design .span_text{
+.vertical_ui_design .span_text {
   margin-bottom: 0px;
 }
 
 .vertical_ui_design .field_50 input,
 .vertical_ui_design .field_50 select,
-.vertical_ui_design .field_50 .select2-container{
+.vertical_ui_design .field_50 .select2-container {
   width: 49% !important;
 }
 
 .vertical_ui_design > label,
 .vertical_ui_design > .vertical_label,
-.vertical_ui_design > .verti_row {
+.vertical_ui_design .verti_row {
   width: 20%;
 }
 
@@ -632,8 +677,8 @@ input::placeholder {
 .vertical_ui_design > textarea,
 .vertical_ui_design > select,
 .vertical_ui_design > .select2-container,
-.vertical_ui_design > .verti_div {
-  width: 25%;
+.vertical_ui_design .verti_div {
+  width: 500px !important;
 }
 
 /* XL (<1400px) */
@@ -666,7 +711,7 @@ input::placeholder {
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
-    width: 45%;
+    width: 400px !important;
   }
 }
 
@@ -683,7 +728,7 @@ input::placeholder {
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
-    width: 50%;
+    width: 300px !important;
   }
 }
 
@@ -692,15 +737,15 @@ input::placeholder {
   .vertical_ui_design > .verti_row,
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label {
-    width: 45%;
+    width: 40%;
   }
 
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
-  .vertical_ui_design > .select2-container,
+  .vertical_ui_design > .select2.select2-container,
   .vertical_ui_design > .verti_div {
-    width: 55%;
+    width: 200px !important;
   }
 }
 
@@ -712,6 +757,13 @@ input::placeholder {
     gap: 0px;
   }
 
+  .broker_commission {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .vertical_ui_design label {
+    margin-bottom: 5px;
+  }
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label,
   .vertical_ui_design > input,
@@ -721,6 +773,26 @@ input::placeholder {
   .vertical_ui_design > .verti_row,
   .vertical_ui_design > .verti_div {
     width: 100% !important;
+  }
+
+   .vertical_ui_design > .select2.select2-container {
+    width: 100% !important;
+  }
+   .vertical_ui > .select2.select2-container {
+    width: 100% !important;
+  }
+
+  .broker_commission .verti_row {
+    min-width: 25%;
+    max-width: 25%;
+  }
+
+  .verti_e_label {
+    display: none;
+  }
+
+  .hori_e_label {
+    display: block;
   }
 }
 

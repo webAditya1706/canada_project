@@ -101,7 +101,7 @@
 
                         <div class="d-flex flex-column justify-content-start">
                             <!-- Switch buttons -->
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <div class="form-check form-switch d-flex align-items-center w-100">
                                 <input class="form-check-input mid_head_check" type="checkbox" role="switch"
                                     id="flexSwitchCheckDefault" />
                                 <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
@@ -109,7 +109,7 @@
                                     Legacy</label>
                             </div>
 
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <div class="form-check form-switch d-flex align-items-center w-100">
                                 <input class="form-check-input mid_head_check" type="checkbox" role="switch"
                                     id="flexSwitchCheckDefault" />
                                 <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
@@ -302,14 +302,14 @@
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
                                         <div class="d-flex gap-2 mt-2 justify-content-between verti_row">
                                             <!-- <div class="col-auto"> -->
-                                                <label for="exampleFormControlInput1" class="form-label form_label">User
-                                                    ID</label>
+                                            <label for="exampleFormControlInput1" class="form-label form_label">User
+                                                ID</label>
                                             <!-- </div> -->
                                             <!-- <div class="col-auto d-flex align-items-center gap-2"> -->
-                                                <!-- <div class="row"> -->
-                                                <span for="exampleFormControlInput1" class="active_text_title_13">Send
-                                                    Password</span>
-                                                <!-- </div> -->
+                                            <!-- <div class="row"> -->
+                                            <span for="exampleFormControlInput1" class="active_text_title_13">Send
+                                                Password</span>
+                                            <!-- </div> -->
                                             <!-- </div> -->
                                         </div>
                                         <input type="text" class="form-control form_text_field"
@@ -457,299 +457,380 @@
                             <div class="border rounded px-3 py-2 h-100 ">
                                 <span class="sub_title_13 mt-2">Configuration</span>
                                 <div class="row">
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableManualMatrix" checked>
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableManualMatrix">Enable Manual Matrix</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableNewCustomerAcquisitionLink">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableNewCustomerAcquisitionLink">Enable all Matrix Suppliers <span
-                                                    class="text-danger"></span>*</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableCustomQuote">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableCustomQuote">Enable New Customer acquisition Link</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableEmailLink">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableEmailLink">Enable Quick Quote Functionality</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerMarkup">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enablePartnerMarkup">Enable Partner's Custom Quote
-                                                Functionality</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHudUpload">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableHudUpload">Enable Auto Contract printing</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerPrivateLabel">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enablePartnerPrivateLabel">E Mail Link Functionality</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHouseMarginLogic">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableHouseMarginLogic">Sales Manager Functionality</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="manageNewYorkExclusion">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="manageNewYorkExclusion">Enable Partner Mark Up
-                                                Functionality</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Allow to View Matrix Pricing from
-                                                Suppliers that Broker does not have a Direct Relationship with</label>
+                                    <!-- Enable Manual Matrix -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableManualMatrix" checked>
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableManualMatrix">Enable Manual Matrix</label>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Enable supplier provided HUD
-                                                Upload</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Allow Broker to Upload Partner
-                                                Branding</label>
+                                    <!-- Enable all Matrix Suppliers -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableNewCustomerAcquisitionLink">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableNewCustomerAcquisitionLink">
+                                                    Enable all Matrix Suppliers <span class="text-danger">*</span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Enable Partner Private Label</label>
+                                    <!-- Enable New Customer acquisition Link -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableCustomQuote">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableCustomQuote">Enable New Customer acquisition Link</label>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Display Power by Enerclix</label>
+                                    <!-- Enable Quick Quote Functionality -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableEmailLink">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableEmailLink">Enable Quick Quote Functionality</label>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Enable House Margin Logic</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Manage Connecticut Exclusion</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-6 mt-1">
-                                        <div class="form-check form-switch d-flex align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableAllMatrixSuppliers">
-                                            <label class="form-check-label fs_14_fw_400_c_131313"
-                                                for="enableAllMatrixSuppliers">Manage New York Exclusion</label>
+                                    <!-- Enable Partner's Custom Quote Functionality -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enablePartnerMarkup">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enablePartnerMarkup">Enable Partner's Custom Quote
+                                                    Functionality</label>
+                                            </div>
                                         </div>
                                     </div>
 
+                                    <!-- Enable Auto Contract printing -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableHudUpload">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableHudUpload">Enable Auto Contract printing</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- E Mail Link Functionality -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enablePartnerPrivateLabel">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enablePartnerPrivateLabel">E Mail Link Functionality</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Sales Manager Functionality -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableHouseMarginLogic">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableHouseMarginLogic">Sales Manager Functionality</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Enable Partner Mark Up Functionality -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="manageNewYorkExclusion">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="manageNewYorkExclusion">Enable Partner Mark Up
+                                                    Functionality</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Allow to View Matrix Pricing from Suppliers -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableMatrixPricingView">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableMatrixPricingView">
+                                                    Allow to View Matrix Pricing from Suppliers that Broker does not
+                                                    have a Direct Relationship with
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Enable supplier provided HUD Upload -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableHudSupplierUpload">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableHudSupplierUpload">Enable supplier provided HUD
+                                                    Upload</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Allow Broker to Upload Partner Branding -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enablePartnerBrandingUpload">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enablePartnerBrandingUpload">Allow Broker to Upload Partner
+                                                    Branding</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Enable Partner Private Label -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enablePartnerPrivateLabel2">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enablePartnerPrivateLabel2">Enable Partner Private
+                                                    Label</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Display Power by Enerclix -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="displayPowerByEnerclix">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="displayPowerByEnerclix">Display Power by Enerclix</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Enable House Margin Logic -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="enableHouseMarginLogic2">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="enableHouseMarginLogic2">Enable House Margin Logic</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Manage Connecticut Exclusion -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="manageConnecticutExclusion">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="manageConnecticutExclusion">Manage Connecticut
+                                                    Exclusion</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Manage New York Exclusion -->
+                                    <div class="col-6 mt-1 vertical_ui">
+                                        <div class="form-check form-switch d-flex align-items-center w-100">
+                                            <div class="verti_row">
+                                                <input class="form-check-input mid_head_check" type="checkbox"
+                                                    role="switch" id="manageNewYorkExclusion2">
+                                            </div>
+                                            <div class="verti_div">
+                                                <label class="form-check-label fs_14_fw_400_c_131313"
+                                                    for="manageNewYorkExclusion2">Manage New York Exclusion</label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+<div class="row">
 
-                                <div class="row">
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="electricCommission" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="electricCommission"
-                                                    class="form-label fs_14_fw_400_c_131313">Electric Commission.
-                                                    Padding on Non-Direct Suppliers</label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Electric Commission. Padding on Non-Direct Suppliers -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="electricCommission" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="electricCommission" class="form-label fs_14_fw_400_c_131313">
+                Electric Commission. Padding on Non-Direct Suppliers
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="gasCommission" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="gasCommission" class="form-label fs_14_fw_400_c_131313">Gas
-                                                    Commission Padding on Non-Direct Suppliers</label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Gas Commission Padding on Non-Direct Suppliers -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="gasCommission" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="gasCommission" class="form-label fs_14_fw_400_c_131313">
+                Gas Commission Padding on Non-Direct Suppliers
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field" id="maxPartners"
-                                                    placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="maxPartners"
-                                                    class="form-label fs_14_fw_400_c_131313">Allowed Max. Partners <span
-                                                        class="text-danger">*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Allowed Max. Partners -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="maxPartners" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="maxPartners" class="form-label fs_14_fw_400_c_131313">
+                Allowed Max. Partners <span class="text-danger">*</span>
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="maxPricingUsers" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="maxPricingUsers"
-                                                    class="form-label fs_14_fw_400_c_131313">Allowed Max. Pricing Desk
-                                                    Users <span class="text-danger">*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Allowed Max. Pricing Desk Users -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="maxPricingUsers" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="maxPricingUsers" class="form-label fs_14_fw_400_c_131313">
+                Allowed Max. Pricing Desk Users <span class="text-danger">*</span>
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="bidDecrementGas" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="bidDecrementGas"
-                                                    class="form-label fs_14_fw_400_c_131313">Bid Decrement for Gas <span
-                                                        class="text-danger">*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Bid Decrement for Gas -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="bidDecrementGas" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="bidDecrementGas" class="form-label fs_14_fw_400_c_131313">
+                Bid Decrement for Gas <span class="text-danger">*</span>
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="maxPartnersQuickQuote" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="maxPartnersQuickQuote"
-                                                    class="form-label fs_14_fw_400_c_131313">Allow Max. partners with
-                                                    Quick Quote functionality</label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Allow Max. partners with Quick Quote functionality -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="maxPartnersQuickQuote" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="maxPartnersQuickQuote" class="form-label fs_14_fw_400_c_131313">
+                Allow Max. partners with Quick Quote functionality
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="bidDecrementElectric" placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="bidDecrementElectric"
-                                                    class="form-label fs_14_fw_400_c_131313">Bid Decrement for Electric
-                                                    <span class="text-danger">*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Bid Decrement for Electric -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="bidDecrementElectric" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="bidDecrementElectric" class="form-label fs_14_fw_400_c_131313">
+                Bid Decrement for Electric <span class="text-danger">*</span>
+            </label>
+        </div>
+    </div>
 
-                                    <div class="col-6 mt-2">
-                                        <div class="d-flex align-items-center gap-2">
-                                            <div class="col-2">
-                                                <input type="text" class="form-control form_text_field" id="auctionTime"
-                                                    placeholder="" value="0.001">
-                                            </div>
-                                            <div class="col-auto">
-                                                <label for="auctionTime"
-                                                    class="form-label fs_14_fw_400_c_131313">Auction Time <span
-                                                        class="text-danger">*</span></label>
-                                            </div>
-                                        </div>
-                                    </div>
+    <!-- Auction Time -->
+    <div class="col-md-6 mt-2 vertical_ui broker_commission">
+        <div class="col-sm-2 verti_row">
+            <input type="text" class="form-control form_text_field" id="auctionTime" placeholder="" value="0.001">
+        </div>
+        <div class="col-md-auto verti_div">
+            <label for="auctionTime" class="form-label fs_14_fw_400_c_131313">
+                Auction Time <span class="text-danger">*</span>
+            </label>
+        </div>
+    </div>
 
-                                    <!-- Modules * -->
-                                    <div class="col-6 mt-2">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Modules
-                                            <span class="text-danger">*</span></label>
-                                        <div class="d-flex gap-2 flex-row">
-                                            <div class="form-check col-auto">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Quote Management
-                                                </label>
-                                            </div>
-                                            <div class="form-check col-auto">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Auction
-                                                </label>
-                                            </div>
+    <!-- Modules -->
+    <!-- <div class="col-md-6 mt-2 vertical_ui broker_commission"> -->
+    <div class="col-md-6 mt-2 vertical_ui">
+         <label for="modules" class="form-label fs_14_fw_400_c_131313">
+                Modules <span class="text-danger">*</span>
+            </label>
+        <div class="col-md-auto verti_div">
+           
+            <div class="d-flex gap-2 flex-row flex-wrap">
+                <div class="form-check col-auto">
+                    <input type="checkbox" class="form-check-input table_check" id="quoteManagement" checked="">
+                    <label class="form-check-label" for="quoteManagement">Quote Management</label>
+                </div>
+                <div class="form-check col-auto">
+                    <input type="checkbox" class="form-check-input table_check" id="auctionModule" checked="">
+                    <label class="form-check-label" for="auctionModule">Auction</label>
+                </div>
+                <div class="form-check col-auto">
+                    <input type="checkbox" class="form-check-input table_check" id="contractManagement" checked="">
+                    <label class="form-check-label" for="contractManagement">Contract Management</label>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                            <div class="form-check col-auto">
-                                                <input class="form-check-input" type="checkbox" value=""
-                                                    id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Contract Management
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
+</div>
 
-                                </div>
 
                             </div>
                         </div>
