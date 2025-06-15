@@ -661,11 +661,11 @@ input::placeholder {
   margin-bottom: 0px;
 }
 
-.vertical_ui_design .field_50 input,
+/* .vertical_ui_design .field_50 input,
 .vertical_ui_design .field_50 select,
 .vertical_ui_design .field_50 .select2-container {
   width: 49% !important;
-}
+} */
 
 .vertical_ui_design > label,
 .vertical_ui_design > .vertical_label,
@@ -720,7 +720,7 @@ input::placeholder {
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label,
   .vertical_ui_design > .verti_row {
-    width: 35%;
+    width: 31%;
   }
 
   .vertical_ui_design > input,
@@ -728,7 +728,7 @@ input::placeholder {
   .vertical_ui_design > select,
   .vertical_ui_design > .select2-container,
   .vertical_ui_design > .verti_div {
-    width: 300px !important;
+    width: 330px !important;
   }
 }
 
@@ -737,15 +737,17 @@ input::placeholder {
   .vertical_ui_design > .verti_row,
   .vertical_ui_design > label,
   .vertical_ui_design > .vertical_label {
-    width: 40%;
+    width: 30%;
   }
-
+.vertical_ui_design{
+  gap: 10px;
+}
   .vertical_ui_design > input,
   .vertical_ui_design > textarea,
   .vertical_ui_design > select,
   .vertical_ui_design > .select2.select2-container,
   .vertical_ui_design > .verti_div {
-    width: 200px !important;
+    width: 265px !important;
   }
 }
 
@@ -781,18 +783,21 @@ input::placeholder {
    .vertical_ui > .select2.select2-container {
     width: 100% !important;
   }
+  .vertical_ui_design label{
+    margin-bottom: 0.5rem;
+  }
 
   .broker_commission .verti_row {
     min-width: 25%;
     max-width: 25%;
   }
 
-  .verti_e_label {
+  .vertical_ui_design .verti_e_label {
     display: none;
   }
 
-  .hori_e_label {
-    display: block;
+  .vertical_ui_design .hori_e_label {
+    display: block ;
   }
 }
 

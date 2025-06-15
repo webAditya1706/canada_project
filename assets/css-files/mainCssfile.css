@@ -923,6 +923,11 @@ footer {
   height: 15px !important;
 }
 
+.w_16_h_16 {
+  width: 16px !important;
+  height: 16px !important;
+}
+
 .w_18_h_18 {
   width: 18px !important;
   height: 18px !important;
