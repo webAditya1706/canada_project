@@ -888,7 +888,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  /* overflow-x: hidden; */
 }
 
 .wrapper {
@@ -962,8 +962,9 @@ footer {
   width: 15px !important;
 }
 
-.w_12 {
+.w_12_h_12 {
   width: 12px !important;
+  height: 12px;
 }
 
 .w_10_h_10 {

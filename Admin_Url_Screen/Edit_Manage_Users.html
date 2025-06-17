@@ -29,8 +29,8 @@
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -305,12 +305,12 @@
                                                     class="form-label form_label">User ID</label></div>
 
                                             <span for="exampleFormControlInput1"
-                                                class="active_text_title_13 hori_e_label">Send
+                                                class="active_text_title_13 hori_e_label text-decoration-underline">Send
                                                 Password</span>
 
                                         </div>
                                         <input type="tel" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="000 0000 000" pattern="[0-9]{10}"
+                                            id="exampleFormControlInput1" placeholder="danny37" pattern="[0-9]{10}"
                                             required>
                                         <span for="exampleFormControlInput1"
                                             class="active_text_title_13 verti_e_label">Send
@@ -382,7 +382,7 @@
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
                                         <label for="exampleFormControlInput1" class="form-label form_label">Country
                                             <span class="text-danger">*</span></label>
-                                        <select class="form-select select_value_text"
+                                        <select class="form-select select_value_text js-example-basic-single"
                                             aria-label="Default select example">
                                             <option class="form_text_field" selected>Select</option>
                                             <option class="form_text_field" value="1">One</option>
@@ -394,7 +394,7 @@
                                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
                                         <label for="exampleFormControlInput1" class="form-label form_label">State<span
                                                 class="text-danger">*</span></label>
-                                        <select class="form-select select_value_text"
+                                        <select class="form-select select_value_text js-example-basic-single"
                                             aria-label="Default select example">
                                             <option class="form_text_field" selected>Select</option>
                                             <option class="form_text_field" value="1">One</option>
@@ -552,19 +552,21 @@
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
 
+    <!-- bootstrap js file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <!-- external script files -->
     <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
-
-    <!-- bootstrap js file -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
