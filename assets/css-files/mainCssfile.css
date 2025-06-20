@@ -29,12 +29,10 @@
 }
 
 /* scrollbar for every scroller */
-
-/* Chrome, Edge, Safari */
+/* ========== WebKit Browsers (Chrome, Safari, Edge) ========== */
 *::-webkit-scrollbar {
   width: 5px;
-  height: 5px; /* Optional: horizontal scrollbar */
-  flex-shrink: 0;
+  height: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -42,20 +40,25 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background: var(--Theme, #007cba);
+  background-color: var(--Theme, #007cba);
   border-radius: 30px;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  /* Manual darkened color */
-  background: #005f94;
+  background-color: #005f94;
 }
 
-/* Firefox */
+/* ========== Firefox ========== */
 * {
-  scrollbar-width: thin; /* "thin" = smaller scrollbar */
+  scrollbar-width: thin; /* 5px equivalent */
   scrollbar-color: var(--Theme, #007cba) #f1f1f1;
 }
+
+/* Optional: Make sure the variable exists */
+:root {
+  --Theme: #007cba;
+}
+
 
 :root .black_tic__check .form-check-input:checked[type="checkbox"] {
   background-image: url(https://cdn-icons-png.flaticon.com/512/33/33281.png);

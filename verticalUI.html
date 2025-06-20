@@ -36,6 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <style>
         /* Style the <select> element itself */
@@ -58,6 +59,10 @@
         select.custom-select-style option:hover {
             background-color: #0086c9;
             color: white;
+        }
+
+        select option{
+background-color: red;
         }
     </style>
 </head>
@@ -598,14 +603,14 @@
                                             <label for="exampleFormControlInput1" class="form-label form_label">Start
                                                 month</label>
                                             <div class="verti_div d-flex gap-2">
-                                                <select class="form-select select_value_text mb-1"
+                                                <select class="form-select js-example-basic-single select_value_text mb-1"
                                                     aria-label="Default select example">
                                                     <option class="form_text_field" selected>Select</option>
                                                     <option class="form_text_field" value="1">One</option>
                                                     <option value="2">Two</option>
                                                     <option value="3">Three</option>
                                                 </select>
-                                                <select class="form-select select_value_text"
+                                                <select class="form-select js-example-basic-single select_value_text"
                                                     aria-label="Default select example">
                                                     <option class="form_text_field" selected>Select</option>
                                                     <option class="form_text_field" value="1">One</option>
@@ -619,7 +624,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
                                             <label for="exampleFormControlInput1" class="form-label form_label">Product
                                                 2</label>
-                                            <select class="form-select select_value_text"
+                                            <select class="form-select js-example-basic-single select_value_text"
                                                 aria-label="Default select example">
                                                 <option class="form_text_field" selected>Select</option>
                                                 <option class="form_text_field" value="1">One</option>

@@ -53,22 +53,31 @@ $(window).on("resize", function () {
 });
 
 // In your Javascript (external .js resource or <script> tag)
+
 $(document).ready(function () {
-  if (!$(".js-example-basic-single")) return;
+  // Initialize select2
   $(".js-example-basic-single").select2();
 
-  // On dropdown open
-  $(".js-example-basic-single").on("select2:open", function () {
+  // Add custom focus class when select2 opens
+  $(".js-example-basic-single").on("select2:open", function (e) {
+    // Wait for DOM to be ready
     setTimeout(() => {
-      $(".select2-search__field").addClass("form-control mt-1");
+      // Remove custom focus from all
+      $(".select2-selection").removeClass("custom-focus");
 
-      // Add highlight styling
-      $(".select2-selection").addClass("custom-focus");
+      // Add custom-focus only to opened dropdown's selection box
+      const container = $(this).data("select2").$container;
+      container.find(".select2-selection").addClass("custom-focus");
+
+      // Optional: style the search input field
+      $(".select2-search__field").addClass("form-control mt-1");
     }, 0);
   });
 
-  // On dropdown close
+  // Remove focus styling when closed
   $(".js-example-basic-single").on("select2:close", function () {
     $(".select2-selection").removeClass("custom-focus");
   });
 });
+
+
