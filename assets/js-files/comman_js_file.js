@@ -58,6 +58,8 @@ $(document).ready(function () {
   // Initialize select2
   $(".js-example-basic-single").select2();
 
+
+
   // Add custom focus class when select2 opens
   $(".js-example-basic-single").on("select2:open", function (e) {
     // Wait for DOM to be ready
@@ -78,6 +80,23 @@ $(document).ready(function () {
   $(".js-example-basic-single").on("select2:close", function () {
     $(".select2-selection").removeClass("custom-focus");
   });
+
+  // remover search field
+  $('.js-example-basic-single').each(function () {
+    const $select = $(this);
+    const hideSearch = $select.hasClass('hide_search');
+
+    // Create a wrapper for dropdownParent to use
+    const $wrapper = $('<div class="select2-wrapper"></div>');
+    $select.wrap($wrapper);
+
+    $select.select2({
+      dropdownParent: $select.parent(), // Set to wrapper
+      minimumResultsForSearch: hideSearch ? Infinity : 0, // Hide search conditionally
+      width: '100%'
+    });
+  });
+
 });
 
 
