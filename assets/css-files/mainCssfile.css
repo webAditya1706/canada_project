@@ -151,6 +151,8 @@ body::-webkit-scrollbar {
   background-color: var(--Theme);
   /* Light gray background */
   overflow-y: auto;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .content-area {

@@ -193,7 +193,7 @@ input:checked+.mid_header_slider:before {
 
 .real_theme_bg{
     background-color: var(--primary_bg_color);
-    color: #fff;
+    /* color: #fff; */
 }
 
 
