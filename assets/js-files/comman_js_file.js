@@ -53,50 +53,37 @@ $(window).on("resize", function () {
 });
 
 // In your Javascript (external .js resource or <script> tag)
-
 $(document).ready(function () {
-  // Initialize select2
-  $(".js-example-basic-single").select2();
+  setTimeout(() => {
+    $(".js-example-basic-single").each(function () {
+      const $select = $(this);
+      const hideSearch = $select.hasClass("hide_search");
 
+      $select.wrap('<div class="select2-wrapper"></div>');
 
-
-  // Add custom focus class when select2 opens
-  $(".js-example-basic-single").on("select2:open", function (e) {
-    // Wait for DOM to be ready
-    setTimeout(() => {
-      // Remove custom focus from all
-      $(".select2-selection").removeClass("custom-focus");
-
-      // Add custom-focus only to opened dropdown's selection box
-      const container = $(this).data("select2").$container;
-      container.find(".select2-selection").addClass("custom-focus");
-
-      // Optional: style the search input field
-      $(".select2-search__field").addClass("form-control mt-1");
-    }, 0);
-  });
-
-  // Remove focus styling when closed
-  $(".js-example-basic-single").on("select2:close", function () {
-    $(".select2-selection").removeClass("custom-focus");
-  });
-
-  // remover search field
-  $('.js-example-basic-single').each(function () {
-    const $select = $(this);
-    const hideSearch = $select.hasClass('hide_search');
-
-    // Create a wrapper for dropdownParent to use
-    const $wrapper = $('<div class="select2-wrapper"></div>');
-    $select.wrap($wrapper);
-
-    $select.select2({
-      dropdownParent: $select.parent(), // Set to wrapper
-      minimumResultsForSearch: hideSearch ? Infinity : 0, // Hide search conditionally
-      width: '100%'
+      $select.select2({
+        dropdownParent: $select.parent(),
+        minimumResultsForSearch: hideSearch ? Infinity : 0,
+        width: '100%',
+      });
     });
-  });
 
+    // Focus classes
+    $(".js-example-basic-single").on("select2:open", function () {
+      setTimeout(() => {
+        $(".select2-selection").removeClass("custom-focus");
+        const container = $(this).data("select2").$container;
+        container.find(".select2-selection").addClass("custom-focus");
+        $(".select2-search__field").addClass("form-control mt-1");
+      }, 0);
+    });
+
+    $(".js-example-basic-single").on("select2:close", function () {
+      $(".select2-selection").removeClass("custom-focus");
+    });
+
+  }, 100); // slight delay ensures layout is fully calculated
 });
+
 
 

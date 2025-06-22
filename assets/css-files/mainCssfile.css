@@ -140,25 +140,10 @@ body::-webkit-scrollbar {
   height: 0px; /* For horizontal scrollbars */
 }
 
-#open_main_sidebar {
-  width: 50px;
-  height: 100vh;
-  /* Full viewport height */
-  position: fixed;
-  top: 59px;
-  left: 0;
-  /* background-color: #1a5a7e; */
-  background-color: var(--Theme);
-  /* Light gray background */
-  overflow-y: auto;
-  /* justify-content: center; */
-  align-items: center;
-}
-
 .content-area {
   width: calc(100% - 50px);
   margin-left: auto;
-  flex: 1;
+  /* flex: 1; */
 }
 
 .content-area_2 {
@@ -884,8 +869,8 @@ footer {
 /* Sticky footer styling */
 
 .footer-area {
-  width: calc(100% - 50px);
-  margin-left: auto;
+  /* width: calc(100% - 50px);
+  margin-left: auto; */
 }
 /* Ensure body and html fill the viewport */
 html,
@@ -906,7 +891,6 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
 }
 
 /* Footer stays at the bottom */

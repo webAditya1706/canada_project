@@ -96,12 +96,6 @@ background-color: #ffffff9e;
   /* Change SVG fill color on hover */
 }
 
-.sidebar_container {
-  min-height: 100vh;
-  /* padding: 0px 10px; */
-  border-right: 1px solid #ddd;
-  overflow-x: hidden;
-}
 
 .hide_side_bar {
   display: none;
@@ -246,16 +240,19 @@ background-color: #ffffff9e;
 }
 
 #open_main_sidebar {
-  width: 40px;
-  height: 100vh;
+  width: 50px;
+  height: 100%;
   /* Full viewport height */
   position: fixed;
-  top: 59px;
+  /* top: 59px; */
+ bottom: 0px;
   left: 0;
-  background-color: #1a5a7e;
-  /* background-color: var(--Theme); */
+  /* background-color: #1a5a7e; */
+  background-color: var(--Theme);
   /* Light gray background */
   overflow-y: auto;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 #open_main_sidebar:hover + #main_sidebar {
