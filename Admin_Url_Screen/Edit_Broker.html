@@ -35,53 +35,88 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- top header -->
-        <section class="top_header_secction">
-            <div class="container-fluid p-2">
-                <div class="row justify-content-between align-items-center">
-                    <!-- Column 1 -->
-                    <div class="col-12 col-lg-3">
-                        <div class="header_container">
-                            <div class="d-flex gap-2">
-                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                                <div class="header_bg_text">
-                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
-                                </div>
-                            </div>
-                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+    <!-- top header -->
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-3">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
                             </div>
                         </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                        </div>
                     </div>
+                </div>
 
-                    <!-- Column 2 -->
-                    <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- Switch buttons -->
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <!-- Switch buttons -->
 
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
-                                    Legacy</label>
-                            </div>
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
+                                Legacy</label>
+                        </div>
 
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
-                                    View</label>
-                            </div>
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
+                                View</label>
+                        </div>
 
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
                           <label class="switch">
                               <input type="checkbox">
                               <span class="slider round"></span>
                           </label>
                           <span class="menu_font_style">Switch to Partner View</span>
                       </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center w-100">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex align-items-center w-100">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-1 mb-2">
                             <div class="d-flex align-items-center gap-1">
                                 <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                 <div>
@@ -91,105 +126,84 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Drawer Menu -->
-                    <div class="drawer" id="drawer" style="z-index: 999">
-                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                            <hr style="height: 1px; width: 100%" />
-                        </div>
-
-                        <div class="d-flex flex-column justify-content-start">
-                            <!-- Switch buttons -->
-                            <div class="form-check form-switch d-flex align-items-center w-100">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Old
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex align-items-center w-100">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Partner
-                                    View</label>
-                            </div>
-
-                            <div class="d-flex align-items-center gap-1 mb-2">
-                                <div class="d-flex align-items-center gap-1">
-                                    <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                    <div>
-                                        <p class="user_name">Welcome, Alon</p>
-                                        <p class="user_email">alon@demomail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay_menu" id="overlay"></div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Side bar -->
-        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-            <hr class="mt-5 mb-4 show_white_hr_line" />
-
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="Dashboard_active">
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Auction_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <hr class="show_white_hr_line mt-2" />
-
-
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
-
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
             </div>
         </div>
+    </section>
+    <div class="spacer_60"></div>
 
+    <div class="d-flex h-100 position-relative">
+
+        <!-- Side bar -->
+        <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
+            <div class="w-100">
+                <div class="spacer_40"></div>
+                <hr class="show_white_hr_line mx-2" />
+                <div class="spacer_30"></div>
+
+                <div class="side_bar_menu active_sidebar pt-0">
+                    <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
+                </div>
+                <div class="spacer_30"></div>
+                <div class="side_bar_menu">
+                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
+
+                </div>
+                <div class="spacer_30"></div>
+                <div class="side_bar_menu">
+                    <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Auction_active">
+                </div>
+                <div class="spacer_30"></div>
+                <div class="side_bar_menu">
+                    <img src="../assets/icons/Nav Icons/Contract.png" class="w_24" alt="Contract_active">
+                </div>
+                <div class="spacer_30"></div>
+
+                <hr class="show_white_hr_line  mx-2" />
+                <div class="spacer_30"></div>
+
+                <div class="side_bar_menu">
+                    <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="Contract_active">
+                </div>
+                <div class="spacer_30"></div>
+                <div class="side_bar_menu">
+                    <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
+                </div>
+                <div class="spacer_30"></div>
+            </div>
+        </div>
         <!-- drawer Sidebar -->
         <div id="main_sidebar">
             <div>
                 <div class="d-flex justify-content-center">
-                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo" />
                 </div>
+
+                <div class="spacer_40"></div>
                 <hr class="side_bar_hr" />
-                <div class="menu_container position-static">
-                    <div class="menu_parent mb-3">
+                <div class="spacer_30"></div>
+
+                <div class="menu_container">
+                    <div class="menu_parent p-0">
                         <div class="d-flex align-items-center gap-2">
                             <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
-                            <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
+                            <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="">
 
                             <span class="menu_title">Home</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="mx-2 mb-3">
+                <div class="spacer_25"></div>
+
+                <div class="menu_container me-2">
                     <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
                             <div class="row flex-row justify-content-between">
                                 <div class="col-auto p-0">
-                                    <div class="d-flex align-items-center gap-2">
+                                    <div class="d-flex active_menu align-items-center gap-2">
                                         <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
                                         <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
                                             alt="Quotes">
@@ -216,15 +230,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="spacer_25"></div>
 
-                <div class="mx-2 mb-3">
+                <div class="menu_container">
                     <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div type="button" class="btn  pt-0 pb-0" data-bs-toggle="dropdown">
                             <div class="row flex-row justify-content-between">
                                 <div class="col-auto p-0">
                                     <div class="d-flex align-items-center gap-2">
-                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Auction.png" class="w_20" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24"
+                                            alt="Quotes">
+                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
                                         <span class="menu_title">Auctions</span>
                                     </div>
                                 </div>
@@ -248,28 +264,71 @@
                         </div>
                     </div>
                 </div>
+                <div class="spacer_25"></div>
 
-                <hr class="side_bar_hr" />
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <img src="../assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
-                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
-
-                        <span class="menu_title">Home</span>
+                <div class=" menu_container">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
+                            <div class="row flex-row justify-content-between">
+                                <div class="col-auto p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24"
+                                            alt="Quotes">
+                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                        <span class="menu_title">Contracts/CRM</span>
+                                    </div>
+                                </div>
+                                <div class="col-auto m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-1 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-                        <img src="../assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
 
-                        <span class="menu_title">Logout</span>
+                <div class="spacer_28"></div>
+                <hr class="side_bar_hr" />
+                <div class="spacer_28"></div>
+
+                <div class="menu_container">
+                    <div class="menu_parent p-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
+                            <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+
+                            <span class="menu_title">Profile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer_28"></div>
+
+                <div class="menu_container">
+                    <div class="menu_parent p-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
+
+                            <span class="menu_title">Logout</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="content-area mb-4">
+        <div class="content-area h-100 mb-4">
             <!-- bread crumb -->
             <section class="">
                 <div class="container-fluid">
@@ -864,27 +923,29 @@
                     </div>
                 </div>
             </section>
-        </div>
 
-        <!-- footer section -->
-        <footer class="footer-area">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-12 col-md-12">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="them_btn_container ">
-                                <button class="theme_outline_btn2">Back</button>
-                            </div>
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn">Save</button>
+
+            <!-- footer section -->
+            <footer class="footer-area">
+                <div class="container-fluid">
+                    <div class="row flex-row">
+                        <div class="col-12 col-md-12">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="them_btn_container ">
+                                    <button class="theme_outline_btn2">Back</button>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn">Save</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
+
     </div>
 
 

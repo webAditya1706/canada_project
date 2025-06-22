@@ -140,6 +140,11 @@ body::-webkit-scrollbar {
   height: 0px; /* For horizontal scrollbars */
 }
 
+
+.render_content_div{
+  min-height: calc(100vh - 60px);
+}
+
 .content-area {
   width: calc(100% - 50px);
   margin-left: auto;
@@ -1009,6 +1014,10 @@ footer {
 
 .spacer_25 {
   height: 25px;
+}
+
+.spacer_28{
+  height: 28px;
 }
 
 .spacer_30 {
