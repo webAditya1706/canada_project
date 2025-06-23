@@ -36,7 +36,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
     <style>
         /* Style the <select> element itself */
@@ -68,6 +67,11 @@
 
         .hide_search .select2-search--dropdown {
             display: none !important;
+        }
+
+        .select-fixed-500 {
+            max-width: 500px;
+            width: 100%;
         }
     </style>
 </head>
@@ -376,6 +380,7 @@
                                         <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
                                             <label for="startDate" class="form-label form_label">Start Date <span
                                                     class="text-danger">*</span></label>
+
                                             <select class="form-select custom-select-style select_value_text"
                                                 id="startDate">
                                                 <option selected>Select</option>
@@ -383,6 +388,7 @@
                                                 <option value="2">Two</option>
                                                 <option value="3">Three</option>
                                             </select>
+
                                         </div>
 
                                         <!-- Broker Agreement in Place with Supplier -->
@@ -391,7 +397,9 @@
                                                 name="broker_agreement">Broker Agreement in
                                                 Place with Supplier</label>
                                             <!-- <div class="verti_div"> -->
-                                                <select class="form-select js-example-basic-single w-100"
+                                            <div class="verti_div">
+                                                <select
+                                                    class="form-select js-example-basic-single select-fixed-500 w-100"
                                                     aria-label="Default select example">
                                                     <option selected>Open this select menu</option>
                                                     <option value="1">One</option>
@@ -401,6 +409,8 @@
                                                     <option value="1">One</option>
 
                                                 </select>
+
+                                            </div>
                                         </div>
                                         <!-- Term -->
                                         <div class="col-12 vertical_ui mb-3">
@@ -408,36 +418,36 @@
                                                 class="form-label form_label">Term</label>
                                             <div class="d-flex align-items-center gap-3 verti_div">
                                                 <div>
-                                                    <input class="form-check-input check_box check_box me-1" type="checkbox" value=""
-                                                        id="flexCheckDefault">
+                                                    <input class="form-check-input check_box check_box me-1"
+                                                        type="checkbox" value="" id="flexCheckDefault">
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         6
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
-                                                        id="flexCheckDefault">
+                                                    <input class="form-check-input check_box me-1" type="checkbox"
+                                                        value="" id="flexCheckDefault">
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         12
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
-                                                        id="flexCheckDefault">
+                                                    <input class="form-check-input check_box me-1" type="checkbox"
+                                                        value="" id="flexCheckDefault">
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         18
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
-                                                        id="flexCheckDefault">
+                                                    <input class="form-check-input check_box me-1" type="checkbox"
+                                                        value="" id="flexCheckDefault">
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         24
                                                     </label>
                                                 </div>
                                                 <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
-                                                        id="flexCheckDefault">
+                                                    <input class="form-check-input check_box me-1" type="checkbox"
+                                                        value="" id="flexCheckDefault">
                                                     <label class="form-check-label" for="flexCheckDefault">
                                                         36
                                                     </label>

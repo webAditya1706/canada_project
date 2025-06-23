@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Payee Management</title>
 
     <!-- MUI Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
@@ -28,6 +28,9 @@
     <!-- font faimily -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -130,141 +133,141 @@
         </div>
     </section>
 
-    
+
     <!-- Side bar -->
     <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
         <hr class="mt-5 mb-4 show_white_hr_line" />
-  
+
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="Dashboard_active">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="Dashboard_active">
         </div>
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
-  
+            <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
+
         </div>
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Auction_active">
-  
+            <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Auction_active">
+
         </div>
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Contract_active">
-  
+            <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Contract_active">
+
         </div>
         <hr class="show_white_hr_line mt-2" />
-  
-  
+
+
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
-  
+            <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
+
         </div>
         <div class="side_bar_menu mb-2">
-          <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
-  
+            <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
+
         </div>
-      </div>
-  
-      <!-- drawer Sidebar -->
-      <div id="main_sidebar">
+    </div>
+
+    <!-- drawer Sidebar -->
+    <div id="main_sidebar">
         <div>
-          <div class="d-flex justify-content-center">
-            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
-          </div>
-          <hr class="side_bar_hr" />
-          <div class="menu_container position-static">
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
+            </div>
+            <hr class="side_bar_hr" />
+            <div class="menu_container position-static">
+                <div class="menu_parent mb-3">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
+
+                        <span class="menu_title">Home</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-2 mb-3">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                    <span class="menu_title">Qoutes</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu ms-1 p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mx-2 mb-3">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn" data-bs-toggle="dropdown">
+                        <div class="row flex-row justify-content-between">
+                            <div class="col-auto p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Auction.png" class="w_20" alt="Quotes">
+                                    <span class="menu_title">Auctions</span>
+                                </div>
+                            </div>
+                            <div class="col-auto m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu ms-1 p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="side_bar_hr" />
             <div class="menu_parent mb-3">
-              <div class="d-flex align-items-center gap-2">
-                <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
-                <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
-  
-                <span class="menu_title">Home</span>
-              </div>
-            </div>
-          </div>
-  
-          <div class="mx-2 mb-3">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
-                      <span class="menu_title">Qoutes</span>
-                    </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
+                    <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+
+                    <span class="menu_title">Home</span>
                 </div>
-              </div>
-              <div class="dropdown-menu ms-1 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
-  
-          <div class="mx-2 mb-3">
-            <div class="btn-group position-static dropend w-100">
-              <div type="button" class="btn" data-bs-toggle="dropdown">
-                <div class="row flex-row justify-content-between">
-                  <div class="col-auto p-0">
-                    <div class="d-flex align-items-center gap-2">
-                      <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                      <img src="../assets/icons/Nav Icons/Auction.png" class="w_20" alt="Quotes">
-                      <span class="menu_title">Auctions</span>
-                    </div>
-                  </div>
-                  <div class="col-auto m-0 p-0">
-                    <i class="bi bi-chevron-right text-white"></i>
-                  </div>
+            <div class="menu_parent mb-3">
+                <div class="d-flex align-items-center gap-2">
+                    <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+                    <img src="../assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
+
+                    <span class="menu_title">Logout</span>
                 </div>
-              </div>
-              <div class="dropdown-menu ms-1 p-0">
-                <ul class="m-0 p-1">
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Create New</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Active - 715</span>
-                  </li>
-                  <li class="dropdown-item sub_menu" href="#">
-                    <span class="">Requests - 13</span>
-                  </li>
-                </ul>
-              </div>
             </div>
-          </div>
-  
-          <hr class="side_bar_hr" />
-          <div class="menu_parent mb-3">
-            <div class="d-flex align-items-center gap-2">
-              <img src="../assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
-              <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
-  
-              <span class="menu_title">Home</span>
-            </div>
-          </div>
-          <div class="menu_parent mb-3">
-            <div class="d-flex align-items-center gap-2">
-              <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-              <img src="../assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
-  
-              <span class="menu_title">Logout</span>
-            </div>
-          </div>
         </div>
-      </div>
-  
+    </div>
+
     <!-- custom height -->
     <div class="custom_height"></div>
 
@@ -295,12 +298,23 @@
 
     <section class="content-area mt-3">
         <div class="container-fluid">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-6">
+                    <span class="sub_title_13">Basic Information</span>
 
-            <span class="sub_title_13">Basic Information</span>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="border rounded mt-2 py-3 px-3">
                 <div class="row">
                     <!-- User ID -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
                         <div class="mb-3">
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="col-auto">
@@ -317,80 +331,66 @@
                                 placeholder="Enter First Name" value="James" readonly>
                         </div>
                     </div>
+
                     <!-- First Name -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="firstName" class="form-label form_label">First Name <span
-                                    class="text-danger">*</span></label>
-                            <input type="text" class="form-control form_text_field" id="firstName"
-                                placeholder="Enter First Name" value="James">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="firstName" class="form-label form_label">First Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="firstName"
+                            placeholder="Enter First Name" value="James">
                     </div>
 
                     <!-- Last Name -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="lastName" class="form-label form_label">Last Name <span
-                                    class="text-danger">*</span></label>
-                            <input type="text" class="form-control form_text_field" id="lastName"
-                                placeholder="Enter Last Name" value="Yorio">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="lastName" class="form-label form_label">Last Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="lastName"
+                            placeholder="Enter Last Name" value="Yorio">
                     </div>
-
 
                     <!-- Company Name -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="companyName" class="form-label form_label">Company Name</label>
-                            <input type="text" class="form-control form_text_field" id="companyName"
-                                placeholder="Enter Company Name">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="companyName" class="form-label form_label">Company Name</label>
+                        <input type="text" class="form-control form_text_field" id="companyName"
+                            placeholder="Enter Company Name">
                     </div>
 
                     <!-- Email -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">Email <span
-                                    class="text-danger">*</span></label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="email" class="form-label form_label">Email <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control form_text_field" id="email" placeholder="Enter Email"
+                            value="xyz@demomail.com">
                     </div>
 
-                    <!-- Email -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">Retype Email <span
-                                    class="text-danger">*</span></label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <!-- Retype Email -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="retypeEmail" class="form-label form_label">Retype Email <span
+                                class="text-danger">*</span></label>
+                        <input type="email" class="form-control form_text_field" id="retypeEmail"
+                            placeholder="Enter Email" value="xyz@demomail.com">
                     </div>
 
                     <!-- Address 1 -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">Address 1</label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="address1" class="form-label form_label">Address 1</label>
+                        <input type="text" class="form-control form_text_field" id="address1"
+                            placeholder="Enter Address 1" value="xyz@demomail.com">
                     </div>
 
-                    <!-- Address 1 -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">Address 2</label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <!-- Address 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="address2" class="form-label form_label">Address 2</label>
+                        <input type="text" class="form-control form_text_field" id="address2"
+                            placeholder="Enter Address 2" value="xyz@demomail.com">
                     </div>
 
                     <!-- Country -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="country" class="form-label form_label">Country <span
-                                    class="text-danger">*</span></label>
-                            <select class="form-select" id="country">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="country" class="form-label form_label">Country <span
+                                class="text-danger">*</span></label>
+                        <div class="verti_div">
+                            <select class="form-select js-example-basic-single w-100" id="country">
                                 <option selected>USA</option>
                                 <option>Canada</option>
                                 <option>UK</option>
@@ -398,48 +398,42 @@
                         </div>
                     </div>
 
-
-                    <!-- Country -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="country" class="form-label form_label">State <span
-                                    class="text-danger">*</span></label>
-                            <select class="form-select" id="country">
-                                <option selected>USA</option>
-                                <option>Canada</option>
-                                <option>UK</option>
+                    <!-- State -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="state" class="form-label form_label">State <span
+                                class="text-danger">*</span></label>
+                        <div class="verti_div">
+                            <select class="form-select js-example-basic-single w-100" id="state">
+                                <option selected>California</option>
+                                <option>Texas</option>
+                                <option>New York</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- City -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">City</label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="city" class="form-label form_label">City</label>
+                        <input type="text" class="form-control form_text_field" id="city" placeholder="Enter City"
+                            value="xyz@demomail.com">
                     </div>
 
                     <!-- Zip Code -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="email" class="form-label form_label">Zip Code</label>
-                            <input type="email" class="form-control form_text_field" id="email"
-                                placeholder="Enter Email" value="xyz@demomail.com">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="zipCode" class="form-label form_label">Zip Code</label>
+                        <input type="text" class="form-control form_text_field" id="zipCode"
+                            placeholder="Enter Zip Code" value="xyz@demomail.com">
                     </div>
 
                     <!-- Phone -->
-                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                        <div class="mb-3">
-                            <label for="phone" class="form-label form_label">Phone <span
-                                    class="text-danger">*</span></label>
-                            <input type="tel" class="form-control form_text_field" id="phone"
-                                placeholder="Enter Phone Number" value="+1 333 3333 333">
-                        </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 vertical_ui mb-3">
+                        <label for="phone" class="form-label form_label">Phone <span
+                                class="text-danger">*</span></label>
+                        <input type="tel" class="form-control form_text_field" id="phone"
+                            placeholder="Enter Phone Number" value="+1 333 3333 333">
                     </div>
                 </div>
+
             </div>
 
         </div>
@@ -486,85 +480,79 @@
     <section class="content-area">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 verti_width_100_row">
                     <div class="border rounded mt-2 py-3 px-3">
+
                         <div class="mb-2">
                             <span class="main_title_15">Pricing Desk Profile</span>
                         </div>
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
+
+                        <!-- Enable Contract Management -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Enable Contract Management</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="contractManagement" />
                             </div>
                         </div>
 
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
+                        <!-- Allow to Export Data -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Allow to Export Data</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="exportData" />
                             </div>
                         </div>
 
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
+                        <!-- Enable Dashboard -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Enable Dashboard</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="enableDashboard" />
                             </div>
                         </div>
+
                         <hr class="side_bar_hr" />
 
                         <div class="mb-2">
                             <span class="main_title_15">Enable Reporting</span>
                         </div>
 
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
+                        <!-- Usage Without Report -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Usage Without Report</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="usageWithoutReport" />
                             </div>
                         </div>
 
-                        <div class="d-flex mb-3 justify-content-between align-items-center">
-                            <div class="col-auto">
+                        <!-- Usage Without Contract -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Usage Without Contract</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="usageWithoutContract" />
                             </div>
                         </div>
 
                     </div>
+
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 verti_width_100_row">
                     <div class="border rounded mt-2 py-3 px-3">
                         <div class="mb-2">
                             <span class="main_title_15">Partner Profile</span>
@@ -572,72 +560,65 @@
                         <div class="row mb-2">
 
                             <!-- Make Payment to -->
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <label for="firstName" class="form-label form_label">Make Payment to<span
-                                                    class="text-danger">*</span></label>
-                                        </div>
-                                    </div>
-                                    <input type="text" class="form-control form_text_field" id="firstName"
-                                        placeholder="Enter First Name" value="James" readonly>
-                                </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                <label for="makePaymentTo" class="form-label form_label">Make Payment to <span
+                                        class="text-danger">*</span></label>
+                                <input type="text" class="form-control form_text_field" id="makePaymentTo"
+                                    placeholder="Enter Name" value="James" readonly>
                             </div>
 
                             <!-- Email Commission Report To -->
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <div class="mb-3">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <label for="firstName" class="form-label form_label">Email Commission Report
-                                                To<span class="text-danger">*</span></label>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                <label for="commissionEmail" class="form-label form_label">Email Commission Report To
+                                    <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form_text_field" id="commissionEmail"
+                                    placeholder="13@gmail.com" value="James">
+                            </div>
+
+                            <!-- CC Commission Report To * -->
+                            <div class="col-12 mb-3 vertical_ui">
+                                <label for="exampleFormControlInput1" class="form-label form_label">CC Commission
+                                    Report To</label>
+                                <div class="verti_div">
+                                    <input type="text" class="form-control form_text_field mb-2"
+                                        id="exampleFormControlInput1" placeholder="Email here" value="">
+                                    <div class="tag-container w-100">
+                                        <div class="tag">
+                                            magicteam@enerclix.com
+                                            <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+                                        </div>
+                                        <div class="tag">
+                                            magicteam@enerclix.com
+                                            <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
+
                                         </div>
                                     </div>
-                                    <input type="email" class="form-control form_text_field" id="email"
-                                        placeholder="13@gmailcom" value="James">
-                                </div>
-                            </div>
-                            <!-- CC Commission Report To * -->
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label form_label">CC Commission
-                                        Report To</label>
-                                    <input type="text" class="form-control form_text_field"
-                                        id="exampleFormControlInput1" placeholder="Email here" value="">
-                                </div>
-                                <div class="tag-container">
-                                    <div class="tag">
-                                        magicteam@enerclix.com
-                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
-                                    </div>
-                                    <div class="tag">
-                                        magicteam@enerclix.com
-                                        <img src="../assets/icons/cancel.png" class="cancel_icon" alt="cancel_icon">
-
+                                    <div class="row mb-3 mt-2 justify-content-between align-items-center">
+                                        <div class="col-auto active_text_title_14 text-decoration-underline">
+                                            <span>Notes</span>
+                                        </div>
+                                        <div class="col-auto active_text_title_14 text-decoration-underline">
+                                            <span>Private Lable
+                                                Setup</span>
+                                        </div>
+                                        <div
+                                            class="col-auto d-flex align-items-center gap-1 active_text_title_14 text-decoration-underline">
+                                            <span>Exclussions</span> <i class="bi bi-check"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             <!-- field row end -->
                         </div>
-                        <div class="row mb-3 justify-content-between align-items-center">
-                            <div class="col-auto active_text_title_14 text-decoration-underline"><span>Notes</span>
-                            </div>
-                            <div class="col-auto active_text_title_14 text-decoration-underline"><span>Private Lable
-                                    Setup</span></div>
-                            <div
-                                class="col-auto d-flex align-items-center gap-1 active_text_title_14 text-decoration-underline">
-                                <span>Exclussions</span> <i class="bi bi-check"></i>
-                            </div>
-                        </div>
+
 
                         <!-- upload doc -->
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3">
-                            <div class="d-flex justify-content-start align-items-center gap-2">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 vertical_ui">
+                            <div class="d-flex justify-content-start align-items-center gap-2 verti_row">
                                 <label for="upload_doc" class="form-label form_label">Partner Banner</label>
                             </div>
-                            <div class="border rounded d-flex justify-content-end pe-2">
+                            <div class="border rounded d-flex justify-content-end pe-2 verti_div">
                                 <div class="them_btn_container">
                                     <button type="button" data-bs-target="#upload_download_modal" data-bs-toggle="modal"
                                         class="theme_primary_btn">Upload</button>
@@ -645,123 +626,122 @@
                             </div>
                         </div>
                         <!-- Make Premium User (with quick quote functionalities) -->
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
-                                <span class="form_label">Make Premium User <span class="fs_11_fw_400_c_7575">(with quick
-                                        quote functionalities)</span></span>
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
+                                <span class="form_label">
+                                    Make Premium User
+                                    <span class="fs_11_fw_400_c_7575">(with quick quote functionalities)</span>
+                                </span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="premiumUserSwitch" />
                             </div>
                         </div>
-                        <div class="d-flex flex-wrap mb-2 justify-content-between align-items-center">
-                            <div class="col-auto " style="max-width: 80%;">
+
+                        <!-- Allow Partner to Generate Contracts on Expired Auto Matrix -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui flex-wrap">
+                            <div class="col-auto verti_row" style="max-width: 80%;">
                                 <span class="form_label text-wrap">Allow Partner to Generate Contracts on Expired Auto
                                     Matrix</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="expiredContractSwitch" />
                             </div>
                         </div>
-                        <div class="d-flex mb-2 justify-content-between align-items-center">
-                            <div class="col-auto">
+
+                        <!-- Allow Partner to Request Custom Pricing -->
+                        <div class="d-flex mb-2 justify-content-between align-items-center vertical_ui">
+                            <div class="col-auto verti_row">
                                 <span class="form_label">Allow Partner to Request Custom Pricing</span>
                             </div>
-                            <div class="col-auto">
-                                <div
-                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                        id="flexSwitchCheckDefault" />
-                                </div>
+                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                    id="customPricingSwitch" />
                             </div>
                         </div>
+
 
                         <!-- Other field -->
                         <div class="row align-items-center">
                             <!-- Number of Allowed Refreshes -->
-                            <div class="col-12 col-sm-6 col-md-12 col-lg-6  ">
-                                <div class="mb-3">
-                                    <div class="d-flex flex-wrap justify-content-between align-items-center">
-                                        <div class="col-auto">
-                                            <label for="firstName" class="form-label form_label text-wrap">Number of
-                                                Allowed Refreshes</label>
+                            <div class="col-12 col-sm-6 col-md-12 col-lg-6 position-relative vertical_ui mb-3">
+                                <!-- Label + Link Row -->
+                                <div class=" verti_row justify-content-between align-items-center mt-2">
+                                    <label for="allowedRefreshes" class="form-label form_label text-wrap">Number of
+                                        Allowed Refreshes</label>
+                                    <a href="#"
+                                        class="text-decoration-underline form-label active_text_title_14 hori_e_label">State
+                                        Specific</a>
+                                </div>
 
-                                        </div>
-                                        <div class="col-auto">
-                                            <a href="#"
-                                                class="text-decoration-underline mb-2 form-label active_text_title_14">State
-                                                Specific</a>
-                                        </div>
-                                    </div>
-                                    <select class="form-select" id="country">
+                                <!-- Select Field -->
+                                <div class="verti_div position-relative">
+                                    <select class="form-select form_text_field js-example-basic-single"
+                                        id="allowedRefreshes">
                                         <option selected>1</option>
                                         <option>2</option>
                                         <option>3</option>
                                     </select>
                                 </div>
+
+                                <!-- Optional Add Button (if needed, otherwise remove this) -->
+                                <span type="button" class="active_text_title_13 verti_e_label">+ Add</span>
                             </div>
 
+
+
                             <!-- Reset Every Month -->
-                            <div class="col-12 col-sm-6 col-md-12 col-lg-6">
-                                <div class="d-flex flex-wrap mb-2 justify-content-between align-items-center">
-                                    <div class="col-auto " style="max-width: 80%;">
+                            <div class="col-12 col-sm-6 col-md-12 col-lg-6 position-relative vertical_ui mb-3">
+                                <div class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                    <div class="col-auto" style="max-width: 80%;">
                                         <span class="form_label text-wrap">Reset Every Month</span>
                                     </div>
-                                    <div class="col-auto">
-                                        <div
-                                            class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault" />
-                                        </div>
+                                    <div
+                                        class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                        <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                            id="resetEveryMonthSwitch" />
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Number of Suppliers for Refreshes -->
-                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                                <div class="mb-3">
-                                    <label for="country" class="form-label form_label">Number of Suppliers for
-                                        Refreshes</label>
-                                    <select class="form-select" id="country">
-                                        <option selected>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </div>
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui">
+                                <label for="country" class="form-label form_label">Number of Suppliers for
+                                    Refreshes</label>
+                                <div class="verti_div"></div>
+                                <select class="form-select js-example-basic-single" id="country">
+                                    <option selected>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
                             </div>
 
                             <!-- Make Premium User (with quick quote functionalities) -->
-                            <div class="d-flex mb-2 justify-content-between align-items-center">
-                                <div class="col-auto">
-                                    <span class="form_label">Automate Fee-Splitting Notification for NY</span>
-                                </div>
-                                <div class="col-auto">
+
+                            <div class="col-12 col-sm-6 col-md-12 col-lg-6 position-relative vertical_ui mb-3">
+                                <div class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                    <div class="col-auto">
+                                        <span class="form_label text-wrap">Automate Fee-Splitting Notification for
+                                            NY</span>
+                                    </div>
                                     <div
                                         class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
                                         <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault" />
+                                            id="resetEveryMonthSwitch" />
                                     </div>
                                 </div>
                             </div>
+
                             <!--  -->
                             <div class="row">
                                 <!-- Gas Commission on Expired Contract -->
-                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                    <div class="mb-3 position-relative">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <label for="exampleFormControlInput1" class="form-label ">Gas Commission on
-                                                Expired Contract</label>
-                                            <span class="form_unit_text">%</span>
-
-                                        </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 vertical_ui">
+                                    <label for="exampleFormControlInput1" class="form-label ">Gas Commission on
+                                        Expired Contract</label>
+                                    <div class="mb-3 position-relative verti_div">
+                                        <span class="form_unit_text">%</span>
                                         <input type="text" class="form-control form_text_field"
                                             id="exampleFormControlInput1" placeholder="0" value="0">
                                     </div>
@@ -909,12 +889,16 @@
 
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 
     <!-- external script files -->
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../assets/js-files/comman_js_file.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>

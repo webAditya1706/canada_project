@@ -282,6 +282,7 @@ aside {
   left: -5px;
   transform: rotate(45deg);
   z-index: -1;
+  border: none;
 }
 
 .btn-check:checked + .btn,

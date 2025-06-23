@@ -678,10 +678,11 @@ height: 25px !important;
 }
 
 .vertical_ui_design {
-  width: 100%;
+  width: 100% !important;
   display: flex;
   align-items: center;
   gap: 20px;
+  justify-content: flex-start !important;
 }
 
 .vertical_ui_design label {
