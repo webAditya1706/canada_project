@@ -181,153 +181,156 @@
     </div>
     <!-- drawer Sidebar -->
     <div id="main_sidebar">
+
+      <div class="d-flex justify-content-center">
+        <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+      </div>
+
+      <div class="spacer_40"></div>
+      <hr class="side_bar_hr" />
+      <div class="spacer_30"></div>
+      <!-- Home -->
+      <div class="menu_container active_menu">
+        <div class="menu_parent p-0">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="">
+            <!-- <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt=""> -->
+
+            <span class="menu_title">Home</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer_25"></div>
+
       
-        <div class="d-flex justify-content-center">
-          <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-        </div>
-
-        <div class="spacer_40"></div>
-        <hr class="side_bar_hr" />
-        <div class="spacer_30"></div>
-
-        <div class="menu_container active_menu">
-          <div class="menu_parent p-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="">
-              <!-- <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt=""> -->
-
-              <span class="menu_title">Home</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="spacer_25"></div>
-
-        <div class="menu_container me-2">
-          <div class="btn-group position-static dropend w-100">
-            <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
-              <div class="row flex-row justify-content-between">
-                <div class="col-auto p-0">
-                  <div class="d-flex align-items-center gap-2">
-                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
-                    <span class="menu_title">Qoutes</span>
-                  </div>
-                </div>
-                <div class="col-auto m-0 p-0">
-                  <i class="bi bi-chevron-right text-white"></i>
+      <!-- Qoutes -->
+      <div class="menu_container active_menu">
+        <div class="btn-group position-static dropend w-100">
+          <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="d-flex justify-content-between">
+              <div class="col-10 p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                  <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                  <span class="menu_title">Qoutes</span>
                 </div>
               </div>
-            </div>
-            <div class="dropdown-menu ms-1 p-0">
-              <ul class="m-0 p-1">
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Create New</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Active - 715</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Requests - 13</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="spacer_25"></div>
-
-        <div class="menu_container">
-          <div class="btn-group position-static dropend w-100">
-            <div type="button" class="btn  pt-0 pb-0" data-bs-toggle="dropdown">
-              <div class="row flex-row justify-content-between">
-                <div class="col-auto p-0">
-                  <div class="d-flex align-items-center gap-2">
-                    <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Quotes">
-                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
-                    <span class="menu_title">Auctions</span>
-                  </div>
-                </div>
-                <div class="col-auto m-0 p-0">
-                  <i class="bi bi-chevron-right text-white"></i>
-                </div>
+              <div class="col-2 m-0 p-0">
+                <i class="bi bi-chevron-right text-white"></i>
               </div>
             </div>
-            <div class="dropdown-menu ms-1 p-0">
-              <ul class="m-0 p-1">
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Create New</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Active - 715</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Requests - 13</span>
-                </li>
-              </ul>
-            </div>
           </div>
+          <!-- <div class=" ms-1 p-0"> -->
+            <ul class="dropdown-menu m-0 p-1">
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Create New</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Active - 715</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Requests - 13</span>
+              </li>
+            </ul>
+          <!-- </div> -->
         </div>
-        <div class="spacer_25"></div>
+      </div>
 
-        <div class=" menu_container">
-          <div class="btn-group position-static dropend w-100">
-            <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
-              <div class="row flex-row justify-content-between">
-                <div class="col-auto p-0">
-                  <div class="d-flex align-items-center gap-2">
-                    <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Quotes">
-                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
-                    <span class="menu_title">Contracts/CRM</span>
-                  </div>
-                </div>
-                <div class="col-auto m-0 p-0">
-                  <i class="bi bi-chevron-right text-white"></i>
+      <div class="spacer_25"></div>
+      <!-- Auctions -->
+      <div class="menu_container">
+        <div class="btn-group position-static dropend w-100">
+          <div type="button" class="btn  p-0" data-bs-toggle="dropdown">
+            <div class="d-flex justify-content-between">
+              <div class="col-10 p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Quotes">
+                  <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                  <span class="menu_title">Auctions</span>
                 </div>
               </div>
-            </div>
-            <div class="dropdown-menu ms-1 p-0">
-              <ul class="m-0 p-1">
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Create New</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Active - 715</span>
-                </li>
-                <li class="dropdown-item sub_menu" href="#">
-                  <span class="">Requests - 13</span>
-                </li>
-              </ul>
+              <div class="col-2 m-0 p-0">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="spacer_28"></div>
-        <hr class="side_bar_hr" />
-        <div class="spacer_28"></div>
-
-        <div class="menu_container">
-          <div class="menu_parent p-0">
-            <div class="d-flex align-items-center gap-2">
-              <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
-              <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
-
-              <span class="menu_title">Profile</span>
-            </div>
+          <div class="dropdown-menu ms-1 p-0">
+            <ul class="m-0 p-1">
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Create New</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Active - 715</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Requests - 13</span>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="spacer_28"></div>
-
-        <div class="menu_container">
-          <div class="menu_parent p-0">
-            <div class="d-flex align-items-center gap-2">
-              <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-              <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
-
-              <span class="menu_title">Logout</span>
+      </div>
+      <div class="spacer_25"></div>
+      <!-- Contracts/CRM -->
+      <div class=" menu_container">
+        <div class="btn-group position-static dropend w-100">
+          <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+            <div class="d-flex justify-content-between p-0">
+              <div class="col-10 p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Quotes">
+                  <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                  <span class="menu_title">Contracts/CRM</span>
+                </div>
+              </div>
+              <div class="col-2 m-0 p-0">
+                <i class="bi bi-chevron-right text-white"></i>
+              </div>
             </div>
           </div>
+          <div class="dropdown-menu ms-1 p-0">
+            <ul class="m-0 p-1">
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Create New</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Active - 715</span>
+              </li>
+              <li class="dropdown-item sub_menu" href="#">
+                <span class="">Requests - 13</span>
+              </li>
+            </ul>
+          </div>
         </div>
-      
+      </div>
+
+      <div class="spacer_28"></div>
+      <hr class="side_bar_hr" />
+      <div class="spacer_28"></div>
+
+      <div class="menu_container me-2">
+        <div class="menu_parent p-0">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
+            <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+
+            <span class="menu_title">Profile</span>
+          </div>
+        </div>
+      </div>
+      <div class="spacer_28"></div>
+
+      <div class="menu_container me-2">
+        <div class="menu_parent p-0">
+          <div class="d-flex align-items-center gap-2">
+            <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+            <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
+
+            <span class="menu_title">Logout</span>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div class="content-area h-100">
@@ -395,149 +398,13 @@
                     <img src="../assets/icons/Topbar_search_2.png" type="button" data-bs-toggle="offcanvas"
                       data-bs-target="#quote_drawer" aria-controls="quote_drawer" alt="Search Icon" />
                   </div>
-                  <!-- <div class="them_btn_container" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#quote_drawer" aria-controls="quote_drawer"> -->
-                  <!-- <button class="theme_primary_btn btn_ripple_white"> -->
-                  <!-- <img src="../assets/white_search_Icon.png" alt="Search Icon" data-bs-toggle="offcanvas" onclick="showFilter();" aria-controls="contracts_drawer" style="cursor: pointer;"> -->
-
-                  <!-- </button> -->
-                  <!-- </div> -->
+                
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- Search click Model open -->
 
-        <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer"
-          aria-labelledby="quoteDrawerLabel">
-          <div class="offcanvas-body real_theme_bg">
-            <div class="mb-4">
-              <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
-              <div class="qoute_search">
-                <i class="bi bi-search text-white"></i>
-                <input type="text" class="form-control theme_bg_color" id="exampleFormControlInput1" placeholder="" />
-              </div>
-            </div>
-            <hr class="show_gray_hr_line" />
-
-            <div class="filter_body mt-3">
-              <select name="renewalQuoteWithinId" id="renewalQuoteWithinId"
-                class="form-select js-example-basic-single select_value_text ">
-                <option value="0" selected="selected">All Months</option>
-                <option value="1">1 Month </option>
-                <option value="2">2 Months</option>
-                <option value="3">3 Months</option>
-                <option value="4">4 Months</option>
-                <option value="5">5 Months</option>
-                <option value="6">6 Months</option>
-                <option value="7">7 Months</option>
-                <option value="8">8 Months</option>
-                <option value="9">9 Months</option>
-                <option value="10">10 Months</option>
-                <option value="11">11 Months</option>
-                <option value="12">12 Months</option>
-                <option value="13">13 Months</option>
-                <option value="14">14 Months</option>
-                <option value="15">15 Months</option>
-                <option value="16">16 Months</option>
-                <option value="17">17 Months</option>
-                <option value="18">18 Months</option>
-                <option value="19">19 Months</option>
-                <option value="20">20 Months</option>
-                <option value="21">21 Months</option>
-                <option value="22">22 Months</option>
-                <option value="23">23 Months</option>
-                <option value="24">24 Months</option>
-                <option value="25">25 Months</option>
-                <option value="26">26 Months</option>
-                <option value="27">27 Months</option>
-                <option value="28">28 Months</option>
-                <option value="29">29 Months</option>
-                <option value="30">30 Months</option>
-                <option value="31">31 Months</option>
-                <option value="32">32 Months</option>
-                <option value="33">33 Months</option>
-                <option value="34">34 Months</option>
-                <option value="35">35 Months</option>
-                <option value="36">36 Months</option>
-                <option value="37">37 Months</option>
-                <option value="38">38 Months</option>
-                <option value="39">39 Months</option>
-                <option value="40">40 Months</option>
-                <option value="41">41 Months</option>
-                <option value="42">42 Months</option>
-                <option value="43">43 Months</option>
-                <option value="44">44 Months</option>
-                <option value="45">45 Months</option>
-                <option value="46">46 Months</option>
-                <option value="47">47 Months</option>
-                <option value="48">48 Months</option>
-              </select>
-
-              <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
-
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" checked type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn1">
-
-                <label class="form-check-label filter_title" for="filter_radio_btn1">
-                  All Filters
-                </label>
-              </div>
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn2">
-                <label class="form-check-label filter_title" for="filter_radio_btn2">
-                  Customer / Legal Name on Contract
-                </label>
-              </div>
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn3">
-
-                <label class="form-check-label filter_title" for="filter_radio_btn3">
-                  Account Number
-                </label>
-              </div>
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn4">
-
-                <label class="form-check-label filter_title" for="filter_radio_btn4">
-                  Contact Name
-                </label>
-              </div>
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn5">
-                <label class="form-check-label filter_title" for="filter_radio_btn5">
-                  Commodity
-                </label>
-              </div>
-
-              <div class="form-check black_tic__check">
-                <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
-                  id="filter_radio_btn6">
-                <label class="form-check-label filter_title" for="filter_radio_btn6">
-                  Quote ID
-                </label>
-              </div>
-
-              <div class="d-flex justify-content-center align-items-center mt-3">
-                <div class="them_btn_container">
-                  <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Search</button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
       </section>
 
       <!-- Qoutes Table -->
@@ -1948,10 +1815,138 @@
 
   </div>
   <!-- Overlay -->
-  <div class="overlay_mainsidebar"></div>
+  <div class="overlay_mainsidebar" style="z-index: 999;"></div>
+
+  <!-- search drawer -->
+  <!-- Search click Model open -->
+
+  <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer" aria-labelledby="quoteDrawerLabel">
+    <div class="offcanvas-body real_theme_bg">
+      <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
+        <div class="qoute_search">
+          <i class="bi bi-search text-white"></i>
+          <input type="text" class="form-control theme_bg_color" id="exampleFormControlInput1" placeholder="" />
+        </div>
+      </div>
+      <hr class="show_gray_hr_line" />
+
+      <div class="filter_body mt-3">
+        <select name="renewalQuoteWithinId" id="renewalQuoteWithinId"
+          class="form-select js-example-basic-single select_value_text ">
+          <option value="0" selected="selected">All Months</option>
+          <option value="1">1 Month </option>
+          <option value="2">2 Months</option>
+          <option value="3">3 Months</option>
+          <option value="4">4 Months</option>
+          <option value="5">5 Months</option>
+          <option value="6">6 Months</option>
+          <option value="7">7 Months</option>
+          <option value="8">8 Months</option>
+          <option value="9">9 Months</option>
+          <option value="10">10 Months</option>
+          <option value="11">11 Months</option>
+          <option value="12">12 Months</option>
+          <option value="13">13 Months</option>
+          <option value="14">14 Months</option>
+          <option value="15">15 Months</option>
+          <option value="16">16 Months</option>
+          <option value="17">17 Months</option>
+          <option value="18">18 Months</option>
+          <option value="19">19 Months</option>
+          <option value="20">20 Months</option>
+          <option value="21">21 Months</option>
+          <option value="22">22 Months</option>
+          <option value="23">23 Months</option>
+          <option value="24">24 Months</option>
+          <option value="25">25 Months</option>
+          <option value="26">26 Months</option>
+          <option value="27">27 Months</option>
+          <option value="28">28 Months</option>
+          <option value="29">29 Months</option>
+          <option value="30">30 Months</option>
+          <option value="31">31 Months</option>
+          <option value="32">32 Months</option>
+          <option value="33">33 Months</option>
+          <option value="34">34 Months</option>
+          <option value="35">35 Months</option>
+          <option value="36">36 Months</option>
+          <option value="37">37 Months</option>
+          <option value="38">38 Months</option>
+          <option value="39">39 Months</option>
+          <option value="40">40 Months</option>
+          <option value="41">41 Months</option>
+          <option value="42">42 Months</option>
+          <option value="43">43 Months</option>
+          <option value="44">44 Months</option>
+          <option value="45">45 Months</option>
+          <option value="46">46 Months</option>
+          <option value="47">47 Months</option>
+          <option value="48">48 Months</option>
+        </select>
+
+        <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
 
 
-  <!-- Modal Open -->
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" checked type="radio" name="filter_radio_btn"
+            id="filter_radio_btn1">
+
+          <label class="form-check-label filter_title" for="filter_radio_btn1">
+            All Filters
+          </label>
+        </div>
+
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn" id="filter_radio_btn2">
+          <label class="form-check-label filter_title" for="filter_radio_btn2">
+            Customer / Legal Name on Contract
+          </label>
+        </div>
+
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn" id="filter_radio_btn3">
+
+          <label class="form-check-label filter_title" for="filter_radio_btn3">
+            Account Number
+          </label>
+        </div>
+
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn" id="filter_radio_btn4">
+
+          <label class="form-check-label filter_title" for="filter_radio_btn4">
+            Contact Name
+          </label>
+        </div>
+
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn" id="filter_radio_btn5">
+          <label class="form-check-label filter_title" for="filter_radio_btn5">
+            Commodity
+          </label>
+        </div>
+
+        <div class="form-check black_tic__check">
+          <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn" id="filter_radio_btn6">
+          <label class="form-check-label filter_title" for="filter_radio_btn6">
+            Quote ID
+          </label>
+        </div>
+
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <div class="them_btn_container">
+            <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Search</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- search drawer end -->
+
+
+  <!-- Archive Modal Open -->
   <div class="modal fade" id="arcive_modal_open" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -1984,6 +1979,7 @@
       </div>
     </div>
   </div>
+  <!-- Archive Modal End -->
 
   <!-- Queue followUp Modal -->
   <div class="modal fade status_modal" id="queueFollowUPModal">
@@ -2100,7 +2096,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-  
+
   <!-- external script files -->
   <script src="../assets/js-files/SideBarScript.js"></script>
   <script src="../assets/js-files/comman_js_file.js"></script>

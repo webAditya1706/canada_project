@@ -25,20 +25,6 @@ th {
   background-color: #fff;
 }
 
-.dropdown-menu.show::after {
-  content: "";
-  /* width: 15px; */
-  /* height: 15px; */
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  top: 8px;
-  right: -7px;
-  transform: rotate(45deg);
-  z-index: -1;
-  border-right: 1px solid #ddd;
-  border-top: 1px solid #ddd;
-}
-
 table,
 table * {
   border-color: #afafaf !important;

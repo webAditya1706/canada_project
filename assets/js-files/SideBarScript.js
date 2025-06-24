@@ -1,86 +1,80 @@
-// const sidebar1 = document.getElementById("main_sidebar");
-// const overlay1 = document.querySelector(".overlay_mainsidebar");
-
-// // Show overlay when sidebar is open
-// document
-//   .getElementById("open_main_sidebar")
-//   .addEventListener("mouseenter", function () {
-//     sidebar1.classList.add("show_side_bar");
-//     overlay1.style.display = "block";
-//   });
-
-// // Hide sidebar and overlay when clicking outside
-// overlay1.addEventListener("click", function () {
-//   sidebar1.classList.remove("show_side_bar");
-//   overlay1.style.display = "none";
-// });
-
-// // Hide sidebar and overlay on document click, except sidebar or sidebar container
-// document.addEventListener("click", function (event) {
-//   if (
-//     !sidebar1.contains(event.target) &&
-//     !document.getElementById("open_main_sidebar").contains(event.target)
-//   ) {
-//     sidebar1.classList.remove("show_side_bar");
-//     overlay1.style.display = "none";
-//   }
-// });
-
+// old
 const sidebar = document.getElementById("main_sidebar");
 const drawerTrigger = document.getElementById("open_main_sidebar");
 const overlay = document.querySelector(".overlay_mainsidebar");
 const closeBtn = document.getElementById("close_sidebar");
+const drawerElement = document.getElementById("quote_drawer");
 
-// Show sidebar on hover (desktop)
-drawerTrigger.addEventListener("mouseenter", () => {
+let isDrawerOpen = false;
+
+// Detect if it's a touch device (mobile)
+const isTouchDevice = () => {
+  return "ontouchstart" in window || navigator.maxTouchPoints > 0;
+};
+
+// Show sidebar
+const openSidebar = () => {
+  if (isDrawerOpen) {
+    console.log("Drawer is open — sidebar will not open.");
+    return;
+  }
+  console.log("Sidebar opening...");
   sidebar.classList.add("show_side_bar");
-  // overlay.classList.add("active");
   overlay.style.display = "block";
-});
+};
 
-// Show sidebar on click (mobile)
+// Hide sidebar
+const closeSidebar = () => {
+  sidebar.classList.remove("show_side_bar");
+  overlay.style.display = "none";
+};
+
+if (!isTouchDevice()) {
+  drawerTrigger.addEventListener("mouseenter", openSidebar);
+}
+
 drawerTrigger.addEventListener("click", (e) => {
-  e.stopPropagation(); // Prevent closing immediately
-  sidebar.classList.add("show_side_bar");
-  overlay.classList.add("active");
+  e.stopPropagation();
+  openSidebar(); // this now respects isDrawerOpen inside
 });
 
 // Close on overlay click
-overlay.addEventListener("click", () => {
-  sidebar.classList.remove("show_side_bar");
-  overlay.style.display = "none";
-});
+overlay.addEventListener("click", closeSidebar);
 
-// Optional close button for mobile
+// Optional close button
 if (closeBtn) {
-  closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("show_side_bar");
-    overlay.style.display = "none";
-  });
+  closeBtn.addEventListener("click", closeSidebar);
 }
 
-// Prevent closing when clicking inside sidebar or dropdown
-document.addEventListener("click", function (e) {
+// Click outside to close
+document.addEventListener("click", (e) => {
   const insideSidebar = sidebar.contains(e.target);
   const insideDrawer = drawerTrigger.contains(e.target);
   const insideDropdown = e.target.closest(".dropdown-menu");
+  const isDropdownToggle = e.target.closest('[data-bs-toggle="dropdown"]');
 
-  if (!insideSidebar && !insideDrawer && !insideDropdown) {
-    sidebar.classList.remove("show_side_bar");
-    overlay.style.display = "none";
-  }
+  if (insideSidebar || insideDrawer || insideDropdown || isDropdownToggle)
+    return;
+
+  closeSidebar();
 });
 
-// Prevent dropdown from bubbling up
+// Prevent dropdown clicks from bubbling
 document.querySelectorAll(".dropdown-menu").forEach((menu) => {
   menu.addEventListener("click", (e) => {
     e.stopPropagation();
   });
 });
 
+// Track drawer open/close state
+drawerElement.addEventListener("shown.bs.offcanvas", () => {
+  isDrawerOpen = true;
+  closeSidebar(); // optional: auto-close sidebar
+});
 
-
-
+drawerElement.addEventListener("hidden.bs.offcanvas", () => {
+  isDrawerOpen = false;
+});
 
 // vertically UI
 const changeUI = () => {
