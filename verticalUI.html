@@ -3,137 +3,200 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vertical UI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Active</title>
 
     <!-- MUI Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+        rel="stylesheet" />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
-        rel="stylesheet">
-
-    <!-- external css files -->
-    <link rel="stylesheet" href="./assets/css-files/topHeader.css  ">
-    <link rel="stylesheet" href=" ">
-    <link rel="stylesheet" href="./assets/css-files/sideBar.css">
-    <link rel="stylesheet" href="./assets/css-files/MiddleHeader.css">
-    <link rel="stylesheet" href="./assets/css-files/QuotesTable.css">
-    <link rel="stylesheet" href="./assets/css-files/btn-css.css">
-    <link rel="stylesheet" href="./assets/css-files/mainCssfile.css">
-    <link rel="stylesheet" href="./assets/css-files/form_style.css">
-    <link rel="stylesheet" href="./assets/css-files/QuotesTable.css">
-    <link rel="stylesheet" href="./assets/css-files/normal-border-tabel.css">
-
-
-    <!-- font faimily -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/without_sticky_table.css" />
 
+    <!-- Bootstrap icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- for date picker -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <style>
-        /* Style the <select> element itself */
-        .custom-select-style {
-            background-color: #004263;
-            /* Background of the select box */
-            color: #fff;
-            /* Text color */
+        .custom-datepicker {
+            position: relative;
+            display: inline-block;
+        }
+
+        #dateInput {
+            width: 180px;
+            padding: 10px;
             border: 1px solid #ccc;
-            height: 38px;
+            cursor: pointer;
+            background: white;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 5px;
         }
 
-        /* Style for individual <option> – works in some browsers (not all) */
-        select.custom-select-style option {
-            background-color: white;
-            color: #000;
+        /* Custom Flatpickr styles */
+        .flatpickr-calendar {
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        /* Hover effect - limited support */
-        select.custom-select-style option:hover {
-            background-color: #0086c9;
-            color: white;
+        /* Custom navigation buttons */
+        .flatpickr-prev-month,
+        .flatpickr-next-month {
+            font-size: 18px !important;
+            font-weight: bold;
+            color: #007CBA;
         }
 
-        select option {
+        .flatpickr-prev-month svg,
+        .flatpickr-next-month svg {
+            display: none;
+            /* Hide default Flatpickr icons */
+        }
+
+        .flatpickr-prev-month::after {
+            content: "\f284";
+            /* Bootstrap 'chevron-left' icon */
+            font-family: "Bootstrap-icons";
+        }
+
+        .flatpickr-next-month::after {
+            content: "\f285";
+            /* Bootstrap 'chevron-right' icon */
+            font-family: "Bootstrap-icons";
+        }
+
+        /* Custom dropdown background */
+        .flatpickr-monthDropdown-months {
+            /* background-color: #007bff !important;
+            color: white !important; */
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        /* Selected month style */
+        .flatpickr-monthDropdown-months option:checked {
+            background-color: #007CBA !important;
+            color: white !important;
+
+        }
+
+        option:hover {
             background-color: red;
-        }
-
-
-        .hide_search .select2-search--dropdown {
-            display: none !important;
-        }
-
-        .select-fixed-500 {
-            max-width: 500px;
-            width: 100%;
         }
     </style>
 </head>
 
-<body class="footer_wraper ">
-    <h2>Vertical Ui</h2>
-    <div class="page-wrapper">
-
-        <!-- TOp header -->
-        <section class="top_header_secction">
-            <div class="container-fluid p-2">
-                <div class="row justify-content-between align-items-center">
-                    <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
-                        <div class="header_container">
-                            <div class="d-flex gap-2">
-                                <img src="./assets/logo.png" alt="Logo" class="header_logo" />
-                                <div class="header_bg_text">
-                                    <img src="./assets/banner_img.png" alt="" class="header_banner">
-                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
-                                </div>
+<body>
+    <!-- top header -->
+    <section class="top_header_secction">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
                             </div>
-                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor:pointer;"></i>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <!-- Switch buttons -->
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">Switch to
+                                Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Column 2 -->
-                    <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%" />
+                    </div>
 
-                            <!-- Switch buttons -->
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
 
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Old
-                                    Legacy</label>
-                            </div>
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
 
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Partner
-                                    View</label>
-                            </div>
-
-
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                                <label class="switch">
-                                    <input type="checkbox">
-                                    <span class="slider round"></span>
-                                </label>
-                                <span class="menu_font_style">Switch to Partner View</span>
-                            </div> -->
+                        <div class="d-flex align-items-center gap-1 mb-2">
                             <div class="d-flex align-items-center gap-1">
-                                <img src="./assets/user.png" class="user_image" alt="User Icon" />
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                 <div>
                                     <p class="user_name">Welcome, Alon</p>
                                     <p class="user_email">alon@demomail.com</p>
@@ -141,147 +204,166 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Drawer Menu -->
-                    <div class="drawer" id="drawer" style="z-index: 999;">
-                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                            <img src="./assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                            <hr style="height: 1px; width: 100%;" />
-                        </div>
-
-                        <div class="d-flex flex-column justify-content-start">
-                            <!-- Switch buttons -->
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Old
-                                    Legacy</label>
-                            </div>
-
-
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Partner
-                                    View</label>
-                            </div>
-
-                            <div class="d-flex align-items-center gap-1 mb-2">
-                                <div class="d-flex align-items-center gap-1">
-                                    <img src="./assets/user.png" class="user_image" alt="User Icon" />
-                                    <div>
-                                        <p class="user_name">Welcome, Alon</p>
-                                        <p class="user_email">alon@demomail.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay_menu" id="overlay"></div>
                 </div>
-            </div>
-        </section>
-
-
-        <!-- Side bar -->
-        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-            <hr class="mt-5 mb-4 show_white_hr_line" />
-
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="Dashboard_active">
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/Auction_active.png" class="w_24" alt="Auction_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/Contract_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <hr class="show_white_hr_line mt-2" />
-
-
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="./assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
-
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
             </div>
         </div>
+    </section>
+    <div class="spacer_60"></div>
 
+    <!-- <div class="spacer_60" style="height: 60px;"></div> -->
+    <div class="d-flex flex-column min-vh-100">
+        <div class="d-flex flex-grow-1 position-relative">
 
+            <!-- Side bar -->
+            <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
+                <div class="spacer_60 d-sm-none"></div>
 
-        <!-- drawer Sidebar -->
-        <div id="main_sidebar">
-            <div>
-                <div class="d-flex justify-content-center">
-                    <img src="./assets/logo.png" alt="Logo" class="header_logo mt-3" />
+                <div class="w-100">
+                    <div class="spacer_40"></div>
+                    <hr class="show_white_hr_line mx-2" />
+                    <div class="spacer_35"></div>
+
+                    <div class="side_bar_menu active_sidebar pt-0">
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
+                    </div>
+                    <div class="spacer_30"></div>
+                    <div class="side_bar_menu">
+                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
+
+                    </div>
+                    <div class="spacer_30"></div>
+                    <div class="side_bar_menu">
+                        <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Auction_active">
+                    </div>
+                    <div class="spacer_30"></div>
+                    <div class="side_bar_menu">
+                        <img src="../assets/icons/Nav Icons/Contract.png" class="w_24" alt="Contract_active">
+                    </div>
+                    <div class="spacer_30"></div>
+
+                    <hr class="show_white_hr_line  mx-2" />
+                    <div class="spacer_30"></div>
+
+                    <div class="side_bar_menu">
+                        <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="Contract_active">
+                    </div>
+                    <div class="spacer_30"></div>
+                    <div class="side_bar_menu">
+                        <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
+                    </div>
+                    <div class="spacer_30"></div>
                 </div>
+            </div>
+            <!-- drawer Sidebar -->
+            <div id="main_sidebar">
+
+                <div class="d-flex justify-content-center">
+                    <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                </div>
+
+                <div class="spacer_40"></div>
                 <hr class="side_bar_hr" />
-                <div class="menu_container position-static">
-                    <div class="menu_parent mb-3">
+                <div class="spacer_30"></div>
+                <!-- Home -->
+                <div class="menu_container active_menu">
+                    <div class="menu_parent p-0">
                         <div class="d-flex align-items-center gap-2">
-                            <!-- <img src="./assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
-                            <img src="./assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
+                            <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt="">
+                            <!-- <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt=""> -->
 
                             <span class="menu_title">Home</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="mx-2 mb-3">
+                <div class="spacer_25"></div>
+
+
+                <!-- Qoutes -->
+                <div class="menu_container active_menu">
                     <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
+                        <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-10 p-0">
                                     <div class="d-flex align-items-center gap-2">
-                                        <!-- <img src="./assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="./assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                            alt="Quotes">
                                         <span class="menu_title">Qoutes</span>
                                     </div>
                                 </div>
-                                <div class="col-auto m-0 p-0">
+                                <div class="col-2 m-0 p-0">
                                     <i class="bi bi-chevron-right text-white"></i>
                                 </div>
                             </div>
                         </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
+                        <!-- <div class=" ms-1 p-0"> -->
+                        <ul class="dropdown-menu m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
 
-                <div class="mx-2 mb-3">
+                <div class="spacer_25"></div>
+                <!-- Auctions -->
+                <div class="menu_container">
                     <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
+                        <div type="button" class="btn  p-0" data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-between">
+                                <div class="col-10 p-0">
                                     <div class="d-flex align-items-center gap-2">
-                                        <!-- <img src="./assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="./assets/icons/Nav Icons/Auction.png" class="w_20" alt="Quotes">
+                                        <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24"
+                                            alt="Quotes">
+                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
                                         <span class="menu_title">Auctions</span>
                                     </div>
                                 </div>
-                                <div class="col-auto m-0 p-0">
+                                <div class="col-2 m-0 p-0">
+                                    <i class="bi bi-chevron-right text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu ms-1 p-0">
+                            <ul class="m-0 p-1">
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer_25"></div>
+                <!-- Contracts/CRM -->
+                <div class=" menu_container">
+                    <div class="btn-group position-static dropend w-100">
+                        <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-between p-0">
+                                <div class="col-10 p-0">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24"
+                                            alt="Quotes">
+                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                        <span class="menu_title">Contracts/CRM</span>
+                                    </div>
+                                </div>
+                                <div class="col-2 m-0 p-0">
                                     <i class="bi bi-chevron-right text-white"></i>
                                 </div>
                             </div>
@@ -302,523 +384,894 @@
                     </div>
                 </div>
 
+                <div class="spacer_28"></div>
                 <hr class="side_bar_hr" />
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <img src="./assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
-                        <!-- <img src="./assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+                <div class="spacer_28"></div>
 
-                        <span class="menu_title">Home</span>
-                    </div>
-                </div>
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <!-- <img src="./assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-                        <img src="./assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
+                <div class="menu_container me-2">
+                    <div class="menu_parent p-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
+                            <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
 
-                        <span class="menu_title">Logout</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- custom height -->
-        <div class="custom_height"></div>
-
-        <!-- bread crumb -->
-        <section class="content-area">
-            <div class="container-fluid">
-                <div class="row g-3 d-flex justify-content-between align-items-center py-2">
-                    <div class="col-md-6">
-                        <div class="d-flex align-items-center gap-3">
-                            <div class="main_title_15">Quote ID: 21711</div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                fill="none">
-                                <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                            <div class="active_text_title_14">Edit Form</div>
+                            <span class="menu_title">Profile</span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="d-flex flex-wrap align-items-center justify-content-end gap-3">
-                            <div class="d-flex align-items-center justify-content-end gap-3">
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                </div>
+                <div class="spacer_28"></div>
+
+                <div class="menu_container me-2">
+                    <div class="menu_parent p-0">
+                        <div class="d-flex align-items-center gap-2">
+                            <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+                            <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
+
+                            <span class="menu_title">Logout</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content-area d-flex flex-column">
+                <div class="content-inner flex-grow-1">
+                    <h2>Vertical Ui</h2>
+                    <!-- bread crumb -->
+                    <section class="">
+                        <div class="container-fluid">
+                            <div class="row g-3 d-flex justify-content-between align-items-center py-2">
+                                <div class="col-md-6">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="main_title_15">Quote ID: 21711</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="active_text_title_14">Edit Form</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault">
-                                <label class="form-check-label menu_font_style"
-                                    for="flexSwitchCheckDefault">In-Progress</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input check_box mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" checked>
-                                <label class="form-check-label menu_font_style"
-                                    for="flexSwitchCheckDefault">Complete</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Form section -->
-        <div class="content-area">
-            <section class="">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-md-6 verti_width_100_row mb-5">
-                            <div class="border rounded px-3 py-2 h-100">
-                                <form action="">
-                                    <div class="row">
-
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
-                                            <label for="startDate" class="form-label form_label">Start Date <span
-                                                    class="text-danger">*</span></label>
-
-                                            <select class="form-select custom-select-style select_value_text"
-                                                id="startDate">
-                                                <option selected>Select</option>
-                                                <option value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-
-                                        </div>
-
-                                        <!-- Broker Agreement in Place with Supplier -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 vertical_ui">
-                                            <label for="exampleFormControlInput1" class="form-label form_label"
-                                                name="broker_agreement">Broker Agreement in
-                                                Place with Supplier</label>
-                                            <!-- <div class="verti_div"> -->
-                                            <div class="verti_div">
-                                                <select
-                                                    class="form-select js-example-basic-single select-fixed-500 w-100"
-                                                    aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                    <option value="AL">Alabama</option>
-                                                    <option value="1">One</option>
-
-                                                </select>
-
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-wrap align-items-center justify-content-end gap-3">
+                                        <div class="d-flex align-items-center justify-content-end gap-3">
+                                            <div class="them_btn_container">
+                                                <button class="theme_primary_btn" onclick="changeUI()">Vertical
+                                                    UI</button>
                                             </div>
                                         </div>
-                                        <!-- Term -->
-                                        <div class="col-12 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label form_label">Term</label>
-                                            <div class="d-flex align-items-center gap-3 verti_div">
-                                                <div>
-                                                    <input class="form-check-input check_box check_box me-1"
-                                                        type="checkbox" value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        6
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox"
-                                                        value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        12
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox"
-                                                        value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        18
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox"
-                                                        value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        24
-                                                    </label>
-                                                </div>
-                                                <div>
-                                                    <input class="form-check-input check_box me-1" type="checkbox"
-                                                        value="" id="flexCheckDefault">
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        36
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- upload doc -->
-                                        <div class="col-12 vertical_ui mb-3">
-                                            <div
-                                                class="d-flex justify-content-start align-items-center gap-2 verti_row">
-                                                <label for="upload_doc" class="form-label form_label">Documents</label>
-                                                <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="12"
-                                                    height="10" viewBox="0 0 12 10" fill="none">
-                                                    <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
-                                                        fill="#77D400" />
-                                                </svg>
-                                            </div>
-                                            <div class="border rounded d-flex justify-content-end pe-2 verti_div">
-                                                <div class="them_btn_container">
-                                                    <button type="button" data-bs-target="#upload_download_modal"
-                                                        data-bs-toggle="modal" class="theme_primary_btn">Upload</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- account field -->
-                                        <div class="col-12 col-sm-6 position-relative vertical_ui mb-3">
-                                            <div
-                                                class="d-flex verti_row justify-content-between align-items-center mt-2">
-                                                <div>
-                                                    <label for="exampleFormControlInput1"
-                                                        class="form-label form_label">Account (s) 2</label>
-                                                    <p>please contact your support team to make any account changes </p>
-
-                                                </div>
-                                                <span type="button" for="" class="active_text_title_13 hori_e_label"> +
-                                                    Add</span>
-                                            </div>
-
-
-                                            <div class="verti_div position-relative">
-                                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
-                                                    data-bs-target="#accounts_view_modal"
-                                                    style="background: none; border: none; padding: 0;">
-                                                    <img src="../assets/icons/black_form_search_icon.png" class=""
-                                                        alt="search_icon" style="cursor:pointer;">
-                                                </button>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="18,456" value="8,456"
-                                                    readonly>
-                                            </div>
-                                            <span type="button" for="" class="active_text_title_13 verti_e_label"> +
-                                                Add</span>
-
-                                        </div>
-
-                                        <!-- account field -->
-                                        <div class="col-12 col-sm-6 position-relative vertical_ui mb-3">
-                                            <div
-                                                class="d-flex verti_row justify-content-between align-items-center mt-2">
-                                                <div>
-                                                    <label for="exampleFormControlInput1"
-                                                        class="form-label form_label">Account (s) 2</label>
-                                                </div>
-                                                <span type="button" for="" class="active_text_title_13 hori_e_label"> +
-                                                    Add</span>
-                                            </div>
-
-
-                                            <div class="verti_div position-relative">
-                                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
-                                                    data-bs-target="#accounts_view_modal"
-                                                    style="background: none; border: none; padding: 0;">
-                                                    <img src="../assets/icons/black_form_search_icon.png" class=""
-                                                        alt="search_icon" style="cursor:pointer;">
-                                                </button>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="18,456" value="8,456"
-                                                    readonly>
-                                            </div>
-                                            <span type="button" for="" class="active_text_title_13 verti_e_label"> +
-                                                Add</span>
-
-                                        </div>
-
-
-                                        <!-- Customer/SIte Info -->
-                                        <div class="col-12 col-sm-6 position-relative vertical_ui mb-3">
-                                            <div
-                                                class="d-flex verti_row justify-content-between align-items-center mt-2 mb-1">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Customer</label>
-
-                                                <img src="./assets/icons/Form_Edit.png" alt=""
-                                                    class="w_16_h_16 hori_e_label">
-                                            </div>
-
-
-                                            <div class="verti_div position-relative">
-                                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
-                                                    data-bs-target="#accounts_view_modal"
-                                                    style="background: none; border: none; padding: 0;">
-                                                    <img src="../assets/icons/black_form_search_icon.png" class=""
-                                                        alt="search_icon" style="cursor:pointer;">
-                                                </button>
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="18,456" value="8,456"
-                                                    readonly>
-                                            </div>
-                                            <img src="./assets/icons/Form_Edit.png" alt=""
-                                                class="w_16_h_16 verti_e_label">
-
-                                        </div>
-
-
-                                        <!-- text area 1 -->
                                         <div
-                                            class="col-12 col-sm-12 mt-2 col-md-12 col-lg-12 text_area_custom_margin mb-3 vertical_ui">
-                                            <label for="exampleFormControlTextarea1" class="form-label form_label">Notes
-                                                <span class="para_text_14">(Viewable to
-                                                    partner)</span></label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                                                placeholder="0.0"></textarea>
+                                            class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                            <input class="form-check-input check_box mid_head_check" type="checkbox"
+                                                role="switch" id="flexSwitchCheckDefault">
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">In-Progress</label>
                                         </div>
 
-
+                                        <div
+                                            class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                            <input class="form-check-input check_box mid_head_check" type="checkbox"
+                                                role="switch" id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label menu_font_style"
+                                                for="flexSwitchCheckDefault">Complete</label>
+                                        </div>
                                     </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- column 1 finish -->
-
-                        <div class="col-12 col-md-6 verti_width_100_row mb-5">
-                            <div class="border rounded px-3 py-2 h-100">
-                                <form action="">
-                                    <div class="row">
-                                        <!-- Expire Date -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Current
-                                                billing type</label>
-
-                                            <div class="position-relative verti_div">
-                                                <span class="form_unit_text">kwh</span>
-
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="Type here" value="">
-                                            </div>
-                                        </div>
-
-                                        <!-- Quote Due date -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2 vertical_ui mb-3">
-                                            <div class="d-flex justify-content-between align-items-center verti_row">
-                                                <label for="exampleFormControlInput1"
-                                                    class="form-label form_label">Quote Due Date</label>
-                                            </div>
-                                            <div class="position-relative verti_div">
-                                                <img src="../assets/icons/date_picker_icon.png" class="date_picker_icon"
-                                                    alt="date_picker_icon" style="cursor:pointer;">
-                                                <input type="text" class="form-control form_text_field"
-                                                    id="exampleFormControlInput1" placeholder="Date">
-                                            </div>
-                                        </div>
-
-                                        <!-- Start Month -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Start
-                                                month</label>
-                                            <div class="verti_div d-flex gap-2">
-                                                <select
-                                                    class="form-select js-example-basic-single select_value_text mb-1"
-                                                    aria-label="Default select example">
-                                                    <option class="form_text_field" selected>Select</option>
-                                                    <option class="form_text_field" value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                <select class="form-select js-example-basic-single select_value_text"
-                                                    aria-label="Default select example">
-                                                    <option class="form_text_field" selected>Select</option>
-                                                    <option class="form_text_field" value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <!-- product 2 -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Product
-                                                2</label>
-                                            <select class="form-select js-example-basic-single select_value_text"
-                                                aria-label="Default select example">
-                                                <option class="form_text_field" selected>Select</option>
-                                                <option class="form_text_field" value="1">One</option>
-                                                <option value="2">Two</option>
-                                                <option value="3">Three</option>
-                                            </select>
-                                        </div>
-
-                                        <!-- Main contact primery phone number -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Main
-                                                contact primery phone number</label>
-                                            <div
-                                                class="d-flex flex-row gap-2 justify-content-between align-items-center verti_div ">
-                                                <input type="text" class="form-control form_text_field mb-2 td_w_40"
-                                                    id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                    value="1-234" readonly>
-
-                                                <input type="text" class="form-control form_text_field mb-2 td_w_40"
-                                                    id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                    value="322">
-
-                                                <input type="text" class="form-control form_text_field mb-2"
-                                                    id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                    value="467 0258">
-
-                                                <span class="mb-2 span_text">Ext</span>
-
-                                                <input type="text" class="form-control form_text_field mb-2 td_w_40"
-                                                    id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                    value="213">
-                                            </div>
-                                        </div>
-
-                                        <!-- Commodity -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1"
-                                                class="form-label form_label">Commodity</label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                                value="Electric" readonly>
-                                        </div>
-
-                                        <!-- Property Type -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Property
-                                                Type</label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Electric" value="Commercial"
-                                                readonly>
-                                        </div>
-
-                                        <!-- Property Type -->
-                                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
-                                            <label for="exampleFormControlInput1" class="form-label form_label">Product
-                                                1</label>
-                                            <input type="text" class="form-control form_text_field"
-                                                id="exampleFormControlInput1" placeholder="Commercial"
-                                                value="Commercial" readonly>
-                                        </div>
-
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <!-- column 2 -->
-                    </div>
-
-                    <!-- buttons row -->
-                    <div class="row mt-2 justify-content-center align-items-center position-relative">
-                        <div class="col-auto mt-2">
-                            <div class="d-flex justify-content-center align-items-center gap-2">
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal"
-                                        data-bs-toggle="modal">Generate
-                                        LOA</button>
-                                </div>
-                                <span class="form_label">OR</span>
-                                <div class="them_btn_container">
-                                    <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal"
-                                        data-bs-toggle="modal">Generate
-                                        LOE</button>
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <!-- Form section -->
+                    <div class="">
+                        <section class="">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 verti_width_100_row mb-5">
+                                        <div class="border rounded px-3 py-2 h-100">
+                                            <form action="">
+                                                <div class="row">
+                                                    <!-- Date picker -->
+                                                    <div class="col-12 mb-2 vertical_ui">
+                                                        <label for="Date_picker" class="form-label form_label">Date picker
+                                                            <span class="text-danger">*</span></label>
 
+                                                        <div class="custom-datepicker verti_div">
+                                                            <input type="text" id="dateInput" class="form-control"
+                                                                placeholder="Select Date" readonly>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Start Date -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-2 vertical_ui">
+                                                        <label for="startDate" class="form-label form_label">Start Date
+                                                            <span class="text-danger">*</span></label>
+
+                                                        <select
+                                                            class="form-select custom-select-style select_value_text"
+                                                            id="startDate">
+                                                            <option selected>Select</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                    <!-- Broker Agreement in Place with Supplier -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-3 vertical_ui">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label" name="broker_agreement">Broker
+                                                            Agreement in
+                                                            Place with Supplier</label>
+                                                        <!-- <div class="verti_div"> -->
+                                                        <div class="verti_div">
+                                                            <select
+                                                                class="form-select js-example-basic-single select-fixed-500 w-100"
+                                                                aria-label="Default select example">
+                                                                <option selected>Open this select menu</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                                <option value="AL">Alabama</option>
+                                                                <option value="1">One</option>
+
+                                                            </select>
+
+                                                        </div>
+                                                    </div>
+                                                    <!-- Term -->
+                                                    <div class="col-12 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Term</label>
+                                                        <div class="d-flex align-items-center gap-3 verti_div">
+                                                            <div>
+                                                                <input class="form-check-input check_box check_box me-1"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    6
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input check_box me-1"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    12
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input check_box me-1"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    18
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input check_box me-1"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    24
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <input class="form-check-input check_box me-1"
+                                                                    type="checkbox" value="" id="flexCheckDefault">
+                                                                <label class="form-check-label" for="flexCheckDefault">
+                                                                    36
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- upload doc -->
+                                                    <div class="col-12 vertical_ui mb-3">
+                                                        <div
+                                                            class="d-flex justify-content-start align-items-center gap-2 verti_row">
+                                                            <label for="upload_doc"
+                                                                class="form-label form_label">Documents</label>
+                                                            <svg class="mb-2" xmlns="http://www.w3.org/2000/svg"
+                                                                width="12" height="10" viewBox="0 0 12 10" fill="none">
+                                                                <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
+                                                                    fill="#77D400" />
+                                                            </svg>
+                                                        </div>
+                                                        <div
+                                                            class="border rounded d-flex justify-content-end pe-2 verti_div">
+                                                            <div class="them_btn_container">
+                                                                <button type="button"
+                                                                    data-bs-target="#upload_download_modal"
+                                                                    data-bs-toggle="modal"
+                                                                    class="theme_primary_btn">Upload</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- account field -->
+                                                    <div class="col-12 col-sm-6 position-relative vertical_ui align-items-start mb-3">
+                                                        <div
+                                                            class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                                            <div class="">
+                                                                <label for="exampleFormControlInput1"
+                                                                    class="form-label form_label">Account (s) 2</label>
+                                                                <p>please contact your support team to make any account
+                                                                    changes </p>
+
+                                                            </div>
+                                                            <span type="button" for=""
+                                                                class="active_text_title_13 hori_e_label"> +
+                                                                Add</span>
+                                                        </div>
+
+
+                                                        <div class="verti_div position-relative">
+                                                            <button type="button" class="date_picker_icon"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#accounts_view_modal"
+                                                                style="background: none; border: none; padding: 0;">
+                                                                <img src="../assets/icons/black_form_search_icon.png"
+                                                                    class="" alt="search_icon" style="cursor:pointer;">
+                                                            </button>
+                                                            <input type="text" class="form-control form_text_field"
+                                                                id="exampleFormControlInput1" placeholder="18,456"
+                                                                value="8,456" readonly>
+                                                        </div>
+                                                        <span type="button" for=""
+                                                            class="active_text_title_13 verti_e_label"> +
+                                                            Add</span>
+
+                                                    </div>
+
+                                                    <!-- account field -->
+                                                    <div class="col-12 col-sm-6 position-relative vertical_ui mb-3">
+                                                        <div
+                                                            class="d-flex verti_row justify-content-between align-items-center mt-2">
+                                                            <div>
+                                                                <label for="exampleFormControlInput1"
+                                                                    class="form-label form_label">Account (s) 2</label>
+                                                            </div>
+                                                            <span type="button" for=""
+                                                                class="active_text_title_13 hori_e_label"> +
+                                                                Add</span>
+                                                        </div>
+
+
+                                                        <div class="verti_div position-relative">
+                                                            <button type="button" class="date_picker_icon"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#accounts_view_modal"
+                                                                style="background: none; border: none; padding: 0;">
+                                                                <img src="../assets/icons/black_form_search_icon.png"
+                                                                    class="" alt="search_icon" style="cursor:pointer;">
+                                                            </button>
+                                                            <input type="text" class="form-control form_text_field"
+                                                                id="exampleFormControlInput1" placeholder="18,456"
+                                                                value="8,456" readonly>
+                                                        </div>
+                                                        <span type="button" for=""
+                                                            class="active_text_title_13 verti_e_label"> +
+                                                            Add</span>
+
+                                                    </div>
+
+
+                                                    <!-- Customer/SIte Info -->
+                                                    <div class="col-12 col-sm-6 position-relative vertical_ui mb-3">
+                                                        <div
+                                                            class="d-flex verti_row justify-content-between align-items-center mt-2 mb-1">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label form_label">Customer</label>
+
+                                                            <img src="./assets/icons/Form_Edit.png" alt=""
+                                                                class="w_16_h_16 hori_e_label">
+                                                        </div>
+
+
+                                                        <div class="verti_div position-relative">
+                                                            <button type="button" class="date_picker_icon"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#accounts_view_modal"
+                                                                style="background: none; border: none; padding: 0;">
+                                                                <img src="../assets/icons/black_form_search_icon.png"
+                                                                    class="" alt="search_icon" style="cursor:pointer;">
+                                                            </button>
+                                                            <input type="text" class="form-control form_text_field"
+                                                                id="exampleFormControlInput1" placeholder="18,456"
+                                                                value="8,456" readonly>
+                                                        </div>
+                                                        <img src="./assets/icons/Form_Edit.png" alt=""
+                                                            class="w_16_h_16 verti_e_label">
+
+                                                    </div>
+
+
+                                                    <!-- text area 1 -->
+                                                    <div
+                                                        class="col-12 col-sm-12 mt-2 col-md-12 col-lg-12 text_area_custom_margin mb-3 vertical_ui">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label form_label">Notes
+                                                            <span class="para_text_14">(Viewable to
+                                                                partner)</span></label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3" placeholder="0.0"></textarea>
+                                                    </div>
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- column 1 finish -->
+
+                                    <div class="col-12 col-md-6 verti_width_100_row mb-5">
+                                        <div class="border rounded px-3 py-2 h-100">
+                                            <form action="">
+                                                <div class="row">
+                                                    <!-- Expire Date -->
+                                                    <div
+                                                        class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Current
+                                                            billing type</label>
+
+                                                        <div class="position-relative verti_div">
+                                                            <span class="form_unit_text">kwh</span>
+
+                                                            <input type="text" class="form-control form_text_field"
+                                                                id="exampleFormControlInput1" placeholder="Type here"
+                                                                value="">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Quote Due date -->
+                                                    <div
+                                                        class="col-12 col-sm-6 col-md-6 col-lg-6 mt-2 vertical_ui mb-3">
+                                                        <div
+                                                            class="d-flex justify-content-between align-items-center verti_row">
+                                                            <label for="exampleFormControlInput1"
+                                                                class="form-label form_label">Quote Due Date</label>
+                                                        </div>
+                                                        <div class="position-relative verti_div">
+                                                            <img src="../assets/icons/date_picker_icon.png"
+                                                                class="date_picker_icon" alt="date_picker_icon"
+                                                                style="cursor:pointer;">
+                                                            <input type="text" class="form-control form_text_field"
+                                                                id="exampleFormControlInput1" placeholder="Date">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Start Month -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Start
+                                                            month</label>
+                                                        <div class="verti_div d-flex gap-2">
+                                                            <select
+                                                                class="form-select js-example-basic-single select_value_text mb-1"
+                                                                aria-label="Default select example">
+                                                                <option class="form_text_field" selected>Select</option>
+                                                                <option class="form_text_field" value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <select
+                                                                class="form-select js-example-basic-single select_value_text"
+                                                                aria-label="Default select example">
+                                                                <option class="form_text_field" selected>Select</option>
+                                                                <option class="form_text_field" value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- product 2 -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Product
+                                                            2</label>
+                                                        <select
+                                                            class="form-select js-example-basic-single select_value_text"
+                                                            aria-label="Default select example">
+                                                            <option class="form_text_field" selected>Select</option>
+                                                            <option class="form_text_field" value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <!-- Main contact primery phone number -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Main
+                                                            contact primery phone number</label>
+                                                        <div
+                                                            class="d-flex flex-row gap-2 justify-content-between align-items-center verti_div ">
+                                                            <input type="text"
+                                                                class="form-control form_text_field mb-2 td_w_40"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Albert Sasson" value="1-234" readonly>
+
+                                                            <input type="text"
+                                                                class="form-control form_text_field mb-2 td_w_40"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Albert Sasson" value="322">
+
+                                                            <input type="text" class="form-control form_text_field mb-2"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Albert Sasson" value="467 0258">
+
+                                                            <span class="mb-2 span_text">Ext</span>
+
+                                                            <input type="text"
+                                                                class="form-control form_text_field mb-2 td_w_40"
+                                                                id="exampleFormControlInput1"
+                                                                placeholder="Albert Sasson" value="213">
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Commodity -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Commodity</label>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
+                                                            value="Electric" readonly>
+                                                    </div>
+
+                                                    <!-- Property Type -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Property
+                                                            Type</label>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="exampleFormControlInput1" placeholder="Electric"
+                                                            value="Commercial" readonly>
+                                                    </div>
+
+                                                    <!-- Property Type -->
+                                                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui mb-3">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label form_label">Product
+                                                            1</label>
+                                                        <input type="text" class="form-control form_text_field"
+                                                            id="exampleFormControlInput1" placeholder="Commercial"
+                                                            value="Commercial" readonly>
+                                                    </div>
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- column 2 -->
+                                </div>
+
+                                <!-- buttons row -->
+                                <div class="row mt-2 justify-content-center align-items-center position-relative">
+                                    <div class="col-auto mt-2">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <div class="them_btn_container">
+                                                <button class="theme_primary_btn" data-bs-target="#generate_LOA_modal"
+                                                    data-bs-toggle="modal">Generate
+                                                    LOA</button>
+                                            </div>
+                                            <span class="form_label">OR</span>
+                                            <div class="them_btn_container">
+                                                <button class="theme_primary_btn" data-bs-target="#generate_LOE_modal"
+                                                    data-bs-toggle="modal">Generate
+                                                    LOE</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- margin row -->
+
+                            </div>
+                        </section>
                     </div>
 
-                    <!-- margin row -->
-
                 </div>
-            </section>
-        </div>
+                <!-- footer section -->
+                <footer class="footer-area mt-auto">
+                    <div class="container-fluid">
+                        <div class="row flex-row">
+                            <div class="col-12 col-md-12 col-lg-2">
+                                <div class="d-flex justify-content-start">
+                                    <div class="them_btn_container">
+                                        <button class="theme_outline_btn">Back</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-10">
+                                <div
+                                    class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                            data-bs-toggle="modal">Add
+                                            Supplier</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                            data-bs-toggle="modal">Request
+                                            Qoute</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                            data-bs-toggle="modal">Refresh</button>
+                                    </div>
 
-
-
-        <!-- footer section -->
-        <footer class="footer-area d-none">
-            <div class="container-fluid">
-                <div class="row flex-row">
-                    <div class="col-12 col-md-12 col-lg-2">
-                        <div class="d-flex justify-content-start">
-                            <div class="them_btn_container">
-                                <button class="theme_outline_btn">Back</button>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn">Preview Link</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                                            data-bs-toggle="modal">Email
+                                            Link</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn">Print</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn" onclick="createProposal()">Create
+                                            Proposal</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn">Save & Update</button>
+                                    </div>
+                                    <div class="them_btn_container">
+                                        <button class="theme_primary_btn">Save & Email</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-12 col-lg-10">
-                        <div
-                            class="d-flex flex-wrap justify-content-start justify-content-lg-end align-items-center gap-2">
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Add Supplier</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Request Qoute</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
-                                    data-bs-toggle="modal">Refresh</button>
-                            </div>
-
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Preview Link</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" data-bs-target="#email__link__modal"
-                                    data-bs-toggle="modal">Email
-                                    Link</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Print</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" onclick="createProposal()">Create
-                                    Proposal</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Save & Update</button>
-                            </div>
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn">Save & Email</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </footer>
             </div>
-        </footer>
+
+        </div>
     </div>
     <!-- Overlay -->
-    <div class="overlay_mainsidebar"></div>
+    <div class="overlay_mainsidebar" style="z-index: 999;"></div>
+
+    <!-- search drawer -->
+    <!-- Search click Model open -->
+
+    <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer" aria-labelledby="quoteDrawerLabel">
+        <div class="offcanvas-body real_theme_bg">
+            <div class="mb-4 position-relative">
+                <img data-bs-dismiss="offcanvas" type="button" class="close_search_drawer"
+                    src="../assets/images/red_cancel.png" alt="" srcset="">
+                <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
+                <div class="qoute_search">
+                    <i class="bi bi-search text-white"></i>
+                    <input type="text" class="form-control theme_bg_color" id="exampleFormControlInput1"
+                        placeholder="" />
+                </div>
+            </div>
+            <hr class="show_gray_hr_line" />
+
+            <div class="filter_body mt-3">
+                <select name="renewalQuoteWithinId" id="renewalQuoteWithinId"
+                    class="form-select js-example-basic-single select_value_text ">
+                    <option value="0" selected="selected">All Months</option>
+                    <option value="1">1 Month </option>
+                    <option value="2">2 Months</option>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="5">5 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="7">7 Months</option>
+                    <option value="8">8 Months</option>
+                    <option value="9">9 Months</option>
+                    <option value="10">10 Months</option>
+                    <option value="11">11 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="13">13 Months</option>
+                    <option value="14">14 Months</option>
+                    <option value="15">15 Months</option>
+                    <option value="16">16 Months</option>
+                    <option value="17">17 Months</option>
+                    <option value="18">18 Months</option>
+                    <option value="19">19 Months</option>
+                    <option value="20">20 Months</option>
+                    <option value="21">21 Months</option>
+                    <option value="22">22 Months</option>
+                    <option value="23">23 Months</option>
+                    <option value="24">24 Months</option>
+                    <option value="25">25 Months</option>
+                    <option value="26">26 Months</option>
+                    <option value="27">27 Months</option>
+                    <option value="28">28 Months</option>
+                    <option value="29">29 Months</option>
+                    <option value="30">30 Months</option>
+                    <option value="31">31 Months</option>
+                    <option value="32">32 Months</option>
+                    <option value="33">33 Months</option>
+                    <option value="34">34 Months</option>
+                    <option value="35">35 Months</option>
+                    <option value="36">36 Months</option>
+                    <option value="37">37 Months</option>
+                    <option value="38">38 Months</option>
+                    <option value="39">39 Months</option>
+                    <option value="40">40 Months</option>
+                    <option value="41">41 Months</option>
+                    <option value="42">42 Months</option>
+                    <option value="43">43 Months</option>
+                    <option value="44">44 Months</option>
+                    <option value="45">45 Months</option>
+                    <option value="46">46 Months</option>
+                    <option value="47">47 Months</option>
+                    <option value="48">48 Months</option>
+                </select>
+
+                <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
+
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" checked type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn1">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn1">
+                        All Filters
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn2">
+                    <label class="form-check-label filter_title" for="filter_radio_btn2">
+                        Customer / Legal Name on Contract
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn3">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn3">
+                        Account Number
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn4">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn4">
+                        Contact Name
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn5">
+                    <label class="form-check-label filter_title" for="filter_radio_btn5">
+                        Commodity
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn6">
+                    <label class="form-check-label filter_title" for="filter_radio_btn6">
+                        Quote ID
+                    </label>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="them_btn_container">
+                        <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- search drawer end -->
+
+
+    <!-- Archive Modal Open -->
+    <div class="modal fade" id="arcive_modal_open" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title h1_title" id="exampleModalToggleLabel2">
+                        Archive
+                    </h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <img type="button" data-bs-dismiss="modal" aria-label="Close" src="../assets/images/red_cancel.png"
+                        alt="" class="w_20">
+
+                </div>
+                <div class="modal-body">
+                    <div class="fs_16_fw_600_c_F00 text-center">
+                        Are you sure you want to Archive Quote?
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="d-flex flex-wrap w-100 gap-4 justify-content-center align-items-center">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Yes</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Archive Modal End -->
+
+    <!-- Queue followUp Modal -->
+    <div class="modal fade status_modal" id="queueFollowUPModal">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Status</span>
+                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="">
+                    </button>
+                </div>
+                <hr class="show_gray_hr_line mx-3" />
+                <div class="modal-body">
+
+                    <div class="status_table_wrapper">
+                        <table class="bg__table">
+
+                            <div class="">
+
+                            </div>
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col" class="align-middle td_w_130 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="fs_13_fw_600_1313">Status</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="fs_13_fw_600_1313"> About</span>
+                                        </div>
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr scope="row" class="tbody_row border_3_green tab_bg_green">
+
+                                    <td class="align-middle table_td_text">
+                                        <div class="text-center fs_13_fw_500_c_green">Active</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_gray tab_bg_gray">
+
+                                    <td class="align-middle table_td_text">
+                                        <div class="text-center fs_13_fw_500_c_gray">Future</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_blue tab_bg_blue">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_blue">Expired-Floating</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313 ">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_orange tab_bg_orange">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_orange">Expired-Renewed</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_red tab_bg_red">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_red">Cancelled</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer d-flex justify-content-center">
+          <div class="them_btn_container ">
+            <button class="theme_outline_btn">Back</button>
+          </div>
+        </div> -->
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- external js file -->
-    <script src="./assets/js-files/SideBarScript.js"></script>
-    <script src="./assets/js-files/topheaderScript.js"></script>
-    <script src="./assets/js-files/comman_js_file.js"></script>
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="../assets/js-files/customDropdown.js"></script>
 
-    <!-- bootstrap js file -->
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script>
-        window.onload = function () {
-            var loaderModal = new bootstrap.Modal(document.getElementById('loaderModal'), {});
-            loaderModal.show();
-            setTimeout(() => {
-                loaderModal.hide();
-            }, 3000);
-        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const picker = flatpickr("#dateInput", {
+                dateFormat: "d-m-Y",  // Custom date format
+                defaultDate: new Date(),
+                allowInput: false,    // Prevent manual input
+                wrap: false,
+                showMonths: 1,
+                prevArrow: "",  // Remove default arrows (we use CSS instead)
+                nextArrow: "",
+                onOpen: function () {
+                    setTimeout(() => {
+                        const monthDropdown = document.querySelector(".flatpickr-monthDropdown-months");
+                        if (monthDropdown) {
+                            // ✅ Add your custom classes
+                            monthDropdown.classList.add("js-example-basic-single", "hide_search");
 
+                            // Optional: Apply custom styling to the selected and hovered options
+                            let options = monthDropdown.children;
+                            for (let option of options) {
+                                option.style.backgroundColor = option.selected ? "#007CBA" : "";
+                                option.style.color = option.selected ? "white" : "";
+
+                                option.addEventListener("mouseenter", function () {
+                                    option.style.backgroundColor = "#007CBA";
+                                    option.style.color = "white";
+                                });
+
+                                option.addEventListener("mouseleave", function () {
+                                    option.style.backgroundColor = option.selected ? "#007CBA" : "";
+                                    option.style.color = option.selected ? "white" : "";
+                                });
+                            }
+                        }
+                    }, 50);
+                }
+
+
+            });
+        });
     </script>
+
 </body>
 
 </html>

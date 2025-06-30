@@ -101,7 +101,6 @@
     </div>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -118,16 +117,17 @@
                 nextArrow: "",
                 onOpen: function () {
                     setTimeout(() => {
-                        let monthDropdown = document.querySelector(".flatpickr-monthDropdown-months");
+                        const monthDropdown = document.querySelector(".flatpickr-monthDropdown-months");
                         if (monthDropdown) {
-                            let options = monthDropdown.children;
+                            // ✅ Add your custom classes
+                            monthDropdown.classList.add("js-example-basic-single", "hide_search");
 
+                            // Optional: Apply custom styling to the selected and hovered options
+                            let options = monthDropdown.children;
                             for (let option of options) {
-                                // Reset any previous inline styles
                                 option.style.backgroundColor = option.selected ? "#007CBA" : "";
                                 option.style.color = option.selected ? "white" : "";
 
-                                // Hover style
                                 option.addEventListener("mouseenter", function () {
                                     option.style.backgroundColor = "#007CBA";
                                     option.style.color = "white";
@@ -141,6 +141,7 @@
                         }
                     }, 50);
                 }
+
 
             });
         });
