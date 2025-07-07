@@ -79,6 +79,9 @@ hr {
   opacity: 1;
 }
 
+.min-vh-100-60{
+  min-height: calc(100vh - 60px);
+}
 .side_bar_hr {
   height: 2px !important;
   background-color: var(--white_bg_color);

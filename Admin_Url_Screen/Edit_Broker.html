@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit_Broker </title>
+    <title>Edit_Broker</title>
 
     <!-- MUI Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
-        rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 
     <!-- external css files -->
@@ -19,939 +26,1556 @@
     <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
     <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
     <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
-    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
     <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
     <link rel="stylesheet" href="../assets/css-files/form_style.css" />
     <link rel="stylesheet" href="../assets/css-files/other__css.css" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker3.min.css"
+    />
     <!-- font faimily -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- top header -->
     <section class="top_header_secction">
-        <div class="container-fluid p-2">
-            <div class="row justify-content-between align-items-center">
-                <!-- Column 1 -->
-                <div class="col-12 col-lg-3">
-                    <div class="header_container">
-                        <div class="d-flex gap-2">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                            <div class="header_bg_text">
-                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
-                            </div>
-                        </div>
-                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
-                        </div>
-                    </div>
+      <div class="container-fluid p-2">
+        <div class="row justify-content-between align-items-center">
+          <!-- Column 1 -->
+          <div class="col-12 col-lg-3">
+            <div class="header_container">
+              <div class="d-flex gap-2">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                <div class="header_bg_text">
+                  <img
+                    src="../assets/banner_img.png"
+                    alt=""
+                    class="header_banner"
+                  />
+                  <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
                 </div>
+              </div>
+              <div
+                class="col-auto d-block d-lg-none d-flex justify-content-end"
+              >
+                <i
+                  class="bi bi-three-dots-vertical"
+                  id="show_drawer"
+                  style="cursor: pointer"
+                ></i>
+              </div>
+            </div>
+          </div>
 
-                <!-- Column 2 -->
-                <div class="col-12 col-lg-6 d-none d-lg-block">
-                    <div class="d-flex justify-content-end align-items-center gap-3">
-                        <!-- Switch buttons -->
+          <!-- Column 2 -->
+          <div class="col-12 col-lg-6 d-none d-lg-block">
+            <div class="d-flex justify-content-end align-items-center gap-3">
+              <!-- Switch buttons -->
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">
-                                Legacy</label>
-                        </div>
+              <div
+                class="form-check form-switch d-flex justify-content-center align-items-center gap-2"
+              >
+                <input
+                  class="form-check-input mid_head_check"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label menu_font_style"
+                  for="flexSwitchCheckDefault"
+                >
+                  Legacy</label
+                >
+              </div>
 
-                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Pricing
-                                View</label>
-                        </div>
+              <div
+                class="form-check form-switch d-flex justify-content-center align-items-center gap-2"
+              >
+                <input
+                  class="form-check-input mid_head_check"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label menu_font_style"
+                  for="flexSwitchCheckDefault"
+                  >Pricing View</label
+                >
+              </div>
 
-                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+              <!-- <div class="d-flex justify-content-center align-items-center gap-1">
                           <label class="switch">
                               <input type="checkbox">
                               <span class="slider round"></span>
                           </label>
                           <span class="menu_font_style">Switch to Partner View</span>
                       </div> -->
-                        <div class="d-flex align-items-center gap-1">
-                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                            <div>
-                                <p class="user_name">Welcome, Alon</p>
-                                <p class="user_email">alon@demomail.com</p>
-                            </div>
-                        </div>
-                    </div>
+              <div class="d-flex align-items-center gap-1">
+                <img
+                  src="../assets/user.png"
+                  class="user_image"
+                  alt="User Icon"
+                />
+                <div>
+                  <p class="user_name">Welcome, Alon</p>
+                  <p class="user_email">alon@demomail.com</p>
                 </div>
-
-                <!-- Drawer Menu -->
-                <div class="drawer" id="drawer" style="z-index: 999">
-                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                        <hr style="height: 1px; width: 100%" />
-                    </div>
-
-                    <div class="d-flex flex-column justify-content-start">
-                        <!-- Switch buttons -->
-                        <div class="form-check form-switch d-flex align-items-center w-100">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Old
-                                Legacy</label>
-                        </div>
-
-                        <div class="form-check form-switch d-flex align-items-center w-100">
-                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                id="flexSwitchCheckDefault" />
-                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                Partner
-                                View</label>
-                        </div>
-
-                        <div class="d-flex align-items-center gap-1 mb-2">
-                            <div class="d-flex align-items-center gap-1">
-                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                <div>
-                                    <p class="user_name">Welcome, Alon</p>
-                                    <p class="user_email">alon@demomail.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Overlay -->
-                <div class="overlay_menu" id="overlay"></div>
+              </div>
             </div>
+          </div>
+
+          <!-- Drawer Menu -->
+          <div class="drawer" id="drawer" style="z-index: 999">
+            <div
+              class="d-flex flex-column w-100 justify-content-center align-items-center"
+            >
+              <img
+                src="../assets/logo.png"
+                alt="Logo"
+                class="header_logo mt-2"
+              />
+              <hr style="height: 1px; width: 100%" />
+            </div>
+
+            <div class="d-flex flex-column justify-content-start">
+              <!-- Switch buttons -->
+              <div
+                class="form-check form-switch d-flex align-items-center w-100"
+              >
+                <input
+                  class="form-check-input mid_head_check"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label menu_font_style"
+                  for="flexSwitchCheckDefault"
+                  >Switch to Old Legacy</label
+                >
+              </div>
+
+              <div
+                class="form-check form-switch d-flex align-items-center w-100"
+              >
+                <input
+                  class="form-check-input mid_head_check"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                />
+                <label
+                  class="form-check-label menu_font_style"
+                  for="flexSwitchCheckDefault"
+                  >Switch to Partner View</label
+                >
+              </div>
+
+              <div class="d-flex align-items-center gap-1 mb-2">
+                <div class="d-flex align-items-center gap-1">
+                  <img
+                    src="../assets/user.png"
+                    class="user_image"
+                    alt="User Icon"
+                  />
+                  <div>
+                    <p class="user_name">Welcome, Alon</p>
+                    <p class="user_email">alon@demomail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Overlay -->
+          <div class="overlay_menu" id="overlay"></div>
         </div>
+      </div>
     </section>
     <div class="spacer_60"></div>
 
-    <div class="d-flex h-100 position-relative">
-
+    <div class="d-flex flex-column min-vh-100-60">
+      <div class="d-flex flex-grow-1 position-relative">
         <!-- Side bar -->
-        <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
-            <div class="w-100">
-                <div class="spacer_40"></div>
-                <hr class="show_white_hr_line mx-2" />
-                <div class="spacer_30"></div>
+        <div
+          class="d-flex flex-column sidebar_container"
+          id="open_main_sidebar"
+        >
+          <div class="w-100">
+            <div class="spacer_40"></div>
+            <hr class="show_white_hr_line mx-2" />
+            <div class="spacer_30"></div>
 
-                <div class="side_bar_menu active_sidebar pt-0">
-                    <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
-                </div>
-                <div class="spacer_30"></div>
-                <div class="side_bar_menu">
-                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
-
-                </div>
-                <div class="spacer_30"></div>
-                <div class="side_bar_menu">
-                    <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Auction_active">
-                </div>
-                <div class="spacer_30"></div>
-                <div class="side_bar_menu">
-                    <img src="../assets/icons/Nav Icons/Contract.png" class="w_24" alt="Contract_active">
-                </div>
-                <div class="spacer_30"></div>
-
-                <hr class="show_white_hr_line  mx-2" />
-                <div class="spacer_30"></div>
-
-                <div class="side_bar_menu">
-                    <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="Contract_active">
-                </div>
-                <div class="spacer_30"></div>
-                <div class="side_bar_menu">
-                    <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
-                </div>
-                <div class="spacer_30"></div>
+            <div class="side_bar_menu active_sidebar pt-0">
+              <img
+                src="../assets/icons/Nav Icons/Dashboard.png"
+                class="w_24"
+                alt="Dashboard_active"
+              />
             </div>
+            <div class="spacer_30"></div>
+            <div class="side_bar_menu">
+              <img
+                src="../assets/icons/Nav Icons/Quotes_active.png"
+                class="w_24"
+                alt="Contract_active"
+              />
+            </div>
+            <div class="spacer_30"></div>
+            <div class="side_bar_menu">
+              <img
+                src="../assets/icons/Nav Icons/Auction.png"
+                class="w_24"
+                alt="Auction_active"
+              />
+            </div>
+            <div class="spacer_30"></div>
+            <div class="side_bar_menu">
+              <img
+                src="../assets/icons/Nav Icons/Contract.png"
+                class="w_24"
+                alt="Contract_active"
+              />
+            </div>
+            <div class="spacer_30"></div>
+
+            <hr class="show_white_hr_line mx-2" />
+            <div class="spacer_30"></div>
+
+            <div class="side_bar_menu">
+              <img
+                src="../assets/icons/Nav Icons/My profile.png"
+                class="w_24"
+                alt="Contract_active"
+              />
+            </div>
+            <div class="spacer_30"></div>
+            <div class="side_bar_menu">
+              <img
+                src="../assets/icons/Nav Icons/Logout.png"
+                class="w_24"
+                alt="Contract_active"
+              />
+            </div>
+            <div class="spacer_30"></div>
+          </div>
         </div>
         <!-- drawer Sidebar -->
         <div id="main_sidebar">
-            <div>
-                <div class="d-flex justify-content-center">
-                    <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                </div>
-
-                <div class="spacer_40"></div>
-                <hr class="side_bar_hr" />
-                <div class="spacer_30"></div>
-
-                <div class="menu_container">
-                    <div class="menu_parent p-0">
-                        <div class="d-flex align-items-center gap-2">
-                            <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
-                            <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="">
-
-                            <span class="menu_title">Home</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer_25"></div>
-
-                <div class="menu_container me-2">
-                    <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
-                                    <div class="d-flex active_menu align-items-center gap-2">
-                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
-                                            alt="Quotes">
-                                        <span class="menu_title">Qoutes</span>
-                                    </div>
-                                </div>
-                                <div class="col-auto m-0 p-0">
-                                    <i class="bi bi-chevron-right text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer_25"></div>
-
-                <div class="menu_container">
-                    <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn  pt-0 pb-0" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <img src="../assets/icons/Nav Icons/Auction_active.png" class="w_24"
-                                            alt="Quotes">
-                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
-                                        <span class="menu_title">Auctions</span>
-                                    </div>
-                                </div>
-                                <div class="col-auto m-0 p-0">
-                                    <i class="bi bi-chevron-right text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer_25"></div>
-
-                <div class=" menu_container">
-                    <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn pt-0 pb-0" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <img src="../assets/icons/Nav Icons/Contract_active.png" class="w_24"
-                                            alt="Quotes">
-                                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
-                                        <span class="menu_title">Contracts/CRM</span>
-                                    </div>
-                                </div>
-                                <div class="col-auto m-0 p-0">
-                                    <i class="bi bi-chevron-right text-white"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="spacer_28"></div>
-                <hr class="side_bar_hr" />
-                <div class="spacer_28"></div>
-
-                <div class="menu_container">
-                    <div class="menu_parent p-0">
-                        <div class="d-flex align-items-center gap-2">
-                            <img src="../assets/icons/Nav Icons/My profile.png" class="w_24" alt="">
-                            <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
-
-                            <span class="menu_title">Profile</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer_28"></div>
-
-                <div class="menu_container">
-                    <div class="menu_parent p-0">
-                        <div class="d-flex align-items-center gap-2">
-                            <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-                            <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
-
-                            <span class="menu_title">Logout</span>
-                        </div>
-                    </div>
-                </div>
+          <div>
+            <div class="d-flex justify-content-center">
+              <img src="../assets/logo.png" alt="Logo" class="header_logo" />
             </div>
+
+            <div class="spacer_40"></div>
+            <hr class="side_bar_hr" />
+            <div class="spacer_30"></div>
+
+            <div class="menu_container">
+              <div class="menu_parent p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <!-- <img src="../assets/icons/Nav Icons/Dashboard_active.png" class="w_24" alt=""> -->
+                  <img
+                    src="../assets/icons/Nav Icons/Dashboard.png"
+                    class="w_24"
+                    alt=""
+                  />
+
+                  <span class="menu_title">Home</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer_25"></div>
+
+            <div class="menu_container me-2">
+              <div class="btn-group position-static dropend w-100">
+                <div
+                  type="button"
+                  class="btn pt-0 pb-0"
+                  data-bs-toggle="dropdown"
+                >
+                  <div class="row flex-row justify-content-between">
+                    <div class="col-auto p-0">
+                      <div class="d-flex active_menu align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                        <img
+                          src="../assets/icons/Nav Icons/Quotes_active.png"
+                          class="w_24"
+                          alt="Quotes"
+                        />
+                        <span class="menu_title">Qoutes</span>
+                      </div>
+                    </div>
+                    <div class="col-auto m-0 p-0">
+                      <i class="bi bi-chevron-right text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu ms-1 p-0">
+                  <ul class="m-0 p-1">
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Create New</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Active - 715</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Requests - 13</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="spacer_25"></div>
+
+            <div class="menu_container">
+              <div class="btn-group position-static dropend w-100">
+                <div
+                  type="button"
+                  class="btn pt-0 pb-0"
+                  data-bs-toggle="dropdown"
+                >
+                  <div class="row flex-row justify-content-between">
+                    <div class="col-auto p-0">
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          src="../assets/icons/Nav Icons/Auction_active.png"
+                          class="w_24"
+                          alt="Quotes"
+                        />
+                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                        <span class="menu_title">Auctions</span>
+                      </div>
+                    </div>
+                    <div class="col-auto m-0 p-0">
+                      <i class="bi bi-chevron-right text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu ms-1 p-0">
+                  <ul class="m-0 p-1">
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Create New</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Active - 715</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Requests - 13</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="spacer_25"></div>
+
+            <div class="menu_container">
+              <div class="btn-group position-static dropend w-100">
+                <div
+                  type="button"
+                  class="btn pt-0 pb-0"
+                  data-bs-toggle="dropdown"
+                >
+                  <div class="row flex-row justify-content-between">
+                    <div class="col-auto p-0">
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          src="../assets/icons/Nav Icons/Contract_active.png"
+                          class="w_24"
+                          alt="Quotes"
+                        />
+                        <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                        <span class="menu_title">Contracts/CRM</span>
+                      </div>
+                    </div>
+                    <div class="col-auto m-0 p-0">
+                      <i class="bi bi-chevron-right text-white"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-menu ms-1 p-0">
+                  <ul class="m-0 p-1">
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Create New</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Active - 715</span>
+                    </li>
+                    <li class="dropdown-item sub_menu" href="#">
+                      <span class="">Requests - 13</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer_28"></div>
+            <hr class="side_bar_hr" />
+            <div class="spacer_28"></div>
+
+            <div class="menu_container">
+              <div class="menu_parent p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="../assets/icons/Nav Icons/My profile.png"
+                    class="w_24"
+                    alt=""
+                  />
+                  <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+
+                  <span class="menu_title">Profile</span>
+                </div>
+              </div>
+            </div>
+            <div class="spacer_28"></div>
+
+            <div class="menu_container">
+              <div class="menu_parent p-0">
+                <div class="d-flex align-items-center gap-2">
+                  <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+                  <img
+                    src="../assets/icons/Nav Icons/Logout.png"
+                    class="w_24"
+                    alt=""
+                  />
+
+                  <span class="menu_title">Logout</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="content-area h-100 mb-4">
+        <div class="content-area d-flex flex-column">
+          <div class="content-inner flex-grow-1">
             <!-- bread crumb -->
             <section class="">
-                <div class="container-fluid">
-                    <div class="row py-3 d-flex flex-row justify-content-between align-items-center py-2">
-                        <div class="col-6">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Broker</div>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
-                                    fill="none">
-                                    <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                                <div class="active_text_title_14">Edit</div>
-                            </div>
-                        </div>
-                        <div class="col-6 d-flex align-items-center justify-content-end gap-3">
-                            <div class="them_btn_container">
-                                <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
-                            </div>
-                        </div>
+              <div class="container-fluid">
+                <div
+                  class="row py-3 d-flex flex-row justify-content-between align-items-center py-2"
+                >
+                  <div class="col-6">
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="main_title_15">Broker</div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="#757575"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <div class="active_text_title_14">Edit</div>
                     </div>
-                    <hr class="show_gray_hr_line" />
-
-                    <div class="row">
-                        <div class="col-12 mt-3">
-                            <div class="border rounded px-3 py-2 h-100">
-
-                                <div class="row">
-                                    <!-- User ID -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="d-flex gap-2 mt-2 justify-content-between verti_row">
-                                            <!-- <div class="col-auto"> -->
-                                            <label for="exampleFormControlInput1" class="form-label form_label">User
-                                                ID</label>
-                                            <!-- </div> -->
-                                            <!-- <div class="col-auto d-flex align-items-center gap-2"> -->
-                                            <!-- <div class="row"> -->
-                                            <span for="exampleFormControlInput1" class="active_text_title_13">Send
-                                                Password</span>
-                                            <!-- </div> -->
-                                            <!-- </div> -->
-                                        </div>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="000 0000 000" value="kristin64"
-                                            disabled>
-                                    </div>
-
-                                    <!-- Company Name * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Company
-                                            Name
-                                            <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="Enerworld Demo">
-                                    </div>
-
-                                    <!-- Address  * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Address
-                                            <span class="text-danger">*</span>
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="" value="Western street">
-                                    </div>
-
-                                    <!-- Address Line 2  * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Address
-                                            Line 2
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="" value="">
-                                    </div>
-                                    <!-- Country -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Country
-                                            <span class="text-danger">*</span></label>
-                                        <select class="form-select select_value_text"
-                                            aria-label="Default select example">
-                                            <option class="form_text_field" selected>Select</option>
-                                            <option class="form_text_field" value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-                                    <!-- State * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">State<span
-                                                class="text-danger">*</span></label>
-                                        <select class="form-select select_value_text"
-                                            aria-label="Default select example">
-                                            <option class="form_text_field" selected>Select</option>
-                                            <option class="form_text_field" value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select>
-                                    </div>
-
-                                    <!-- City  * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">City
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="" value="">
-                                    </div>
-
-                                    <!-- Postal / Zip Code  * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Postal /
-                                            Zip Code
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="" value="">
-                                    </div>
-
-                                    <!-- Phone  * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1"
-                                            class="form-label form_label">Phone</label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="" value="+1  4646-444444">
-                                    </div>
-                                    <div>
-                                        <hr class="show_gray_hr_line mt-3" />
-                                    </div>
-                                    <!-- First Name * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">First
-                                            Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="Agera Electric">
-                                    </div>
-
-                                    <!-- Last Name * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Last
-                                            Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson" value="Agera Gas">
-                                    </div>
-
-                                    <!-- Email * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Email
-                                            <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="hollybarnes@hotmail.com">
-                                    </div>
-
-                                    <!-- Main Contact Phone * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Main
-                                            Contact Phone
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="+636 706 546 0261">
-                                    </div>
-                                    <!-- Main Contact Mobile Number * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Main
-                                            Contact Mobile Number
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="+636 706 546 0261">
-                                    </div>
-                                    <!-- Main Contact Fax Number * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Main
-                                            Contact Fax Number
-                                        </label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="+636 706 546 0261">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 mt-3">
-                            <div class="border rounded px-3 py-2 h-100 ">
-                                <span class="sub_title_13 mt-2">Configuration</span>
-                                <div class="row">
-
-                                    <!-- Enable Manual Matrix -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="flexSwitchCheckDefault">Enable Manual
-                                            Matrix</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="flexSwitchCheckDefault">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable all Matrix Suppliers -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label"
-                                            for="enableNewCustomerAcquisitionLink">Enable all Matrix Suppliers <span
-                                                class="text-danger">*</span></label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableNewCustomerAcquisitionLink">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable New Customer acquisition Link -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableCustomQuote">Enable New Customer
-                                            acquisition Link</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableCustomQuote">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable Quick Quote Functionality -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableEmailLink">Enable Quick Quote
-                                            Functionality</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableEmailLink">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable Partner's Custom Quote Functionality -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enablePartnerMarkup">Enable Partner's
-                                            Custom Quote Functionality</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerMarkup">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable Auto Contract printing -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableHudUpload">Enable Auto Contract
-                                            printing</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHudUpload">
-                                        </div>
-                                    </div>
-
-                                    <!-- E Mail Link Functionality -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enablePartnerPrivateLabel">E Mail Link
-                                            Functionality</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerPrivateLabel">
-                                        </div>
-                                    </div>
-
-                                    <!-- Sales Manager Functionality -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableHouseMarginLogic">Sales Manager
-                                            Functionality</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHouseMarginLogic">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable Partner Mark Up Functionality -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="manageNewYorkExclusion">Enable Partner
-                                            Mark Up Functionality</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="manageNewYorkExclusion">
-                                        </div>
-                                    </div>
-
-                                    <!-- Allow to View Matrix Pricing from Suppliers -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableMatrixPricingView">Allow to View
-                                            Matrix Pricing from Suppliers that Broker does not have a Direct
-                                            Relationship with</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableMatrixPricingView">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable supplier provided HUD Upload -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableHudSupplierUpload">Enable
-                                            supplier provided HUD Upload</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHudSupplierUpload">
-                                        </div>
-                                    </div>
-
-                                    <!-- Allow Broker to Upload Partner Branding -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enablePartnerBrandingUpload">Allow
-                                            Broker to Upload Partner Branding</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerBrandingUpload">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable Partner Private Label -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enablePartnerPrivateLabel2">Enable
-                                            Partner Private Label</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enablePartnerPrivateLabel2">
-                                        </div>
-                                    </div>
-
-                                    <!-- Display Power by Enerclix -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="displayPowerByEnerclix">Display Power
-                                            by Enerclix</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="displayPowerByEnerclix">
-                                        </div>
-                                    </div>
-
-                                    <!-- Enable House Margin Logic -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="enableHouseMarginLogic2">Enable House
-                                            Margin Logic</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="enableHouseMarginLogic2">
-                                        </div>
-                                    </div>
-
-                                    <!-- Manage Connecticut Exclusion -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="manageConnecticutExclusion">Manage
-                                            Connecticut Exclusion</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="manageConnecticutExclusion">
-                                        </div>
-                                    </div>
-
-                                    <!-- Manage New York Exclusion -->
-                                    <div class="col-sm-6 vertical_ui mt-2">
-                                        <label class="form-label form_label" for="manageNewYorkExclusion2">Manage New
-                                            York Exclusion</label>
-                                        <div class="form-check form-switch flex-column verti_div">
-                                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                                id="manageNewYorkExclusion2">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="row">
-
-                                    <!-- Electric Commission. Padding on Non-Direct Suppliers -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="electricCommission" class="form-label fs_14_fw_400_c_131313">
-                                            Electric Commission. Padding on Non-Direct Suppliers
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field"
-                                                id="electricCommission" placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Gas Commission Padding on Non-Direct Suppliers -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="gasCommission" class="form-label fs_14_fw_400_c_131313">
-                                            Gas Commission Padding on Non-Direct Suppliers
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field" id="gasCommission"
-                                                placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Allowed Max. Partners -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="maxPartners" class="form-label fs_14_fw_400_c_131313">
-                                            Allowed Max. Partners <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field" id="maxPartners"
-                                                placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Allowed Max. Pricing Desk Users -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="maxPricingUsers" class="form-label fs_14_fw_400_c_131313">
-                                            Allowed Max. Pricing Desk Users <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field" id="maxPricingUsers"
-                                                placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Bid Decrement for Gas -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="bidDecrementGas" class="form-label fs_14_fw_400_c_131313">
-                                            Bid Decrement for Gas <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field" id="bidDecrementGas"
-                                                placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Allow Max. partners with Quick Quote functionality -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="maxPartnersQuickQuote" class="form-label fs_14_fw_400_c_131313">
-                                            Allow Max. partners with Quick Quote functionality
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field"
-                                                id="maxPartnersQuickQuote" placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Bid Decrement for Electric -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="bidDecrementElectric" class="form-label fs_14_fw_400_c_131313">
-                                            Bid Decrement for Electric <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field"
-                                                id="bidDecrementElectric" placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Auction Time -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="auctionTime" class="form-label fs_14_fw_400_c_131313">
-                                            Auction Time <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-6 col-sm-2 verti_row">
-                                            <input type="text" class="form-control form_text_field" id="auctionTime"
-                                                placeholder="" value="0.001">
-                                        </div>
-                                    </div>
-
-                                    <!-- Modules -->
-                                    <div class="col-md-6 mt-2 vertical_ui mb-3">
-                                        <label for="modules" class="form-label fs_14_fw_400_c_131313">
-                                            Modules <span class="text-danger">*</span>
-                                        </label>
-                                        <div class="col-md-auto verti_div">
-                                            <div class="d-flex gap-2 flex-row flex-wrap">
-                                                <div class="form-check col-auto">
-                                                    <input type="checkbox" class="form-check-input table_check"
-                                                        id="quoteManagement" checked="">
-                                                    <label class="form-check-label" for="quoteManagement">Quote
-                                                        Management</label>
-                                                </div>
-                                                <div class="form-check col-auto">
-                                                    <input type="checkbox" class="form-check-input table_check"
-                                                        id="auctionModule" checked="">
-                                                    <label class="form-check-label" for="auctionModule">Auction</label>
-                                                </div>
-                                                <div class="form-check col-auto">
-                                                    <input type="checkbox" class="form-check-input table_check"
-                                                        id="contractManagement" checked="">
-                                                    <label class="form-check-label" for="contractManagement">Contract
-                                                        Management</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <!-- Sign Now -->
-                        <div class="col-12 mt-3">
-                            <div class="border rounded px-3 py-2 h-100 ">
-                                <div class="row align-items-center">
-                                    <div class="d-flex justify-content-between">
-                                        <span class="sub_title_13">Sign Now</span>
-                                        <div class="them_btn_container">
-                                            <button class="theme_outline_btn2 btn_theme_ripple">Search</button>
-                                        </div>
-                                    </div>
-                                    <!-- Sign Now Email * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Sign Now
-                                            Email <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="demo@enerclix.com">
-                                    </div>
-
-                                    <!-- Sign Now Password * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Sign Now
-                                            Password <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="Demo12345$">
-                                    </div>
-
-                                    <!-- LOA template (Generic) * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">LOA
-                                            template (Generic) <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="fa312ada663545cfa5ced0e2698259d0">
-                                    </div>
-
-                                    <!-- LOE template (Generic) * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">LOE
-                                            template (Generic) <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="fa312ada663545cfa5ced0e2698259d0">
-                                    </div>
-
-                                    <!--  -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <img src="../assets/icons/Form_checkmark.png" alt="">
-                                            <span for="exampleFormControlInput1" class="active_text_title_13 ">
-                                                <ins>Send Password</ins></span>
-                                        </div>
-                                    </div>
-
-                                    <!-- Folder Id * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Folder
-                                            Id <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="Demo12345$">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SMTP -->
-                        <div class="col-12 mt-3">
-                            <div class="border rounded px-3 py-2 h-100 ">
-                                <div class="row align-items-center">
-                                    <div>
-                                        <span class="sub_title_13">SMTP</span>
-                                    </div>
-                                    <!-- SMTP * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">SMTP
-                                            <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="demo@enerclix.com">
-                                    </div>
-
-                                    <!-- User Name * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">User
-                                            Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson"
-                                            value="Demo12345$">
-                                    </div>
-
-                                    <!-- Password * -->
-                                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 vertical_ui">
-                                        <label for="exampleFormControlInput1" class="form-label form_label">Password
-                                            <span class="text-danger">*</span></label>
-                                        <input type="password" class="form-control form_text_field"
-                                            id="exampleFormControlInput1" placeholder="Albert Sasson" value="999999999">
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
+                  </div>
+                  <div
+                    class="col-6 d-flex align-items-center justify-content-end gap-3"
+                  >
+                    <div class="them_btn_container">
+                      <button class="theme_primary_btn" onclick="changeUI()">
+                        Vertical UI
+                      </button>
                     </div>
+                  </div>
                 </div>
+                <hr class="show_gray_hr_line" />
+
+                <div class="row">
+                  <div class="col-12 mt-3">
+                    <div class="border rounded px-3 py-2 h-100">
+                      <div class="row">
+                        <!-- User ID -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <div
+                            class="d-flex gap-2 mt-2 justify-content-between verti_row"
+                          >
+                            <!-- <div class="col-auto"> -->
+                            <label
+                              for="exampleFormControlInput1"
+                              class="form-label form_label"
+                              >User ID</label
+                            >
+                            <!-- </div> -->
+                            <!-- <div class="col-auto d-flex align-items-center gap-2"> -->
+                            <!-- <div class="row"> -->
+                            <span
+                              for="exampleFormControlInput1"
+                              class="active_text_title_13"
+                              >Send Password</span
+                            >
+                            <!-- </div> -->
+                            <!-- </div> -->
+                          </div>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="000 0000 000"
+                            value="kristin64"
+                            disabled
+                          />
+                        </div>
+
+                        <!-- Company Name * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Company Name
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Enerworld Demo"
+                          />
+                        </div>
+
+                        <!-- Address  * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Address
+                            <span class="text-danger">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                            value="Western street"
+                          />
+                        </div>
+
+                        <!-- Address Line 2  * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Address Line 2
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                            value=""
+                          />
+                        </div>
+                        <!-- Country -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Country <span class="text-danger">*</span></label
+                          >
+                          <select
+                            class="form-select select_value_text"
+                            aria-label="Default select example"
+                          >
+                            <option class="form_text_field" selected>
+                              Select
+                            </option>
+                            <option class="form_text_field" value="1">
+                              One
+                            </option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                        <!-- State * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >State<span class="text-danger">*</span></label
+                          >
+                          <select
+                            class="form-select select_value_text"
+                            aria-label="Default select example"
+                          >
+                            <option class="form_text_field" selected>
+                              Select
+                            </option>
+                            <option class="form_text_field" value="1">
+                              One
+                            </option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+
+                        <!-- City  * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >City
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                            value=""
+                          />
+                        </div>
+
+                        <!-- Postal / Zip Code  * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Postal / Zip Code
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                            value=""
+                          />
+                        </div>
+
+                        <!-- Phone  * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Phone</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder=""
+                            value="+1  4646-444444"
+                          />
+                        </div>
+                        <div>
+                          <hr class="show_gray_hr_line mt-3" />
+                        </div>
+                        <!-- First Name * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >First Name
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Agera Electric"
+                          />
+                        </div>
+
+                        <!-- Last Name * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Last Name <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Agera Gas"
+                          />
+                        </div>
+
+                        <!-- Email * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Email <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="hollybarnes@hotmail.com"
+                          />
+                        </div>
+
+                        <!-- Main Contact Phone * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Main Contact Phone
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="+636 706 546 0261"
+                          />
+                        </div>
+                        <!-- Main Contact Mobile Number * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Main Contact Mobile Number
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="+636 706 546 0261"
+                          />
+                        </div>
+                        <!-- Main Contact Fax Number * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Main Contact Fax Number
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="+636 706 546 0261"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <div class="border rounded px-3 py-2 h-100">
+                      <span class="sub_title_13 mt-2">Configuration</span>
+                      <div class="row">
+                        <!-- Enable Manual Matrix -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="flexSwitchCheckDefault"
+                            >Enable Manual Matrix</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable all Matrix Suppliers -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableNewCustomerAcquisitionLink"
+                            >Enable all Matrix Suppliers
+                            <span class="text-danger">*</span></label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableNewCustomerAcquisitionLink"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable New Customer acquisition Link -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableCustomQuote"
+                            >Enable New Customer acquisition Link</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableCustomQuote"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable Quick Quote Functionality -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableEmailLink"
+                            >Enable Quick Quote Functionality</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableEmailLink"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable Partner's Custom Quote Functionality -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enablePartnerMarkup"
+                            >Enable Partner's Custom Quote Functionality</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enablePartnerMarkup"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable Auto Contract printing -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableHudUpload"
+                            >Enable Auto Contract printing</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableHudUpload"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- E Mail Link Functionality -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enablePartnerPrivateLabel"
+                            >E Mail Link Functionality</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enablePartnerPrivateLabel"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Sales Manager Functionality -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableHouseMarginLogic"
+                            >Sales Manager Functionality</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableHouseMarginLogic"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable Partner Mark Up Functionality -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="manageNewYorkExclusion"
+                            >Enable Partner Mark Up Functionality</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="manageNewYorkExclusion"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Allow to View Matrix Pricing from Suppliers -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableMatrixPricingView"
+                            >Allow to View Matrix Pricing from Suppliers that
+                            Broker does not have a Direct Relationship
+                            with</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableMatrixPricingView"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable supplier provided HUD Upload -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableHudSupplierUpload"
+                            >Enable supplier provided HUD Upload</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableHudSupplierUpload"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Allow Broker to Upload Partner Branding -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enablePartnerBrandingUpload"
+                            >Allow Broker to Upload Partner Branding</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enablePartnerBrandingUpload"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable Partner Private Label -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enablePartnerPrivateLabel2"
+                            >Enable Partner Private Label</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enablePartnerPrivateLabel2"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Display Power by Enerclix -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="displayPowerByEnerclix"
+                            >Display Power by Enerclix</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="displayPowerByEnerclix"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Enable House Margin Logic -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="enableHouseMarginLogic2"
+                            >Enable House Margin Logic</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="enableHouseMarginLogic2"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Manage Connecticut Exclusion -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="manageConnecticutExclusion"
+                            >Manage Connecticut Exclusion</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="manageConnecticutExclusion"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Manage New York Exclusion -->
+                        <div class="col-sm-6 vertical_ui mt-2">
+                          <label
+                            class="form-label form_label"
+                            for="manageNewYorkExclusion2"
+                            >Manage New York Exclusion</label
+                          >
+                          <div
+                            class="form-check form-switch flex-column verti_div"
+                          >
+                            <input
+                              class="form-check-input mid_head_check"
+                              type="checkbox"
+                              role="switch"
+                              id="manageNewYorkExclusion2"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!-- Electric Commission. Padding on Non-Direct Suppliers -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="electricCommission"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Electric Commission. Padding on Non-Direct Suppliers
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="electricCommission"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Gas Commission Padding on Non-Direct Suppliers -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="gasCommission"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Gas Commission Padding on Non-Direct Suppliers
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="gasCommission"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Allowed Max. Partners -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="maxPartners"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Allowed Max. Partners
+                            <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="maxPartners"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Allowed Max. Pricing Desk Users -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="maxPricingUsers"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Allowed Max. Pricing Desk Users
+                            <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="maxPricingUsers"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Bid Decrement for Gas -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="bidDecrementGas"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Bid Decrement for Gas
+                            <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="bidDecrementGas"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Allow Max. partners with Quick Quote functionality -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="maxPartnersQuickQuote"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Allow Max. partners with Quick Quote functionality
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="maxPartnersQuickQuote"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Bid Decrement for Electric -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="bidDecrementElectric"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Bid Decrement for Electric
+                            <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="bidDecrementElectric"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Auction Time -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="auctionTime"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Auction Time <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-6 col-sm-2 verti_row">
+                            <input
+                              type="text"
+                              class="form-control form_text_field"
+                              id="auctionTime"
+                              placeholder=""
+                              value="0.001"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Modules -->
+                        <div class="col-md-6 mt-2 vertical_ui mb-3">
+                          <label
+                            for="modules"
+                            class="form-label fs_14_fw_400_c_131313"
+                          >
+                            Modules <span class="text-danger">*</span>
+                          </label>
+                          <div class="col-md-auto verti_div">
+                            <div class="d-flex gap-2 flex-row flex-wrap">
+                              <div class="form-check col-auto">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input table_check"
+                                  id="quoteManagement"
+                                  checked=""
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="quoteManagement"
+                                  >Quote Management</label
+                                >
+                              </div>
+                              <div class="form-check col-auto">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input table_check"
+                                  id="auctionModule"
+                                  checked=""
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="auctionModule"
+                                  >Auction</label
+                                >
+                              </div>
+                              <div class="form-check col-auto">
+                                <input
+                                  type="checkbox"
+                                  class="form-check-input table_check"
+                                  id="contractManagement"
+                                  checked=""
+                                />
+                                <label
+                                  class="form-check-label"
+                                  for="contractManagement"
+                                  >Contract Management</label
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sign Now -->
+                  <div class="col-12 mt-3">
+                    <div class="border rounded px-3 py-2 h-100">
+                      <div class="row align-items-center">
+                        <div class="d-flex justify-content-between">
+                          <span class="sub_title_13">Sign Now</span>
+                          <div class="them_btn_container">
+                            <button class="theme_outline_btn2 btn_theme_ripple">
+                              Search
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Sign Now Email * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Sign Now Email
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="demo@enerclix.com"
+                          />
+                        </div>
+
+                        <!-- Sign Now Password * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Sign Now Password
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Demo12345$"
+                          />
+                        </div>
+
+                        <!-- LOA template (Generic) * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >LOA template (Generic)
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="fa312ada663545cfa5ced0e2698259d0"
+                          />
+                        </div>
+
+                        <!-- LOE template (Generic) * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >LOE template (Generic)
+                            <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="fa312ada663545cfa5ced0e2698259d0"
+                          />
+                        </div>
+
+                        <!--  -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <img
+                              src="../assets/icons/Form_checkmark.png"
+                              alt=""
+                            />
+                            <span
+                              for="exampleFormControlInput1"
+                              class="active_text_title_13"
+                            >
+                              <ins>Send Password</ins></span
+                            >
+                          </div>
+                        </div>
+
+                        <!-- Folder Id * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Folder Id <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Demo12345$"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SMTP -->
+                  <div class="col-12 mt-3">
+                    <div class="border rounded px-3 py-2 h-100">
+                      <div class="row align-items-center">
+                        <div>
+                          <span class="sub_title_13">SMTP</span>
+                        </div>
+                        <!-- SMTP * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >SMTP <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="demo@enerclix.com"
+                          />
+                        </div>
+
+                        <!-- User Name * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >User Name <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="Demo12345$"
+                          />
+                        </div>
+
+                        <!-- Password * -->
+                        <div
+                          class="col-12 col-sm-6 col-md-6 col-lg-3 mt-2 mb-2 vertical_ui"
+                        >
+                          <label
+                            for="exampleFormControlInput1"
+                            class="form-label form_label"
+                            >Password <span class="text-danger">*</span></label
+                          >
+                          <input
+                            type="password"
+                            class="form-control form_text_field"
+                            id="exampleFormControlInput1"
+                            placeholder="Albert Sasson"
+                            value="999999999"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </section>
-
-
-            <!-- footer section -->
-            <footer class="footer-area">
-                <div class="container-fluid">
-                    <div class="row flex-row">
-                        <div class="col-12 col-md-12">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="them_btn_container ">
-                                    <button class="theme_outline_btn2">Back</button>
-                                </div>
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="them_btn_container">
-                                        <button class="theme_primary_btn">Save</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="spacer_20"></div>
+          </div>
+          <!-- footer section -->
+          <footer class="footer-area">
+            <div class="container-fluid">
+              <div class="row flex-row">
+                <div class="col-12 col-md-12">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="them_btn_container">
+                      <button class="theme_outline_btn2">Back</button>
                     </div>
+                    <div class="d-flex align-items-center gap-3">
+                      <div class="them_btn_container">
+                        <button class="theme_primary_btn">Save</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </footer>
+              </div>
+            </div>
+          </footer>
         </div>
-
+      </div>
     </div>
-
 
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
-
 
     <!-- external script files -->
     <script src="../assets/js-files/comman_js_file.js"></script>
@@ -962,12 +1586,12 @@
     <!-- bootstrap js file -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+  </body>
 </html>
