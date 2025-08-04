@@ -307,6 +307,15 @@
 
                     <div class="d-flex align-items-center justify-content-end gap-3">
                         <div class="them_btn_container">
+                            <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="them_btn_container">
                             <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#edit_customer">
                                 Edit Customer
@@ -339,9 +348,22 @@
                                 Account Usage
                             </button>
                         </div>
+
                         <div class="them_btn_container">
-                            <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#edit_customer_leads">
+                                Edit Customer Leads
+                            </button>
                         </div>
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#update_quote">
+                                Update Quote
+                            </button>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -922,8 +944,319 @@
     </footer>
 
 
+    <!-- Edit Customer Leads -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="edit_customer_leads"
+                aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Edit Customer Leads</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
 
-    <!-- Edit Customer drawer -->
+                </div>
+                <div class="offcanvas-body pt-0">
+
+                    <!-- Category -->
+                    <div class="col-12 mb-3">
+                        <label for="Category_input" class="form-label form_label"
+                            name="broker_agreement">Category</label>
+                        <select class="form-select js-example-basic-single select-fixed-500 w-100"
+                            aria-label="Default select example">
+                            <option>Open this select menu</option>
+                            <option value="1" selected>Lead</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL">Alabama</option>
+                            <option value="1">One</option>
+                        </select>
+                    </div>
+
+                    <!-- Assigned To -->
+                    <div class="col-12 mb-3">
+                        <label for="Assigned To_input" class="form-label form_label" name="broker_agreement">Assigned
+                            To</label>
+                        <select class="form-select js-example-basic-single select-fixed-500 w-100"
+                            aria-label="Default select example">
+                            <option>Open this select menu</option>
+                            <option value="1" selected>Test User</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL">Alabama</option>
+                            <option value="1">One</option>
+                        </select>
+                    </div>
+
+                    <!-- Customer/Lead Name -->
+                    <div class="col-12 mb-3">
+                        <label for="customerName" class="form-label form_label">Customer/Lead Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="customerName"
+                            placeholder="Enter Customer or Lead Name" required value="Zodiac Industries Inc">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-12 mb-3">
+                        <label for="address" class="form-label form_label">Address <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="address" placeholder="Enter Address"
+                            required value="Zodiac Industries Inc">
+                    </div>
+
+                    <!-- City -->
+                    <div class="col-12 mb-3">
+                        <label for="city" class="form-label form_label">City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="city" placeholder="Enter City"
+                            required value="Mexico">
+                    </div>
+
+                    <!-- State -->
+                    <div class="col-12 mb-3">
+                        <label for="state" class="form-label form_label">State <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="state" placeholder="Enter State"
+                            required value="Kansas">
+                    </div>
+
+                    <!-- Postal/Zip Code -->
+                    <div class="col-12 mb-3">
+                        <label for="postalCode" class="form-label form_label">Postal/Zip Code <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="postalCode"
+                            placeholder="Enter Postal or Zip Code" required value="67887">
+                    </div>
+
+                    <!-- Main Contact Name -->
+                    <div class="col-12 mb-3">
+                        <label for="mainContactName" class="form-label form_label">Main Contact Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="mainContactName"
+                            placeholder="Enter Main Contact Name" required value="Customer2">
+                    </div>
+
+                    <!-- Main Contact Primary Phone Number -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Main Contact Primary Phone Number <span
+                                class="text-danger">*</span></label>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control form_text_field" placeholder="+1"
+                                style="max-width: 60px;" required>
+                            <input type="text" class="form-control form_text_field" placeholder="322"
+                                style="max-width: 80px;" required>
+                            <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
+                                required>
+                            <input type="text" class="form-control form_text_field" placeholder="Ext."
+                                style="max-width: 70px;">
+                        </div>
+                    </div>
+
+                    <!-- Main Contact Secondary Phone Number -->
+                    <div class="col-12">
+                        <label class="form-label form_label">Main Contact Secondary Phone Number <span
+                                class="text-danger">*</span></label>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control form_text_field" placeholder="+1"
+                                style="max-width: 60px;" required>
+                            <input type="text" class="form-control form_text_field" placeholder="322"
+                                style="max-width: 80px;" required>
+                            <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
+                                required>
+                            <input type="text" class="form-control form_text_field" placeholder="Ext."
+                                style="max-width: 70px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-between drawer_sidebar_footer">
+                    <!-- <button type="button" class="btn btn-info flex-grow-1">Queue a Follow-Up</button> -->
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer_leads">
+                            Queue a Follow-Up
+                        </button>
+                    </div>
+                    <div class="d-flex gap-2">
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#edit_customer_leads">
+                                Save
+                            </button>
+                        </div>
+
+                        <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <button class="theme_outline_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Update Quote drawer -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="update_quote" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Update Quote</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <!-- Relationship Manager -->
+                    <div class="col-12  mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label"
+                            name="broker_agreement">Relationship Manager</label>
+                        <select class="form-select js-example-basic-single select-fixed-500 w-100"
+                            aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL">Alabama</option>
+                            <option value="1">One</option>
+                        </select>
+
+                    </div>
+
+                    <!-- Customer with edit/delete icons -->
+                    <div class="col-12 mb-3">
+                        <div class="d-flex  justify-content-between align-items-center mb-1">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Customer</label>
+
+                            <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16">
+                        </div>
+
+
+                        <div class=" position-relative">
+                            <button type="button" class="date_picker_icon"
+                                style="background: none; border: none; padding: 0;">
+                                <img src="../assets/icons/Form_delete.png" class="" alt="search_icon"
+                                    style="cursor:pointer;">
+                            </button>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="18,456" value="8,456" readonly="">
+                        </div>
+                        <img src="./assets/icons/Form_Edit.png" alt="" class="w_16_h_16 verti_e_label">
+
+                    </div>
+
+                    <!-- Legal Name on Contract -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Legal Name on Contract <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="322,FSD Villa" readonly>
+                    </div>
+
+                    <!-- Commodity -->
+                    <div class="col-12  mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label"
+                            name="broker_agreement">Commodity <span class="text-danger">*</span></label>
+                        <select class="form-select js-example-basic-single select-fixed-500 w-100"
+                            aria-label="Default select example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL">Alabama</option>
+                            <option value="1">One</option>
+                        </select>
+                    </div>
+
+                    <!-- Commodity -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="commodity">Commodity <span
+                                class="text-danger">*</span></label>
+                        <select id="commodity" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select Commodity</option>
+                            <option value="electric">Electric</option>
+                            <option value="gas">Gas</option>
+                        </select>
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="propertyType">Property Type <span
+                                class="text-danger">*</span></label>
+                        <select id="propertyType" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select Property Type</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="residential">Residential</option>
+                        </select>
+                    </div>
+
+                    <!-- Product 1 -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="product1">Product 1 <span
+                                class="text-danger">*</span></label>
+                        <select id="product1" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select Product</option>
+                            <option value="fixed">Fixed</option>
+                            <option value="variable">Variable</option>
+                        </select>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="product2">Product 2 <span
+                                class="text-danger">*</span></label>
+                        <select id="product2" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select</option>
+                            <option value="none">None</option>
+                            <option value="green">Green Add-on</option>
+                        </select>
+                    </div>
+
+                    <!-- State -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="state">State <span
+                                class="text-danger">*</span></label>
+                        <select id="state" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select State</option>
+                            <option value="nj">New Jersey</option>
+                            <option value="ny">New York</option>
+                            <option value="tx">Texas</option>
+                        </select>
+                    </div>
+
+                    <!-- Utility -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label" for="utility">Utility <span
+                                class="text-danger">*</span></label>
+                        <select id="utility" class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <option selected disabled>Select Utility</option>
+                            <option value="pseg">PSEG – Public Service Electric</option>
+                            <option value="coned">Con Edison</option>
+                            <option value="peco">PECO</option>
+                        </select>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-center drawer_sidebar_footer">
+
+
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#update_quote">
+                            Continue
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Customer/Site Info drawer -->
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <div class="offcanvas offcanvas-end" tabindex="-1" id="customer_site_info" aria-labelledby="offcanvasLabel">
@@ -1038,7 +1371,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Edit Customer drawer -->
     <nav class="navbar bg-body-tertiary fixed-top">
@@ -1172,7 +1504,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Account Usage drawer -->
     <nav class="navbar bg-body-tertiary fixed-top">
@@ -1327,7 +1658,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Second Add/Edit Account -->
     <nav class="navbar bg-body-tertiary fixed-top">
@@ -1492,7 +1822,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Add/Edit Account -->
     <nav class="navbar bg-body-tertiary fixed-top">
