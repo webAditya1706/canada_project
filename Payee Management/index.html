@@ -363,6 +363,10 @@
                             </button>
                         </div>
 
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#modal_update_quote">adg Modal</button>
+                        </div>
 
                     </div>
                 </div>
@@ -944,6 +948,275 @@
     </footer>
 
 
+    <!-- Update Quote Modal -->
+    <div class="modal fade" id="modal_update_quote">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Update Quote</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="">
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <!-- Relationship Manager -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Relationship Manager <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Sean Kelly</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Customer -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Customer <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative">
+                            <button type="button" class="position-absolute top-0 end-0 border-0 bg-transparent p-0"
+                                data-bs-toggle="modal" data-bs-target="#accounts_view_modal">
+                                <img src="../assets/icons/black_form_search_icon.png" alt="search" class="me-2">
+                            </button>
+                            <input type="text" class="form-control form_text_field" value="Rand Machine Products Inc"
+                                readonly>
+                        </div>
+                    </div>
+
+                    <!-- Legal Name on Contract -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Legal Name on Contract</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" value="Rand Machine Products Inc">
+                        </div>
+                    </div>
+
+                    <!-- Commodity -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Commodity <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Electric</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Property Type -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Property Type <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Commercial</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Product 1 -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Product 1 <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Fixed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Product 2 <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Select</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- State -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">State <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>New Jersey</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Utility -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Utility <span class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>PSEG-Public Service Electric</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Rate Class -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Rate Class</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>GLP-General</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Annual Volume (Estimated) -->
+                    <div class="row mb-3 position-relative">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Annual Volume (Estimated) <span
+                                    class="text-danger">*</span></label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative">
+                                <span class="form_unit_text">kWh</span>
+                                <input type="text" class="form-control" value="2,760">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Billing Type -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Billing Type</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Single Preferred</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Demand (Estimated) -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Demand (Estimated)</label>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative">
+                            <span class="form_unit_text">kWh</span>
+                            <input type="text" class="form-control" value="2">
+                        </div>
+                    </div>
+
+                    <!-- Load Factor (Estimated) -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Load Factor (Estimated)</label>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative">
+                            <span class="form_unit_text">%</span>
+                            <input type="text" class="form-control" value="2.34">
+                        </div>
+                    </div>
+
+                    <!-- Next Meter Read Date (Estimated) -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Next Meter Read Date (Estimated)</label>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <input type="text" class="form-control" value="October, 2024" readonly>
+                        </div>
+                    </div>
+
+                    <!-- Start Month -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Start Month</label>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-select">
+                                <option selected>March</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-select">
+                                <option selected>2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Term -->
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label form_label">Term</label>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-wrap gap-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" checked>
+                                <label class="form-check-label">6</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" checked>
+                                <label class="form-check-label">12</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox">
+                                <label class="form-check-label">18</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" checked>
+                                <label class="form-check-label">24</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" checked>
+                                <label class="form-check-label">36</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="them_btn_container ">
+                        <button class="theme_outline_btn">Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
+                            to
+                            first</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Edit Customer Leads -->
     <nav class="navbar bg-body-tertiary fixed-top">
         <div class="container-fluid">
@@ -1040,7 +1313,7 @@
                                 class="text-danger">*</span></label>
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control form_text_field" placeholder="+1"
-                                style="max-width: 60px;" required>
+                                style="max-width: 60px;" required disabled>
                             <input type="text" class="form-control form_text_field" placeholder="322"
                                 style="max-width: 80px;" required>
                             <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
@@ -1056,7 +1329,7 @@
                                 class="text-danger">*</span></label>
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control form_text_field" placeholder="+1"
-                                style="max-width: 60px;" required>
+                                style="max-width: 60px;" required disabled>
                             <input type="text" class="form-control form_text_field" placeholder="322"
                                 style="max-width: 80px;" required>
                             <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
@@ -1268,15 +1541,21 @@
                 </div>
                 <div class="offcanvas-body pt-0">
                     <!-- Relationship Manager -->
-                    <div class="col-12 mb-3">
-                        <label class="form-label form_label">Relationship Manager <span
-                                class="text-danger">*</span></label>
-                        <select class="form-select form_text_field" required>
-                            <option selected disabled>Select Manager</option>
-                            <option>Albert Sasson</option>
-                            <!-- Add other options as needed -->
+                    <div class="col-12  mb-3">
+                        <label for="exampleFormControlInput1" class="form-label form_label"
+                            name="broker_agreement">Relationship Manager</label>
+                        <select class="form-select js-example-basic-single select-fixed-500 w-100"
+                            aria-label="Default select example">
+                            <option>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="AL" selected>Alabama</option>
+                            <option value="1">One</option>
                         </select>
+
                     </div>
+
 
                     <!-- Customer with edit/delete icons -->
                     <div class="col-12 mb-3">
@@ -1450,7 +1729,7 @@
                                 class="text-danger">*</span></label>
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control form_text_field" placeholder="+1"
-                                style="max-width: 60px;" required>
+                                style="max-width: 60px;" required disabled>
                             <input type="text" class="form-control form_text_field" placeholder="322"
                                 style="max-width: 80px;" required>
                             <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
@@ -1466,7 +1745,7 @@
                                 class="text-danger">*</span></label>
                         <div class="d-flex gap-2">
                             <input type="text" class="form-control form_text_field" placeholder="+1"
-                                style="max-width: 60px;" required>
+                                style="max-width: 60px;" required disabled>
                             <input type="text" class="form-control form_text_field" placeholder="322"
                                 style="max-width: 80px;" required>
                             <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
@@ -1745,12 +2024,17 @@
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control form_text_field" required>
                         </div>
+                    </div>
 
-                        <!-- Optional Section Toggle -->
-                        <div class="col-12 mb-2">
-                            <a href="#" class="active_text_title_14 text-decoration-none">– Hide additional details</a>
-                        </div>
+                    <!-- Optional Section Toggle -->
+                    <div class="col-12 mb-2">
+                        <p type="button" class="active_text_title_14 text-decoration-none"
+                            onclick="handleToggleRow('toggle_text_2','toggle_additional_row_2')"><span
+                                id="toggle_text_2"> -
+                            </span> Hide additional details</p>
+                    </div>
 
+                    <div class="row" id="toggle_additional_row_2">
                         <!-- Rate Class -->
                         <div class="col-md-6 mb-3">
                             <label class="form-label form_label">Rate Class</label>
@@ -1896,12 +2180,16 @@
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control form_text_field" required>
                         </div>
+                    </div>
 
-                        <!-- Optional Section Toggle -->
-                        <div class="col-12 mb-2">
-                            <a href="#" class="active_text_title_14 text-decoration-none">– Hide additional details</a>
-                        </div>
+                    <!-- Optional Section Toggle -->
+                    <div class="col-12 mb-2">
+                        <p type="button" class="active_text_title_14 text-decoration-none"
+                            onclick="handleToggleRow('toggle_text','toggle_additional_row')"><span id="toggle_text"> -
+                            </span> Hide additional details</p>
+                    </div>
 
+                    <div class="row" id="toggle_additional_row">
                         <!-- Rate Class -->
                         <div class="col-md-6 mb-3">
                             <label class="form-label form_label">Rate Class</label>
@@ -2237,6 +2525,23 @@
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+        function handleToggleRow(textId, rowId) {
+            const textSpan = document.getElementById(textId);
+            const row = document.getElementById(rowId);
+
+            // Toggle visibility
+            row.classList.toggle('d-none');
+
+            // Toggle +/− sign
+            if (textSpan.innerText.trim() === '−' || textSpan.innerText.trim() === '-') {
+                textSpan.innerText = '+';
+            } else {
+                textSpan.innerText = '−';
+            }
+        }
+
+    </script>
 
 </body>
 
