@@ -67,6 +67,15 @@
   background-position: center;
 }
 
+.drawer_sidebar_footer{
+background: #F2FCFF;
+padding: 10px;
+}
+
+.Add_Edit_Account_drawer{
+  width: 800px;
+  max-width: 100%;
+}
 .footer_bg {
   background-color: var(--HR_BG);
 }

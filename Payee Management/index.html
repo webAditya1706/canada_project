@@ -304,7 +304,41 @@
 
                 </div>
                 <div class="col-6">
+
                     <div class="d-flex align-items-center justify-content-end gap-3">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#edit_customer">
+                                Edit Customer
+                            </button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#customer_site_info">
+                                Customer/Site Info
+                            </button>
+                        </div>
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#Add_Edit_Account">
+                                Add/Edit Account
+                            </button>
+                        </div>
+
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#sec_Add_Edit_Account">
+                                Add/Edit Account 2
+                            </button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#account_usage">
+                                Account Usage
+                            </button>
+                        </div>
                         <div class="them_btn_container">
                             <button class="theme_primary_btn" onclick="changeUI()">Vertical UI</button>
                         </div>
@@ -887,6 +921,978 @@
         </div>
     </footer>
 
+
+
+    <!-- Edit Customer drawer -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="customer_site_info" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Customer/Site Info</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <!-- Relationship Manager -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Relationship Manager <span
+                                class="text-danger">*</span></label>
+                        <select class="form-select form_text_field" required>
+                            <option selected disabled>Select Manager</option>
+                            <option>Albert Sasson</option>
+                            <!-- Add other options as needed -->
+                        </select>
+                    </div>
+
+                    <!-- Customer with edit/delete icons -->
+                    <div class="col-12 mb-3">
+                        <div class="d-flex  justify-content-between align-items-center mb-1">
+                            <label for="exampleFormControlInput1" class="form-label form_label">Customer</label>
+
+                            <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16">
+                        </div>
+
+
+                        <div class=" position-relative">
+                            <button type="button" class="date_picker_icon"
+                                style="background: none; border: none; padding: 0;">
+                                <img src="../assets/icons/Form_delete.png" class="" alt="search_icon"
+                                    style="cursor:pointer;">
+                            </button>
+                            <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                placeholder="18,456" value="8,456" readonly="">
+                        </div>
+                        <img src="./assets/icons/Form_Edit.png" alt="" class="w_16_h_16 verti_e_label">
+
+                    </div>
+
+                    <!-- Legal Name on Contract -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Legal Name on Contract <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="ABC Test xxy" required>
+                    </div>
+
+                    <!-- Quote Nick Name -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Quote Nick Name</label>
+                        <input type="text" class="form-control form_text_field" placeholder="Type here">
+                    </div>
+
+                    <!-- Billing Address -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Billing Address <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="322,FSD Villa" readonly>
+                    </div>
+
+                    <!-- City -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="Mexico" readonly>
+                    </div>
+
+                    <!-- State -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">State <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="Kansas" readonly>
+                    </div>
+
+                    <!-- Zip Code -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Zip Code <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" value="67887" readonly>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Email</label>
+                        <input type="email" class="form-control form_text_field" value="xyz@mail.com" readonly>
+                    </div>
+
+                    <!-- Contact Name -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Contact Name</label>
+                        <input type="text" class="form-control form_text_field" placeholder="Enter Contact Name">
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-end drawer_sidebar_footer">
+
+                    <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <button class="theme_outline_btn">Close</button>
+                    </div>
+
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#customer_site_info">
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Edit Customer drawer -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="edit_customer" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Edit Customer</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </div>
+                <div class="offcanvas-body pt-0">
+
+                    <!-- Category (readonly) -->
+                    <div class="col-12 mb-3">
+                        <label for="category" class="form-label form_label">Category</label>
+                        <input type="text" class="form-control form_text_field" id="category" value="Customer" readonly>
+                    </div>
+
+                    <!-- Assigned To (readonly) -->
+                    <div class="col-12 mb-3">
+                        <label for="assignedTo" class="form-label form_label">Assigned To</label>
+                        <input type="text" class="form-control form_text_field" id="assignedTo" value="Kabelo Palesa"
+                            readonly>
+                    </div>
+
+                    <!-- Customer/Lead Name -->
+                    <div class="col-12 mb-3">
+                        <label for="customerName" class="form-label form_label">Customer/Lead Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="customerName"
+                            placeholder="Enter Customer or Lead Name" required>
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-12 mb-3">
+                        <label for="address" class="form-label form_label">Address <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="address" placeholder="Enter Address"
+                            required>
+                    </div>
+
+                    <!-- City -->
+                    <div class="col-12 mb-3">
+                        <label for="city" class="form-label form_label">City <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="city" placeholder="Enter City"
+                            required>
+                    </div>
+
+                    <!-- State -->
+                    <div class="col-12 mb-3">
+                        <label for="state" class="form-label form_label">State <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="state" placeholder="Enter State"
+                            required>
+                    </div>
+
+                    <!-- Postal/Zip Code -->
+                    <div class="col-12 mb-3">
+                        <label for="postalCode" class="form-label form_label">Postal/Zip Code <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="postalCode"
+                            placeholder="Enter Postal or Zip Code" required>
+                    </div>
+
+                    <!-- Main Contact Name -->
+                    <div class="col-12 mb-3">
+                        <label for="mainContactName" class="form-label form_label">Main Contact Name <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="mainContactName"
+                            placeholder="Enter Main Contact Name" required>
+                    </div>
+
+                    <!-- Main Contact Primary Phone Number -->
+                    <div class="col-12 mb-3">
+                        <label class="form-label form_label">Main Contact Primary Phone Number <span
+                                class="text-danger">*</span></label>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control form_text_field" placeholder="+1"
+                                style="max-width: 60px;" required>
+                            <input type="text" class="form-control form_text_field" placeholder="322"
+                                style="max-width: 80px;" required>
+                            <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
+                                required>
+                            <input type="text" class="form-control form_text_field" placeholder="Ext."
+                                style="max-width: 70px;">
+                        </div>
+                    </div>
+
+                    <!-- Main Contact Secondary Phone Number -->
+                    <div class="col-12">
+                        <label class="form-label form_label">Main Contact Secondary Phone Number <span
+                                class="text-danger">*</span></label>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="form-control form_text_field" placeholder="+1"
+                                style="max-width: 60px;" required>
+                            <input type="text" class="form-control form_text_field" placeholder="322"
+                                style="max-width: 80px;" required>
+                            <input type="text" class="form-control form_text_field flex-grow-1" placeholder="467 0258"
+                                required>
+                            <input type="text" class="form-control form_text_field" placeholder="Ext."
+                                style="max-width: 70px;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-between drawer_sidebar_footer">
+                    <!-- <button type="button" class="btn btn-info flex-grow-1">Queue a Follow-Up</button> -->
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
+                            Queue a Follow-Up
+                        </button>
+                    </div>
+                    <div class="d-flex gap-2">
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#edit_customer">
+                                Save
+                            </button>
+                        </div>
+
+                        <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <button class="theme_outline_btn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Account Usage drawer -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="account_usage" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Account Usage</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <h5 class="form_label my-3">Account No. <span class="active_text_title_14">PE-test wicky9</span>
+                    </h5>
+
+                    <!-- January -->
+                    <div class="col-12 mb-3">
+                        <label for="janInput" class="form-label form_label">January</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="janInput"
+                                placeholder="Type here" value="2760">
+                        </div>
+                    </div>
+
+                    <!-- February -->
+                    <div class="col-12 mb-3">
+                        <label for="febInput" class="form-label form_label">February</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="febInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- March -->
+                    <div class="col-12 mb-3">
+                        <label for="marInput" class="form-label form_label">March</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="marInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- April -->
+                    <div class="col-12 mb-3">
+                        <label for="aprInput" class="form-label form_label">April</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="aprInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- May -->
+                    <div class="col-12 mb-3">
+                        <label for="mayInput" class="form-label form_label">May</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="mayInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- June -->
+                    <div class="col-12 mb-3">
+                        <label for="junInput" class="form-label form_label">June</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="junInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- July -->
+                    <div class="col-12 mb-3">
+                        <label for="julInput" class="form-label form_label">July</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="julInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- August -->
+                    <div class="col-12 mb-3">
+                        <label for="augInput" class="form-label form_label">August</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="augInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- September -->
+                    <div class="col-12 mb-3">
+                        <label for="sepInput" class="form-label form_label">September</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="sepInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- October -->
+                    <div class="col-12 mb-3">
+                        <label for="octInput" class="form-label form_label">October</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="octInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- November -->
+                    <div class="col-12 mb-3">
+                        <label for="novInput" class="form-label form_label">November</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="novInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+
+                    <!-- December -->
+                    <div class="col-12 mb-3">
+                        <label for="decInput" class="form-label form_label">December</label>
+                        <div class="position-relative">
+                            <span class="form_unit_text">Therms/CCF</span>
+                            <input type="text" class="form-control form_text_field" id="decInput"
+                                placeholder="Type here">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-end drawer_sidebar_footer">
+
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#account_usage">
+                            Save
+                        </button>
+                    </div>
+
+                    <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <button class="theme_outline_btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Second Add/Edit Account -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end Add_Edit_Account_drawer" tabindex="-1" id="sec_Add_Edit_Account"
+                aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1 drawer_sidebar_footer">
+                    <!-- <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Add/Edit Account</h5> -->
+                    <div class="d-flex align-items-center justify-content-end flex-wrap w-100  gap-3 flex-wrap">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#sec_Add_Edit_Account">
+                                Import Accounts
+                            </button>
+                        </div>
+
+                        <img src="../assets/icons/Download_2.png" class="w_30_h_30" alt="Download.png" srcset="">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#sec_Add_Edit_Account">
+                                Import Accounts with Profile
+                            </button>
+                        </div>
+                        <img src="../assets/icons/Download_2.png" class="w_30_h_30" alt="Download.png" srcset="">
+                        <img src="../assets/icons/Excel.png" class="w_30_h_30" alt="Download.png" srcset="">
+                        <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                            class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                    </div>
+
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <div class="row">
+                        <h5 id="offcanvasLabel" class="active_text_title_14 mb-3 mt-3">Add/Edit Account</h5>
+                        <!-- Account Number -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Account Number <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" placeholder="Enter Account Number"
+                                required>
+                        </div>
+
+                        <!-- Custom Start Date Toggle & Date -->
+                        <div class=" col-6 col-md-6 mb-3">
+                            <label class="form-label form_label">Custom Start Date</label>
+                            <div class="d-flex align-items-center gap-2">
+                                <div
+                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+                                </div>
+                                <input type="month" class="form-control form_text_field">
+                            </div>
+                        </div>
+
+                        <!-- Service Address -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Service Address <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- City -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- State -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">State <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Postal/Zip Code -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Postal/Zip Code <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Annual Volume -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Annual Volume <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Optional Section Toggle -->
+                        <div class="col-12 mb-2">
+                            <a href="#" class="active_text_title_14 text-decoration-none">– Hide additional details</a>
+                        </div>
+
+                        <!-- Rate Class -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Rate Class</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Zone -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Zone</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- ICAP -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">ICAP</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Load Factor -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Load Factor</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Transmission Tag -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Transmission Tag</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Load Factor Transmission Tag -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Load Factor Transmission Tag</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Utility Account Name -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Utility Account Name</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Entity Name -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Entity Name</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-end drawer_sidebar_footer">
+                    <!-- <button type="button" class="btn btn-info flex-grow-1">Queue a Follow-Up</button> -->
+
+                    <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                        data-bs-dismiss="offcanvas" aria-label="Close">
+                        <button class="theme_outline_btn">Close</button>
+                    </div>
+
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#sec_Add_Edit_Account">
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Add/Edit Account -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <div class="offcanvas offcanvas-end Add_Edit_Account_drawer" tabindex="-1" id="Add_Edit_Account"
+                aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header pb-1">
+                    <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Add/Edit Account</h5>
+                    <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
+                        class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
+
+                </div>
+                <div class="offcanvas-body pt-0">
+                    <div class="row">
+                        <!-- Account Number -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Account Number <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" placeholder="Enter Account Number"
+                                required>
+                        </div>
+
+                        <!-- Custom Start Date Toggle & Date -->
+                        <div class=" col-6 col-md-3 mb-3">
+                            <label class="form-label form_label">Custom Start Date</label>
+                            <div class="d-flex align-items-center gap-2">
+                                <div
+                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Custom Start Date Toggle & Date -->
+                        <div class=" col-6 col-md-3 mb-3">
+                            <label class="form-label form_label">Custom Start Date</label>
+                            <div class="d-flex align-items-center gap-2">
+                                <input type="month" class="form-control form_text_field">
+                            </div>
+                        </div>
+
+                        <!-- Service Address -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Service Address <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- City -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- State -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">State <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Postal/Zip Code -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Postal/Zip Code <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Annual Volume -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Annual Volume <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control form_text_field" required>
+                        </div>
+
+                        <!-- Optional Section Toggle -->
+                        <div class="col-12 mb-2">
+                            <a href="#" class="active_text_title_14 text-decoration-none">– Hide additional details</a>
+                        </div>
+
+                        <!-- Rate Class -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Rate Class</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Zone -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Zone</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- ICAP -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">ICAP</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Load Factor -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Load Factor</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Transmission Tag -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Transmission Tag</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Load Factor Transmission Tag -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Load Factor Transmission Tag</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Utility Account Name -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Utility Account Name</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+
+                        <!-- Entity Name -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label form_label">Entity Name</label>
+                            <input type="text" class="form-control form_text_field">
+                        </div>
+                    </div>
+
+
+                    <div class="table_wrapper quotes_table last_column_sticky bg__table">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+
+                                    <th scope="col"
+                                        class="align-middle td_w_100 table_head_bg table_th_text table_th_text"
+                                        style="border-right:0px">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Account Number</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class="align-middle text-center td_w_130 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_80">Legal Name on Contract</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_50">Service Address</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Annual Volume (Total Volume: 0)</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Start Date</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Icap</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Zone</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Rate Class</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_70 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Due Date</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_50 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2 td_w_50">
+                                            <span class="th_title">ST</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Utility</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="align-middle td_w_70 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_40">No. of Accts.</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle table_head_bg">
+                                        <div class="d-flex justify-content-center align-items-center gap-2"></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+
+                                    <td class="align-middle table_td_text text text-decoration-underline">
+                                        <div class="td_container text-center">1725</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div>C-002 34 xx</div>
+                                            <div class="sub_table_text mt-1">(Qut Nick Name)</div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle text-center text-center table_td_text td_w_110">
+                                        <div class="td_container">Customer 2</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text td_w_100">
+                                        <div class="td_container">Electric</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">100,000 THERMS/CCF</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">09/2024</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container"> CONECTIV- CONECTIV</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">900</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="btn-group dropstart" type="button">
+                                                <button type="button" class="px-2" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="17"
+                                                        viewBox="0 0 4 17" fill="none">
+                                                        <path
+                                                            d="M1.81244 3.5123C2.67535 3.5123 3.37488 2.76015 3.37488 1.83232C3.37488 0.904496 2.67535 0.152344 1.81244 0.152344C0.949528 0.152344 0.25 0.904496 0.25 1.83232C0.25 2.76015 0.949527 3.5123 1.81244 3.5123Z"
+                                                            fill="#393939" />
+                                                        <path
+                                                            d="M1.81244 9.89609C2.67535 9.89609 3.37488 9.14394 3.37488 8.21611C3.37488 7.28829 2.67535 6.53613 1.81244 6.53613C0.949528 6.53613 0.25 7.28828 0.25 8.21611C0.25 9.14394 0.949527 9.89609 1.81244 9.89609Z"
+                                                            fill="#393939" />
+                                                        <path
+                                                            d="M1.81244 16.2799C2.67535 16.2799 3.37488 15.5277 3.37488 14.5999C3.37488 13.6721 2.67535 12.9199 1.81244 12.9199C0.949528 12.9199 0.25 13.6721 0.25 14.5999C0.25 15.5277 0.949527 16.2799 1.81244 16.2799Z"
+                                                            fill="#393939" />
+                                                    </svg>
+                                                </button>
+
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="table_drop_li_btn active">
+                                                            <a href="../Quotes_View_Form/index.html"
+                                                                onclick="openCustomWindow(event)">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                                                    height="11" viewBox="0 0 11 11" class="custom_icon">
+                                                                    <path
+                                                                        d="M5.50065 7.3335C6.07357 7.3335 6.56055 7.13298 6.96159 6.73193C7.36263 6.33089 7.56315 5.84391 7.56315 5.271C7.56315 4.69808 7.36263 4.2111 6.96159 3.81006C6.56055 3.40902 6.07357 3.2085 5.50065 3.2085C4.92773 3.2085 4.44075 3.40902 4.03971 3.81006C3.63867 4.2111 3.43815 4.69808 3.43815 5.271C3.43815 5.84391 3.63867 6.33089 4.03971 6.73193C4.44075 7.13298 4.92773 7.3335 5.50065 7.3335ZM5.50065 6.5085C5.1569 6.5085 4.86471 6.38818 4.62409 6.14756C4.38346 5.90693 4.26315 5.61475 4.26315 5.271C4.26315 4.92725 4.38346 4.63506 4.62409 4.39443C4.86471 4.15381 5.1569 4.0335 5.50065 4.0335C5.8444 4.0335 6.13659 4.15381 6.37721 4.39443C6.61784 4.63506 6.73815 4.92725 6.73815 5.271C6.73815 5.61475 6.61784 5.90693 6.37721 6.14756C6.13659 6.38818 5.8444 6.5085 5.50065 6.5085ZM5.50065 8.7085C4.38537 8.7085 3.3694 8.39721 2.45273 7.77464C1.53607 7.15207 0.871484 6.31752 0.458984 5.271C0.871484 4.22447 1.53607 3.38992 2.45273 2.76735C3.3694 2.14478 4.38537 1.8335 5.50065 1.8335C6.61593 1.8335 7.6319 2.14478 8.54857 2.76735C9.46523 3.38992 10.1298 4.22447 10.5423 5.271C10.1298 6.31752 9.46523 7.15207 8.54857 7.77464C7.6319 8.39721 6.61593 8.7085 5.50065 8.7085ZM5.50065 7.79183C6.36385 7.79183 7.15638 7.56457 7.87825 7.11006C8.60013 6.65554 9.15204 6.04252 9.53398 5.271C9.15204 4.49947 8.60013 3.88645 7.87825 3.43193C7.15638 2.97742 6.36385 2.75016 5.50065 2.75016C4.63746 2.75016 3.84492 2.97742 3.12305 3.43193C2.40117 3.88645 1.84926 4.49947 1.46732 5.271C1.84926 6.04252 2.40117 6.65554 3.12305 7.11006C3.84492 7.56457 4.63746 7.79183 5.50065 7.79183Z" />
+                                                                </svg>
+                                                                <span href="/">View</span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="table_drop_li_btn" data-bs-target="#arcive_modal_open"
+                                                        data-bs-toggle="modal">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                                                            viewBox="0 0 11 11">
+                                                            <path
+                                                                d="M1.83268 9.16683C1.5806 9.16683 1.3648 9.07707 1.18529 8.89756C1.00577 8.71804 0.916016 8.50225 0.916016 8.25016V2.75016C0.916016 2.49808 1.00577 2.28228 1.18529 2.10277C1.3648 1.92325 1.5806 1.8335 1.83268 1.8335H4.58268L5.49935 2.75016H9.16602C9.4181 2.75016 9.6339 2.83992 9.81341 3.01943C9.99293 3.19895 10.0827 3.41475 10.0827 3.66683H5.12122L4.20456 2.75016H1.83268V8.25016L2.93268 4.5835H10.7702L9.58997 8.5137C9.52886 8.71232 9.41619 8.87082 9.25195 8.98923C9.08772 9.10763 8.90629 9.16683 8.70768 9.16683H1.83268ZM2.79518 8.25016H8.70768L9.53268 5.50016H3.62018L2.79518 8.25016Z" />
+                                                        </svg>
+
+                                                        <span>Archive</span>
+                                                    </li>
+                                                    <li class="table_drop_li_btn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                                                            viewBox="0 0 11 11">
+                                                            <g clip-path="url(#clip0_866_1800)">
+                                                                <path
+                                                                    d="M5.04102 7.7915H5.95768V5.0415H5.04102V7.7915ZM5.49935 4.12484C5.62921 4.12484 5.73806 4.08091 5.82591 3.99307C5.91376 3.90522 5.95768 3.79637 5.95768 3.6665C5.95768 3.53664 5.91376 3.42779 5.82591 3.33994C5.73806 3.25209 5.62921 3.20817 5.49935 3.20817C5.36949 3.20817 5.26063 3.25209 5.17279 3.33994C5.08494 3.42779 5.04102 3.53664 5.04102 3.6665C5.04102 3.79637 5.08494 3.90522 5.17279 3.99307C5.26063 4.08091 5.36949 4.12484 5.49935 4.12484ZM5.49935 10.0832C4.86532 10.0832 4.26949 9.96286 3.71185 9.72223C3.15421 9.48161 2.66914 9.15505 2.25664 8.74255C1.84414 8.33005 1.51758 7.84498 1.27695 7.28734C1.03633 6.7297 0.916016 6.13386 0.916016 5.49984C0.916016 4.86581 1.03633 4.26998 1.27695 3.71234C1.51758 3.1547 1.84414 2.66963 2.25664 2.25713C2.66914 1.84463 3.15421 1.51807 3.71185 1.27744C4.26949 1.03682 4.86532 0.916504 5.49935 0.916504C6.13338 0.916504 6.72921 1.03682 7.28685 1.27744C7.84449 1.51807 8.32956 1.84463 8.74206 2.25713C9.15456 2.66963 9.48112 3.1547 9.72174 3.71234C9.96237 4.26998 10.0827 4.86581 10.0827 5.49984C10.0827 6.13386 9.96237 6.7297 9.72174 7.28734C9.48112 7.84498 9.15456 8.33005 8.74206 8.74255C8.32956 9.15505 7.84449 9.48161 7.28685 9.72223C6.72921 9.96286 6.13338 10.0832 5.49935 10.0832ZM5.49935 9.1665C6.52296 9.1665 7.38997 8.8113 8.10039 8.10088C8.81081 7.39046 9.16602 6.52345 9.16602 5.49984C9.16602 4.47623 8.81081 3.60921 8.10039 2.8988C7.38997 2.18838 6.52296 1.83317 5.49935 1.83317C4.47574 1.83317 3.60872 2.18838 2.89831 2.8988C2.18789 3.60921 1.83268 4.47623 1.83268 5.49984C1.83268 6.52345 2.18789 7.39046 2.89831 8.10088C3.60872 8.8113 4.47574 9.1665 5.49935 9.1665Z" />
+                                                            </g>
+                                                            <defs>
+                                                                <clipPath id="clip0_866_1800">
+                                                                    <rect width="11" height="11" fill="white" />
+                                                                </clipPath>
+                                                            </defs>
+                                                        </svg>
+
+
+                                                        <span>Activity Log</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="table_drop_li_btn active">
+                                                            <a href="../Quotes_View_Form/index.html"
+                                                                onclick="openCustomWindow(event)">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                                                    height="11" viewBox="0 0 11 11" class="custom_icon">
+                                                                    <path
+                                                                        d="M5.50065 7.3335C6.07357 7.3335 6.56055 7.13298 6.96159 6.73193C7.36263 6.33089 7.56315 5.84391 7.56315 5.271C7.56315 4.69808 7.36263 4.2111 6.96159 3.81006C6.56055 3.40902 6.07357 3.2085 5.50065 3.2085C4.92773 3.2085 4.44075 3.40902 4.03971 3.81006C3.63867 4.2111 3.43815 4.69808 3.43815 5.271C3.43815 5.84391 3.63867 6.33089 4.03971 6.73193C4.44075 7.13298 4.92773 7.3335 5.50065 7.3335ZM5.50065 6.5085C5.1569 6.5085 4.86471 6.38818 4.62409 6.14756C4.38346 5.90693 4.26315 5.61475 4.26315 5.271C4.26315 4.92725 4.38346 4.63506 4.62409 4.39443C4.86471 4.15381 5.1569 4.0335 5.50065 4.0335C5.8444 4.0335 6.13659 4.15381 6.37721 4.39443C6.61784 4.63506 6.73815 4.92725 6.73815 5.271C6.73815 5.61475 6.61784 5.90693 6.37721 6.14756C6.13659 6.38818 5.8444 6.5085 5.50065 6.5085ZM5.50065 8.7085C4.38537 8.7085 3.3694 8.39721 2.45273 7.77464C1.53607 7.15207 0.871484 6.31752 0.458984 5.271C0.871484 4.22447 1.53607 3.38992 2.45273 2.76735C3.3694 2.14478 4.38537 1.8335 5.50065 1.8335C6.61593 1.8335 7.6319 2.14478 8.54857 2.76735C9.46523 3.38992 10.1298 4.22447 10.5423 5.271C10.1298 6.31752 9.46523 7.15207 8.54857 7.77464C7.6319 8.39721 6.61593 8.7085 5.50065 8.7085ZM5.50065 7.79183C6.36385 7.79183 7.15638 7.56457 7.87825 7.11006C8.60013 6.65554 9.15204 6.04252 9.53398 5.271C9.15204 4.49947 8.60013 3.88645 7.87825 3.43193C7.15638 2.97742 6.36385 2.75016 5.50065 2.75016C4.63746 2.75016 3.84492 2.97742 3.12305 3.43193C2.40117 3.88645 1.84926 4.49947 1.46732 5.271C1.84926 6.04252 2.40117 6.65554 3.12305 7.11006C3.84492 7.56457 4.63746 7.79183 5.50065 7.79183Z" />
+                                                                </svg>
+                                                                <span href="/">View</span>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <div class="d-flex gap-2 justify-content-between drawer_sidebar_footer">
+                    <!-- <button type="button" class="btn btn-info flex-grow-1">Queue a Follow-Up</button> -->
+                    <div class="d-flex align-items-center gap-3 flex-wrap">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#Add_Edit_Account">
+                                Import Accounts
+                            </button>
+                        </div>
+
+                        <img src="../assets/icons/Download_2.png" class="w_30_h_30" alt="Download.png" srcset="">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#Add_Edit_Account">
+                                Import Accounts with Profile
+                            </button>
+                        </div>
+                        <img src="../assets/icons/Download_2.png" class="w_30_h_30" alt="Download.png" srcset="">
+                        <img src="../assets/icons/Excel.png" class="w_30_h_30" alt="Download.png" srcset="">
+
+                    </div>
+                    <div class="d-flex gap-2">
+
+                        <div class="them_btn_container " alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                            data-bs-dismiss="offcanvas" aria-label="Close">
+                            <button class="theme_outline_btn">Close</button>
+                        </div>
+
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#Add_Edit_Account">
+                                Save
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
     <!-- Overlay -->
     <div class="overlay_mainsidebar"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -901,6 +1907,8 @@
     <script src="../assets/js-files/comman_js_file.js"></script>
 
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

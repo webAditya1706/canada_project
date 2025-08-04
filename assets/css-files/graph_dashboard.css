@@ -185,3 +185,61 @@
 .tab-content .active{
   background-color: #fff;
 }
+
+
+/* purvi css */
+
+.rectangle_bg_4C6AA4 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #4C6AA4;
+}
+.rectangle_bg_377D22 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #008000;
+}
+.rectangle_bg_F5A623 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #F47506;
+}
+.rectangle_bg_FF0000 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #FF0000;
+}
+.rectangle_bg_FFC107 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #FFC107;
+}
+.rectangle_bg_bab6b2 {
+  width: 25px;
+  min-width: 25px;
+  height: 25px;
+  gap: 0px;
+  border-radius: 5px;
+  opacity: 0px;
+  background: #BAB6B2;
+}
