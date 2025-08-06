@@ -68,8 +68,8 @@
 }
 
 .drawer_sidebar_footer{
-background: #F2FCFF;
-padding: 10px;
+background: #F2FCFF !important;
+padding: 10px !important;
 }
 
 .Add_Edit_Account_drawer{
@@ -101,6 +101,10 @@ hr {
   border-radius: 2px;
   background: var(--Stroke, #e7e7e7);
   z-index: 2;
+}
+
+.bulue_color{
+  color: #007CBA;
 }
 
 .primary_bg_color {

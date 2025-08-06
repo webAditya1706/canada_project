@@ -316,7 +316,7 @@
 
                 <div class="col-12">
 
-                    <div class="d-flex align-items-center justify-content-end gap-3">
+                    <div class="d-flex align-items-center flex-wrap justify-content-end gap-3">
                         <div class="them_btn_container">
                             <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#edit_customer">
@@ -368,6 +368,20 @@
                         <div class="them_btn_container">
                             <button class="theme_secondary_btn" data-bs-toggle="modal"
                                 data-bs-target="#modal_update_quote">adg Modal</button>
+                        </div>
+
+
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#site_detail_modal">Site detail Modal</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#sec_site_detail_modal">Site detail Modal 2</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#add_contract_test">Add Contract Test</button>
                         </div>
 
                     </div>
@@ -950,6 +964,403 @@
     </footer>
 
 
+    <!-- Add Contract Test -->
+    <div class="modal fade" id="add_contract_test" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Add Contract Test</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="table_wrapper quotes_table last_column_sticky bg__table">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+
+                                    <th scope="col"
+                                        class="align-middle text-center td_w_130 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title td_w_80">CMDTY</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="align-middle td_w_150 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Account No.</span>
+                                            <img src="../assets/auto_filter.png" alt="filter icon"
+                                                style="margin-right: 5px" />
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Utility</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Service Address</span>
+
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Annual Usage</span>
+
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Start Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="align-middle td_w_120 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Customer</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Electric</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Ka2202202398012</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24CONED - Consolidated E</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Service Address, New...</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">50,000 kWh</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">01/02/2023</div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Zodiac</div>
+                                    </td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- second Site Detail -->
+    <div class="modal fade" id="sec_site_detail_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Site Detail</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Legal Name on Contract <span
+                                        class="text-danger">*</span></label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="1165 Ogden Holding LLC">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Address</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="1165 Ogden Avenue">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">State</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="AL">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">City</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="Bron">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Postal / Zip Code</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="10245">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Phone</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="1-121-123-1234">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Email</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input disabled type="email" class="form-control bulue_color" value="team.demomail.com">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Contact Name</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="Tamir Gayr">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Relationship Manager</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="Albert Sasson">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Current Supplier</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="-">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Contract Expiration Date</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="-">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Current Billing Method</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="-">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Expiration Rate</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="$ 0.0">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <div class="col-12 col-md-6">
+                                <label class="form-label form_label">Expiration Contract Term</label>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" disabled class="form-control" value="-">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Site Detail Modal -->
+    <div class="modal fade" id="site_detail_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Site Detail</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="container mt-4">
+                        <div class="row">
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Legal Name On Contract</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">1165 Ogden Holding Llc</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Address</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">1165 Ogden Avenu</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">State</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">AL</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">City</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">Bron</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Postal / Zip Code</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">10451</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Phone</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">1-121--385-7687</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Email</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">
+                                    <a href="mailto:t.eam.itmagi@example.com">t.eam.itmagi...</a>
+                                </p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Contact Name</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">Tamir Gayr</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Relationship Manager</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">Albert Sasson</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Current Supplier</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">-</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Contract Expiration date</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">-</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Current Billing Method</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">-</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Expiring Rate</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">$0.0</p>
+                            </div>
+
+                            <div class="col-6">
+                                <p class="fs_13_fw_600_1313">Expiring Contract Term</p>
+                            </div>
+                            <div class="col-6">
+                                <p class="fs_13_fw_400_c_131313">-</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- Update Quote Modal -->
     <div class="modal fade" id="modal_update_quote">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -963,8 +1374,8 @@
 
                 <div class="modal-body">
                     <!-- Relationship Manager -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Relationship Manager <span
                                     class="text-danger">*</span></label>
                         </div>
@@ -976,23 +1387,33 @@
                     </div>
 
                     <!-- Customer -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
-                            <label class="form-label form_label">Customer <span class="text-danger">*</span></label>
+                    <div class="row mb-3 align-items-center align-items-center">
+                        <div class="col-12 col-md-5">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <label class="form-label form_label">Customer <span class="text-danger">*</span></label>
+                                <img src="../assets/icons/Form_Edit.png" alt=""
+                                    class="w_16_h_16 hori_e_label d-md-none mb-2">
+                            </div>
                         </div>
-                        <div class="col-12 col-md-6 position-relative">
-                            <button type="button" class="position-absolute top-0 end-0 border-0 bg-transparent p-0"
-                                data-bs-toggle="modal" data-bs-target="#accounts_view_modal">
-                                <img src="../assets/icons/black_form_search_icon.png" alt="search" class="me-2">
-                            </button>
-                            <input type="text" class="form-control form_text_field" value="Rand Machine Products Inc"
-                                readonly>
+                        <div class="col-12 col-md-6 ">
+                            <div class="position-relative">
+                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
+                                    data-bs-target="#accounts_view_modal"
+                                    style="background: none; border: none; padding: 0;">
+                                    <img src="../assets/icons/black_form_search_icon.png" class="" alt="search_icon"
+                                        style="cursor:pointer;">
+                                </button>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="18,456" value="8,456" readonly="">
+                            </div>
                         </div>
+                        <img src="../assets/icons/Form_Edit.png" alt=""
+                            class="w_16_h_16 hori_e_label d-none d-md-block">
                     </div>
 
                     <!-- Legal Name on Contract -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Legal Name on Contract</label>
                         </div>
                         <div class="col-12 col-md-6">
@@ -1001,93 +1422,100 @@
                     </div>
 
                     <!-- Commodity -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Commodity <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
                                 <option selected>Electric</option>
+                                <option>Electric</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Property Type -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Property Type <span
                                     class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                                <option>Commercial</option>
                                 <option selected>Commercial</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Product 1 -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Product 1 <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
                                 <option selected>Fixed</option>
+                                <option>Fixed</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Product 2 -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Product 2 <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
                             <select class="form-select js-example-basic-single select-fixed-500 w-100">
                                 <option selected>Select</option>
+                                <option>Select 2</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- State -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">State <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
                                 <option selected>New Jersey</option>
+                                <option>New Jersey</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Utility -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Utility <span class="text-danger">*</span></label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                                <option selected>PSEG-Public Service Electric</option>
                                 <option selected>PSEG-Public Service Electric</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Rate Class -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Rate Class</label>
                         </div>
                         <div class="col-12 col-md-6">
                             <select class="form-select js-example-basic-single select-fixed-500 w-100">
                                 <option selected>GLP-General</option>
+                                <option>GLP-General</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Annual Volume (Estimated) -->
-                    <div class="row mb-3 position-relative">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Annual Volume (Estimated) <span
                                     class="text-danger">*</span></label>
                         </div>
@@ -1100,42 +1528,47 @@
                     </div>
 
                     <!-- Billing Type -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Billing Type</label>
                         </div>
                         <div class="col-12 col-md-6">
                             <select class="form-select js-example-basic-single select-fixed-500 w-100">
                                 <option selected>Single Preferred</option>
+                                <option>Single Preferred</option>
                             </select>
                         </div>
                     </div>
 
                     <!-- Demand (Estimated) -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Demand (Estimated)</label>
                         </div>
-                        <div class="col-12 col-md-6 position-relative">
-                            <span class="form_unit_text">kWh</span>
-                            <input type="text" class="form-control" value="2">
+                        <div class="col-12 col-md-6 ">
+                            <div class="position-relative">
+                                <span class="form_unit_text">kWh</span>
+                                <input type="text" class="form-control" value="2">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Load Factor (Estimated) -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Load Factor (Estimated)</label>
                         </div>
-                        <div class="col-12 col-md-6 position-relative">
-                            <span class="form_unit_text">%</span>
-                            <input type="text" class="form-control" value="2.34">
+                        <div class="col-12 col-md-6">
+                            <div class="position-relative">
+                                <span class="form_unit_text">%</span>
+                                <input type="text" class="form-control" value="2.34" disabled>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Next Meter Read Date (Estimated) -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Next Meter Read Date (Estimated)</label>
                         </div>
                         <div class="col-12 col-md-6">
@@ -1144,80 +1577,85 @@
                     </div>
 
                     <!-- Start Month -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
-                            <label class="form-label form_label">Start Month</label>
+                    <div class="row align-items-center mb-3">
+                        <div class="col-12 col-md-5">
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <label class="form-label form_label">Start Month</label>
+                                <img src="../assets/icons/Form_Edit.png" alt=""
+                                    class="w_16_h_16 hori_e_label d-block d-md-none">
+                            </div>
                         </div>
                         <div class="col-6 col-md-3">
-                            <select class="form-select">
-                                <option selected>March</option>
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                                <option selected>Mearch</option>
+                                <option>Sean Kelly</option>
                             </select>
                         </div>
                         <div class="col-6 col-md-3">
-                            <select class="form-select">
+                            <select class="form-select js-example-basic-single select-fixed-500 w-100">
                                 <option selected>2024</option>
+                                <option>Sean Kelly</option>
                             </select>
                         </div>
+                        <img src="../assets/icons/Form_Edit.png" alt=""
+                            class="w_16_h_16 hori_e_label d-none d-md-block">
                     </div>
 
                     <!-- Term -->
-                    <div class="row mb-3">
-                        <div class="col-12 col-md-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-md-5">
                             <label class="form-label form_label">Term</label>
                         </div>
                         <div class="col-12 col-md-6 d-flex flex-wrap gap-2">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">6</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">12</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label">18</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">24</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" checked>
-                                <label class="form-check-label">36</label>
+                            <div class="d-flex align-items-center gap-3 verti_div">
+                                <div>
+                                    <input class="form-check-input check_box check_box me-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        6
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        12
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        18
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        24
+                                    </label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input check_box me-1" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        36
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="modal-footer d-flex justify-content-center">
+                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
                     <div class="them_btn_container ">
-                        <button class="theme_outline_btn">Back</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Hide this modal and show the first with the button below.
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
-                            to
-                            first</button>
+                        <button class="theme_outline_btn">Continue</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- Edit Customer Leads -->
     <nav class="navbar bg-body-tertiary fixed-top">
@@ -1606,7 +2044,6 @@
             </div>
         </div>
     </nav>
-
 
     <!-- Customer/Site Info drawer -->
     <nav class="navbar bg-body-tertiary fixed-top">
