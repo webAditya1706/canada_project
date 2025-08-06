@@ -658,6 +658,18 @@ input::placeholder {
   color: var(--Primary, #131313) !important;
 }
 
+
+.fs_13_fw_500_c_131313 {
+  font-family: Poppins;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 16px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--Primary, #131313) !important;
+}
+
 .fs_14_fw_400_c_131313 {
   font-family: Poppins;
   font-size: 14px;

@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
     <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
     <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
 
 
     <!-- font faimily -->
@@ -958,7 +959,7 @@
                         <img src="../assets/icons/cancel.png" alt="">
                     </button>
                 </div>
-                
+
                 <div class="modal-body">
                     <!-- Relationship Manager -->
                     <div class="row mb-3">
@@ -1659,9 +1660,46 @@
                     <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Edit Customer</h5>
                     <img src="../assets/icons/Field Delete.png" alt="Close" type="button"
                         class="custom-close-btn w_18_h_18" data-bs-dismiss="offcanvas" aria-label="Close">
-
                 </div>
                 <div class="offcanvas-body pt-0">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header theme_accordian">
+                                <button class="accordion-button arrow__size" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <div class="row w-100 justify-content-between align-items-center">
+                                        <div class="col-auto ">
+                                            <i class="bi bi-exclamation-circle-fill primary_bg_color_text"></i>
+                                            <span class="sub_title_13">Please Correct The Following
+                                                Errors:</span>
+                                        </div>
+
+                                    </div>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg__accordian_body pb-2">
+                                    <div class="ul_error_list">
+                                        <ul class="fs_11_fw_400_c_1313  mb-2">
+                                            <li class="mb-2">Legal name on Contract is required</li>
+                                            <li class="mb-2">Please retype your email</li>
+                                            <li class="mb-2">Legal name on Contract is required</li>
+                                            <li class="mb-2">Please retype your email</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end mt-2">
+                                        <div class="col-auto fs_10_fw_400_c_1313">
+                                            <span class="text-danger" style="">*</span>
+                                            <span class="">Required Field</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <!-- Category (readonly) -->
                     <div class="col-12 mb-3">
@@ -2517,6 +2555,7 @@
 
 
     <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
