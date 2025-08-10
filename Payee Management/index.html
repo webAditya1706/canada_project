@@ -30,7 +30,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 </head>
 
@@ -382,6 +381,23 @@
                         <div class="them_btn_container">
                             <button class="theme_secondary_btn" data-bs-toggle="modal"
                                 data-bs-target="#add_contract_test">Add Contract Test</button>
+                        </div>
+
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#preview_link">Preview Link</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#print_view_modal">Print View</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#create_proposal_view_modal">Create Proposal</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_secondary_btn" data-bs-toggle="modal"
+                                data-bs-target="#emailView_link">email View link</button>
                         </div>
 
                     </div>
@@ -964,9 +980,1375 @@
     </footer>
 
 
+    <!-- Create Proposal view Modal -->
+    <div class="modal fade customModal" id="create_proposal_view_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Create Proposal</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <h6 class="active_text_title_14 mt-2 mb-4">Quote #102102</h6>
+                    <h2 class="fs_14_fw_600_c_131313 mb-3">Proposal configurator for 1165 Ogden Holding LLC</h2>
+
+                    <h6 class="text-center fs_18_fw_500_c_1313 my-3">Fixed Rate</h6>
+
+                    <div class="table_wrapper quotes_table last_column_sticky">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr class="no_bottom_border_th">
+                                    <th scope="col" colspan="4"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div></div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </th>
+                                    <th scope="col" colspan="4"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div></div>
+                                    </th>
+                                </tr>
+                                <tr class="th_top_dashed_border">
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Supplier</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Billing
+                                                Type</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Request
+                                                Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Expire
+                                                After</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">6 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">12 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">18 Months</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">24 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_120 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">36 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Incl.</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text ps-3">
+                                        <div class="d-flex flex-column justify-content-center gap-2">
+                                            <span class="th_title">Notes
+                                            </span>
+                                            <span class="sub_table_text">(Viewable to customer)</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <img src="../assets/icons/circle-m.png" class="w_14" alt="" srcset="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/energy_img.png" alt="" srcset="">
+                                            <img src="../assets/icons/circle-a.png" class="w_14" alt="" srcset="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- hr  -->
+                    <hr class="show_gray_hr_line my-4" />
+                    <!-- pagination -->
+                    <div class="row quotes_pagi align-items-center mt-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <div class="filter_dropdown">
+                                    <select class="form-select js-example-basic-single hide_search"
+                                        aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <span class="pagi_text">1</span>
+                                <span class="pagi_text">of</span>
+                                <span class="pagi_active">2</span>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Footer -->
+                <div class="modal-footer d-flex flex-wrap justify-content-center align-items-center gap-3 drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                            Email
+                        </button>
+                    </div>
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                            Excel
+                        </button>
+                    </div>
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                            PDF Proposal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Print view Modal -->
+    <div class="modal fade customModal" id="print_view_modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Quote results for Rand Machine Products
+                        Inc</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <h6 class="active_text_title_14 mt-2 mb-4">Quote #102102</h6>
+                    <h2 class="fs_14_fw_600_c_131313 mb-3">Rand Machine Products Inc <img
+                            src="../assets/icons/black_form_search_icon.png" class="w_14" alt=""></h2>
+
+                    <!-- Commodity -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Commodity</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="Electric" disabled>
+                        </div>
+                    </div>
+
+                    <!-- Utility -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Utility</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="CONED–Consolidated Edisson"
+                                disabled>
+                        </div>
+                    </div>
+
+                    <!-- Start Month -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Start Month</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="October 2024" disabled>
+                        </div>
+                    </div>
+
+                    <!-- Annual Usage -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Annual Usage</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 d-flex">
+                            <div class="position-relative w-100">
+                                <span class="form_unit_text">kwh</span>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Number of Accounts -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Number of Accounts</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <div class=" position-relative w-100">
+                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
+                                    data-bs-target="#accounts_view_modal"
+                                    style="background: none; border: none; padding: 0;">
+                                    <img src="../assets/icons/black_form_search_icon.png" class="" alt="search_icon"
+                                        style="cursor:pointer;">
+                                </button>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="18,456" value="8,456" readonly="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="position-relative">
+                        <h6 class="text-center fs_18_fw_500_c_1313 my-3">Fixed Rate</h6>
+                        <img src="../assets/images/Print.png" alt="" class="print_icon_style">
+                    </div>
+                    <div class="table_wrapper quotes_table last_column_sticky">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Supplier</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Billing
+                                                Type</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Request
+                                                Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Expire
+                                                After</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">12 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">18 Months</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">24 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_120 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">36 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Incl.</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_150 table_head_bg table_th_text table_th_text ps-3">
+                                        <div class="d-flex flex-column justify-content-center gap-2">
+                                            <span class="th_title">Notes
+                                            </span>
+                                            <span class="sub_table_text">(Viewable to customer)</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path d="M7.02246 0.0117188C3.16254..." fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/energy_img.png" alt="" srcset="">
+                                            <img src="../assets/icons/circle-a.png" class="w_14" alt="" srcset="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">
+                                            <input type="text" class="form-control form_text_field text-center"
+                                                id="exampleFormControlInput1" placeholder="_" value="_" readonly="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- hr  -->
+                    <hr class="show_gray_hr_line my-4" />
+                    <!-- pagination -->
+                    <div class="row quotes_pagi align-items-center mt-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <div class="filter_dropdown">
+                                    <select class="form-select js-example-basic-single hide_search"
+                                        aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <span class="pagi_text">1</span>
+                                <span class="pagi_text">of</span>
+                                <span class="pagi_active">2</span>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Email Link -->
+    <div class="modal fade customModal" id="emailView_link" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Email Link</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <h6 class="active_text_title_14 mt-2 mb-4">From: albert@enerworld.com</h6>
+
+                    <div class="table_wrapper quotes_table last_column_sticky bg__table">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text">
+                                        <div></div>
+                                    </th>
+
+                                    <th scope="col" class=" align-middle td_w_150 table_head_bg table_th_text ">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <div class="th_title">First Name <span class="text-danger">*</span></div>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_150 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <div class="th_title">Last Name <span class="text-danger">*</span></div>
+
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_150 table_head_bg table_th_text ">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <div class="th_title">Email Address<span class="text-danger">*</span></div>
+
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_130 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_50 table_head_bg table_th_text">
+                                        <div></div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <input type="checkbox" class="form-check-input table_check" checked="">
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Customer</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">-</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">localjava@it-magic4u.com</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">Customer</div>
+                                    </td>
+
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">
+                                            <img src="../assets/images/red_cancel.png" class="w_20_h_20" alt=""
+                                                srcset="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <div class="d-md-flex align-items-center gap-3 my-4">
+                        <h6>Subject </h6>
+                        <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                            placeholder="Electric" value="Rate Results For C-002-34 xx">
+                    </div>
+
+                    <textarea class="form-control form_text_field" id="exampleFormControlTextarea1" rows="7" name=""
+                        id="">Dear Customer2,
+
+
+Please "Link" to view the Electric pricing for C-002 34 xx with a start date of October 2024
+
+"Link"
+
+If you have any questions, please contact me.
+
+Albert Sasson
+Enerworld 
+917-440-4834
+
+                    </textarea>
+
+                    <div class="d-md-flex justify-content-between align-items-center gap-3 my-3">
+                        <a href="">Click Here</a>
+                        <img src="../assets/banner_img.png" class="header_banner" alt="" srcset="">
+                    </div>
+                    <h6 class="text-center fs_18_fw_500_c_1313 my-4">Fixed Rate</h6>
+                    <div class="table_wrapper quotes_table last_column_sticky">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Supplier</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Billing
+                                                Type</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Quote
+                                                Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">13 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">12 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">18 Months</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">24 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_120 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">36 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Incl.</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_100 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col" class=" align-middle td_w_70 table_head_bg table_th_text ps-3">
+                                        <div class="d-flex flex-column justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Details
+                                            </span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            Agera Energy
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">_</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">_</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- hr  -->
+                    <hr class="show_gray_hr_line my-4" />
+                    <!-- pagination -->
+                    <div class="row quotes_pagi align-items-center my-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <div class="filter_dropdown">
+                                    <select class="form-select js-example-basic-single hide_search"
+                                        aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <span class="pagi_text">1</span>
+                                <span class="pagi_text">of</span>
+                                <span class="pagi_active">2</span>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div
+                    class="modal-footer d-flex flex-wrap justify-content-center align-items-center gap-3 drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
+                            Add Recipients
+                        </button>
+                    </div>
+                    <div class="them_btn_container">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
+                            Preview/Send
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Preview Link -->
+    <div class="modal fade customModal" id="preview_link" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Preview Link</span>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="Close">
+                    </button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <h6 class="active_text_title_14 mt-2 mb-4">Quote #102102</h6>
+                    <h2 class="fs_14_fw_600_c_131313 mb-3">Rand Machine Products Inc <img
+                            src="../assets/icons/black_form_search_icon.png" class="w_14" alt=""></h2>
+
+                    <!-- Commodity -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Commodity</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="Electric" disabled>
+                        </div>
+                    </div>
+
+                    <!-- Utility -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Utility</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="CONED–Consolidated Edisson"
+                                disabled>
+                        </div>
+                    </div>
+
+                    <!-- Start Month -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Start Month</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <input type="text" class="form-control form_text_field" value="October 2024" disabled>
+                        </div>
+                    </div>
+
+                    <!-- Annual Usage -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Annual Usage</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4 d-flex">
+                            <div class="position-relative w-100">
+                                <span class="form_unit_text">kwh</span>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="Type here" value="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Number of Accounts -->
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <label class="form-label form_label">Number of Accounts</label>
+                        </div>
+                        <div class="col-12 col-lg-6 col-xl-4">
+                            <div class=" position-relative w-100">
+                                <button type="button" class="date_picker_icon" data-bs-toggle="modal"
+                                    data-bs-target="#accounts_view_modal"
+                                    style="background: none; border: none; padding: 0;">
+                                    <img src="../assets/icons/black_form_search_icon.png" class="" alt="search_icon"
+                                        style="cursor:pointer;">
+                                </button>
+                                <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                                    placeholder="18,456" value="8,456" readonly="">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h6 class="text-center fs_18_fw_500_c_1313 my-3">Fixed Rate</h6>
+                    <div class="table_wrapper quotes_table last_column_sticky bg__table">
+                        <table class="table table-bordered m-0">
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col"
+                                        class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Supplier</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Billing
+                                                Type</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Request
+                                                Date</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Expire
+                                                After</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">12 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">18 Months</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">24 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_120 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">36 Months</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Incl.</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_100 table_head_bg table_th_text table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="th_title">Sales Tax Rate</span>
+                                        </div>
+                                    </th>
+                                    <th scope="col"
+                                        class=" align-middle td_w_150 table_head_bg table_th_text table_th_text ps-3">
+                                        <div class="d-flex flex-column justify-content-center gap-2">
+                                            <span class="th_title">Notes
+                                            </span>
+                                            <span class="sub_table_text">(Viewable to customer)</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/image 5.png" alt="image 5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path d="M7.02246 0.0117188C3.16254..." fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">_</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+
+                                <tr scope="row" class="tbody_row">
+                                    <td class="align-middle text-center table_td_text text">
+                                        <div class="td_container">
+                                            <img src="../assets/images/energy_img.png" alt="" srcset="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 14 14" fill="none">
+                                                <g clip-path="url(#clip0_1057_8559)">
+                                                    <path d="M7.02246 0.0117188C3.16254..." fill="#007CBA" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_1057_8559">
+                                                        <rect width="14" height="14" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Dual</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text td_w_110">
+                                        <div class="td_container">9/27/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text_red td_w_100">
+                                        <div class="td_container">7/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container w-100 border rounded p-2">_</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">
+                                            <div class="table_green_gb_td mt-1">0.128656</div>
+                                            <div class="d-flex align-items-center gap-2 mt-1 mb-1">
+                                                <span class="table_td_text_red">Expert</span>
+                                                <img src="../assets/icons/refresh_2.png" class="w_14" alt="" srcset="">
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Albertc Sasson</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">Yes</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">9/18/24</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text">
+                                        <div class="td_container">NY</div>
+                                    </td>
+
+                                    <td class="align-middle text-center table_td_text ps-3">
+                                        <div class="td_container one_line_ellipsis">-</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                    <!-- hr  -->
+                    <hr class="show_gray_hr_line my-4" />
+                    <!-- pagination -->
+                    <div class="row quotes_pagi align-items-center mt-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <div class="filter_dropdown">
+                                    <select class="form-select js-example-basic-single hide_search"
+                                        aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <span class="pagi_text">1</span>
+                                <span class="pagi_text">of</span>
+                                <span class="pagi_active">2</span>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
+                    <div class="them_btn_container">
+                        <button class="theme_outline_btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <!-- Add Contract Test -->
-    <div class="modal fade" id="add_contract_test" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal fade customModal" id="add_contract_test" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -979,6 +2361,8 @@
 
                 <!-- Modal Body -->
                 <div class="modal-body">
+                    <h2 class="fs_14_fw_600_c_131313 mb-3">Accounts in contract # 11632</h2>
+
                     <div class="table_wrapper quotes_table last_column_sticky bg__table">
                         <table class="table table-bordered m-0">
                             <thead class="thead_bg">
@@ -1052,18 +2436,54 @@
                                     <td class="align-middle text-center table_td_text">
                                         <div class="td_container">Zodiac</div>
                                     </td>
-                                   
+
                                 </tr>
                             </tbody>
                         </table>
+
                     </div>
 
-                </div>
+                    <!-- hr  -->
+                    <hr class="show_gray_hr_line my-4" />
+                    <!-- pagination -->
+                    <div class="row quotes_pagi align-items-center mt-3">
+                        <div class="col-6">
+                            <div class="d-flex align-items-center gap-2">
+                                <span class="pagi_text">Rows per page</span>
+                                <div class="filter_dropdown">
+                                    <select class="form-select js-example-basic-single hide_search"
+                                        aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                <!-- Modal Footer -->
-                <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
-                    <div class="them_btn_container">
-                        <button class="theme_outline_btn" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex justify-content-end align-items-center gap-2">
+                                <div class="arrow_div">
+                                    <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        viewBox="0 0 14 14" fill="none">
+                                        <path
+                                            d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                            fill="#757575" />
+                                    </svg>
+                                </div>
+                                <span class="pagi_text">1</span>
+                                <span class="pagi_text">of</span>
+                                <span class="pagi_active">2</span>
+                                <div class="arrow_div">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                            fill="#007CBA" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1093,7 +2513,8 @@
                                         class="text-danger">*</span></label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="1165 Ogden Holding LLC">
+                                <input type="text" disabled class="form-control form_text_field"
+                                    value="1165 Ogden Holding LLC">
                             </div>
                         </div>
 
@@ -1102,7 +2523,8 @@
                                 <label class="form-label form_label">Address</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="1165 Ogden Avenue">
+                                <input type="text" disabled class="form-control form_text_field"
+                                    value="1165 Ogden Avenue">
                             </div>
                         </div>
 
@@ -1111,7 +2533,7 @@
                                 <label class="form-label form_label">State</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="AL">
+                                <input type="text" disabled class="form-control form_text_field" value="AL">
                             </div>
                         </div>
 
@@ -1120,7 +2542,7 @@
                                 <label class="form-label form_label">City</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="Bron">
+                                <input type="text" disabled class="form-control form_text_field" value="Bron">
                             </div>
                         </div>
 
@@ -1129,7 +2551,7 @@
                                 <label class="form-label form_label">Postal / Zip Code</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="10245">
+                                <input type="text" disabled class="form-control form_text_field" value="10245">
                             </div>
                         </div>
 
@@ -1138,7 +2560,7 @@
                                 <label class="form-label form_label">Phone</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="1-121-123-1234">
+                                <input type="text" disabled class="form-control form_text_field" value="1-121-123-1234">
                             </div>
                         </div>
 
@@ -1156,7 +2578,7 @@
                                 <label class="form-label form_label">Contact Name</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="Tamir Gayr">
+                                <input type="text" disabled class="form-control form_text_field" value="Tamir Gayr">
                             </div>
                         </div>
 
@@ -1165,7 +2587,7 @@
                                 <label class="form-label form_label">Relationship Manager</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="Albert Sasson">
+                                <input type="text" disabled class="form-control form_text_field" value="Albert Sasson">
                             </div>
                         </div>
 
@@ -1174,7 +2596,7 @@
                                 <label class="form-label form_label">Current Supplier</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="-">
+                                <input type="text" disabled class="form-control form_text_field" value="-">
                             </div>
                         </div>
 
@@ -1183,7 +2605,7 @@
                                 <label class="form-label form_label">Contract Expiration Date</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="-">
+                                <input type="text" disabled class="form-control form_text_field" value="-">
                             </div>
                         </div>
 
@@ -1192,7 +2614,7 @@
                                 <label class="form-label form_label">Current Billing Method</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="-">
+                                <input type="text" disabled class="form-control form_text_field" value="-">
                             </div>
                         </div>
 
@@ -1201,7 +2623,7 @@
                                 <label class="form-label form_label">Expiration Rate</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="$ 0.0">
+                                <input type="text" disabled class="form-control form_text_field" value="$ 0.0">
                             </div>
                         </div>
 
@@ -1210,7 +2632,7 @@
                                 <label class="form-label form_label">Expiration Contract Term</label>
                             </div>
                             <div class="col-12 col-md-6">
-                                <input type="text" disabled class="form-control" value="-">
+                                <input type="text" disabled class="form-control form_text_field" value="-">
                             </div>
                         </div>
                     </div>
@@ -1417,7 +2839,7 @@
                             <label class="form-label form_label">Legal Name on Contract</label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" value="Rand Machine Products Inc">
+                            <input type="text" class="form-control form_text_field" value="Rand Machine Products Inc">
                         </div>
                     </div>
 
@@ -1522,7 +2944,7 @@
                         <div class="col-12 col-md-6">
                             <div class="position-relative">
                                 <span class="form_unit_text">kWh</span>
-                                <input type="text" class="form-control" value="2,760">
+                                <input type="text" class="form-control form_text_field" value="2,760">
                             </div>
                         </div>
                     </div>
@@ -1548,7 +2970,7 @@
                         <div class="col-12 col-md-6 ">
                             <div class="position-relative">
                                 <span class="form_unit_text">kWh</span>
-                                <input type="text" class="form-control" value="2">
+                                <input type="text" class="form-control form_text_field" value="2">
                             </div>
                         </div>
                     </div>
@@ -1561,7 +2983,7 @@
                         <div class="col-12 col-md-6">
                             <div class="position-relative">
                                 <span class="form_unit_text">%</span>
-                                <input type="text" class="form-control" value="2.34" disabled>
+                                <input type="text" class="form-control form_text_field" value="2.34" disabled>
                             </div>
                         </div>
                     </div>
@@ -1572,7 +2994,7 @@
                             <label class="form-label form_label">Next Meter Read Date (Estimated)</label>
                         </div>
                         <div class="col-12 col-md-6">
-                            <input type="text" class="form-control" value="October, 2024" readonly>
+                            <input type="text" class="form-control form_text_field" value="October, 2024" readonly>
                         </div>
                     </div>
 
@@ -3251,6 +4673,17 @@
             }
         }
 
+
+    </script>
+
+    <script>
+
+        $('#add_contract_test').on('shown.bs.modal', function () {
+            $('.js-example-basic-single').select2({
+                dropdownParent: $('#myModal'), // Attach dropdown inside modal
+                minimumResultsForSearch: Infinity // This hides the search box
+            });
+        });
 
     </script>
 </body>

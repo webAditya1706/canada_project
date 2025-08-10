@@ -572,7 +572,7 @@ height: 25px !important;
   overflow-y: auto;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
-  padding: 5px 10px !important;
+  /* padding: 5px 10px !important; */
 }
 
 .select2-results__option--selected {

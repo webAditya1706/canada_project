@@ -85,5 +85,12 @@ $(document).ready(function () {
   }, 100); // slight delay ensures layout is fully calculated
 });
 
+$(document).on('shown.bs.modal', '.customModal', function () {
+    $(this).find('.js-example-basic-single').select2({
+        dropdownParent: $(this),
+        minimumResultsForSearch: Infinity
+    });
+});
+
 
 

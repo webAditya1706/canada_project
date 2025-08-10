@@ -984,12 +984,36 @@ td {
   top: 0px;
 }
 
+.quotes_table .th_top_dashed_border th div::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  /*   background: #f1f1f1; */
+  /*   background: #afafaf; */
+  position: absolute;
+  border-top: 1px dashed #afafaf;
+  left: 0;
+  top: 0px;
+}
+
 .quotes_table th div::before {
   content: "";
   width: 100%;
   height: 0.5px;
   /* background: #AFAFAF; */
   border-bottom: 1px solid #afafaf;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+
+.quotes_table .no_bottom_border_th th div::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  /* background: #AFAFAF; */
+  border-bottom: 0px solid #afafaf;
   position: absolute;
   left: 0;
   bottom: 0px;
