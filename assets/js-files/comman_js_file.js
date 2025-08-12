@@ -92,5 +92,24 @@ $(document).on('shown.bs.modal', '.customModal', function () {
     });
 });
 
+// upload dolcument js code
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".uploadBtn").forEach(button => {
+        button.addEventListener("click", function () {
+            // Find the file input inside the same container
+            const fileInput = this.parentElement.querySelector(".fileInput");
+            fileInput.click();
+        });
+    });
 
+    document.querySelectorAll(".fileInput").forEach(input => {
+        input.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                console.log("Selected file:", file.name);
+                // You can add your upload logic here
+            }
+        });
+    });
+});
 

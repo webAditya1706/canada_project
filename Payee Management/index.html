@@ -1303,19 +1303,23 @@
                     </div>
                 </div>
                 <!-- Modal Footer -->
-                <div class="modal-footer d-flex flex-wrap justify-content-center align-items-center gap-3 drawer_sidebar_footer">
+                <div
+                    class="modal-footer d-flex flex-wrap justify-content-center align-items-center gap-3 drawer_sidebar_footer">
                     <div class="them_btn_container">
-                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
                             Email
                         </button>
                     </div>
                     <div class="them_btn_container">
-                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
                             Excel
                         </button>
                     </div>
                     <div class="them_btn_container">
-                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#edit_customer">
+                        <button class="theme_primary_btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#edit_customer">
                             PDF Proposal
                         </button>
                     </div>
@@ -3467,7 +3471,7 @@ Enerworld
             <div class="offcanvas offcanvas-end" tabindex="-1" id="customer_site_info" aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header pb-1">
                     <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Customer/Site Info</h5>
-            
+
                 </div>
                 <div class="offcanvas-body pt-0">
                     <div class="accordion my-2" id="accordionExample">
@@ -3757,6 +3761,67 @@ Enerworld
                             <input type="text" class="form-control form_text_field" placeholder="Ext."
                                 style="max-width: 70px;">
                         </div>
+                    </div>
+
+                    <!-- Main Contact Email Address -->
+                    <div class="col-12 mb-3">
+                        <label for="mainContactName" class="form-label form_label">Main Contact Email Address <span
+                                class="text-danger">*</span></label>
+                        <input type="text" class="form-control form_text_field" id="mainContactName"
+                            placeholder="Enter Main Contact Email Address" value="harrison@demomail.com" required>
+                    </div>
+
+                    <!-- Main Contact Title -->
+                    <div class="col-12 mb-3">
+                        <label for="mainContactName" class="form-label form_label">Main Contact Title</label>
+                        <input type="text" class="form-control form_text_field" id="mainContactName"
+                            placeholder="Enter Main Contact Title" value="harrison@demomail.com" required>
+                    </div>
+
+                    <h5 class="active_text_title_14">+ Secondary Contact</h5>
+
+                    <!-- document upload -->
+                    <div class="col-12 mb-3">
+                        <div class="d-flex justify-content-start align-items-center gap-2 verti_row">
+                            <label for="upload_doc" class="form-label form_label">Documents</label>
+                            <svg class="mb-2" xmlns="http://www.w3.org/2000/svg" width="12" height="10"
+                                viewBox="0 0 12 10" fill="none">
+                                <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z" fill="#77D400"></path>
+                            </svg>
+                        </div>
+                        <div class="border rounded d-flex justify-content-end pe-2">
+                            <div class="them_btn_container">
+                                <button type="button" class="theme_primary_btn uploadBtn">Upload</button>
+                                <input type="file" class="fileInput" style="display: none;" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- notes -->
+                    <div class="col-12 mb-5">
+                        <label for="exampleFormControlTextarea1" class="form-label form_label">Notes
+                        </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="0.0"></textarea>
+                    </div>
+
+                    <div class="d-flex flex-row align-items-center gap-2 mb-3">
+                        <img src="../assets/icons/blue_eye.png" alt="" srcset="" class="w_24">
+                        <input type="checkbox" class="form-check-input check_box mt-0" checked="">
+                        <label for="" class="form-label form_label">Follow up reminder mail test David
+                            Huff due <span class="active_text_title_14">Dec 21,2024 3 AM</span></label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-2 mb-3">
+                        <img src="../assets/icons/blue_eye.png" alt="" srcset="" class="w_24">
+                        <input type="checkbox" class="form-check-input check_box mt-0" checked="">
+                        <label for="" class="form-label form_label">Assigned follow up David Huff due <span
+                                class="active_text_title_14">May 31,2025 3 AM</span></label>
+                    </div>
+                    <div class="d-flex flex-row align-items-center gap-2 mb-3">
+                        <img src="../assets/icons/blue_eye.png" alt="" srcset="" class="w_24">
+                        <input type="checkbox" class="form-check-input check_box mt-0" checked="">
+                        <label for="" class="form-label form_label">A Albert Sasson due <span
+                                class="active_text_title_14">May 31,2025
+                                3 AM</span></label>
                     </div>
                 </div>
 
@@ -4191,7 +4256,7 @@ Enerworld
                 aria-labelledby="offcanvasLabel">
                 <div class="offcanvas-header pb-1">
                     <h5 id="offcanvasLabel" class="active_text_title_14 mb-0">Add/Edit Account</h5>
-                  
+
                 </div>
                 <div class="offcanvas-body pt-0">
                     <div class="accordion my-2" id="accordionExample">
@@ -4669,6 +4734,7 @@ Enerworld
         });
 
     </script>
+
 </body>
 
 </html>
