@@ -73,7 +73,7 @@ padding: 10px !important;
 }
 
 .Add_Edit_Account_drawer{
-  width: 800px;
+  width: 800px !important;
   max-width: 100%;
 }
 .footer_bg {
