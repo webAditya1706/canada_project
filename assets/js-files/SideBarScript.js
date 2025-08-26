@@ -1,4 +1,30 @@
-// old
+
+// vertically UI
+const changeUI = () => {
+  console.log("======on click this button");
+  
+  const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
+  const width100 = [...document.getElementsByClassName("verti_width_100_row")]; // Convert to an array
+
+  if (width100) {
+    width100.forEach((element) => {
+      if (element.classList.contains("w-100")) {
+        element.classList.remove("w-100");
+      } else {
+        element.classList.add("w-100");
+      }
+    });
+  }
+  if (!elements) return;
+  elements.forEach((element) => {
+    if (element.classList.contains("vertical_ui_design")) {
+      element.classList.remove("vertical_ui_design");
+    } else {
+      element.classList.add("vertical_ui_design");
+    }
+  });
+};
+
 const sidebar = document.getElementById("main_sidebar");
 const drawerTrigger = document.getElementById("open_main_sidebar");
 const overlay = document.querySelector(".overlay_mainsidebar");
@@ -76,26 +102,3 @@ drawerElement.addEventListener("hidden.bs.offcanvas", () => {
   isDrawerOpen = false;
 });
 
-// vertically UI
-const changeUI = () => {
-  const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
-  const width100 = [...document.getElementsByClassName("verti_width_100_row")]; // Convert to an array
-
-  if (width100) {
-    width100.forEach((element) => {
-      if (element.classList.contains("w-100")) {
-        element.classList.remove("w-100");
-      } else {
-        element.classList.add("w-100");
-      }
-    });
-  }
-  if (!elements) return;
-  elements.forEach((element) => {
-    if (element.classList.contains("vertical_ui_design")) {
-      element.classList.remove("vertical_ui_design");
-    } else {
-      element.classList.add("vertical_ui_design");
-    }
-  });
-};
