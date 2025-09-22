@@ -900,20 +900,6 @@ input::placeholder {
 
 /* Footer Style */
 
-footer {
-  /* justify-content: center;
-  align-items: center;
-  display: flex;
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  background-color: #f2fcff;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  z-index: 999;
-  min-height: 74px; */
-}
 
 .white_bg_footer {
   background-color: #fff;
@@ -921,10 +907,6 @@ footer {
 
 /* Sticky footer styling */
 
-.footer-area {
-  /* width: calc(100% - 50px);
-  margin-left: auto; */
-}
 /* Ensure body and html fill the viewport */
 html,
 body {
@@ -947,6 +929,7 @@ body {
 }
 
 /* Footer stays at the bottom */
+/* Default (desktop) */
 footer {
   position: sticky;
   bottom: 0;
@@ -955,6 +938,18 @@ footer {
   padding: 20px 0;
   z-index: 29;
 }
+
+/* Mobile & Tablet (up to 991px) */
+@media (max-width: 991px) {
+  footer {
+    position: fixed;
+    width: calc(100% - 50px); /* keep sidebar gap */
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
 
 .w_14{
   width: 14px;
@@ -1084,7 +1079,7 @@ footer {
   height: 60px;
 }
 
-
 select{
   position: relative;
 }
+
