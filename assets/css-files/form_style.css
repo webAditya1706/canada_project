@@ -596,10 +596,6 @@ height: 25px !important;
   height: 50px;
 }
 
-.select2-search__field {
-  /* display: none; */
-}
-
 .select2-container--default
   .select2-selection--single
   .select2-selection__arrow {
@@ -616,7 +612,7 @@ height: 25px !important;
 
 
 .select2-container.select2-container--default.select2-container--open{
-  z-index: 1;
+  z-index: 11;
 }
 
 .select2-container--open .select2-dropdown{
