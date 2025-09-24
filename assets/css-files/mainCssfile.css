@@ -935,9 +935,20 @@ footer {
   bottom: 0;
   right: 0;
   background-color: #f2fcff;
-  padding: 20px 0;
+  padding: 10px 0;
   z-index: 29;
 }
+
+.footer_spacer{
+  height: 40px !important;
+}
+
+@media (max-width: 400px) {
+  .footer_spacer.footer_2_line {
+    height: 80px !important;
+  }
+}
+
 
 /* Mobile & Tablet (up to 991px) */
 @media (max-width: 991px) {

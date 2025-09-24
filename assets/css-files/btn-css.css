@@ -185,3 +185,16 @@
         opacity: 0;
     }
 }
+
+
+.btn.footer_icon_btn{
+    padding: 1px;
+}
+
+.footer_btn_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px !important;
+    align-items: center;
+}
