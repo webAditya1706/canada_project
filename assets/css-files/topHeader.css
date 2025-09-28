@@ -2,13 +2,13 @@
 
 
 .top_header_secction {
-    /* height: 60px;
+    height: 60px;
     border-bottom: 1px solid #ddd;
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     background: #fff;
-    z-index: 29; */
+    z-index: 29;
 }
 
 .top_head_sec {

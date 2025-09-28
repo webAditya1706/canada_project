@@ -929,7 +929,10 @@ body {
 }
 
 /* Footer stays at the bottom */
-footer {  
+/* Default (desktop) */
+footer {
+  position: sticky;
+  bottom: 0;
   right: 0;
   background-color: #f2fcff;
   padding: 10px 0;
