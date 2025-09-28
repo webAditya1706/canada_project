@@ -1,0 +1,106 @@
+.modal-dialog-scrollable .modal-content{
+    max-height: 98vh !important;
+}
+
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-body {
+ max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+.modal-body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
+}
+
+.message_body {
+  padding: 10px 20px;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+/* Fix the footer at the bottom */
+.modal-footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
+  padding: 0px 15px; /* Add padding for a cleaner look */
+  /* box-shadow: 0 -2px -1px rgba(0, 0, 0, 0.1);*/
+}
+
+/* Button container for gap and styling */
+.modal_fix_footer {
+  padding: 10px;
+}
+
+
+
+.modal_width_height {
+  width: 934px !important;
+  max-width: 90% !important;
+  margin: auto;
+  /* min-height: 500px !important;     */
+  /* overflow-x: auto; */
+}
+.modal_center_align {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.custom__quote__modal_width {
+  width: 634px;
+  max-width: 90%;
+  margin: auto;
+
+}
+
+.modal_width_height .modal-body {
+  max-height: 450px; /* Limit the modal body's height */
+  overflow-y: auto !important; /* Enable scrolling */
+}
+
+/* Custom scrollbar styling */
+.modal_width_height .modal-body::-webkit-scrollbar {
+  width: 6px;
+  flex-shrink: 0;
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Optional track color */
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-thumb {
+  background: var(--Theme, #007cba); /* Scrollbar color */
+  border-radius: 30px; /* Rounded corners */
+}
+
+.modal_width_height .modal-body::-webkit-scrollbar-thumb:hover {
+  background: darken(var(--Theme, #007cba), 10%); /* Darker color on hover */
+}
+
+.modal .select2-container--default .select2-results > .select2-results__options {
+  max-height: auto !important;
+  overflow-y: auto;
+}
