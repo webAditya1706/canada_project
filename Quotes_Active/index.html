@@ -36,11 +36,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
+
+  
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden; /* Prevent body scroll */
+    }
+
+    /* Sticky Header */
+    header {
+      height: 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1050;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: sticky;
+      top: 60px; /* below header */
+      height: calc(100vh - 60px);
+      overflow-y: auto;
+      background: #f8f9fa;
+      border-right: 1px solid #ddd;
+    }
+
+    /* Main Content */
+    main {
+      overflow-y: auto;
+      height: calc(100vh - 60px - 60px); /* full height minus header & footer */
+      padding: 0rem;
+    }
+
+    /* Sticky Footer */
+    footer {
+      height: auto;
+      position: sticky;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
 </head>
 
 <body>
   <!-- top header -->
-  <section class="top_header_secction">
+  <header class="top_header_secction">
     <div class="container-fluid p-2">
       <div class="row justify-content-between align-items-center">
         <!-- Column 1 -->
@@ -133,15 +179,13 @@
         <div class="overlay_menu" id="overlay"></div>
       </div>
     </div>
-  </section>
-  <div class="spacer_60"></div>
+  </header>
+  <!-- <div class="spacer_60"></div> -->
 
   <!-- <div class="spacer_60" style="height: 60px;"></div> -->
-  <div class="d-flex flex-column min-vh-100-60">
-    <div class="d-flex flex-grow-1 position-relative">
-
+  <div class="d-flex d-flex flex-grow-1 min-vh-100-60">
       <!-- Side bar -->
-      <div class="d-flex flex-column sidebar_container" id="open_main_sidebar">
+      <aside class="d-flex flex-column sidebar sidebar_container" id="open_main_sidebar">
         <div class="spacer_60 d-sm-none"></div>
 
         <div class="w-100">
@@ -179,7 +223,8 @@
           </div>
           <div class="spacer_30"></div>
         </div>
-      </div>
+      </aside>
+
       <!-- drawer Sidebar -->
       <div id="main_sidebar">
 
@@ -334,9 +379,8 @@
 
       </div>
 
-      <div class="content-area d-flex flex-column">
-        <div class="content-inner flex-grow-1">
-
+      <div class="d-flex flex-column flex-grow-1">
+        <main class="">
           <!-- Middle header -->
           <section class="">
             <div class="container-fluid">
@@ -2065,11 +2109,9 @@
               </div>
             </div>
           </section>
-        </div>
-
-        <div class="footer_spacer footer_2_line d-lg-none d-block"></div>
+        </main>
         <!-- footer section -->
-        <footer class="footer-area mt-auto">
+        <footer class="mt-auto">
           <div class="container-fluid">
             <div class="d-flex flex-row flex-wrap justify-content-between align-content-between d-block d-lg-none">
               <div class="">
@@ -2173,7 +2215,7 @@
         </footer>
       </div>
 
-    </div>
+    
   </div>
   <!-- Overlay -->
   <div class="overlay_mainsidebar" style="z-index: 999;"></div>

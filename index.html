@@ -1,151 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Layout</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Update Quote Modal</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Select2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
   <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-      overflow: hidden; /* Prevent body scroll */
+    .form_label { font-weight: 500; }
+    .form_text_field { width: 100%; }
+    .form_unit_text {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.875rem;
+      color: #666;
     }
-
-    /* Sticky Header */
-    header {
-      height: 60px;
-      position: sticky;
-      top: 0;
-      z-index: 1050;
-      background: #fff;
-      border-bottom: 1px solid #ddd;
+    .w_16_h_16 { width: 16px; height: 16px; }
+    /* .select-fixed-500 { min-width: 100%; } */
+    .theme_outline_btn {
+      border: 1px solid #007bff;
+      color: #007bff;
+      background: transparent;
+      padding: 6px 16px;
+      border-radius: 6px;
     }
-
-    /* Sidebar */
-    .sidebar {
-      position: sticky;
-      top: 60px; /* below header */
-      height: calc(100vh - 60px);
-      overflow-y: auto;
-      background: #f8f9fa;
-      border-right: 1px solid #ddd;
-    }
-
-    /* Main Content */
-    main {
-      overflow-y: auto;
-      height: calc(100vh - 60px - 60px); /* full height minus header & footer */
-      padding: 1rem;
-    }
-
-    /* Sticky Footer */
-    footer {
-      height: auto;
-      position: sticky;
-      bottom: 0;
-      z-index: 1050;
-      background: #fff;
-      border-top: 1px solid #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .theme_outline_btn:hover {
+      background: #007bff;
+      color: #fff;
     }
   </style>
 </head>
-<body class="d-flex flex-column">
+<body>
 
-  <!-- Header -->
-  <header class="d-flex align-items-center px-3">
-    <h5 class="mb-0">Sticky Header (60px)</h5>
-  </header>
-
-  <!-- Page Layout -->
-  <div class="d-flex flex-grow-1" style="height: calc(100vh - 60px);">
-    <!-- Sidebar -->
-    <aside class="sidebar p-3" style="width: 220px;">
-      <ul class="nav flex-column">
-        <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Quotes</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Auctions</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contracts</a></li>
-      </ul>
-    </aside>
-
-    <!-- Content -->
-    <div class="d-flex flex-column flex-grow-1">
-      <main>
-        <h4>Scrollable Content</h4>
-        <p>This area scrolls independently of header, sidebar, and footer.</p>
-        <p>Keep adding content...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Vestibulum imperdiet nisl eget risus condimentum.</p>
-        <p>Integer consequat quam vel leo blandit.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-
-        <h4>Scrollable Content</h4>
-        <p>This area scrolls independently of header, sidebar, and footer.</p>
-        <p>Keep adding content...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Vestibulum imperdiet nisl eget risus condimentum.</p>
-        <p>Integer consequat quam vel leo blandit.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-
-
-        <h4>Scrollable Content</h4>
-        <p>This area scrolls independently of header, sidebar, and footer.</p>
-        <p>Keep adding content...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Vestibulum imperdiet nisl eget risus condimentum.</p>
-        <p>Integer consequat quam vel leo blandit.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-
-        <h4>Scrollable Content</h4>
-        <p>This area scrolls independently of header, sidebar, and footer.</p>
-        <p>Keep adding content...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Vestibulum imperdiet nisl eget risus condimentum.</p>
-        <p>Integer consequat quam vel leo blandit.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-        <p>Repeat this text to test scroll.</p>
-      </main>
-
-      <!-- Footer -->
-      <footer>
-        <button class="btn btn-outline-primary me-2">Back</button>
-        <button class="btn btn-primary">Save</button>
-      </footer>
-    </div>
+  <div class="container mt-5">
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal_update_quote">
+      Open Update Quote Modal
+    </button>
   </div>
 
+  <!-- Update Quote Modal -->
+  <!-- (your modal code pasted exactly as you gave) -->
+  <!-- ✅ START MODAL -->
+   
+    <!-- Update Quote Modal -->
+    <div class="modal fade" id="modal_update_quote" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+
+        <div class="modal-content">
+          <div class="modal-header justify-content-between py-2">
+            <span class="h1_title" id="exampleModalToggleLabel">Update Quote</span>
+            <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close">
+              <img src="../assets/icons/cancel.png" alt="" />
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <!-- Relationship Manager -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Relationship Manager
+                  <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>Sean Kelly</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Customer -->
+            <div class="row mb-3 align-items-center align-items-center">
+              <div class="col-12 col-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                  <label class="form-label form_label">Customer <span class="text-danger">*</span></label>
+                  <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16 hori_e_label d-md-none mb-2" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="position-relative">
+                  <button type="button" class="date_picker_icon" data-bs-toggle="modal"
+                    data-bs-target="#accounts_view_modal" style="background: none; border: none; padding: 0">
+                    <img src="../assets/icons/black_form_search_icon.png" class="" alt="search_icon"
+                      style="cursor: pointer" />
+                  </button>
+                  <input type="text" class="form-control form_text_field" id="exampleFormControlInput1"
+                    placeholder="18,456" value="8,456" readonly="" />
+                </div>
+              </div>
+              <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16 hori_e_label d-none d-md-block" />
+            </div>
+
+            <!-- Legal Name on Contract -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Legal Name on Contract</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control form_text_field" value="Rand Machine Products Inc" />
+              </div>
+            </div>
+
+            <!-- Commodity -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Commodity <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                  <option selected>Electric</option>
+                  <option>Electric</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Property Type -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Property Type <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                  <option>Commercial</option>
+                  <option selected>Commercial</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Product 1 <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                  <option selected>Fixed</option>
+                  <option>Fixed</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Product 2 <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>Select</option>
+                  <option>Select 2</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- State -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">State <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                  <option selected>New Jersey</option>
+                  <option>New Jersey</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Utility -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Utility <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100" disabled>
+                  <option selected>PSEG-Public Service Electric</option>
+                  <option selected>PSEG-Public Service Electric</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Rate Class -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Rate Class</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>GLP-General</option>
+                  <option>GLP-General</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Annual Volume (Estimated) -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Annual Volume (Estimated)
+                  <span class="text-danger">*</span></label>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="position-relative">
+                  <span class="form_unit_text">kWh</span>
+                  <input type="text" class="form-control form_text_field" value="2,760" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Billing Type -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Billing Type</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>Single Preferred</option>
+                  <option>Single Preferred</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Demand (Estimated) -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Demand (Estimated)</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="position-relative">
+                  <span class="form_unit_text">kWh</span>
+                  <input type="text" class="form-control form_text_field" value="2" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Load Factor (Estimated) -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Load Factor (Estimated)</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="position-relative">
+                  <span class="form_unit_text">%</span>
+                  <input type="text" class="form-control form_text_field" value="2.34" disabled />
+                </div>
+              </div>
+            </div>
+
+            <!-- Next Meter Read Date (Estimated) -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Next Meter Read Date (Estimated)</label>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control form_text_field" value="October, 2024" readonly />
+              </div>
+            </div>
+
+            <!-- Start Month -->
+            <div class="row align-items-center mb-3">
+              <div class="col-12 col-md-5">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                  <label class="form-label form_label">Start Month 1111</label>
+                  <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16 hori_e_label d-block d-md-none" />
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                  <option selected>Mearch</option>
+                  <option>Sean Kelly</option>
+                </select>
+              </div>
+              <div class="col-6 col-md-3">
+                <select class="form-select js-example-basic-single select-fixed-500 w-100">
+                  <option selected>2024</option>
+                  <option>Sean Kelly</option>
+                </select>
+              </div>
+              <img src="../assets/icons/Form_Edit.png" alt="" class="w_16_h_16 hori_e_label d-none d-md-block" />
+            </div>
+
+            <!-- Term -->
+            <div class="row mb-3 align-items-center">
+              <div class="col-12 col-md-5">
+                <label class="form-label form_label">Term</label>
+              </div>
+              <div class="col-12 col-md-6 d-flex flex-wrap gap-2">
+                <div class="d-flex align-items-center gap-3 verti_div">
+                  <div>
+                    <input class="form-check-input check_box check_box me-1" type="checkbox" value=""
+                      id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      6
+                    </label>
+                  </div>
+                  <div>
+                    <input class="form-check-input check_box me-1" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      12
+                    </label>
+                  </div>
+                  <div>
+                    <input class="form-check-input check_box me-1" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      18
+                    </label>
+                  </div>
+                  <div>
+                    <input class="form-check-input check_box me-1" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      24
+                    </label>
+                  </div>
+                  <div>
+                    <input class="form-check-input check_box me-1" type="checkbox" value="" id="flexCheckDefault" />
+                    <label class="form-check-label" for="flexCheckDefault">
+                      36
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer d-flex justify-content-center drawer_sidebar_footer">
+            <div class="them_btn_container">
+              <button class="theme_outline_btn">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- paste your big modal code here (already provided above) -->
+  <!-- ✅ END MODAL -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery (needed for Select2) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Select2 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script>
+$(document).ready(function () {
+  // Initialize Select2 for all modals
+  $('.modal').on('shown.bs.modal', function () {
+    $('.js-example-basic-single', this).select2({
+      dropdownParent: $(this).find('.modal-content'),
+      minimumResultsForSearch: Infinity
+    });
+  });
+
+  // Adjust dropdown direction on open
+  $(document).on('select2:open', function (e) {
+    const $select = $(e.target).next('.select2-container');
+    const $dropdown = $('.select2-container--open .select2-dropdown');
+
+    const modalBody = $select.closest('.modal-body');
+    const selectTop = $select.position().top;
+    const selectBottom = selectTop + $select.outerHeight();
+    const dropdownHeight = $dropdown.outerHeight();
+    const modalHeight = modalBody.innerHeight();
+
+    if (selectBottom + dropdownHeight > modalHeight) {
+      // Not enough space below → open upwards
+      $dropdown.addClass('select2-dropdown--above');
+      $dropdown.removeClass('select2-dropdown--below');
+    } else {
+      // Enough space → open downwards
+      $dropdown.addClass('select2-dropdown--below');
+      $dropdown.removeClass('select2-dropdown--above');
+    }
+  });
+});
+</script>
+
 </body>
 </html>

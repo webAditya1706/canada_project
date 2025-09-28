@@ -1,18 +1,5 @@
 /*  */
-
-aside {
-  width: 300px;
-  height: 100vh;
-  /* Full viewport height */
-  position: fixed;
-  top: 100px;
-  left: 0;
-  background-color: #f8f9fa;
-  /* Light gray background */
-  overflow-y: auto;
-  /* Scroll if the content exceeds the height */
-}
-
+  
 /* Dropdown Style */
 .dropdown-toggle {
   display: flex;
@@ -245,18 +232,9 @@ aside {
 
 #open_main_sidebar {
   width: 50px;
-  height: calc(100vh - 60px);
-  /* Full viewport height */
-  position: fixed;
-  /* top: 59px; */
-  bottom: 0px;
-  left: 0;
-  /* background-color: #1a5a7e; */
   background-color: var(--Theme);
-  /* Light gray background */
-  overflow-y: auto;
-  /* justify-content: center; */
-  align-items: center;
+  /* overflow-y: auto;
+  align-items: center; */
 }
 
 #open_main_sidebar:hover + #main_sidebar {
