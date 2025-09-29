@@ -195,6 +195,23 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 5px !important;
+    gap: 3px !important;
     align-items: center;
+}
+
+.info_btn_des{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background-color:  #E2F5FF;
+    border-width: 0px;
+    border-color: #E2F5FF;
+    border-radius: 5px;
+    color: var(--Secondary, #393939);
+font-family: Poppins;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 11px; /* 100% */
 }

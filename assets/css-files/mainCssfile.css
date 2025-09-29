@@ -1020,6 +1020,10 @@ footer {
   height: 10px !important;
 }
 
+.w_10{
+  width: 10px;
+}
+
 .w_15_h_15 {
   width: 15px !important;
   height: 15px !important;

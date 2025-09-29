@@ -2073,47 +2073,60 @@
           <div class="container-fluid">
             <div class="d-flex flex-row flex-wrap justify-content-between align-content-between d-block d-lg-none">
               <div class="">
-                <button class="btn footer_icon_btn">
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//back_arrow_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
+                </div>
               </div>
+
               <div class="footer_btn_container">
-                <button class="btn footer_icon_btn">
+                <div class="btn p-0" id="infoBtn" title="Info">
+                  <img src="../assets/icons/footer_icons/footer_info.png" class="w_16_h_16" alt="">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn" data-bs-toggle="modal"
+                  data-bs-target="#view_footer_btn_description_Modal">
+                  <img src="../assets/icons/footer_icons/open_eye_icon.png" class="w_24" alt="open_eye_icon">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//man_pluse_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//file_pluse_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//rotete_icon.png" class="w_24" alt="man_pluse_icon" srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
-                  <img src="../assets/icons/footer_icons//open_eye_icon.png" class="w_24" alt="man_pluse_icon"
-                    srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//mail_link_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//footer_printer_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//battry_pluse_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//dot_file_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
-                <button class="btn footer_icon_btn">
+                </div>
+
+                <div type="button" class="btn footer_icon_btn">
                   <img src="../assets/icons/footer_icons//mail_check_icon.png" class="w_24" alt="man_pluse_icon"
                     srcset="">
-                </button>
+                </div>
 
               </div>
             </div>
@@ -2309,6 +2322,95 @@
   <!-- search drawer end -->
 
 
+  <!-- footer ntn description modal -->
+  <div class="modal fade" id="view_footer_btn_description_Modal" tabindex="-1" aria-labelledby="viewModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="viewModalLabel"> Button description</h5>
+        </div>
+        <div class="modal-body">
+          <!-- Your modal content goes here -->
+
+          <div class="">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/man_pluse_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Add Supplier</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/file_pluse_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Request Quote</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/rotete_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Refreash</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/mail_link_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Preview Link</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/footer_printer_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Print</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/battry_pluse_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Create Proposal</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/dot_file_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Save & Update</h6>
+            </div>
+
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                data-bs-target="#view_footer_btn_description_Modal">
+                <img src="../assets/icons/footer_icons/mail_check_icon.png" class="w_24" alt="open_eye_icon">
+              </button>
+              <h6>Save & Email</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="them_btn_container" alt="Close" type="button" class="custom-close-btn w_18_h_18"
+            data-bs-dismiss="modal">
+            <button class="theme_outline_btn">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer ntn description modal -->
+
   <!-- Archive Modal Open -->
   <div class="modal fade" id="arcive_modal_open" aria-hidden="true" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
@@ -2453,6 +2555,47 @@
 
   </div>
 
+  <!-- footer buton description -->
+
+  <!-- Modal -->
+  <div id="footerModal" class="footer-modal">
+    <div class="d-flex flex-row flex-wrap gap-2">
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_back_arrow_icon.png" class="w_10" alt="" srcset=""> Back
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_man_pluse_icon.png" class="w_10" alt="" srcset=""> Add
+        Suppliers</button>
+
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_man_pluse_icon.png" class="w_10" alt="" srcset=""> Request
+        Quote</button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_rotete_icon.png" class="w_10" alt="" srcset="">Refresh
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_open_eye_icon.png" class="w_10" alt="" srcset=""> Preview Link
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_mail_link_icon.png" class="w_10" alt="" srcset=""> Email Link
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_footer_printer_icon.png" class="w_10" alt="" srcset=""> Print
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_battry_pluse_icon.png" class="w_10" alt="" srcset=""> Create
+        Proposal
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_dot_file_icon.png" class="w_10" alt="" srcset=""> Save &
+        Update
+      </button>
+      <button class="info_btn_des">
+        <img src="../assets/icons/footer_icons/black_mail_check_icon.png" class="w_10" alt="" srcset=""> Save & Email
+      </button>
+    </div>
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
@@ -2466,6 +2609,27 @@
   <script src="../assets/js-files/MidHeaderScript.js"></script>
   <script src="../assets/js-files/topheaderScript.js"></script>
   <script src="../assets/js-files/customDropdown.js"></script>
+
+
+  <script>
+    $(document).ready(function () {
+      const $modal = $('#footerModal');
+      const $infoBtn = $('#infoBtn');
+
+      // Toggle modal on info button click
+      $infoBtn.on('click', function (e) {
+        e.stopPropagation();
+        $modal.toggle();
+      });
+
+      // Close modal if clicking outside
+      $(document).on('click', function (e) {
+        if (!$(e.target).closest('#footerModal, #infoBtn').length) {
+          $modal.hide();
+        }
+      });
+    });
+  </script>
 
 
 </body>
