@@ -1137,9 +1137,9 @@ thead tr {
 .full_colspan_sticky {
   position: sticky;
   left: 0px;
-  border-left: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf !important;
+  border-right: 1px solid #afafaf !important;
+  border-bottom: 1px solid #afafaf !important;
 }
 
 .left_130 td:nth-child(2),

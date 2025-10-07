@@ -2,7 +2,7 @@
 .form-control {
   height: 40px;
   border-radius: 5px;
-  border: 1px solid var(--Stroke, #e7e7e7);
+  border: 1px solid var(--Stroke, #e7e7e7) !important;
 }
 
 textarea.form-control {
