@@ -190,6 +190,11 @@ textarea.form-control {
   /* box-shadow: 0 -2px -1px rgba(0, 0, 0, 0.1);*/
 }
 
+.modal .select2-container.select2-container--open {
+  z-index: auto !important; /* disable Select2's z-index */
+}
+
+
 /* Button container for gap and styling */
 .modal_fix_footer {
   padding: 10px;

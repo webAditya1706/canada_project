@@ -1,217 +1,216 @@
 .them_btn_container {
-    text-align: center;
-    /* Center the content */
-    margin: 4px 0;
-    /* Add some margin for spacing */
+  text-align: center;
+  /* Center the content */
+  margin: 4px 0;
+  /* Add some margin for spacing */
 }
 
 /* Primary Button */
 .theme_primary_btn {
-    position: relative;
-    padding: 5px 15px;
-    border: none;
-    min-width: 100px;
-    border-radius: 4px;
-    background-color: var(--primary_bg_color);
-    border: 2.5px solid var(--primary_bg_color);
-    color: white;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: Poppins;
-    font-size: var(--Label-Large-Size, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--Label-Large-Line-Height, 20px);
-    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+  position: relative;
+  padding: 5px 15px;
+  border: none;
+  min-width: 100px;
+  border-radius: 4px;
+  background-color: var(--primary_bg_color);
+  border: 2.5px solid var(--primary_bg_color);
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--Label-Large-Line-Height, 20px);
+  letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .theme_primary_btn:hover {
-    background-color: var(--primary_bg_color);
+  background-color: var(--primary_bg_color);
 }
 
 .theme_primary_btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* White Button */
 .White_bg_theme_text {
-    position: relative;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    color: var(--Theme);
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    font-family: Poppins;
-    font-size: var(--Label-Large-Size, 14px);
-    font-style: normal;
-    font-weight: 600;
-    line-height: var(--Label-Large-Line-Height, 20px);
-    letter-spacing: var(--Label-Large-Tracking, 0.1px);
+  position: relative;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: var(--Theme);
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Poppins;
+  font-size: var(--Label-Large-Size, 14px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: var(--Label-Large-Line-Height, 20px);
+  letter-spacing: var(--Label-Large-Tracking, 0.1px);
 }
 
 .White_bg_theme_text:active {
-    transform: scale(0.95);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Secondary Button */
 .theme_secondary_btn {
-    position: relative;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: var(--primary_bg_color);
-    /* Secondary color */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary_bg_color);
+  /* Secondary color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .theme_secondary_btn:hover {
-    background-color: #018786;
+  background-color: #018786;
 }
 
 .theme_secondary_btn:active {
-    transform: scale(0.95);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Outline Button */
 .theme_outline_btn {
-    position: relative;
-    padding: 5px 15px;
-    border: 1.5px solid var(--Theme);
-    /* Outline color */
-    border-radius: 4px;
-    background-color: var(--outline_bg);
-    font-family: Poppins;
-    color: var(--primary_bg_color);
-    /* Primary color for text */
-    font-size: 14px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  padding: 5px 15px;
+  border: 1.5px solid var(--Theme);
+  /* Outline color */
+  border-radius: 4px;
+  background-color: var(--outline_bg);
+  font-family: Poppins;
+  color: var(--primary_bg_color);
+  /* Primary color for text */
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-
-
 .theme_outline_btn:hover {
-    background-color: var(--primary_bg_color);
-    /* Fill color on hover */
-    color: white;
-    /* Text turns white on hover */
+  background-color: var(--primary_bg_color);
+  /* Fill color on hover */
+  color: white;
+  /* Text turns white on hover */
 }
 
 .theme_outline_btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .theme_outline_btn2 {
-    position: relative;
-    padding: 5px 15px;
-    border: 1.5px solid var(--Theme);
-    min-width: 100px;
-    /* Outline color */
-    border-radius: 4px;
-    background-color: var(--white_bg_color);
-    font-family: Poppins;
-    color: var(--primary_bg_color);
-    /* Primary color for text */
-    font-size: 14px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  position: relative;
+  padding: 5px 15px;
+  border: 1.5px solid var(--Theme);
+  min-width: 100px;
+  /* Outline color */
+  border-radius: 4px;
+  background-color: var(--white_bg_color);
+  font-family: Poppins;
+  color: var(--primary_bg_color);
+  /* Primary color for text */
+  font-size: 14px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
-
 
 /* Dark Button */
 .theme_dark_btn {
-    position: relative;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    /* Dark color */
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  /* Dark color */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .theme_dark_btn:hover {
-    background-color: #000;
+  background-color: #000;
 }
 
 .theme_dark_btn:active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /* Ripple effect styles */
 .white_ripple {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.6);
-    transform: scale(0);
-    animation: ripple-animation 0.6s linear;
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
 }
 
-.theme_ripple{
-    position: absolute;
-    border-radius: 50%;
-    background: #007cba96;
-    transform: scale(0);
-    animation: ripple-animation 0.6s linear; 
+.theme_ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: #007cba96;
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
 }
-    
+
 @keyframes ripple-animation {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
 
-
-.btn.footer_icon_btn{
-    padding: 1px;
+.btn.footer_icon_btn {
+  padding: 1px;
 }
 
-.footer_btn_container{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3px !important;
-    align-items: center;
+.footer_btn_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3px !important;
+  align-items: center;
 }
 
-.info_btn_des{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    padding: 8px 12px;
-    background-color:  #E2F5FF;
-    border-width: 0px;
-    border-color: #E2F5FF;
-    border-radius: 5px;
-    color: var(--Secondary, #393939);
-font-family: Poppins;
-font-size: 11px;
-font-style: normal;
-font-weight: 400;
-line-height: 11px; /* 100% */
+.info_btn_des {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  background-color: #e2f5ff;
+  border-width: 0px;
+  border-color: #e2f5ff;
+  border-radius: 5px;
+  color: var(--Secondary, #393939);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px; /* 100% */
+}
+
+.footer_btn_container .theme_secondary_btn{
+    padding: 5px 8px;
+    font-size: 13px;
 }

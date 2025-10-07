@@ -415,7 +415,7 @@
                       Number of Suppliers for Refreshes
                     </label>
                     <div class="verti_div"></div>
-                    <select class="form-select js-example-basic-single" >
+                    <select class="form-select js-example-basic-single">
                       <option selected>1</option>
                       <option>2</option>
                       <option>3</option>
@@ -498,7 +498,7 @@
                     <label for="country" class="form-label form_label">Country <span
                         class="text-danger">*</span></label>
                     <div class="verti_div">
-                      <select class="form-select js-example-basic-single w-100" >
+                      <select class="form-select js-example-basic-single w-100">
                         <option selected>USA</option>
                         <option>Canada</option>
                         <option>UK</option>
@@ -800,7 +800,7 @@
                       <div class="col-12 col-sm-6 col-md-6 col-lg-6 vertical_ui">
                         <label for="country" class="form-label form_label">Number of Suppliers for Refreshes</label>
                         <div class="verti_div"></div>
-                        <select class="form-select js-example-basic-single" >
+                        <select class="form-select js-example-basic-single">
                           <option selected>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -906,7 +906,7 @@
                           <div class="mb-3">
                             <label for="country" class="form-label form_label">Commission Structure
                               <span class="text-danger">*</span></label>
-                            <select class="form-select" >
+                            <select class="form-select">
                               <option selected>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -917,7 +917,7 @@
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                           <div class="mb-3">
                             <label for="country" class="form-label form_label">Sales Manager Function</label>
-                            <select class="form-select js-example-basic-single" >
+                            <select class="form-select js-example-basic-single">
                               <option selected>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -927,7 +927,7 @@
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                           <div class="mb-3">
                             <label for="country" class="form-label form_label">Sales Manager</label>
-                            <select class="form-select js-example-basic-single" >
+                            <select class="form-select js-example-basic-single">
                               <option selected>1</option>
                               <option>2</option>
                               <option>3</option>
@@ -950,15 +950,42 @@
           <!-- footer section -->
           <footer class="footer-area mt-auto">
             <div class="container-fluid">
-              <div class="row flex-row">
+              <div class="d-flex flex-row flex-wrap justify-content-between align-content-between align-items-center d-block d-lg-none">
+                <div class="">
+                  <div type="button" class="btn footer_icon_btn">
+                    <img src="../assets/icons/footer_icons//back_arrow_icon.png" class="w_24" alt="man_pluse_icon"
+                      srcset="">
+                  </div>
+                </div>
+
+                <div class="footer_btn_container">
+                  <div class="them_btn_container">
+                    <button class="theme_secondary_btn">Save</button>
+                  </div>
+
+                  <div class="them_btn_container">
+                    <button class="theme_secondary_btn">Create Proposal</button>
+                  </div>
+
+                  <div class="them_btn_container">
+                    <button class="theme_secondary_btn">Save & Update</button>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="row flex-row d-none d-lg-block">
                 <div class="col-12 col-md-12">
-                  <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center">
                     <div class="them_btn_container">
                       <button class="theme_outline_btn">Back</button>
                     </div>
+                    <div class="d-flex justify-content-center align-content-center">
 
-                    <div class="them_btn_container">
-                      <button class="theme_secondary_btn">Save</button>
+                      <div class="them_btn_container">
+                        <button class="theme_secondary_btn">Save</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -4821,14 +4848,14 @@ Enerworld
 
 
       $("#modal_update_quote").on("shown.bs.modal", function () {
-  $(".js-example-basic-single", this).select2({
-    dropdownParent: $(this).find(".modal-content"),
-    minimumResultsForSearch: Infinity,
-    // dropdownAutoWidth: true,
-    // custom placement
-    dropdownPosition: 'auto'
-  });
-});
+        $(".js-example-basic-single", this).select2({
+          dropdownParent: $(this).find(".modal-content"),
+          minimumResultsForSearch: Infinity,
+          // dropdownAutoWidth: true,
+          // custom placement
+          dropdownPosition: 'auto'
+        });
+      });
 
 
       $("#add_contract_test").on("shown.bs.modal", function () {
