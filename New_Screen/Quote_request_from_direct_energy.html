@@ -28,6 +28,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <style>
+    .table-min-height {
+        min-height: 250px;
+    }
+</style>
+
 </head>
 
 <body>
@@ -254,29 +260,32 @@
                                                             </div>
                                                         </td>
                                                         <td class="align-middle table_td_text">
-                                                            <div class="td_container">
+                                                            <div class="td_container d-flex flex-row gap-2 align-items-center">
                                                                 <input type="text" class="form-control form_text_field"
                                                                     id="contractId" placeholder="$ 0.000">
-                                                                <div class="text-start mt-1"><span
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
                                                                         class="fs_9_fw_400_c_757575">per KWH</span>
                                                                 </div>
                                                             </div>
                                                         </td>
                                                         <td class="align-middle table_td_text">
-                                                            <div class="td_container">
+                                                             <div class="td_container d-flex flex-row gap-2 align-items-center">
                                                                 <input type="text" class="form-control form_text_field"
                                                                     id="contractId" placeholder="$ 0.000">
-                                                                <div class="text-start mt-1"><span
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
                                                                         class="fs_9_fw_400_c_757575">per KWH</span>
                                                                 </div>
                                                             </div>
                                                         </td>
 
                                                         <td class="align-middle table_td_text text-center">
-                                                            <div class="td_container">
+                                                             <div class="td_container d-flex flex-row gap-2 align-items-center">
                                                                 <input type="text" class="form-control form_text_field"
                                                                     id="contractId" placeholder="$ 0.000">
-                                                                <div class="text-start mt-1"><span
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
                                                                         class="fs_9_fw_400_c_757575">per KWH</span>
                                                                 </div>
                                                             </div>
@@ -284,7 +293,153 @@
 
                                                         <td class="align-middle table_td_text">
                                                             <div class="td_container text-center">
-                                                                <select class="form-select select_value_text"
+                                                                <!-- <select class="form-select js-example-basic-single hide_search text_h3" -->
+                                                                <select class="form-select"
+                                                                    aria-label="Small select example">
+                                                                    <option selected>Select
+                                                                    </option>
+                                                                    <option value="1">One
+                                                                    </option>
+                                                                    <option value="2">Two</option>
+                                                                    <option value="3">Three</option>
+                                                                </select>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle text-center table_td_text">
+                                                            <div class="td_container text-center">-</div>
+                                                        </td>
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="text-center my-4"><span class="fixed_rate">Fixed Rate in KWH</span>
+                                        </div>
+
+                                        <div class="table_wrapper quotes_table">
+                                            <table class="table table-bordered  m-0">
+                                                <thead class="thead_bg">
+                                                    <tr>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Billing Type</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title"> Request Date</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">Good Until</span>
+                                                            </div>
+                                                        </th>
+
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">12 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">24 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">36 Months</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Incl.</span>
+                                                            </div>
+                                                        </th>
+                                                        <th scope="col"
+                                                            class="align-middle td_w_180 table_head_bg table_th_text">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center gap-2">
+                                                                <span class="th_title">GRT Rate</span>
+                                                            </div>
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                    <tr scope="row" class="tbody_row">
+                                                        <!-- style="height: 55px" -->
+
+                                                        <td class="align-middle table_td_text">
+                                                            <div class="td_container text-center">Single</div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text">
+                                                            <div class="td_container text-center">9/27/24</div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text">
+                                                            <div class="td_container text-center">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="MM/DD/YYYY">
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text">
+                                                            <div class="td_container d-flex flex-row gap-2 align-items-center">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="align-middle table_td_text">
+                                                             <div class="td_container d-flex flex-row gap-2 align-items-center">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text text-center">
+                                                             <div class="td_container d-flex flex-row gap-2 align-items-center">
+                                                                <input type="text" class="form-control form_text_field"
+                                                                    id="contractId" placeholder="$ 0.000">
+                                                                <div class="text-start" style="width: 95px;">
+                                                                    <span
+                                                                        class="fs_9_fw_400_c_757575">per KWH</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+
+                                                        <td class="align-middle table_td_text">
+                                                            <div class="td_container text-center">
+                                                                <!-- <select class="form-select" -->
+                                                                    <select class="form-select js-example-basic-single hide_search text_h3"
                                                                     aria-label="Small select example">
                                                                     <option selected>Select
                                                                     </option>
@@ -563,7 +718,7 @@
     </div>
 
     <!-- link script -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
@@ -580,6 +735,24 @@
     <script src="../assets/js-files/topheaderScript.js"></script>
 
     <!-- bootstrap js file -->
+
+    <script>
+    $(document).ready(function () {
+    $('.js-example-basic-single').select2();
+
+    $('.js-example-basic-single').on('select2:open', function () {
+        // Add class only to the closest table wrapper
+        $(this).closest('.table_wrapper').addClass('table-min-height');
+    });
+
+    $('.js-example-basic-single').on('select2:close', function () {
+        // Remove class only from the closest table wrapper
+        $(this).closest('.table_wrapper').removeClass('table-min-height');
+    });
+});
+
+</script>
+
 
 </body>
 

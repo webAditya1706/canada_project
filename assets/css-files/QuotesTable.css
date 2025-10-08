@@ -549,7 +549,6 @@ table * {
   padding: 5px !important; /* Apply padding to all table headers and cells */
   word-break: break-all;
   word-break: break-word;
-
 }
 
 .quotes_table th:last-child,
@@ -1007,7 +1006,6 @@ td {
   bottom: 0px;
 }
 
-
 .quotes_table .no_bottom_border_th th div::before {
   content: "";
   width: 100%;
@@ -1222,3 +1220,13 @@ table caption {
 .quotes_table tbody tr:nth-last-child(1) td .dropdown-menu.show::after {
   bottom: 10px;
 } */
+
+.table-min-height {
+  min-height: 250px;
+}
+
+
+.table-min-height .select2-container--default .select2-results > .select2-results__options {
+  max-height: 100px !important;
+  overflow-y: auto;
+}
