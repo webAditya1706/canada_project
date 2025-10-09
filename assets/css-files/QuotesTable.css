@@ -1221,7 +1221,7 @@ table caption {
   bottom: 10px;
 } */
 
-.table-min-height {
+/* .table-min-height {
   min-height: 250px;
 }
 
@@ -1229,4 +1229,4 @@ table caption {
 .table-min-height .select2-container--default .select2-results > .select2-results__options {
   max-height: 100px !important;
   overflow-y: auto;
-}
+} */
