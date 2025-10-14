@@ -833,6 +833,7 @@ input::placeholder {
 }
 
 /* otherstyle */
+td .fixed_rate,
 .fixed_rate {
   color: var(--Primary, #131313);
   font-family: Poppins;

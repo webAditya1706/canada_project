@@ -1,0 +1,32 @@
+const pageMap = {
+  "/": "Homepage",
+  "/index.html": "Homepage",
+  "/services/procurement-spend-analysis-services.html": "Spend Analysis",
+  "/services/rfp-managed-services.html": "Managed RFX | RFQ | RFP",
+  "/services/managed-reverse-auction-software-services.html": "Managed Reverse Auctions",
+  "/industries/procurement-software-for-transport-logistics-industry.html": "Logistics",
+  "/industries/procurement-software-for-healthcare-industry.html": "Healthcare",
+  "/industries/procurement-software-for-automotive-companies.html": "Automotive",
+  "/industries/procurement-software-for-manufacturing-industry.html": "Manufacturing",
+  "/industries/procurement-software-for-food-beverage-industry.html": "Food & Beverage",
+  "/industries/procurement-software-for-biotech-pharma.html": "BioTech & Pharma",
+  "/industries/procurement-software-for-energy-brokers-suppliers.html": "Energy Brokers & Suppliers",
+  "/industries/construction-&-real-estate-procurement-software.html": "Construction & Real Estate",
+  "/solutions/best-rfp-software-streamline-souring-&-supplier-selection-procureclix.html": "RFP | RFI | RFQ",
+  "/solutions/procurement-spend-analysis-software.html" : "Solutions | Spend Analysis",
+  "/solutions/best-reverse-auction-software.html" : "Reverse Auction",
+  "/solutions/custom-auction-procurement-software.html" : "Custom Solutions",
+  "/solutions/purchase-requisition-software.html" : "Purchase Requisition",
+  "/solutions/best-supplier-management-software.html" : "Supplier Management",
+  "/solutions/procurement-contract-management-software.html" : "Contract Management",
+  "/blog/" : "Blog",
+  "/resources/integration.html" : "Integration",
+  "/resources/guide.html" : "Procurement Guide",
+  "/resources/glossary.html" : "Procurement Glossary",
+  "/resources/procurement-conferences.html":"Procurement Conferences",
+  "/about-us.html":"About Us",
+  "/procurement-software-pricing.html":"Pricing",
+  "/contact-us.html":"Direct"
+  
+};
+
