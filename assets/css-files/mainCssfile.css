@@ -990,8 +990,15 @@ footer {
   width: 20px !important;
   height: 20px !important;
 }
+
 .w_25 {
   width: 25px;
+}
+
+
+.w_25_h_25 {
+  width: 25px;
+  height: 25px;
 }
 
 .w_20 {

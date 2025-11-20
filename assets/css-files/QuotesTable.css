@@ -1120,6 +1120,6 @@ table caption {
     top: 0;
 }
 
-table, .table_wrapper, tr, td{
-  overflow-y: visible;
+.table_wrapper, tr, td{
+  /* overflow-y: visible; */
 }
