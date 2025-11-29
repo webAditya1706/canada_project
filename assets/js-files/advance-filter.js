@@ -23,6 +23,10 @@ const fieldConfig = {
         type: "date",
         label: "Due Date"
     },
+    "activity-date": {
+        type: "date",
+        label: "Activity Date"
+    },
     "new-business": {
         type: "select",
         label: "New Business",
@@ -68,7 +72,7 @@ $('select.select_value_text').on('change', function () {
 function generateDynamicField(key) {
     const container = $("#dynamicFieldContainer");
     container.html(""); // clear previous
-console.log("===>key", key);
+    console.log("===>key", key);
 
     if (key === "all-filters") return;
 
@@ -81,79 +85,35 @@ console.log("===>key", key);
                 <div class="form-label form_label text-light">${formatLabel(key)}</div>
                 <input type="text" class="form-control theme_bg_color" placeholder="" />
             </div>
-
-        <div class="mt-4">
-            <select class="form-select js-example-basic-single-2 select_value_text mt-4"
-                    aria-label="Default select example">
-                    <option class="form_text_field" value="all-filters" selected>All Filters</option>
-                    <option class="form_text_field" value="account-number">Account Number</option>
-                    <option class="form_text_field" value="activity-date">Activity Date</option>
-                    <option class="form_text_field" value="commodity">Commodity</option>
-                    <option class="form_text_field" value="contact-name">Contact Name</option>
-                    <option class="form_text_field" value="customer-legal-name-on-contract">Customer/Legal Name on
-                        Contract</option>
-                    <option class="form_text_field" value="due-date">Due Date</option>
-                    <option class="form_text_field" value="new-business">New Business</option>
-                    <option class="form_text_field" value="number-of-accounts">No. of Accounts</option>
-                    <option class="form_text_field" value="quote-id">Quote ID</option>
-                    <option class="form_text_field" value="relationship-manager">Relationship Manager</option>
-                    <option class="form_text_field" value="start-date">Start Date</option>
-                    <option class="form_text_field" value="state">State</option>
-                    <option class="form_text_field" value="status">Status</option>
-                    <option class="form_text_field" value="utility">Utility</option>
-                    <option class="form_text_field" value="volume">Volume</option>
-                </select>
-            </div>
-
         `);
+
+        container.append(getFilterDropdown(key));
+        $('.js-example-basic-single-2').select2();
         return;
     }
 
     // If SELECT FIELD
     if (config.type === "select") {
-        let html = `
+        container.append(`
             <div class="mt-4">
                 <div class="form-label form_label text-light">${config.label}</div>
                 <select class="form-select dynamic-select js-example-basic-single theme_bg_color">
                     ${config.options.map(opt =>
-            `<option value="${opt.toLowerCase()}">${opt}</option>`
-        ).join("")}
+                        `<option value="${opt.toLowerCase()}">${opt}</option>`
+                    ).join("")}
                 </select>
             </div>
+        `);
 
-        <div class="mt-4">
-            <select class="form-select js-example-basic-single-2 select_value_text mt-4"
-                    aria-label="Default select example">
-                    <option class="form_text_field" value="all-filters" selected>All Filters</option>
-                    <option class="form_text_field" value="account-number">Account Number</option>
-                    <option class="form_text_field" value="activity-date">Activity Date</option>
-                    <option class="form_text_field" value="commodity">Commodity</option>
-                    <option class="form_text_field" value="contact-name">Contact Name</option>
-                    <option class="form_text_field" value="customer-legal-name-on-contract">Customer/Legal Name on
-                        Contract</option>
-                    <option class="form_text_field" value="due-date">Due Date</option>
-                    <option class="form_text_field" value="new-business">New Business</option>
-                    <option class="form_text_field" value="number-of-accounts">No. of Accounts</option>
-                    <option class="form_text_field" value="quote-id">Quote ID</option>
-                    <option class="form_text_field" value="relationship-manager">Relationship Manager</option>
-                    <option class="form_text_field" value="start-date">Start Date</option>
-                    <option class="form_text_field" value="state">State</option>
-                    <option class="form_text_field" value="status">Status</option>
-                    <option class="form_text_field" value="utility">Utility</option>
-                    <option class="form_text_field" value="volume">Volume</option>
-                </select>
-            </div>
-        `;
-
-        container.append(html);
-
-        // Apply select2
+        container.append(getFilterDropdown(key));
         $('.dynamic-select').select2();
+        $('.js-example-basic-single-2').select2();
 
-        // Auto-open select2
         setTimeout(() => {
             $('.dynamic-select').select2('open');
         }, 50);
+
+        return;
     }
 
     // If DATE FIELD
@@ -163,38 +123,50 @@ console.log("===>key", key);
                 <div class="form-label form_label text-light">${config.label}</div>
                 <input type="date" class="form-control theme_bg_color" />
             </div>
-
-        <div class="mt-4">
-            <select class="form-select js-example-basic-single-2 select_value_text mt-4"
-                    aria-label="Default select example">
-                    <option class="form_text_field" value="all-filters" selected>All Filters</option>
-                    <option class="form_text_field" value="account-number">Account Number</option>
-                    <option class="form_text_field" value="activity-date">Activity Date</option>
-                    <option class="form_text_field" value="commodity">Commodity</option>
-                    <option class="form_text_field" value="contact-name">Contact Name</option>
-                    <option class="form_text_field" value="customer-legal-name-on-contract">Customer/Legal Name on
-                        Contract</option>
-                    <option class="form_text_field" value="due-date">Due Date</option>
-                    <option class="form_text_field" value="new-business">New Business</option>
-                    <option class="form_text_field" value="number-of-accounts">No. of Accounts</option>
-                    <option class="form_text_field" value="quote-id">Quote ID</option>
-                    <option class="form_text_field" value="relationship-manager">Relationship Manager</option>
-                    <option class="form_text_field" value="start-date">Start Date</option>
-                    <option class="form_text_field" value="state">State</option>
-                    <option class="form_text_field" value="status">Status</option>
-                    <option class="form_text_field" value="utility">Utility</option>
-                    <option class="form_text_field" value="volume">Volume</option>
-              </select>
-        </div>
-
         `);
+
+        container.append(getFilterDropdown(key));
+        $('.js-example-basic-single-2').select2();
     }
-
-    $('.js-example-basic-single-2').select2();
-
 }
+
 
 // Helper: convert kebab-case → Label
 function formatLabel(text) {
     return text.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
 }
+
+function getFilterDropdown(excludeKey = null) {
+    const options = [
+        "all-filters",
+        "account-number",
+        "activity-date",
+        "commodity",
+        "contact-name",
+        "customer-legal-name-on-contract",
+        "due-date",
+        "new-business",
+        "number-of-accounts",
+        "quote-id",
+        "relationship-manager",
+        "start-date",
+        "state",
+        "status",
+        "utility",
+        "volume"
+    ];
+
+    return `
+        <div class="mt-4">
+            <select class="form-select js-example-basic-single-2 select_value_text mt-4" aria-label="Default select example">
+                ${options.map(opt => {
+                    if (opt === excludeKey) return ''; // exclude this option
+                    const label = formatLabel(opt);
+                    const selected = opt === "all-filters" ? 'selected' : '';
+                    return `<option class="form_text_field" value="${opt}" ${selected}>${label}</option>`;
+                }).join('')}
+            </select>
+        </div>
+    `;
+}
+
