@@ -1,3 +1,5 @@
+// ======================= JS =======================
+
 // Toggle Advance Filter
 $('#filter_type').on('change', function () {
     if ($(this).is(':checked')) {
@@ -16,9 +18,9 @@ const fieldConfig = {
     "activity-date": { type: "date", label: "Activity Date" },
     "new-business": { type: "select", label: "New Business", options: ["Yes", "No"] },
     "start-date": { type: "date", label: "Start Date" },
-    "state": { 
-        type: "select", 
-        label: "State", 
+    "state": {
+        type: "select",
+        label: "State",
         options: [
             "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut",
             "Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa",
@@ -34,10 +36,19 @@ const fieldConfig = {
     "utility": { type: "select", label: "Utility", options: [] }
 };
 
-// Open offcanvas → initialize Select2 for all selects inside drawer
+// Helper: format label
+function formatLabel(text) {
+    return text.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// ================= Initialize Select2 =================
 $('#quote_drawer').on('shown.bs.offcanvas', function () {
-    $(this).find('select').select2({
-        dropdownParent: $(this) // ensures Select2 dropdown appears inside drawer
+    $(this).find('select').each(function () {
+        if (!$(this).hasClass("select2-hidden-accessible")) {
+            $(this).select2({
+                dropdownParent: $('#quote_drawer')
+            });
+        }
     });
 });
 
@@ -48,7 +59,7 @@ $(document).on('change', 'select.select_value_text', function () {
 });
 
 // Generate dynamic field
-function generateDynamicField(key) {
+const generateDynamicField = async (key) => {
     const container = $("#dynamicFieldContainer");
     container.empty(); // clear previous
     if (key === "all-filters") return;
@@ -63,26 +74,26 @@ function generateDynamicField(key) {
                 <input type="text" class="form-control theme_bg_color" />
             </div>
         `);
-        appendFilterDropdown(key);
+        await appendFilterDropdown(key);
         return;
     }
 
     if (config.type === "select") {
-        container.append(`
+        const $selectWrapper = $(`
             <div class="mt-4">
                 <div class="form-label text-light">${config.label}</div>
                 <select class="form-select dynamic-select theme_bg_color">
                     ${config.options.map(opt => `<option value="${opt.toLowerCase()}">${opt}</option>`).join('')}
                 </select>
             </div>
-        `);
-        appendFilterDropdown(key);
+        `).appendTo(container);
 
-        // Initialize select2 for newly added select
-        container.find('select.dynamic-select').last().select2({
+        // Initialize select2
+        $selectWrapper.find('select').select2({
             dropdownParent: $('#quote_drawer')
-        }).select2('open');
+        });
 
+        await appendFilterDropdown(key);
         return;
     }
 
@@ -93,16 +104,11 @@ function generateDynamicField(key) {
                 <input type="date" class="form-control theme_bg_color" />
             </div>
         `);
-        appendFilterDropdown(key);
+        await appendFilterDropdown(key);
     }
 }
 
-// Helper: format label
-function formatLabel(text) {
-    return text.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase());
-}
-
-// Append "All Filters" dropdown excluding current key
+// Append "All Filters" dropdown dynamically
 function appendFilterDropdown(excludeKey = null) {
     const options = [
         "all-filters","account-number","activity-date","commodity","contact-name",
@@ -112,20 +118,21 @@ function appendFilterDropdown(excludeKey = null) {
 
     const html = `
         <div class="mt-4">
-            <select class="form-select select_value_text-2 mt-4" aria-label="Default select example">
+            <select class="form-select js-example-basic-single-2 mt-4">
                 ${options.map(opt => {
-                    if (opt === excludeKey) return '';
-                    const selected = opt === "all-filters" ? 'selected' : '';
-                    return `<option value="${opt}" ${selected}>${formatLabel(opt)}</option>`;
-                }).join('')}
+        if (opt === excludeKey) return '';
+        const selected = opt === "all-filters" ? 'selected' : '';
+        return `<option value="${opt}" ${selected}>${formatLabel(opt)}</option>`;
+    }).join('')}
             </select>
         </div>
     `;
 
-    $("#dynamicFieldContainer").append(html);
+    const $newSelectWrapper = $(html).appendTo("#dynamicFieldContainer");
+    const $newSelect = $newSelectWrapper.find('select');
 
-    // Initialize Select2 for this new dropdown
-    $("#dynamicFieldContainer").find('select.select_value_text').last().select2({
+    // Initialize Select2
+    $newSelect.select2({
         dropdownParent: $('#quote_drawer')
     });
 }
