@@ -112,7 +112,7 @@ function appendFilterDropdown(excludeKey = null) {
 
     const html = `
         <div class="mt-4">
-            <select class="form-select select_value_text mt-4" aria-label="Default select example">
+            <select class="form-select select_value_text-2 mt-4" aria-label="Default select example">
                 ${options.map(opt => {
                     if (opt === excludeKey) return '';
                     const selected = opt === "all-filters" ? 'selected' : '';
