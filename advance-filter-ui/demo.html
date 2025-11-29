@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance Filter</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/without_sticky_table.css" />
+
+    <!-- Bootstrap icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Search click Model open -->
+
+    <div class="row" style="background-color: #000;">
+        <div class="col-4">
+            <div class="position-relative mb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                    <label for="exampleFormControlInput1" class="form-label qoute_filter_title mb-0">Search</label>
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="filter_type" />
+                            <label class="form-check-label middle_header_menu mt-1 text-light"
+                                for="flexSwitchCheckDefault">Advance Filter</label>
+                        </div>
+                        <img data-bs-dismiss="offcanvas" type="button" class="w_20_h_20"
+                            src="../assets/images/white_cancel.png" alt="" srcset="">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class=" advance_filter w-100  d-none">
+
+                --------------------
+                <select class="form-select js-example-basic-single select_value_text"
+                    aria-label="Default select example">
+                    <option class="form_text_field" value="all-filters" selected>All Filters</option>
+                    <option class="form_text_field" value="account-number">Account Number</option>
+                    <option class="form_text_field" value="activity-date">Activity Date</option>
+                    <option class="form_text_field" value="commodity">Commodity</option>
+                    <option class="form_text_field" value="contact-name">Contact Name</option>
+                    <option class="form_text_field" value="customer-legal-name-on-contract">Customer/Legal Name on
+                        Contract</option>
+                    <option class="form_text_field" value="due-date">Due Date</option>
+                    <option class="form_text_field" value="new-business">New Business</option>
+                    <option class="form_text_field" value="number-of-accounts">No. of Accounts</option>
+                    <option class="form_text_field" value="quote-id">Quote ID</option>
+                    <option class="form_text_field" value="relationship-manager">Relationship Manager</option>
+                    <option class="form_text_field" value="start-date">Start Date</option>
+                    <option class="form_text_field" value="state">State</option>
+                    <option class="form_text_field" value="status">Status</option>
+                    <option class="form_text_field" value="utility">Utility</option>
+                    <option class="form_text_field" value="volume">Volume</option>
+                </select>
+
+
+                <div id="dynamicFieldContainer" class="mt-4"></div>
+
+
+                <div class="d-flex justify-content-center align-items-center mt-4">
+                    <div class="them_btn_container">
+                        <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Filter</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="filter_body mt-3">
+
+                <div class="qoute_search">
+                    <i class="bi bi-search text-white"></i>
+                    <input type="text" class="form-control theme_bg_color" id="exampleFormControlInput1"
+                        placeholder="" />
+                </div>
+                <hr class="show_gray_hr_line my-2" />
+
+                <select name="renewalQuoteWithinId" id="renewalQuoteWithinId"
+                    class="form-select js-example-basic-single select_value_text ">
+                    <option value="0" selected="selected">All Months</option>
+                    <option value="1">1 Month </option>
+                    <option value="2">2 Months</option>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="5">5 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="7">7 Months</option>
+                    <option value="8">8 Months</option>
+                    <option value="9">9 Months</option>
+                    <option value="10">10 Months</option>
+                    <option value="11">11 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="13">13 Months</option>
+                    <option value="14">14 Months</option>
+                    <option value="15">15 Months</option>
+                    <option value="16">16 Months</option>
+                    <option value="17">17 Months</option>
+                    <option value="18">18 Months</option>
+                    <option value="19">19 Months</option>
+                    <option value="20">20 Months</option>
+                    <option value="21">21 Months</option>
+                    <option value="22">22 Months</option>
+                    <option value="23">23 Months</option>
+                    <option value="24">24 Months</option>
+                    <option value="25">25 Months</option>
+                    <option value="26">26 Months</option>
+                    <option value="27">27 Months</option>
+                    <option value="28">28 Months</option>
+                    <option value="29">29 Months</option>
+                    <option value="30">30 Months</option>
+                    <option value="31">31 Months</option>
+                    <option value="32">32 Months</option>
+                    <option value="33">33 Months</option>
+                    <option value="34">34 Months</option>
+                    <option value="35">35 Months</option>
+                    <option value="36">36 Months</option>
+                    <option value="37">37 Months</option>
+                    <option value="38">38 Months</option>
+                    <option value="39">39 Months</option>
+                    <option value="40">40 Months</option>
+                    <option value="41">41 Months</option>
+                    <option value="42">42 Months</option>
+                    <option value="43">43 Months</option>
+                    <option value="44">44 Months</option>
+                    <option value="45">45 Months</option>
+                    <option value="46">46 Months</option>
+                    <option value="47">47 Months</option>
+                    <option value="48">48 Months</option>
+                </select>
+
+                <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
+
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" checked type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn1">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn1">
+                        All Filters
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn2">
+                    <label class="form-check-label filter_title" for="filter_radio_btn2">
+                        Customer / Legal Name on Contract
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn3">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn3">
+                        Account Number
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn4">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn4">
+                        Contact Name
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn5">
+                    <label class="form-check-label filter_title" for="filter_radio_btn5">
+                        Commodity
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn6">
+                    <label class="form-check-label filter_title" for="filter_radio_btn6">
+                        Quote ID
+                    </label>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="them_btn_container">
+                        <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- search drawer end -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- external script files -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="../assets/js-files/customDropdown.js"></script>
+    <script src="../assets/js-files/advance-filter.js"></script>
+
+</body>
+
+</html>
