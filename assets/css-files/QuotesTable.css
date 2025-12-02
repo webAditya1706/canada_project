@@ -180,7 +180,6 @@ table * {
   top: 0;
 }
 
-
 .quotes_table td.position-relative {
   position: relative;
 }
@@ -1099,27 +1098,32 @@ table caption {
 }
 /* all col span table */
 
-.quotes_table .all_col_span_row td::after{
-      content: "";
-    width: 0.5px;
-    height: 100%;
-    background: #afafaf;
-    position: absolute;
-    left: 0px;
-    top: 0;
+.quotes_table .all_col_span_row td::after {
+  content: "";
+  width: 0.5px;
+  height: 100%;
+  background: #afafaf;
+  position: absolute;
+  left: 0px;
+  top: 0;
 }
 
-
-.quotes_table .all_col_span_row td::before{
-      content: "";
-    width: 0.5px;
-    height: 100%;
-    background: #afafaf;
-    position: absolute;
-    right: 0px;
-    top: 0;
+.quotes_table .all_col_span_row td::before {
+  content: "";
+  width: 0.5px;
+  height: 100%;
+  background: #afafaf;
+  position: absolute;
+  right: 0px;
+  top: 0;
 }
 
-.table_wrapper, tr, td{
+.table_wrapper,
+tr,
+td {
   /* overflow-y: visible; */
+}
+
+.quotes_table .bottom_table_header th div::after {
+  border-top: 0px;
 }
