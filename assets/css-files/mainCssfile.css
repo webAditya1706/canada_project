@@ -258,7 +258,19 @@ td:first-child {
 }
 .td_w_180 {
   min-width: 180px !important;
+  max-width: 230px !important;
+  /* 150 + 10 */
+}
+
+.td_w_200 {
+  min-width: 200px !important;
   max-width: 250px !important;
+  /* 150 + 10 */
+}
+
+.td_w_220 {
+  min-width: 220px !important;
+  max-width: 270px !important;
   /* 150 + 10 */
 }
 
