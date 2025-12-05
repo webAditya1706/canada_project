@@ -59,7 +59,6 @@
   --Theme: #007cba;
 }
 
-
 :root .black_tic__check .form-check-input:checked[type="checkbox"] {
   background-image: url(https://cdn-icons-png.flaticon.com/512/33/33281.png);
   background-size: 9px;
@@ -67,12 +66,12 @@
   background-position: center;
 }
 
-.drawer_sidebar_footer{
-background: #F2FCFF !important;
-padding: 20px 10px !important;
+.drawer_sidebar_footer {
+  background: #f2fcff !important;
+  padding: 20px 10px !important;
 }
 
-.Add_Edit_Account_drawer{
+.Add_Edit_Account_drawer {
   width: 800px !important;
   max-width: 100%;
 }
@@ -88,7 +87,7 @@ hr {
   opacity: 1;
 }
 
-.min-vh-100-60{
+.min-vh-100-60 {
   min-height: calc(100vh - 60px);
 }
 .side_bar_hr {
@@ -103,8 +102,8 @@ hr {
   z-index: 2;
 }
 
-.bulue_color{
-  color: #007CBA;
+.bulue_color {
+  color: #007cba;
 }
 
 .primary_bg_color {
@@ -156,8 +155,7 @@ body::-webkit-scrollbar {
   height: 0px; /* For horizontal scrollbars */
 }
 
-
-.render_content_div{
+.render_content_div {
   min-height: calc(100vh - 60px);
 }
 
@@ -674,7 +672,6 @@ input::placeholder {
   color: var(--Primary, #131313) !important;
 }
 
-
 .fs_13_fw_500_c_131313 {
   font-family: Poppins;
   font-size: 13px !important;
@@ -913,7 +910,6 @@ td .fixed_rate,
 
 /* Footer Style */
 
-
 .white_bg_footer {
   background-color: #fff;
 }
@@ -952,7 +948,7 @@ footer {
   z-index: 29;
 }
 
-.footer_spacer{
+.footer_spacer {
   height: 40px !important;
 }
 
@@ -961,7 +957,6 @@ footer {
     height: 80px !important;
   }
 }
-
 
 /* Mobile & Tablet (up to 991px) */
 @media (max-width: 991px) {
@@ -973,9 +968,7 @@ footer {
   }
 }
 
-
-
-.w_14{
+.w_14 {
   width: 14px;
 }
 
@@ -1006,7 +999,6 @@ footer {
 .w_25 {
   width: 25px;
 }
-
 
 .w_25_h_25 {
   width: 25px;
@@ -1040,7 +1032,7 @@ footer {
   height: 10px !important;
 }
 
-.w_10{
+.w_10 {
   width: 10px;
 }
 
@@ -1094,7 +1086,7 @@ footer {
   height: 25px;
 }
 
-.spacer_28{
+.spacer_28 {
   height: 28px;
 }
 
@@ -1114,7 +1106,30 @@ footer {
   height: 60px;
 }
 
-select{
+select {
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .mb_spacer_60 {
+    height: 60px;
+  }
+  .mb_spacer_80 {
+    height: 80px;
+  }
+  .mb_spacer_100 {
+    height: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .md_spacer_60 {
+    height: 60px;
+  }
+  .md_spacer_80 {
+    height: 80px;
+  }
+  .md_spacer_100 {
+    height: 100px;
+  }
+}

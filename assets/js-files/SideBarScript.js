@@ -102,3 +102,6 @@ drawerElement.addEventListener("hidden.bs.offcanvas", () => {
   isDrawerOpen = false;
 });
 
+const collapsButton = () => {
+  
+}

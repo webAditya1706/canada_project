@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes View Quote</title>
+
+    <!-- MUI Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+        rel="stylesheet">
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  ">
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css">
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css">
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css">
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css">
+    <link rel="stylesheet" href="../assets/css-files/form_style.css">
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css">
+    <link rel="stylesheet" href="../assets/css-files/normal-border-tabel.css">
+
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @media (max-width: 767px) {
+            .form_label {
+                margin-bottom: 8px !important;
+                /* adjust as needed */
+                display: block;
+                /* ensures proper spacing */
+            }
+        }
+    </style>
+    <!--  -->
+</head>
+
+<body class="">
+    <!-- top header -->
+    <section class="top_header_secction position-static">
+        <div class="container-fluid p-2">
+            <div class="row justify-content-between align-items-center">
+                <!-- Column 1 -->
+                <div class="col-12 col-lg-6">
+                    <div class="header_container">
+                        <div class="d-flex gap-2">
+                            <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                            <div class="header_bg_text">
+                                <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                            <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-lg-6 d-none d-lg-block">
+                    <div class="d-flex justify-content-end align-items-center gap-3">
+                        <!-- Switch buttons -->
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">Switch to
+                                Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
+                        <div class="d-flex align-items-center gap-1">
+                            <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                            <div>
+                                <p class="user_name">Welcome, Alon</p>
+                                <p class="user_email">alon@demomail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drawer Menu -->
+                <div class="drawer" id="drawer" style="z-index: 999">
+                    <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                        <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                        <hr style="height: 1px; width: 100%" />
+                    </div>
+
+                    <div class="d-flex flex-column justify-content-start">
+                        <!-- Switch buttons -->
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to Old
+                                Legacy</label>
+                        </div>
+
+                        <div class="form-check form-switch d-flex align-items-center gap-2">
+                            <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                id="flexSwitchCheckDefault" />
+                            <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
+                                Partner
+                                View</label>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-1 mb-2">
+                            <div class="d-flex align-items-center gap-1">
+                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                <div>
+                                    <p class="user_name">Welcome, Alon</p>
+                                    <p class="user_email">alon@demomail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay_menu" id="overlay"></div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="spacer_60"></div> -->
+
+    <div class="d-flex flex-column min-vh-100-60">
+        <div class="d-flex flex-grow-1 position-relative">
+
+            <div class="content-area d-flex flex-column w-100">
+                <div class="content-inner flex-grow-1">
+                    <!-- bread crumb -->
+                    <section class="">
+                        <div class="container-fluid">
+                            <div
+                                class="row d-flex g-2 flex-column flex-md-row justify-content-between align-items-center py-2">
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <div class="main_title_15">Quote ID: 21711</div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10"
+                                            fill="none">
+                                            <path d="M1 9L5 5L1 1" stroke="#757575" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="active_text_title_14">View Quote</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="d-flex gap-3 justify-content-end align-items-center">
+                                        <div class="d-flex align-items-center justify-content-end gap-3">
+                                            <div class="them_btn_container">
+                                                <button class="theme_outline_btn">Edit Quote</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-end gap-3">
+                                            <div class="them_btn_container">
+                                                <button class="theme_primary_btn" onclick="changeUI()">Vertical
+                                                    UI</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- form section -->
+                    <section class="">
+                        <div class="container-fluid">
+                            <div class="border rounded px-3">
+                                <form action="">
+                                    <div
+                                        class="col-auto d-flex justify-content-start align-items-center mt-3 mb-2 gap-2">
+                                        <div class="sub_title_13">C -002 34 xx</div>
+                                        <img src="../assets/icons/black_form_search_icon.png" class="search_002"
+                                            alt="date_picker_icon">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+
+                                            <!-- Relationship Manager -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Relationship Manager <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="Albert Sasson" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Commodity -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Commodity <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="Electric" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Property Type -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Property Type <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="Commercial" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- State -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">State <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="CONED Consolidated Edison" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Utility -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Utility <span
+                                                        class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="CONED Consolidated Edison" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Load Factor -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Load Factor</label>
+                                                <div class="col-12 col-lg-8">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="CONED Consolidated Edison" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Start Month -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Start Month</label>
+                                                <div class="col-12 col-lg-8">
+                                                    <img src="../assets/icons/date_picker_icon.png"
+                                                        class="date_picker_icon" style="cursor:pointer;">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="March 2024" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Annual Volume -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Annual volume (Estimated)
+                                                    <span class="text-danger">*</span></label>
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="them_btn_container w-100">
+                                                        <button class="theme_primary_btn w-100"
+                                                            data-bs-target="#custom__quote__modal"
+                                                            data-bs-toggle="modal">View Account ( 1 )</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Quote Due Date -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">Quote Due Date</label>
+                                                <div class="col-12 col-lg-8">
+                                                    <img src="../assets/icons/date_picker_icon.png"
+                                                        class="date_picker_icon">
+                                                    <input type="text" class="form-control form_text_field"
+                                                        value="8,456" readonly>
+                                                </div>
+                                            </div>
+
+                                            <!-- Quote Due Date -->
+                                            <div>
+                                                <label class="col-12 form_label mb-2">Margin</label>
+                                                <div class="row mb-3 align-items-center">
+                                                    <div class="col-4 ">
+                                                        <input type="text" class="form-control form_text_field"
+                                                            style="width: 120px;" value="8,456" readonly>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div
+                                                            class="d-flex justify-content-start align-items-center gap-3">
+
+                                                            <div class="them_btn_container">
+                                                                <button class="theme_primary_btn"
+                                                                    data-bs-target="#follow__up__modal"
+                                                                    data-bs-toggle="modal">Go</button>
+                                                            </div>
+
+                                                            <span> Fixed Rate</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6">
+
+                                            <!-- Documents -->
+                                            <div class="row mb-3 align-items-start">
+                                                <label
+                                                    class="col-12 col-lg-4 form_label d-flex align-items-center gap-2">
+                                                    Documents
+                                                    <svg width="12" height="10">
+                                                        <path d="M4 9.4L0 5.4L1.4 4L4 6.6L10.6 0L12 1.4L4 9.4Z"
+                                                            fill="#77D400" />
+                                                    </svg>
+                                                </label>
+
+                                                <div class="col-12 col-lg-8">
+                                                    <div class="border rounded d-flex justify-content-end pe-2">
+                                                        <div class="them_btn_container">
+                                                            <button type="button"
+                                                                data-bs-target="#upload_download_modal"
+                                                                data-bs-toggle="modal"
+                                                                class="theme_primary_btn">Upload</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-1">
+
+                                                        <div class="row gx-4 document_list mt-1 m-auto w-100">
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center gap-2 col-6">
+                                                                <span class="doc-label">Bills</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center col-6 gap-2">
+                                                                <span class="doc-label">LOA</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center col-6 gap-2">
+                                                                <span class="doc-label">Utility Historical</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center col-6 gap-2">
+                                                                <span class="doc-label">Supplier Historical</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center col-6 gap-2">
+                                                                <span class="doc-label">LOE</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+                                                            <div
+                                                                class="d-flex justify-content-between align-items-center col-6 gap-2">
+                                                                <span class="doc-label">Misc</span>
+                                                                <span class="check-icon">✔️</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Notes -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">
+                                                    Notes
+                                                </label>
+                                                <div class="col-12 col-lg-8">
+                                                    <textarea class="form-control" rows="4"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <!-- RFP Requirement -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label">RFP Requirement</label>
+                                                <div class="col-12 col-lg-8">
+                                                    <textarea class="form-control"
+                                                        rows="4">Zeus Recs included</textarea>
+                                                </div>
+                                            </div>
+                                            <!-- RFP Requirement -->
+                                            <div class="row mb-3 align-items-center">
+                                                <label class="col-12 col-lg-4 form_label"></label>
+                                                <div class="col-12 col-lg-8">
+
+                                                    <div class="d-flex flex-wrap gap-3 mt-4">
+
+                                                        <div class="them_btn_container">
+                                                            <button class="theme_primary_btn"
+                                                                data-bs-target="#generate_LOA_modal"
+                                                                data-bs-toggle="modal">Generate
+                                                                LOA</button>
+                                                        </div>
+
+                                                        <div class="them_btn_container">
+                                                            <button class="theme_primary_btn"
+                                                                data-bs-target="#generate_LOE_modal"
+                                                                data-bs-toggle="modal">Generate
+                                                                LOE</button>
+                                                        </div>
+
+                                                        <div class="them_btn_container">
+                                                            <button class="theme_outline_btn">Customer/Site
+                                                                Info</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <!-- supplier table -->
+                    <section class="">
+                        <div class="spacer_30"></div>
+                        <div class="container-fluid">
+                            <!-- <div class="table_wrapper"> -->
+                            <div class="table_wrapper quotes_table">
+                                <table class="table table-bordered m-0">
+                                    <thead class="thead_bg">
+                                        <tr>
+                                            <th scope="col"
+                                                class=" align-middle td_w_130 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">Supplier</span>
+                                                </div>
+                                            </th>
+
+                                            <th class=" align-middle td_w_50 table_head_bg table_th_text table_th_text">
+                                                <div class="text-center">
+                                                    Src.
+                                                </div>
+                                            </th>
+
+                                            <th scope="col"
+                                                class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title text-center">Billing
+                                                        Type</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title text-center">Request Date
+                                                    </span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_70 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title text-center">Good Until</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">6 Months</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">12 Months</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">18 Months</span>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">24 Months</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div class="d-flex justify-content-center align-items-center gap-2">
+                                                    <span class="th_title">36 Months </span>
+                                                </div>
+                                            </th>
+
+                                            <th scope="col"
+                                                class=" align-middle td_w_150 table_head_bg table_th_text table_th_text">
+                                                <div
+                                                    class="d-flex justify-content-center align-items-center gap-2 text-center">
+                                                    <span class="th_title">To</span>
+                                                </div>
+                                            </th>
+                                            <th scope="col"
+                                                class=" align-middle td_w_220 table_head_bg table_th_text table_th_text ps-3">
+                                                <div
+                                                    class="d-flex flex-column justify-content-center align-items-center gap-1">
+                                                    <span class="th_title">Notes
+                                                    </span>
+                                                    <span class="sub_table_text">(Viewable to customer) 121</span>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr scope="row" class="tbody_row ">
+                                            <!-- style="height: 55px" -->
+                                            <td class="text-center table_td_text text">
+                                                <div class="td_container text-center mt-1">
+                                                    <img src="../assets/images/image 5.png" alt="image 5">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 14 14" fill="none">
+                                                        <g clip-path="url(#clip0_1057_8559)">
+                                                            <path
+                                                                d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
+                                                                fill="#007CBA" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1057_8559">
+                                                                <rect width="14" height="14" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="td_container text-center mt-1">
+                                                    A
+                                                </div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    Dual
+                                                </div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    12/3/25</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <div class="td_container text-center mt-1">
+                                                    -</div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    <div class="table_green_gb_td">
+                                                        $ 0.808991
+                                                    </div>
+                                                    <div class="d-flex justify-content-center align-items-center mt-1">
+                                                        <span class="table_td_text_red me-1"
+                                                            style="width: 50px;">Expired</span>
+                                                        <img src="/assets/icons/svgviewer-png-output.png"
+                                                            class="w_12_h_12" alt="" srcset="">
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    <div class="d-flex justify-content-center align-items-center gap-1">
+                                                        <div class="table_green_gb_td">
+                                                            $ 0.148657
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex justify-content-center align-items-center mt-1">
+                                                        <span class="table_td_text_red me-1"
+                                                            style="width: 50px;">Expired</span>
+                                                        <img src="/assets/icons/svgviewer-png-output.png"
+                                                            class="w_12_h_12" alt="" srcset="">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    <div class="table_gray_gb_td">$ 0.05500</div>
+                                                    <div class="d-flex justify-content-center align-items-center mt-1">
+                                                        <span class="table_td_text_red me-1"
+                                                            style="width: 50px;">Expired</span>
+                                                        <img src="/assets/icons/svgviewer-png-output.png"
+                                                            class="w_12_h_12" alt="" srcset="">
+                                                    </div>
+
+                                                </div>
+                                            </td>
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center mt-1">
+                                                    <div class="d-flex justify-content-center align-items-center gap-1">
+                                                        <div class="table_gray_gb_td">-</div>
+                                                    </div>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center">
+                                                    <div class="table_gray_gb_td">-</div>
+
+                                                </div>
+                                            </td>
+
+                                            <td class="text-center table_td_text">
+                                                <div class="td_container text-center">
+                                                    <div class="table_gray_gb_td">-</div>
+                                                </div>
+                                            </td>
+
+                                            <td class="table_td_text ps-3">
+
+
+                                                <div class="td_container mt-1">
+                                                    <div class="three_line_ellipsis"
+                                                        title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+ It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.">
+                                                        Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry. Lorem Ipsum has been the industry's standard dummy
+                                                        text ever since the 1500s, when an unknown printer took a galley
+                                                        of type and scrambled it to make a type specimen book.
+
+                                                        It has survived not only five centuries, but also the leap into
+                                                        electronic typesetting, remaining essentially unchanged.
+                                                    </div>
+                                                </div>
+                            </div>
+                            </td>
+
+                            </tr>
+
+                            <tr scope="row" class="tbody_row ">
+                                <!-- style="height: 55px" -->
+                                <td class="text-center table_td_text text">
+                                    <div class="td_container text-center mt-1">
+                                        <img src="../assets/images/image 5.png" alt="image 5">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <g clip-path="url(#clip0_1057_8559)">
+                                                <path
+                                                    d="M7.02246 0.0117188C3.16254 0.0117188 0.0224609 3.15122 0.0224609 7.01172C0.0224609 10.8722 3.16254 14.0117 7.02246 14.0117C10.8824 14.0117 14.0225 10.8716 14.0225 7.01172C14.0225 3.1518 10.8818 0.0117188 7.02246 0.0117188ZM7.02246 12.8451C3.80596 12.8451 1.18913 10.2282 1.18913 7.01172C1.18913 3.79522 3.80538 1.17839 7.02246 1.17839C10.2395 1.17839 12.8558 3.79522 12.8558 7.01172C12.8558 10.2282 10.239 12.8451 7.02246 12.8451ZM10.5225 4.74955V9.93538C10.5225 10.258 10.2611 10.5187 9.93913 10.5187C9.61713 10.5187 9.35579 10.258 9.35579 9.93538V4.74313C9.35579 4.74313 9.35404 4.74663 9.35288 4.74838L7.54629 8.43564C7.44829 8.63572 7.24471 8.7623 7.02246 8.7623H7.01838C6.79438 8.76055 6.59079 8.63047 6.49513 8.42805L4.74746 4.72214C4.74746 4.72214 4.72821 4.67488 4.70896 4.68597C4.69088 4.69005 4.68971 4.73614 4.68971 4.74955V9.93538C4.68971 10.258 4.42838 10.5187 4.10638 10.5187C3.78438 10.5187 3.52304 10.258 3.52304 9.93538V4.74955C3.52304 4.16155 3.89229 3.67914 4.44179 3.54964C4.99304 3.42072 5.53554 3.6873 5.79746 4.2123L7.03296 6.83205L8.30813 4.23039C8.57238 3.7013 9.10613 3.43005 9.63579 3.55722C10.1666 3.68264 10.523 4.16155 10.523 4.74955H10.5225Z"
+                                                    fill="#007CBA" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1057_8559">
+                                                    <rect width="14" height="14" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+
+                                </td>
+                                <td class="text-center">
+                                    <div class="td_container text-center mt-1">
+                                        C
+                                    </div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        Single
+                                    </div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        12/4/25</div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="td_container text-center mt-1">
+                                        -</div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        <div class="table_gray_gb_td">
+                                            $ 0.122951
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mt-1">
+                                            <span class="table_td_text_red me-1" style="width: 50px;">Expired</span>
+                                            <img src="/assets/icons/svgviewer-png-output.png" class="w_12_h_12" alt=""
+                                                srcset="">
+                                        </div>
+
+                                    </div>
+                                </td>
+
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center">
+
+                                        <div class="table_gray_gb_td">
+                                            $ 0.180362
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mt-1">
+                                            <span class="table_td_text_red me-1" style="width: 50px;">Expired</span>
+                                            <img src="/assets/icons/svgviewer-png-output.png" class="w_12_h_12" alt=""
+                                                srcset="">
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        <div class="table_green_gb_td">
+                                            $ 0.808991
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center mt-1">
+                                            <span class="table_td_text_red me-1" style="width: 50px;">Expired</span>
+                                            <img src="/assets/icons/svgviewer-png-output.png" class="w_12_h_12" alt=""
+                                                srcset="">
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        <div class="d-flex justify-content-center align-items-center gap-1">
+                                            <div class="table_gray_gb_td">-</div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        <div class="d-flex justify-content-center align-items-center gap-1">
+                                            <div class="table_gray_gb_td">-</div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="text-center table_td_text">
+                                    <div class="td_container text-center mt-1">
+                                        <div class="d-flex justify-content-center align-items-center gap-1">
+                                            <div class="table_gray_gb_td">-</div>
+                                        </div>
+
+                                    </div>
+                                </td>
+                                <td class="table_td_text ps-3">
+                                    <div class="td_container mt-1">
+
+                                        <div class="three_line_ellipsis"
+                                            title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+ It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley
+                                            of type and scrambled it to make a type specimen book.
+
+                                            It has survived not only five centuries, but also the leap into
+                                            electronic typesetting, remaining essentially unchanged.
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                            </table>
+                        </div>
+                        <!-- </div> -->
+
+                        <!-- pagination -->
+                        <div class="row quotes_pagi align-items-center mt-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="pagi_text">Rows per page</span>
+                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                        <option value="1">10</option>
+                                        <option value="2">20</option>
+                                        <option value="3">30</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex justify-content-end align-items-center gap-2">
+                                    <div class="arrow_div">
+                                        <svg class="p-0" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M4.79435 6.58025C4.71228 6.66222 4.66612 6.77342 4.66602 6.88942L4.66602 7.11108C4.66736 7.22682 4.71333 7.33758 4.79435 7.42025L7.79268 10.4127C7.84745 10.468 7.922 10.499 7.99977 10.499C8.07754 10.499 8.15208 10.468 8.20685 10.4127L8.62102 9.99858C8.67589 9.94482 8.70681 9.87123 8.70681 9.79442C8.70681 9.7176 8.67589 9.64401 8.62102 9.59025L6.02518 7.00025L8.62102 4.41025C8.67623 4.35548 8.70729 4.28093 8.70729 4.20317C8.70729 4.1254 8.67623 4.05085 8.62102 3.99608L8.20685 3.58775C8.15208 3.53253 8.07754 3.50147 7.99977 3.50147C7.922 3.50147 7.84745 3.53253 7.79268 3.58775L4.79435 6.58025Z"
+                                                fill="#757575" />
+                                        </svg>
+                                    </div>
+                                    <span class="pagi_text">1</span>
+                                    <span class="pagi_text">of</span>
+                                    <span class="pagi_active">1</span>
+                                    <div class="arrow_div">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            viewBox="0 0 14 14" fill="none">
+                                            <path
+                                                d="M9.20565 7.41975C9.28772 7.33778 9.33388 7.22658 9.33398 7.11058V6.88892C9.33264 6.77318 9.28667 6.66242 9.20565 6.57975L6.20732 3.58725C6.15255 3.53203 6.078 3.50098 6.00023 3.50098C5.92246 3.50098 5.84792 3.53203 5.79315 3.58725L5.37898 4.00142C5.32411 4.05518 5.29319 4.12877 5.29319 4.20558C5.29319 4.2824 5.32411 4.35599 5.37898 4.40975L7.97482 6.99975L5.37898 9.58975C5.32377 9.64452 5.29271 9.71907 5.29271 9.79683C5.29271 9.8746 5.32377 9.94915 5.37898 10.0039L5.79315 10.4123C5.84792 10.4675 5.92246 10.4985 6.00023 10.4985C6.078 10.4985 6.15255 10.4675 6.20732 10.4123L9.20565 7.41975Z"
+                                                fill="#007CBA" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row my-4">
+                            <div class="col-12">
+                                <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+                            </div>
+                        </div>
+                </div>
+                </section>
+
+            </div>
+
+            <!-- footer section -->
+            <div class="spacer_60"></div>
+            <div class="md_spacer_100 md_spacer_60"></div>
+            <footer class="footer-area w-100">
+                <div class="container-fluid">
+                    <div class="row flex-row">
+                        <div class="col-12 col-md-2 col-lg-2 d-none d-md-block">
+                            <div class="d-flex justify-content-start">
+                                <div class="them_btn_container">
+                                    <button class="theme_outline_btn">Back</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 col-lg-10">
+                            <div
+                                class="d-flex flex-wrap justify-content-start justify-content-md-end align-items-center gap-2">
+                                <div class="them_btn_container d-block d-md-none">
+                                    <button class="theme_outline_btn">Back</button>
+                                </div>
+
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
+                                        data-bs-toggle="modal">Custom
+                                        Quote</button>
+                                </div>
+
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#follow__up__modal"
+                                        data-bs-toggle="modal">Print</button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" data-bs-target="#email__link__modal"
+                                        data-bs-toggle="modal">Email
+                                        Link</button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn">Preview Link</button>
+                                </div>
+                                <div class="them_btn_container">
+                                    <button class="theme_primary_btn" onclick="createProposal()">Create
+                                        Proposal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar">
+    </div>
+    <!-- open modals -->
+
+
+    <!-- external js file -->
+    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+
+    <!-- bootstrap js file -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        function createProposal() {
+            window.open("../Create_Proposal/index.html", "_blank", "width=1200,height=1000,scrollbars=yes,resizable=yes");
+
+        }
+
+        // date 1
+        $(document).ready(function () {
+            // Initialize datepicker
+            $('#datepicker_input').datepicker({
+                format: "MM yyyy",      // Display format (e.g., October 2024)
+                startView: "months",    // Show only months and years
+                minViewMode: "months",  // Prevent selecting individual days
+                autoclose: true         // Automatically close after selection
+            });
+
+            // Open datepicker when the image is clicked
+            $('#date_icon').click(function () {
+                $('#datepicker_input').focus();  // Trigger focus on the input to open the datepicker
+            });
+
+
+            // date 2
+
+            $('#datepicker_input_2').datepicker({
+                format: "MM yyyy",      // Display format (e.g., October 2024)
+                startView: "months",    // Show only months and years
+                minViewMode: "months",  // Prevent selecting individual days
+                autoclose: true         // Automatically close after selection
+            });
+
+            // Open datepicker when the image is clicked
+            $('#date_icon_2').click(function () {
+                $('#datepicker_input_2').focus();  // Trigger focus on the input to open the datepicker
+            });
+
+        });
+
+
+        // 
+        $(document).ready(function () {
+            $('#marginToggleBtn').on('click', function () {
+                // Toggle button text between "-" and "+"
+                let currentBtnText = $(this).text();
+                $(this).text(currentBtnText === '-' ? '+' : '-');
+
+                // Toggle visibility of the text
+                if (currentBtnText === '-') {
+                    $('#marginToggleText').hide(); // Hide "Hi" when button shows "-"
+                } else {
+                    $('#marginToggleText').show(); // Show "Hi" when button shows "+"
+                }
+            });
+        });
+
+        document.querySelectorAll('.two_line_ellipsis').forEach(function (el) {
+            if (el.scrollHeight > el.clientHeight) {
+                el.classList.add('show-tooltip');
+                el.setAttribute('data-fulltext', el.textContent.trim());
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>
