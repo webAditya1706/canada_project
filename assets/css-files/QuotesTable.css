@@ -467,9 +467,9 @@ table * {
 }
 
 .table_green_gb_td {
-  width: 100%;
+  max-width: 100%;
   display: inline-flex;
-  padding: 5px var(--1, 8px);
+  padding: 5px 8px;
   justify-content: center;
   align-items: center;
   gap: 10px;
@@ -484,30 +484,33 @@ table * {
   font-style: normal;
   font-weight: 400;
   line-height: 16px; /* 123.077% */
+}
+
+.table_gray_gb_td {
+  min-width: 65px;
+  max-width: 100%;
+  display: inline-flex;
+  padding: 5px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* you need add color in prent */
+  /* color: var(--Primary, #131313); */
+  text-align: center;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 123.077% */
+
+  border-radius: 5px;
+  border: 1px solid var(--Background, #e7e7e7) !important;
+  background: var(--Screen-BG, #f7f7f7);
+
 }
 
 .table_green_gb_td:focus {
   background: #d1ecd5;
-}
-
-.table_gray_gb_td {
-  width: 100%;
-  display: inline-flex;
-  padding: 5px var(--1, 8px);
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border: 1px solid #d1ecd5;
-  border-radius: 5px;
-  background: #80808012;
-  /*  */
-  color: var(--Primary, #131313);
-  text-align: center;
-  font-family: Poppins;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px; /* 123.077% */
 }
 
 /* drop down click on three dot */

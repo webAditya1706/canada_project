@@ -729,7 +729,7 @@ height: 25px !important;
 .vertical_ui_design > label,
 .vertical_ui_design > .vertical_label,
 .vertical_ui_design .verti_row {
-  width: 20%;
+  width: 30%;
 }
 
 .vertical_ui_design > input,
@@ -738,6 +738,7 @@ height: 25px !important;
 .vertical_ui_design > .select2-container,
 .vertical_ui_design .verti_div {
   width: 500px !important;
+  max-width: 100%;
 }
 
 /* XL (<1400px) */
@@ -771,6 +772,7 @@ height: 25px !important;
   .vertical_ui_design > .select2-container,
   .vertical_ui_design .verti_div {
     width: 400px !important;
+    max-width: 100%;
   }
 }
 
@@ -788,6 +790,7 @@ height: 25px !important;
   .vertical_ui_design > .select2-container,
   .vertical_ui_design .verti_div {
     width: 330px !important;
+    max-width: 100%;
   }
 }
 
@@ -807,6 +810,7 @@ height: 25px !important;
   .vertical_ui_design > .select2.select2-container,
   .vertical_ui_design .verti_div {
     width: 265px !important;
+    max-width: 100%;
   }
 }
 
