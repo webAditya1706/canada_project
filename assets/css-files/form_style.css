@@ -874,3 +874,7 @@ height: 25px !important;
 
 /* o8 Aug 2025 */
 
+.left_form_border {
+  /* border-left: 1px solid #dee2e6!important */
+  border-left: 1px solid #bbbbbb !important
+}
