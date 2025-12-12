@@ -2,7 +2,7 @@
 // vertically UI
 const changeUI = () => {
   console.log("======on click this button");
-  
+
   const elements = [...document.getElementsByClassName("vertical_ui")]; // Convert to an array
   const width100 = [...document.getElementsByClassName("verti_width_100_row")]; // Convert to an array
 
@@ -103,5 +103,26 @@ drawerElement.addEventListener("hidden.bs.offcanvas", () => {
 });
 
 const collapsButton = () => {
-  
+
+}
+
+
+const handlePageUi = () => {
+  console.log("================>");
+  const isExist = $(".body_container").hasClass("handle_ui");
+  if (isExist) {
+    $(".body_container").removeClass("handle_ui");
+    $(".show_side_bar").hide();
+    sidebar.classList.remove("show_side_bar");
+    overlay.style.display = "none";
+
+  } else {
+    $(".body_container").addClass("handle_ui");
+    $(".overlay_mainsidebar").hide();
+    $("#open_main_sidebar").hide();
+    $(".overlay_mainsidebar").hide();
+    sidebar.classList.remove("show_side_bar");
+
+  }
+
 }
