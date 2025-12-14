@@ -54,7 +54,7 @@ aside {
 .sidebar_container .side_bar_menu {
   display: flex;
   justify-content: center;
-  height: 40px;
+  height: 30px;
   align-items: center;
 }
 
@@ -62,15 +62,8 @@ aside {
   position: relative;
 }
 
-.sidebar_container .side_bar_menu.active_sidebar::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  left: 0px;
-  background: #ffffff;
-  top: 0px;
-  border-radius: 2px;
+.sidebar_container .side_bar_menu.active_sidebar {
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .menu_container{
