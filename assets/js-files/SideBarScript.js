@@ -113,12 +113,13 @@ const handlePageUi = () => {
   if (isExist) {
     $(".body_container").removeClass("handle_ui");
     $(".show_side_bar").hide();
+    $("#open_main_sidebar").show();
     sidebar.classList.remove("show_side_bar");
     overlay.style.display = "none";
-
+    console.log("========> clicked");
+    
   } else {
     $(".body_container").addClass("handle_ui");
-    $(".overlay_mainsidebar").hide();
     $("#open_main_sidebar").hide();
     $(".overlay_mainsidebar").hide();
     sidebar.classList.remove("show_side_bar");
