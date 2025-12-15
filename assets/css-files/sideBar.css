@@ -364,3 +364,13 @@ letter-spacing: -0.28px;
   width: 100% !important;
   position: static;
 }
+
+.colleps_sidebar_icon{
+ display: flex;
+ justify-content: end;
+}
+
+.colleps_sidebar_icon img{
+  width: 24px;
+  margin-right: 10px;
+}
