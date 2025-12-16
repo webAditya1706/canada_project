@@ -374,3 +374,47 @@ letter-spacing: -0.28px;
   width: 24px;
   margin-right: 10px;
 }
+
+
+
+.handle_ui .sub_menus_items {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #ddd;
+  width: 100%;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.handle_ui .half_moon {
+  width: 13px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: var(--none, 0px) var(--none, 0px) var(--none, 0px)
+    var(--1, 8px);
+  border-bottom: 2px solid #e7e7e7;
+  border-left: 2px solid #e7e7e7;
+  position: absolute;
+  top: 13px;
+  left: -2px;
+}
+
+.handle_ui .sub_menu {
+  color: #757575;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.24px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.handle_ui .sub_menu:hover {
+  background-color: var(--primary_bg_color);
+}
+
+.handle_ui .sub_menu:hover span {
+  color: #fff;
+}
