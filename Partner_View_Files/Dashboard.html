@@ -32,89 +32,320 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!-- top header -->
-        <section class="top_header_secction">
-            <div class="container-fluid p-2">
-                <div class="row justify-content-between align-items-center">
-                    <!-- Column 1 -->
-                    <div class="col-12 col-lg-6">
-                        <div class="header_container">
-                            <div class="d-flex gap-2">
-                                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
-                                <div class="header_bg_text">
-                                    <img src="../assets/banner_img.png" alt="" class="header_banner" />
-                                    <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+    <div class="d-flex flex-row gap-2 body_container ">
+        <!-- drawer Sidebar -->
+        <div id="main_sidebar">
+
+            <div class="d-flex justify-content-center">
+                <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+            </div>
+
+            <div class="spacer_10"></div>
+            <div class="colleps_sidebar_icon">
+                <img src="/assets/icons/Nav Icons/sidebar-left-svgrepo-com.png" onclick="handlePageUi()" class="" alt=""
+                    srcset="">
+            </div>
+            <div class="spacer_10"></div>
+            <hr class="side_bar_hr" />
+            <div class="spacer_20"></div>
+
+            <!-- Dashboard -->
+            <div class="menu_container active_menu">
+                <div class="menu_parent p-0">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt=""> -->
+
+                        <span class="menu_title">Dashboard</span>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+
+            <!-- Qoutes -->
+            <div class="menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
+                                    <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
+                                    <span class="menu_title">Qoutes</span>
                                 </div>
                             </div>
-                            <div class="col-auto d-block d-lg-none d-flex justify-content-end">
-                                <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class=" ms-1 p-0"> -->
+                    <ul class="dropdown-menu m-0 p-1">
+                        <li class="dropdown-item sub_menu" href="#">
+                            <span class="">Create New</span>
+                        </li>
+                        <li class="dropdown-item sub_menu" href="#">
+                            <span class="">Active - 715</span>
+                        </li>
+                        <li class="dropdown-item sub_menu" href="#">
+                            <span class="">Requests - 13</span>
+                        </li>
+                    </ul>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="spacer_10"></div>
 
-                    <!-- Column 2 -->
-                    <div class="col-12 col-lg-6 d-none d-lg-block">
-                        <div class="d-flex justify-content-end align-items-center gap-3">
-                            <!-- Switch buttons -->
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label active_text_title_13" for="flexSwitchCheckDefault">
-                                    Legacy</label>
-                            </div>
-
-                            <div class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label active_text_title_13"
-                                    for="flexSwitchCheckDefault">Pricing View</label>
-                            </div>
-
-                            <!-- <div class="d-flex justify-content-center align-items-center gap-1">
-                          <label class="switch">
-                              <input type="checkbox">
-                              <span class="slider round"></span>
-                          </label>
-                          <span class="menu_font_style">Switch to Partner View</span>
-                      </div> -->
-                            <div class="d-flex align-items-center gap-1">
-                                <img src="../assets/user.png" class="user_image" alt="User Icon" />
-                                <div>
-                                    <p class="user_name">Welcome, Alon</p>
-                                    <p class="user_email">alon@demomail.com</p>
+            <!-- Auctions -->
+            <div class="menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn  p-0" data-bs-toggle="dropdown">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/icons/Nav%20Icons/Auction.png" class="w_24" alt="Quotes">
+                                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                    <span class="menu_title">Auctions</span>
                                 </div>
+                            </div>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
                             </div>
                         </div>
                     </div>
+                    <div class="dropdown-menu p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
 
-                    <!-- Drawer Menu -->
-                    <div class="drawer" id="drawer" style="z-index: 999">
-                        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
-                            <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
-                            <hr style="height: 1px; width: 100%" />
+            <!-- Contracts/CRM -->
+            <div class=" menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+                        <div class="d-flex justify-content-between p-0">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/icons/Nav%20Icons/Contract.png" class="w_24" alt="Quotes">
+                                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                    <span class="menu_title">Contracts</span>
+                                </div>
+                            </div>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+            <!-- Contracts/CRM -->
+            <div class=" menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+                        <div class="d-flex justify-content-between p-0">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/icons/Nav%20Icons/crm_icon.png" class="w_24" alt="Quotes">
+                                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                    <span class="menu_title">CRM</span>
+                                </div>
+                            </div>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+            <!-- Reports -->
+            <div class=" menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+                        <div class="d-flex justify-content-between p-0">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/icons/Nav%20Icons/reports_icon.png" class="w_24" alt="Quotes">
+                                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                    <span class="menu_title">Reports</span>
+                                </div>
+                            </div>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+            <!-- Tools -->
+            <div class=" menu_container">
+                <div class="btn-group position-static dropend w-100">
+                    <div type="button" class="btn p-0" data-bs-toggle="dropdown">
+                        <div class="d-flex justify-content-between p-0">
+                            <div class="col-10 p-0">
+                                <div class="d-flex align-items-center gap-2">
+                                    <img src="../assets/icons/Nav%20Icons//tools-icon.png" class="w_24" alt="Quotes">
+                                    <!-- <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Quotes"> -->
+                                    <span class="menu_title">Tools</span>
+                                </div>
+                            </div>
+                            <div class="col-2 m-0 p-0">
+                                <i class="bi bi-chevron-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-menu p-0">
+                        <ul class="m-0 p-1">
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Create New</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Active - 715</span>
+                            </li>
+                            <li class="dropdown-item sub_menu" href="#">
+                                <span class="">Requests - 13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer_20"></div>
+            <hr class="side_bar_hr" />
+            <div class="spacer_20"></div>
+
+            <div class="menu_container me-2">
+                <div class="menu_parent p-0">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="../assets/icons/Nav Icons/My_profile.png" class="w_24" alt="">
+                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
+
+                        <span class="menu_title">Profile</span>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+            <div class="menu_container me-2">
+                <div class="menu_parent p-0">
+                    <div class="d-flex align-items-center gap-2">
+                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
+                        <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="">
+
+                        <span class="menu_title">Logout</span>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer_10"></div>
+
+        </div>
+        <div class="w-100">
+            <!-- top header -->
+            <section class="top_header_secction">
+                <div class="container-fluid p-2">
+                    <div class="row justify-content-between align-items-center">
+                        <!-- Column 1 -->
+                        <div class="col-12 col-lg-6">
+                            <div class="header_container">
+                                <div class="d-flex gap-2">
+                                    <img src="../assets/logo.png" alt="Logo" class="header_logo" />
+                                    <div class="header_bg_text">
+                                        <img src="../assets/banner_img.png" alt="" class="header_banner" />
+                                        <!-- <span>THE FUTURE OF BUYING ENERGY HERE!</span> -->
+                                    </div>
+                                </div>
+                                <div class="col-auto d-block d-lg-none d-flex justify-content-end">
+                                    <i class="bi bi-three-dots-vertical" id="show_drawer" style="cursor: pointer"></i>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="d-flex flex-column justify-content-start">
-                            <!-- Switch buttons -->
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Old
-                                    Legacy</label>
-                            </div>
+                        <!-- Column 2 -->
+                        <div class="col-12 col-lg-6 d-none d-lg-block">
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <!-- Switch buttons -->
 
-                            <div class="form-check form-switch d-flex align-items-center gap-2">
-                                <input class="form-check-input mid_head_check" type="checkbox" role="switch"
-                                    id="flexSwitchCheckDefault" />
-                                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch to
-                                    Partner
-                                    View</label>
-                            </div>
+                                <div
+                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault" />
+                                    <label class="form-check-label active_text_title_13"
+                                        for="flexSwitchCheckDefault">Switch to Old
+                                        Legacy</label>
+                                </div>
 
-                            <div class="d-flex align-items-center gap-1 mb-2">
+                                <div
+                                    class="form-check form-switch d-flex justify-content-center align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault" />
+                                    <label class="form-check-label active_text_title_13"
+                                        for="flexSwitchCheckDefault">Switch to Partner
+                                        View</label>
+                                </div>
+
+                                <!-- <div class="d-flex justify-content-center align-items-center gap-1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span class="menu_font_style">Switch to Partner View</span>
+                        </div> -->
                                 <div class="d-flex align-items-center gap-1">
                                     <img src="../assets/user.png" class="user_image" alt="User Icon" />
                                     <div>
@@ -124,317 +355,285 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Overlay -->
-                    <div class="overlay_menu" id="overlay"></div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Side bar -->
-        <div class="d-flex flex-column gap-3 sidebar_container" id="open_main_sidebar">
-            <hr class="mt-5 mb-4 show_white_hr_line" />
-
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav%20Icons/Auction.png" class="w_24" alt="Auction_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav%20Icons/Contract.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <hr class="show_white_hr_line mt-2" />
-
-
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-            <div class="side_bar_menu mb-2">
-                <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt="Contract_active">
-
-            </div>
-        </div>
-
-        <!-- drawer Sidebar -->
-        <div id="main_sidebar">
-            <div>
-                <div class="d-flex justify-content-center">
-                    <img src="../assets/logo.png" alt="Logo" class="header_logo mt-3" />
-                </div>
-                <hr class="side_bar_hr" />
-                <div class="menu_container position-static">
-                    <div class="menu_parent mb-3">
-                        <div class="d-flex align-items-center gap-2">
-                            <!-- <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt=""> -->
-                            <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_20" alt="">
-
-                            <span class="menu_title">Home</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mx-2 mb-3">
-                    <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24" alt="Quotes">
-                                        <span class="menu_title">Qoutes</span>
-                                    </div>
-                                </div>
-                                <div class="col-auto m-0 p-0">
-                                    <i class="bi bi-chevron-right text-white"></i>
-                                </div>
+                        <!-- Drawer Menu -->
+                        <div class="drawer" id="drawer" style="z-index: 999">
+                            <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+                                <img src="../assets/logo.png" alt="Logo" class="header_logo mt-2" />
+                                <hr style="height: 1px; width: 100%" />
                             </div>
-                        </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="mx-2 mb-3">
-                    <div class="btn-group position-static dropend w-100">
-                        <div type="button" class="btn" data-bs-toggle="dropdown">
-                            <div class="row flex-row justify-content-between">
-                                <div class="col-auto p-0">
-                                    <div class="d-flex align-items-center gap-2">
-                                        <!-- <img src="../assets/icons/Nav Icons/Quotes.png" alt="Quotes"> -->
-                                        <img src="../assets/icons/Nav Icons/Auction.png" class="w_20" alt="Quotes">
-                                        <span class="menu_title">Auctions</span>
-                                    </div>
+                            <div class="d-flex flex-column justify-content-start">
+                                <!-- Switch buttons -->
+                                <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault" />
+                                    <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch
+                                        to Old
+                                        Legacy</label>
                                 </div>
-                                <div class="col-auto m-0 p-0">
-                                    <i class="bi bi-chevron-right text-white"></i>
+
+                                <div class="form-check form-switch d-flex align-items-center gap-2">
+                                    <input class="form-check-input mid_head_check" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault" />
+                                    <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Switch
+                                        to Partner
+                                        View</label>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="dropdown-menu ms-1 p-0">
-                            <ul class="m-0 p-1">
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Create New</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Active - 715</span>
-                                </li>
-                                <li class="dropdown-item sub_menu" href="#">
-                                    <span class="">Requests - 13</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <hr class="side_bar_hr" />
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <img src="../assets/icons/Nav Icons/My profile.png" class="w_20" alt="">
-                        <!-- <img src="../assets/icons/Nav Icons/My profile_active.png" class="w_24" alt=""> -->
-
-                        <span class="menu_title">Home</span>
-                    </div>
-                </div>
-                <div class="menu_parent mb-3">
-                    <div class="d-flex align-items-center gap-2">
-                        <!-- <img src="../assets/icons/Nav Icons/Logout_active.png" class="w_24" alt=""> -->
-                        <img src="../assets/icons/Nav Icons/Logout.png" class="w_20" alt="">
-
-                        <span class="menu_title">Logout</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- custom height -->
-        <div class="custom_height"></div>
-
-
-        <div class="content-area">
-            <!-- bread crumb -->
-            <section class="mt-1">
-                <div class="container-fluid">
-                    <div class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
-                        <div class="col-12 col-md-6">
-                            <div class="d-flex align-items-center gap-3">
-                                <div class="main_title_15">Auctions #76</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="show_gray_hr_line" />
-            </section>
-
-            <section class="mt-4">
-                <div class="container-fluid">
-                    <div class="row g-4 align-items-stretch">
-                        <!-- graph First -->
-                        <div class="col-12 col-sm-6 col-md-4 d-flex">
-                            <div class="graph_card">
-                                <div class="h1_title text-center">Quotes</div>
-                                <hr class="side_bar_hr" />
-
-                                <div class="row card_container g-3 mt-2">
-                                    <div class="col-12 col-xxl-6">
-                                        <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img"
-                                            alt="">
-                                    </div>
-                                    <div class="col-12 col-xxl-6">
-                                        <div class="graph_detail_parent">
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_4FA0D7"></div>
-                                                    <span class="graph_label">Active</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center ">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_102C3A"></div>
-                                                    <span class="graph_label">Quick
-                                                        Quotes</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_AACEEE"></div>
-                                                    <span class="graph_label">Request</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
+                                <div class="d-flex align-items-center gap-1 mb-2">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="../assets/user.png" class="user_image" alt="User Icon" />
+                                        <div>
+                                            <p class="user_name">Welcome, Alon</p>
+                                            <p class="user_email">alon@demomail.com</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- graph second -->
-                        <div class="col-12 col-sm-6 col-md-4 d-flex">
-                            <div class="graph_card">
-                                <div class="h1_title text-center">Auctions</div>
-                                <hr class="side_bar_hr" />
-
-                                <div class="row g-3 card_container mt-2">
-                                    <div class="col-12 col-xxl-6">
-                                        <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img"
-                                            alt="">
-                                    </div>
-                                    <div class="col-12 col-xxl-6">
-                                        <div class="graph_detail_parent">
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_4FA0D7"></div>
-                                                    <span class="graph_label">Scheduled</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">0</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_102C3A"></div>
-                                                    <span class="graph_label">Live</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">0</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_AACEEE"></div>
-                                                    <span class="graph_label">Closed</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- graph Third -->
-                        <div class="col-12 col-sm-6 col-md-4 d-flex">
-                            <div class="graph_card">
-                                <div class="h1_title text-center">Auctions</div>
-                                <hr class="side_bar_hr" />
-
-                                <div class="row card_container mt-2 g-3">
-                                    <div class="col-12 col-xxl-6">
-                                        <img src="../assets/images/Dashboard/Auction_chart.jpg" class="graph_img"
-                                            alt="">
-                                    </div>
-                                    <div class="col-12 col-xxl-6">
-                                        <div class="graph_detail_parent">
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_4FA0D7"></div>
-                                                    <span class="graph_label">Scheduled</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">0</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_102C3A"></div>
-                                                    <span class="graph_label">Live</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">0</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_AACEEE"></div>
-                                                    <span class="graph_label">Closed</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
-                                            <div class="row justify-content-between align-items-center">
-                                                <div class=" col-8 d-flex align-items-center gap-2">
-                                                    <div class="rectangle_bg_76AE17"></div>
-                                                    <span class="graph_label">Closed</span>
-                                                </div>
-                                                <div class="col-4 active_text_title_13">629</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-4">
-                        <div class="col-12">
-                            <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
-                        </div>
+                        <!-- Overlay -->
+                        <div class="overlay_menu" id="overlay"></div>
                     </div>
                 </div>
             </section>
-        </div>
+            <div class="spacer_60"></div>
 
+            <!-- <div class="spacer_60" style="height: 60px;"></div> -->
+            <div class="d-flex flex-column min-vh-100-60">
+                <div class="d-flex flex-grow-1 position-relative">
+
+                    <!-- Side bar -->
+                    <div class="sidebar_container" id="open_main_sidebar">
+                        <div class="spacer_60 d-sm-none"></div>
+
+                        <div class="w-100">
+                            <div class="spacer_40"></div>
+                            <hr class="show_white_hr_line mx-2" />
+                            <div class="spacer_35"></div>
+
+                            <div class="side_bar_menu active_sidebar pt-0">
+                                <img src="../assets/icons/Nav Icons/Dashboard.png" class="w_24" alt="Dashboard_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/Quotes_active.png" class="w_24"
+                                    alt="Contract_active">
+
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/Auction.png" class="w_24" alt="Auction_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/Contract.png" class="w_24" alt="Contract_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/crm_icon.png" class="w_24" alt="crm_icon_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/reports_icon.png" class="w_24"
+                                    alt="reports_icon_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/tools-icon.png" class="w_24"
+                                    alt="tools-icon_active">
+                            </div>
+                            <div class="spacer_24"></div>
+
+                            <hr class="show_white_hr_line  mx-2" />
+                            <div class="spacer_24"></div>
+
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/My_profile.png" class="w_24" alt="Contract_active">
+                            </div>
+                            <div class="spacer_24"></div>
+                            <div class="side_bar_menu">
+                                <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
+                            </div>
+                            <div class="spacer_10"></div>
+                        </div>
+                    </div>
+
+                    <div class="content-area d-flex flex-column">
+                        <div class="content-inner flex-grow-1">
+
+                            <!-- bread crumb -->
+                            <section class="mt-1">
+                                <div class="container-fluid">
+                                    <div
+                                        class="row d-flex flex-column flex-md-row justify-content-between align-items-center py-2">
+                                        <div class="col-12 col-md-6">
+                                            <div class="d-flex align-items-center gap-3">
+                                                <div class="main_title_15">Auctions #76</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="show_gray_hr_line" />
+                            </section>
+
+                            <section class="mt-4">
+                                <div class="container-fluid">
+                                    <div class="row g-4 align-items-stretch">
+                                        <!-- graph First -->
+                                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                                            <div class="graph_card">
+                                                <div class="h1_title text-center">Quotes</div>
+                                                <hr class="side_bar_hr" />
+
+                                                <div class="row card_container g-3 mt-2">
+                                                    <div class="col-12 col-xxl-6">
+                                                        <img src="../assets/images/Dashboard/Auction_chart.jpg"
+                                                            class="graph_img" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-xxl-6">
+                                                        <div class="graph_detail_parent">
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_4FA0D7"></div>
+                                                                    <span class="graph_label">Active</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                            <div
+                                                                class="row justify-content-between align-items-center ">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_102C3A"></div>
+                                                                    <span class="graph_label">Quick
+                                                                        Quotes</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_AACEEE"></div>
+                                                                    <span class="graph_label">Request</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- graph second -->
+                                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                                            <div class="graph_card">
+                                                <div class="h1_title text-center">Auctions</div>
+                                                <hr class="side_bar_hr" />
+
+                                                <div class="row g-3 card_container mt-2">
+                                                    <div class="col-12 col-xxl-6">
+                                                        <img src="../assets/images/Dashboard/Auction_chart.jpg"
+                                                            class="graph_img" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-xxl-6">
+                                                        <div class="graph_detail_parent">
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_4FA0D7"></div>
+                                                                    <span class="graph_label">Scheduled</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">0</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_102C3A"></div>
+                                                                    <span class="graph_label">Live</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">0</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_AACEEE"></div>
+                                                                    <span class="graph_label">Closed</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- graph Third -->
+                                        <div class="col-12 col-sm-6 col-md-4 d-flex">
+                                            <div class="graph_card">
+                                                <div class="h1_title text-center">Auctions</div>
+                                                <hr class="side_bar_hr" />
+
+                                                <div class="row card_container mt-2 g-3">
+                                                    <div class="col-12 col-xxl-6">
+                                                        <img src="../assets/images/Dashboard/Auction_chart.jpg"
+                                                            class="graph_img" alt="">
+                                                    </div>
+                                                    <div class="col-12 col-xxl-6">
+                                                        <div class="graph_detail_parent">
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_4FA0D7"></div>
+                                                                    <span class="graph_label">Scheduled</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">0</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_102C3A"></div>
+                                                                    <span class="graph_label">Live</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">0</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_AACEEE"></div>
+                                                                    <span class="graph_label">Closed</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                            <div class="row justify-content-between align-items-center">
+                                                                <div class=" col-8 d-flex align-items-center gap-2">
+                                                                    <div class="rectangle_bg_76AE17"></div>
+                                                                    <span class="graph_label">Closed</span>
+                                                                </div>
+                                                                <div class="col-4 active_text_title_13">629</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row my-4">
+                                        <div class="col-12">
+                                            <img src="../assets/images/Powered by_Logo.png" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Overlay -->
-    <div class="overlay_mainsidebar"></div>
 
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar" style="z-index: 999;"></div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
     <!-- external script files -->
     <script src="../assets/js-files/SideBarScript.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
     <script src="../assets/js-files/topheaderScript.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

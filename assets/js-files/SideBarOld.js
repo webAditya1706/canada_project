@@ -92,27 +92,14 @@ document.querySelectorAll(".dropdown-menu").forEach((menu) => {
   });
 });
 
-
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.bootstrap && drawerElement instanceof Element) {
-    drawerElement.addEventListener("shown.bs.offcanvas", () => {
-      if (typeof isDrawerOpen !== "undefined") {
-        isDrawerOpen = true;
-      }
-
-      if (typeof closeSidebar === "function") {
-        closeSidebar();
-      }
-    });
-  }
+// Track drawer open/close state
+drawerElement.addEventListener("shown.bs.offcanvas", () => {
+  isDrawerOpen = true;
+  closeSidebar(); // optional: auto-close sidebar
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (!drawerElement) return;
-
-  drawerElement.addEventListener("hidden.bs.offcanvas", () => {
-    isDrawerOpen = false;
-  });
+drawerElement.addEventListener("hidden.bs.offcanvas", () => {
+  isDrawerOpen = false;
 });
 
 const collapsButton = () => {

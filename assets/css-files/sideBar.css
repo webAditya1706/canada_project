@@ -373,6 +373,7 @@ letter-spacing: -0.28px;
 .colleps_sidebar_icon img{
   width: 24px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 
