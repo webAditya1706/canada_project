@@ -1161,3 +1161,7 @@ td {
 .quotes_table .bottom_table_header th div::after {
   border-top: 0px;
 }
+
+.quotes_table .bottom_table_header .before_border::before {
+  border-right: 0px !important;
+}

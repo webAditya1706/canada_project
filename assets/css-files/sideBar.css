@@ -372,11 +372,12 @@ letter-spacing: -0.28px;
 
 .colleps_sidebar_icon img{
   width: 24px;
-  margin-right: 10px;
   cursor: pointer;
 }
 
-
+.handle_ui #main_sidebar{
+  border-right: 1px solid #ddd;
+}
 
 .handle_ui .sub_menus_items {
   display: flex;
