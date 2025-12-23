@@ -235,6 +235,12 @@ letter-spacing: -0.28px;
   z-index: 1000;
 }
 
+.sidebar-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
 #main_sidebar.show_side_bar {
   left: 0; /* Show sidebar */
 }
@@ -349,6 +355,12 @@ letter-spacing: -0.28px;
   max-height: 100vh;
 }
 
+sidebar-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+
 .body_container.handle_ui .header_logo {
   width: 95px;
   flex-shrink: 0;
@@ -420,3 +432,5 @@ letter-spacing: -0.28px;
 .handle_ui .sub_menu:hover span {
   color: #fff;
 }
+
+

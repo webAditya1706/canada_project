@@ -1028,8 +1028,9 @@ td:first-child {
   top: 0;
 }
 
-thead tr {
+thead tr th{
   border-style: none;
+  text-align: center;
 }
 
 .green_color {

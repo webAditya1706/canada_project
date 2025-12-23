@@ -139,3 +139,7 @@
     width: 233px;
     height: 100vh;
 }
+
+.handle_ui .body_right_column{
+    width: calc(100vw - 193px) !important;
+}
