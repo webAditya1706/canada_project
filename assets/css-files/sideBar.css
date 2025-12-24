@@ -66,20 +66,19 @@ aside {
   background: rgba(255, 255, 255, 0.18);
 }
 
-.menu_container{
+.menu_container {
   height: 40px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.menu_container .dropdown-menu{
+.menu_container .dropdown-menu {
   margin-left: 5px !important;
 }
 .menu_container.active_menu {
   position: relative;
   background: rgba(255, 255, 255, 0.18);
-
 }
 
 .menu_container.active_menu::before {
@@ -95,12 +94,12 @@ aside {
 
 .active_menu .menu_title {
   color: var(--white, #fff);
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-letter-spacing: -0.28px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.28px;
 }
 
 .menu_container.active span {
@@ -161,13 +160,13 @@ letter-spacing: -0.28px;
 }
 
 .menu_title {
-  color: #FFF;
-font-family: Poppins;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-letter-spacing: -0.28px;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.28px;
 }
 
 .sub_menu_parent {
@@ -259,16 +258,11 @@ letter-spacing: -0.28px;
 #open_main_sidebar {
   width: 50px;
   height: calc(100vh - 60px);
-  /* Full viewport height */
   position: fixed;
-  /* top: 59px; */
   bottom: 0px;
   left: 0;
-  /* background-color: #1a5a7e; */
   background-color: var(--Theme);
-  /* Light gray background */
   overflow-y: auto;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -360,7 +354,6 @@ sidebar-scroll {
   overflow-x: hidden;
 }
 
-
 .body_container.handle_ui .header_logo {
   width: 95px;
   flex-shrink: 0;
@@ -377,17 +370,17 @@ sidebar-scroll {
   position: static;
 }
 
-.colleps_sidebar_icon{
- display: flex;
- justify-content: end;
+.colleps_sidebar_icon {
+  display: flex;
+  justify-content: end;
 }
 
-.colleps_sidebar_icon img{
+.colleps_sidebar_icon img {
   width: 24px;
   cursor: pointer;
 }
 
-.handle_ui #main_sidebar{
+.handle_ui #main_sidebar {
   border-right: 1px solid #ddd;
 }
 
@@ -433,4 +426,120 @@ sidebar-scroll {
   color: #fff;
 }
 
+/* new sidebar */
 
+.new_sidebar {
+      width: 95px;
+    background-color: var(--Theme);
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+}
+
+.newSideLogo {
+  width: 71px;
+}
+
+.newSidebarLogo {
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+  width: 100%;
+  background: #fff;
+  z-index: 29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side_bar_new_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.side_bar_new_menu .new_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.side_bar_new_menu .new_icon.active_new_icon {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu_name {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: -0.24px;
+}
+
+.new_sidebar_layout .body_right_column {
+  width: calc(100vw - 95px) ;
+      margin-left: auto;
+}
+.new_sidebar_layout .body_right_column .content-area {
+  width: 100% !important;
+}
+
+.new_sidebar_layout #main_sidebar {
+  position: sticky;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+
+.new_sidebar_layout .top_header_secction{
+  width: calc(100vw - 90px);
+}
+
+.body_container.new_sidebar_layout .footer-area{
+    width: 100% !important;
+    position: static;
+}
+
+.new_sidebar_layout .newSidebarLogo{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.new_side_menu_container{
+  width: 100%;
+  min-height: calc(100vh - 90px);
+}
+
+.new_sidebar_layout .side_bar_menu{
+  display: flex;
+  justify-content: center;
+}
+
+.new_sidebar .dropdown-menu {
+  z-index: 2000;
+}
+
+.new_sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1000;
+}
+
+.sidebar-scroll {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: visible; /* 🔥 REQUIRED */
+}

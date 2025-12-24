@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sticky Sidebar with Header & Footer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* ===== LEFT SIDEBAR ===== */
+    .sidebar {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      width: 250px;
+      background: #0b5ed7;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      padding: 12px;
+      margin-bottom: 10px;
+      background: rgba(255,255,255,0.15);
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* ===== RIGHT CONTENT ===== */
+    .content-wrapper {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #f5f7fa;
+    }
+
+    /* Sticky Header */
+    .header {
+      position: sticky;
+      top: 0;
+      height: 60px;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 10;
+    }
+
+    /* Scrollable Body */
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+    }
+
+    /* Sticky Footer */
+    .footer {
+      position: sticky;
+      bottom: 0;
+      height: 50px;
+      background: #ffffff;
+      border-top: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Sidebar -->
+  <aside class="sidebar">
+    <h3>Sidebar</h3>
+    <ul>
+      <li>Dashboard</li>
+      <li>Quotes</li>
+      <li>Contracts</li>
+      <li>CRM</li>
+      <li>Reports</li>
+      <li>Tools</li>
+    </ul>
+  </aside>
+
+  <!-- Right Content -->
+  <div class="content-wrapper">
+
+    <header class="header">
+      Sticky Header
+    </header>
+
+    <main class="content">
+      <h2>Main Content</h2>
+      <p>Scroll inside this area.</p>
+      <br>
+      <!-- Dummy content -->
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </main>
+
+    <footer class="footer">
+      Sticky Footer
+    </footer>
+
+  </div>
+
+</body>
+</html>

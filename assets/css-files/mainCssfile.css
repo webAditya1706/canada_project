@@ -1046,6 +1046,11 @@ footer {
   height: 30px !important;
 }
 
+.w_45_h_45 {
+  width: 45px !important;
+  height: 45px !important;
+}
+
 .mid_head_search img {
   width: 34px;
 }
