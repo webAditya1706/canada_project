@@ -557,3 +557,18 @@ sidebar-scroll {
     z-index: -1;
     border: none;
 }
+
+.new_side_menu_container .dropdown-menu{
+  font-size: 1.1rem;
+}
+
+
+.side_bar_new_menu img{
+  width: 30px;
+}
+
+@media (max-width: 900px) {
+  .side_bar_new_menu img{
+  width: 25px;
+}
+}
