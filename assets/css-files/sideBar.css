@@ -518,6 +518,7 @@ sidebar-scroll {
 .new_side_menu_container {
   width: 100%;
   min-height: calc(100vh - 60px);
+  min-height: calc(100dvh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -570,7 +571,7 @@ sidebar-scroll {
 }
 
 .new_sidebar .sub_menu {
-  color: #757575;
+  color: #131313;
   font-family: Inter;
   font-size: 13px;
   font-style: normal;
@@ -586,7 +587,7 @@ sidebar-scroll {
 }
 
 .new_sidebar .sub_menu:hover {
-  background-color: #007cba75;
+  background-color: var(--outline_bg);
 }
 
 .new_sidebar .sub_menu.active {
@@ -600,10 +601,8 @@ sidebar-scroll {
 .new_sidebar .dropdown-menu.show {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
-.side_bar_new_menu .custom-tooltip {
-  --bs-tooltip-bg: red !important;
-  --bs-tooltip-color: #fff;
+.side_bar_new_menu .dropdown-menu{
+  /* margin-top: ; */
 }
 
 @media (max-width: 768px) {
