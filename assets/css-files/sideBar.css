@@ -517,7 +517,11 @@ sidebar-scroll {
 
 .new_side_menu_container {
   width: 100%;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .new_sidebar_layout .side_bar_menu {
