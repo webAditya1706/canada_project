@@ -506,7 +506,7 @@ sidebar-scroll {
 
 .body_container.new_sidebar_layout .footer-area {
   width: 100% !important;
-  position: static;
+  /* position: static; */
 }
 
 .new_sidebar_layout .newSidebarLogo {
