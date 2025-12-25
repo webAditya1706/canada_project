@@ -564,6 +564,7 @@ sidebar-scroll {
 
 .new_side_menu_container .dropdown-menu {
   font-size: 1.1rem;
+  margin-top: 15px !important;
 }
 
 .side_bar_new_menu img {
@@ -646,5 +647,10 @@ sidebar-scroll {
 
   .dropdown_sub_titlte{
     display: block !important;
+  }
+
+  
+  .new_side_menu_container .dropdown-menu {
+  margin-top: 0px !important;
   }
 }
