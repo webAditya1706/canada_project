@@ -605,6 +605,12 @@ sidebar-scroll {
   /* margin-top: ; */
 }
 
+.dropdown_sub_titlte{
+  display: none;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+}
+
 @media (max-width: 768px) {
   .side_bar_new_menu img {
     width: 25px;
@@ -628,5 +634,9 @@ sidebar-scroll {
 
   .new_sidebar_layout .body_right_column {
     width: calc(100vw - 60px);
+  }
+
+  .dropdown_sub_titlte{
+    display: block;
   }
 }
