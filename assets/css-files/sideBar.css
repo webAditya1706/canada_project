@@ -645,6 +645,6 @@ sidebar-scroll {
   }
 
   .dropdown_sub_titlte{
-    display: block;
+    display: block !important;
   }
 }
