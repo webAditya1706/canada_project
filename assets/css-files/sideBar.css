@@ -597,8 +597,33 @@ sidebar-scroll {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 900px) {
+.side_bar_new_menu .custom-tooltip {
+  --bs-tooltip-bg: red !important;
+  --bs-tooltip-color: #fff;
+}
+
+@media (max-width: 768px) {
   .side_bar_new_menu img {
     width: 25px;
+  }
+
+  .side_bar_new_menu .menu_title {
+    display: none;
+  }
+
+  .side_bar_new_menu .new_icon {
+    padding: 5px;
+  }
+
+  .new_sidebar {
+    width: 60px;
+  }
+
+  .newSideLogo {
+    width: 55px;
+  }
+
+  .new_sidebar_layout .body_right_column {
+    width: calc(100vw - 60px);
   }
 }

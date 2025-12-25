@@ -59,16 +59,18 @@
             <div class="new_icon active_new_icon">
               <img src="../assets/icons/Nav Icons/Dashboard.png" class="" alt="Dashboard_active">
             </div>
-            <span class="menu_name mt-2">Dashboard</span>
+            <span class="menu_title mt-2">Dashboard</span>
           </div>
 
           <div class="btn-group position-static dropend w-100">
+
             <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
-              <div class="side_bar_new_menu">
+              <div class="side_bar_new_menu"  data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip" data-bs-title="Qoutes">
                 <div class="new_icon">
                   <img src="../assets/icons/Nav Icons/Quotes_active.png" class="" alt="Quotes">
                 </div>
-                <span class="menu_title">Qoutes</span>
+                <!-- <span class="menu_title">Qoutes</span> -->
 
               </div>
             </div>
@@ -755,6 +757,8 @@
                         <div class="them_btn_container">
                           <button class="theme_primary_btn" data-bs-target="#custom__quote__modal"
                             data-bs-toggle="modal">Add
+                            Supplier Add
+                            Supplier Add
                             Supplier</button>
                         </div>
                         <div class="them_btn_container">
@@ -1243,6 +1247,10 @@
         }
       });
     });
+
+
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 
 

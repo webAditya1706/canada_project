@@ -1115,6 +1115,14 @@ footer {
   height: 60px;
 }
 
+.spacer_80 {
+  height: 80px;
+}
+
+.spacer_70 {
+  height: 70px;
+}
+
 select {
   position: relative;
 }
