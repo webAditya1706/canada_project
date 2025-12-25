@@ -614,7 +614,7 @@ sidebar-scroll {
 }
 
 .dropdown_sub_titlte{
-  display: none;
+  display: none !important;
   font-weight: 700 !important;
   font-size: 15px !important;
 }
