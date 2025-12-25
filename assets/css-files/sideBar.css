@@ -605,6 +605,14 @@ sidebar-scroll {
   /* margin-top: ; */
 }
 
+.noside_bar .content-area{
+  width: 100%;
+}
+
+.noside_bar footer{
+  width: 100%;
+}
+
 .dropdown_sub_titlte{
   display: none;
   font-weight: 700 !important;
