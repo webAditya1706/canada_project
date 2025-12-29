@@ -884,6 +884,25 @@ td .fixed_rate,
   color: var(--form_text_dark_color);
 }
 
+
+.fs_15_fw_700_c_1313 {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: var(--form_text_dark_color);
+}
+
+.fs_20_fw_700_c_1313 {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: var(--form_text_dark_color);
+}
+
 .fs_18_fw_500_c_1313 {
   font-family: Poppins;
   font-size: 18px;

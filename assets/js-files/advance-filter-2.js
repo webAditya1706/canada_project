@@ -22,17 +22,17 @@ const fieldConfig = {
         type: "select",
         label: "State",
         options: [
-            "Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut",
-            "Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa",
-            "Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan",
-            "Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire",
-            "New Jersey","New Mexico","New York","North Carolina","North Dakota","Ohio",
-            "Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota",
-            "Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia",
-            "Wisconsin","Wyoming"
+            "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+            "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+            "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+            "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
+            "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio",
+            "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota",
+            "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+            "Wisconsin", "Wyoming"
         ]
     },
-    "status": { type: "select", label: "Status", options: ["Complete","In Progress","Incomplete","Contract","Booked"] },
+    "status": { type: "select", label: "Status", options: ["Complete", "In Progress", "Incomplete", "Contract", "Booked"] },
     "utility": { type: "select", label: "Utility", options: [] }
 };
 
@@ -53,18 +53,23 @@ $('#quote_drawer').on('shown.bs.offcanvas', function () {
 });
 
 // Listen for filter selection (dynamic selects)
-$(document).on('change', 'select.select_value_text', function () {
+$(document).on('change', 'select.select_value_text', async function () {
     const selected = $(this).val();
-    generateDynamicField(selected);
+    await generateDynamicField(selected);
 });
+
+let selectedOptions = []
 
 // Generate dynamic field
 const generateDynamicField = async (key) => {
+    addFilterButton();
+
     const container = $("#dynamicFieldContainer");
     container.empty(); // clear previous
     if (key === "all-filters") return;
-
+    selectedOptions.push(key)
     const config = fieldConfig[key];
+    console.log("===>", selectedOptions);
 
     if (!config) {
         // Default text input
@@ -74,8 +79,7 @@ const generateDynamicField = async (key) => {
                 <input type="text" class="form-control theme_bg_color" />
             </div>
         `);
-        await appendFilterDropdown(key);
-        return;
+        // await appendFilterDropdown(key);
     }
 
     if (config.type === "select") {
@@ -94,7 +98,6 @@ const generateDynamicField = async (key) => {
         });
 
         // await appendFilterDropdown(key);
-        return;
     }
 
     if (config.type === "date") {
@@ -104,27 +107,55 @@ const generateDynamicField = async (key) => {
                 <input type="date" class="form-control theme_bg_color" />
             </div>
         `);
-        await appendFilterDropdown(key);
+        // await appendFilterDropdown(key);
     }
+
+
 }
+
+function addFilterButton(container) {
+    const appendBtn = $("#add_filter")
+       if (appendBtn.length && appendBtn.children().length > 0) {
+        return;
+    }
+
+    appendBtn.append(`
+        <div class="add_filter_btn" onclick="appendFilterDropdown()">
+            <img src=".././assets/appbar createnew.png" class="w_15_h_15">
+            <span>Add filter</span>
+        </div>
+    `);
+}
+
+
 
 // Append "All Filters" dropdown dynamically
 function appendFilterDropdown(excludeKey = null) {
+    console.log("====>hrllo");
+
     const options = [
-        "all-filters","account-number","activity-date","commodity","contact-name",
-        "customer-legal-name-on-contract","due-date","new-business","number-of-accounts",
-        "quote-id","relationship-manager","start-date","state","status","utility","volume"
+        "all-filters", "account-number", "activity-date", "commodity", "contact-name",
+        "customer-legal-name-on-contract", "due-date", "new-business", "number-of-accounts",
+        "quote-id", "relationship-manager", "start-date", "state", "status", "utility", "volume"
     ];
 
+    const filteredOptions = options.filter(opt =>
+        opt !== excludeKey && !selectedOptions.includes(opt)
+    );
+
+
     const html = `
-        <div class="mt-4">
+        <div class="mt-4 d-flex flex-row gap-2 align-items-center">
             <select class="form-select js-example-basic-single-2 mt-4">
-                ${options.map(opt => {
-        if (opt === excludeKey) return '';
+                ${filteredOptions.map(opt => {
+        // if (opt === excludeKey) return '';
         const selected = opt === "all-filters" ? 'selected' : '';
         return `<option value="${opt}" ${selected}>${formatLabel(opt)}</option>`;
     }).join('')}
             </select>
+
+                <img src=".././assets/icons/Form_delete.png" class="Form_delete" alt="Form_delete">
+            
         </div>
     `;
 

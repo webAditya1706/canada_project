@@ -510,6 +510,32 @@ input::placeholder {
   scroll-padding: 5px 0; /* Extra hint for smooth scroll snapping */
 }
 
+.document_new_list {
+  width: 100%;
+  background-color: #e9f8ff;
+  /* max-width: 500px; */
+  padding: 5px 0; /* Top and bottom spacing inside scroll area */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  max-height: 100px;
+  overflow-y: auto;
+  box-sizing: border-box; /* Ensures padding is counted in height */
+  scroll-padding: 5px 0; /* Extra hint for smooth scroll snapping */
+  align-items: center;
+}
+
+.document_list_container{
+  width: 50%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 5px;
+  /* flex-wrap: wrap; */
+}
+
 .document_list_inner {
   padding: 10px 0; /* Top and bottom spacing for scrollable content */
   width: 100%;
