@@ -11,6 +11,18 @@ $('#filter_type').on('change', function () {
     }
 });
 
+$(document).on('change', '.js-example-basic-single-2', function () {
+    generateDynamicField(this.value, this);
+});
+
+// Listen for filter selection (dynamic selects)
+$(document).on('change', '.select_value_text', function () {
+    const key = $(this).val();
+    generateDynamicField(key, this);
+    addFilterButton();
+});
+
+
 // Dynamic fields configuration
 const fieldConfig = {
     "commodity": { type: "select", label: "Commodity", options: ["Electric", "Gas"] },
@@ -52,70 +64,66 @@ $('#quote_drawer').on('shown.bs.offcanvas', function () {
     });
 });
 
-// Listen for filter selection (dynamic selects)
-$(document).on('change', 'select.select_value_text', async function () {
-    const selected = $(this).val();
-    await generateDynamicField(selected);
-});
 
 let selectedOptions = []
 
 // Generate dynamic field
-const generateDynamicField = async (key) => {
-    addFilterButton();
+const generateDynamicField = async (key, el) => {
+    const container = $(el)
+        .closest('.slect_dropdown_container')
+        .find('.new_filter');
 
-    const container = $("#dynamicFieldContainer");
-    container.empty(); // clear previous
-    if (key === "all-filters") return;
-    selectedOptions.push(key)
+    // container.empty();
+
+    if (key === 'all-filters') return;
+
     const config = fieldConfig[key];
-    console.log("===>", selectedOptions);
 
     if (!config) {
-        // Default text input
         container.append(`
-            <div class="mt-4">
+            <div>
                 <div class="form-label text-light">${formatLabel(key)}</div>
                 <input type="text" class="form-control theme_bg_color" />
             </div>
         `);
-        // await appendFilterDropdown(key);
+        return;
     }
 
-    if (config.type === "select") {
-        const $selectWrapper = $(`
-            <div class="mt-4">
+    if (config.type === 'select') {
+        const $wrapper = $(`
+            <div>
                 <div class="form-label text-light">${config.label}</div>
-                <select class="form-select dynamic-select theme_bg_color">
-                    ${config.options.map(opt => `<option value="${opt.toLowerCase()}">${opt}</option>`).join('')}
+                <select class="form-select theme_bg_color">
+                    ${config.options.map(opt =>
+            `<option value="${opt.toLowerCase()}">${opt}</option>`
+        ).join('')}
                 </select>
             </div>
-        `).appendTo(container);
+        `);
 
-        // Initialize select2
-        $selectWrapper.find('select').select2({
+        container.append($wrapper);
+
+        $wrapper.find('select').select2({
             dropdownParent: $('#quote_drawer')
         });
-
-        // await appendFilterDropdown(key);
     }
 
-    if (config.type === "date") {
+    if (config.type === 'date') {
         container.append(`
-            <div class="mt-4">
+            <div>
                 <div class="form-label text-light">${config.label}</div>
                 <input type="date" class="form-control theme_bg_color" />
             </div>
         `);
-        // await appendFilterDropdown(key);
     }
+};
 
 
-}
+
 
 function addFilterButton(container) {
     const appendBtn = $("#add_filter")
-       if (appendBtn.length && appendBtn.children().length > 0) {
+    if (appendBtn.length && appendBtn.children().length > 0) {
         return;
     }
 
@@ -125,13 +133,13 @@ function addFilterButton(container) {
             <span>Add filter</span>
         </div>
     `);
+
 }
 
 
 
 // Append "All Filters" dropdown dynamically
 function appendFilterDropdown(excludeKey = null) {
-    console.log("====>hrllo");
 
     const options = [
         "all-filters", "account-number", "activity-date", "commodity", "contact-name",
@@ -145,25 +153,65 @@ function appendFilterDropdown(excludeKey = null) {
 
 
     const html = `
-        <div class="mt-4 d-flex flex-row gap-2 align-items-center">
-            <select class="form-select js-example-basic-single-2 mt-4">
-                ${filteredOptions.map(opt => {
+    
+        <div class="slect_dropdown_container">
+            <div class="new_filter">
+                <div class="mt-4 d-flex flex-row gap-2 align-items-center">
+                    <select class="form-select js-example-basic-single-2 mt-4">
+                        ${filteredOptions.map(opt => {
         // if (opt === excludeKey) return '';
         const selected = opt === "all-filters" ? 'selected' : '';
         return `<option value="${opt}" ${selected}>${formatLabel(opt)}</option>`;
     }).join('')}
-            </select>
-
-                <img src=".././assets/icons/Form_delete.png" class="Form_delete" alt="Form_delete">
-            
+                    </select>
+                        <img src=".././assets/icons/Form_delete.png" class="Form_delete" onclick="deleteFilter(this)" alt="Form_delete">            
+                </div>
+            </div>
         </div>
     `;
 
-    const $newSelectWrapper = $(html).appendTo("#dynamicFieldContainer");
+    const $newSelectWrapper = $(html).appendTo("#new_selct_dropdown");
     const $newSelect = $newSelectWrapper.find('select');
 
     // Initialize Select2
     $newSelect.select2({
         dropdownParent: $('#quote_drawer')
     });
+
+
+    const count = $('#new_selct_dropdown .new_filter').length;
+
+    if (count >= 2) {
+        $('.add_filter_btn').hide();
+    } else {
+        $('.add_filter_btn').show();
+    }
+
+    toggleAddFilterBtn()
+}
+
+function deleteFilter(el) {
+    $(el).closest('.new_filter').remove();
+
+
+    const count = $('#new_selct_dropdown .new_filter').length;
+
+    if (count >= 2) {
+        $('.add_filter_btn').hide();
+    } else {
+        $('.add_filter_btn').show();
+    }
+}
+
+
+const toggleAddFilterBtn = () => {
+
+
+    const count = $('#new_selct_dropdown .new_filter').length;
+
+    if (count >= 2) {
+        $('.add_filter_btn').hide();
+    } else {
+        $('.add_filter_btn').show();
+    }
 }
