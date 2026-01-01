@@ -69,11 +69,18 @@ let selectedOptions = []
 
 // Generate dynamic field
 const generateDynamicField = async (key, el) => {
-    const container = $(el)
-        .closest('.slect_dropdown_container')
-        .find('.new_filter');
+    // return if is a third dropdown
+    const count = $('#new_selct_dropdown .new_filter').length;
+    if (count >= 2) {
+        return
+    }
 
-    // container.empty();
+    const $filterWrapper = $(el).closest('.new_filter');
+
+    const container = $filterWrapper; // append inside same filter block
+
+    // ✅ remove ONLY this filter's field
+    $filterWrapper.find('.filter_field').remove();
 
     if (key === 'all-filters') return;
 
@@ -81,7 +88,7 @@ const generateDynamicField = async (key, el) => {
 
     if (!config) {
         container.append(`
-            <div>
+            <div class="filter_field">
                 <div class="form-label text-light">${formatLabel(key)}</div>
                 <input type="text" class="form-control theme_bg_color" />
             </div>
@@ -91,7 +98,7 @@ const generateDynamicField = async (key, el) => {
 
     if (config.type === 'select') {
         const $wrapper = $(`
-            <div>
+            <div class="filter_field">
                 <div class="form-label text-light">${config.label}</div>
                 <select class="form-select theme_bg_color">
                     ${config.options.map(opt =>
@@ -110,7 +117,7 @@ const generateDynamicField = async (key, el) => {
 
     if (config.type === 'date') {
         container.append(`
-            <div>
+            <div class="filter_field">
                 <div class="form-label text-light">${config.label}</div>
                 <input type="date" class="form-control theme_bg_color" />
             </div>
@@ -154,9 +161,9 @@ function appendFilterDropdown(excludeKey = null) {
 
     const html = `
     
-        <div class="slect_dropdown_container">
+        <div class="slect_dropdown_container mt-4">
             <div class="new_filter">
-                <div class="mt-4 d-flex flex-row gap-2 align-items-center">
+                <div class="d-flex flex-row gap-2 align-items-center">
                     <select class="form-select js-example-basic-single-2 mt-4">
                         ${filteredOptions.map(opt => {
         // if (opt === excludeKey) return '';
