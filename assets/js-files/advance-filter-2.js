@@ -1,5 +1,7 @@
 // ======================= JS =======================
 
+let selectedOptions = []
+
 // Toggle Advance Filter
 $('#filter_type').on('change', function () {
     if ($(this).is(':checked')) {
@@ -65,15 +67,14 @@ $('#quote_drawer').on('shown.bs.offcanvas', function () {
 });
 
 
-let selectedOptions = []
 
 // Generate dynamic field
 const generateDynamicField = async (key, el) => {
     // return if is a third dropdown
-    const count = $('#new_selct_dropdown .new_filter').length;
-    if (count >= 2) {
-        return
-    }
+    // const count = $('#new_selct_dropdown .new_filter').length;
+    // if (count >= 2) {
+    //     return
+    // }
 
     const $filterWrapper = $(el).closest('.new_filter');
 

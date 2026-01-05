@@ -444,7 +444,7 @@ sidebar-scroll {
 
 .newSidebarLogo {
   height: 60px;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
   width: 100%;
   background: #fff;
   z-index: 29;
@@ -505,7 +505,7 @@ sidebar-scroll {
 }
 
 .body_container.new_sidebar_layout .footer-area {
-  width: 100% !important;
+  /* width: 100% !important; */
   /* position: static; */
 }
 
@@ -519,10 +519,12 @@ sidebar-scroll {
   width: 100%;
   min-height: calc(100vh - 60px);
   min-height: calc(100dvh - 60px);
+  max-height: calc(100dvh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-x: auto;
 }
 
 .new_sidebar_layout .side_bar_menu {
@@ -618,6 +620,19 @@ sidebar-scroll {
   display: none !important;
   font-weight: 700 !important;
   font-size: 15px !important;
+}
+
+#new_selct_dropdown .select2-container{
+  width: 90% !important;
+}
+
+#new_selct_dropdown .filter_field .select2-container{
+  width: 100% !important;
+}
+
+
+#new_selct_dropdown .filter_field{
+  width: 90% !important;
 }
 
 @media (max-width: 768px) {
