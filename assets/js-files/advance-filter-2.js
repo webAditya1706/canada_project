@@ -160,8 +160,7 @@ function appendFilterDropdown(excludeKey = null) {
     );
 
 
-    const html = `
-    
+    const html = `    
         <div class="slect_dropdown_container mt-4">
             <div class="new_filter">
                 <div class="d-flex flex-row gap-2 align-items-center">
@@ -172,7 +171,7 @@ function appendFilterDropdown(excludeKey = null) {
         return `<option value="${opt}" ${selected}>${formatLabel(opt)}</option>`;
     }).join('')}
                     </select>
-                        <img src=".././assets/icons/Form_delete.png" class="Form_delete" onclick="deleteFilter(this)" alt="Form_delete">            
+                        <img src=".././assets/icons/white_delete_icon.png" class="Form_delete" onclick="deleteFilter(this)" alt="Form_delete">            
                 </div>
             </div>
         </div>
