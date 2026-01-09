@@ -1004,7 +1004,11 @@ footer {
 }
 
 .w_14 {
-  width: 14px;
+  width: 14px !important;
+}
+
+.w_12 {
+  width: 12px !important;
 }
 
 .w_11_h_11 {
@@ -1015,6 +1019,10 @@ footer {
 .w_15_h_15 {
   width: 15px !important;
   height: 15px !important;
+}
+
+.w_16 {
+  width: 16px !important;
 }
 
 .w_16_h_16 {

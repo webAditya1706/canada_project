@@ -1156,3 +1156,9 @@ td {
 .quotes_table .bottom_table_header .before_border::before {
   border-right: 0px !important;
 }
+
+.histry_icon{
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
