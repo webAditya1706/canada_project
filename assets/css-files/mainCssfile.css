@@ -1199,3 +1199,13 @@ select {
     height: 100px;
   }
 }
+
+
+.form-check{
+  margin-bottom: 0px;
+  min-height: auto;
+}
+
+.form-check-input{
+  margin-top: 0px;
+}
