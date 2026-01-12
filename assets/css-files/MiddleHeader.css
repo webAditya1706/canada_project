@@ -333,3 +333,31 @@ input:checked + .mid_header_slider:before {
   width: 20px;
   cursor: pointer;
 }
+
+@media (max-width: 575px) { }   /* Mobile */
+@media (max-width: 767px) {
+  .Serch_option{
+    width: 100%;
+  }
+   .switch_lists{
+    width: 100%;
+  }
+ }   /* Tablet */
+@media (max-width: 991px) { 
+  .Serch_option{
+    width: 50%;
+  }
+   .switch_lists{
+    width: 50%;
+  }
+}   /* Small desktop */
+@media (min-width: 1300px) {
+ .Serch_option{
+    max-width: 570px !important;
+    width: auto !important;
+  }
+    .switch_lists{
+    /* width: auto !important; */
+    max-width: calc(100vw - 570px) !important;
+  }
+ }  /* Large desktop */
