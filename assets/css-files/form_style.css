@@ -524,7 +524,7 @@ input::placeholder {
   box-sizing: border-box; /* Ensures padding is counted in height */
   scroll-padding: 5px 0; /* Extra hint for smooth scroll snapping */
   align-items: center;
-  padding: 5px 8px !important;
+  padding: 5px 10px !important;
 }
 
 .document_new_list .document_list_container{
