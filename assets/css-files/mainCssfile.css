@@ -1079,6 +1079,9 @@ footer {
   height: 10px !important;
 }
 
+.w_5{
+  width: 5px !important;
+}
 .w_10 {
   width: 10px;
 }

@@ -1159,6 +1159,8 @@ td {
 
 .histry_icon{
   position: absolute;
-  top: 2px;
+  top: 0px;
   right: 5px;
+  padding: 0px;
+  cursor: pointer;
 }

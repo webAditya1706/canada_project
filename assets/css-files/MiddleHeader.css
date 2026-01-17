@@ -334,6 +334,14 @@ input:checked + .mid_header_slider:before {
   cursor: pointer;
 }
 
+.serchbox_wrapper{
+  min-width: 220px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 @media (max-width: 575px) { }   /* Mobile */
 @media (max-width: 767px) {
   .Serch_option{
