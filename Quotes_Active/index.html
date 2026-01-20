@@ -40,8 +40,7 @@
 
 <body>
 
-    <div class="d-flex flex-row gap-2 body_container new_sidebar_layout">
-        <!-- drawer Sidebar -->
+    <div class="body_container new_sidebar_layout">
         <!-- drawer Sidebar -->
         <div class="new_sidebar" id="">
             <div class="sidebar-scroll">
@@ -368,10 +367,8 @@
             <div class="d-flex flex-column min-vh-100-60">
                 <div class="d-flex flex-grow-1 position-relative">
 
-
-
                     <div class="content-area d-flex flex-column">
-                        <div class="content-inner flex-grow-1 px-2">
+                        <div class="content-inner flex-grow-1">
                             <!-- Middle header -->
                             <section class="">
                                 <div class="container-fluid">
@@ -625,7 +622,8 @@
                                                                             d="M1.81244 16.2799C2.67535 16.2799 3.37488 15.5277 3.37488 14.5999C3.37488 13.6721 2.67535 12.9199 1.81244 12.9199C0.949528 12.9199 0.25 13.6721 0.25 14.5999C0.25 15.5277 0.949527 16.2799 1.81244 16.2799Z"
                                                                             fill="#393939" />
                                                                     </svg> -->
-                                                                    <img src="../assets/icons/three_dots_007cba.png" class="w_5" srcset="">
+                                                                    <img src="../assets/icons/three_dots_007cba.png"
+                                                                        class="w_5" srcset="">
                                                                 </button>
 
                                                                 <ul class="dropdown-menu">
@@ -867,6 +865,42 @@
     <div class="overlay_mainsidebar" style="z-index: 999;"></div>
 
     <!-- search drawer -->
+
+    <div class="drawer" id="drawer">
+        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+            <!--                         <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-2" /> -->
+            <hr style="height: 1px; width: 100%;">
+        </div>
+
+        <div class="d-flex flex-column justify-content-start">
+            <!-- Switch buttons -->
+
+            <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                    onclick="oldLayoutUI();return false;">
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Legacy</label>
+            </div>
+
+
+            <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch" onchange="switchView();"
+                    id="flexSwitchCheckDefault">
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault"
+                    style="cursor: pointer;">Pricing View</label>
+            </div>
+            <div class="d-flex align-items-center gap-1 mb-2">
+                <div class="d-flex align-items-center gap-1">
+                    <!-- <img src="img/user.png" class="user_image" alt="User Icon" /> -->
+                    <div>
+                        <p class="user_name">
+                            Albert Sasson
+                        </p>
+                        <p class="user_email">albert@procureclix.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Search click Model open -->
 
     <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer" aria-labelledby="quoteDrawerLabel">
@@ -1299,10 +1333,10 @@
     <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- external script files -->
-    <script src="../assets/js-files/SideBarScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <!-- <script src="../assets/js-files/SideBarScript.js"></script> -->
     <script src="../assets/js-files/comman_js_file.js"></script>
     <script src="../assets/js-files/MidHeaderScript.js"></script>
-    <script src="../assets/js-files/topheaderScript.js"></script>
     <script src="../assets/js-files/customDropdown.js"></script>
 
 

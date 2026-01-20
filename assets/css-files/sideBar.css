@@ -486,6 +486,12 @@ sidebar-scroll {
   letter-spacing: -0.24px;
 }
 
+.new_sidebar_layout{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
 .new_sidebar_layout .body_right_column {
   width: calc(100vw - 95px);
   margin-left: auto;
@@ -501,7 +507,7 @@ sidebar-scroll {
 }
 
 .new_sidebar_layout .top_header_secction {
-  width: calc(100vw - 90px);
+  width: calc(100vw - 95px);
 }
 
 .body_container.new_sidebar_layout .footer-area {
@@ -658,7 +664,13 @@ sidebar-scroll {
 
   .new_sidebar_layout .body_right_column {
     width: calc(100vw - 60px);
+
   }
+
+  
+.new_sidebar_layout .top_header_secction {
+  width: calc(100vw - 60px);
+}
 
   .dropdown_sub_titlte{
     display: block !important;

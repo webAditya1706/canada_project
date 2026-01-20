@@ -1,6 +1,8 @@
 const overlay = document.getElementById("overlay");
 const drawer = document.getElementById("drawer");
 
+
+
 // Function to toggle drawer visibility
 function toggleDrawer() {
     if (!drawer.classList.contains("show")) {

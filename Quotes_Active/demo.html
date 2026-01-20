@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes Active</title>
+
+    <!-- MUI Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet" />
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- external css files -->
+    <link rel="stylesheet" href="../assets/css-files/topHeader.css  " />
+    <link rel="stylesheet" href="../assets/css-files/sideBar.css" />
+    <link rel="stylesheet" href="../assets/css-files/MiddleHeader.css" />
+    <link rel="stylesheet" href="../assets/css-files/btn-css.css" />
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css-files/mainCssfile.css" />
+    <link rel="stylesheet" href="../assets/css-files/QuotesTable.css" />
+    <link rel="stylesheet" href="../assets/css-files/other__css.css" />
+    <link rel="stylesheet" href="../assets/css-files/form_style.css" />
+    <link rel="stylesheet" href="../assets/css-files/without_sticky_table.css" />
+
+    <!-- Bootstrap icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+    <!-- font faimily -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="body_container new_sidebar_layout">
+        <!-- drawer Sidebar -->
+        <div class="new_sidebar" id="">
+            <div class="sidebar-scroll">
+                <div class="newSidebarLogo">
+                    <div class="d-flex justify-content-center align-content-center">
+                        <img src="../assets/logo.png" alt="Logo" class="newSideLogo">
+                    </div>
+                </div>
+
+                <div class="spacer_60"></div>
+
+                <div class="new_side_menu_container">
+                    <div class="w-100">
+                        <div class="spacer_15"></div>
+                        <div class="side_bar_new_menu pt-0">
+                            <div class="new_icon active_new_icon">
+                                <img src="../assets/icons/Nav Icons/Dashboard.png" class="" alt="Dashboard_active">
+                            </div>
+                            <span class="menu_title mt-2">Dashboard</span>
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/Quotes_active.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">Qoutes</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">Qoutes</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu active" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/Auction.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">Auctions</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">Auctions</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/Contract.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">Contracts</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">Contracts</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/crm_icon.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">CRM</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">CRM</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/reports_icon.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">Reports</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">Reports</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                        <div class="spacer_15"></div>
+
+                        <div class="btn-group position-static dropend w-100">
+                            <div type="button" class="btn p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="side_bar_new_menu">
+                                    <div class="new_icon">
+                                        <img src="../assets/icons/Nav Icons/tools-icon.png" class="" alt="Quotes">
+                                    </div>
+                                    <span class="menu_title">Tools</span>
+
+                                </div>
+                            </div>
+                            <!-- <div class=" ms-1 p-0"> -->
+                            <ul class="dropdown-menu m-0 p-1">
+                                <li class="dropdown-item sub_menu dropdown_sub_titlte" href="#">
+                                    <span class="">Tools</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Create New</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Active - 715</span>
+                                </li>
+                                <li class="dropdown-item sub_menu" href="#">
+                                    <span class="">Requests - 13</span>
+                                </li>
+                            </ul>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+
+                    <div class="w-100">
+                        <div class="spacer_24"></div>
+                        <hr class="show_white_hr_line  mx-2" />
+                        <div class="spacer_24"></div>
+
+                        <div class="side_bar_new_menu">
+                            <img src="../assets/icons/Nav Icons/My_profile.png" class="w_24" alt="Contract_active">
+                        </div>
+                        <div class="spacer_24"></div>
+                        <div class="side_bar_new_menu">
+                            <img src="../assets/icons/Nav Icons/Logout.png" class="w_24" alt="Contract_active">
+                        </div>
+                        <div class="spacer_10"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="body_right_column">
+            <h1>Hello world</h1>
+
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div class="overlay_mainsidebar" style="z-index: 999;"></div>
+
+    <!-- search drawer -->
+
+    <div class="drawer" id="drawer">
+        <div class="d-flex flex-column w-100 justify-content-center align-items-center">
+            <!--                         <img src="../../assets/logo.png" alt="Logo" class="header_logo mt-2" /> -->
+            <hr style="height: 1px; width: 100%;">
+        </div>
+
+        <div class="d-flex flex-column justify-content-start">
+            <!-- Switch buttons -->
+
+            <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                    onclick="oldLayoutUI();return false;">
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault">Legacy</label>
+            </div>
+
+
+            <div class="form-check form-switch d-flex align-items-center gap-2">
+                <input class="form-check-input mid_head_check" type="checkbox" role="switch" onchange="switchView();"
+                    id="flexSwitchCheckDefault">
+                <label class="form-check-label menu_font_style" for="flexSwitchCheckDefault"
+                    style="cursor: pointer;">Pricing View</label>
+            </div>
+            <div class="d-flex align-items-center gap-1 mb-2">
+                <div class="d-flex align-items-center gap-1">
+                    <!-- <img src="img/user.png" class="user_image" alt="User Icon" /> -->
+                    <div>
+                        <p class="user_name">
+                            Albert Sasson
+                        </p>
+                        <p class="user_email">albert@procureclix.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search click Model open -->
+
+    <div class="offcanvas offcanvas-end qoute_modal" tabindex="-1" id="quote_drawer" aria-labelledby="quoteDrawerLabel">
+        <div class="offcanvas-body real_theme_bg">
+            <div class="mb-4 position-relative">
+                <img data-bs-dismiss="offcanvas" type="button" class="close_search_drawer"
+                    src="../assets/images/red_cancel.png" alt="" srcset="">
+                <label for="exampleFormControlInput1" class="form-label qoute_filter_title">Search</label>
+                <div class="qoute_search">
+                    <i class="bi bi-search text-white"></i>
+                    <input type="text" class="form-control theme_bg_color" id="exampleFormControlInput1"
+                        placeholder="" />
+                </div>
+            </div>
+            <hr class="show_gray_hr_line" />
+
+            <div class="filter_body mt-3">
+                <select name="renewalQuoteWithinId" id="renewalQuoteWithinId"
+                    class="form-select js-example-basic-single select_value_text ">
+                    <option value="0" selected="selected">All Months</option>
+                    <option value="1">1 Month </option>
+                    <option value="2">2 Months</option>
+                    <option value="3">3 Months</option>
+                    <option value="4">4 Months</option>
+                    <option value="5">5 Months</option>
+                    <option value="6">6 Months</option>
+                    <option value="7">7 Months</option>
+                    <option value="8">8 Months</option>
+                    <option value="9">9 Months</option>
+                    <option value="10">10 Months</option>
+                    <option value="11">11 Months</option>
+                    <option value="12">12 Months</option>
+                    <option value="13">13 Months</option>
+                    <option value="14">14 Months</option>
+                    <option value="15">15 Months</option>
+                    <option value="16">16 Months</option>
+                    <option value="17">17 Months</option>
+                    <option value="18">18 Months</option>
+                    <option value="19">19 Months</option>
+                    <option value="20">20 Months</option>
+                    <option value="21">21 Months</option>
+                    <option value="22">22 Months</option>
+                    <option value="23">23 Months</option>
+                    <option value="24">24 Months</option>
+                    <option value="25">25 Months</option>
+                    <option value="26">26 Months</option>
+                    <option value="27">27 Months</option>
+                    <option value="28">28 Months</option>
+                    <option value="29">29 Months</option>
+                    <option value="30">30 Months</option>
+                    <option value="31">31 Months</option>
+                    <option value="32">32 Months</option>
+                    <option value="33">33 Months</option>
+                    <option value="34">34 Months</option>
+                    <option value="35">35 Months</option>
+                    <option value="36">36 Months</option>
+                    <option value="37">37 Months</option>
+                    <option value="38">38 Months</option>
+                    <option value="39">39 Months</option>
+                    <option value="40">40 Months</option>
+                    <option value="41">41 Months</option>
+                    <option value="42">42 Months</option>
+                    <option value="43">43 Months</option>
+                    <option value="44">44 Months</option>
+                    <option value="45">45 Months</option>
+                    <option value="46">46 Months</option>
+                    <option value="47">47 Months</option>
+                    <option value="48">48 Months</option>
+                </select>
+
+                <span class="qoute_filter_title mt-2 mb-2">All Filters</span>
+
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" checked type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn1">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn1">
+                        All Filters
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn2">
+                    <label class="form-check-label filter_title" for="filter_radio_btn2">
+                        Customer / Legal Name on Contract
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn3">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn3">
+                        Account Number
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn4">
+
+                    <label class="form-check-label filter_title" for="filter_radio_btn4">
+                        Contact Name
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn5">
+                    <label class="form-check-label filter_title" for="filter_radio_btn5">
+                        Commodity
+                    </label>
+                </div>
+
+                <div class="form-check black_tic__check">
+                    <input class="form-check-input filter_radio" type="radio" name="filter_radio_btn"
+                        id="filter_radio_btn6">
+                    <label class="form-check-label filter_title" for="filter_radio_btn6">
+                        Quote ID
+                    </label>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                    <div class="them_btn_container">
+                        <button class="White_bg_theme_text btn_theme_ripple" data-bs-dismiss="offcanvas">Search</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- search drawer end -->
+
+
+    <!-- footer ntn description modal -->
+    <div class="modal fade" id="view_footer_btn_description_Modal" tabindex="-1" aria-labelledby="viewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="viewModalLabel"> Button description</h5>
+                </div>
+                <div class="modal-body">
+                    <!-- Your modal content goes here -->
+
+                    <div class="">
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/man_pluse_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Add Supplier</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/file_pluse_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Request Quote</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/rotete_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Refreash</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/mail_link_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Preview Link</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/footer_printer_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Print</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/battry_pluse_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Create Proposal</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/dot_file_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Save & Update</h6>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                            <button class="btn footer_icon_btn" data-bs-toggle="modal"
+                                data-bs-target="#view_footer_btn_description_Modal">
+                                <img src="../assets/icons/footer_icons/mail_check_icon.png" class="w_24"
+                                    alt="open_eye_icon">
+                            </button>
+                            <h6>Save & Email</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <div class="them_btn_container" alt="Close" type="button" class="custom-close-btn w_18_h_18"
+                        data-bs-dismiss="modal">
+                        <button class="theme_outline_btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer ntn description modal -->
+
+    <!-- Archive Modal Open -->
+    <div class="modal fade" id="arcive_modal_open" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title h1_title" id="exampleModalToggleLabel2">
+                        Archive
+                    </h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                    <img type="button" data-bs-dismiss="modal" aria-label="Close" src="../assets/images/red_cancel.png"
+                        alt="" class="w_20">
+
+                </div>
+                <div class="modal-body">
+                    <div class="fs_16_fw_600_c_F00 text-center">
+                        Are you sure you want to Archive Quote?
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <div class="d-flex flex-wrap w-100 gap-4 justify-content-center align-items-center">
+                        <div class="them_btn_container">
+                            <button class="theme_primary_btn">Yes</button>
+                        </div>
+                        <div class="them_btn_container">
+                            <button class="theme_outline_btn2" class="btn-close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                No
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Archive Modal End -->
+
+    <!-- Queue followUp Modal -->
+    <div class="modal fade status_modal" id="queueFollowUPModal">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="h1_title" id="exampleModalToggleLabel">Status</span>
+                    <button type="button" class="btn p-0" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="../assets/icons/cancel.png" alt="">
+                    </button>
+                </div>
+                <hr class="show_gray_hr_line mx-3" />
+                <div class="modal-body">
+
+                    <div class="status_table_wrapper">
+                        <table class="bg__table">
+
+                            <div class="">
+
+                            </div>
+                            <thead class="thead_bg">
+                                <tr>
+                                    <th scope="col" class="align-middle td_w_130 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="fs_13_fw_600_1313">Status</span>
+                                        </div>
+                                    </th>
+
+                                    <th scope="col" class="align-middle td_w_250 table_head_bg table_th_text">
+                                        <div class="d-flex justify-content-center align-items-center gap-2">
+                                            <span class="fs_13_fw_600_1313"> About</span>
+                                        </div>
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr scope="row" class="tbody_row border_3_green tab_bg_green">
+
+                                    <td class="align-middle table_td_text">
+                                        <div class="text-center fs_13_fw_500_c_green">Active</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_gray tab_bg_gray">
+
+                                    <td class="align-middle table_td_text">
+                                        <div class="text-center fs_13_fw_500_c_gray">Future</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_blue tab_bg_blue">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_blue">Expired-Floating</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313 ">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_orange tab_bg_orange">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_orange">Expired-Renewed</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                                <tr scope="row" class="tbody_row border_3_red tab_bg_red">
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_500_c_red">Cancelled</div>
+                                    </td>
+
+                                    <td class="align-middle table_td_text text">
+                                        <div class="text-center fs_13_fw_400_c_131313">27,596 KWH</div>
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!-- <div class="modal-footer d-flex justify-content-center">
+          <div class="them_btn_container ">
+            <button class="theme_outline_btn">Back</button>
+          </div>
+        </div> -->
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer buton description -->
+
+    <!-- Modal -->
+    <div id="footerModal" class="footer-modal">
+        <div class="d-flex flex-row flex-wrap gap-2">
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_back_arrow_icon.png" class="w_10" alt="" srcset=""> Back
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_man_pluse_icon.png" class="w_10" alt="" srcset=""> Add
+                Suppliers</button>
+
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_man_pluse_icon.png" class="w_10" alt="" srcset=""> Request
+                Quote</button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_rotete_icon.png" class="w_10" alt="" srcset="">Refresh
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_open_eye_icon.png" class="w_10" alt="" srcset=""> Preview
+                Link
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_mail_link_icon.png" class="w_10" alt="" srcset=""> Email
+                Link
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_footer_printer_icon.png" class="w_10" alt="" srcset="">
+                Print
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_battry_pluse_icon.png" class="w_10" alt="" srcset="">
+                Create
+                Proposal
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_dot_file_icon.png" class="w_10" alt="" srcset=""> Save &
+                Update
+            </button>
+            <button class="info_btn_des">
+                <img src="../assets/icons/footer_icons/black_mail_check_icon.png" class="w_10" alt="" srcset=""> Save &
+                Email
+            </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- external script files -->
+    <!-- <script src="../assets/js-files/SideBarScript.js"></script> -->
+    <script src="../assets/js-files/comman_js_file.js"></script>
+    <script src="../assets/js-files/MidHeaderScript.js"></script>
+    <script src="../assets/js-files/topheaderScript.js"></script>
+    <script src="../assets/js-files/customDropdown.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            const $modal = $('#footerModal');
+            const $infoBtn = $('#infoBtn');
+
+            // Toggle modal on info button click
+            $infoBtn.on('click', function (e) {
+                e.stopPropagation();
+                $modal.toggle();
+            });
+
+            // Close modal if clicking outside
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('#footerModal, #infoBtn').length) {
+                    $modal.hide();
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

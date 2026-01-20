@@ -339,7 +339,7 @@ input:checked + .mid_header_slider:before {
   max-width: 100%;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 @media (max-width: 575px) { }   /* Mobile */
