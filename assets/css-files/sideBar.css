@@ -670,6 +670,7 @@ sidebar-scroll {
   
 .new_sidebar_layout .top_header_secction {
   width: calc(100vw - 60px);
+  left: 60px;
 }
 
   .dropdown_sub_titlte{

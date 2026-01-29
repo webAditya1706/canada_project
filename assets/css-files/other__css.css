@@ -14,6 +14,36 @@
   width: 130px;
 }
 
+.white_bg_error {
+  outline: none;
+  border-bottom: 1px solid #ddd !important;
+
+  .accordion-button:not(.collapsed) {
+    background-color: #FFF !important;
+    color: #000;
+  }
+
+  .accordion-button.collapsed {
+    background-color: #fff !important;
+    color: #000;
+  }
+
+  .accordion-button:focus {
+    border-color: transparent !important;
+    box-shadow: none;
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23131313'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-button {
+    padding: 10px 12px;
+    align-items: center;
+  }
+
+}
+
 .theme_accordian {
   outline: none;
 
@@ -51,6 +81,19 @@
     margin-left: -20px;
     max-height: 70px;
     overflow-y: auto;
+  }
+
+  .bg__accordian_body.error_container {
+    background-color: #fff !important;
+  }
+
+  .error_container .red_error ul {
+    font-family: Poppins !important;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 11px;
+    color: red !important;
   }
 
   .ul_error_list::-webkit-scrollbar {
@@ -197,7 +240,9 @@ textarea::-webkit-scrollbar-thumb:hover {
 }
 
 .collapse {
-  transition: height 0.35s ease, opacity 0.35s ease; /* Adjust transition duration */
+  transition:
+    height 0.35s ease,
+    opacity 0.35s ease; /* Adjust transition duration */
   height: 0; /* Initially collapsed height */
   opacity: 0; /* Initially invisible */
   overflow: hidden; /* Prevent content overflow */

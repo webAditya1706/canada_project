@@ -651,6 +651,15 @@ input::placeholder {
   line-height: 20px; /* 100% */
 }
 
+.fs_11_fw_400_c_red {
+  color: #f00 !important;
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 15px; /* 100% */
+}
+
 .fs_13_fw_600_1313 {
   font-family: Poppins;
   font-size: 13px !important;
